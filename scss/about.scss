@@ -1,0 +1,141 @@
+@import './vars';
+.about {
+  & .logo-container {
+    & .logo-very-big {
+      max-width: 100%;
+    }
+  }
+  & .img-container {
+    & .about-pic {
+      max-width: 100%;
+    }
+  }
+}
+.contacts {
+  background-image: linear-gradient(-265deg, #cb4828 0%, #e46849 100%);
+  & .adres-map-link {
+    width: 100%;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    font-family: $noto-font;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
+  & .contacts-heading {
+    color: #fff;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  & .adres-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  & .map-container {
+    height: 300px;
+    width: 100%;
+  }
+  & .adres-phones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    // align-items: flex-start;
+    & .phone-link {
+      display: block;
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 18px;
+      color: #ffffff;
+    }
+    & .phone-link-big {
+      font-size: 26px;
+      font-weight: 700;
+    }
+  }
+  & .adres-email {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+.napravleniya {
+  padding: 30px 0 50px 0;
+}
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .contacts {
+    & .map-container {
+      transform: translateX(-15px);
+    }
+    & .adres-list {
+      text-align: left;
+      & .adres-map-link {
+        text-align: left;
+        font-size: 20px;
+      }
+      & .adres-email {
+        text-align: left;
+      }
+      & .adres-phones {
+        & .phone-link {
+          margin: 0 auto 0 0 !important;
+        }
+        & .phone-link-big {
+          font-size: 24px;
+        }
+      }
+    }
+    & .link-map {
+      & .link-map-header {
+        padding-left: 8px;
+        text-align: left;
+      }
+      & .link-map-list {
+        margin-top: 10px;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        & .link-map-item {
+          padding: 0px 8px;
+          & .link-map-link {
+            display: block;
+            color: #ffffff;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .contacts {
+    & .map-container {
+      height: 458px;
+      width: 100%;
+    }
+  }
+}
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Link from 'next/link';
 import Head from '../components/head';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import '../scss/about.scss';
 
 export class About extends Component {
   render() {
@@ -11,7 +12,7 @@ export class About extends Component {
           title="О компании"
           description='Подбробная информация о деятельности компании ООО "Газовые машины"'
         />
-        <div className="container-fluid">
+        <div className="container-fluid about">
           <div className="mycontainer">
             <div className="row m-0">
               <div className="col-12 col-md-6 p-0">
@@ -97,12 +98,12 @@ export class About extends Component {
             </div>
           </div>
         </div>
-        <div className="container-fluid">
+        <div className="container-fluid contacts">
           <div className="mycontainer">
-            <span className="contacts-heading">Контакты:</span>
+            <span className="header-common contacts-heading">Контакты:</span>
           </div>
           <div className="row m-0">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 order-md-2">
               <div className="contacts-content">
                 <ul className="adres-list">
                   <li>
@@ -136,19 +137,64 @@ export class About extends Component {
                 </ul>
               </div>
             </div>
-            <div className="col-12 col-md-6">
-              <Map google={this.props.google} zoom={14}>
+            <div className="col-12 col-md-6 map-container order-md-1 p-0">
+              <Map
+                google={this.props.google}
+                zoom={14}
+                initialCenter={{
+                  lat: 57.659441,
+                  lng: 39.949507
+                }}
+              >
                 <Marker
                   onClick={this.onMarkerClick}
                   name={'Current location'}
                 />
-
                 {/* <InfoWindow onClose={this.onInfoWindowClose}>
                   <div>
                     <h1>{this.state.selectedPlace.name}</h1>
                   </div>
                 </InfoWindow> */}
               </Map>
+            </div>
+          </div>
+        </div>
+        <div className="container-fluid napravleniya">
+          <div className="mycontainer">
+            <div className="row m-0">
+              <div className="col-12">
+                <h2 className="header-common">Направления</h2>
+                <p className="text-common">
+                  Кроме производства мини-ТЭС мы осуществляем поставку,
+                  трансформаторных подстанций, КРУ, и прочего вспомогательного
+                  оборудования и обеспечиваем поставку запасных частей.
+                  Предлагаем весь спектр услуг по созданию Вашего автономного
+                  энергоцентра "под ключ": проектные, строительно-монатжные
+                  работы, пуско-наладочные работы, сопровождение объекта с
+                  первого дня до ввода в эксплуатацию, обучение эксплуатирующего
+                  персонала, сервисное обслуживание.
+                </p>
+                <br />
+                <p className="text-common">
+                  В нашей компетенции "готовые решения" по организации
+                  автономного энергоснабжения для: промышленных предприятий,
+                  объектов нефтегазовой сферы, объектов газотранспортной
+                  системы, животноводческих комплексов, торгово-развлекательных
+                  центров, ледовых дворцов спорта и прочих спортивных объектов,
+                  гостиниц, санаториев, больниц и лечебных учреждений, баз
+                  отдыха.
+                </p>
+                <br />
+                <p className="text-common">
+                  Спектр поставляемого оборудования позволяет осуществлять
+                  полную модернизацию энергетического хозяйства предприятий, от
+                  замены устаревшего котельного оборудования, до организации
+                  полностью автономных систем. Наша компания имеет опыт поставок
+                  оборудования по всей территории Российской Федерации и странам
+                  СНГ.
+                </p>
+                <br />
+              </div>
             </div>
           </div>
         </div>
