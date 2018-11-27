@@ -1,0 +1,30 @@
+@import '../vars';
+.potencialRynka {
+  padding-bottom: 50px;
+  & .subheading-red-bottom {
+  }
+  & .img-container {
+    & .potential-pic {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  }
+}
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+}

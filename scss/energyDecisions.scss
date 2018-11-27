@@ -1,0 +1,244 @@
+@import './vars';
+.energyDecisions {
+  background: #fafafa;
+  background-image: url('/static/images/back-3.png');
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  & .main-header {
+    position: relative;
+    margin-bottom: 30px;
+    font-family: $noto-font;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 50%;
+      height: 3px;
+      background-color: #cb4828;
+      bottom: -10px;
+      left: 0;
+    }
+    &::after {
+      background: #fafafa;
+    }
+  }
+  & .cards-plate {
+    margin-top: 30px;
+    width: 100%;
+
+    & .card {
+      width: 220px;
+      max-width: 250px;
+      height: 220px;
+      margin: 0 auto;
+      //max-height: 250px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      border-radius: 5px;
+      & .card-image-container {
+        margin-top: 16px;
+        margin-bottom: 6px;
+        text-align: center;
+        & .card-image {
+          width: 85px;
+          height: 85px;
+        }
+      }
+      & .card-heading {
+        color: #4b4b4b;
+        font-family: $noto-font;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: -0.53px;
+      }
+      & .card-desc {
+        color: #313131;
+        font-family: $noto-font;
+        font-size: 13px;
+        font-style: italic;
+        line-height: 22px;
+        letter-spacing: -0.33px;
+        padding: 0 7px;
+      }
+    }
+    & .card-plate {
+      margin-top: 6px;
+      margin-bottom: 30px;
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 400px) {
+  .energyDecisions {
+    & .cards-plate {
+      width: 100%;
+
+      & .card {
+        // height: 220px;
+
+        & .card-image-container {
+          // margin-top: 15px;
+          & .card-image {
+          }
+        }
+        & .card-heading {
+          // font-size: 16px;
+          // line-height: 30px;
+        }
+        & .card-desc {
+          // font-size: 12px;
+          // line-height: 18px;
+        }
+      }
+      & .card-plate {
+      }
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .energyDecisions {
+    & .main-header {
+      margin-bottom: 50px;
+    }
+    & .cards-plate {
+      & .card {
+        // width: 220px;
+        // height: 220px;
+        // margin: 0 auto;
+        & .card-image-container {
+          // margin-top: 28px;
+          & .card-image {
+          }
+        }
+        & .card-heading {
+          // color: #4b4b4b;
+          // font-size: 20px;
+          // font-weight: 700;
+          // line-height: 36px;
+          // letter-spacing: -0.53px;
+        }
+        & .card-desc {
+          // font-size: 13px;
+          // line-height: 22px;
+          // letter-spacing: -0.33px;
+        }
+      }
+
+      // & .card-plate:nth-child(2) {
+      //   margin-top: 100px;
+      // }
+      // & .card-plate:nth-child(4) {
+      //   margin-top: 50px;
+      // }
+      & .card-plate {
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .energyDecisions {
+    & .energy-image-container {
+    }
+    & .cards-plate {
+      & .card {
+        // width: 270px;
+        // height: 270px;
+        & .card-image-container {
+          & .card-image {
+          }
+        }
+        & .card-heading {
+        }
+        & .card-desc {
+          // font-size: 14px;
+          // padding: 0 16px;
+        }
+      }
+
+      & .card-plate:nth-child(2) {
+      }
+      & .card-plate:nth-child(4) {
+      }
+      & .card-plate {
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .energyDecisions {
+    & .mycontainer {
+      max-width: 960px;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    & .main-header {
+      margin-bottom: 60px;
+      margin-top: 55px;
+    }
+    & .subheading-common {
+      text-align: center;
+      padding: 0 50px;
+    }
+    & .text-common {
+      width: 60%;
+    }
+
+    & .cards-plate {
+      margin-top: 80px;
+      & .card {
+        &:nth-child(1) {
+          margin: 0 auto 0 0;
+        }
+        &:nth-child(2, 3) {
+          margin: 0 auto;
+        }
+        &:nth-child(4) {
+          margin: 0 0 0 auto;
+        }
+        // width: 240px;
+        // height: 240px;
+        & .card-image-container {
+          // margin-top: 20px;
+          & .card-image {
+            // width: 80px;
+            // height: 80px;
+            // margin-bottom: 10px;
+          }
+        }
+        & .card-heading {
+        }
+        & .card-desc {
+        }
+      }
+
+      & .card-plate:nth-child(2) {
+      }
+      & .card-plate:nth-child(4) {
+      }
+      & .card-plate {
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .energyDecisions {
+    & .mycontainer {
+      max-width: 1140px;
+    }
+  }
+}
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+}

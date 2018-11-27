@@ -1,0 +1,169 @@
+@import '../vars';
+
+.mirovayaPraktika {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 50px;
+  &::before {
+    z-index: -1;
+    content: '';
+    top: -1%;
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background: linear-gradient(to top, #cfcfcf 0%, #cdcdcd 15%, #fafafa 100%);
+  }
+  & .graph {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 30px 0;
+    & .graph-col-container {
+      width: 20%;
+      & .graph-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .col-pic {
+          background: #cab4b4;
+          width: 50%;
+          margin-bottom: 15px;
+          position: relative;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            border-radius: 50%;
+            box-shadow: 2px 0px 24px;
+            z-index: -1;
+            bottom: 6px;
+          }
+        }
+        & .col-pic-1 {
+          height: 35px;
+          margin-top: 65px;
+        }
+        & .col-pic-2 {
+          height: 45px;
+          margin-top: 55px;
+        }
+        & .col-pic-3 {
+          height: 60px;
+          margin-top: 40px;
+        }
+        & .col-pic-4 {
+          height: 65px;
+          margin-top: 35px;
+        }
+        & .col-pic-5 {
+          height: 100px;
+        }
+        & .col-heading {
+          font-family: $noto-font;
+          font-size: 10px;
+          letter-spacing: -0.5px;
+          font-weight: 700;
+        }
+        & .col-percent {
+          font-family: $noto-font;
+          font-size: 10px;
+          letter-spacing: -0.5px;
+          color: #cb4828;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) {
+  .mirovayaPraktika {
+    &::before {
+      top: -3%;
+    }
+    & .graph {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 30px 0;
+      & .graph-col-container {
+        width: 20%;
+        & .graph-col {
+          & .col-heading {
+            font-family: $noto-font;
+            font-size: 12px;
+            letter-spacing: -0.5px;
+          }
+          & .col-percent {
+            font-family: $noto-font;
+            font-size: 12px;
+            letter-spacing: -0.5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .mirovayaPraktika {
+    &::before {
+      top: -1%;
+    }
+    & .graph {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 30px 0;
+      & .graph-col-container {
+        width: 20%;
+        & .graph-col {
+          & .col-heading {
+            font-family: $noto-font;
+            font-size: 12px;
+            letter-spacing: -0.5px;
+          }
+          & .col-percent {
+            font-family: $noto-font;
+            font-size: 12px;
+            letter-spacing: -0.5px;
+          }
+          & .col-pic-1 {
+            height: 55px;
+            margin-top: 65px;
+          }
+          & .col-pic-2 {
+            height: 65px;
+            margin-top: 55px;
+          }
+          & .col-pic-3 {
+            height: 80px;
+            margin-top: 40px;
+          }
+          & .col-pic-4 {
+            height: 85px;
+            margin-top: 35px;
+          }
+          & .col-pic-5 {
+            height: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+}

@@ -1,0 +1,208 @@
+@import '../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import './libs';
+@import './fonts';
+@import './vars';
+
+body {
+  font-family: $noto-font;
+  background: #fafafa;
+}
+nav {
+  text-align: center;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav > ul {
+  padding: 4px 16px;
+}
+li {
+  display: flex;
+  padding: 6px 8px;
+}
+a {
+  color: #067df7;
+  text-decoration: none;
+  font-size: 13px;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+}
+.header-common {
+  font-family: $noto-font;
+  margin-top: 35px;
+  color: #313131;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  font-style: bold;
+  //letter-spacing: -0.45px;
+}
+.header-red {
+  font-family: $noto-font;
+  color: #b54724;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+  // letter-spacing: -0.45px;
+}
+.subheading-common {
+  display: block;
+  font-family: $noto-font;
+  color: #313131;
+  //font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  margin-bottom: 30px;
+  //letter-spacing: -0.35px;
+}
+.subheading-red-bottom {
+  color: #cb4828 !important;
+  display: block;
+  margin-bottom: 30px;
+}
+.text-common {
+  display: block;
+  font-family: $noto-font;
+  color: #3b3b3b;
+  // font-family: "Noto Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.35px;
+  margin-bottom: 0px;
+}
+.text-bold {
+  display: block;
+  font-family: $noto-font;
+  color: #313131;
+  //font-family: "Noto Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  // letter-spacing: -0.4px;
+}
+.mycontainer {
+  width: 100%;
+}
+.text-italic {
+  font-family: $noto-font;
+  font-style: italic;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .mycontainer {
+    max-width: 540px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .header-common {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 250px;
+      height: 3px;
+      background-color: #cb4828;
+      left: -260px;
+      top: 16px;
+    }
+  }
+  .text-common {
+    line-height: 26px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .header-common {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .subheading-common {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+  .mycontainer {
+    max-width: 720px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .header-common {
+    font-size: 32px;
+    line-height: 44px;
+    &::after {
+      top: 23px;
+    }
+  }
+  .subheading-common {
+    margin-bottom: 50px;
+  }
+  .mycontainer {
+    max-width: 960px;
+  }
+  .text-common {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .text-bold {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .mycontainer {
+    max-width: 1140px;
+  }
+  .header-common {
+    // font-size: 32px;
+    // line-height: 44px;
+  }
+  .subheading-common {
+    font-size: 18px;
+    // margin-bottom: 50px;
+  }
+  .mycontainer {
+    // max-width: 960px;
+  }
+  .text-common {
+    font-size: 18px;
+    // font-weight: 400;
+    // line-height: 32px;
+  }
+  .text-bold {
+    // font-size: 16px;
+    // font-weight: 700;
+    // line-height: 26px;
+  }
+}
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .header-common {
+    &:after {
+      width: 750px;
+      left: -760px;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+@import './vars';
+
+.portfolio {
+  margin-top: 20px;
+  margin-bottom: -16px;
+}
+.portfolio-header {
+  line-height: 30px;
+  font-family: $noto-font;
+}
+.portfolio-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0;
+  & .portfolio-li {
+    background: #949494;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 4px;
+    &:hover {
+      background: lighten($color: #949494, $amount: 20);
+      cursor: pointer;
+    }
+    &:nth-child(2) {
+      background: #acacac;
+      &:hover {
+        background: lighten($color: #acacac, $amount: 20);
+      }
+    }
+    &:nth-child(3) {
+      background: #c4c4c4;
+      &:hover {
+        background: lighten($color: #c4c4c4, $amount: 20);
+      }
+    }
+    &:nth-child(4) {
+      background: #fafafa;
+      &:hover {
+        background: #fff;
+      }
+    }
+    & .portfolio-company {
+      font-size: 10px;
+      letter-spacing: -0.35px;
+      font-weight: 500;
+    }
+    & .portfolio-link {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 400px) {
+  .portfolio-ul {
+    justify-content: flex-start;
+    padding: 0;
+    & .portfolio-li {
+      padding: 8px;
+      & .portfolio-company {
+        font-size: 10px;
+      }
+      & .portfolio-link {
+        font-size: 12px;
+      }
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .portfolio-ul {
+    & .portfolio-li {
+      padding: 14px 16px;
+      & .portfolio-company {
+        font-size: 11px;
+      }
+      & .portfolio-link {
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  & .portfolio-header {
+    margin-bottom: 10px;
+  }
+  .portfolio-ul {
+    & .portfolio-li {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 170px;
+      height: 76px;
+      padding: 14px 20px;
+      & .portfolio-company {
+        font-size: 12px;
+        font-weight: 500;
+      }
+      & .portfolio-link {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .portfolio-ul {
+    & .portfolio-li {
+      width: 200px;
+      height: 90px;
+      padding: 20px 20px;
+      & .portfolio-company {
+        font-size: 14px;
+      }
+      & .portfolio-link {
+        font-size: 16px;
+      }
+    }
+  }
+}
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
