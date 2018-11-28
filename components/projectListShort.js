@@ -1,7 +1,7 @@
 const projectListShort = [
   {
     label: 'Ледовая арена',
-    id: 1,
+    id: 0,
     img: 'project-1.jpg',
     as: '/ledovaya-arena',
     energy: '700кВт',
@@ -10,7 +10,7 @@ const projectListShort = [
   },
   {
     label: 'Фос-Агро',
-    id: 2,
+    id: 1,
     img: 'project-1.jpg',
     as: '/fos-agro',
     energy: '700кВт',
@@ -19,7 +19,7 @@ const projectListShort = [
   },
   {
     label: 'Водоканал',
-    id: 3,
+    id: 2,
     img: 'project-1.jpg',
     as: '/vodokanal',
     energy: '900кВт',

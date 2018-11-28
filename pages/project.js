@@ -18,7 +18,7 @@ const Project = props => (
 
 Project.getInitialProps = async function(context) {
   const { id } = context.query;
-  const project = projectList[id - 1];
+  const project = projectList[id];
 
   return { project };
 };
