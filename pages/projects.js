@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Head from '../components/head';
 import ProjectsMain from '../components/projects/projectsMain';
 import ProjectsListPlate from '../components/projects/projectsListPlate';
@@ -34,7 +33,13 @@ const Projects = () => (
       напряжением до 10,5 кВ, работающие на природном, сжиженном газе,
       пропан-бутановой смеси, попутном нефтяном газе.
     </Redzone>
-    <ProjectsListPlate />
+    <div className="container-fluid projects-list-plate">
+      <div className="mycontainer">
+        <div className="project-cards-plate">
+          <ProjectsListPlate />
+        </div>
+      </div>
+    </div>
   </div>
 );
 

@@ -6,30 +6,39 @@ import '../../scss/projects/projectsListPlate.scss';
 export class ProjectsListPlate extends Component {
   render() {
     const data = projectList;
+    const shortData = [];
+    data.map(item => {
+      if (item.id > 3) {
+        shortData.push(item);
+      }
+    });
+    console.log(projectList);
+    console.log(data);
+    console.log(shortData);
+
     return (
-      <div className="container-fluid projects-list-plate">
-        <div className="mycontainer">
-          <div className="project-cards-plate">
-            {data.map(({ key, id, city, energy, label, as, img }) => (
-              <Link href={`/projects/id${id}`} as={`/proekti${as}`} key={key}>
-                <div className="project-card">
-                  <div className="img-container">
-                    <img
-                      src={`../../static/images/${img}`}
-                      alt=""
-                      className="project-card-img"
-                    />
-                  </div>
-                  <div className="project-card-header-container">
-                    <span className="project-card-header">{label}</span>
-                    <span className="project-card-energy">{energy}</span>
-                    <span className="project-card-city">{city}</span>
-                  </div>
+      <div className="project-cards-small-plate">
+        {shortData.map(({ key, id, city, energy, label, img }) => (
+          <Link href={`/proekti?id=${id}`} as={`/proekti/${id}`} key={key}>
+            <div className="project-card-small ">
+              <div className="img-container">
+                <img
+                  src={`../../static/images/${img}`}
+                  alt=""
+                  className="project-card-img"
+                />
+              </div>
+              <div className="project-card-header-container">
+                <span className="project-card-header">{label}</span>
+                <div>
+                  <span className="project-card-energy">Мощность: </span>
+                  <span className="project-card-energy">{energy}</span>
                 </div>
-              </Link>
-            ))}
-          </div>
-        </div>
+                <span className="project-card-city">{city}</span>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
     );
   }
