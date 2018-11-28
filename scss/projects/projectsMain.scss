@@ -1,11 +1,13 @@
-@import '../vars';
-.redzone {
-  background: linear-gradient(-265deg, #cb4828 0%, #e46849 100%);
-  padding-top: 30px;
-  padding-bottom: 20px;
-  & .redzone-text {
-    color: #fff;
-    font-family: $noto-font;
+.project-cards-plate {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  & .project-card {
+    & .img-container {
+      & .project-card-img {
+        max-width: 100%;
+      }
+    }
   }
 }
 @media (min-width: 576px) {
