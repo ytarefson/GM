@@ -1,13 +1,13 @@
-import React from 'react';
-import Link from 'next/link';
-import '../../scss/rasgen/mirovayaPraktika.scss';
+import React from "react";
+import Link from "next/link";
+import "../../scss/rasgen/mirovayaPraktika.scss";
 
 export default MirovayaPraktika => (
   <div className="container-fluid mirovayaPraktika">
-    <div className="mycontainer">
+    <div className="mycontainer ">
       <h2 className="header-common">Мировая практика</h2>
       <span className="subheading-red-bottom">доля малой энергетики</span>
-      <p className="text-common">
+      <p className="text-min">
         Распределенная генерация, которую часто называют еще термином малая
         энергетика, составляет на данный момент около 5% от общей выработки
         электроэнергии на всей территории РФ. Этот показатель в России является
@@ -15,7 +15,7 @@ export default MirovayaPraktika => (
         факт, что более 70% всей малой энергетики РФ обусловлено расположением
         ее в районах, неохваченных централизованными сетями.
       </p>
-      <p className="text-common">
+      <p className="text-min">
         Так, например, в США доля распределенной генерации составляет также
         скромные 10%. В Германии и Голландии этот показатель самый высокий в
         мире и превышает 25% от общей мощности генерирующих мощностей. Большая
@@ -64,8 +64,8 @@ export default MirovayaPraktika => (
         </div>
       </div>
     </div>
-    <div className="mycontainer">
-      <p className="text-common">
+    <div className="mycontainer tm-cont">
+      <p className="text-min">
         Нужно отметить, что страны с высокой долей использования распределенной
         генерации обладают развитой экономикой, что позволяет сделать вывод о
         высоком значении малой энергетики на их экономику. Прежде всего, это
