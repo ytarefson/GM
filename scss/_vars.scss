@@ -1,10 +1,11 @@
-$noto-font: 'NotoSans', sans-serif;
+$noto-font: "NotoSans", sans-serif;
 $accent: #b3a764;
 $accent-dark: #3f3f3f;
 $sub-color: #9b9b9b;
 $wall-color: #ebebeb;
 $accent-grey: #727272;
 $text: #333;
+$box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;
@@ -22,5 +23,4 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px
 );
-
 $gutter: $grid-gutter-width;

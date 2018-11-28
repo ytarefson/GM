@@ -1,8 +1,8 @@
-@import '../node_modules/bootstrap/scss/bootstrap-reboot.scss';
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import './libs';
-@import './fonts';
-@import './vars';
+@import "../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./libs";
+@import "./fonts";
+@import "./vars";
 
 body {
   font-family: $noto-font;
@@ -10,6 +10,7 @@ body {
 }
 nav {
   text-align: center;
+  padding-top: 5px;
 }
 ul {
   display: flex;
@@ -23,9 +24,14 @@ li {
   padding: 6px 8px;
 }
 a {
-  color: #067df7;
+  color: #c94f28;
   text-decoration: none;
   font-size: 13px;
+  //text-align: right;
+  &:hover {
+    text-decoration: none;
+    color: #cb4828;
+  }
 }
 .home {
   display: flex;
@@ -36,32 +42,30 @@ a {
   margin-top: 35px;
   color: #313131;
   display: block;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 22px;
+  line-height: 32px;
   font-style: bold;
-  //letter-spacing: -0.45px;
+  letter-spacing: -0.65px;
 }
 .header-red {
   font-family: $noto-font;
-  color: #b54724;
+  //color: #b54724;
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 32px;
   margin-bottom: 20px;
-  // letter-spacing: -0.45px;
+  letter-spacing: -0.45px;
 }
 .subheading-common {
   display: block;
   font-family: $noto-font;
   color: #313131;
-  //font-family: "Noto Sans";
   font-size: 14px;
-  font-style: italic;
   line-height: 24px;
   margin-bottom: 30px;
-  //letter-spacing: -0.35px;
+  letter-spacing: -0.35px;
 }
 .subheading-red-bottom {
   color: #cb4828 !important;
@@ -113,12 +117,13 @@ a {
     position: relative;
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       width: 250px;
       height: 3px;
       background-color: #cb4828;
       left: -260px;
       top: 16px;
+      border-radius: 5px;
     }
   }
   .text-common {
@@ -168,6 +173,12 @@ a {
     font-weight: 700;
     line-height: 26px;
   }
+  a {
+    //font-size: 18px;
+    //font-weight: 700;
+    //text-align: right;
+    //letter-spacing: 0.5px;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -181,6 +192,7 @@ a {
   }
   .subheading-common {
     font-size: 18px;
+    line-height: 36px;
     // margin-bottom: 50px;
   }
   .mycontainer {
@@ -201,8 +213,8 @@ a {
 @media (min-width: 1400px) {
   .header-common {
     &:after {
-      width: 750px;
-      left: -760px;
+      width: 350px;
+      left: -400px;
     }
   }
 }

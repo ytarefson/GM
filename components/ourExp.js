@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import '../scss/ourExp.scss';
+import "../scss/ourExp.scss";
 
 export default OurExp => (
   <div className="container-fluid ourExp">
@@ -87,7 +87,7 @@ export default OurExp => (
           </ul>
         </div>
         <div className="col-12">
-          <p className="text-common text-italic">
+          <p className="text-common">
             Предлагаем весь спектр услуг по созданию Вашего автономного
             энергоцентра "под ключ": проектные, строительно-монатжные работы,
             пуско-наладочные работы, сопровождение объекта с первого дня до

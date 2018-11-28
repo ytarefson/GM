@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import '../scss/energyDecisions.scss';
+import "../scss/energyDecisions.scss";
 
 export default EnergyDecisions => (
   <div className="container-fluid p-0 energyDecisions">
@@ -72,7 +72,7 @@ export default EnergyDecisions => (
                       className="card-image"
                     />
                   </div>
-                  <span className="card-heading">Кондиционирование</span>
+                  <span className="card-heading">Охлаждение</span>
                   <div className="card-desc-container" />
                   <p className="card-desc">
                     Возможность конвертации тепла в холод и получения

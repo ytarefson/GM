@@ -1,8 +1,10 @@
-@import './vars';
+@import "./vars";
 .calcAdv {
-  background-image: linear-gradient(to right, #cb4828 0%, #e46849 100%);
+  background: linear-gradient(to right, #cb4828 0%, #e46849 100%);
   padding: 32px 15px;
   text-align: center;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  z-index: 3;
   & .calc-header {
     display: block;
     margin-bottom: 15px;
@@ -28,16 +30,19 @@
     margin: 30px auto 20px auto;
     height: 40px;
     border-radius: 20px;
+    background-color: #eecf34;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.15);
     color: #cb4828;
-    background: #fff;
     font-family: $noto-font;
     font-size: 16px;
     font-weight: 700;
     line-height: 40px;
-    //letter-spacing: -0.4px;
+    letter-spacing: -0.4px;
+    transition: box-shadow 0.2s;
     &:hover {
       text-decoration: none;
       cursor: pointer;
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
     }
   }
   & .calc-container {
@@ -73,9 +78,9 @@
     & .calc-header {
       text-align: left;
       font-size: 30px;
-      line-height: 50px;
+      line-height: 48px;
       margin-bottom: 0;
-      //letter-spacing: -1.2px;
+      letter-spacing: -0.44px;
     }
     & .calc-desc {
       text-align: left;

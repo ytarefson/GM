@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import '../scss/geo.scss';
+import "../scss/geo.scss";
 
 export default Geo => (
   <div className="container-fluid geo">
