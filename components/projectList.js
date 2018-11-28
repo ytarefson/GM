@@ -6,7 +6,9 @@ const projectList = [
     as: '/ledovaya-arena',
     energy: '700кВт',
     class: 'Энергоцентр',
-    city: 'Казань'
+    city: 'Казань',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur.'
   },
   {
     label: 'Фос-Агро',
@@ -15,7 +17,9 @@ const projectList = [
     as: '/fos-agro',
     energy: '700кВт',
     class: 'Энергоцентр',
-    city: 'Череповец'
+    city: 'Череповец',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur.'
   },
   {
     label: 'Водоканал',
@@ -24,7 +28,9 @@ const projectList = [
     as: '/vodokanal',
     energy: '900кВт',
     class: 'Энергоцентр',
-    city: 'Череповец'
+    city: 'Череповец',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur.'
   },
   {
     label: 'Аккус Актобе',
@@ -33,7 +39,9 @@ const projectList = [
     as: '/akkus-aktobe',
     energy: '900кВт',
     class: 'Энергоцентр',
-    city: 'Казастан'
+    city: 'Казастан',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur.'
   },
   {
     label: 'Артак Обувь',
@@ -42,7 +50,9 @@ const projectList = [
     as: '/artak-obuv',
     energy: '900кВт',
     class: 'Энергоцентр',
-    city: 'Кострома'
+    city: 'Кострома',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur.'
   },
   {
     label: 'СтройГазМонтаж',
@@ -51,7 +61,9 @@ const projectList = [
     as: '/stroy-gaz-montazh',
     energy: '900кВт',
     class: 'Энергоцентр',
-    city: ''
+    city: '',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur.'
   },
   {
     label: 'Смоленский кирпичный завод',
@@ -60,7 +72,9 @@ const projectList = [
     as: '/cmolenskiy-kirpichniy-zavod',
     energy: '900кВт',
     class: 'Энергоцентр',
-    city: ''
+    city: '',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur.'
   },
   {
     label: '"Мерси Агро"',
@@ -69,7 +83,9 @@ const projectList = [
     as: '/mersi-agro',
     energy: '900кВт',
     class: 'Энергоцентр',
-    city: 'Сахалин'
+    city: 'Сахалин',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur.'
   },
   {
     label: 'ПАО "Автодизель"',
@@ -78,7 +94,9 @@ const projectList = [
     as: '/avtodiesel',
     energy: '900кВт',
     class: 'Энергоцентр',
-    city: 'Ярославль'
+    city: 'Ярославль',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur.'
   },
   {
     label: 'Невская ратуша',
@@ -87,7 +105,9 @@ const projectList = [
     as: '/nevskaya-ratusha',
     energy: '900кВт',
     class: 'Энергоцентр',
-    city: 'Санкт-Петербург'
+    city: 'Санкт-Петербург',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur.'
   },
   {
     label: 'Ростов-арена',
@@ -96,7 +116,9 @@ const projectList = [
     as: '/rostov-arena',
     energy: '900кВт',
     class: 'Энергоцентр',
-    city: 'Ростов на Дону'
+    city: 'Ростов на Дону',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur.'
   }
 ].map(link => {
   link.key = `nav-link-${link.id}-${link.label}`;

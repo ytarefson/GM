@@ -12,9 +12,6 @@ export class ProjectsListPlate extends Component {
         shortData.push(item);
       }
     });
-    console.log(projectList);
-    console.log(data);
-    console.log(shortData);
 
     return (
       <div className="project-cards-small-plate">
