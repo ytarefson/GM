@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from 'next/link';
-import '../../scss/rasgen/aboutTechnology.scss';
+import React from "react";
+import Link from "next/link";
+import "../../scss/rasgen/aboutTechnology.scss";
 
 export default AboutTechnology => (
   <div className="container-fluid aboutTechnology">
@@ -13,7 +13,7 @@ export default AboutTechnology => (
         крупные предприятия.
       </span>
       <div className="row m-0">
-        <div className="col-12 col-lg-6 order-lg-2 p-0">
+        <div className="col-12 col-lg-6 order-lg-2">
           <div className="img-container">
             <img
               src="../../static/images/about-tech.jpg"
@@ -22,8 +22,8 @@ export default AboutTechnology => (
             />
           </div>
         </div>
-        <div className="col-12 col-lg-6 order-lg-1 p-0">
-          <p className="text-common">
+        <div className="col-12 col-lg-6 tm-cont order-lg-1">
+          <p className="text-min">
             Все эти факторы определили развитие распределенной генерации,
             основанной на создании источников средней и малой мощности (до 25
             МВт) прямо на предприятии – потребители или в непосредственной

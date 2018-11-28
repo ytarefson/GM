@@ -1,11 +1,11 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 export default AboutTechnology2 => (
   <div className="container-fluid aboutTechnology">
     <div className="mycontainer">
       <div className="row m-0">
-        <div className="col-12 col-md-6 p-0">
+        <div className="col-12 col-md-6">
           <div className="img-container">
             <img
               src="../../static/images/about-tech-2.jpg"
@@ -14,8 +14,8 @@ export default AboutTechnology2 => (
             />
           </div>
         </div>
-        <div className="col-12 col-md-6 p-0">
-          <p className="text-common">
+        <div className="col-12 col-md-6 tm-cont">
+          <p className="text-min">
             Развитие технологий существенно повысило производительность труда и
             энергетическую эффективность оборудования, используемую при
             производстве той или иной продукции. В экономике появилось множество

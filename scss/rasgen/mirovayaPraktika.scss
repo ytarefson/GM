@@ -1,14 +1,15 @@
-@import '../vars';
+@import "../vars";
 
 .mirovayaPraktika {
+  margin-top: 70px;
   position: relative;
   z-index: 2;
-  padding-bottom: 50px;
+  padding-bottom: 120px;
   &::before {
     z-index: -1;
-    content: '';
+    content: "";
     top: -1%;
-    height: 60%;
+    height: 52%;
     width: 100%;
     position: absolute;
     left: 0;
@@ -28,19 +29,23 @@
         & .col-pic {
           background: #cab4b4;
           width: 50%;
-          margin-bottom: 15px;
+          margin-bottom: 20px;
           position: relative;
           border-top-left-radius: 5px;
           border-top-right-radius: 5px;
           &::after {
-            content: '';
+            content: "";
             position: absolute;
-            width: 100%;
-            height: 10px;
+            width: 160%;
+            height: 22px;
+            background: radial-gradient(#d1d1d1 0%, #ffffff 100%);
+            //background-color: rgba(173, 173, 173, 0.3);
             border-radius: 50%;
-            box-shadow: 2px 0px 24px;
+            filter: blur(3px);
             z-index: -1;
-            bottom: 6px;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-45%);
           }
         }
         & .col-pic-1 {
@@ -123,13 +128,15 @@
         width: 20%;
         & .graph-col {
           & .col-heading {
+            //margin-top: 40px;
             font-family: $noto-font;
-            font-size: 12px;
+            font-size: 16px;
             letter-spacing: -0.5px;
           }
           & .col-percent {
+            margin-top: 5px;
             font-family: $noto-font;
-            font-size: 12px;
+            font-size: 16px;
             letter-spacing: -0.5px;
           }
           & .col-pic-1 {
