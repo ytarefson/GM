@@ -1,11 +1,15 @@
-@import './vars';
+@import "./vars";
 .generalServices {
   background: #fafafa;
-  background-image: url('/static/images/back-1.jpg');
+  background-image: url("/static/images/back-13.jpg");
   background-position: 100% 0%;
+  background-size: 70%;
   background-repeat: no-repeat;
   & .mycontainer-cards {
     margin-top: 40px;
+    & .cards-container {
+      padding: 15px;
+    }
   }
   & .teh-plate {
     padding-left: 12px;
@@ -19,39 +23,38 @@
 
   & .teh-card {
     display: block;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+
+    //box-shadow: $box-shadow;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
     margin: 0 auto;
     margin-bottom: 40px;
     background-color: #ffffff;
     max-width: 142px;
     max-height: 235px;
+    transition: all 0.2s;
     &:hover {
       cursor: pointer;
       text-decoration: none;
-      & .teh-image-container {
-        &::after {
-          // background-image: linear-gradient(
-          //   to bottom,
-          //   rgba(255, 0, 0, 0) 0%,
-          //   rgba(249, 204, 6, 0.5) 50%,
-          //   rgba(239, 127, 26, 1) 100%
-          // );
-          transition-duration: 0.2s;
-        }
-        & .teh-image {
-          transform: scale(1.2);
-          transition-duration: 0.2s;
-        }
+      box-shadow: $box-shadow;
+      & .teh-image-container::after {
+        z-index: 3;
+        background: none;
+        background: linear-gradient(
+          to bottom,
+          rgba(203, 72, 40, 0.5) 0%,
+          rgba(203, 72, 40, 1) 100%
+        );
+      }
+      & .teh-image-container .header-container .teh-header {
+        background: transparent;
       }
     }
-
     & .teh-image-container {
       // max-height: 113px;
       overflow: hidden;
       position: relative;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
+      transition: all 0.2s;
       background: linear-gradient(
         to right,
         #cfcfcf 0%,
@@ -59,7 +62,7 @@
         #cfcfcf 100%
       );
       &::after {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         z-index: 3;
@@ -82,8 +85,7 @@
         height: 155px;
         object-fit: cover;
         // border-radius: 5px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        transition: all 0.2s;
         position: relative;
         z-index: 2;
       }
@@ -106,6 +108,9 @@
             rgba(0, 0, 0, 0) 0%,
             rgba(0, 0, 0, 0.65) 100%
           );
+          &:hover {
+            background: transparent;
+          }
         }
       }
     }
@@ -130,10 +135,15 @@
     }
   }
   & .services-more {
+    width: 100%;
+    text-align: right;
   }
 }
 // Small devices (landscape phones, 400px and up)
 @media (min-width: 400px) {
+  .generalServices {
+    background-size: 70%;
+  }
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
@@ -164,6 +174,7 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .generalServices {
+    background-size: auto;
     padding-top: 30px;
     padding-bottom: 30px;
     & .teh-plate {
@@ -178,16 +189,18 @@
         & .header-container {
           width: 100%;
           & .teh-header {
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 18px;
+            line-height: 22px;
+            padding: 0 20px 10px;
           }
         }
       }
       & .teh-content {
         height: 120px;
+        padding: 10px 20px;
         & .teh-desc {
           font-size: 14px;
-          line-height: 22px;
+          line-height: 20px;
         }
       }
     }
@@ -201,8 +214,11 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .generalServices {
+    & .cards-container {
+      max-width: 1000px;
+    }
     & .mycontainer-cards {
-      max-width: 930px;
+      max-width: 1140px;
     }
     & .teh-plate {
     }
@@ -215,9 +231,10 @@
         }
         & .header-container {
           & .teh-header {
-            padding: 16px;
-            font-size: 16px;
-            line-height: 18px;
+            padding: 0 16px 10px;
+            font-size: 17px;
+            line-height: 20px;
+            text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
           }
         }
       }
@@ -226,8 +243,8 @@
         height: 111px;
         padding: 10px 16px;
         & .teh-desc {
-          font-size: 12px;
-          line-height: 18px;
+          font-size: 13px;
+          line-height: 19px;
         }
       }
     }

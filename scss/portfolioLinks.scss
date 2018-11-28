@@ -1,4 +1,4 @@
-@import './vars';
+@import "./vars";
 
 .portfolio {
   margin-top: 20px;
@@ -7,6 +7,7 @@
 .portfolio-header {
   line-height: 30px;
   font-family: $noto-font;
+  padding-left: 30px;
 }
 .portfolio-ul {
   display: flex;
@@ -79,6 +80,13 @@
       & .portfolio-link {
         font-size: 14px;
         font-weight: 700;
+      }
+    }
+  }
+  .portfolio {
+    & .mycontainer {
+      & .portfolio-header {
+        padding-left: 0px;
       }
     }
   }

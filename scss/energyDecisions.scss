@@ -1,7 +1,7 @@
-@import './vars';
+@import "./vars";
 .energyDecisions {
   background: #fafafa;
-  background-image: url('/static/images/back-3.png');
+  background-image: url("/static/images/back-3.png");
   background-repeat: no-repeat;
   background-position: 100% 0%;
   margin-bottom: 50px;
@@ -12,8 +12,8 @@
     font-family: $noto-font;
     &::before {
       position: absolute;
-      content: '';
-      width: 50%;
+      content: "";
+      width: 35%;
       height: 3px;
       background-color: #cb4828;
       bottom: -10px;
@@ -28,39 +28,45 @@
     width: 100%;
 
     & .card {
+      border-radius: 0;
+      border: none;
       width: 220px;
       max-width: 250px;
       height: 220px;
       margin: 0 auto;
+      padding: 20px 0 0 30px;
       //max-height: 250px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-      text-align: center;
-      border-radius: 5px;
+      box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      transition: all 0.2s;
+      &:hover {
+        box-shadow: $box-shadow;
+      }
       & .card-image-container {
-        margin-top: 16px;
         margin-bottom: 6px;
-        text-align: center;
+        text-align: left;
         & .card-image {
-          width: 85px;
-          height: 85px;
+          width: 60px;
+          height: 60px;
         }
       }
       & .card-heading {
+        margin-top: 5px;
         color: #4b4b4b;
         font-family: $noto-font;
         font-size: 18px;
         font-weight: 700;
         line-height: 34px;
-        letter-spacing: -0.53px;
+        letter-spacing: -0.44px;
       }
       & .card-desc {
+        margin-top: 10px;
         color: #313131;
         font-family: $noto-font;
         font-size: 13px;
-        font-style: italic;
         line-height: 22px;
         letter-spacing: -0.33px;
-        padding: 0 7px;
+        padding-right: 15px;
       }
     }
     & .card-plate {
