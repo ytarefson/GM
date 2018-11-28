@@ -18,9 +18,21 @@ app.prepare().then(() => {
   server.get('/proekti', (req, res) => {
     return app.render(req, res, '/projects', req.query);
   });
+  // server.get('/proekti/:id', (req, res) => {
+  //   return app.render(req, res, '/proekti', { id: req.params.id });
+  // });
+
+  // server.get('/p/:id', (req, res) => {
+  //   const actualPage = '/post'
+  //   const queryParams = { id: req.params.id }
+  //   app.render(req, res, actualPage, queryParams)
+  // });
   server.get('/proekti/:id', (req, res) => {
-    return app.render(req, res, '/proekti', { id: req.params.id });
+    const actualPage = '/project';
+    const queryParams = { id: req.params.id };
+    app.render(req, res, actualPage, queryParams);
   });
+
   server.get('/produkciya', (req, res) => {
     return app.render(req, res, '/products', req.query);
   });

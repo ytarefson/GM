@@ -1,10 +1,55 @@
-.projects-list-plate {
+.project-cards-small-plate {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  & .project-card-small {
+    margin-bottom: 30px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+    max-width: 270px;
+    & .img-container {
+      & .project-card-img {
+        max-width: 100%;
+      }
+    }
+    & .project-card-header-container {
+      padding: 10px 15px;
+    }
+  }
 }
 @media (min-width: 576px) {
+  .project-cards-small-plate {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & .project-card-small {
+      width: 100%;
+      height: auto;
+      max-width: 240px;
+      & .img-container {
+        & .project-card-img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .project-cards-small-plate {
+    & .project-card-small {
+      max-width: 220px;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -13,6 +58,11 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .project-cards-small-plate {
+    & .project-card-small {
+      max-width: 255px;
+    }
+  }
 }
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {

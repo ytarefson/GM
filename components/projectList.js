@@ -51,7 +51,7 @@ const projectList = [
     as: '/stroy-gaz-montazh',
     energy: '900кВт',
     class: 'Энергоцентр',
-    city: 'project-1.jpg'
+    city: ''
   },
   {
     label: 'Смоленский кирпичный завод',

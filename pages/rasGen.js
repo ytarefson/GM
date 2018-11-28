@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Head from '../components/head';
 import CalcAdv from '../components/calcAdv';
 import AboutTechnology from '../components/rasgen/aboutTechnology';
