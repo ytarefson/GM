@@ -12,15 +12,12 @@ export class ProjectsListPlate extends Component {
         shortData.push(item);
       }
     });
-    console.log(projectList);
-    console.log(data);
-    console.log(shortData);
 
     return (
       <div className="project-cards-small-plate">
         {shortData.map(({ key, id, city, energy, label, img }) => (
           <Link href={`/proekti?id=${id}`} as={`/proekti/${id}`} key={key}>
-            <div className="project-card-small ">
+            <a className="project-card-small ">
               <div className="img-container">
                 <img
                   src={`../../static/images/${img}`}
@@ -36,7 +33,7 @@ export class ProjectsListPlate extends Component {
                 </div>
                 <span className="project-card-city">{city}</span>
               </div>
-            </div>
+            </a>
           </Link>
         ))}
       </div>

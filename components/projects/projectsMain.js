@@ -10,7 +10,7 @@ export class ProjectsMain extends Component {
       <div className="project-cards-plate">
         {data.map(({ key, id, city, energy, label, as, img }) => (
           <Link href={`/proekti?id=${id}`} as={`/proekti/${id}`} key={key}>
-            <div className="project-card">
+            <a className="project-card">
               <div className="img-container">
                 <img
                   src={`../../static/images/${img}`}
@@ -25,7 +25,7 @@ export class ProjectsMain extends Component {
                 </div>
                 <span className="project-card-city">{city}</span>
               </div>
-            </div>
+            </a>
           </Link>
         ))}
       </div>
