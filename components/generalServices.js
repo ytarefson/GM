@@ -73,7 +73,7 @@ const services = [
 
 export default GeneralServices => (
   <div className="container-fluid generalServices">
-    <div className="mycontainer">
+    <div className="mycontainer p-3">
       <h2 className="header-common">
         Основные направления
         <br />

@@ -7,7 +7,7 @@ export default AboutTechnology => (
     <div className="mycontainer">
       <h2 className="header-common">Распределённая генерация</h2>
       <span className="subheading-red-bottom">О технологии</span>
-      <span className="subheading-common">
+      <span className="subheading-common-2">
         Многие десятилетия развитие энергетики строилось на создании крупных
         энергетических центров, в основе потребления которых стоят такие же
         крупные предприятия.

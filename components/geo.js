@@ -5,7 +5,7 @@ import "../scss/geo.scss";
 export default Geo => (
   <div className="container-fluid geo">
     <div className="mycontainer">
-      <div className="row geo-text-block">
+      <div className="row geo-text-block p-3">
         <div className="col-12 col-lg-6 order-lg-2">
           <h2 className="geo-header header-red">География нашего бизнеса</h2>
           <p className="geo-text text-common">

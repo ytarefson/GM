@@ -1,7 +1,7 @@
-import React from 'react';
-import Link from './Link';
-import menu from './menu';
-import '../scss/nav.scss';
+import React from "react";
+import Link from "./Link";
+import menu from "./menu";
+import "../scss/nav.scss";
 
 const Nav = () => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">

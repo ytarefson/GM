@@ -1,12 +1,12 @@
-import React from 'react';
-import Head from '../components/head';
-import ProjectsMain from '../components/projects/projectsMain';
-import ProjectsListPlate from '../components/projects/projectsListPlate';
-import Redzone from '../components/redzone';
-import Layout from '../components/Layout';
+import React from "react";
+import Head from "../components/head";
+import ProjectsMain from "../components/projects/projectsMain";
+import ProjectsListPlate from "../components/projects/projectsListPlate";
+import Redzone from "../components/redzone";
+import Layout from "../components/Layout";
 
 const message =
-  'С 2006 года до настоящего времени, компанией выпущено 75 электростанций суммарной мощностью более 21 МВт. В производственной линейке газовые электростанции MAN, Liebherr и ЯМЗ единичной мощностью до 1 МВт и напряжением до 10,5 кВ, работающие на природном, сжиженном газе, пропан-бутановой смеси, попутном нефтяном газе.';
+  "С 2006 года до настоящего времени, компанией выпущено 75 электростанций суммарной мощностью более 21 МВт. В производственной линейке газовые электростанции MAN, Liebherr и ЯМЗ единичной мощностью до 1 МВт и напряжением до 10,5 кВ, работающие на природном, сжиженном газе, пропан-бутановой смеси, попутном нефтяном газе.";
 
 const Projects = () => (
   <div>
