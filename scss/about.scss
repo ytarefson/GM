@@ -1,13 +1,21 @@
-@import './vars';
+@import "./vars";
 .about {
   & .logo-container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     & .logo-very-big {
-      max-width: 100%;
+      display: block;
+      width: 80%;
+      height: auto;
     }
   }
   & .img-container {
     & .about-pic {
       max-width: 100%;
+      box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+      border: 10px solid white;
     }
   }
 }

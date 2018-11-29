@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Link from 'next/link';
-import Head from '../components/head';
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
-import '../scss/about.scss';
+import React, { Component } from "react";
+import Link from "next/link";
+import Head from "../components/head";
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
+import "../scss/about.scss";
 
 export class About extends Component {
   render() {
@@ -18,7 +18,7 @@ export class About extends Component {
               <div className="col-12 col-md-6 p-0">
                 <span className="subheading-red-top">О компании</span>
                 <h2 className="header-razdel">История, факты...</h2>
-                <p className="subheading-common">
+                <p className="subheading-common-2 mt-5">
                   Компания «Газовые машины» образована 10 октября 2006 г. В
                   течении 12 лет основным профилем деятельности компании
                   является производство и поставка "под ключ" автономных
@@ -39,7 +39,7 @@ export class About extends Component {
                 </div>
               </div>
             </div>
-            <div className="row m-0">
+            <div className="row m-0 mt-5 mb-5">
               <div className="col-12 col-md-4">
                 <div className="img-container">
                   <img
@@ -69,16 +69,16 @@ export class About extends Component {
               </div>
             </div>
             <div className="row m-0">
-              <div className="col-12 p-0">
-                <p className="text-common">
-                  С 2006 г. до настоящего времени компанией выпущено{' '}
+              <div className="col-12 pl-3 pr-3">
+                <p className="text-min">
+                  С 2006 г. до настоящего времени компанией выпущено{" "}
                   <b>75 электростанций суммарной мощностью более 21 МВт.</b> В
                   производственной линейке газовые электростанции MAN, Liebherr
                   и ЯМЗ единичной мощностью до 1 МВт и напряжением до 10,5 кВ,
                   работающие на природном, сжиженном газе, пропан-бутановой
                   смеси, попутном нефтяном газе.
                 </p>
-                <p className="text-common">
+                <p className="text-min">
                   Производственные площади комании 1 900 кв.м. расположены в г.
                   Ярославле. Производство сертифицировано концерном MAN и
                   компанией Motortech, что подтверждает высокое качество
@@ -88,7 +88,7 @@ export class About extends Component {
                   Технические руководители компании имеют ученую степень
                   кандидатов технических наук.
                 </p>
-                <p className="text-common">
+                <p className="text-min">
                   <b>
                     Приглашаем посетить наше производство, где Вы, в удобное для
                     Вас время, сможете ознакомится с образцами продукции.
@@ -98,7 +98,7 @@ export class About extends Component {
             </div>
           </div>
         </div>
-        <div className="container-fluid contacts">
+        <div className="container-fluid contacts mt-5">
           <div className="mycontainer">
             <span className="header-common contacts-heading">Контакты:</span>
           </div>
@@ -148,7 +148,7 @@ export class About extends Component {
               >
                 <Marker
                   onClick={this.onMarkerClick}
-                  name={'Current location'}
+                  name={"Current location"}
                 />
                 {/* <InfoWindow onClose={this.onInfoWindowClose}>
                   <div>
@@ -164,7 +164,10 @@ export class About extends Component {
             <div className="row m-0">
               <div className="col-12">
                 <h2 className="header-common">Направления</h2>
-                <p className="text-common">
+                <span className="subheading-red-bottom">
+                  полный цикл производства
+                </span>
+                <p className="text-min">
                   Кроме производства мини-ТЭС мы осуществляем поставку,
                   трансформаторных подстанций, КРУ, и прочего вспомогательного
                   оборудования и обеспечиваем поставку запасных частей.
@@ -175,7 +178,7 @@ export class About extends Component {
                   персонала, сервисное обслуживание.
                 </p>
                 <br />
-                <p className="text-common">
+                <p className="text-min">
                   В нашей компетенции "готовые решения" по организации
                   автономного энергоснабжения для: промышленных предприятий,
                   объектов нефтегазовой сферы, объектов газотранспортной
@@ -185,7 +188,7 @@ export class About extends Component {
                   отдыха.
                 </p>
                 <br />
-                <p className="text-common">
+                <p className="text-min">
                   Спектр поставляемого оборудования позволяет осуществлять
                   полную модернизацию энергетического хозяйства предприятий, от
                   замены устаревшего котельного оборудования, до организации
@@ -204,5 +207,5 @@ export class About extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyCB0I6jT_lFFe5FCdsB7umIxzSSKrgaxvs'
+  apiKey: "AIzaSyCB0I6jT_lFFe5FCdsB7umIxzSSKrgaxvs"
 })(About);

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import projectList from '../projectList';
-import Link from 'next/link';
-import '../../scss/projects/projectsListPlate.scss';
+import React, { Component } from "react";
+import projectList from "../projectList";
+import Link from "next/link";
+import "../../scss/projects/projectsListPlate.scss";
 
 export class ProjectsListPlate extends Component {
   render() {
@@ -26,9 +26,8 @@ export class ProjectsListPlate extends Component {
                 />
               </div>
               <div className="project-card-header-container">
-                <span className="project-card-header">{label}</span>
-                <div>
-                  <span className="project-card-energy">Мощность: </span>
+                <div className="head-wrap">
+                  <span className="project-card-header">{label}</span>
                   <span className="project-card-energy">{energy}</span>
                 </div>
                 <span className="project-card-city">{city}</span>

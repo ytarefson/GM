@@ -39,6 +39,11 @@ nav {
           width: 100%;
         }
       }
+      & .active {
+        &:before {
+          width: 100%;
+        }
+      }
       & .nav-calc-link {
         font-family: $noto-font;
         padding: 0;
