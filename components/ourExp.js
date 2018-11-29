@@ -5,7 +5,7 @@ import "../scss/ourExp.scss";
 export default OurExp => (
   <div className="container-fluid ourExp">
     <div className="mycontainer">
-      <div className="row">
+      <div className="row p-3">
         <div className="col-12 col-lg-9">
           <h2 className="header-common">
             Наш опыт и компетенции позволяют
@@ -16,7 +16,7 @@ export default OurExp => (
           </h2>
         </div>
         <div className="col-12 col-lg-9">
-          <p className="text-common">
+          <p className="text-common mt-3">
             Спектр поставляемого оборудования позволяет осуществлять полную
             модернизацию энергетического хозяйства предприятий, от замены
             устаревшего котельного оборудования, до организации полностью
@@ -26,7 +26,7 @@ export default OurExp => (
         <div className="col-12">
           <ul className="ourExp-list">
             <div className="row">
-              <div className="col-12 col-lg-6 ourExp-col">
+              <div className="col-12 col-lg-6 ourExp-col mb-2">
                 <li className="ourExp-li">
                   <span className="ourExp-span text-bold">
                     Промышленные предприятия
@@ -34,49 +34,49 @@ export default OurExp => (
                 </li>
               </div>
 
-              <div className="col-12 col-lg-6 ourExp-col">
+              <div className="col-12 col-lg-6 ourExp-col mb-2">
                 <li className="ourExp-li">
                   <span className="ourExp-span text-bold">
                     Объекты нефтегазовой сферы
                   </span>
                 </li>
               </div>
-              <div className="col-12 col-lg-6 ourExp-col">
+              <div className="col-12 col-lg-6 ourExp-col mb-2">
                 <li className="ourExp-li">
                   <span className="ourExp-span text-bold">
                     Лечебные учреждения и базы отдыха
                   </span>
                 </li>
               </div>
-              <div className="col-12 col-lg-6 ourExp-col">
+              <div className="col-12 col-lg-6 ourExp-col mb-2">
                 <li className="ourExp-li">
-                  <span className="ourExp-span text-bold">
+                  <span className="ourExp-span text-bold mb-2">
                     Гостиницы, санатории и больницы
                   </span>
                 </li>
               </div>
-              <div className="col-12 col-lg-6 ourExp-col">
+              <div className="col-12 col-lg-6 ourExp-col mb-2">
                 <li className="ourExp-li">
                   <span className="ourExp-span text-bold">
                     Животноводческие комплексы
                   </span>
                 </li>
               </div>
-              <div className="col-12 col-lg-6 ourExp-col">
+              <div className="col-12 col-lg-6 ourExp-col mb-2">
                 <li className="ourExp-li">
                   <span className="ourExp-span text-bold">
                     Торгово-развлекательные центры
                   </span>
                 </li>
               </div>
-              <div className="col-12 col-lg-6 ourExp-col">
+              <div className="col-12 col-lg-6 ourExp-col mb-2">
                 <li className="ourExp-li">
                   <span className="ourExp-span text-bold">
                     Ледовые дворцы спорта и прочие спортивные обекты
                   </span>
                 </li>
               </div>
-              <div className="col-12 col-lg-6 ourExp-col">
+              <div className="col-12 col-lg-6 ourExp-col mb-2">
                 <li className="ourExp-li">
                   <span className="ourExp-span text-bold">
                     Объекты газотранспортной системы
