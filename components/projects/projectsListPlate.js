@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import projectList from '../projectList';
+import projectList from '../tables/projectList';
 import Link from 'next/link';
 import '../../scss/projects/projectsListPlate.scss';
 

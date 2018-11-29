@@ -30,7 +30,7 @@ const Nav = () => (
         </li> */}
         {menu.map(({ key, href, label, as }) => (
           <li className="nav-item" key={key}>
-            <Link activeClassName="active" href={href} as={as}>
+            <Link activeClassName="active" href={href}>
               <a className="nav-link">{label}</a>
             </Link>
           </li>

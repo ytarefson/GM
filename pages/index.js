@@ -8,6 +8,7 @@ import CalcAdv from '../components/calcAdv';
 import GeneralServices from '../components/generalServices';
 import Geo from '../components/geo';
 import OurExp from '../components/ourExp';
+import Layout from '../components/Layout';
 
 const Home = () => (
   <div className="home">
@@ -15,12 +16,14 @@ const Home = () => (
       title="Газовые машины!"
       description="Газовые машины - современная компания с собственным производством!"
     />
-    <MainAdv />
-    <EnergyDecisions />
-    <CalcAdv />
-    <GeneralServices />
-    <Geo />
-    <OurExp />
+    <Layout>
+      <MainAdv />
+      <EnergyDecisions />
+      <CalcAdv />
+      <GeneralServices />
+      <Geo />
+      <OurExp />
+    </Layout>
   </div>
 );
 

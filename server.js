@@ -12,49 +12,44 @@ app.prepare().then(() => {
   server.get('/raspredelennaya-generaciya', (req, res) => {
     return app.render(req, res, '/rasGen', req.query);
   });
+  server.get('/rasGen', (req, res) => {
+    return app.render(req, res, '/rasGen', req.query);
+  });
   server.get('/novosti', (req, res) => {
+    return app.render(req, res, '/news', req.query);
+  });
+  server.get('/news', (req, res) => {
     return app.render(req, res, '/news', req.query);
   });
   server.get('/proekti', (req, res) => {
     return app.render(req, res, '/projects', req.query);
   });
-  // server.get('/proekti/:id', (req, res) => {
-  //   return app.render(req, res, '/proekti', { id: req.params.id });
-  // });
-
-  // server.get('/p/:id', (req, res) => {
-  //   const actualPage = '/post'
-  //   const queryParams = { id: req.params.id }
-  //   app.render(req, res, actualPage, queryParams)
-  // });
+  server.get('/projects', (req, res) => {
+    return app.render(req, res, '/projects', req.query);
+  });
   server.get('/proekti/:id', (req, res) => {
     const actualPage = '/project';
     const queryParams = { id: req.params.id };
     app.render(req, res, actualPage, queryParams);
   });
-
   server.get('/produkciya', (req, res) => {
+    return app.render(req, res, '/products', req.query);
+  });
+  server.get('/products', (req, res) => {
     return app.render(req, res, '/products', req.query);
   });
   server.get('/uslugi', (req, res) => {
     return app.render(req, res, '/services', req.query);
   });
+  server.get('/services', (req, res) => {
+    return app.render(req, res, '/services', req.query);
+  });
   server.get('/o-komnanii', (req, res) => {
     return app.render(req, res, '/about', req.query);
   });
-
-  server.get('/a', (req, res) => {
-    return app.render(req, res, '/b', req.query);
+  server.get('/about', (req, res) => {
+    return app.render(req, res, '/about', req.query);
   });
-
-  server.get('/b', (req, res) => {
-    return app.render(req, res, '/a', req.query);
-  });
-
-  server.get('/posts/:id', (req, res) => {
-    return app.render(req, res, '/posts', { id: req.params.id });
-  });
-
   server.get('*', (req, res) => {
     return handle(req, res);
   });
