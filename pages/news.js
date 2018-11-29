@@ -1,10 +1,10 @@
-import React from 'react';
-import Link from 'next/link';
-import Head from '../components/head';
-import newsList from '../components/tables/newsList';
-import Layout from '../components/Layout';
-import NewsMain from '../components/news/newsMain';
-import NewsListPlate from '../components/news/newsListPlate';
+import React from "react";
+import Link from "next/link";
+import Head from "../components/head";
+import newsList from "../components/tables/newsList";
+import Layout from "../components/Layout";
+import NewsMain from "../components/news/newsMain";
+import NewsListPlate from "../components/news/newsListPlate";
 
 const News = () => (
   <div>

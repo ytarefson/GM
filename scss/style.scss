@@ -88,6 +88,19 @@ b {
   padding-left: 15px;
   padding-right: 15px;
 }
+.subheading-common-3 {
+  display: block;
+  font-family: $noto-font;
+  color: #313131;
+  //color: #cb4828;
+  font-size: 18px;
+  letter-spacing: -0.6px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .subheading-red-bottom {
   color: #cb4828 !important;
   display: block;
@@ -101,8 +114,9 @@ b {
   font-weight: 700;
 }
 .header-razdel {
+  font-size: 26px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 30px;
   letter-spacing: -0.6px;
 }
 .text-common {
@@ -189,6 +203,12 @@ b {
     max-width: 720px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .header-razdel {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.6px;
   }
 }
 

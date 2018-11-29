@@ -23,10 +23,11 @@
     & .img-container {
       & .project-card-img {
         max-width: 100%;
+        border: 10px solid white;
       }
     }
     & .project-card-header-container {
-      padding: 10px 15px;
+      padding: 0px 15px 10px;
       & .head-wrap {
         width: 100%;
         display: flex;
@@ -41,7 +42,7 @@
       }
       & .project-card-city {
         font-size: 12px;
-        margin-top: 8px;
+        margin-top: 10px;
       }
     }
   }
