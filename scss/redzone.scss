@@ -22,18 +22,31 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .redzone-text {
-    color: #fff;
-    font-family: $noto-font;
-    font-size: 16px;
-    line-height: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+  .redzone {
+    .redzone-text {
+      color: #fff;
+      font-family: $noto-font;
+      font-size: 16px;
+      line-height: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .redzone {
+    .redzone-text {
+      color: #fff;
+      font-family: $noto-font;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 300;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 }
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {

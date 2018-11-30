@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import projectListShort from '../tables/projectListShort';
-import Link from 'next/link';
-import newsList from '../tables/newsList';
-import '../../scss/news/newsMain.scss';
+import React, { Component } from "react";
+import projectListShort from "../tables/projectListShort";
+import Link from "next/link";
+import newsList from "../tables/newsList";
+import "../../scss/news/newsMain.scss";
 
 export class NewsMain extends Component {
   render() {
@@ -27,7 +27,7 @@ export class NewsMain extends Component {
             category
           }) => (
             <div className="row m-0">
-              <div className="col-12 col-md-6 p-0 order-md-1 news-details-plate">
+              <div className="col-12 col-md-6 p-0 order-md-1 pl-3 pr-3 news-details-plate">
                 <div className="news-details">
                   <span className="news-created">{created_at}</span>
                   <span className="news-category">{category}</span>
@@ -45,7 +45,7 @@ export class NewsMain extends Component {
                   </div>
                 </Link>
               </div>
-              <div className="col-12 col-md-6 p-0 order-md-2">
+              <div className="col-12 col-md-6 pl-3 pr-3 order-md-2">
                 <div className="img-container">
                   <img
                     src={`../../static/images/${img}`}
