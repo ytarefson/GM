@@ -38,6 +38,9 @@ app.prepare().then(() => {
   server.get('/products', (req, res) => {
     return app.render(req, res, '/products', req.query);
   });
+  server.get('/products/:category', (req, res) => {
+    return app.render(req, res, '/products', req.query);
+  });
   server.get('/uslugi', (req, res) => {
     return app.render(req, res, '/services', req.query);
   });
