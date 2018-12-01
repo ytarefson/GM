@@ -18,6 +18,11 @@ app.prepare().then(() => {
   server.get('/novosti', (req, res) => {
     return app.render(req, res, '/news', req.query);
   });
+  server.get('/novosti/:id', (req, res) => {
+    const actualPage = '/newsUnit';
+    const queryParams = { id: req.params.id };
+    app.render(req, res, actualPage, queryParams);
+  });
   server.get('/news', (req, res) => {
     return app.render(req, res, '/news', req.query);
   });
