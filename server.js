@@ -29,12 +29,9 @@ app.prepare().then(() => {
   server.get('/proekti', (req, res) => {
     return app.render(req, res, '/projects', req.query);
   });
-  server.get('/projects', (req, res) => {
-    return app.render(req, res, '/projects', req.query);
-  });
-  server.get('/proekti?category:category', (req, res) => {
+  server.get('/proekti/:id', (req, res) => {
     const actualPage = '/project';
-    const queryParams = { id: req.params.category };
+    const queryParams = { id: req.params.id };
     app.render(req, res, actualPage, queryParams);
   });
   server.get('/produkciya', (req, res) => {
