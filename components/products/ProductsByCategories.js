@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import '../../static/scss/products/productsByCategories.scss';
+import '../../scss/products/productsByCategories.scss';
 
 const ProductsByCategories = data => <div className="mycontainer" />;
 

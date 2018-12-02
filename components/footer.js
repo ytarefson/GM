@@ -10,7 +10,7 @@ const Footer = () => (
         <div className="col-12 col-lg-3 order-lg-4 footer-logo-container">
           <Link href="/">
             <img
-              src="../static/images/logo-big.png"
+              src="../../static/images/logo-big.png"
               className="footer-logo"
               alt="ООО Газовые Машины"
             />

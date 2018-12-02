@@ -5,7 +5,7 @@ const productsList = [
       {
         label: 'MAN 200',
         id: 0,
-        img: 'product-1.jpg',
+        img: 'MAN200.jpg',
         as: '/man-200',
         motorMark: 'MAN E 3262 E 302',
         gasMixer: 'Motortech VariFuel2',
@@ -33,7 +33,7 @@ const productsList = [
       {
         label: 'MAN 250',
         id: 1,
-        img: 'product-1.jpg',
+        img: 'MAN250.jpg',
         as: '/man-200',
         motorMark: 'MAN E 3262 E 302',
         gasMixer: 'Motortech VariFuel2',
@@ -61,7 +61,7 @@ const productsList = [
       {
         label: 'MAN 300',
         id: 2,
-        img: 'product-1.jpg',
+        img: 'MAN300.jpg',
         as: '/man-200',
         motorMark: 'MAN E 3268 LE 242',
         gasMixer: 'Motortech VariFuel2',
@@ -88,7 +88,7 @@ const productsList = [
       {
         label: 'MAN 350',
         id: 3,
-        img: 'product-1.jpg',
+        img: 'MAN350.jpg',
         as: '/man-200',
         motorMark: 'MAN E 3268 LE 202',
         gasMixer: 'Motortech VariFuel2',
@@ -115,7 +115,7 @@ const productsList = [
       {
         label: 'MAN 430',
         id: 4,
-        img: 'product-1.jpg',
+        img: 'MAN500.jpg',
         as: '/man-200',
         motorMark: 'MAN E3262 LE232',
         gasMixer: 'Motortech VariFuel2',
@@ -142,7 +142,7 @@ const productsList = [
       {
         label: 'MAN 530',
         id: 5,
-        img: 'product-1.jpg',
+        img: 'MAN500.jpg',
         as: '/man-200',
         motorMark: 'MAN E3262 LE 202',
         gasMixer: 'Motortech VariFuel2',
@@ -170,7 +170,7 @@ const productsList = [
     ]
   },
   {
-    category: 'Liebherr',
+    category: 'LIEBHERR',
     products: [
       {
         label: 'LIEBHERR 230',
