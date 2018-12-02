@@ -396,7 +396,7 @@ const productsList = [
     ]
   }
 ].map(link => {
-  link.key = `nav-link-${link.id}-${link.label}`;
+  link.key = `nav-link-${link.id}-${link.electricPower}`;
   return link;
 });
 
