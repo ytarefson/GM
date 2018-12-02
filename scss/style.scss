@@ -93,10 +93,10 @@ b {
   font-family: $noto-font;
   color: #313131;
   //color: #cb4828;
-  font-size: 18px;
-  letter-spacing: -0.6px;
-  font-weight: 700;
-  line-height: 32px;
+  font-size: 15px;
+  letter-spacing: -0.3px;
+  font-weight: 300;
+  line-height: 25px;
   margin-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
@@ -239,7 +239,18 @@ b {
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 30px;
-    //letter-spacing: -0.35px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .subheading-common-3 {
+    display: block;
+    font-family: $noto-font;
+    color: #313131;
+    font-size: 18px;
+    letter-spacing: -0.6px;
+    font-weight: 300;
+    line-height: 32px;
+    margin-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
   }

@@ -8,26 +8,42 @@ export class ProjectsMain extends Component {
     const data = projectListShort;
     return (
       <div className="project-cards-plate mb-5">
-        {data.map(({ key, id, city, energy, label, as, img }) => (
-          <Link href={`/proekti?id=${id}`} as={`/proekti/${id}`} key={key}>
-            <a className="project-card">
-              <div className="img-container">
-                <img
-                  src={`../../static/images/${img}`}
-                  alt=""
-                  className="project-card-img"
-                />
-              </div>
-              <div className="project-card-header-container">
-                <div className="head-wrap">
-                  <span className="project-card-header">{label}</span>
-                  <span className="project-card-energy">{energy}</span>
+        {data.map(
+          ({
+            key,
+            id,
+            city,
+            energy,
+            tenergy,
+            client,
+            year,
+            label,
+            as,
+            img
+          }) => (
+            <Link href={`/proekti?id=${id}`} as={`/proekti/${id}`} key={key}>
+              <a className="project-card">
+                <div className="img-container">
+                  <img
+                    src={`../../static/images/${img}`}
+                    alt=""
+                    className="project-card-img"
+                  />
                 </div>
-                <span className="project-card-city">{city}</span>
-              </div>
-            </a>
-          </Link>
-        ))}
+                <div className="project-card-header-container">
+                  <div className="flex-top">
+                    <span className="project-card-client">{client}</span>
+                    <span className="project-card-header">{label}</span>
+                  </div>
+                  <div className="flex-bot">
+                    <span className="project-card-city">{city}</span>
+                    <span className="project-card-energy">{energy}</span>
+                  </div>
+                </div>
+              </a>
+            </Link>
+          )
+        )}
       </div>
     );
   }
