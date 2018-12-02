@@ -1,9 +1,9 @@
-import React from 'react';
-import Link from 'next/link';
-import Head from '../components/head';
-import projectList from '../components/tables/projectList';
-import Layout from '../components/Layout';
-import ProjectUnitPlate from '../components/projects/ProjectUnitPlate';
+import React from "react";
+import Link from "next/link";
+import Head from "../components/head";
+import projectList from "../components/tables/projectList";
+import Layout from "../components/Layout";
+import ProjectUnitPlate from "../components/projects/ProjectUnitPlate";
 
 const Project = project => (
   <div>
@@ -17,7 +17,6 @@ const Project = project => (
 Project.getInitialProps = async function(context) {
   const id = context.query.id;
   const project = projectList[id];
-  console.log(project);
   return { project };
 };
 

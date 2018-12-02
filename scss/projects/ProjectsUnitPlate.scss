@@ -1,5 +1,64 @@
+@import "../vars";
+
+.project-detail {
+  & .mycontainer {
+    margin: 15px auto;
+    background-color: #fff;
+    box-shadow: $box-shadow;
+    padding: 15px;
+    & .header-detail {
+      font-weight: 700;
+      letter-spacing: -0.6px;
+    }
+    & .img-main-container {
+      height: auto;
+      //background-color: green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & .img-container {
+        display: block;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        //height: 100%;
+        max-height: 270px;
+        overflow: hidden;
+        //background-color: red;
+        //box-shadow: $box-shadow;
+        & .detail-img {
+          //border: 2px solid white;
+          display: block;
+          width: 100%;
+          //max-width: 100%;
+          height: auto;
+          //max-height: 100%;
+        }
+      }
+    }
+    & .project-unitplate-props-container {
+      padding: 15px;
+      & span {
+        font-weight: 700;
+        letter-spacing: -0.3px;
+        display: block;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
+  .project-detail {
+    & .mycontainer {
+      & .img-main-container {
+        & .img-container {
+          max-height: 360px;
+        }
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
