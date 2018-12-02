@@ -7,6 +7,7 @@ import '../../scss/products/ProductListPlate.scss';
 export class ProductsListPlate extends Component {
   render() {
     const data = this.props.data.data[0];
+    const category = this.props.data.data[1];
     return (
       <div className="mycontainer">
         <div className="row m-0">
@@ -36,7 +37,7 @@ export class ProductsListPlate extends Component {
           <div className="col-12 col-md-9 product-card-plate">
             {data.map(item => (
               <Link
-                href={`/products/product/${item.id}`}
+                href={`/products/${category}/${item.id}`}
                 key={`${item.id}+${item.electricPower}`}
               >
                 <a className="product-card">
