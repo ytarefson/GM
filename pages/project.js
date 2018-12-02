@@ -1,9 +1,9 @@
-import React from 'react';
-import Link from 'next/link';
-import Head from '../components/head';
-import projectList from '../components/tables/projectList';
-import Layout from '../components/Layout';
-import ProjectUnitPlate from '../components/projects/ProjectUnitPlate';
+import React from "react";
+import Link from "next/link";
+import Head from "../components/head";
+import projectList from "../components/tables/projectList";
+import Layout from "../components/Layout";
+import ProjectUnitPlate from "../components/projects/ProjectUnitPlate";
 
 const Project = project => (
   <div>

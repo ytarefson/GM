@@ -1,35 +1,36 @@
-import React, { Component } from 'react';
-import Link from '../Link';
-import '../../scss/projects/ProjectsUnitPlate.scss';
+import React, { Component } from "react";
+import Link from "../Link";
+import "../../scss/projects/ProjectsUnitPlate.scss";
 
 export class ProjectUnitPlate extends Component {
   render() {
     const project = this.props.project.project;
     return (
-      <div className="container-fluid product-detail">
+      <div className="container-fluid project-detail">
         <div className="mycontainer">
           <div className="breadcrumbs">
             <Link href="/">
-              <a>Главная > </a>
+              <a className="crambs">Главная > </a>
             </Link>
             <Link href="/projects">
-              <a>Проекты > </a>
+              <a className="crambs">Проекты > </a>
             </Link>
-            <span>{project.label}</span>
+            <span className="crambs">{project.label}</span>
           </div>
         </div>
         <div className="mycontainer">
           <div className="row m-0">
-            <div className="col-12 col-md-8">
+            <div className="col-12 col-md-7">
+              <span className="text-common">{project.client}</span>
               <h2 className="header-detail">{project.label}</h2>
-              <span className="subheading-detail">{project.city}</span>
-              <p className="text-common">{project.description}</p>
+              <span className="subheading-red-bottom">{project.city}</span>
+              <p className="text-min">{project.description}</p>
             </div>
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-md-5 img-main-container">
               <div className="img-container">
                 <img
                   src={`../static/images/${project.img}`}
-                  alt=""
+                  alt="Газовая мини-ТЭЦ"
                   className="detail-img"
                 />
               </div>
@@ -37,7 +38,28 @@ export class ProjectUnitPlate extends Component {
           </div>
         </div>
         <div className="mycontainer">
-          <div className="">hello</div>
+          <div className="row">
+            <div className="col-12">
+              <div className="project-unitplate-props-container">
+                <span className="project-unitplate-label">
+                  Заказчик: {project.label}
+                </span>
+                <span className="project-unitplate-class">
+                  Класс объекта: {project.class}
+                </span>
+                <span className="project-unitplate-year">
+                  Год ввода в эксплуатацию: {project.year}
+                </span>
+                <span className="project-unitplate-energy">
+                  Мощность: {project.energy}
+                </span>
+                <span className="project-unitplate-tenergy">
+                  Тепловая мощьность:
+                  {project.tenergy}
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
