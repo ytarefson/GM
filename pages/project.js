@@ -1,14 +1,14 @@
-import React from 'react';
-import Link from 'next/link';
-import Head from '../components/head';
-import projectList from '../components/tables/projectList';
-import Layout from '../components/Layout';
+import React from "react";
+import Link from "next/link";
+import Head from "../components/head";
+import projectList from "../components/tables/projectList";
+import Layout from "../components/Layout";
 
 const Project = props => (
   <div>
     <Head title="Проект" description="Лучший проект" />
     <Layout>
-      <div className="container-fluid">
+      <div className="container-fluid project-card">
         <div className="mycontainer">
           <div className="breadcrumbs">
             <Link href="/">
