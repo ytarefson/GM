@@ -37,9 +37,7 @@ const Projects = () => (
       </Redzone>
       <div className="container-fluid projects-list-plate">
         <div className="mycontainer">
-          <div className="project-cards-plate">
-            <ProjectsListPlate />
-          </div>
+          <ProjectsListPlate />
         </div>
       </div>
     </Layout>

@@ -1,9 +1,9 @@
-import React from 'react';
-import Link from 'next/link';
-import Head from '../components/head';
-import Layout from '../components/Layout';
-import productsList from '../components/tables/productsList';
-import ProductListPlate from '../components/products/ProductListPlate';
+import React from "react";
+import Link from "next/link";
+import Head from "../components/head";
+import Layout from "../components/Layout";
+import productsList from "../components/tables/productsList";
+import ProductListPlate from "../components/products/ProductListPlate";
 
 // console.log(productsList);
 // const data = [];
@@ -31,7 +31,7 @@ const Products = data => (
           <div className="row m-0">
             <div className="col-12 col-md-8">
               <span className="subheading-red-top">Продукция</span>
-              <h2 className="header-razdel">Каталог силовых агрегатов</h2>
+              <h2 className="header-razdel">Каталог готовых решений</h2>
               <p className="text-common">
                 Занимаясь проектированием, сборкой и обслуживанием газовых
                 электростанций уже более 12 лет, мы протестировали достаточное
@@ -45,7 +45,7 @@ const Products = data => (
             <div className="col-12 col-md-4">
               <div className="img-container">
                 <img
-                  src="../static/images/engine.png"
+                  src="../static/images/63_63_aura.png"
                   alt=""
                   className="products-img"
                 />
@@ -76,7 +76,7 @@ Products.getInitialProps = async function(context) {
 
     return { data };
   } else {
-    const category = 'MAN';
+    const category = "MAN";
     console.log(category);
     let data = [];
     for (const cat in productsList) {
