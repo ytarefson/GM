@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Head from '../components/head';
 import Layout from '../components/Layout';
 import ProductUnitPlate from '../components/products/ProductUnitPlate';
@@ -13,15 +12,6 @@ const Product = data => (
     <Layout>
       <div className="container-fluid news">
         <div className="mycontainer">
-          <div className="breadcrumbs">
-            <Link href="/">
-              <a>Главная > </a>
-            </Link>
-            <Link href="/products">
-              <a>Продукты > </a>
-            </Link>
-          </div>
-
           <ProductUnitPlate data={data} />
         </div>
       </div>

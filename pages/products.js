@@ -50,12 +50,14 @@ Products.getInitialProps = async function(context) {
     console.log("Here we are " + context.query.category.toUpperCase());
     const category = context.query.category.toUpperCase();
     const data = [];
+    data.category = "";
     console.log("1st " + category);
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
         const element = productsList[cat];
         if (element.category === category) {
           data.push(element.products);
+          data.push(element.category);
         }
       }
     }
@@ -64,6 +66,7 @@ Products.getInitialProps = async function(context) {
     const category = "MAN";
     console.log(category);
     let data = [];
+    data.category = "";
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
         const element = productsList[cat];
@@ -71,6 +74,7 @@ Products.getInitialProps = async function(context) {
           data.push(element.products);
           // data = element.products;
           //console.log(data);
+          data.push(element.category);
         }
       }
     }
