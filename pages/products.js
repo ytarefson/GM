@@ -62,8 +62,9 @@ const Products = data => (
 Products.getInitialProps = async function(context) {
   console.log(context.query);
   if (!context.query === {}) {
-    const { category } = context.query;
+    const { category } = context.query.toUpperCase();
     const data = [];
+    console.log(category);
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
         const element = productsList[cat];
@@ -84,7 +85,7 @@ Products.getInitialProps = async function(context) {
         if (element.category === category) {
           data.push(element.products);
           // data = element.products;
-          console.log(data);
+          //console.log(data);
         }
       }
     }
