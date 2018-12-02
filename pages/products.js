@@ -1,9 +1,9 @@
-import React from 'react';
-import Link from 'next/link';
-import Head from '../components/head';
-import Layout from '../components/Layout';
-import productsList from '../components/tables/productsList';
-import ProductListPlate from '../components/products/ProductListPlate';
+import React from "react";
+import Link from "next/link";
+import Head from "../components/head";
+import Layout from "../components/Layout";
+import productsList from "../components/tables/productsList";
+import ProductListPlate from "../components/products/ProductListPlate";
 
 const Products = data => (
   <div>
@@ -17,7 +17,7 @@ const Products = data => (
           <div className="row m-0">
             <div className="col-12 col-md-8">
               <span className="subheading-red-top">Продукция</span>
-              <h2 className="header-razdel">Каталог силовых агрегатов</h2>
+              <h2 className="header-razdel">Каталог готовых решений</h2>
               <p className="text-common">
                 Занимаясь проектированием, сборкой и обслуживанием газовых
                 электростанций уже более 12 лет, мы протестировали достаточное
@@ -31,7 +31,7 @@ const Products = data => (
             <div className="col-12 col-md-4">
               <div className="img-container">
                 <img
-                  src="../static/images/engine.png"
+                  src="../static/images/63_63_aura.png"
                   alt=""
                   className="products-img"
                 />
@@ -47,11 +47,11 @@ const Products = data => (
 
 Products.getInitialProps = async function(context) {
   if (context.query.category !== undefined) {
-    console.log('Here we are ' + context.query.category.toUpperCase());
+    console.log("Here we are " + context.query.category.toUpperCase());
     const category = context.query.category.toUpperCase();
     const data = [];
-    data.category = '';
-    console.log('1st ' + category);
+    data.category = "";
+    console.log("1st " + category);
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
         const element = productsList[cat];
@@ -63,11 +63,10 @@ Products.getInitialProps = async function(context) {
     }
     return { data };
   } else {
-    console.log("We aren't here");
-    const category = 'MAN';
-    console.log('2nd ' + category);
+    const category = "MAN";
+    console.log(category);
     let data = [];
-    data.category = '';
+    data.category = "";
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
         const element = productsList[cat];

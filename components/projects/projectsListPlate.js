@@ -28,27 +28,29 @@ export class ProjectsListPlate extends Component {
             as,
             img
           }) => (
-            <Link href={`/proekti?id=${id}`} as={`/proekti/${id}`} key={key}>
-              <a className="project-card-small ">
-                <div className="img-container">
-                  <img
-                    src={`../../static/images/${img}`}
-                    alt=""
-                    className="project-card-img"
-                  />
-                </div>
-                <div className="project-card-header-container">
-                  <div className="flex-top">
-                    <span className="project-card-client">{client}</span>
-                    <span className="project-card-header">{label}</span>
+            <div className="project-card-small-container" key={key}>
+              <Link href={`/proekti?id=${id}`} as={`/proekti/${id}`}>
+                <a className="project-card-small ">
+                  <div className="img-container">
+                    <img
+                      src={`../../static/images/${img}`}
+                      alt=""
+                      className="project-card-img"
+                    />
                   </div>
-                  <div className="flex-bot">
-                    <span className="project-card-city">{city}</span>
-                    <span className="project-card-energy">{energy}</span>
+                  <div className="project-card-header-container">
+                    <div className="flex-top">
+                      <span className="project-card-client">{client}</span>
+                      <span className="project-card-header">{label}</span>
+                    </div>
+                    <div className="flex-bot">
+                      <span className="project-card-city">{city}</span>
+                      <span className="project-card-energy">{energy}</span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </Link>
+                </a>
+              </Link>
+            </div>
           )
         )}
       </div>

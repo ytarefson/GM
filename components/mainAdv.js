@@ -15,6 +15,17 @@ export default MainAdv => (
             </span>
             <h1 className="main-heading">Газовых электростанций</h1>
             <h3 className="main-slogan">Мы предлагаем решение, а не бренд.</h3>
+            <div className="catalog-button-container">
+              <a href="/" className="catalog-button">
+                <img
+                  className="icon-catalog"
+                  src="../static/images/icon-catalog.png"
+                />
+              </a>
+              <span className="catalog-button-title">
+                &#9668; Каталог продуктов
+              </span>
+            </div>
           </div>
         </div>
         <div className="col-12 col-md-5 col-xl-5 p-0">
@@ -29,6 +40,7 @@ export default MainAdv => (
               src="../static/images/engine.png"
               alt="Газовые электростанции"
             />
+            <div className="d-block big-pic-shadow" />
           </div>
         </div>
       </div>
