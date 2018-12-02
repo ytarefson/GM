@@ -32,9 +32,9 @@ app.prepare().then(() => {
   server.get('/projects', (req, res) => {
     return app.render(req, res, '/projects', req.query);
   });
-  server.get('/proekti/:id', (req, res) => {
+  server.get('/proekti?category:category', (req, res) => {
     const actualPage = '/project';
-    const queryParams = { id: req.params.id };
+    const queryParams = { id: req.params.category };
     app.render(req, res, actualPage, queryParams);
   });
   server.get('/produkciya', (req, res) => {
@@ -45,6 +45,11 @@ app.prepare().then(() => {
   });
   server.get('/products/:category', (req, res) => {
     return app.render(req, res, '/products', req.query);
+  });
+  server.get('/products/:category/:id', (req, res) => {
+    const actualPage = '/product';
+    const queryParams = { id: req.params.id, category: req.params.category };
+    app.render(req, res, actualPage, queryParams);
   });
   server.get('/uslugi', (req, res) => {
     return app.render(req, res, '/services', req.query);
