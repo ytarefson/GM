@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Link from 'next/link';
-import productsList from '../tables/productsList';
-import SimilarProducts from '../products/SimilarProducts';
-import '../../scss/products/ProductUnitPlate.scss';
+import React, { Component } from "react";
+import Link from "next/link";
+import productsList from "../tables/productsList";
+import SimilarProducts from "../products/SimilarProducts";
+import "../../scss/products/ProductUnitPlate.scss";
 
 export class ProductsUnitPlate extends Component {
   render() {
@@ -30,28 +30,28 @@ export class ProductsUnitPlate extends Component {
     });
     return (
       <div className="container-fluid product-unit">
-        <div className="mycontainer">
+        <div className="mycontainer section-plate">
           <div className="breadcrumbs">
             <Link href="/">
-              <a>Главная > </a>
+              <a className="crambs">Главная > </a>
             </Link>
             <Link href="/products">
-              <a>Продукты > </a>
+              <a className="crambs">Продукты > </a>
             </Link>
             <Link href={`/products?category=${category}`}>
-              <a>{category} > </a>
+              <a className="crambs">{category} > </a>
             </Link>
             <span>{product.label}</span>
           </div>
         </div>
-        <div className="mycontainer main-details">
-          <div className="row m-0">
+        <div className="mycontainer section-plate">
+          <div className="row m-0 pt-3 pb-3">
             <div className="col-12 col-md-8 order-md-1 order-2">
               <h2 className="product-header">{product.label}</h2>
               <span className="product-energy">
                 Мощность: {product.electricPower}
               </span>
-              <p className="text-common">{product.description}</p>
+              <p className="text-min">{product.description}</p>
             </div>
             <div className="col-12 col-md-4 order-md-2 order-1">
               <div className="product-img-container">
@@ -65,8 +65,10 @@ export class ProductsUnitPlate extends Component {
           </div>
         </div>
         <SimilarProducts similar={similar} category={category} />
-        <div className="mycontainer parameters">
-          <h3 className="product-header">Характеристики:</h3>
+        <div className="mycontainer section-plate">
+          <h3 className="product-header pl-3">
+            Характеристики {product.label}:
+          </h3>
           <div className="row m-0">
             <div className="col-12 col-md-6">
               <span className="text-common">Марка двигателя: </span>
@@ -90,7 +92,7 @@ export class ProductsUnitPlate extends Component {
             </div>
             <div className="col-12 col-md-6">
               <span className="text-common">
-                Коэффициент избытка воздуха, λ:{' '}
+                Коэффициент избытка воздуха, λ:{" "}
               </span>
               <span className="text-bold">{product.excessAirRatio}</span>
             </div>
@@ -132,7 +134,7 @@ export class ProductsUnitPlate extends Component {
             </div>
             <div className="col-12 col-md-6">
               <span className="text-common">
-                Расход газа в номинальном режиме, нм3/час:{' '}
+                Расход газа в номинальном режиме, нм3/час:{" "}
               </span>
               <span className="text-bold">{product.nominalGazConsumption}</span>
             </div>
