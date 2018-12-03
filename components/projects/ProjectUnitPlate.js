@@ -7,7 +7,7 @@ export class ProjectUnitPlate extends Component {
     const project = this.props.project.project;
     return (
       <div className="container-fluid project-detail">
-        <div className="mycontainer">
+        <div className="mycontainer section-plate">
           <div className="breadcrumbs">
             <Link href="/">
               <a className="crambs">Главная > </a>
@@ -18,7 +18,7 @@ export class ProjectUnitPlate extends Component {
             <span className="crambs">{project.label}</span>
           </div>
         </div>
-        <div className="mycontainer">
+        <div className="mycontainer section-plate">
           <div className="row m-0">
             <div className="col-12 col-md-7">
               <span className="text-common">{project.client}</span>
@@ -37,7 +37,7 @@ export class ProjectUnitPlate extends Component {
             </div>
           </div>
         </div>
-        <div className="mycontainer">
+        <div className="mycontainer section-plate">
           <div className="row">
             <div className="col-12">
               <div className="project-unitplate-props-container">
