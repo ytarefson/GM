@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
           /> */}
-          {/* <link rel="stylesheet" href="/.next/static/style.css" /> */}
+          {/* <link rel="stylesheet" href="../scss/style.scss" /> */}
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async

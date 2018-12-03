@@ -1,7 +1,8 @@
-import React from "react";
-import PortfolioLinks from "../components/portfolioLinks";
+import React from 'react';
+import PortfolioLinks from '../components/portfolioLinks';
 //import Router from 'next/router';
-import "../scss/mainAdv.scss";
+import '../scss/mainAdv.scss';
+import Link from './Link';
 
 export default MainAdv => (
   <div className="container-fluid mainAdv p-0">
@@ -16,12 +17,14 @@ export default MainAdv => (
             <h1 className="main-heading">Газовых электростанций</h1>
             <h3 className="main-slogan">Мы предлагаем решение, а не бренд.</h3>
             <div className="catalog-button-container">
-              <a href="/" className="catalog-button">
-                <img
-                  className="icon-catalog"
-                  src="../static/images/icon-catalog.png"
-                />
-              </a>
+              <Link href="/products">
+                <a className="catalog-button">
+                  <img
+                    className="icon-catalog"
+                    src="../static/images/icon-catalog.png"
+                  />
+                </a>
+              </Link>
               <span className="catalog-button-title">
                 &#9668; Каталог продуктов
               </span>

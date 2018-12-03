@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import productsList from '../tables/productsList';
+import SimilarProducts from '../products/SimilarProducts';
 import '../../scss/products/ProductUnitPlate.scss';
 
 export class ProductsUnitPlate extends Component {
@@ -19,6 +20,14 @@ export class ProductsUnitPlate extends Component {
         });
       }
     });
+    let similar = [];
+    products.map(item => {
+      if (item.id !== Number(id)) {
+        if (similar.length < 4) {
+          similar.push(item);
+        }
+      }
+    });
     return (
       <div className="container-fluid product-unit">
         <div className="mycontainer">
@@ -35,7 +44,112 @@ export class ProductsUnitPlate extends Component {
             <span>{product.label}</span>
           </div>
         </div>
-        <div className="mycontainer">{product.label}</div>
+        <div className="mycontainer main-details">
+          <div className="row m-0">
+            <div className="col-12 col-md-8 order-md-1 order-2">
+              <h2 className="product-header">{product.label}</h2>
+              <span className="product-energy">
+                Мощность: {product.electricPower}
+              </span>
+              <p className="text-common">{product.description}</p>
+            </div>
+            <div className="col-12 col-md-4 order-md-2 order-1">
+              <div className="product-img-container">
+                <img
+                  src={`../../static/images/products/${product.img}`}
+                  alt={product.label}
+                  className="product-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <SimilarProducts similar={similar} category={category} />
+        <div className="mycontainer parameters">
+          <h3 className="product-header">Характеристики:</h3>
+          <div className="row m-0">
+            <div className="col-12 col-md-6">
+              <span className="text-common">Марка двигателя: </span>
+              <span className="text-bold">{product.motorMark}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">Газовоздушный смеситель: </span>
+              <span className="text-bold">{product.gasMixer}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">Блок управления: </span>
+              <span className="text-bold">{product.controlBlock}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">Система зажигания: </span>
+              <span className="text-bold">{product.ignitionSystem}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">Дроссельная заслонка: </span>
+              <span className="text-bold">{product.throttleValve}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">
+                Коэффициент избытка воздуха, λ:{' '}
+              </span>
+              <span className="text-bold">{product.excessAirRatio}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">Напряжение, В</span>
+              <span className="text-bold">{product.voltage}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">Электрическая мощность, кВт: </span>
+              <span className="text-bold">{product.electricPower}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">Тепловая мощность, кВт: </span>
+              <span className="text-bold">{product.thermalPower}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">КПД электрический, %: </span>
+              <span className="text-bold">{product.electricEfficiency}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">КПД тепловой, %: </span>
+              <span className="text-bold">{product.thermalEfficiency}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">КПД общий, %: </span>
+              <span className="text-bold">{product.overallEfficiency}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">Тип топлива: </span>
+              <span className="text-bold">{product.fuelType}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">Метановое число: </span>
+              <span className="text-bold">{product.methaneNumber}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">Давление газа, кгс/см2: </span>
+              <span className="text-bold">{product.gasPressure}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">
+                Расход газа в номинальном режиме, нм3/час:{' '}
+              </span>
+              <span className="text-bold">{product.nominalGazConsumption}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">Уровень шума, Дб: </span>
+              <span className="text-bold">{product.noiseLevel}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">Сервисный интервал: </span>
+              <span className="text-bold">{product.serviceInterval}</span>
+            </div>
+            <div className="col-12 col-md-6">
+              <span className="text-common">Общий ресурс электростанции: </span>
+              <span className="text-bold">{product.totalPowerPlant}</span>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

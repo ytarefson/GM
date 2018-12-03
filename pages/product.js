@@ -23,7 +23,6 @@ Product.getInitialProps = async function(context) {
   const data = { id: '', category: '' };
   data.id = context.query.id;
   data.category = context.query.category;
-  //console.log(data);
   return { data };
 };
 

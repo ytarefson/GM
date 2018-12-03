@@ -1,26 +1,22 @@
-@import '../vars';
-.product-unit {
-  & .mycontainer {
-    box-shadow: $box-shadow;
-  }
-}
-.main-details {
-  padding: 20px 0;
+.similar-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   background: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-bottom: 20px;
-  & .product-img-container {
-    max-width: 100%;
-    & .product-img {
-      width: 100%;
+  & .similar-card {
+    width: 25%;
+    padding-right: 15px;
+    &:last-child {
+      padding-right: 0;
     }
-  }
-}
-.parameters {
-  background: #fff;
-  padding: 20px 0;
-  margin-bottom: 20px;
-  & .product-header {
-    padding-left: 16px;
+    & .similar-card-img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
   }
 }
 // Medium devices (tablets, 576px and up)
