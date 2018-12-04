@@ -7,7 +7,7 @@ export class ProjectsMain extends Component {
   render() {
     const data = projectListShort;
     return (
-      <div className="project-cards-plate mb-5">
+      <div className="project-cards-plate">
         {data.map(
           ({
             key,

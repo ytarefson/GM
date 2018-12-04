@@ -1,13 +1,13 @@
-import React from 'react';
-import Link from 'next/link';
-import menu from './menu';
-import '../scss/footer.scss';
+import React from "react";
+import Link from "next/link";
+import menu from "./menu";
+import "../scss/footer.scss";
 
 const Footer = () => (
   <section className="footer">
     <div className="mycontainer">
       <div className="row m-0">
-        <div className="col-12 col-lg-3 order-lg-4 footer-logo-container">
+        <div className="col-12 col-lg-4 order-lg-4 footer-logo-container">
           <Link href="/">
             <img
               src="../../static/images/logo-big.png"
@@ -16,12 +16,15 @@ const Footer = () => (
             />
           </Link>
         </div>
-        <div className="col-12 col-md-4 offset-md-2 offset-lg-0">
+        <div className="col-12 col-sm-6 col-lg-4">
+          <span className="link-adress-header pl-2">Контакты:</span>
           <ul className="adres-list">
             <li>
               <Link href="https://yandex.ru/maps/-/CBFyIKsQPB" as="yandex-map">
                 <a className="adres-map-link">
-                  РОССИЯ, Ярославль, пр. Авиаторов, 155
+                  РОССИЯ, Ярославль
+                  <br />
+                  пр. Авиаторов, 155
                 </a>
               </Link>
             </li>
@@ -45,8 +48,8 @@ const Footer = () => (
             </li>
           </ul>
         </div>
-        <div className="col-12 col-md-4 col-lg-4 link-map">
-          <span className="link-map-header">Карта сайта:</span>
+        <div className="col-12 col-sm-6 col-lg-4 link-map">
+          <span className="link-map-header pl-2">Карта сайта:</span>
           <ul className="link-map-list">
             {menu.map(({ key, href, label, as }) => (
               <li className="link-map-item" key={key}>

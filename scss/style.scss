@@ -149,6 +149,12 @@ b {
   line-height: 20px;
   // letter-spacing: -0.4px;
 }
+.section-plate {
+  margin: 0 auto 23px;
+  background-color: #fff;
+  box-shadow: $box-shadow;
+  padding: 15px;
+}
 .breadcrumbs {
   margin-left: 15px;
   & .crambs {
@@ -217,12 +223,7 @@ b {
     line-height: 36px;
     letter-spacing: -0.6px;
   }
-  .section-plate {
-    margin: 15px auto;
-    background-color: #fff;
-    box-shadow: $box-shadow;
-    padding: 15px;
-  }
+
   .breadcrumbs {
     margin-left: 15px;
     & .crambs {
