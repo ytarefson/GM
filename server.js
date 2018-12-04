@@ -54,6 +54,62 @@ app.prepare().then(() => {
   server.get('/services', (req, res) => {
     return app.render(req, res, '/services', req.query);
   });
+  server.get('/uslugi/proektirovanie-avtonomnih-energocentrov', (req, res) => {
+    const actualPage = '/AutoCenters';
+    const queryParams = {
+      serviceName: 'proektirovanie-avtonomnih-energocentrov'
+    };
+    app.render(req, res, actualPage, queryParams);
+  });
+  server.get('/uslugi/postavka-vspomogatelnogo-oborudovaniya', (req, res) => {
+    const actualPage = '/VspomOborud';
+    const queryParams = {
+      serviceName: 'postavka-vspomogatelnogo-oborudovaniya'
+    };
+    app.render(req, res, actualPage, queryParams);
+  });
+  server.get('/uslugi/izgotovlenie-i-postavka-mini-tec', (req, res) => {
+    const actualPage = '/MiniTec';
+    const queryParams = {
+      serviceName: 'izgotovlenie-i-postavka-mini-tec'
+    };
+    app.render(req, res, actualPage, queryParams);
+  });
+  server.get('/uslugi/racshet-ekonomicheskoi-effektivnosti', (req, res) => {
+    const actualPage = '/RacshetEcoEff';
+    const queryParams = {
+      serviceName: 'racshet-ekonomicheskoi-effektivnosti'
+    };
+    app.render(req, res, actualPage, queryParams);
+  });
+  server.get('/uslugi/podbor-optimalnih-agregatov', (req, res) => {
+    const actualPage = '/OptimalAgregates';
+    const queryParams = {
+      serviceName: 'podbor-optimalnih-agregatov'
+    };
+    app.render(req, res, actualPage, queryParams);
+  });
+  server.get('/uslugi/postavka-zapasnih-chastei', (req, res) => {
+    const actualPage = '/Zapchasti';
+    const queryParams = {
+      serviceName: 'postavka-zapasnih-chastei'
+    };
+    app.render(req, res, actualPage, queryParams);
+  });
+  server.get('/uslugi/pusko-naladochnie-raboti', (req, res) => {
+    const actualPage = '/PuskoNalad';
+    const queryParams = {
+      serviceName: 'pusko-naladochnie-raboti'
+    };
+    app.render(req, res, actualPage, queryParams);
+  });
+  server.get('/uslugi/chef-montazh', (req, res) => {
+    const actualPage = '/ChefMontazh';
+    const queryParams = {
+      serviceName: 'chef-montazh'
+    };
+    app.render(req, res, actualPage, queryParams);
+  });
   server.get('/o-komnanii', (req, res) => {
     return app.render(req, res, '/about', req.query);
   });
