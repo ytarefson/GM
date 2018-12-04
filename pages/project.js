@@ -1,13 +1,10 @@
-import React from "react";
-import Link from "next/link";
-import Head from "../components/head";
-import projectList from "../components/tables/projectList";
-import Layout from "../components/Layout";
-import ProjectUnitPlate from "../components/projects/ProjectUnitPlate";
+import React from 'react';
+import projectList from '../components/tables/projectList';
+import Layout from '../components/Layout';
+import ProjectUnitPlate from '../components/projects/ProjectUnitPlate';
 
 const Project = project => (
   <div>
-    <Head title="Проект" description="Лучший проект" />
     <Layout>
       <ProjectUnitPlate project={project} />
     </Layout>
