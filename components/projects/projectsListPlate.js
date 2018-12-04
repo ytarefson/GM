@@ -30,7 +30,7 @@ export class ProjectsListPlate extends Component {
           }) => (
             <div className="project-card-small-container" key={key}>
               <Link href={`/proekti?id=${id}`} as={`/proekti/${id}`}>
-                <a className="project-card-small ">
+                <a className="project-card-small">
                   <div className="img-container">
                     <img
                       src={`../../static/images/${img}`}

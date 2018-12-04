@@ -1,89 +1,105 @@
 @import "../vars";
 
-.project-cards-small-plate {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  & .project-card-small-container {
+.projects-list-plate {
+  position: relative;
+  &::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 29%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ecebeb;
+    border-left: 2px solid #cb4828;
+  }
+  .project-cards-small-plate {
+    padding-top: 50px;
+    padding-bottom: 80px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    max-width: 370px;
-    padding: 0 15px;
-    & .project-card-small {
+    & .project-card-small-container {
       display: flex;
-      margin-bottom: 30px;
-      overflow: hidden;
-      background: #fff;
-      box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1),
-        -7px 7px 15px rgba(0, 0, 0, 0.1);
+      flex-direction: row;
+      justify-content: center;
       width: 100%;
-      height: 145px;
       max-width: 370px;
-      transition: box-shadow 0.2s;
-      &:hover {
-        box-shadow: $box-shadow;
-      }
-      & .img-container {
-        width: 45%;
-        height: 100%;
-        overflow-x: hidden;
-        border-left: 15px solid #fff;
+      padding: 0 15px;
+      & .project-card-small {
         display: flex;
-        justify-content: center;
-        & .project-card-img {
-          display: block;
-          max-width: auto;
-          width: auto;
+        margin-bottom: 30px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1),
+          -7px 7px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 145px;
+        max-width: 370px;
+        transition: box-shadow 0.2s;
+        &:hover {
+          box-shadow: $box-shadow;
+        }
+        & .img-container {
+          width: 45%;
           height: 100%;
-        }
-      }
-      & .project-card-header-container {
-        padding: 10px 15px;
-        display: flex;
-        width: 55%;
-        flex-direction: column;
-        justify-content: space-between;
-        color: #313131;
-        & .flex-top {
-          width: 100%;
-          & .project-card-client {
+          overflow-x: hidden;
+          border-left: 15px solid #fff;
+          display: flex;
+          justify-content: center;
+          & .project-card-img {
             display: block;
-            font-size: 10px;
-            line-height: 12px;
-            font-weight: 700;
-            margin-top: 5px;
-            padding-bottom: 5px;
-          }
-          & .project-card-header {
-            display: block;
-            padding-top: 5px;
-            font-size: 12px;
-            line-height: 16px;
-            font-weight: 700;
-            //color: #cb4828;
-            letter-spacing: -0.6px;
-            border-top: 0.5px solid red;
+            max-width: auto;
+            width: auto;
+            height: 100%;
           }
         }
-        & .flex-bot {
-          width: 100%;
-          & .project-card-city {
-            font-size: 10px;
-            text-align: right;
-            display: block;
+        & .project-card-header-container {
+          padding: 10px 15px;
+          display: flex;
+          width: 55%;
+          flex-direction: column;
+          justify-content: space-between;
+          color: #313131;
+          & .flex-top {
+            width: 100%;
+            & .project-card-client {
+              display: block;
+              font-size: 10px;
+              line-height: 12px;
+              font-weight: 700;
+              margin-top: 5px;
+              padding-bottom: 5px;
+            }
+            & .project-card-header {
+              display: block;
+              padding-top: 5px;
+              font-size: 12px;
+              line-height: 16px;
+              font-weight: 700;
+              //color: #cb4828;
+              letter-spacing: -0.6px;
+              border-top: 0.5px solid red;
+            }
           }
-          & .project-card-energy {
-            display: block;
-            font-size: 12px;
-            font-weight: 700;
-            line-height: 12px;
-            color: red;
-            text-align: right;
+          & .flex-bot {
+            width: 100%;
+            & .project-card-city {
+              font-size: 10px;
+              text-align: right;
+              display: block;
+            }
+            & .project-card-energy {
+              display: block;
+              font-size: 12px;
+              font-weight: 700;
+              line-height: 12px;
+              color: red;
+              text-align: right;
+            }
           }
         }
       }
