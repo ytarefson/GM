@@ -17,8 +17,8 @@ const Products = data => (
           <div className="row m-0">
             <div className="col-12 col-md-8">
               <span className="subheading-red-top">Продукция</span>
-              <h2 className="header-razdel">Каталог готовых решений</h2>
-              <p className="text-common">
+              <h2 className="header-razdel mb-3">Каталог готовых решений</h2>
+              <p className="text-min">
                 Занимаясь проектированием, сборкой и обслуживанием газовых
                 электростанций уже более 12 лет, мы протестировали достаточное
                 количество комплектующих и схем сборки, и нашли лучшие решения,
@@ -28,10 +28,10 @@ const Products = data => (
                 условиях и гарантирют исправную работу в течение многих лет.
               </p>
             </div>
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-md-4 d-none d-xl-block">
               <div className="img-container">
                 <img
-                  src="../static/images/63_63_aura.png"
+                  src="../static/images/products-img.png"
                   alt=""
                   className="products-img"
                 />

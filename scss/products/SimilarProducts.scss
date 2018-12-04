@@ -3,12 +3,11 @@
   flex-direction: row;
   flex-wrap: nowrap;
   background: #fff;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 30px;
   margin-bottom: 20px;
   & .similar-card {
     width: 25%;
-    padding-right: 15px;
+    padding-right: 30px;
     &:last-child {
       padding-right: 0;
     }

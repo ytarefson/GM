@@ -36,29 +36,30 @@ export class ProductsUnitPlate extends Component {
           description="Лучший продукт"
         />
         <div className="container-fluid product-unit">
-          <div className="mycontainer">
+          <div className="mycontainer section-plate">
             <div className="breadcrumbs">
               <Link href="/">
-                <a>Главная > </a>
+                <a className="crambs">Главная > </a>
               </Link>
               <Link href="/products">
-                <a>Продукты > </a>
+                <a className="crambs">Продукты > </a>
               </Link>
               <Link href={`/products?category=${category}`}>
-                <a>{category} > </a>
+                <a className="crambs">{category} > </a>
               </Link>
               <span>{product.label}</span>
             </div>
           </div>
-          <div className="mycontainer main-details">
-            <div className="row m-0">
+          <div className="mycontainer section-plate">
+            <div className="row m-0 pt-3 pb-3">
               <div className="col-12 col-md-8 order-md-1 order-2">
                 <h2 className="product-header">{product.label}</h2>
                 <span className="product-energy">
                   Мощность: {product.electricPower}
                 </span>
-                <p className="text-common">{product.description}</p>
+                <p className="text-min">{product.description}</p>
               </div>
+
               <div className="col-12 col-md-4 order-md-2 order-1">
                 <div className="product-img-container">
                   <img
@@ -71,8 +72,10 @@ export class ProductsUnitPlate extends Component {
             </div>
           </div>
           <SimilarProducts similar={similar} category={category} />
-          <div className="mycontainer parameters">
-            <h3 className="product-header">Характеристики:</h3>
+          <div className="mycontainer section-plate">
+            <h3 className="product-header pl-3">
+              Характеристики {product.label}:
+            </h3>
             <div className="row m-0">
               <div className="col-12 col-md-6">
                 <span className="text-common">Марка двигателя: </span>

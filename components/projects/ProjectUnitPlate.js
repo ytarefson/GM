@@ -10,7 +10,7 @@ export class ProjectUnitPlate extends Component {
       <div>
         <Head title={`Проект - ${project.label}`} description="Лучший проект" />
         <div className="container-fluid project-detail">
-          <div className="mycontainer">
+          <div className="mycontainer section-plate">
             <div className="breadcrumbs">
               <Link href="/">
                 <a className="crambs">Главная > </a>
@@ -21,7 +21,7 @@ export class ProjectUnitPlate extends Component {
               <span className="crambs">{project.label}</span>
             </div>
           </div>
-          <div className="mycontainer">
+          <div className="mycontainer section-plate">
             <div className="row m-0">
               <div className="col-12 col-md-7">
                 <span className="text-common">{project.client}</span>
@@ -29,6 +29,7 @@ export class ProjectUnitPlate extends Component {
                 <span className="subheading-red-bottom">{project.city}</span>
                 <p className="text-min">{project.description}</p>
               </div>
+
               <div className="col-12 col-md-5 img-main-container">
                 <div className="img-container">
                   <img
@@ -40,7 +41,7 @@ export class ProjectUnitPlate extends Component {
               </div>
             </div>
           </div>
-          <div className="mycontainer">
+          <div className="mycontainer section-plate">
             <div className="row">
               <div className="col-12">
                 <div className="project-unitplate-props-container">
@@ -56,7 +57,7 @@ export class ProjectUnitPlate extends Component {
                   <span className="project-unitplate-energy">
                     Мощность: {project.energy}
                   </span>
-                  <span className="project-unitplate-tenergy">
+                  <span className="project-unitplate-energy">
                     Тепловая мощьность:
                     {project.tenergy}
                   </span>

@@ -1,11 +1,7 @@
 @import "../vars";
 
 .project-detail {
-  & .mycontainer {
-    margin: 15px auto;
-    background-color: #fff;
-    box-shadow: $box-shadow;
-    padding: 15px;
+  & .section-plate {
     & .header-detail {
       font-weight: 700;
       letter-spacing: -0.6px;
