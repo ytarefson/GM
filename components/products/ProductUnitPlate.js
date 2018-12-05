@@ -30,48 +30,43 @@ export class ProductsUnitPlate extends Component {
       }
     });
     return (
-      <div className="container-fluid product-unit">
-        <div className="mycontainer section-plate">
-          <div className="breadcrumbs">
-            <Link href="/">
-              <a className="crambs">Главная > </a>
-            </Link>
-            <Link href="/products">
-              <a className="crambs">Продукты > </a>
-            </Link>
-            <Link href={`/products?category=${category}`}>
-              <a className="crambs">{category} > </a>
-            </Link>
-            <span>{product.label}</span>
-          </div>
-        </div>
-        <div className="mycontainer section-plate">
-          <div className="row m-0 pt-3 pb-3">
-            <div className="col-12 col-md-8 order-md-1 order-2">
-              <h2 className="product-header">{product.label}</h2>
-              <span className="product-energy">
-                Мощность: {product.electricPower}
-              </span>
-              <p className="text-min">{product.description}</p>
+      <div>
+        <Head
+          title={`Продукт - ${product.label}`}
+          description="Лучший продукт"
+        />
+        <div className="container-fluid product-unit">
+          <div className="mycontainer section-plate">
+            <div className="breadcrumbs">
+              <Link href="/">
+                <a className="crambs">Главная > </a>
+              </Link>
+              <Link href="/products">
+                <a className="crambs">Продукты > </a>
+              </Link>
+              <Link href={`/products?category=${category}`}>
+                <a className="crambs">{category} > </a>
+              </Link>
+              <span className="crambs">{product.label}</span>
             </div>
-            <div className="mycontainer section-plate">
-              <div className="row m-0 pt-3 pb-3">
-                <div className="col-12 col-md-8 order-md-1 order-2">
-                  <h2 className="product-header">{product.label}</h2>
-                  <span className="product-energy">
-                    Мощность: {product.electricPower}
-                  </span>
-                  <p className="text-min">{product.description}</p>
-                </div>
+          </div>
+          <div className="mycontainer section-plate">
+            <div className="row m-0 pt-3 pb-3">
+              <div className="col-12 col-md-8 order-md-1 order-2">
+                <h2 className="product-header">Описание {product.label}</h2>
+                <span className="product-energy">
+                  Мощность: {product.electricPower} кВт
+                </span>
+                <p className="text-min">{product.description}</p>
+              </div>
 
-                <div className="col-12 col-md-4 order-md-2 order-1">
-                  <div className="product-img-container">
-                    <img
-                      src={`../../static/images/products/${product.img}`}
-                      alt={product.label}
-                      className="product-img"
-                    />
-                  </div>
+              <div className="col-12 col-md-4 order-md-2 order-1">
+                <div className="product-img-container">
+                  <img
+                    src={`../../static/images/products/${product.img}`}
+                    alt={product.label}
+                    className="product-img"
+                  />
                 </div>
               </div>
             </div>
