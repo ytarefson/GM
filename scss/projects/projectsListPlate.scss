@@ -13,7 +13,7 @@
     bottom: 0;
     right: 0;
     background-color: #ecebeb;
-    border-left: 4px solid #cb4828;
+    border-left: 2px solid #cb4828;
   }
   .project-cards-small-plate {
     padding-top: 50px;
@@ -27,7 +27,7 @@
       flex-direction: row;
       justify-content: center;
       width: 100%;
-      max-width: 320px;
+      max-width: 370px;
       padding: 0 15px;
       & .project-card-small {
         display: flex;
@@ -38,7 +38,7 @@
           -7px 7px 15px rgba(0, 0, 0, 0.1);
         width: 100%;
         height: 145px;
-        max-width: 320px;
+        max-width: 370px;
         transition: box-shadow 0.2s;
         &:hover {
           box-shadow: $box-shadow;
@@ -82,7 +82,7 @@
               font-weight: 700;
               //color: #cb4828;
               letter-spacing: -0.6px;
-              border-top: 1px solid #ca4729;
+              border-top: 0.5px solid red;
             }
           }
           & .flex-bot {
@@ -97,7 +97,7 @@
               font-size: 12px;
               font-weight: 700;
               line-height: 12px;
-              color: #ca4729;
+              color: red;
               text-align: right;
             }
           }
@@ -107,8 +107,7 @@
   }
 }
 @media (min-width: 400px) {
-  .projects-list-plate
-    .project-cards-small-plate
+  .project-cards-small-plate
     .project-card-small-container
     .project-card-small
     .project-card-header-container
@@ -147,50 +146,18 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .projects-list-plate {
-    & .project-cards-small-plate {
-      & .project-card-small-container {
-        max-width: 370px;
-        & .project-card-small {
-          max-width: 370px;
-        }
-      }
+  .project-cards-small-plate {
+    & .project-card-small-container {
+      max-width: 370px;
     }
   }
-
-  .projects-list-plate
-    .project-cards-small-plate
+  .project-cards-small-plate
     .project-card-small-container
     .project-card-small
-    .project-card-header-container {
-    padding: 13px;
-    & .flex-top {
-      & .project-card-header {
-        font-size: 16px;
-        line-height: 20px;
-        text-align: left;
-        color: grey;
-      }
-      & .project-card-client {
-        font-size: 12px;
-        text-align: left;
-        font-weight: 300;
-        color: darkgrey;
-      }
-    }
-    & .flex-bot {
-      & .project-card-city {
-        font-size: 12px;
-        line-height: 14px;
-        margin-bottom: 5px;
-      }
-      & .project-card-energy {
-        font-size: 16px;
-        letter-spacing: -0.5px;
-        font-weight: 700;
-        color: #ca4729;
-      }
-    }
+    .project-card-header-container
+    .flex-top
+    .project-card-header {
+    font-size: 15px;
   }
 }
 

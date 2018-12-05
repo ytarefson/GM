@@ -1,52 +1,20 @@
-@import "../vars";
-
-.similar-products-wrapper {
+.similar-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   background: #fff;
-  box-shadow: $box-shadow;
-  & .similar-products-header {
-    font-size: 20px;
-    //letter-spacing: -0.5px;
-    line-height: 28px;
-    font-weight: 300;
-    color: grey;
-    display: block;
-    //text-align: center;
-    padding: 30px 30px 10px;
-    //flex-basis: 100%;
-  }
-  & .similar-product-card-plate {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 15px 15px 0;
-    margin-bottom: 20px;
-    & .similar-product-card-container {
-      width: 50%;
-      & .similar-product-card {
-        cursor: pointer;
-        height: 80%;
-        //padding-right: 30px;
-        margin: 0 15px;
-        &:last-child {
-          padding-right: 0;
-        }
-        & .img-container {
-          height: 80%;
-          overflow: hidden;
-          display: block;
-          & .similar-card-img {
-            width: 100%;
-            //object-fit: cover;
-            height: auto;
-          }
-        }
-        & .similar-product-card-header {
-          font-size: 14px;
-          display: block;
-          text-align: right;
-          font-weight: 700;
-        }
-      }
+  padding: 30px;
+  margin-bottom: 20px;
+  & .similar-card {
+    width: 25%;
+    padding-right: 30px;
+    &:last-child {
+      padding-right: 0;
+    }
+    & .similar-card-img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
     }
   }
 }
@@ -56,13 +24,6 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .similar-products-wrapper {
-    & .similar-product-card-plate {
-      & .similar-product-card-container {
-        width: 25%;
-      }
-    }
-  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -71,37 +32,6 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .similar-products-wrapper {
-    & .similar-product-card-plate {
-      & .similar-product-card-container {
-        & .similar-product-card {
-          height: 80%;
-          //padding-right: 30px;
-          margin: 0 15px;
-          &:last-child {
-            padding-right: 0;
-          }
-          & .img-container {
-            height: 80%;
-            overflow: hidden;
-            display: block;
-            & .similar-card-img {
-              width: 100%;
-              //object-fit: cover;
-              height: auto;
-            }
-          }
-          & .similar-product-card-header {
-            font-size: 18px;
-            display: block;
-            text-align: left;
-            line-height: 32px;
-            font-weight: 700;
-          }
-        }
-      }
-    }
-  }
 }
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {

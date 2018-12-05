@@ -1,5 +1,6 @@
 .footer {
-  padding: 50px 15px;
+  padding-top: 70px;
+  padding-bottom: 50px;
   background-image: linear-gradient(to right, #cb4828 0%, #e46849 100%);
   & .footer-logo-container {
     text-align: center;
@@ -7,51 +8,42 @@
     &:hover {
       cursor: pointer;
     }
-    & img {
-      width: 50%;
-    }
-  }
-  & .link-adress-header {
-    display: block;
-    margin-bottom: 5px;
-    width: 100%;
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 300;
-    text-transform: uppercase;
-    line-height: 30px;
   }
   & .adres-list {
     padding-left: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
-    text-align: left;
+    margin-bottom: 30px;
     & li {
       margin-bottom: 10px;
     }
     & .adres-map-link {
       width: 100%;
       color: #ffffff;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
       line-height: 30px;
-      //letter-spacing: -0.6px;
+      // font-family: 'Noto Sans';
+      font-weight: 700;
+      letter-spacing: -0.5px;
     }
     & .adres-phones {
       width: 100%;
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
       & .phone-link {
         display: block;
         margin: 0 auto;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 18px;
         color: #ffffff;
       }
       & .phone-link-big {
-        // font-size: 26px;
-        // font-weight: 700;
+        font-size: 26px;
+        font-weight: 700;
       }
     }
     & .adres-email {
@@ -59,22 +51,22 @@
       width: 100%;
       font-style: italic;
       font-size: 18px;
-      font-weight: 300;
+      font-weight: 700;
     }
   }
   & .link-map {
-    text-align: left;
     & .link-map-header {
       display: block;
       width: 100%;
+      text-align: center;
       color: #ffffff;
       font-size: 24px;
-      font-weight: 300;
-      text-transform: uppercase;
+      font-weight: 700;
       line-height: 30px;
+      // letter-spacing: -0.6px;
     }
     & .link-map-list {
-      margin-top: 7px;
+      margin-top: 10px;
       padding-left: 0;
       display: flex;
       flex-direction: column;
@@ -83,9 +75,10 @@
           display: block;
           color: #ffffff;
           width: 100%;
-          font-size: 14px;
+          text-align: center;
+          font-size: 16px;
           font-weight: 400;
-          line-height: 22px;
+          line-height: 26px;
         }
       }
     }
@@ -108,8 +101,7 @@
           margin: 0 auto 0 0 !important;
         }
         & .phone-link-big {
-          font-size: 20px;
-          font-weight: 700;
+          font-size: 24px;
         }
       }
     }
@@ -146,58 +138,8 @@
     & .footer-logo-container {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       align-content: center;
-    }
-    & .link-adress-header {
-      font-size: 20px;
-    }
-    & .adres-list {
-      line-height: 26px;
-      & li {
-        margin-bottom: 10px;
-      }
-      & .adres-map-link {
-        line-height: 24px;
-        //letter-spacing: -0.6px;
-      }
-      & .adres-phones {
-        & .phone-link {
-        }
-        & .phone-link-big {
-          // font-size: 26px;
-          // font-weight: 700;
-        }
-      }
-      & .adres-email {
-        color: #ffffff;
-        width: 100%;
-        font-style: italic;
-        font-size: 18px;
-        font-weight: 300;
-      }
-    }
-    & .link-map {
-      text-align: left;
-      & .link-map-header {
-        font-size: 20px;
-      }
-      & .link-map-list {
-        margin-top: 7px;
-        padding-left: 0;
-        display: flex;
-        flex-direction: column;
-        & .link-map-item {
-          & .link-map-link {
-            display: block;
-            color: #ffffff;
-            width: 100%;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 32px;
-          }
-        }
-      }
     }
   }
 }
