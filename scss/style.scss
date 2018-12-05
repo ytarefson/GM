@@ -67,6 +67,12 @@ b {
   margin-bottom: 20px;
   letter-spacing: -0.45px;
 }
+.header-razdel {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.6px;
+}
 .subheading-common {
   display: block;
   font-family: $noto-font;
@@ -113,12 +119,6 @@ b {
   margin-top: 50px;
   font-weight: 700;
 }
-.header-razdel {
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: -0.6px;
-}
 .text-common {
   display: block;
   font-family: $noto-font;
@@ -149,6 +149,10 @@ b {
   line-height: 20px;
   // letter-spacing: -0.4px;
 }
+.text-italic {
+  font-family: $noto-font;
+  font-style: italic;
+}
 .section-plate {
   margin: 0 auto 23px;
   background-color: #fff;
@@ -164,10 +168,6 @@ b {
 }
 .mycontainer {
   width: 100%;
-}
-.text-italic {
-  font-family: $noto-font;
-  font-style: italic;
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {

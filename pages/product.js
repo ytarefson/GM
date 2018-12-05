@@ -1,15 +1,10 @@
 import React from "react";
-import Head from "../components/head";
 import Layout from "../components/Layout";
 import ProductUnitPlate from "../components/products/ProductUnitPlate";
 import "../scss/product.scss";
 
 const Product = data => (
   <div>
-    <Head
-      title="Детальная новость - Газовые Машины"
-      description='Подбробная информация о деятельности компании ООО "Газовые машины"'
-    />
     <Layout>
       <div className="container-fluid product-main-container">
         <div className="mycontainer">

@@ -2,70 +2,56 @@ import React from 'react';
 import Link from 'next/link';
 import Head from '../components/head';
 import Layout from '../components/Layout';
+import serviceList from '../components/tables/serviceList';
+import '../scss/services/services.scss';
 
-const RasGen = () => (
+const Services = () => (
   <div>
     <Head
-      title="Услуги - Газовые Машины"
-      description='Подбробная информация о деятельности компании ООО "Газовые машины"'
+      title="Услуги - Газовые машины"
+      description="Каталог продукции для любой техники"
     />
     <Layout>
-      <div className="hero">
-        <h1 className="title">Услуги</h1>
-        <div className="description">
-          <ul className="content-list">
-            <li>Карточки с описанием услуг</li>
-          </ul>
-          <h3>Описание услуг</h3>
-          <ul className="content-list">
-            <li>Поставка автономных энергоцентров "под ключ"</li>
-            <li>Проектировании автономных энергоцентров</li>
-            <li>
-              Сертифицированное производство газопоршневых электростанций и
-              мини-ТЭС
-            </li>
-            <li>
-              Строительство автономных энергоцентров на базе газопоршневых
-              электростанций
-            </li>
-            <li>Поставка вспомогательного оборудования </li>
-            <li>Техническое сопровождение </li>
-            <li>Работы по пуско-наладке </li>
-            <li>Осуществление подбора оптимальных агрегатов</li>
-            <li>Расчет экономической эффективности</li>
-            <li>Обеспечение необходимой документацией</li>
-            <li>Поставка запасных частей</li>
-            <li>Обучение эксплуатирующего персонала</li>
-            <li>Сервис газопоршневых электростанций</li>
-          </ul>
+      <div className="container-fluid services">
+        <div className="mycontainer">
+          <div className="row m-0">
+            <div className="col-12 col-md-8">
+              <span className="subheading-red-top">Услуги</span>
+              <h2 className="header-razdel mb-3">Основные направления</h2>
+              <p className="text-min">
+                Проектирование, разработка и производство газовых электростанций
+                тесно связаны с большим перечнем сопутствующих работ. Вы можете
+                воспользоваться ими отдельно для решения локальных задачь. Или в
+                рамках разработки проекта они будут включены в смету по
+                необходимости и в рамках работ по проекту.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mycontainer mycontainer-cards p-0">
+          <div className="row cards-container">
+            {serviceList.map(({ label, text, img, href, as, key }) => (
+              <div className="col-6 col-sm-4 col-lg-3 teh-plate" key={key}>
+                <Link href={href} as={`/uslugi/${as}`}>
+                  <a className="teh-card">
+                    <div className="teh-image-container">
+                      <img src={img} alt="" className="teh-image" />
+                      <div className="header-container">
+                        <h3 className="teh-header">{label}</h3>
+                      </div>
+                    </div>
+                    <div className="teh-content">
+                      <p className="teh-desc">{text}</p>
+                    </div>
+                  </a>
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-      <style jsx>{`
-        .hero {
-          width: 100%;
-          color: #333;
-        }
-        .title {
-          margin: 0;
-          width: 100%;
-          padding-top: 80px;
-          line-height: 1.15;
-          font-size: 48px;
-        }
-        .title,
-        .description {
-          text-align: center;
-        }
-        .row {
-          max-width: 880px;
-          margin: 80px auto 40px;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-        }
-      `}</style>
     </Layout>
   </div>
 );
 
-export default RasGen;
+export default Services;

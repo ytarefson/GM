@@ -1,0 +1,56 @@
+.vspomOborud {
+  margin-top: 30px;
+}
+.tools-list {
+  display: flex;
+  flex-direction: column;
+
+  & .tool-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    & .img-containeer {
+      max-width: 20%;
+      width: 100%;
+      & .tool-card-img {
+      }
+    }
+    & .tool-card-desc {
+    }
+  }
+}
+.documentation {
+  margin-top: 50px;
+  & .orderlist {
+    & .doc-point {
+      margin: 30px;
+      & .razdel {
+      }
+      & .razdel-list {
+        display: flex;
+        flex-direction: column;
+        & .razdel-li {
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
