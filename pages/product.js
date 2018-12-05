@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-import React from "react";
-import Layout from "../components/Layout";
-import ProductUnitPlate from "../components/products/ProductUnitPlate";
-import "../scss/product.scss";
-=======
 import React from 'react';
-import Head from '../components/head';
 import Layout from '../components/Layout';
 import ProductUnitPlate from '../components/products/ProductUnitPlate';
->>>>>>> parent of c50d78a... PRODUCT CARD UNIT styled
+import '../scss/product.scss';
 
 const Product = data => (
   <div>
