@@ -7,7 +7,7 @@ export class ProjectsMain extends Component {
   render() {
     const data = projectListShort;
     return (
-      <div className="project-cards-plate mb-5">
+      <div className="project-cards-plate">
         {data.map(
           ({
             key,
@@ -22,25 +22,27 @@ export class ProjectsMain extends Component {
             img
           }) => (
             <Link href={`/proekti?id=${id}`} as={`/proekti/${id}`} key={key}>
-              <a className="project-card">
-                <div className="img-container">
-                  <img
-                    src={`../../static/images/${img}`}
-                    alt=""
-                    className="project-card-img"
-                  />
-                </div>
-                <div className="project-card-header-container">
-                  <div className="flex-top">
-                    <span className="project-card-client">{client}</span>
-                    <span className="project-card-header">{label}</span>
+              <div className="project-card-container">
+                <a className="project-card">
+                  <div className="img-container">
+                    <img
+                      src={`../../static/images/${img}`}
+                      alt=""
+                      className="project-card-img"
+                    />
                   </div>
-                  <div className="flex-bot">
-                    <span className="project-card-city">{city}</span>
-                    <span className="project-card-energy">{energy}</span>
+                  <div className="project-card-header-container">
+                    <div className="flex-top">
+                      <span className="project-card-client">{client}</span>
+                      <span className="project-card-header">{label}</span>
+                    </div>
+                    <div className="flex-bot">
+                      <span className="project-card-city">{city}</span>
+                      <span className="project-card-energy">{energy}</span>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </Link>
           )
         )}

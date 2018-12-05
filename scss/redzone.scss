@@ -37,6 +37,7 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .redzone {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
     .redzone-text {
       color: #fff;
       font-family: $noto-font;

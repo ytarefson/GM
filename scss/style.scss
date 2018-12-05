@@ -1,8 +1,8 @@
-@import '../node_modules/bootstrap/scss/bootstrap-reboot.scss';
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import './libs';
-@import './fonts';
-@import './vars';
+@import "../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./libs";
+@import "./fonts";
+@import "./vars";
 
 body {
   font-family: $noto-font;
@@ -186,7 +186,7 @@ b {
     position: relative;
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       width: 250px;
       height: 2px;
       background-color: #cb4828;
@@ -252,6 +252,9 @@ b {
     align-items: center;
 
     //justify-content: center;
+  }
+  .header-red {
+    font-size: 26px;
   }
   .subheading-common {
     margin-bottom: 0px;

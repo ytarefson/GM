@@ -1,6 +1,37 @@
 @import "../vars";
 
+.project {
+  position: relative;
+  &::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 29%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ecebeb;
+    border-left: 2px solid #cb4828;
+  }
+}
 .project-detail {
+  padding-bottom: 70px;
+  position: relative;
+  &::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 67%;
+    height: 97%;
+    bottom: 0;
+    left: 0;
+    //background-color: #ecebeb;
+    border-top: 2px solid #d44625;
+    border-right: 4px solid #d44625;
+  }
   & .section-plate {
     & .header-detail {
       font-weight: 700;

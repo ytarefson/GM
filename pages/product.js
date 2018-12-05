@@ -6,7 +6,7 @@ import "../scss/product.scss";
 const Product = data => (
   <div>
     <Layout>
-      <div className="container-fluid news">
+      <div className="container-fluid product-unit-wrapper">
         <div className="mycontainer">
           <ProductUnitPlate data={data} />
         </div>

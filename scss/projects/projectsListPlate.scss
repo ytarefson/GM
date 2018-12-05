@@ -13,7 +13,7 @@
     bottom: 0;
     right: 0;
     background-color: #ecebeb;
-    border-left: 2px solid #cb4828;
+    border-left: 4px solid #d44625;
   }
   .project-cards-small-plate {
     padding-top: 50px;
@@ -137,32 +137,88 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .project-cards-small-plate {
-    & .project-card-small-container {
-      max-width: 340px;
+  .projects-list-plate {
+    & .project-cards-small-plate {
+      & .project-card-small-container {
+        width: 50%;
+      }
     }
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .project-cards-small-plate {
-    & .project-card-small-container {
-      max-width: 370px;
+  .projects-list-plate {
+    & .project-cards-small-plate {
+      justify-content: space-between;
+      & .project-card-small-container {
+        max-width: 33%;
+        & .project-card-small {
+          & .project-card-header-container {
+            & .flex-top {
+              & .project-card-header {
+                font-size: 14px;
+              }
+            }
+            & .flex-bot {
+              width: 100%;
+              & .project-card-city {
+                font-size: 10px;
+                line-height: 12px;
+                padding-bottom: 5px;
+                text-align: right;
+                display: block;
+              }
+              & .project-card-energy {
+                display: block;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 12px;
+                color: #ca4729;
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
     }
-  }
-  .project-cards-small-plate
-    .project-card-small-container
-    .project-card-small
-    .project-card-header-container
-    .flex-top
-    .project-card-header {
-    font-size: 15px;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .projects-list-plate {
+    & .project-cards-small-plate {
+      justify-content: space-between;
+      & .project-card-small-container {
+        max-width: 33%;
+        & .project-card-small {
+          & .project-card-header-container {
+            & .flex-top {
+              & .project-card-header {
+                font-size: 16px;
+                line-height: 18px;
+              }
+            }
+            & .flex-bot {
+              width: 100%;
+              & .project-card-city {
+                font-size: 11px;
+                line-height: 12px;
+                font-weight: 700;
+                color: darkgrey;
+                padding-bottom: 5px;
+                text-align: right;
+                display: block;
+              }
+              & .project-card-energy {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {

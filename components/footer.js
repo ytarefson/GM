@@ -1,7 +1,7 @@
-import React from 'react';
-import Link from 'next/link';
-import menu from './menu';
-import '../scss/footer.scss';
+import React from "react";
+import Link from "next/link";
+import menu from "./menu";
+import "../scss/footer.scss";
 
 const Footer = () => (
   <section className="footer">
@@ -16,7 +16,8 @@ const Footer = () => (
             />
           </Link>
         </div>
-        <div className="col-12 col-md-4 offset-md-2 offset-lg-0">
+        <div className="col-12 col-md-6">
+          <span className="contacts-header">Контакты:</span>
           <ul className="adres-list">
             <li>
               <Link href="https://yandex.ru/maps/-/CBFyIKsQPB" as="yandex-map">
@@ -45,7 +46,7 @@ const Footer = () => (
             </li>
           </ul>
         </div>
-        <div className="col-12 col-md-4 col-lg-4 link-map">
+        <div className="col-12 col-md-6 col-lg-4 link-map">
           <span className="link-map-header">Карта сайта:</span>
           <ul className="link-map-list">
             {menu.map(({ key, href, label, as }) => (

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import productsList from "../tables/productsList";
-import ProductsByCategories from "../products/ProductsByCategories";
 import Link from "../Link";
-import "../../scss/products/ProductListPlate.scss";
+import "../../scss/products/ProductsListPlate.scss";
 
 export class ProductsListPlate extends Component {
   render() {
@@ -36,11 +34,8 @@ export class ProductsListPlate extends Component {
           </div>
           <div className="col-12 col-md-10 product-card-plate">
             {data.map(item => (
-              <div className="product-card-container">
-                <Link
-                  href={`/products/${category}/${item.id}`}
-                  key={`${item.id}+${item.electricPower}`}
-                >
+              <div className="product-card-container" key={item.key}>
+                <Link href={`/products/${category}/${item.id}`} key={item.key}>
                   <a className="product-card">
                     <div className="img-container">
                       <img
@@ -58,7 +53,7 @@ export class ProductsListPlate extends Component {
                           <span className="product-card-motor-title">
                             Двигатель:
                           </span>
-                          <span className="product-card-motor">
+                          <span className="product-card-motor pb-1">
                             {item.motorMark}
                           </span>
                         </div>

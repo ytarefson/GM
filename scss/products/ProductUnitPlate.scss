@@ -1,5 +1,7 @@
 @import "../vars";
+
 .product-unit {
+  padding: 0;
   & .mycontainer {
     box-shadow: $box-shadow;
   }
@@ -11,7 +13,12 @@
       width: 100%;
     }
   }
-  & .product-header {
+  & .header-red {
+    display: block;
+    margin-top: 15px;
+  }
+  .text-container {
+    margin-bottom: 10px;
   }
 }
 

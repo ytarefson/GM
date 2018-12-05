@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Head from '../../components/head';
-import Link from '../Link';
-import '../../scss/projects/ProjectsUnitPlate.scss';
+import React, { Component } from "react";
+import Head from "../../components/head";
+import Link from "../Link";
+import "../../scss/projects/ProjectsUnitPlate.scss";
 
 export class ProjectUnitPlate extends Component {
   render() {

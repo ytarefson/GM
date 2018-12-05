@@ -1,20 +1,35 @@
+@import "../vars";
+
+.header-red-2 {
+  padding-top: 20px;
+  margin-left: 10px;
+}
 .similar-products {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   background: #fff;
-  padding: 30px;
+  margin: 0;
   margin-bottom: 20px;
-  & .similar-card {
-    width: 25%;
-    padding-right: 30px;
-    &:last-child {
-      padding-right: 0;
-    }
-    & .similar-card-img {
-      width: 100%;
-      object-fit: cover;
-      height: 100%;
+  & .similar-card-container {
+    padding: 13px;
+    width: 50%;
+    & .similar-card {
+      cursor: pointer;
+      & .img-container {
+        height: 80px;
+        & .similar-card-img {
+          width: 100%;
+          object-fit: cover;
+          height: 100%;
+        }
+      }
+      & .similar-card-title {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: right;
+      }
     }
   }
 }
@@ -24,6 +39,34 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .similar-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fff;
+    margin: 0 15px;
+    margin-bottom: 20px;
+    & .similar-card-container {
+      padding: 13px;
+      width: 25%;
+      & .similar-card {
+        & .img-container {
+          height: 80px;
+          & .similar-card-img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+          }
+        }
+        & .similar-card-title {
+          display: block;
+          font-size: 14px;
+          font-weight: 700;
+          text-align: right;
+        }
+      }
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -32,6 +75,44 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .similar-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fff;
+    margin: 0 15px;
+    margin-bottom: 20px;
+    & .similar-card-container {
+      padding: 13px;
+      width: 25%;
+      & .similar-card {
+        &:hover {
+          & .img-container {
+            & .similar-card-img {
+              box-shadow: 0px 20px 30px -15px rgba(0, 0, 0, 0.3);
+              transform: scale(1.025);
+            }
+          }
+        }
+        & .img-container {
+          height: 100px;
+          & .similar-card-img {
+            box-shadow: $box-shadow;
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+            transition: all 0.2s ease-in;
+          }
+        }
+        & .similar-card-title {
+          display: block;
+          font-size: 14px;
+          font-weight: 700;
+          text-align: right;
+        }
+      }
+    }
+  }
 }
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {

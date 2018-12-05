@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "../components/head";
 import Layout from "../components/Layout";
 import productsList from "../components/tables/productsList";
-import ProductListPlate from "../components/products/ProductListPlate";
+import ProductsListPlate from "../components/products/ProductsListPlate";
 
 const Products = data => (
   <div>
@@ -39,7 +39,7 @@ const Products = data => (
             </div>
           </div>
         </div>
-        <ProductListPlate data={data} />
+        <ProductsListPlate data={data} />
       </div>
     </Layout>
   </div>
