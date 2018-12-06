@@ -32,7 +32,7 @@
     background-color: #ffffff;
     max-width: 142px;
     max-height: 235px;
-    transition: all 0.2s;
+    transition: all 0.2s ease-out;
     &:hover {
       cursor: pointer;
       text-decoration: none;

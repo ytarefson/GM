@@ -1,16 +1,16 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
-import '../scss/services/serviceDetail.scss';
+import React from "react";
+import Layout from "../components/Layout";
+import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
+import "../scss/services/serviceDetail.scss";
 
 const VspomOborud = serviceName => (
   <Layout>
     <ServiceUnitPlate serviceName={serviceName} />
-    <div className="container-fluid">
+    <div className="container-fluid vspom-oborud">
       <div className="mycontainer">
-        <div className="tools-list">
+        <div className="tools-list-2">
           <div className="tool-card">
-            <div className="img-cotnainer">
+            <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-1.jpg"
                 alt=""
@@ -25,7 +25,7 @@ const VspomOborud = serviceName => (
             </div>
           </div>
           <div className="tool-card">
-            <div className="img-cotnainer">
+            <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-2.jpg"
                 alt=""
@@ -37,7 +37,7 @@ const VspomOborud = serviceName => (
             </div>
           </div>
           <div className="tool-card">
-            <div className="img-cotnainer">
+            <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-3.jpg"
                 alt=""
@@ -49,7 +49,7 @@ const VspomOborud = serviceName => (
             </div>
           </div>
           <div className="tool-card">
-            <div className="img-cotnainer">
+            <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-4.jpg"
                 alt=""
@@ -61,7 +61,7 @@ const VspomOborud = serviceName => (
             </div>
           </div>
           <div className="tool-card">
-            <div className="img-cotnainer">
+            <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-5.jpg"
                 alt=""
@@ -73,7 +73,7 @@ const VspomOborud = serviceName => (
             </div>
           </div>
           <div className="tool-card">
-            <div className="img-cotnainer">
+            <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-6.jpg"
                 alt=""
@@ -87,7 +87,7 @@ const VspomOborud = serviceName => (
             </div>
           </div>
           <div className="tool-card">
-            <div className="img-cotnainer">
+            <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-1.jpg"
                 alt=""
@@ -99,7 +99,7 @@ const VspomOborud = serviceName => (
             </div>
           </div>
           <div className="tool-card">
-            <div className="img-cotnainer">
+            <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-1.jpg"
                 alt=""
@@ -114,6 +114,9 @@ const VspomOborud = serviceName => (
             </div>
           </div>
         </div>
+        <span className="cta">
+          Условия и сроки поставки уточняйте у наших менеджеров
+        </span>
       </div>
     </div>
   </Layout>
