@@ -1,68 +1,68 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
+import React from "react";
+import Layout from "../components/Layout";
+import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
+import "../scss/services/zapchasti.scss";
 
 const Zapchasti = serviceName => (
   <Layout>
     <ServiceUnitPlate serviceName={serviceName} />
-    <div className="container-fluid">
-      <div className="mycontainer documentation">
-        <span className="subheading-services">
-          Номенклатурный перечень запчастей для оперативной поставки:
-        </span>
-        <span className="text-grey">
-          Всю эту номенклатуру Вы можете приобрести в нашей компании по
-          доступной цене.
+    <div className="container-fluid zapchasti">
+      <div className="mycontainer">
+        <span className="header-red">
+          Категорийный перечень запчастей для <b>оперативной</b> поставки:
         </span>
         <div className="row m-0">
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Фильтра масляные</p>
+            <p className="text-bold">Фильтра масляные</p>
           </div>
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Фильтра воздушные</p>
+            <p className="text-bold">Фильтра воздушные</p>
           </div>
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Прокладки клапанной крышки ДВС</p>
+            <p className="text-bold">Прокладки клапанной крышки ДВС</p>
           </div>
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Прокладки головки блока ДВС</p>
+            <p className="text-bold">Прокладки головки блока ДВС</p>
           </div>
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Свечи зажигания</p>
+            <p className="text-bold">Свечи зажигания</p>
           </div>
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Катушки зажигания</p>
+            <p className="text-bold">Катушки зажигания</p>
           </div>
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Свечные наконечники</p>
+            <p className="text-bold">Свечные наконечники</p>
           </div>
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Фильтра картерных газов</p>
+            <p className="text-bold">Фильтра картерных газов</p>
           </div>
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Фильтра газовые</p>
+            <p className="text-bold">Фильтра газовые</p>
           </div>
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Регуляторы напряжения генератора</p>
+            <p className="text-bold">Регуляторы напряжения генератора</p>
           </div>
           <div className="col-12 col-md-6">
             <p className="text-bold">
-              - Блоки управления газовоздушным смесителем
+              Блоки управления газовоздушным смесителем
             </p>
           </div>
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Блоки управления зажиганием</p>
+            <p className="text-bold">Блоки управления зажиганием</p>
           </div>
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Контроллеры управления ГПУ</p>
+            <p className="text-bold">Контроллеры управления ГПУ</p>
           </div>
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Моторное масло</p>
+            <p className="text-bold">Моторное масло</p>
           </div>
           <div className="col-12 col-md-6">
-            <p className="text-bold">- Антифриз</p>
+            <p className="text-bold">Антифриз</p>
           </div>
         </div>
+        <span className="text-grey">
+          Всю эту номенклатуру Вы можете оперативно приобрести в нашей компании.
+        </span>
       </div>
     </div>
   </Layout>

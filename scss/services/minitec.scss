@@ -1,0 +1,79 @@
+@import "../vars";
+
+.minitec {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  & .text-min {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+  }
+  & .img-wrapper {
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    & .img-container {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      & .minitec-img {
+        width: 100%;
+        height: auto;
+        border: 10px solid white;
+        box-shadow: $box-shadow;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .minitec {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    & .text-min {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 15px;
+    }
+    & .img-wrapper {
+      height: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      & .img-container {
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        & .minitec-img {
+          width: 100%;
+          height: auto;
+          border: 10px solid white;
+          box-shadow: $box-shadow;
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+}

@@ -1,17 +1,19 @@
 @import "../vars";
 
-.service-detail-card {
-  & .section-plate {
-    & .card-img-container {
-      height: 250px;
-      overflow: hidden;
-      border-radius: 0;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      box-shadow: $box-shadow;
-      & .card-img {
-      }
+.optimal-agregats {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  & .header-red {
+    padding-left: 15px;
+  }
+  & .text-min {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  & .img-container {
+    overflow: hidden;
+    box-shadow: $box-shadow;
+    & img {
     }
   }
 }
