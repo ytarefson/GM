@@ -25,7 +25,7 @@ export class ServiceUnitPlate extends Component {
               <Link href="/uslugi">
                 <a className="crambs">Услуги > </a>
               </Link>
-              <span className="crambs">{service.label}</span>
+              <span className="crambs cramb-main">{service.label}</span>
             </div>
           </div>
           <div className="mycontainer section-plate">

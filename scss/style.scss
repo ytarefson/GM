@@ -161,9 +161,17 @@ b {
 }
 .breadcrumbs {
   margin-left: 15px;
+
   & .crambs {
     font-size: 12px;
     padding-right: 3px;
+    color: darkgrey;
+  }
+  & .cramb-main {
+    // color: grey;
+    // padding: 0;
+    // margin: 0;
+    color: #d44625;
   }
 }
 .mycontainer {
@@ -233,7 +241,11 @@ b {
     margin-left: 15px;
     & .crambs {
       font-size: 14px;
+      font-weight: 700;
+      //letter-spacing: 2px;
+      text-transform: uppercase;
       padding-right: 3px;
+      //color: darkgrey;
     }
   }
 }

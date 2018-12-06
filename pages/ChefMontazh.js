@@ -1,63 +1,64 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
+import React from "react";
+import Layout from "../components/Layout";
+import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
+import "../scss/montazh.scss";
 
 const ChefMontazh = serviceName => (
   <Layout>
     <ServiceUnitPlate serviceName={serviceName} />
-    <div className="container-fluid">
-      <div className="mycontainer documentation">
-        <p className="text-common">
+    <div className="container-fluid montazh">
+      <div className="mycontainer documentation section-plate">
+        <p className="text-min">
           Специалисты нашей компании прошли обучение на предприятиях MAN,
           Liebherr и ЯМЗ и обладают компетенцией для проведения наладки
           оборудования производства этих компаний. Стандартная программа
           шеф-монтажных и пусконаладочных работ включает в себя.
         </p>
-        <h2 className="subheading-services">1. Монтаж и сборка</h2>
+        <h2 className="header-red">1. Монтаж и сборка</h2>
         <div className="razdel-list">
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               1.1. Проверка правильности крепления агрегата к фундаментной
               плите.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               1.2. Проверка наличия заземляющего контура.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               1.3. Проверка подвода газа, контроль давления на входе.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               1.4. Проверка правильности подключения электрических кабелей.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               1.5. Проверка подключения выхлопного трубопровода с последующим
               контролем сопротивления на выпуске.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               1.6. Проверка правильности подключения теплового контура.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               1.7. Оформление акта передачи для пусковых и режимно-наладочных
               работ.
             </p>
           </div>
         </div>
-        <h2 className="subheading-services">2. Электростанция</h2>
+        <h2 className="header-red">2. Электростанция</h2>
         <div className="razdel-list">
           <div className="razdel-li">
-            <p className="text-common">2.1. Электростанция:</p>
+            <p className="text-min">2.1. Электростанция:</p>
             <ul className="razdel-list-ul">
               <li className="razdel-ul-li">
                 <p className="text-italic">
@@ -100,22 +101,22 @@ const ChefMontazh = serviceName => (
             </ul>
           </div>
           <div className="razdel-li">
-            <p className="text-common">2.2. Проверка работы:</p>
+            <p className="text-min">2.2. Проверка работы:</p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">2.2.1. Ручной пуск.</p>
+            <p className="text-min">2.2.1. Ручной пуск.</p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">2.2.2. Ручной останов.</p>
+            <p className="text-min">2.2.2. Ручной останов.</p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">2.2.3. Проверка силовых шкафов.</p>
+            <p className="text-min">2.2.3. Проверка силовых шкафов.</p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">2.2.4. Проверка управления шкафов.</p>
+            <p className="text-min">2.2.4. Проверка управления шкафов.</p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               2.2.5. Проверка срабатывания защит мотора.
             </p>
           </div>
@@ -127,36 +128,34 @@ const ChefMontazh = serviceName => (
           </div>
         </div>
 
-        <h2 className="subheading-services">3. Система газоснабжения:</h2>
+        <h2 className="header-red">3. Система газоснабжения:</h2>
         <div className="razdel-list">
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               3.1. Проверка работы центрального электромагнитного клапана.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               3.2. Проверка и настройка работы регуляторов давления.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               3.3. Проверка и настройка работы сбросного устройства.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
-              3.4. Проверка на утечки в газопроводе.
-            </p>
+            <p className="text-min">3.4. Проверка на утечки в газопроводе.</p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               1.5. Проверка подключения выхлопного трубопровода с последующим
               контролем сопротивления на выпуске.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               3.5. Проверка работы измерителя давления газа.
             </p>
           </div>
@@ -167,112 +166,108 @@ const ChefMontazh = serviceName => (
           </div>
         </div>
 
-        <h2 className="subheading-services">4. Система утилизации тепла </h2>
+        <h2 className="header-red">4. Система утилизации тепла </h2>
         <div className="razdel-list">
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               4.1. Проверка герметичности трубопроводов
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
-              4.2. Настройка работы моторных приводов
-            </p>
+            <p className="text-min">4.2. Настройка работы моторных приводов</p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               4.3. Настройка уставок включения и выключения байпасных линий
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">4.4. Настройка аварийных установок</p>
+            <p className="text-min">4.4. Настройка аварийных установок</p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               4.5. Контроль автоматической работы при различных нагрузках
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">4.6. Имитация аварийных ситуаций</p>
+            <p className="text-min">4.6. Имитация аварийных ситуаций</p>
           </div>
         </div>
 
-        <h2 className="subheading-services">
-          5. Система охлаждения установок:
-        </h2>
+        <h2 className="header-red">5. Система охлаждения установок:</h2>
         <div className="razdel-list">
           <div className="razdel-li">
-            <p className="text-common">5.1. Проверка герметичности.</p>
+            <p className="text-min">5.1. Проверка герметичности.</p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               5.2. Настройка моментов включения вентиляторов.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               5.3. Настройка разницы температур прямого и обратного
               трубопроводов.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               5.4. Контроль работы расширительного бака.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               5.5. Измерение давления в системе охлаждения.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               5.6. Измерение температуры в системе охлаждения.
             </p>
           </div>
         </div>
 
-        <h2 className="subheading-services">6. Система управления КГПУ:</h2>
+        <h2 className="header-red">6. Система управления КГПУ:</h2>
         <div className="razdel-list">
           <div className="razdel-li">
-            <p className="text-common">6.1. Проверка работы контроллеров.</p>
+            <p className="text-min">6.1. Проверка работы контроллеров.</p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               6.2. Проверка работы системы запрета выдачи мощности в сеть.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               6.3. Настройка параметров параллельной работы станции с внешней
               сетью.
             </p>
           </div>
         </div>
-        <h2 className="subheading-services">
+        <h2 className="header-red">
           7. Техническое обслуживание после обкатки 72 часа:
         </h2>
         <div className="razdel-list">
           <div className="razdel-li">
-            <p className="text-common"> 7.1. Замена моторного масла.</p>
+            <p className="text-min"> 7.1. Замена моторного масла.</p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               7.2. Промывка фильтра центробежной очистки масла.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               7.3. Проверка, регулировка угла опережения зажигания стробоскопом.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               7.4 Протяжка внешних резьбовых соединения.
             </p>
           </div>
           <div className="razdel-li">
-            <p className="text-common">
+            <p className="text-min">
               7.5. Проверка, регулировка зазоров клапанного механизма.
             </p>
           </div>

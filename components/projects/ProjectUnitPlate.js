@@ -18,7 +18,7 @@ export class ProjectUnitPlate extends Component {
               <Link href="/projects">
                 <a className="crambs">Проекты > </a>
               </Link>
-              <span className="crambs">{project.label}</span>
+              <span className="crambs cramb-main">{project.label}</span>
             </div>
           </div>
           <div className="mycontainer section-plate">

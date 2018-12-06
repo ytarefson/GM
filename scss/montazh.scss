@@ -1,0 +1,103 @@
+@import "./vars";
+
+.montazh {
+  position: relative;
+  padding-bottom: 80px;
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 70%;
+    height: 98%;
+    bottom: 0;
+    right: 0;
+    border-top: 2px solid #d44625;
+    //background-color: #ecebeb;
+    border-left: 3px solid #d44625;
+  }
+  & .section-plate {
+    padding: 30px;
+    & .text-min {
+      //padding-bottom: 30px;
+    }
+    & .header-red {
+      margin-top: 30px;
+    }
+    & .razdel-list {
+      & .razdel-li {
+        & .text-min {
+          margin: 0;
+          padding: 0;
+          font-size: 14px;
+          padding-bottom: 15px;
+          //padding-left: 10px;
+          line-height: 20px;
+        }
+        & .razdel-list-ul {
+          padding: 0;
+          font-size: 13px;
+          line-height: 18px;
+          display: block;
+          & .razdel-ul-li {
+            & .text-italic {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .montazh {
+    & .section-plate {
+      padding: 30px;
+      & .text-min {
+        //padding-bottom: 30px;
+      }
+      & .header-red {
+        margin-top: 30px;
+      }
+      & .razdel-list {
+        & .razdel-li {
+          & .text-min {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            padding-bottom: 15px;
+            padding-left: 27px;
+            line-height: 24px;
+          }
+          & .razdel-list-ul {
+            padding: 0;
+            padding-left: 46px;
+            font-size: 15px;
+            line-height: 18px;
+            display: block;
+            & .razdel-ul-li {
+              & .text-italic {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
