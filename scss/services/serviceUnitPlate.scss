@@ -1,3 +1,24 @@
+@import "../vars";
+
+.service-detail-card {
+  & .section-plate {
+    & .card-img-container {
+      height: 250px;
+      overflow: hidden;
+      border-radius: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: $box-shadow;
+      & .card-img {
+        border-radius: 0;
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
 }

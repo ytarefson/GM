@@ -1,14 +1,14 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
-import '../scss/services/serviceDetail.scss';
+import React from "react";
+import Layout from "../components/Layout";
+import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
+import "../scss/services/serviceDetail.scss";
 
 const AutoCenters = serviceName => (
   <Layout>
     <ServiceUnitPlate serviceName={serviceName} />
     <div className="container-fluid vspomOborud">
-      <div className="mycontainer">
-        <p className="text-common">
+      <div className="mycontainer section-plate">
+        <p className="text-min p-3">
           При необходимости проводятся инженерные изыскания: геодезические,
           геологические, экологические. Разработка проектной документации
           осуществляется в соответствии с постановлением Правительства РФ от
@@ -16,8 +16,8 @@ const AutoCenters = serviceName => (
           требованиях к их содержанию».
         </p>
       </div>
-      <div className="mycontainer documentation">
-        <span className="subheading-services">
+      <div className="mycontainer documentation section-plate">
+        <span className="header-red pl-3 pt-3">
           Стандартный состав комплекта проектной и рабочей документации:
         </span>
         <div className="orderlist">
@@ -50,33 +50,33 @@ const AutoCenters = serviceName => (
             </p>
             <ul className="razdel-list">
               <li className="razdel-li">
-                <span className="text-common">1. Технологическая часть</span>
+                <span className="text-min">1. Технологическая часть</span>
               </li>
               <li className="razdel-li">
-                <span className="text-common">2. Газоснабжение. </span>
+                <span className="text-min">2. Газоснабжение. </span>
               </li>
               <li className="razdel-li">
-                <span className="text-common">
+                <span className="text-min">
                   3. Отопление, вентиляция и кондиционирование, тепловые сети.
                 </span>
               </li>
               <li className="razdel-li">
-                <span className="text-common">
-                  4. Водоснабжение и водоотведение.{' '}
+                <span className="text-min">
+                  4. Водоснабжение и водоотведение.{" "}
                 </span>
               </li>
               <li className="razdel-li">
-                <span className="text-common">
+                <span className="text-min">
                   5. Электроснабжение 0,4 кВ (внутренние сети)
                 </span>
               </li>
               <li className="razdel-li">
-                <span className="text-common">
+                <span className="text-min">
                   6. Электроснабжение 10 кВ (внутренние и наружные сети)
                 </span>
               </li>
               <li className="razdel-li">
-                <span className="text-common">
+                <span className="text-min">
                   7. Автоматизация (АСУ ТП, учет э/э, тепла, газа и воды)
                 </span>
               </li>

@@ -1,8 +1,17 @@
 .footer {
   text-align: left;
   padding-top: 50px;
-  padding-bottom: 50px;
-  background-image: linear-gradient(to right, #cb4828 0%, #e46849 100%);
+  //padding-bottom: 50px;
+  background-color: grey;
+  //background-image: linear-gradient(to right, #cb4828 0%, #e46849 100%);
+  & .rights-reserved {
+    text-align: right;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 30px;
+    color: white;
+    border-top: 1px solid white;
+  }
   & .footer-logo-container {
     text-align: center;
     margin-bottom: 30px;
@@ -143,9 +152,50 @@
   .footer {
     & .footer-logo-container {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-start;
+      & .footer-logo {
+        width: 50%;
+        display: block;
+      }
+    }
+    & .adres-list {
+      text-align: left;
+      & .adres-map-link {
+        font-size: 20px;
+      }
+      & .adres-phones {
+        & .phone-link {
+          margin: 0 auto 0 0 !important;
+        }
+        & .phone-link-big {
+          font-size: 24px;
+        }
+      }
+    }
+    & .link-map {
+      & .link-map-header {
+        padding-left: 8px;
+        text-align: left;
+      }
+      & .link-map-list {
+        margin-top: 10px;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        & .link-map-item {
+          padding: 0px 8px;
+          & .link-map-link {
+            display: block;
+            color: #ffffff;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            line-height: 34px;
+          }
+        }
+      }
     }
   }
 }

@@ -4,10 +4,10 @@ import menu from "./menu";
 import "../scss/footer.scss";
 
 const Footer = () => (
-  <section className="footer">
+  <footer className="footer">
     <div className="mycontainer">
       <div className="row m-0">
-        <div className="col-12 col-lg-3 order-lg-4 footer-logo-container">
+        <div className="col-12 col-lg-4 order-lg-4 footer-logo-container">
           <Link href="/">
             <img
               src="../../static/images/logo-big.png"
@@ -16,7 +16,7 @@ const Footer = () => (
             />
           </Link>
         </div>
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 col-lg-4">
           <span className="contacts-header">Контакты:</span>
           <ul className="adres-list">
             <li>
@@ -60,7 +60,10 @@ const Footer = () => (
         </div>
       </div>
     </div>
-  </section>
+    <div className="rights-reserved">
+      2006 - 2019 ООО "Газовые машины" &copy; Все права защищены.
+    </div>
+  </footer>
 );
 
 export default Footer;

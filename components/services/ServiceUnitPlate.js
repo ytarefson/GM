@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Head from '../../components/head';
-import Link from 'next/link';
-import serviceList from '../tables/serviceList';
-import '../../scss/services/serviceUnitPlate.scss';
+import React, { Component } from "react";
+import Head from "../../components/head";
+import Link from "next/link";
+import serviceList from "../tables/serviceList";
+import "../../scss/services/serviceUnitPlate.scss";
 
 export class ServiceUnitPlate extends Component {
   render() {
@@ -31,10 +31,10 @@ export class ServiceUnitPlate extends Component {
           <div className="mycontainer section-plate">
             <div className="row m-0">
               <div className="col-12 col-md-8 card-content">
-                <h2 className="header-common">{service.label}</h2>
-                <p className="common-text">{service.text}</p>
+                <h2 className="header-red">{service.label}</h2>
+                <p className="common-text pb-3">{service.text}</p>
               </div>
-              <div className="col-12 col-md-4">
+              <div className="col-12 col-md-4 p-0">
                 <div className="card-img-container">
                   <img
                     src={service.img}
