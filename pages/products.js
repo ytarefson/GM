@@ -1,9 +1,10 @@
-import React from "react";
-import Link from "next/link";
-import Head from "../components/head";
-import Layout from "../components/Layout";
-import productsList from "../components/tables/productsList";
-import ProductsListPlate from "../components/products/ProductsListPlate";
+import React from 'react';
+import Link from 'next/link';
+import Head from '../components/head';
+import Layout from '../components/Layout';
+import productsList from '../components/tables/productsList';
+import ProductsListPlate from '../components/products/ProductsListPlate';
+import ProductsNew from '../components/products/ProductsNew';
 
 const Products = data => (
   <div>
@@ -40,6 +41,7 @@ const Products = data => (
           </div>
         </div>
         <ProductsListPlate data={data} />
+        <ProductsNew />
       </div>
     </Layout>
   </div>
@@ -47,11 +49,11 @@ const Products = data => (
 
 Products.getInitialProps = async function(context) {
   if (context.query.category !== undefined) {
-    console.log("Here we are " + context.query.category.toUpperCase());
+    console.log('Here we are ' + context.query.category.toUpperCase());
     const category = context.query.category.toUpperCase();
     const data = [];
-    data.category = "";
-    console.log("1st " + category);
+    data.category = '';
+    console.log('1st ' + category);
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
         const element = productsList[cat];
@@ -63,10 +65,10 @@ Products.getInitialProps = async function(context) {
     }
     return { data };
   } else {
-    const category = "MAN";
+    const category = 'MAN';
     console.log(category);
     let data = [];
-    data.category = "";
+    data.category = '';
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
         const element = productsList[cat];
