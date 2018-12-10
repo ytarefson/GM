@@ -1,9 +1,9 @@
-import React from 'react';
-import Link from 'next/link';
-import Head from '../components/head';
-import Layout from '../components/Layout';
-import serviceList from '../components/tables/serviceList';
-import '../scss/services/services.scss';
+import React from "react";
+import Link from "next/link";
+import Head from "../components/head";
+import Layout from "../components/Layout";
+import serviceList from "../components/tables/serviceList";
+import "../scss/services/services.scss";
 
 const Services = () => (
   <div>
@@ -21,7 +21,7 @@ const Services = () => (
               <p className="text-min">
                 Проектирование, разработка и производство газовых электростанций
                 тесно связаны с большим перечнем сопутствующих работ. Вы можете
-                воспользоваться ими отдельно для решения локальных задачь. Или в
+                воспользоваться ими отдельно для решения локальных задач. Или в
                 рамках разработки проекта они будут включены в смету по
                 необходимости и в рамках работ по проекту.
               </p>

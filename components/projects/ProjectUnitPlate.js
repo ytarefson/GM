@@ -58,8 +58,7 @@ export class ProjectUnitPlate extends Component {
                     Мощность: {project.energy}
                   </span>
                   <span className="project-unitplate-energy">
-                    Тепловая мощьность:
-                    {project.tenergy}
+                    Тепловая мощность: {project.tenergy}
                   </span>
                 </div>
               </div>

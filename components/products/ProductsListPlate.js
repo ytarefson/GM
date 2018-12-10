@@ -64,6 +64,9 @@ export class ProductsListPlate extends Component {
                           <span className="product-card-power">
                             {item.electricPower} кВт
                           </span>
+                          <span className="product-card-details">
+                            Подробнее...
+                          </span>
                         </div>
                       </div>
                     </div>
