@@ -22,7 +22,7 @@ export default GeneralServices => (
       <div className="row cards-container">
         {serviceList.map(({ label, text, img, href, as, key }) => (
           <div className="col-6 col-sm-4 col-lg-3 teh-plate" key={key}>
-            <Link href={href} as={`/uslugi/${as}`}>
+            <Link href={`/uslugi/${href}`} as={`/uslugi/${as}`}>
               <a className="teh-card">
                 <div className="teh-image-container">
                   <img src={img} alt="" className="teh-image" />
