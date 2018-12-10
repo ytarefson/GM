@@ -1,3 +1,29 @@
+@import "../vars";
+
+.news-unit-plate {
+  padding-bottom: 80px;
+  & .big-new {
+    & .header-razdel {
+    }
+    & .subheadding-red-bottom {
+      margin-top: 20px;
+      font-size: 14px;
+      color: $accent-red;
+    }
+  }
+  & .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 30px auto 10px 0;
+    max-width: 500px;
+  }
+  & .new-details {
+    margin-bottom: 30px;
+  }
+}
+
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
 }

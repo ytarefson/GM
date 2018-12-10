@@ -175,7 +175,7 @@ const productsList = [
       {
         label: "LIEBHERR 230",
         id: 10,
-        img: "product-1.jpg",
+        img: "liebherr-230.jpg",
         as: "/LIEBHERR-230",
         motorMark: "Liebherr G946",
         gasMixer: "Motortech VariFuel2",
@@ -202,7 +202,7 @@ const productsList = [
       {
         label: "LIEBHERR 300",
         id: 11,
-        img: "product-1.jpg",
+        img: "liebherr-230.jpg",
         as: "/LIEBHERR-300",
         motorMark: "Liebherr G9508",
         gasMixer: "Motortech VariFuel2",
@@ -229,7 +229,7 @@ const productsList = [
       {
         label: "LIEBHERR 500",
         id: 12,
-        img: "product-1.jpg",
+        img: "liebherr-230.jpg",
         as: "/LIEBHERR-500",
         motorMark: "Liebherr G9512",
         gasMixer: "Motortech VariFuel2",
@@ -256,7 +256,7 @@ const productsList = [
       {
         label: "LIEBHERR 1000",
         id: 13,
-        img: "product-1.jpg",
+        img: "liebherr-1000.jpg",
         as: "/LIEBHERR-1000",
         motorMark: "Liebherr G9620",
         gasMixer: "Motortech VariFuel2",

@@ -1,6 +1,7 @@
 @import "./vars";
 .redzone {
-  background: linear-gradient(-265deg, #cb4828 0%, #e46849 100%);
+  //background: linear-gradient(-265deg, #c81e23 0%, #e46849 100%);
+  background-image: $red-gradient;
   padding-top: 40px;
   padding-bottom: 40px;
   margin-bottom: 0px;

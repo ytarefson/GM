@@ -1,16 +1,25 @@
+@import "./vars";
+
 .footer {
   text-align: left;
   padding-top: 50px;
   //padding-bottom: 50px;
-  background-color: grey;
+  //background-image: linear-gradient(to right, #313131 0%, #c81e23 100%);
   //background-image: linear-gradient(to right, #cb4828 0%, #e46849 100%);
+  background-image: linear-gradient(to left, #777777 0%, #5e5e5e 100%);
+  //background-image: $red-gradient;
   & .rights-reserved {
+    margin-top: 30px;
     text-align: right;
     padding-right: 10px;
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    line-height: 14px;
     color: white;
-    border-top: 1px solid white;
+    border-top: 1px solid lightgrey;
   }
   & .footer-logo-container {
     text-align: center;

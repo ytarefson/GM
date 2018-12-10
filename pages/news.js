@@ -15,10 +15,10 @@ const News = () => (
     <Layout>
       <div className="container-fluid news">
         <div className="mycontainer">
-          <span className="subheading-red-top">
+          <span className="subheading-red-top pl-3">
             Новостная лента “Газовые машины”.
           </span>
-          <h2 className="header-razdel">
+          <h2 className="header-razdel pl-3">
             Наука, технологии, события, достижения...
           </h2>
 

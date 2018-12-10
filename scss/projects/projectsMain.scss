@@ -13,7 +13,6 @@
     left: 0;
     bottom: 0;
     left: 0;
-    background-color: #ecebeb;
     border-right: 3px solid #d44625;
     border-top: 3px solid #d44625;
   }
@@ -36,8 +35,9 @@
       max-width: 310px;
       height: 100%;
       background: #fff;
-      box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.1),
-        -7px 10px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: $box-shadow-up;
+      // box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.1),
+      //   -7px 10px 15px rgba(0, 0, 0, 0.1);
       transition: box-shadow 0.2s ease-out;
       &:hover {
         box-shadow: $box-shadow;

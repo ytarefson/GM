@@ -226,14 +226,14 @@
     }
     & .teh-card {
       max-width: 200px;
-      max-height: 331px;
+      max-height: 400px;
       & .teh-image-container {
         & .teh-image {
           height: 220px;
         }
         & .header-container {
           & .teh-header {
-            padding: 0 16px 10px;
+            padding: 0 15px 15px;
             font-size: 17px;
             line-height: 20px;
             text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -241,9 +241,8 @@
         }
       }
       & .teh-content {
-        padding: 14px 16px;
-        height: 111px;
-        padding: 10px 16px;
+        padding: 20px 15px;
+        height: 150px;
         & .teh-desc {
           font-size: 13px;
           line-height: 19px;

@@ -14,14 +14,14 @@ const Calculator = () => (
       <div className="container-fluid calculator">
         <span className="bg-calc">Калькулятор</span>
         <div className="mycontainer">
-          <h1 className="header-razdel mt-3">
+          <h1 className="header-razdel mt-3 pl-3">
             Калькулятор
             <br />
             <b>энергетической</b>
             <br />
             эффективности
           </h1>
-          <span className="calc-text-2">
+          <span className="calc-text-2 pl-3">
             Узнайте сколько мы для вас экономим ...
           </span>
 

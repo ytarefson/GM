@@ -17,8 +17,8 @@ const Projects = () => (
     <Layout>
       <div className="container-fluid projects">
         <div className="mycontainer">
-          <span className="subheading-red-top">Портфолио</span>
-          <h2 className="header-razdel">Реализованные проекты</h2>
+          <span className="subheading-red-top pl-3">Портфолио</span>
+          <h2 className="header-razdel pl-3">Реализованные проекты</h2>
           <p className="subheading-common-3 mt-5">
             В течении 12 лет основным профилем деятельности ООО “Газовые машины”
             является проектирование, производство и поставка "под ключ"

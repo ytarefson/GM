@@ -47,7 +47,6 @@ b {
 }
 .header-common {
   font-family: $noto-font;
-  margin-top: 35px;
   color: #313131;
   display: block;
   font-size: 20px;
@@ -55,11 +54,12 @@ b {
   line-height: 32px;
   font-style: bold;
   letter-spacing: -0.65px;
+  padding-left: 15px;
+  margin-top: 35px;
   margin-bottom: 0;
 }
 .header-red {
   font-family: $noto-font;
-  //color: #b54724;
   display: block;
   font-size: 20px;
   font-weight: 700;
@@ -85,18 +85,17 @@ b {
 }
 .subheading-common-2 {
   display: block;
-  font-family: $noto-font;
-  color: #313131;
+  color: grey;
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 30px;
-  font-style: italic;
+  //font-style: italic;
+  font-weight: 700;
   padding-left: 15px;
   padding-right: 15px;
 }
 .subheading-common-3 {
   display: block;
-  font-family: $noto-font;
   color: #313131;
   //color: #cb4828;
   font-size: 15px;
@@ -108,13 +107,14 @@ b {
   padding-right: 15px;
 }
 .subheading-red-bottom {
-  color: #cb4828 !important;
+  color: $accent-red !important;
   display: block;
   margin-bottom: 30px;
+  padding-left: 15px;
   font-weight: 700;
 }
 .subheading-red-top {
-  color: #cb4828;
+  color: $accent-red;
   display: block;
   margin-top: 50px;
   font-weight: 700;
@@ -171,7 +171,7 @@ b {
     // color: grey;
     // padding: 0;
     // margin: 0;
-    color: #d44625;
+    color: $accent-red;
   }
 }
 .mycontainer {
@@ -197,7 +197,7 @@ b {
       content: "";
       width: 250px;
       height: 2px;
-      background-color: #cb4828;
+      background-color: $accent-red;
       left: -260px;
       top: 16px;
       border-radius: 5px;
@@ -276,7 +276,6 @@ b {
   .subheading-common-2 {
     display: block;
     font-family: $noto-font;
-    color: #313131;
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 30px;

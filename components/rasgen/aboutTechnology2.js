@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default AboutTechnology2 => (
   <div className="container-fluid aboutTechnology">
-    <div className="mycontainer">
+    <div className="mycontainer mt-5">
       <div className="row m-0">
         <div className="col-12 col-md-6">
           <div className="img-container">

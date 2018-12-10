@@ -71,7 +71,7 @@ export class About extends Component {
                 </div>
               </div>
               <div className="row m-0">
-                <div className="col-12 p-0">
+                <div className="col-12 p-0 pl-3 pr-3">
                   <p className="text-min">
                     С 2006 г. до настоящего времени компанией выпущено{" "}
                     <b>75 электростанций суммарной мощностью более 21 МВт.</b> В
@@ -102,7 +102,7 @@ export class About extends Component {
           </div>
           <div className="container-fluid contacts pt-4 mt-5 mb-3">
             <div className="mycontainer">
-              <span className="header-common contacts-heading">Контакты:</span>
+              <span className="contacts-heading">Контакты:</span>
             </div>
             <div className="row m-0">
               <div className="col-12 col-md-6 order-md-2">
@@ -168,8 +168,8 @@ export class About extends Component {
             <div className="mycontainer">
               <div className="row m-0">
                 <div className="col-12">
-                  <h2 className="header-common">Направления</h2>
-                  <span className="subheading-red-bottom">
+                  <h2 className="header-common pl-0">Направления</h2>
+                  <span className="subheading-red-bottom pl-0">
                     Полный цикл производства
                   </span>
                   <p className="text-min">

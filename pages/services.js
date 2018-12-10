@@ -15,7 +15,7 @@ const Services = () => (
       <div className="container-fluid services">
         <div className="mycontainer">
           <div className="row m-0">
-            <div className="col-12 col-md-8">
+            <div className="col-12 col-lg-8">
               <span className="subheading-red-top">Услуги</span>
               <h2 className="header-razdel mb-3">Основные направления</h2>
               <p className="text-min">
@@ -28,7 +28,7 @@ const Services = () => (
             </div>
           </div>
         </div>
-        <div className="mycontainer mycontainer-cards p-0">
+        <div className="mycontainer mycontainer-cards p-0 p-md-3">
           <div className="row cards-container">
             {serviceList.map(({ label, text, img, href, as, key }) => (
               <div className="col-6 col-sm-4 col-lg-3 teh-plate" key={key}>

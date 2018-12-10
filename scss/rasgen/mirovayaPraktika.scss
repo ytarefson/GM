@@ -70,14 +70,14 @@
         & .col-heading {
           font-family: $noto-font;
           font-size: 10px;
-          letter-spacing: -0.5px;
+          letter-spacing: 0.5px;
           font-weight: 700;
         }
         & .col-percent {
           font-family: $noto-font;
           font-size: 10px;
           letter-spacing: -0.5px;
-          color: #cb4828;
+          color: $accent-red;
           font-weight: 700;
         }
       }
@@ -100,7 +100,6 @@
           & .col-heading {
             font-family: $noto-font;
             font-size: 12px;
-            letter-spacing: -0.5px;
           }
           & .col-percent {
             font-family: $noto-font;
@@ -131,7 +130,6 @@
             //margin-top: 40px;
             font-family: $noto-font;
             font-size: 16px;
-            letter-spacing: -0.5px;
           }
           & .col-percent {
             margin-top: 5px;

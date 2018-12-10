@@ -22,7 +22,9 @@ const Footer = () => (
             <li>
               <Link href="https://yandex.ru/maps/-/CBFyIKsQPB" as="yandex-map">
                 <a className="adres-map-link">
-                  РОССИЯ, Ярославль, пр. Авиаторов, 155
+                  РОССИЯ, Ярославль,
+                  <br />
+                  пр-т.&nbsp;Авиаторов-155
                 </a>
               </Link>
             </li>

@@ -1,14 +1,15 @@
 .news-cards-small-plate {
+  margin-top: 40px;
   & .news-card-small {
     display: block;
     margin: 20px 0;
     padding-bottom: 20px;
-    border-bottom: 1px solid lightgrey;
+    //border-bottom: 1px solid lightgrey;
     & .img-container {
       & .news-card-img {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         max-width: 100%;
-        border: 10px solid white;
+        border: 5px solid white;
       }
     }
     & .news-details {

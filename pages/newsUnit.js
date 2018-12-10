@@ -1,20 +1,28 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
-import newsList from '../components/tables/newsList';
-import Layout from '../components/Layout';
-import NewsUnitPlate from '../components/news/NewsUnitPlate';
+import newsList from "../components/tables/newsList";
+import Layout from "../components/Layout";
+import NewsUnitPlate from "../components/news/NewsUnitPlate";
 
 const NewsUnit = data => (
   <Layout>
     <div className="container-fluid news">
+      <div className="section-plate mb-3">
+        <div className="breadcrumbs">
+          <Link href="/">
+            <a className="crambs">Главная > </a>
+          </Link>
+          <Link href="/products">
+            <a className="crambs">Новости > </a>
+          </Link>
+          {/* <Link href={}>
+					<a className="crambs">{category} > </a>
+				</Link>
+				<span className="crambs cramb-main">{product.label}</span> */}
+        </div>
+      </div>
       <div className="mycontainer">
-        <span className="subheading-red-top">
-          Новостная лента “Газовые машины”.
-        </span>
-        <h2 className="header-razdel">
-          Наука, технологии, события, достижения...
-        </h2>
         <NewsUnitPlate data={data} />
       </div>
     </div>
