@@ -16,7 +16,7 @@ const Products = data => (
       <div className="container-fluid products">
         <div className="mycontainer mb-5">
           <div className="row m-0">
-            <div className="col-12 col-md-8">
+            <div className="col-12 col-xl-8">
               <span className="subheading-red-top">Продукция</span>
               <h2 className="header-razdel mb-4">Каталог готовых решений</h2>
               <p className="text-min">
@@ -29,7 +29,7 @@ const Products = data => (
                 условиях и гарантирют исправную работу в течение многих лет.
               </p>
             </div>
-            <div className="col-12 col-md-4 d-none d-xl-block">
+            <div className="col-12 col-xl-4 d-none d-xl-block">
               <div className="img-container">
                 <img
                   src="../static/images/products-img.png"

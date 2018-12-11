@@ -85,10 +85,11 @@
           justify-content: center;
           align-items: center;
           height: 100px;
-          // width: auto;
+          width: 100%;
           overflow: hidden;
           & .product-card-img {
-            height: 100%;
+            height: auto;
+            width: 100%;
             // object-fit: cover;
             //max-width: 100%;
           }
@@ -189,6 +190,7 @@
             overflow: hidden;
             & .product-card-img {
               width: 100%;
+              height: auto;
             }
           }
           & .text-container {

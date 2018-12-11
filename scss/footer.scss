@@ -22,11 +22,15 @@
     border-top: 1px solid lightgrey;
   }
   & .footer-logo-container {
-    text-align: center;
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100px;
     cursor: pointer;
     & .footer-logo {
-      width: 40%;
+      display: block;
+      width: 80%;
     }
   }
   & .contacts-header {
@@ -125,7 +129,7 @@
           margin: 0 auto 0 0 !important;
         }
         & .phone-link-big {
-          font-size: 24px;
+          //font-size: 24px;
         }
       }
     }
@@ -159,16 +163,6 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .footer {
-    & .footer-logo-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: flex-start;
-      & .footer-logo {
-        width: 50%;
-        display: block;
-      }
-    }
     & .adres-list {
       text-align: left;
       & .adres-map-link {
@@ -179,7 +173,7 @@
           margin: 0 auto 0 0 !important;
         }
         & .phone-link-big {
-          font-size: 24px;
+          //font-size: 24px;
         }
       }
     }

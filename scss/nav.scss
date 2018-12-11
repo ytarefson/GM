@@ -2,6 +2,12 @@
 nav {
   margin-top: 10px;
   background: #fdfdfd;
+  & .navbar-brand {
+    & img {
+      display: block;
+      height: 40px;
+    }
+  }
   & .navbar-collapse {
     margin-bottom: 10px;
   }

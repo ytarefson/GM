@@ -26,7 +26,7 @@ const productsList = [
         nominalGazConsumption: "59.6",
         noiseLevel: "80",
         serviceInterval: "1 500 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
       },
@@ -54,7 +54,7 @@ const productsList = [
         nominalGazConsumption: "67",
         noiseLevel: "80",
         serviceInterval: "1 500 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
       },
@@ -81,7 +81,7 @@ const productsList = [
         nominalGazConsumption: "78",
         noiseLevel: "80",
         serviceInterval: "1 000 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
       },
@@ -108,7 +108,7 @@ const productsList = [
         nominalGazConsumption: "91",
         noiseLevel: "80",
         serviceInterval: "1 000 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
       },
@@ -135,7 +135,7 @@ const productsList = [
         nominalGazConsumption: "107",
         noiseLevel: "80",
         serviceInterval: "1 000 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
       },
@@ -163,7 +163,7 @@ const productsList = [
         nominalGazConsumption: "135",
         noiseLevel: "80",
         serviceInterval: "1 000 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
       }
@@ -195,7 +195,7 @@ const productsList = [
         nominalGazConsumption: "59.2",
         noiseLevel: "80",
         serviceInterval: "1 000 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
       },
@@ -222,7 +222,7 @@ const productsList = [
         nominalGazConsumption: "78",
         noiseLevel: "80",
         serviceInterval: "1 000 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
       },
@@ -249,7 +249,7 @@ const productsList = [
         nominalGazConsumption: "135",
         noiseLevel: "80",
         serviceInterval: "1 000 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
       },
@@ -276,7 +276,7 @@ const productsList = [
         nominalGazConsumption: "265",
         noiseLevel: "80",
         serviceInterval: "1 000 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
       }
@@ -308,7 +308,7 @@ const productsList = [
         nominalGazConsumption: "31.9",
         noiseLevel: "80",
         serviceInterval: "800 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
       },
@@ -335,7 +335,7 @@ const productsList = [
         nominalGazConsumption: "40",
         noiseLevel: "80",
         serviceInterval: "800 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
       },
@@ -362,7 +362,7 @@ const productsList = [
         nominalGazConsumption: "66",
         noiseLevel: "80",
         serviceInterval: "800 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
       },
@@ -389,9 +389,284 @@ const productsList = [
         nominalGazConsumption: "40",
         noiseLevel: "80",
         serviceInterval: "800 моточасов",
-        totalPowerPlant: "Не менее 15",
+        totalPowerPlant: "Не менее 15 лет",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur."
+      }
+    ]
+  },
+  {
+    category: "MTU",
+    products: [
+      {
+        label: "MTU 700",
+        id: 24,
+        img: "mtu700.jpg",
+        as: "/mtu-700",
+        motorMark: "MTU 8V4000 GS L32",
+        gasMixer: "",
+        controlBlock: "",
+        ignitionSystem: "",
+        throttleValve: "",
+        excessAirRatio: "",
+        voltage: "400",
+        electricPower: "776",
+        thermalPower: "886",
+        electricEfficiency: "41,9",
+        thermalEfficiency: "46,7",
+        overallEfficiency: "88,6",
+        fuelType: "Природный газ ГОСТ 5542-87",
+        methaneNumber: "Более 80",
+        gasPressure: "",
+        nominalGazConsumption: "210",
+        noiseLevel: "80",
+        serviceInterval: "1 500 моточасов",
+        totalPowerPlant: "Не менее 15 лет",
+        description:
+          "Синхронный генератор: Leroy Somer, Газовая линейка: Karl Dungs. Группа охлаждения: Alfa Laval. Насосное оборудование: Grundfos. Силовое оборудование: ABB."
+      },
+      {
+        label: "MTU 800",
+        id: 25,
+        img: "mtu800.jpg",
+        as: "/mtu-800",
+        motorMark: "MTU 8V4000 GS L33",
+        gasMixer: "",
+        controlBlock: "",
+        ignitionSystem: "",
+        throttleValve: "",
+        excessAirRatio: "",
+        voltage: "400",
+        electricPower: "854",
+        thermalPower: "891",
+        electricEfficiency: "42,8",
+        thermalEfficiency: "44,8",
+        overallEfficiency: "87,6",
+        fuelType: "Природный газ ГОСТ 5542-87",
+        methaneNumber: "Более 80",
+        gasPressure: "",
+        nominalGazConsumption: "230",
+        noiseLevel: "80",
+        serviceInterval: "1 500 моточасов",
+        totalPowerPlant: "Не менее 15 лет",
+        description:
+          "Синхронный генератор: Leroy Somer. Газовая линейка: Karl Dungs. Группа охлаждения: Alfa Laval. Насосное оборудование: Grundfos. Силовое оборудование: ABB."
+      },
+      {
+        label: "MTU 1000",
+        id: 26,
+        img: "mtu1000.jpg",
+        as: "/mtu-1000",
+        motorMark: "MTU 8V4000 GS L64",
+        gasMixer: "",
+        controlBlock: "",
+        ignitionSystem: "",
+        throttleValve: "",
+        excessAirRatio: "",
+        voltage: "400",
+        electricPower: "1013",
+        thermalPower: "969",
+        electricEfficiency: "43,4",
+        thermalEfficiency: "42,6",
+        overallEfficiency: "86",
+        fuelType: "Природный газ",
+        methaneNumber: "Более 80",
+        gasPressure: "",
+        nominalGazConsumption: "273",
+        noiseLevel: "80",
+        serviceInterval: "1 500 моточасов",
+        totalPowerPlant: "Не менее 15 лет",
+        description:
+          "Синхронный генератор: Leroy Somer. Газовая линейка: Karl Dungs. Группа охлаждения: Alfa Laval. Насосное оборудование: Grundfos. Силовое оборудование: ABB."
+      },
+      {
+        label: "MTU 1100",
+        id: 27,
+        img: "mtu1100.jpg",
+        as: "/mtu-1100",
+        motorMark: "MTU 12V4000 GS L33",
+        gasMixer: "",
+        controlBlock: "",
+        ignitionSystem: "",
+        throttleValve: "",
+        excessAirRatio: "",
+        voltage: "400, 6300, 10500",
+        electricPower: "1169",
+        thermalPower: "1228",
+        electricEfficiency: "42,8",
+        thermalEfficiency: "45,0",
+        overallEfficiency: "87,8",
+        fuelType: "Природный газ",
+        methaneNumber: "Более 80",
+        gasPressure: "",
+        nominalGazConsumption: "330",
+        noiseLevel: "80",
+        serviceInterval: "800 моточасов",
+        totalPowerPlant: "Не менее 15 лет",
+        description:
+          "Синхронный генератор: Leroy Somer. Газовая линейка: Karl Dungs. Группа охлаждения: Alfa Laval. Насосное оборудование: Grundfos. Силовое оборудование: ABB."
+      },
+      {
+        label: "MTU 1200",
+        id: 28,
+        img: "mtu1200.jpg",
+        as: "/mtu-1200",
+        motorMark: "MTU 12V4000 GS L33",
+        gasMixer: "",
+        controlBlock: "",
+        ignitionSystem: "",
+        throttleValve: "",
+        excessAirRatio: "",
+        voltage: "400, 6300, 10500",
+        electricPower: "1286",
+        thermalPower: "1323",
+        electricEfficiency: "43,2",
+        thermalEfficiency: "44,5",
+        overallEfficiency: "87,7",
+        fuelType: "Природный газ",
+        methaneNumber: "Более 80",
+        gasPressure: "",
+        nominalGazConsumption: "347",
+        noiseLevel: "80",
+        serviceInterval: "2000 моточасов",
+        totalPowerPlant: "Не менее 15 лет",
+        description:
+          "Синхронный генератор: Leroy Somer. Газовая линейка: Karl Dungs. Группа охлаждения: Alfa Laval. Насосное оборудование: Grundfos. Силовое оборудование: ABB."
+      },
+      {
+        label: "MTU 1500",
+        id: 29,
+        img: "mtu1500.jpg",
+        as: "/mtu-1500",
+        motorMark: "MTU 12V4000 GS L64",
+        gasMixer: "",
+        controlBlock: "",
+        ignitionSystem: "",
+        throttleValve: "",
+        excessAirRatio: "",
+        voltage: "400, 6300, 10500",
+        electricPower: "1521",
+        thermalPower: "1403",
+        electricEfficiency: "44,3",
+        thermalEfficiency: "40,8",
+        overallEfficiency: "85,1",
+        fuelType: "Природный газ ГОСТ 5542-87",
+        methaneNumber: "Более 80",
+        gasPressure: "",
+        nominalGazConsumption: "410",
+        noiseLevel: "80",
+        serviceInterval: "2000 моточасов",
+        totalPowerPlant: "Не менее 15 лет",
+        description:
+          "Синхронный генератор: Leroy Somer. Газовая линейка: Karl Dungs. Группа охлаждения: Alfa Laval. Насосное оборудование: Grundfos. Силовое оборудование: ABB."
+      },
+      {
+        label: "MTU 1600",
+        id: 30,
+        img: "mtu1600.jpg",
+        as: "/mtu-1600",
+        motorMark: "MTU 16V4000 GS L33",
+        gasMixer: "",
+        controlBlock: "",
+        ignitionSystem: "",
+        throttleValve: "",
+        excessAirRatio: "",
+        voltage: "400, 6300, 10500",
+        electricPower: "1560",
+        thermalPower: "1662",
+        electricEfficiency: "42,8",
+        thermalEfficiency: "45,6",
+        overallEfficiency: "88,4",
+        fuelType: "Природный газ ГОСТ 5542-87",
+        methaneNumber: "Более 80",
+        gasPressure: "",
+        nominalGazConsumption: "420",
+        noiseLevel: "80",
+        serviceInterval: "2000 моточасов",
+        totalPowerPlant: "Не менее 15 лет",
+        description:
+          "Синхронный генератор: Leroy Somer. Газовая линейка: Karl Dungs. Группа охлаждения: Alfa Laval. Насосное оборудование: Grundfos. Силовое оборудование: ABB."
+      },
+      {
+        label: "MTU 1700",
+        id: 31,
+        img: "mtu1700.jpg",
+        as: "/mtu-1700",
+        motorMark: "MTU 16V4000 GS L33",
+        gasMixer: "",
+        controlBlock: "",
+        ignitionSystem: "",
+        throttleValve: "",
+        excessAirRatio: "",
+        voltage: "400, 6300, 10500",
+        electricPower: "1718",
+        thermalPower: "1795",
+        electricEfficiency: "43",
+        thermalEfficiency: "45",
+        overallEfficiency: "88",
+        fuelType: "Природный газ",
+        methaneNumber: "Более 80",
+        gasPressure: "",
+        nominalGazConsumption: "464",
+        noiseLevel: "80",
+        serviceInterval: "2000 моточасов",
+        totalPowerPlant: "Не менее 15 лет",
+        description:
+          "Синхронный генератор: Leroy Somer. Газовая линейка: Karl Dungs. Группа охлаждения: Alfa Laval. Насосное оборудование: Grundfos. Силовое оборудование: ABB."
+      },
+      {
+        label: "MTU 2000",
+        id: 32,
+        img: "mtu2000.jpg",
+        as: "/mtu-2000",
+        motorMark: "MTU 16V4000 GS L64",
+        gasMixer: "",
+        controlBlock: "",
+        ignitionSystem: "",
+        throttleValve: "",
+        excessAirRatio: "",
+        voltage: "400, 6300, 10500",
+        electricPower: "2028",
+        thermalPower: "1901",
+        electricEfficiency: "44,3",
+        thermalEfficiency: "41,6",
+        overallEfficiency: "85,9",
+        fuelType: "Природный газ",
+        methaneNumber: "Более 80",
+        gasPressure: "",
+        nominalGazConsumption: "527",
+        noiseLevel: "80",
+        serviceInterval: "2000 моточасов",
+        totalPowerPlant: "Не менее 15 лет",
+        description:
+          "Синхронный генератор: Leroy Somer. Газовая линейка: Karl Dungs. Группа охлаждения: Alfa Laval. Насосное оборудование: Grundfos. Силовое оборудование: ABB."
+      },
+      {
+        label: "MTU 2020",
+        id: 33,
+        img: "mtu2000.jpg",
+        as: "/mtu-2000",
+        motorMark: "MTU 20V4000 GS L33",
+        gasMixer: "",
+        controlBlock: "",
+        ignitionSystem: "",
+        throttleValve: "",
+        excessAirRatio: "",
+        voltage: "400, 6300, 10500",
+        electricPower: "2145",
+        thermalPower: "2239",
+        electricEfficiency: "43",
+        thermalEfficiency: "44,9",
+        overallEfficiency: "87,9",
+        fuelType: "Природный газ",
+        methaneNumber: "Более 80",
+        gasPressure: "",
+        nominalGazConsumption: "579",
+        noiseLevel: "80",
+        serviceInterval: "2000 моточасов",
+        totalPowerPlant: "Не менее 15 лет",
+        description:
+          "Синхронный генератор: Leroy Somer. Газовая линейка: Karl Dungs. Группа охлаждения: Alfa Laval. Насосное оборудование: Grundfos. Силовое оборудование: ABB."
       }
     ]
   }

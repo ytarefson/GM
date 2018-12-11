@@ -30,6 +30,11 @@ export class ProductsListPlate extends Component {
                   <a className="category-link">ЯМЗ</a>
                 </Link>
               </li>
+              <li className="category-li">
+                <Link activeClassName="active" href="/products?category=mtu">
+                  <a className="category-link">MTU</a>
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="col-12 col-md-10 product-card-plate">

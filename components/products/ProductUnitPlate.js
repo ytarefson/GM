@@ -74,37 +74,12 @@ export class ProductsUnitPlate extends Component {
           <SimilarProducts similar={similar} category={category} />
           <div className="mycontainer section-plate">
             <h3 className="header-red pl-3">Характеристики {product.label}:</h3>
-            <div className="row m-0">
+            <div className="row m-0 parametrs-container">
               <div className="col-12 col-md-6 text-container">
                 <span className="text-common">Марка двигателя: </span>
                 <span className="text-bold">{product.motorMark}</span>
               </div>
-              <div className="col-12 col-md-6 text-container">
-                <span className="text-common">Газовоздушный смеситель: </span>
-                <span className="text-bold">{product.gasMixer}</span>
-              </div>
-              <div className="col-12 col-md-6 text-container">
-                <span className="text-common">Блок управления: </span>
-                <span className="text-bold">{product.controlBlock}</span>
-              </div>
-              <div className="col-12 col-md-6 text-container">
-                <span className="text-common">Система зажигания: </span>
-                <span className="text-bold">{product.ignitionSystem}</span>
-              </div>
-              <div className="col-12 col-md-6 text-container">
-                <span className="text-common">Дроссельная заслонка: </span>
-                <span className="text-bold">{product.throttleValve}</span>
-              </div>
-              <div className="col-12 col-md-6 text-container">
-                <span className="text-common">
-                  Коэффициент избытка воздуха, λ:{" "}
-                </span>
-                <span className="text-bold">{product.excessAirRatio}</span>
-              </div>
-              <div className="col-12 col-md-6 text-container">
-                <span className="text-common">Напряжение, В</span>
-                <span className="text-bold">{product.voltage}</span>
-              </div>
+
               <div className="col-12 col-md-6 text-container">
                 <span className="text-common">
                   Электрическая мощность, кВт:{" "}
@@ -160,6 +135,32 @@ export class ProductsUnitPlate extends Component {
                   Общий ресурс электростанции:{" "}
                 </span>
                 <span className="text-bold">{product.totalPowerPlant}</span>
+              </div>
+              <div className="col-12 col-md-6 text-container">
+                <span className="text-common">Газовоздушный смеситель: </span>
+                <span className="text-bold">{product.gasMixer}</span>
+              </div>
+              <div className="col-12 col-md-6 text-container">
+                <span className="text-common">Блок управления: </span>
+                <span className="text-bold">{product.controlBlock}</span>
+              </div>
+              <div className="col-12 col-md-6 text-container">
+                <span className="text-common">Система зажигания: </span>
+                <span className="text-bold">{product.ignitionSystem}</span>
+              </div>
+              <div className="col-12 col-md-6 text-container">
+                <span className="text-common">Дроссельная заслонка: </span>
+                <span className="text-bold">{product.throttleValve}</span>
+              </div>
+              <div className="col-12 col-md-6 text-container">
+                <span className="text-common">
+                  Коэффициент избытка воздуха, λ:{" "}
+                </span>
+                <span className="text-bold">{product.excessAirRatio}</span>
+              </div>
+              <div className="col-12 col-md-6 text-container">
+                <span className="text-common">Напряжение, В</span>
+                <span className="text-bold">{product.voltage}</span>
               </div>
             </div>
           </div>

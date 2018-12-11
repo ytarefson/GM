@@ -1,23 +1,48 @@
 import React from "react";
 import Link from "next/link";
 import menu from "./menu";
+import serviceList from "../components/tables/serviceList";
 import "../scss/footer.scss";
 
 const Footer = () => (
   <footer className="footer">
-    <div className="mycontainer">
+    <div className="mycontainer p-0">
       <div className="row m-0">
-        <div className="col-12 col-lg-4 order-lg-4 footer-logo-container">
-          <Link href="/">
-            <img
-              src="../../static/images/logo-big.png"
-              className="footer-logo"
-              alt="ООО Газовые Машины"
-            />
-          </Link>
+        <div className="col-12 col-md-6 col-lg-3 link-map">
+          <span className="link-map-header">Карта сайта:</span>
+          <ul className="link-map-list">
+            {menu.map(({ key, href, label, as }) => (
+              <li className="link-map-item" key={key}>
+                <Link href={href} as={as}>
+                  <a className="link-map-link">{label}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
-        <div className="col-12 col-md-6 col-lg-4">
-          <span className="contacts-header">Контакты:</span>
+        <div className="col-12 col-md-6 col-lg-6 link-map">
+          <span className="link-map-header">Услуги:</span>
+          <ul className="link-map-list">
+            {serviceList.map(({ key, href, label, as }) => (
+              <li className="link-map-item" key={key}>
+                <Link href={href} as={as}>
+                  <a className="link-map-link">{label}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="col-12 col-md-6 col-lg-3">
+          <Link href="/">
+            <a className="footer-logo-container">
+              <img
+                src="../../static/images/logo-big.png"
+                className="footer-logo"
+                alt="ООО Газовые Машины"
+              />
+            </a>
+          </Link>
+          {/* <span className="contacts-header">Контакты:</span> */}
           <ul className="adres-list">
             <li>
               <Link href="https://yandex.ru/maps/-/CBFyIKsQPB" as="yandex-map">
@@ -46,18 +71,7 @@ const Footer = () => (
                 market@gmenergo.ru
               </a>
             </li>
-          </ul>
-        </div>
-        <div className="col-12 col-md-6 col-lg-4 link-map">
-          <span className="link-map-header">Карта сайта:</span>
-          <ul className="link-map-list">
-            {menu.map(({ key, href, label, as }) => (
-              <li className="link-map-item" key={key}>
-                <Link href={href} as={as}>
-                  <a className="link-map-link">{label}</a>
-                </Link>
-              </li>
-            ))}
+            <li />
           </ul>
         </div>
       </div>

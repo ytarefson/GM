@@ -7,7 +7,7 @@ const Nav = () => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <Link href="/">
       <a className="navbar-brand">
-        <img src="../../static/images/logo.png" />
+        <img src="../../static/images/logo-big.png" />
       </a>
     </Link>
     <button
