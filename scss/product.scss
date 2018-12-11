@@ -1,4 +1,4 @@
-@import "./vars";
+@import './vars';
 
 .product-unit-wrapper {
   position: relative;
@@ -6,7 +6,7 @@
   &::after {
     position: absolute;
     z-index: -1;
-    content: "";
+    content: '';
     display: block;
     width: 30%;
     height: 98%;

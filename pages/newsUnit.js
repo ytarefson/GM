@@ -1,9 +1,9 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
-import newsList from "../components/tables/newsList";
-import Layout from "../components/Layout";
-import NewsUnitPlate from "../components/news/NewsUnitPlate";
+import newsList from '../components/tables/newsList';
+import Layout from '../components/Layout';
+import NewsUnitPlate from '../components/news/NewsUnitPlate';
 
 const NewsUnit = data => (
   <Layout>
@@ -16,10 +16,7 @@ const NewsUnit = data => (
           <Link href="/products">
             <a className="crambs">Новости > </a>
           </Link>
-          {/* <Link href={}>
-					<a className="crambs">{category} > </a>
-				</Link>
-				<span className="crambs cramb-main">{product.label}</span> */}
+          <span className="crambs cramb-main">{data.data.label}</span>
         </div>
       </div>
       <div className="mycontainer">

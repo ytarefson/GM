@@ -1,8 +1,8 @@
-import React from "react";
-import Link from "next/link";
-import menu from "./menu";
-import serviceList from "../components/tables/serviceList";
-import "../scss/footer.scss";
+import React from 'react';
+import Link from 'next/link';
+import menu from './menu';
+import serviceList from '../components/tables/serviceList';
+import '../scss/footer.scss';
 
 const Footer = () => (
   <footer className="footer">
@@ -23,10 +23,10 @@ const Footer = () => (
         <div className="col-12 col-md-6 col-lg-6 link-map">
           <span className="link-map-header">Услуги:</span>
           <ul className="link-map-list">
-            {serviceList.map(({ key, href, label, as }) => (
-              <li className="link-map-item" key={key}>
-                <Link href={href} as={as}>
-                  <a className="link-map-link">{label}</a>
+            {serviceList.map(item => (
+              <li className="link-map-item" key={item.key}>
+                <Link href={`/uslugi/${item.href}`} as={`/uslugi/${item.as}`}>
+                  <a className="link-map-link">{item.label}</a>
                 </Link>
               </li>
             ))}
