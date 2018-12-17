@@ -2,31 +2,68 @@ const express = require('express');
 const router = express.Router();
 var helper = require('sendgrid').mail;
 const async = require('async');
+var bodyParser = require('body-parser');
 
-router.post('/', (req, res) => {
-  async.parallel(
-    [
-      function(callback) {
-        sendEmail(
-          callback,
-          'ytarefson@gmail.com',
-          ['ytarefson@gmail.com'],
-          'Subject Line',
-          'Text Content',
-          '<p style="font-size: 32px;">HTML Content</p>'
-        );
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
+
+// POST /login gets urlencoded bodies
+router.post('/', urlencodedParser, function(req, res) {
+  if (!req.body) {
+    return res.sendStatus(400);
+  } else {
+    res.send('welcome, ' + req.body.username);
+
+    console.log(req);
+    async.parallel(
+      [
+        function(callback) {
+          sendEmail(
+            callback,
+            'ytarefson@gmail.com',
+            ['ytarefson@gmail.com'],
+            'Subject Line',
+            'Text Content',
+            '<p style="font-size: 32px;">HTML Content</p>'
+          );
+        }
+      ],
+      function(err, results) {
+        res.send({
+          success: true,
+          message: 'Emails sent',
+          successfulEmails: results[0].successfulEmails,
+          errorEmails: results[0].errorEmails
+        });
       }
-    ],
-    function(err, results) {
-      res.send({
-        success: true,
-        message: 'Emails sent',
-        successfulEmails: results[0].successfulEmails,
-        errorEmails: results[0].errorEmails
-      });
-    }
-  );
+    );
+  }
 });
+
+// router.post('/', (req, res) => {
+//   console.log(req);
+//   async.parallel(
+//     [
+//       function(callback) {
+//         sendEmail(
+//           callback,
+//           'ytarefson@gmail.com',
+//           ['ytarefson@gmail.com'],
+//           'Subject Line',
+//           'Text Content',
+//           '<p style="font-size: 32px;">HTML Content</p>'
+//         );
+//       }
+//     ],
+//     function(err, results) {
+//       res.send({
+//         success: true,
+//         message: 'Emails sent',
+//         successfulEmails: results[0].successfulEmails,
+//         errorEmails: results[0].errorEmails
+//       });
+//     }
+//   );
+// });
 function sendEmail(
   parentCallback,
   fromEmail,
@@ -37,9 +74,7 @@ function sendEmail(
 ) {
   const errorEmails = [];
   const successfulEmails = [];
-  const sg = require('sendgrid')(
-    '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'
-  );
+  const sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
   async.parallel(
     [
       function(callback) {
@@ -58,13 +93,17 @@ function sendEmail(
             body: mail.toJSON()
           });
           sg.API(request, function(error, response) {
-            // console.log('SendGrid');
+            console.log(request);
+            console.log(request.body.personalizations);
+            console.log(request.body.content);
+            console.log('SendGrid');
             if (error) {
-              // console.log('Error response received');
+              console.log('Error response received');
             }
-            // console.log(response.statusCode);
-            // console.log(response.body);
-            // console.log(response.headers);
+            console.log(response.statusCode);
+            console.log(response.body);
+            console.log(response.headers);
+            console.log(response);
           });
         }
         // return
@@ -72,7 +111,7 @@ function sendEmail(
       }
     ],
     function(err, results) {
-      // console.log('Done');
+      console.log('Done');
     }
   );
   parentCallback(null, {

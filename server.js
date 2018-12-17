@@ -16,6 +16,9 @@ app.prepare().then(() => {
   server.get('/raspredelennaya-generaciya', (req, res) => {
     return app.render(req, res, '/rasGen', req.query);
   });
+  server.get('/form', (req, res) => {
+    return app.render(req, res, '/form', req.query);
+  });
   server.get('/rasGen', (req, res) => {
     return app.render(req, res, '/rasGen', req.query);
   });
