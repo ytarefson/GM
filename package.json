@@ -15,8 +15,11 @@
     "node-sass": "^4.10.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-fancybox": "^0.2.3",
+    "react-image-lightbox": "^5.1.0",
     "react-spring": "^6.1.10",
-    "react-yandex-metrika": "^2.4.2"
+    "react-yandex-metrika": "^2.4.2",
+    "sendgrid": "^5.2.3"
   },
   "devDependencies": {
     "next-compose": "0.0.2"

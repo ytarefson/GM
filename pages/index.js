@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Head from '../components/head';
 import '../scss/style.scss';
 import MainAdv from '../components/mainAdv';

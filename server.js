@@ -1,5 +1,9 @@
 const express = require('express');
 const next = require('next');
+var helper = require('sendgrid').mail;
+const async = require('async');
+
+const email = require('./routes/api/email');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
@@ -116,6 +120,7 @@ app.prepare().then(() => {
   server.get('/about', (req, res) => {
     return app.render(req, res, '/about', req.query);
   });
+  server.use('/api/email', email);
   server.get('*', (req, res) => {
     return handle(req, res);
   });
