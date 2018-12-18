@@ -2,8 +2,8 @@ const express = require('express');
 const next = require('next');
 var helper = require('sendgrid').mail;
 const async = require('async');
-
 const email = require('./routes/api/email');
+const testEmail = require('./routes/test/testEmail');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
@@ -15,6 +15,9 @@ app.prepare().then(() => {
 
   server.get('/raspredelennaya-generaciya', (req, res) => {
     return app.render(req, res, '/rasGen', req.query);
+  });
+  server.get('/form', (req, res) => {
+    return app.render(req, res, '/form', req.query);
   });
   server.get('/rasGen', (req, res) => {
     return app.render(req, res, '/rasGen', req.query);
@@ -121,6 +124,7 @@ app.prepare().then(() => {
     return app.render(req, res, '/about', req.query);
   });
   server.use('/api/email', email);
+  server.use('/test/testEmail', testEmail);
   server.get('*', (req, res) => {
     return handle(req, res);
   });

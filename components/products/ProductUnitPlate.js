@@ -4,6 +4,7 @@ import Head from "../../components/head";
 import productsList from "../tables/productsList";
 import SimilarProducts from "../products/SimilarProducts";
 import "../../scss/products/ProductUnitPlate.scss";
+import FormPage from "../form";
 
 import Lightbox from "react-image-lightbox";
 // import 'react-image-lightbox/style.css';
@@ -102,6 +103,7 @@ export class ProductsUnitPlate extends Component {
                 </div>
               </div>
             </div>
+            <FormPage product={product.label} />
           </div>
           <SimilarProducts similar={similar} category={category} />
           <div className="mycontainer section-plate">
