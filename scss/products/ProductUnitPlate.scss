@@ -1,4 +1,5 @@
-@import '../vars';
+@import "../vars";
+
 .react-fancybox .box {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.4);
@@ -86,6 +87,12 @@
   }
   & .parametrs-container {
     padding-bottom: 40px;
+    & .calc-link {
+      display: block;
+      width: 100%;
+      height: 400px;
+      background: $red-gradient;
+    }
     & .text-container {
       min-height: 40px;
       height: auto;
@@ -95,7 +102,7 @@
       align-items: center;
       justify-content: space-between;
       //margin-bottom: 30px;
-      border: 1px solid lightgrey;
+      border-bottom: 1px solid lightgrey;
       & .text-common {
         line-height: 20px;
         display: block;

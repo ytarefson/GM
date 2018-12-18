@@ -4,6 +4,7 @@
   background-image: url("/static/images/back-3.png");
   background-repeat: no-repeat;
   background-position: 100% 0%;
+  background-size: 80%;
   margin-bottom: 50px;
   margin-top: 20px;
   & .main-header {
@@ -179,6 +180,7 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .energyDecisions {
+    background-size: 50%;
     & .mycontainer {
       max-width: 960px;
       width: 100%;
@@ -240,6 +242,7 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .energyDecisions {
+    background-size: 30%;
     & .mycontainer {
       max-width: 1140px;
     }
