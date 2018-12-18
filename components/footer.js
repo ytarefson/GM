@@ -73,6 +73,8 @@ const Footer = () => (
             </li>
             <li />
           </ul>
+          <span className="link-map-link">график работы:</span>
+          <span className="link-map-link">пн-пт: 9:00-18:00</span>
         </div>
       </div>
     </div>
