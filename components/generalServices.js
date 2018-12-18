@@ -1,12 +1,12 @@
-import React from 'react';
-import Link from 'next/link';
-import serviceList from './tables/serviceList';
-import '../scss/generalServices.scss';
+import React from "react";
+import Link from "next/link";
+import serviceList from "./tables/serviceList";
+import "../scss/generalServices.scss";
 
 export default GeneralServices => (
   <div className="container-fluid generalServices">
     <div className="mycontainer p-3">
-      <h2 className="header-common">
+      <h2 className="header-common pl-0">
         Основные направления
         <br />
         работы компании «Газовые машины»

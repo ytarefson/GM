@@ -1,9 +1,12 @@
-@import './vars';
-form {
-  padding: 15px;
+@import "./vars";
+
+.forma {
+  padding: 30px;
+  background: lightgrey;
 }
 .form-cta-text {
   margin-bottom: 20px;
+  color: white;
 }
 .form-group {
   display: flex;
@@ -24,7 +27,7 @@ form {
   }
   & .form-button {
     display: block;
-    border-radius: 20px;
+    border-radius: 50px;
     color: #fff;
     background-image: linear-gradient(to right, #d4722a 0%, #c62d28 100%);
     border: none;

@@ -1,14 +1,14 @@
-import React from 'react';
-import Link from 'next/link';
-import menu from './menu';
-import serviceList from '../components/tables/serviceList';
-import '../scss/footer.scss';
+import React from "react";
+import Link from "next/link";
+import menu from "./menu";
+import serviceList from "../components/tables/serviceList";
+import "../scss/footer.scss";
 
 const Footer = () => (
   <footer className="footer">
     <div className="mycontainer p-0">
       <div className="row m-0">
-        <div className="col-12 col-md-6 col-lg-3 link-map">
+        <div className="col-12 col-md-6 col-lg-3 mb-3 link-map">
           <span className="link-map-header">Карта сайта:</span>
           <ul className="link-map-list">
             {menu.map(({ key, href, label, as }) => (
@@ -20,7 +20,7 @@ const Footer = () => (
             ))}
           </ul>
         </div>
-        <div className="col-12 col-md-6 col-lg-6 link-map">
+        <div className="col-12 col-md-6 col-lg-6 mb-3 link-map">
           <span className="link-map-header">Услуги:</span>
           <ul className="link-map-list">
             {serviceList.map(item => (
@@ -32,7 +32,7 @@ const Footer = () => (
             ))}
           </ul>
         </div>
-        <div className="col-12 col-md-6 col-lg-3">
+        <div className="col-12 col-md-6 col-lg-3 mb-3">
           <Link href="/">
             <a className="footer-logo-container">
               <img
@@ -73,8 +73,8 @@ const Footer = () => (
             </li>
             <li />
           </ul>
-          <span className="link-map-link">график работы:</span>
-          <span className="link-map-link">пн-пт: 9:00-18:00</span>
+          <span className="link-1">график работы:</span>
+          <span className="link-1">пн-пт: 9:00-18:00</span>
         </div>
       </div>
     </div>

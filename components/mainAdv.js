@@ -55,7 +55,7 @@ export default MainAdv => (
           <span className="category-title">
             Каталог
             <br />
-            продуктов
+            продукции
           </span>
         </div>
       </div>

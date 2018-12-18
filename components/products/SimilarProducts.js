@@ -11,7 +11,7 @@ export class SimilarProducts extends Component {
 
     return (
       <div className="mycontainer section-plate p-0">
-        <span className="header-red header-red-2 pl-3">
+        <span className="header-red header-red-2 pl-4 m-0">
           Силовые установки на базе двигателей {category}
         </span>
         <div className="similar-products">

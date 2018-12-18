@@ -104,9 +104,7 @@ export class ProductsUnitPlate extends Component {
               </div>
             </div>
           </div>
-          <div className="mycontainer section-plate">
-            <FormPage product={product.label} />
-          </div>
+
           <SimilarProducts similar={similar} category={category} />
           <div className="mycontainer section-plate">
             <h3 className="header-red pl-3">Характеристики {product.label}:</h3>
@@ -201,8 +199,11 @@ export class ProductsUnitPlate extends Component {
                   <span className="text-bold">{product.voltage}</span>
                 </div>
               </div>
-              <div className="col-12 col-xl-4 calc-link" />
+              <div className="col-12 col-xl-4 calc-link d-none" />
             </div>
+          </div>
+          <div className="mycontainer section-plate p-0">
+            <FormPage product={product.label} />
           </div>
           <SimilarProducts similar={similar} category={category} />
         </div>{" "}

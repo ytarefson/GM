@@ -7,7 +7,7 @@ export default OurExp => (
     <div className="mycontainer">
       <div className="row p-3">
         <div className="col-12 col-lg-9">
-          <h2 className="header-common">
+          <h2 className="header-common pl-0">
             Наш опыт и компетенции позволяют
             <br />
             удовлетворить самых

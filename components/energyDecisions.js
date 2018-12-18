@@ -7,7 +7,7 @@ export default EnergyDecisions => (
     <div className="row m-0">
       <div className="col-12">
         <div className="container">
-          <h2 className="header-common main-header">
+          <h2 className="header-common main-header pl-0">
             Интеллектуальные и Надежные Энергетические
             <br />
             Решения с Комбинированной Тепловой

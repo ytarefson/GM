@@ -18,8 +18,8 @@ export class About extends Component {
             <div className="mycontainer">
               <div className="row m-0">
                 <div className="col-12 col-md-6 p-0">
-                  <span className="subheading-red-top">О компании</span>
-                  <h2 className="header-razdel">История, факты...</h2>
+                  <span className="subheading-red-top pl-3">О компании</span>
+                  <h2 className="header-razdel pl-3">История, факты...</h2>
                   <p className="subheading-common-2 mt-5">
                     Компания «Газовые машины» образована 10 октября 2006 г. В
                     течении 12 лет основным профилем деятельности компании
@@ -100,14 +100,14 @@ export class About extends Component {
               </div>
             </div>
           </div>
-          <div className="container-fluid contacts pt-4 mt-5 mb-3">
-            <div className="mycontainer">
-              <span className="contacts-heading">Контакты:</span>
-            </div>
+          <div className="container-fluid contacts mt-5 mb-3">
             <div className="row m-0">
-              <div className="col-12 col-md-6 order-md-2">
+              <div className="col-12 col-md-4 order-md-2">
                 <div className="contacts-content">
                   <ul className="adres-list">
+                    <li>
+                      <span className="contacts-heading">Контакты:</span>
+                    </li>
                     <li>
                       <Link
                         href="https://yandex.ru/maps/-/CBFyIKsQPB"
@@ -120,10 +120,7 @@ export class About extends Component {
                     </li>
                     <li>
                       <div className="adres-phones">
-                        <a
-                          href="callto:+74852260368"
-                          className="phone-link phone-link-big"
-                        >
+                        <a href="callto:+74852260368" className="phone-link">
                           +7 (4852) 26-03-68
                         </a>
                         <a href="callto:+74852267960" className="phone-link">
@@ -139,10 +136,15 @@ export class About extends Component {
                         market@gmenergo.ru
                       </a>
                     </li>
+                    <li>
+                      <span className="link-1">График работы:</span>
+                      <br />
+                      <span className="link-1">пн-пт: 9:00-18:00</span>
+                    </li>
                   </ul>
                 </div>
               </div>
-              <div className="col-12 col-md-6 map-container order-md-1 p-0">
+              <div className="col-12 col-md-8 map-container order-md-1 p-0">
                 <Map
                   google={this.props.google}
                   zoom={14}
