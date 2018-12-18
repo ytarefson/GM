@@ -5,15 +5,16 @@ const async = require('async');
 var bodyParser = require('body-parser');
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
+router.use(bodyParser.json());
 
 // POST /login gets urlencoded bodies
 router.post('/', urlencodedParser, function(req, res) {
   if (!req.body) {
     return res.sendStatus(400);
   } else {
-    res.send('welcome, ' + req.body.username);
+    // res.send('welcome, ' + req.body.username);
 
-    console.log(req);
+    console.log(req.body);
     async.parallel(
       [
         function(callback) {
@@ -93,17 +94,17 @@ function sendEmail(
             body: mail.toJSON()
           });
           sg.API(request, function(error, response) {
-            console.log(request);
-            console.log(request.body.personalizations);
-            console.log(request.body.content);
-            console.log('SendGrid');
+            // console.log(request);
+            // console.log(request.body.personalizations);
+            // console.log(request.body.content);
+            // console.log('SendGrid');
             if (error) {
               console.log('Error response received');
             }
-            console.log(response.statusCode);
-            console.log(response.body);
-            console.log(response.headers);
-            console.log(response);
+            // console.log(response.statusCode);
+            // console.log(response.body);
+            // console.log(response.headers);
+            // console.log(response);
           });
         }
         // return
@@ -111,7 +112,7 @@ function sendEmail(
       }
     ],
     function(err, results) {
-      console.log('Done');
+      // console.log('Done');
     }
   );
   parentCallback(null, {
