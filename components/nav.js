@@ -4,10 +4,10 @@ import menu from "./menu";
 import "../scss/nav.scss";
 
 const Nav = () => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <nav className="navbar navbar-expand-lg navbar-light">
     <Link href="/">
       <a className="navbar-brand">
-        <img src="../../static/images/logo-big.png" />
+        <img src="../../static/images/logo-grey.png" />
       </a>
     </Link>
     <button
