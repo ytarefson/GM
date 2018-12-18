@@ -34,12 +34,16 @@ export default MainAdv => (
           }}
           className="point point-4"
         />
-        <div className="point main-block">
+        <div className="main-block">
           <span className="main-desc">
             Проектирование
             <br />и производство
           </span>
-          <h1 className="main-heading">Газовых электростанций</h1>
+          <h1 className="main-heading">
+            Газовых
+            <br />
+            электростанций
+          </h1>
           <h3 className="main-slogan">Мы предлагаем решение, а не бренд.</h3>
         </div>
         <div
