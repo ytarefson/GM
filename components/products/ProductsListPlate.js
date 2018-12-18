@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Link from "../Link";
-import "../../scss/products/ProductsListPlate.scss";
+import React, { Component } from 'react';
+import Link from '../Link';
+import '../../scss/products/ProductsListPlate.scss';
 
 export class ProductsListPlate extends Component {
   render() {
@@ -12,6 +12,11 @@ export class ProductsListPlate extends Component {
           <div className="col-12 col-md-2">
             <span className="category-header">Бренды:</span>
             <ul className="category-list">
+              <li className="category-li">
+                <Link activeClassName="active" href="/products?category=mtu">
+                  <a className="category-link">MTU</a>
+                </Link>
+              </li>
               <li className="category-li">
                 <Link activeClassName="active" href="/products?category=man">
                   <a className="category-link">MAN</a>
@@ -28,11 +33,6 @@ export class ProductsListPlate extends Component {
               <li className="category-li">
                 <Link activeClassName="active" href="/products?category=yamz">
                   <a className="category-link">ЯМЗ</a>
-                </Link>
-              </li>
-              <li className="category-li">
-                <Link activeClassName="active" href="/products?category=mtu">
-                  <a className="category-link">MTU</a>
                 </Link>
               </li>
             </ul>

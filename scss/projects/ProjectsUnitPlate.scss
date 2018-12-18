@@ -1,11 +1,11 @@
-@import "../vars";
+@import '../vars';
 
 .project {
   position: relative;
   &::after {
     z-index: -1;
     position: absolute;
-    content: "";
+    content: '';
     display: block;
     width: 29%;
     height: 100%;
@@ -17,12 +17,12 @@
   }
 }
 .project-detail {
-  padding-bottom: 70px;
+  //padding-bottom: 70px;
   position: relative;
   &::after {
     z-index: -1;
     position: absolute;
-    content: "";
+    content: '';
     display: block;
     width: 67%;
     height: 97%;
