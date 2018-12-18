@@ -1,0 +1,40 @@
+@import './vars';
+form {
+  padding: 15px;
+}
+.form-cta-text {
+  margin-bottom: 20px;
+}
+.form-group {
+  display: flex;
+  justify-content: space-around;
+  & .form-context {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+    & .userEmail {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    & .callTime {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+  & .form-button {
+    display: block;
+    border-radius: 20px;
+    color: #fff;
+    background-image: linear-gradient(to right, #d4722a 0%, #c62d28 100%);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s;
+    &:hover {
+      cursor: pointer;
+      box-shadow: $box-shadow;
+    }
+  }
+}

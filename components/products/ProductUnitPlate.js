@@ -103,6 +103,8 @@ export class ProductsUnitPlate extends Component {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="mycontainer section-plate">
             <FormPage product={product.label} />
           </div>
           <SimilarProducts similar={similar} category={category} />

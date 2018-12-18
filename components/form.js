@@ -1,4 +1,5 @@
 import React from 'react';
+import '../scss/form.scss';
 
 class FormPage extends React.Component {
   constructor(props) {
@@ -35,18 +36,33 @@ class FormPage extends React.Component {
     console.log(product);
     return (
       <form onSubmit={this.handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="userEmail">Введите e-mail: </label>
-          <input
-            onChange={this.handleChange}
-            type="email"
-            className="userEmail"
-            id="userEmail"
-            aria-describedby="emailHelp"
-            placeholder="Введите e-mail:"
-          />
+        <p className="text-common form-cta-text">
+          Заинтересовал продукт? Оставьте Ваш телефон, и наши специалисты
+          бесплатно проконсультируют вас в удобное время!
+        </p>
+        <div className="form-group row m-0">
+          <div className="col-12 col-md-6">
+            <div className="form-context ">
+              {/* <label className="text-common" htmlFor="userEmail">
+              Введите e-mail:{' '}
+            </label> */}
+              <input
+                onChange={this.handleChange}
+                type="email"
+                className="userEmail text-common"
+                id="userEmail"
+                aria-describedby="emailHelp"
+                placeholder="Введите e-mail:"
+              />
+              <input type="datetime-local" className="callTime" id="callTime" />
+            </div>
+          </div>
+          <div className="col-12 col-md-6 col-lg-3">
+            <button className="form-button">
+              Заказать бесплатную консультацию
+            </button>
+          </div>
         </div>
-        <button>Заказать бесплатную консультацию</button>
       </form>
     );
   }

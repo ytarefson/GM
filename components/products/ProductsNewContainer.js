@@ -8,7 +8,7 @@ class ProductsNew extends Component {
     super(props);
     this.state = {
       items: productsList,
-      categorySelected: 'MAN',
+      categorySelected: 'MTU',
       itemsSelected: [
         {
           label: 'MTU 700',
