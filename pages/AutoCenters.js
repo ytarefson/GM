@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
+import FormPage from "../components/form";
 import "../scss/services/serviceDetail.scss";
 
 const AutoCenters = serviceName => (
@@ -148,6 +149,9 @@ const AutoCenters = serviceName => (
             <p className="text-bold">Установочные чертежи.</p>
           </div>
         </div>
+      </div>
+      <div className="mycontainer section-plate p-0">
+        <FormPage product={serviceName} />
       </div>
     </div>
   </Layout>

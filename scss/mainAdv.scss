@@ -54,10 +54,11 @@
         background-position: 50% 50%;
         background-size: cover;
         object-fit: cover;
-        transition: all 0.2;
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s;
         filter: grayscale(0.8);
         &:hover {
-          border-bottom: 7px solid $accent-red;
+          //border-bottom: 7px solid $accent-red;
           filter: grayscale(0);
         }
         & .category-title {
@@ -79,6 +80,7 @@
         display: none;
       }
       & .point-6 {
+        display: none;
         height: auto;
         cursor: pointer;
       }
@@ -218,6 +220,7 @@
           display: block;
         }
         & .point-6 {
+          display: block;
         }
       }
     }

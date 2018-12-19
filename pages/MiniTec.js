@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
+import FormPage from "../components/form";
 import "../scss/services/minitec.scss";
 
 const MiniTec = serviceName => (
@@ -59,6 +60,9 @@ const MiniTec = serviceName => (
         <p className="text-min text-bold">
           Гарантия на выпускаемые мини-ТЭС составляет 24 месяца.
         </p>
+      </div>
+      <div className="mycontainer section-plate mt-3 p-0">
+        <FormPage product={serviceName} />
       </div>
     </div>
   </Layout>

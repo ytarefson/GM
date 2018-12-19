@@ -41,7 +41,7 @@ class FormPage extends React.Component {
           проконсультируют вас в удобное время!
         </p>
         <div className="form-group row m-0">
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 p-0">
             <div className="form-context ">
               {/* <label className="text-common" htmlFor="userEmail">
               Введите e-mail:{' '}
@@ -54,15 +54,23 @@ class FormPage extends React.Component {
                 aria-describedby="emailHelp"
                 placeholder="Введите e-mail:"
               />
-              <input type="datetime-local" className="callTime" id="callTime" />
+              <input
+                type="datetime-local"
+                className="callTime"
+                id="callTime"
+                placeholder="Введите время удобное для связи"
+              />
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-3">
+          <div className="col-12 col-md-6 col-xl-4 p-0">
             <button className="form-button">
               Заказать бесплатную консультацию
             </button>
           </div>
         </div>
+        <p className="text-common form-cta-text-2">
+          или свяжитесь с нами любым удобным способом
+        </p>
       </form>
     );
   }

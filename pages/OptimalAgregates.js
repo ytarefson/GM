@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
+import FormPage from "../components/form";
 import "../scss/services/optimal-agregats.scss";
 
 const OptimalAgregates = serviceName => (
@@ -44,6 +45,9 @@ const OptimalAgregates = serviceName => (
               модульное РУ.{" "}
             </p>
           </div>
+        </div>
+        <div className="mycontainer section-plate p-0">
+          <FormPage product={serviceName} />
         </div>
       </div>
     </div>

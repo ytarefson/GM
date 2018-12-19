@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
+import FormPage from "../components/form";
 import "../scss/services/serviceDetail.scss";
 
 const VspomOborud = serviceName => (
@@ -114,9 +115,12 @@ const VspomOborud = serviceName => (
             </div>
           </div>
         </div>
-        <span className="cta">
+        <span className="cta mb-5">
           Условия и сроки поставки уточняйте у наших менеджеров
         </span>
+      </div>
+      <div className="mycontainer section-plate p-0">
+        <FormPage product={serviceName} />
       </div>
     </div>
   </Layout>

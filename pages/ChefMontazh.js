@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
+import FormPage from "../components/form";
 import "../scss/montazh.scss";
 
 const ChefMontazh = serviceName => (
@@ -55,6 +56,9 @@ const ChefMontazh = serviceName => (
             </p>
           </div>
         </div>
+      </div>
+      <div className="mycontainer section-plate mt-4 p-0">
+        <FormPage product={serviceName} />
       </div>
     </div>
   </Layout>

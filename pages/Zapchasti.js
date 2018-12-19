@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
+import FormPage from "../components/form";
 import "../scss/services/zapchasti.scss";
 
 const Zapchasti = serviceName => (
@@ -63,6 +64,9 @@ const Zapchasti = serviceName => (
         <span className="text-grey">
           Всю эту номенклатуру Вы можете оперативно приобрести в нашей компании.
         </span>
+      </div>
+      <div className="mycontainer section-plate mt-5 p-0">
+        <FormPage product={serviceName} />
       </div>
     </div>
   </Layout>

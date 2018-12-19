@@ -205,7 +205,6 @@ export class ProductsUnitPlate extends Component {
           <div className="mycontainer section-plate p-0">
             <FormPage product={product.label} />
           </div>
-          <SimilarProducts similar={similar} category={category} />
         </div>{" "}
       </div>
     );
