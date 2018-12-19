@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import Link from 'next/link';
-import Head from '../components/head';
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
-import '../scss/about.scss';
-import Layout from '../components/Layout';
-import Lightbox from 'react-image-lightbox';
+import React, { Component } from "react";
+import Link from "next/link";
+import Head from "../components/head";
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
+import "../scss/about.scss";
+import Layout from "../components/Layout";
+import Lightbox from "react-image-lightbox";
 
 const images = [
-  '../static/images/about-1.jpg',
-  '../static/images/about-2.jpg',
-  '../static/images/about-3.jpg'
+  "../static/images/about-1.jpg",
+  "../static/images/about-2.jpg",
+  "../static/images/about-3.jpg"
 ];
 
 export class About extends Component {
@@ -119,7 +119,7 @@ export class About extends Component {
               <div className="row m-0">
                 <div className="col-12 p-0 pl-3 pr-3">
                   <p className="text-min">
-                    С 2006 г. до настоящего времени компанией выпущено{' '}
+                    С 2006 г. до настоящего времени компанией выпущено{" "}
                     <b>75 электростанций суммарной мощностью более 21 МВт.</b> В
                     производственной линейке газовые электростанции MAN,
                     Liebherr и ЯМЗ единичной мощностью до 1 МВт и напряжением до
@@ -201,7 +201,7 @@ export class About extends Component {
                 >
                   <Marker
                     onClick={this.onMarkerClick}
-                    name={'Current location'}
+                    name={"Current location"}
                   />
                   {/* <InfoWindow onClose={this.onInfoWindowClose}>
                   <div>
@@ -213,7 +213,7 @@ export class About extends Component {
             </div>
           </div>
           <div className="container-fluid">
-            <div className="mycontainer">
+            <div className="mycontainer pl-3 pr-3">
               <h2 className="header-common pl-0">Сертификаты</h2>
               <div className="certs">
                 <a
@@ -294,5 +294,5 @@ export class About extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyCB0I6jT_lFFe5FCdsB7umIxzSSKrgaxvs'
+  apiKey: "AIzaSyCB0I6jT_lFFe5FCdsB7umIxzSSKrgaxvs"
 })(About);

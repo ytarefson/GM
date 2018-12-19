@@ -183,12 +183,7 @@ const projectList = [
     label: "«Энергоцентр ЯМЗ»",
     id: 9,
     img: "project-avtodisel.jpg",
-    galery: [
-      "project-locked.jpg",
-      "project-locked.jpg",
-      "project-locked.jpg",
-      "project-locked.jpg"
-    ],
+    galery: ["IMG_1.jpg", "IMG_2.jpg", "IMG_3.jpg", "IMG_4.jpg"],
     as: "/yamz",
     energy: "1500 кВт",
     tenergy: "1825 кВт",

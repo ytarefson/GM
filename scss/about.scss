@@ -1,4 +1,4 @@
-@import './vars';
+@import "./vars";
 .about {
   & .logo-container {
     height: 100%;
@@ -91,18 +91,26 @@
   padding: 30px 0 50px 0;
 }
 .certs {
-  margin-top: 30px;
+  margin-top: 10px;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
   & .certs-card {
-    align-items: center;
+    padding: 15px;
+    width: 50%;
     & .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       & .certs-img-1 {
-        max-width: 200px;
+        width: 100%;
+        //max-width: 200px;
       }
       & .certs-img-2 {
-        max-width: 300px;
+        //max-width: 300px;
+        width: 100%;
       }
     }
   }

@@ -1,8 +1,8 @@
-import React from 'react';
-import Link from 'next/link';
-import menu from './menu';
-import serviceList from '../components/tables/serviceList';
-import '../scss/footer.scss';
+import React from "react";
+import Link from "next/link";
+import menu from "./menu";
+import serviceList from "../components/tables/serviceList";
+import "../scss/footer.scss";
 
 const Footer = () => (
   <footer className="footer">
@@ -73,8 +73,8 @@ const Footer = () => (
             </li>
             <li />
           </ul>
-          <span className="">график работы:</span>
-          <span className="">пн-пт: 9:00-18:00</span>
+          <span className="link-1">график работы:</span>
+          <span className="link-1">пн-пт: 9:00-18:00</span>
         </div>
       </div>
     </div>

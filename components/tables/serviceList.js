@@ -75,7 +75,7 @@ const serviceList = [
   {
     label: "Шеф-монтаж",
     h1: "Техническое сопровождение монтажа газопоршневых и дизельных установок",
-    imgDetail: "../static/images/servises-detail/oborud.jpg",
+    imgDetail: "../static/images/servises-detail/montaj.jpg",
     text: "Проверка качества монтажа и сборки энергоустановки",
     img: "../static/images/service-image-8.jpg",
     href: "/chef-montazh",
