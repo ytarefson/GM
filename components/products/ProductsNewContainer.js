@@ -353,7 +353,7 @@ class ProductsNew extends Component {
                   <a className="product-card">
                     <div className="img-container">
                       <img
-                        src={`../../static/images/products/${item.img}`}
+                        src={`../../static/images/products/thumb-${item.img}`}
                         alt={item.label}
                         className="product-card-img"
                       />

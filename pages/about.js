@@ -1,12 +1,28 @@
-import React, { Component } from "react";
-import Link from "next/link";
-import Head from "../components/head";
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
-import "../scss/about.scss";
-import Layout from "../components/Layout";
+import React, { Component } from 'react';
+import Link from 'next/link';
+import Head from '../components/head';
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import '../scss/about.scss';
+import Layout from '../components/Layout';
+import Lightbox from 'react-image-lightbox';
+
+const images = [
+  '../static/images/about-1.jpg',
+  '../static/images/about-2.jpg',
+  '../static/images/about-3.jpg'
+];
 
 export class About extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      photoIndex: 0,
+      isOpen: false
+    };
+  }
   render() {
+    const { photoIndex, isOpen } = this.state;
     return (
       <div>
         <Head
@@ -46,6 +62,9 @@ export class About extends Component {
                   <div className="img-container">
                     <img
                       src="../static/images/about-1.jpg"
+                      onClick={() =>
+                        this.setState({ isOpen: true, photoIndex: 0 })
+                      }
                       alt=""
                       className="about-pic"
                     />
@@ -55,6 +74,9 @@ export class About extends Component {
                   <div className="img-container">
                     <img
                       src="../static/images/about-2.jpg"
+                      onClick={() =>
+                        this.setState({ isOpen: true, photoIndex: 1 })
+                      }
                       alt=""
                       className="about-pic"
                     />
@@ -64,16 +86,40 @@ export class About extends Component {
                   <div className="img-container">
                     <img
                       src="../static/images/about-3.jpg"
+                      onClick={() =>
+                        this.setState({ isOpen: true, photoIndex: 2 })
+                      }
                       alt=""
                       className="about-pic"
                     />
                   </div>
+                  {isOpen && (
+                    <Lightbox
+                      mainSrc={`${images[photoIndex]}`}
+                      nextSrc={images[(photoIndex + 1) % images.length]}
+                      prevSrc={
+                        images[(photoIndex + images.length - 1) % images.length]
+                      }
+                      onCloseRequest={() => this.setState({ isOpen: false })}
+                      onMovePrevRequest={() =>
+                        this.setState({
+                          photoIndex:
+                            (photoIndex + images.length - 1) % images.length
+                        })
+                      }
+                      onMoveNextRequest={() =>
+                        this.setState({
+                          photoIndex: (photoIndex + 1) % images.length
+                        })
+                      }
+                    />
+                  )}
                 </div>
               </div>
               <div className="row m-0">
                 <div className="col-12 p-0 pl-3 pr-3">
                   <p className="text-min">
-                    С 2006 г. до настоящего времени компанией выпущено{" "}
+                    С 2006 г. до настоящего времени компанией выпущено{' '}
                     <b>75 электростанций суммарной мощностью более 21 МВт.</b> В
                     производственной линейке газовые электростанции MAN,
                     Liebherr и ЯМЗ единичной мощностью до 1 МВт и напряжением до
@@ -155,7 +201,7 @@ export class About extends Component {
                 >
                   <Marker
                     onClick={this.onMarkerClick}
-                    name={"Current location"}
+                    name={'Current location'}
                   />
                   {/* <InfoWindow onClose={this.onInfoWindowClose}>
                   <div>
@@ -163,6 +209,39 @@ export class About extends Component {
                   </div>
                 </InfoWindow> */}
                 </Map>
+              </div>
+            </div>
+          </div>
+          <div className="container-fluid">
+            <div className="mycontainer">
+              <h2 className="header-common pl-0">Сертификаты</h2>
+              <div className="certs">
+                <a
+                  className="d-flex certs-card"
+                  href="../static/docs/сканирован0642.pdf"
+                  target="_blank"
+                >
+                  <div className="img-container">
+                    <img
+                      className="certs-img certs-img-1"
+                      src="../static/images/docs/nagrada1.jpg"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <a
+                  className="d-flex certs-card"
+                  href="../static/docs/сканирован0643.pdf"
+                  target="_blank"
+                >
+                  <div className="img-container">
+                    <img
+                      className="certs-img certs-img-2"
+                      src="../static/images/docs/nagrada2.jpg"
+                      alt=""
+                    />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -215,5 +294,5 @@ export class About extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyCB0I6jT_lFFe5FCdsB7umIxzSSKrgaxvs"
+  apiKey: 'AIzaSyCB0I6jT_lFFe5FCdsB7umIxzSSKrgaxvs'
 })(About);
