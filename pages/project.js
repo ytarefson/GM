@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import projectList from '../components/tables/projectList';
 import Layout from '../components/Layout';
 import ProjectUnitPlate from '../components/projects/ProjectUnitPlate';
@@ -16,6 +16,8 @@ const Project = project => (
 Project.getInitialProps = async function(context) {
   const id = context.query.id;
   const project = projectList[id];
+  console.log(typeof project.id);
+  console.log(project.id);
   return { project };
 };
 

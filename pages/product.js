@@ -1,7 +1,7 @@
-import React from "react";
-import Layout from "../components/Layout";
-import ProductUnitPlate from "../components/products/ProductUnitPlate";
-import "../scss/product.scss";
+import React from 'react';
+import Layout from '../components/Layout';
+import ProductUnitPlate from '../components/products/ProductUnitPlate';
+import '../scss/product.scss';
 
 const Product = data => (
   <div>
@@ -16,7 +16,7 @@ const Product = data => (
 );
 
 Product.getInitialProps = async function(context) {
-  const data = { id: "", category: "" };
+  const data = { id: '', category: '' };
   data.id = context.query.id;
   data.category = context.query.category;
   return { data };

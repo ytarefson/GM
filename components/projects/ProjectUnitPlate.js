@@ -1,11 +1,16 @@
-import React, { Component } from "react";
-import Head from "../../components/head";
-import Link from "../Link";
-import "../../scss/projects/ProjectsUnitPlate.scss";
+import React, { Component } from 'react';
+import Head from '../../components/head';
+import Link from '../Link';
+import Video from '../Video';
+import '../../scss/projects/ProjectsUnitPlate.scss';
 
 export class ProjectUnitPlate extends Component {
   render() {
     const project = this.props.project.project;
+    let isVideo = false;
+    if (project.id == 6) {
+      isVideo = true;
+    }
     return (
       <div>
         <Head title={`Проект - ${project.label}`} description="Лучший проект" />
@@ -65,6 +70,7 @@ export class ProjectUnitPlate extends Component {
             </div>
           </div>
         </div>
+        {isVideo && <Video />}
       </div>
     );
   }

@@ -19,7 +19,8 @@
     "react-image-lightbox": "^5.1.0",
     "react-spring": "^6.1.10",
     "react-yandex-metrika": "^2.4.2",
-    "sendgrid": "^5.2.3"
+    "sendgrid": "^5.2.3",
+    "video-react": "^0.13.1"
   },
   "devDependencies": {
     "next-compose": "0.0.2"
