@@ -37,7 +37,7 @@ class FormPage extends React.Component {
     return (
       <form className="forma" onSubmit={this.handleSubmit}>
         <div className="form-group row m-0">
-          <div className="col-12 col-md-6 p-0 colform">
+          <div className="col-12 col-md-6 col-xl-5 p-0 colform">
             <div className="form-context">
               {/* <label className="text-common" htmlFor="userEmail">
               Введите e-mail:{' '}
@@ -51,7 +51,7 @@ class FormPage extends React.Component {
               </p>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-xl-4 p-0 colform">
+          <div className="col-12 col-md-6 col-xl-7 p-0 colform">
             <input
               onChange={this.handleChange}
               type="email"

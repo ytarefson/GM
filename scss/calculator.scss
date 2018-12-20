@@ -52,37 +52,15 @@ input {
   padding: 10px 0;
   margin-top: 35px;
   margin-bottom: 15px;
-  & .calc-send {
-    display: block;
-    border-radius: 40px;
-    padding: 2px 15px;
-    color: #c42f09;
-    border: none;
-    background-color: #eecf34;
-    margin-right: 15px;
-    transition: box-shadow 0.2s;
-    box-shadow: 13px 13px 16px rgba(0, 0, 0, 0.15);
-    &:hover {
-      box-shadow: $box-shadow;
-    }
-  }
-  & .calc-reset {
-    display: block;
-    border-radius: 40px;
-    padding: 2px 15px;
-    color: #c42f09;
-    border: none;
-    background-color: white;
-    margin-right: 15px;
-    transition: box-shadow 0.2s;
-    box-shadow: 13px 13px 16px rgba(0, 0, 0, 0.15);
-    &:hover {
-      box-shadow: $box-shadow;
-    }
-  }
 }
 .profit {
+  display: block;
+  margin-top: 30px;
   letter-spacing: normal;
+  & b {
+    font-size: 20px;
+    padding: 0 5px;
+  }
 }
 .calc-form {
   color: white;
@@ -204,6 +182,16 @@ input {
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 0.2px;
+  }
+  .profit {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    letter-spacing: normal;
+    & b {
+      font-size: 36px;
+      padding: 0 15px;
+    }
   }
 }
 // Extra large devices (large desktops, 1400px and up)

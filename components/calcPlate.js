@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import '../scss/calculator.scss';
+import "../scss/calculator.scss";
 
 export class CalcPlate extends Component {
   constructor(props) {
@@ -93,7 +93,7 @@ export class CalcPlate extends Component {
                   </span> */}
                 </form>
                 <span className="profit">
-                  {`Ваша экономия от внедрения за год: ${profit} рублей`}
+                  Ваша экономия от внедрения за год: <b>{`${profit}`}</b> рублей
                 </span>
               </div>
             </div>
