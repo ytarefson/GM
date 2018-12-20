@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import Link from "next/link";
-import Head from "../../components/head";
-import productsList from "../tables/productsList";
-import SimilarProducts from "../products/SimilarProducts";
-import "../../scss/products/ProductUnitPlate.scss";
-import FormPage from "../form";
-
-import Lightbox from "react-image-lightbox";
+import React, { Component } from 'react';
+import Link from 'next/link';
+import Head from '../../components/head';
+import productsList from '../tables/productsList';
+import SimilarProducts from '../products/SimilarProducts';
+import '../../scss/products/ProductUnitPlate.scss';
+import FormPage from '../form';
+import GaleryProducts from '../../components/GaleryProducts';
+import Lightbox from 'react-image-lightbox';
 // import 'react-image-lightbox/style.css';
 
 export class ProductsUnitPlate extends Component {
@@ -25,6 +25,7 @@ export class ProductsUnitPlate extends Component {
     const data = productsList;
     let products = [];
     let product = [];
+    const isVideo = false;
     data.map(item => {
       if (item.category === category) {
         products = item.products;
@@ -35,6 +36,9 @@ export class ProductsUnitPlate extends Component {
         });
       }
     });
+    if (product.id == 7) {
+      isVideo = true;
+    }
     let similar = [];
     products.map(item => {
       if (item.id !== Number(id)) {
@@ -77,7 +81,7 @@ export class ProductsUnitPlate extends Component {
               <div className="col-12 col-md-4 order-md-2 order-1">
                 <div className="product-img-container">
                   <img
-                    src={`../../static/images/products/thumb-${product.img}`}
+                    src={`../../../static/images/products/thumb-${product.img}`}
                     alt={product.label}
                     className="product-img"
                     onClick={() => this.setState({ isOpen: true })}
@@ -104,8 +108,7 @@ export class ProductsUnitPlate extends Component {
               </div>
             </div>
           </div>
-
-          <SimilarProducts similar={similar} category={category} />
+          <GaleryProducts product={product} />
           <div className="mycontainer section-plate">
             <h3 className="header-red pl-3">Характеристики {product.label}:</h3>
             <div className="row m-0 parametrs-container">
@@ -116,7 +119,7 @@ export class ProductsUnitPlate extends Component {
                 </div>
                 <div className="text-container">
                   <span className="text-common">
-                    Электрическая мощность, кВт:{" "}
+                    Электрическая мощность, кВт:{' '}
                   </span>
                   <span className="text-bold">{product.electricPower}</span>
                 </div>
@@ -152,7 +155,7 @@ export class ProductsUnitPlate extends Component {
                 </div>
                 <div className="text-container">
                   <span className="text-common">
-                    Расход газа в номинальном режиме, нм3/час:{" "}
+                    Расход газа в номинальном режиме, нм3/час:{' '}
                   </span>
                   <span className="text-bold">
                     {product.nominalGazConsumption}
@@ -168,7 +171,7 @@ export class ProductsUnitPlate extends Component {
                 </div>
                 <div className="text-container">
                   <span className="text-common">
-                    Общий ресурс электростанции:{" "}
+                    Общий ресурс электростанции:{' '}
                   </span>
                   <span className="text-bold">{product.totalPowerPlant}</span>
                 </div>
@@ -190,7 +193,7 @@ export class ProductsUnitPlate extends Component {
                 </div>
                 <div className="text-container">
                   <span className="text-common">
-                    Коэффициент избытка воздуха, λ:{" "}
+                    Коэффициент избытка воздуха, λ:{' '}
                   </span>
                   <span className="text-bold">{product.excessAirRatio}</span>
                 </div>
@@ -205,7 +208,8 @@ export class ProductsUnitPlate extends Component {
           <div className="mycontainer section-plate p-0">
             <FormPage product={product.label} />
           </div>
-        </div>{" "}
+          <SimilarProducts similar={similar} category={category} />
+        </div>
       </div>
     );
   }
