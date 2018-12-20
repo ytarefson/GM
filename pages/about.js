@@ -33,12 +33,12 @@ export class About extends Component {
           <div className="container-fluid about">
             <div className="mycontainer">
               <div className="row m-0">
-                <div className="col-12 col-md-6 p-0">
+                <div className="col-12 col-md-8 p-0">
                   <span className="subheading-red-top pl-3">О компании</span>
                   <h2 className="header-razdel pl-3">История, факты...</h2>
                   <p className="subheading-common-2 mt-5">
                     Компания «Газовые машины» образована 10 октября 2006 г. В
-                    течении 12 лет основным профилем деятельности компании
+                    течение 12 лет основным профилем деятельности компании
                     является производство и поставка "под ключ" автономных
                     энергетических центров на базе газопоршневых электростанций
                     с технологиями когенерации и тригенерации, сервисное
@@ -47,7 +47,7 @@ export class About extends Component {
                     генераторов.
                   </p>
                 </div>
-                <div className="col-12 col-md-6 p-0">
+                <div className="col-12 col-md-4 p-0">
                   <div className="logo-container">
                     <img
                       src="../static/images/logo-very-big.png"
@@ -119,12 +119,14 @@ export class About extends Component {
               <div className="row m-0">
                 <div className="col-12 p-0 pl-3 pr-3">
                   <p className="text-min">
-                    С 2006 г. до настоящего времени компанией выпущено{" "}
+                    С 2006 г. до настоящего времени компанией выпущено
                     <b>75 электростанций суммарной мощностью более 21 МВт.</b> В
                     производственной линейке газовые электростанции MAN,
-                    Liebherr и ЯМЗ единичной мощностью до 1 МВт и напряжением до
-                    10,5 кВ, работающие на природном, сжиженном газе,
-                    пропан-бутановой смеси, попутном нефтяном газе.
+                    Liebherr, Jenbacher, MTU, MWM и ЯМЗ единичной мощностью до
+                    10 МВт и напряжением до 10,5 кВ, работающие на природном,
+                    сжиженном газе, пропан-бутановой смеси, попутном нефтяном
+                    газе. Компания является официальным сервисным партнером MAN,
+                    Liebherr, Motortech, Comap.
                   </p>
                   <p className="text-min">
                     Производственные площади комании 1 900 кв.м. расположены в
@@ -224,8 +226,73 @@ export class About extends Component {
                   <div className="img-container">
                     <img
                       className="certs-img certs-img-1"
-                      src="../static/images/docs/nagrada1.jpg"
-                      alt=""
+                      src="../static/images/docs/сканирован0642.jpg"
+                      alt="сертификат"
+                    />
+                  </div>
+                </a>
+                <a
+                  className="d-flex certs-card"
+                  href="../static/docs/liebherr.pdf"
+                  target="_blank"
+                >
+                  <div className="img-container">
+                    <img
+                      className="certs-img certs-img-1"
+                      src="../static/images/docs/liebherr.jpg"
+                      alt="сертификат"
+                    />
+                  </div>
+                </a>
+                <a
+                  className="d-flex certs-card"
+                  href="../static/docs/motortech.pdf"
+                  target="_blank"
+                >
+                  <div className="img-container">
+                    <img
+                      className="certs-img certs-img-1"
+                      src="../static/images/docs/motortech.jpg"
+                      alt="сертификат"
+                    />
+                  </div>
+                </a>
+                <a
+                  className="d-flex certs-card"
+                  href="../static/docs/sert.pdf"
+                  target="_blank"
+                >
+                  <div className="img-container">
+                    <img
+                      className="certs-img certs-img-1"
+                      src="../static/images/docs/sert.jpg"
+                      alt="сертификат"
+                    />
+                  </div>
+                </a>
+                <a
+                  className="d-flex certs-card"
+                  href="../static/docs/comap.pdf"
+                  target="_blank"
+                >
+                  <div className="img-container">
+                    <img
+                      className="certs-img certs-img-1"
+                      src="../static/images/docs/comap.jpg"
+                      alt="сертификат"
+                    />
+                  </div>
+                </a>
+                <a
+                  className="d-flex certs-card"
+                  href="../static/docs/man.pdf"
+                  target="_blank"
+                >
+                  <div className="img-container">
+                    <img
+                      className="certs-img certs-img-1"
+                      src="../static/images/docs/man.jpg"
+                      alt="сертификат"
                     />
                   </div>
                 </a>
@@ -238,7 +305,7 @@ export class About extends Component {
                     <img
                       className="certs-img certs-img-2"
                       src="../static/images/docs/nagrada2.jpg"
-                      alt=""
+                      alt="сертификат"
                     />
                   </div>
                 </a>

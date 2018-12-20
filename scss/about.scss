@@ -95,18 +95,26 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   & .certs-card {
     padding: 15px;
     width: 50%;
+    cursor: pointer;
     & .img-container {
       display: flex;
       justify-content: center;
       align-items: center;
       & .certs-img-1 {
         width: 100%;
+        transition: all 0.2s ease-in;
         //max-width: 200px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        box-shadow: $box-shadow;
+        &:hover {
+          box-shadow: 0 5px 40px -15px rgba(0, 0, 0, 0.55);
+        }
       }
       & .certs-img-2 {
         //max-width: 300px;
@@ -120,6 +128,27 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .about {
+    & .logo-container {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      & .logo-very-big {
+        display: block;
+        margin-bottom: 30px;
+        width: 70%;
+        height: auto;
+      }
+    }
+    & .img-container {
+      & .about-pic {
+        max-width: 100%;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+        border: 10px solid white;
+      }
+    }
+  }
   .contacts {
     & .map-container {
       transform: translateX(-15px);
@@ -167,10 +196,26 @@
       }
     }
   }
+  .certs {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    & .certs-card {
+      padding: 15px;
+      width: 32%;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .certs {
+    flex-wrap: nowrap;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
