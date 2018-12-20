@@ -6,8 +6,8 @@ export class CalcPlate extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      energyUsed: 500,
-      energyCost: 6,
+      energyUsed: 0,
+      energyCost: 0,
       profit: 0
     };
     this.handleChangeUsed = this.handleChangeUsed.bind(this);
@@ -16,25 +16,36 @@ export class CalcPlate extends Component {
   }
 
   handleChangeUsed(e) {
-    const profit = this.handleProfitChange();
+    const profit = this.handleProfitChange(
+      e.target.value,
+      this.state.energyUsed
+    );
     this.setState({
       energyUsed: e.target.value,
       profit
     });
   }
   handleChangeCost(e) {
-    const profit = this.handleProfitChange();
+    const profit = this.handleProfitChange(
+      this.state.energyUsed,
+      e.target.value
+    );
     this.setState({
       energyCost: e.target.value,
       profit
     });
   }
 
-  handleProfitChange() {
-    const YearEnergyCost = 8500 * this.state.energyUsed * this.state.energyCost;
-    const YearServiceCost = (8500 * this.state.energyUsed * 1.2 * 1900) / 1163;
-    const OurYearEnergyCost = (8500 * this.state.energyUsed * 6) / 4;
+  handleProfitChange(energyUsed, energyCost) {
+    const YearEnergyCost = 8500 * energyUsed * energyCost;
+    const YearServiceCost = (8500 * energyUsed * 1.2 * 1900) / 1163;
+    const OurYearEnergyCost = (8500 * energyUsed * 6) / 4;
     const newProfit = YearEnergyCost + YearServiceCost - OurYearEnergyCost;
+    console.log(this.state.energyUsed);
+    console.log(this.state.energyCost);
+    console.log(YearEnergyCost);
+    console.log(YearServiceCost);
+    console.log(OurYearEnergyCost);
     return newProfit.toFixed(0);
   }
 
