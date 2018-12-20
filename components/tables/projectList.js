@@ -122,7 +122,7 @@ const projectList = [
   {
     label: "Смоленский кирпичный завод",
     id: 6,
-    img: "project-locked.jpg",
+    img: "project-smolensk.jpg",
     galery: [
       "project-locked.jpg",
       "project-locked.jpg",

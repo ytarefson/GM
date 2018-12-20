@@ -1,224 +1,80 @@
 @import "./vars";
 
 .forma {
-  padding: 30px;
-  background: rgba(0, 0, 0, 0.05);
-}
-.form-cta-text {
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 26px;
-  color: #313131;
-  text-align: center;
-}
-.form-group {
-  display: flex;
-  justify-content: space-around;
-  & .form-context {
+  padding: 0 30px 30px 30px;
+  background: linear-gradient(-45deg, #c42f09 0%, #cf6020 100%);
+  & .form-group {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 15px;
-    & .userEmail {
-      display: block;
-      border-radius: 30px;
-      padding-left: 15px;
-      width: 100%;
-      height: 50px;
-      margin-bottom: 15px;
-    }
-    & .callTime {
-      display: block;
-      border-radius: 30px;
-      padding-left: 15px;
-      width: 100%;
-      height: 50px;
-      margin-bottom: 15px;
-    }
-  }
-  & .form-button {
-    display: block;
-    border-radius: 50px;
-    color: #fff;
-    background-image: linear-gradient(to right, #d4722a 0%, #c62d28 100%);
-    border: none;
-    padding: 10px 20px;
-    margin: 15px auto;
-    box-shadow: $box-shadow-up;
-    //box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
-    transition: all 0.2s;
-    &:hover {
-      cursor: pointer;
-      box-shadow: $box-shadow;
+    justify-content: space-around;
+    & .colform {
+      margin-top: 30px;
+      & .form-context {
+        & .form-cta-title {
+          font-weight: 700;
+          font-size: 26px;
+          line-height: 36px;
+          color: white;
+          padding-bottom: 15px;
+          border-bottom: 3px solid white;
+          margin-bottom: 20px;
+        }
+        & .form-cta-text {
+          font-size: 14px;
+          line-height: 24px;
+          color: white;
+        }
+      }
+      & .userEmail {
+        display: block;
+        border-radius: 30px;
+        padding-left: 15px;
+        width: 100%;
+        height: 42px;
+        margin-bottom: 20px;
+      }
+      & .callTime {
+        display: block;
+        border-radius: 30px;
+        padding-left: 15px;
+        width: 100%;
+        height: 42px;
+        margin-bottom: 20px;
+      }
+      & .form-button {
+        display: block;
+        border-radius: 50px;
+        color: #fff;
+        background-color: #cf6020;
+        //background-image: linear-gradient(to right, #d4722a 0%, #c62d28 100%);
+        border: none;
+        padding: 10px 20px;
+        margin: 15px auto;
+        box-shadow: $box-shadow-up;
+        //box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+        transition: all 0.2s;
+        &:hover {
+          cursor: pointer;
+          box-shadow: $box-shadow;
+        }
+      }
+      & .form-cta-text-2 {
+        font-size: 12px;
+        line-height: 18px;
+        color: white;
+        text-align: center;
+      }
     }
   }
 }
 
 // Large devices (desktops, 768px and up)
 @media (min-width: 768px) {
-  .forma {
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.05);
-  }
-  .form-cta-text {
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    color: #313131;
-    text-align: center;
-  }
-  & .form-cta-text-2 {
-    color: $accent-red;
-    font-weight: 700;
-  }
-  .form-group {
-    display: flex;
-    justify-content: space-between;
-    & .form-context {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin-bottom: 15px;
-      & .userEmail {
-        display: block;
-        width: 100%;
-        height: 40px;
-        margin-bottom: 15px;
-      }
-      & .callTime {
-        display: block;
-        width: 100%;
-        height: 40px;
-        margin-bottom: 15px;
-      }
-    }
-    & .form-button {
-      display: block;
-      width: 240px;
-      border-radius: 50px;
-      color: #fff;
-      background-image: linear-gradient(to right, #d4722a 0%, #c62d28 100%);
-      border: none;
-      padding: 10px 20px;
-      margin: 15px 0 15px auto;
-      box-shadow: $box-shadow-up;
-      //box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
-      transition: all 0.2s;
-      &:hover {
-        cursor: pointer;
-        box-shadow: $box-shadow;
-      }
-    }
-  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .forma {
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.05);
-  }
-  .form-cta-text {
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    color: #313131;
-    text-align: center;
-  }
-  .form-group {
-    display: flex;
-    justify-content: space-between;
-    & .form-context {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin-bottom: 15px;
-      & .userEmail {
-        display: block;
-        width: 100%;
-        height: 40px;
-        margin-bottom: 15px;
-      }
-      & .callTime {
-        display: block;
-        width: 100%;
-        height: 40px;
-        margin-bottom: 15px;
-      }
-    }
-    & .form-button {
-      display: block;
-      width: 270px;
-      border-radius: 50px;
-      color: #fff;
-      background-image: linear-gradient(to right, #d4722a 0%, #c62d28 100%);
-      border: none;
-      padding: 10px 20px;
-      margin: 15px 0 15px auto;
-      box-shadow: $box-shadow-up;
-      //box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
-      transition: all 0.2s;
-      &:hover {
-        cursor: pointer;
-        box-shadow: $box-shadow;
-      }
-    }
-  }
 }
 
 // Large devices (desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .forma {
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.05);
-  }
-  .form-cta-text {
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    color: #313131;
-    text-align: left;
-  }
-  .form-group {
-    display: flex;
-    justify-content: space-between;
-    & .form-context {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      & .userEmail {
-        display: block;
-        width: 100%;
-        height: 40px;
-        margin-bottom: 15px;
-      }
-      & .callTime {
-        display: block;
-        width: 100%;
-        height: 40px;
-        margin-bottom: 15px;
-      }
-    }
-    & .form-button {
-      display: block;
-      width: 270px;
-      border-radius: 50px;
-      color: #fff;
-      background-image: linear-gradient(to right, #d4722a 0%, #c62d28 100%);
-      border: none;
-      padding: 10px 20px;
-      margin: 15px auto;
-      box-shadow: $box-shadow-up;
-      //box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
-      transition: all 0.2s;
-      &:hover {
-        cursor: pointer;
-        box-shadow: $box-shadow;
-      }
-    }
-  }
 }

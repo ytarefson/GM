@@ -6,8 +6,10 @@
   //padding-bottom: 50px;
   //background-image: linear-gradient(to right, #313131 0%, #c81e23 100%);
   //background-image: linear-gradient(to right, #cb4828 0%, #e46849 100%);
-  background-image: linear-gradient(to left, #777777 0%, #5e5e5e 100%);
+  //background-image: linear-gradient(to left, #777777 0%, #5e5e5e 100%);
   //background-image: $red-gradient;
+  background-image: url("/static/images/prism.png");
+  background-size: 50%;
   & .rights-reserved {
     margin-top: 30px;
     text-align: right;
@@ -109,9 +111,9 @@
           display: block;
           color: #ffffff;
           width: 100%;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 400;
-          line-height: 26px;
+          line-height: 22px;
         }
       }
     }
