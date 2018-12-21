@@ -106,6 +106,11 @@ export class ProductsUnitPlate extends Component {
                   )}
                 </div>
               </div>
+              <div className="col-12 order-3">
+                <p className="text-min">{product.descriptionOne}</p>
+                <p className="text-min">{product.descriptionTwo}</p>
+                <p className="text-min">{product.descriptionThree}</p>
+              </div>
             </div>
           </div>
           <GaleryProducts product={product} />

@@ -13,6 +13,9 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
+  server.get('/foryarndex.html', (req, res) => {
+    return res.send('kek');
+  });
   server.get('/raspredelennaya-generaciya', (req, res) => {
     return app.render(req, res, '/rasGen', req.query);
   });

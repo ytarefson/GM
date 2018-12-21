@@ -1,11 +1,11 @@
-@import "../vars";
+@import '../vars';
 
 .projects-list-plate {
   position: relative;
   &::after {
     z-index: -1;
     position: absolute;
-    content: "";
+    content: '';
     display: block;
     width: 29%;
     height: 100%;
@@ -17,7 +17,7 @@
   }
   .project-cards-small-plate {
     padding-top: 50px;
-    padding-bottom: 80px;
+    // padding-bottom: 80px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -104,6 +104,21 @@
         }
       }
     }
+  }
+}
+.referenc-list-container {
+  text-align: center;
+  padding-bottom: 80px;
+
+  & .referenc-list {
+    box-shadow: $box-shadow-up;
+    display: block;
+    padding: 10px;
+    background: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
   }
 }
 @media (min-width: 400px) {
