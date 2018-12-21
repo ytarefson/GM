@@ -5,14 +5,21 @@
   margin-bottom: 0;
 }
 .galery {
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
   flex-direction: row;
-
   & .img-container {
+    display: flex;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    overflow: hidden;
     //max-width: 25%;
     & .detail-img {
-      max-width: 100%;
+      width: auto;
+      height: 100%;
     }
   }
 }

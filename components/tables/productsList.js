@@ -665,7 +665,12 @@ const productsList = [
         label: 'LIEBHERR 1000',
         id: 13,
         img: 'liebherr-1000.jpg',
-        galery: ['1000.jpg', '1000.jpg', '1000.jpg', '1000.jpg'],
+        galery: [
+          'liebherr-1000-1.jpg',
+          'liebherr-1000-2.jpg',
+          '1000.jpg',
+          '1000.jpg'
+        ],
         as: '/LIEBHERR-1000',
         motorMark: 'Liebherr G9620',
         gasMixer: 'Motortech VariFuel2',
@@ -704,7 +709,12 @@ const productsList = [
         label: 'ЯМЗ 100',
         id: 20,
         img: 'yamz100.jpg',
-        galery: ['yamz100.jpg', 'yamz100.jpg', 'yamz100.jpg', 'yamz100.jpg'],
+        galery: [
+          'yamz-100-1.jpg',
+          'yamz-100-2.jpg',
+          'yamz-100-3.jpg',
+          'yamz-100-4.jpg'
+        ],
         as: '/yamz-100',
         motorMark: 'ЯМЗ 536 CNG',
         gasMixer: 'Motortech VariFuel2',
