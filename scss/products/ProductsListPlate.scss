@@ -46,13 +46,17 @@
       cursor: pointer;
       & .category-link {
         display: block;
+        width: 100%;
+        height: 100%;
         font-weight: 300;
         font-size: 14px;
         text-transform: uppercase;
         transition: all 0.2s ease-in;
       }
-      & .active {
-        background-color: rgb(240, 80, 51);
+    }
+    & .active {
+      background-color: rgb(240, 80, 51);
+      & .category-link {
         color: white;
       }
     }
@@ -303,10 +307,12 @@
           background-color: grey;
         }
         &:hover {
-          //background-color: rgba(0, 0, 0, 0.1);
-          & .category-link {
-            text-shadow: $box-shadow;
-          }
+          background-color: rgb(255, 191, 180);
+        }
+      }
+      & .active {
+        & .category-link {
+          color: white;
         }
       }
     }
@@ -363,7 +369,7 @@
           background-color: grey;
         }
         &:hover .category-link {
-          text-shadow: $box-shadow;
+          //text-shadow: $box-shadow;
         }
       }
     }
