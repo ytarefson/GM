@@ -13,7 +13,7 @@ const NewsUnit = data => (
           <Link href="/">
             <a className="crambs">Главная > </a>
           </Link>
-          <Link href="/products">
+          <Link href="/news">
             <a className="crambs">Новости > </a>
           </Link>
           <span className="crambs cramb-main">{data.data.label}</span>

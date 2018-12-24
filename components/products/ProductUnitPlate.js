@@ -8,6 +8,8 @@ import FormPage from '../form';
 import GaleryProducts from '../../components/GaleryProducts';
 import Lightbox from 'react-image-lightbox';
 // import 'react-image-lightbox/style.css';
+import '../../scss/video.scss';
+import { Player } from 'video-react';
 
 export class ProductsUnitPlate extends Component {
   constructor(props) {
@@ -154,10 +156,15 @@ export class ProductsUnitPlate extends Component {
                   <span className="text-common">Метановое число: </span>
                   <span className="text-bold">{product.methaneNumber}</span>
                 </div>
-                <div className="text-container">
-                  <span className="text-common">Давление газа, кгс/см2: </span>
-                  <span className="text-bold">{product.gasPressure}</span>
-                </div>
+                {}
+                {product.gasPressure !== '' && (
+                  <div className="text-container">
+                    <span className="text-common">
+                      Давление газа, кгс/см2:{' '}
+                    </span>
+                    <span className="text-bold">{product.gasPressure}</span>
+                  </div>
+                )}
                 <div className="text-container">
                   <span className="text-common">
                     Расход газа в номинальном режиме, нм3/час:{' '}
@@ -180,28 +187,40 @@ export class ProductsUnitPlate extends Component {
                   </span>
                   <span className="text-bold">{product.totalPowerPlant}</span>
                 </div>
-                <div className="text-container">
-                  <span className="text-common">Газовоздушный смеситель: </span>
-                  <span className="text-bold">{product.gasMixer}</span>
-                </div>
-                <div className="text-container">
-                  <span className="text-common">Блок управления: </span>
-                  <span className="text-bold">{product.controlBlock}</span>
-                </div>
-                <div className="text-container">
-                  <span className="text-common">Система зажигания: </span>
-                  <span className="text-bold">{product.ignitionSystem}</span>
-                </div>
-                <div className="text-container">
-                  <span className="text-common">Дроссельная заслонка: </span>
-                  <span className="text-bold">{product.throttleValve}</span>
-                </div>
-                <div className="text-container">
-                  <span className="text-common">
-                    Коэффициент избытка воздуха, λ:{' '}
-                  </span>
-                  <span className="text-bold">{product.excessAirRatio}</span>
-                </div>
+                {product.gasMixer !== '' && (
+                  <div className="text-container">
+                    <span className="text-common">
+                      Газовоздушный смеситель:{' '}
+                    </span>
+                    <span className="text-bold">{product.gasMixer}</span>
+                  </div>
+                )}
+                {product.controlBlock !== '' && (
+                  <div className="text-container">
+                    <span className="text-common">Блок управления: </span>
+                    <span className="text-bold">{product.controlBlock}</span>
+                  </div>
+                )}
+                {product.ignitionSystem !== '' && (
+                  <div className="text-container">
+                    <span className="text-common">Система зажигания: </span>
+                    <span className="text-bold">{product.ignitionSystem}</span>
+                  </div>
+                )}
+                {product.throttleValve !== '' && (
+                  <div className="text-container">
+                    <span className="text-common">Дроссельная заслонка: </span>
+                    <span className="text-bold">{product.throttleValve}</span>
+                  </div>
+                )}
+                {product.excessAirRatio !== '' && (
+                  <div className="text-container">
+                    <span className="text-common">
+                      Коэффициент избытка воздуха, λ:{' '}
+                    </span>
+                    <span className="text-bold">{product.excessAirRatio}</span>
+                  </div>
+                )}
                 <div className="text-container">
                   <span className="text-common">Напряжение, В</span>
                   <span className="text-bold">{product.voltage}</span>
@@ -210,6 +229,23 @@ export class ProductsUnitPlate extends Component {
               <div className="col-12 col-xl-4 calc-link d-none" />
             </div>
           </div>
+          {product.id == 12 && (
+            <div className="mycontainer">
+              <span className="text-bold">Liebherr-500 крупным планом</span>
+              {/* <Player
+                className="myVideo"
+                playsInline
+                poster="../../static/video/lieb-poster-1.jpg"
+                src="../../static/video/Liebherr-500.avi"
+              /> */}
+              <Player
+                className="myVideo"
+                playsInline
+                poster="../static/video/poster.jpg"
+                src="../static/video/kompleks-reprodukcii.mp4"
+              />
+            </div>
+          )}
           <div className="mycontainer section-plate p-0">
             <FormPage product={product.label} />
           </div>

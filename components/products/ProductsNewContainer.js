@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import productsList from '../tables/productsList';
+import '../../scss/video.scss';
+import { Player } from 'video-react';
 
 import Link from '../Link';
 
@@ -314,7 +316,9 @@ class ProductsNew extends Component {
               <li className="category-li">
                 <a
                   onClick={e => this.handleClick(e, 'MTU')}
-                  className="category-link"
+                  className={
+                    category == 'MTU' ? 'category-link active' : 'category-link'
+                  }
                 >
                   MTU
                 </a>
@@ -322,7 +326,9 @@ class ProductsNew extends Component {
               <li className="category-li">
                 <a
                   onClick={e => this.handleClick(e, 'MAN')}
-                  className="category-link"
+                  className={
+                    category == 'MAN' ? 'category-link active' : 'category-link'
+                  }
                 >
                   MAN
                 </a>
@@ -330,7 +336,11 @@ class ProductsNew extends Component {
               <li className="category-li">
                 <a
                   onClick={e => this.handleClick(e, 'LIEBHERR')}
-                  className="category-link"
+                  className={
+                    category == 'LIEBHERR'
+                      ? 'category-link active'
+                      : 'category-link'
+                  }
                 >
                   Liebherr
                 </a>
@@ -338,7 +348,11 @@ class ProductsNew extends Component {
               <li className="category-li">
                 <a
                   onClick={e => this.handleClick(e, 'YAMZ')}
-                  className="category-link"
+                  className={
+                    category == 'YAMZ'
+                      ? 'category-link active'
+                      : 'category-link'
+                  }
                 >
                   ЯМЗ
                 </a>
@@ -390,6 +404,60 @@ class ProductsNew extends Component {
             ))}
           </div>
         </div>
+        {category == 'LIEBHERR' && (
+          <div className="row mt-5 m-0">
+            <div className="col-12 col-md-5 offset-md-2">
+              <span className="text-bold">Стандарты качества Liebherr</span>
+              {/* <Player
+                className="myVideo"
+                playsInline
+                poster="../static/video/lieb-poster-2.jpg"
+                src="../../static/video/LIEBUL16_SON_HIGH.wmv"
+              /> */}
+              <Player
+                className="myVideo"
+                playsInline
+                poster="../static/video/poster.jpg"
+                src="../static/video/kompleks-reprodukcii.mp4"
+              />
+            </div>
+            <div className="col-12 col-md-5">
+              <span className="text-bold">Liebherr-500 крупным планом</span>
+              {/* <Player
+                className="myVideo"
+                playsInline
+                type="avi"
+                poster="../static/video/lieb-poster-1.jpg"
+                src="../../static/video/Liebherr-500.avi"
+              /> */}
+              <Player
+                className="myVideo"
+                playsInline
+                poster="../static/video/poster.jpg"
+                src="../static/video/kompleks-reprodukcii.mp4"
+              />
+            </div>
+          </div>
+        )}
+        {category == 'MAN' && (
+          <div className="row mt-5 m-0">
+            <div className="col-12 col-md-6 offset-md-2">
+              <span className="text-bold">Liebherr-500 крупным планом</span>
+              {/* <Player
+                className="myVideo"
+                playsInline
+                poster="../static/video/lieb-poster-1.jpg"
+                src="../../static/video/Liebherr-500.avi"
+              /> */}
+              <Player
+                className="myVideo"
+                playsInline
+                poster="../static/video/poster.jpg"
+                src="../static/video/kompleks-reprodukcii.mp4"
+              />
+            </div>
+          </div>
+        )}
       </div>
     );
   }

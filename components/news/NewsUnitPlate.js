@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import Head from '../../components/head';
 import '../../scss/news/newsUnitPlate.scss';
+var Parser = require('html-react-parser');
 
 export class NewsListPlate extends Component {
   render() {
     const data = this.props.data.data;
+    const desc = Parser(data.description);
+    console.log(desc);
+
     return (
       <div>
         <Head
@@ -26,7 +30,7 @@ export class NewsListPlate extends Component {
               Последний раз обновлено: {data.updated_at}
             </span>
           </div>
-          {data.description}
+          {desc}
         </div>
       </div>
     );
