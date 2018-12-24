@@ -241,8 +241,8 @@ export class ProductsUnitPlate extends Component {
               <Player
                 className="myVideo"
                 playsInline
-                poster="../static/video/poster.jpg"
-                src="../static/video/kompleks-reprodukcii.mp4"
+                poster="../../static/video/poster.jpg"
+                src="../../static/video/kompleks-reprodukcii.mp4"
               />
             </div>
           )}

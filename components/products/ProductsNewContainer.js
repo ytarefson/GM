@@ -313,46 +313,50 @@ class ProductsNew extends Component {
           <div className="col-12 col-md-2">
             <span className="category-header">Бренды:</span>
             <ul className="category-list">
-              <li className="category-li">
+              <li
+                className={
+                  category == 'MTU' ? 'category-li active' : 'category-li'
+                }
+              >
                 <a
                   onClick={e => this.handleClick(e, 'MTU')}
-                  className={
-                    category == 'MTU' ? 'category-link active' : 'category-link'
-                  }
+                  className="category-link"
                 >
                   MTU
                 </a>
               </li>
-              <li className="category-li">
+              <li
+                className={
+                  category == 'MAN' ? 'category-li active' : 'category-li'
+                }
+              >
                 <a
                   onClick={e => this.handleClick(e, 'MAN')}
-                  className={
-                    category == 'MAN' ? 'category-link active' : 'category-link'
-                  }
+                  className="category-link"
                 >
                   MAN
                 </a>
               </li>
-              <li className="category-li">
+              <li
+                className={
+                  category == 'LIEBHERR' ? 'category-li active' : 'category-li'
+                }
+              >
                 <a
                   onClick={e => this.handleClick(e, 'LIEBHERR')}
-                  className={
-                    category == 'LIEBHERR'
-                      ? 'category-link active'
-                      : 'category-link'
-                  }
+                  className="category-link"
                 >
                   Liebherr
                 </a>
               </li>
-              <li className="category-li">
+              <li
+                className={
+                  category == 'YAMZ' ? 'category-li active' : 'category-li'
+                }
+              >
                 <a
                   onClick={e => this.handleClick(e, 'YAMZ')}
-                  className={
-                    category == 'YAMZ'
-                      ? 'category-link active'
-                      : 'category-link'
-                  }
+                  className="category-link"
                 >
                   ЯМЗ
                 </a>
@@ -418,7 +422,7 @@ class ProductsNew extends Component {
                 className="myVideo"
                 playsInline
                 poster="../static/video/poster.jpg"
-                src="../static/video/kompleks-reprodukcii.mp4"
+                src="../../static/video/kompleks-reprodukcii.mp4"
               />
             </div>
             <div className="col-12 col-md-5">
@@ -434,7 +438,7 @@ class ProductsNew extends Component {
                 className="myVideo"
                 playsInline
                 poster="../static/video/poster.jpg"
-                src="../static/video/kompleks-reprodukcii.mp4"
+                src="../../static/video/kompleks-reprodukcii.mp4"
               />
             </div>
           </div>
