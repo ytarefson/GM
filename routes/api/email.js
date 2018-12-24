@@ -14,7 +14,6 @@ router.post('/', urlencodedParser, function(req, res) {
   } else {
     // res.send('welcome, ' + req.body.username);
 
-    console.log(req.body);
     async.parallel(
       [
         function(callback) {

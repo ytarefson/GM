@@ -7,7 +7,6 @@ export class NewsListPlate extends Component {
   render() {
     const data = this.props.data.data;
     const desc = Parser(data.description);
-    console.log(desc);
 
     return (
       <div>

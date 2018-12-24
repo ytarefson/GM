@@ -10,7 +10,6 @@ export default class Products extends Component {
   }
   render() {
     const data = this.props.data;
-    console.log();
     return (
       <div>
         {data.map(item => {

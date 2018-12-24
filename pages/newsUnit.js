@@ -29,7 +29,6 @@ const NewsUnit = data => (
 NewsUnit.getInitialProps = async function(context) {
   const { id } = context.query;
   const data = newsList[id];
-  console.log(data);
   return { data };
 };
 
