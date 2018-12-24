@@ -142,7 +142,7 @@ const projectList = [
   {
     label: "Животноводческий комплекс",
     id: 6,
-    img: "project-locked.jpg",
+    img: "project-agro.jpg",
     galery: [
       "project-locked.jpg",
       "project-locked.jpg",

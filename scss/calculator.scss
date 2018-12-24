@@ -60,6 +60,7 @@ input {
   & b {
     font-size: 20px;
     padding: 0 5px;
+    color: #e9b21b;
   }
 }
 .calc-form {
@@ -150,6 +151,8 @@ input {
 @media (min-width: 1200px) {
   .calc-form {
     padding: 50px 50px;
+    background: url("/static/images/logo-white.png") 90% 15% no-repeat, #cb4828;
+    background-size: 25%;
   }
   .calc-buttons {
     display: flex;
@@ -166,7 +169,7 @@ input {
     letter-spacing: -3px;
   }
   .header-razdel {
-    line-height: 32px;
+    line-height: 38px;
   }
   .calc-text-1 {
     display: block;
