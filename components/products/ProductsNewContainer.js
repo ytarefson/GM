@@ -418,7 +418,7 @@ class ProductsNew extends Component {
                 className="myVideo"
                 playsInline
                 poster="../static/video/poster.jpg"
-                src="../static/video/kompleks-reprodukcii.mp4"
+                src="../../static/video/kompleks-reprodukcii.mp4"
               />
             </div>
             <div className="col-12 col-md-5">
@@ -434,7 +434,7 @@ class ProductsNew extends Component {
                 className="myVideo"
                 playsInline
                 poster="../static/video/poster.jpg"
-                src="../static/video/kompleks-reprodukcii.mp4"
+                src="../../static/video/kompleks-reprodukcii.mp4"
               />
             </div>
           </div>
