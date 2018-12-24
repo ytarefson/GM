@@ -20,8 +20,6 @@ ProductsByCategories.getInitialProps = async function(context) {
       if (element.category === category) {
         data.push(element.products);
       }
-
-      console.log(data);
     }
   }
 

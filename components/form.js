@@ -1,11 +1,11 @@
-import React from "react";
-import "../scss/form.scss";
+import React from 'react';
+import '../scss/form.scss';
 
 class FormPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ""
+      value: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -14,11 +14,11 @@ class FormPage extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    fetch("../../test/testEmail", {
-      method: "POST",
+    fetch('../../test/testEmail', {
+      method: 'POST',
       headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         email: this.state.value,
@@ -33,7 +33,6 @@ class FormPage extends React.Component {
 
   render() {
     const product = this.props.product;
-    console.log(product);
     return (
       <form className="forma" onSubmit={this.handleSubmit}>
         <div className="form-group row m-0">

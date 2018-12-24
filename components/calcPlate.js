@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import "../scss/calculator.scss";
+import '../scss/calculator.scss';
 
 export class CalcPlate extends Component {
   constructor(props) {
@@ -41,11 +41,6 @@ export class CalcPlate extends Component {
     const YearServiceCost = (8500 * energyUsed * 1.2 * 1900) / 1163;
     const OurYearEnergyCost = (8500 * energyUsed * 6) / 4;
     const newProfit = YearEnergyCost + YearServiceCost - OurYearEnergyCost;
-    console.log(this.state.energyUsed);
-    console.log(this.state.energyCost);
-    console.log(YearEnergyCost);
-    console.log(YearServiceCost);
-    console.log(OurYearEnergyCost);
     return newProfit.toFixed(0);
   }
 

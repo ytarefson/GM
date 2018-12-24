@@ -12,8 +12,6 @@ router.post('/', function(req, res) {
   if (!req.body) {
     return res.sendStatus(400);
   } else {
-    console.log('testEmail body:');
-    console.log(req.body);
     res.send('welcome, ' + req.body.username);
   }
 });
