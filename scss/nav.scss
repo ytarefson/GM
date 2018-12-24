@@ -65,7 +65,8 @@ nav {
         font-weight: 300;
         line-height: 30px;
         margin: 0 auto;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05),
+          -10px 10px 20px rgba(0, 0, 0, 0.05);
         transition: box-shadow 0.2s;
         &:hover {
           text-decoration: none;

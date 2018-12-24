@@ -13,7 +13,7 @@ const News = () => (
       description='Подбробная информация о деятельности компании ООО "Газовые машины"'
     />
     <Layout>
-      <div className="container-fluid news">
+      <div className="container-fluid bg-color">
         <div className="mycontainer">
           <span className="subheading-red-top pl-3">
             Новостная лента “Газовые машины”.
@@ -21,8 +21,13 @@ const News = () => (
           <h2 className="header-razdel pl-3">
             Наука, технологии, события, достижения...
           </h2>
-
+        </div>
+      </div>
+      <div className="container-fluid news">
+        <div className="mycontainer">
+          <span className="razdel-name">Последние новости:</span>
           <NewsMain />
+          <span className="razdel-name">Список новостей:</span>
           <NewsListPlate />
         </div>
       </div>

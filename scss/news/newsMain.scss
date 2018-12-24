@@ -1,11 +1,27 @@
-@import '../vars';
+@import "../vars";
+
+.bg-color {
+  margin-top: 15px;
+  background-color: rgb(243, 243, 243);
+  padding-top: 20px;
+  padding-bottom: 40px;
+  & .subheading-red-top {
+    margin-top: 10px;
+  }
+}
 
 .news {
   padding-bottom: 80px;
+  & .razdel-name {
+    display: block;
+    color: grey;
+    padding-left: 15px;
+    margin-top: 30px;
+  }
   & .section-plate {
     display: block;
     max-width: 1170px;
-    margin: 20px auto;
+    margin: 10px auto;
   }
 }
 .news-ul {
@@ -25,7 +41,7 @@
 }
 
 .news-main-plate {
-  margin-top: 70px;
+  margin-top: 30px;
   margin-bottom: 30px;
   padding-bottom: 30px;
   //border-bottom: 1px solid lightgrey;
@@ -152,6 +168,11 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .bg-color {
+    & .subheading-red-top {
+      margin-top: 10px;
+    }
+  }
   .news-header {
     font-size: 24px;
     margin-top: 30px;
@@ -161,7 +182,7 @@
   .news-description {
     display: block;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 26px;
     margin-bottom: 30px;
   }
   .news-main-plate {

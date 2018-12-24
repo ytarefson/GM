@@ -1,11 +1,11 @@
-@import '../vars';
+@import "../vars";
 
 .projects-list-plate {
   position: relative;
   &::after {
     z-index: -1;
     position: absolute;
-    content: '';
+    content: "";
     display: block;
     width: 29%;
     height: 100%;
@@ -118,7 +118,12 @@
     margin-left: 15px;
     margin-right: 15px;
     font-size: 16px;
+    font-weight: 700;
     cursor: pointer;
+    transition: box-shadow 0.2s ease-in;
+    &:hover {
+      box-shadow: $box-shadow;
+    }
   }
 }
 @media (min-width: 400px) {
