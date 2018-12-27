@@ -2,7 +2,7 @@ const newsList = [
   {
     label: "Льготный лизинг энергетического оборудования",
     id: 0,
-    img: "news/5.jpg",
+    img: "news/lizing.jpg",
     category: "Наука и техника",
     created_at: "12.10.2018",
     updated_at: "12.10.2018:14.58",
@@ -16,7 +16,7 @@ const newsList = [
     label:
       "Расширение гарантии и Увеличение межсервисных интервалов на газопоршневые электростанции MAN",
     id: 1,
-    img: "news/1.jpg",
+    img: "news/interval.jpg",
     category: "Наука и техника",
     created_at: "12.10.2018",
     updated_at: "12.10.2018:14.58",
@@ -30,7 +30,7 @@ const newsList = [
     label:
       "Изготовлен первый образец газопоршневой электростанции с двигателем ЯМЗ 530 CNG",
     id: 2,
-    img: "news/2.jpg",
+    img: "news/first-maid.jpg",
     category: "Наука и техника",
     created_at: "12.10.2018",
     updated_at: "12.10.2018:14.58",
@@ -43,7 +43,7 @@ const newsList = [
   {
     label: "Проведен аудит производства концерном MAN",
     id: 3,
-    img: "news/3.jpg",
+    img: "news/audit-man.jpg",
     category: "Наука и техника",
     created_at: "12.10.2018",
     updated_at: "12.10.2018:14.58",
@@ -56,7 +56,7 @@ const newsList = [
   {
     label: "Прошли обучение в концерне Liebherr",
     id: 4,
-    img: "news/4.jpg",
+    img: "news/libherr-study.jpg",
     category: "Наука и техника",
     created_at: "12.10.2018",
     updated_at: "12.10.2018:14.58",
@@ -69,7 +69,7 @@ const newsList = [
   {
     label: "Прошли обучение в концерне MAN",
     id: 5,
-    img: "news/6.jpg",
+    img: "news/man-study.jpg",
     category: "Наука и техника",
     created_at: "12.10.2018",
     updated_at: "12.10.2018:14.58",
@@ -83,7 +83,7 @@ const newsList = [
     label:
       "Генеральный директор ООО «Газовые машины» В.Г. Жуков избран в состав Общественного Совета Ярославской области при Департаменте инвестиций и промышленности Ярославской области",
     id: 6,
-    img: "news/7.jpg",
+    img: "news/zhukov.jpg",
     category: "Наука и техника",
     created_at: "12.10.2018",
     updated_at: "12.10.2018:14.58",
@@ -96,7 +96,7 @@ const newsList = [
   {
     label: "Введен в эксплуатацию энергоцентр ПАО «Автодизель» (ПСРД)",
     id: 7,
-    img: "news/8.jpg",
+    img: "news/avtodisel.jpg",
     category: "Наука и техника",
     created_at: "12.10.2018",
     updated_at: "12.10.2018:14.58",
@@ -110,7 +110,7 @@ const newsList = [
     label:
       "Генеральный директор ООО «Газовые машины» В.Г. Жуков в составе делегации Ярославской области посетил респ. Крым",
     id: 8,
-    img: "news/9.jpg",
+    img: "news/visit-krim.jpg",
     category: "Наука и техника",
     created_at: "12.10.2018",
     updated_at: "12.10.2018:14.58",
@@ -124,7 +124,7 @@ const newsList = [
     label:
       "ООО «Газовые машины» участвовало в выставке «Собственная генерация-Юг» (Краснодар)",
     id: 9,
-    img: "news/8.jpg",
+    img: "news/sobsvennaya-generaciya.jpg",
     category: "Наука и техника",
     created_at: "01.07.2014",
     updated_at: "12.12.2018:14.58",

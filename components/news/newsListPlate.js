@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import newsList from '../tables/newsList';
-import Link from 'next/link';
-import '../../scss/news/newsListPlate.scss';
+import React, { Component } from "react";
+import newsList from "../tables/newsList";
+import Link from "next/link";
+import "../../scss/news/newsListPlate.scss";
 
 export class NewsListPlate extends Component {
   render() {
@@ -22,9 +22,9 @@ export class NewsListPlate extends Component {
           }) =>
             id != 0 && (
               <Link href={`/novosti?id=${id}`} as={`/novosti/${id}`} key={key}>
-                <a className="news-card-small ">
+                <a className="news-card-small">
                   <div className="row m-0">
-                    <div className="col-6 col-md-3">
+                    <div className="col-12 col-md-3">
                       <div className="img-container">
                         <img
                           src={`../../static/images/${img}`}
