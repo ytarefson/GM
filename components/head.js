@@ -3,8 +3,8 @@ import NextHead from 'next/head';
 import { string } from 'prop-types';
 
 const defaultDescription = '';
-const defaultOGURL = '';
-const defaultOGImage = '';
+const defaultOGURL = 'gmenergo.ru';
+const defaultOGImage = '../static/images/logo-very-big.png';
 
 const Head = props => (
   <NextHead>

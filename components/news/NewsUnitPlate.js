@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import Head from "../../components/head";
-import "../../scss/news/newsUnitPlate.scss";
-var Parser = require("html-react-parser");
+import React, { Component } from 'react';
+import Head from '../../components/head';
+import '../../scss/news/newsUnitPlate.scss';
+var Parser = require('html-react-parser');
 
 export class NewsListPlate extends Component {
   render() {
@@ -33,6 +33,7 @@ export class NewsListPlate extends Component {
           </div>
           {desc}
         </div>
+        <div className="clearNews" />
       </div>
     );
   }

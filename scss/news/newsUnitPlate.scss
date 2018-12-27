@@ -1,7 +1,10 @@
-@import "../vars";
-
+@import '../vars';
+.clearNews {
+  clear: both;
+  padding-bottom: 80px;
+}
 .news-unit-plate {
-  padding: 0px 15px 80px 15px;
+  padding: 0px 15px 0px 15px;
   & .big-new {
     display: flex;
     flex-direction: column;
