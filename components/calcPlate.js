@@ -18,7 +18,7 @@ export class CalcPlate extends Component {
   handleChangeUsed(e) {
     const profit = this.handleProfitChange(
       e.target.value,
-      this.state.energyUsed
+      this.state.energyCost
     );
     this.setState({
       energyUsed: e.target.value,
@@ -40,8 +40,14 @@ export class CalcPlate extends Component {
     const YearEnergyCost = 8500 * energyUsed * energyCost;
     const YearServiceCost = (8500 * energyUsed * 1.2 * 1900) / 1163;
     const OurYearEnergyCost = (8500 * energyUsed * 6) / 4;
-    const newProfit = YearEnergyCost + YearServiceCost - OurYearEnergyCost;
-    return newProfit.toFixed(0);
+    const HalfEnergy = 8500 * energyUsed * 0.5;
+    const Profit =
+      YearEnergyCost + YearServiceCost - OurYearEnergyCost - HalfEnergy;
+    const newProfit = new Intl.NumberFormat({ useGrouping: true }).format(
+      Profit
+    );
+
+    return newProfit.replace(/(,\d{1,})/gm, '');
   }
 
   render() {
