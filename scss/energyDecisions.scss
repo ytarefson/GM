@@ -45,10 +45,17 @@
       }
       & .card-image-container {
         margin-bottom: 6px;
-        text-align: left;
-        & .card-image {
-          width: 60px;
-          height: 60px;
+        background: $red-gradient;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 66px;
+        height: 66px;
+        border-radius: 33px;
+        //text-align: left;
+        & .icon {
+          color: rgb(255, 255, 255);
+          filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
         }
       }
       & .card-heading {

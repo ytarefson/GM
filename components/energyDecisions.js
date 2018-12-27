@@ -1,6 +1,13 @@
 import React from "react";
 
 import "../scss/energyDecisions.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBolt,
+  faSun,
+  faSnowflake,
+  faRubleSign
+} from "@fortawesome/free-solid-svg-icons";
 
 export default EnergyDecisions => (
   <div className="container-fluid p-0 energyDecisions">
@@ -33,11 +40,7 @@ export default EnergyDecisions => (
               <div className="p-0 col-12 col-sm-6 col-lg-3 card-plate">
                 <div className="card">
                   <div className="card-image-container">
-                    <img
-                      src="../static/images/icon-1.png"
-                      alt=""
-                      className="card-image"
-                    />
+                    <FontAwesomeIcon icon={faBolt} size="3x" className="icon" />
                   </div>
                   <span className="card-heading">Электричество</span>
                   <div className="card-desc-container" />
@@ -50,11 +53,7 @@ export default EnergyDecisions => (
               <div className="p-0 col-12 col-sm-6 col-lg-3 card-plate">
                 <div className="card">
                   <div className="card-image-container">
-                    <img
-                      src="../static/images/icon-2.png"
-                      alt=""
-                      className="card-image"
-                    />
+                    <FontAwesomeIcon icon={faSun} size="3x" className="icon" />
                   </div>
                   <span className="card-heading">Отопление</span>
                   <div className="card-desc-container" />
@@ -67,10 +66,10 @@ export default EnergyDecisions => (
               <div className="p-0 col-12 col-sm-6 col-lg-3 card-plate">
                 <div className="card">
                   <div className="card-image-container">
-                    <img
-                      src="../static/images/icon-3.png"
-                      alt=""
-                      className="card-image"
+                    <FontAwesomeIcon
+                      icon={faSnowflake}
+                      size="3x"
+                      className="icon"
                     />
                   </div>
                   <span className="card-heading">Охлаждение</span>
@@ -85,10 +84,10 @@ export default EnergyDecisions => (
               <div className="p-0 col-12 col-sm-6 col-lg-3 card-plate">
                 <div className="card">
                   <div className="card-image-container">
-                    <img
-                      src="../static/images/icon-4.png"
-                      alt=""
-                      className="card-image"
+                    <FontAwesomeIcon
+                      icon={faRubleSign}
+                      size="3x"
+                      className="icon"
                     />
                   </div>
                   <span className="card-heading">Выгода</span>

@@ -1,9 +1,7 @@
-import React from 'react';
-import Link from './Link';
-import menu from './menu';
-import '../scss/nav.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import Link from "./Link";
+import menu from "./menu";
+import "../scss/nav.scss";
 
 const Nav = () => (
   <nav className="navbar navbar-expand-lg navbar-light">
@@ -12,7 +10,6 @@ const Nav = () => (
         <img src="../../static/images/logo-grey.png" />
       </a>
     </Link>
-    <FontAwesomeIcon icon={faCoffee} />
     <button
       className="navbar-toggler"
       type="button"
