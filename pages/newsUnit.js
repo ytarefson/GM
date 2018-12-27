@@ -1,13 +1,13 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
-import newsList from '../components/tables/newsList';
-import Layout from '../components/Layout';
-import NewsUnitPlate from '../components/news/NewsUnitPlate';
+import newsList from "../components/tables/newsList";
+import Layout from "../components/Layout";
+import NewsUnitPlate from "../components/news/NewsUnitPlate";
 
 const NewsUnit = data => (
   <Layout>
-    <div className="container-fluid news">
+    <div className="container-fluid news pt-3">
       <div className="section-plate mb-3">
         <div className="breadcrumbs">
           <Link href="/">

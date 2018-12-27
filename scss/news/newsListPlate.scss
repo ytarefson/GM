@@ -2,12 +2,29 @@
   margin-top: 40px;
   & .news-card-small {
     display: block;
-    margin: 20px 0;
-    padding-bottom: 20px;
-    //border-bottom: 1px solid lightgrey;
+    margin: 0px 0;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    //border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease-in;
+    &:hover {
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    }
+    &:nth-child(odd) {
+      background-color: rgba(255, 255, 255, 0.5);
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+    }
+    &:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0.025);
+      &:hover {
+        background-color: rgb(226, 226, 226);
+      }
+    }
     & .img-container {
       & .news-card-img {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         max-width: 100%;
         //border: 5px solid white;
       }

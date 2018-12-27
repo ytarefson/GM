@@ -21,6 +21,12 @@ nav {
       flex-direction: column;
       justify-content: center;
       padding: 0;
+      &:first-child {
+        margin-top: 15px;
+      }
+      &:last-child {
+        margin-top: 15px;
+      }
       & .nav-link {
         font-family: $noto-font;
         font-size: 14px;
@@ -125,6 +131,12 @@ nav {
     }
     & .navbar-nav {
       & .nav-item {
+        &:first-child {
+          margin-top: 0px;
+        }
+        &:last-child {
+          margin-top: 0px;
+        }
         & .nav-link {
         }
         & .nav-calc-link {
