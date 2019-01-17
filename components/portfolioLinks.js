@@ -15,21 +15,21 @@ const portfolio = [
     label: "Ледовая Арена",
     company: "Энергоцентр",
     href: "#",
-    id: "",
+    id: "0",
     as: "/ledovaya-arena"
   },
   {
     label: "Невская ратуша",
     company: "Энергоцентр",
     href: "#",
-    id: "9",
+    id: "7",
     as: "/nevskaya-ratusha"
   },
   {
     label: "СтройГазМонтаж",
     company: "Энергоцентр",
     href: "#",
-    id: "5",
+    id: "4",
     as: "/stroi-gaz-montazh"
   }
 ].map(link => {

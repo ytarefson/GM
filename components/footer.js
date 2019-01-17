@@ -77,9 +77,18 @@ const Footer = () => (
           <span className="link-1">пн-пт: 9:00-18:00</span>
         </div>
       </div>
+      <div className="rights-reserved">
+        2006 - 2019 ООО "Газовые машины" &copy; Все права защищены.
+      </div>
     </div>
-    <div className="rights-reserved">
-      2006 - 2019 ООО "Газовые машины" &copy; Все права защищены.
+    <div className="intersell">
+      <a href="http://intersell.su/" className="interlink">
+        <div className="logo-cont">
+          <span className="logo">IS</span>
+        </div>
+        <span className="logo-name">intersell.su</span>
+        <span className="logo-description">Создание сайта</span>
+      </a>
     </div>
   </footer>
 );

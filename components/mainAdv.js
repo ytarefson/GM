@@ -15,8 +15,8 @@ export default MainAdv => (
               <br />и производство
             </span>
             <h1 className="main-heading">Газовых электростанций</h1>
-            <h3 className="main-slogan">Мы предлагаем решение, а не бренд.</h3>
-            <div className="catalog-button-container">
+            {/* <h3 className="main-slogan">Мы предлагаем решение, а не бренд.</h3> */}
+            <div className="catalog-button-container mb-5">
               <Link href="/products">
                 <a className="catalog-button">
                   <img

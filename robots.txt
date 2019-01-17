@@ -1,0 +1,4 @@
+Useragent: *
+Disalow: /o-komnanii
+Host: gmenergo.ru
+Sitemap: gmenergo.ru/sitemap.xml
