@@ -6,10 +6,9 @@ import SimilarProducts from '../products/SimilarProducts';
 import '../../scss/products/ProductUnitPlate.scss';
 import FormPage from '../form';
 import GaleryProducts from '../../components/GaleryProducts';
+import YoutubeVideo from '../YoutubeVideo';
 import Lightbox from 'react-image-lightbox';
 // import 'react-image-lightbox/style.css';
-import '../../scss/video.scss';
-import { Player } from 'video-react';
 
 export class ProductsUnitPlate extends Component {
   constructor(props) {
@@ -231,19 +230,7 @@ export class ProductsUnitPlate extends Component {
           </div>
           {product.id == 12 && (
             <div className="mycontainer">
-              <span className="text-bold">Liebherr-500 крупным планом</span>
-              {/* <Player
-                className="myVideo"
-                playsInline
-                poster="../../static/video/lieb-poster-1.jpg"
-                src="../../static/video/Liebherr-500.avi"
-              /> */}
-              <Player
-                className="myVideo"
-                playsInline
-                poster="../../static/video/poster.jpg"
-                src="../../static/video/kompleks-reprodukcii.mp4"
-              />
+              <YoutubeVideo className="myVideo" />
             </div>
           )}
           <div className="mycontainer section-plate p-0">

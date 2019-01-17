@@ -7,7 +7,7 @@ export default class Video extends Component {
     return (
       <div className="mycontainer section-plate">
         <Player
-          className="myVideo"
+          className="myVideoKompleks"
           playsInline
           poster="../static/video/poster.jpg"
           src="../static/video/kompleks-reprodukcii.mp4"
