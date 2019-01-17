@@ -9,8 +9,8 @@ import NewsListPlate from "../components/news/newsListPlate";
 const News = () => (
   <div>
     <Head
-      title="Новости - Газовые Машины"
-      description='Подбробная информация о деятельности компании ООО "Газовые машины"'
+      title="Новости компании Газвые машины"
+      description="Отраслевые достижения и новинки в области малой энергетики. Кредитные программы и другие достижения компании Газовые машины."
     />
     <Layout>
       <div className="container-fluid bg-color">
@@ -18,9 +18,7 @@ const News = () => (
           <span className="subheading-red-top pl-3">
             Новостная лента “Газовые машины”.
           </span>
-          <h2 className="header-razdel pl-3">
-            Наука, технологии, события, достижения...
-          </h2>
+          <h1 className="header-razdel pl-3">Новости малой энергетики</h1>
         </div>
       </div>
       <div className="container-fluid news">

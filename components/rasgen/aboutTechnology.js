@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Lightbox from 'react-image-lightbox';
-import '../../scss/rasgen/aboutTechnology.scss';
+import React, { Component } from "react";
+import Lightbox from "react-image-lightbox";
+import "../../scss/rasgen/aboutTechnology.scss";
 
 export class AboutTechnology extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ export class AboutTechnology extends Component {
     return (
       <div className="container-fluid aboutTechnology">
         <div className="mycontainer">
-          <h2 className="header-common">Распределённая генерация</h2>
+          <h1 className="header-common">Распределённая генерация</h1>
           <span className="subheading-red-bottom">О технологии</span>
           <span className="subheading-common-2">
             Многие десятилетия развитие энергетики строилось на создании крупных

@@ -8,7 +8,7 @@ const Calculator = () => (
   <div>
     <Head
       title="Расчёт энергетической эффективности - Газовые Машины"
-      description="Калькулятор расчёта выгоды при переходе на газовые мини-ТЭЦ"
+      description="Калькулятор расчёта выгоды при переходе на газопоршневые электростанции"
     />
     <Layout>
       <div className="container-fluid calculator">

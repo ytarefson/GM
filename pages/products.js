@@ -9,8 +9,8 @@ import ProductsNew from "../components/products/ProductsNewContainer";
 const Products = data => (
   <div>
     <Head
-      title="Продукция - Газовые машины"
-      description="Каталог продукции для любой техники"
+      title='Автономные газовые электростанции. Каталог продукции ООО "Газовые машины"'
+      description="Каталог готовых решений газопоршневых электростанций на базе двигателей: MAN, LIEBHERR, MTU и ЯМЗ."
     />
     <Layout>
       <div className="container-fluid products">
@@ -18,7 +18,7 @@ const Products = data => (
           <div className="row m-0">
             <div className="col-12 col-xl-8">
               <span className="subheading-red-top">Продукция</span>
-              <h2 className="header-razdel mb-4">Каталог готовых решений</h2>
+              <h1 className="header-razdel mb-4">Газовые электростанции</h1>
               <p className="text-min">
                 Занимаясь проектированием, сборкой и обслуживанием газовых
                 электростанций уже более 12 лет, мы протестировали достаточное

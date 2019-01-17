@@ -1,18 +1,18 @@
-import React from 'react';
-import Head from '../components/head';
-import CalcAdv from '../components/calcAdv';
-import AboutTechnology from '../components/rasgen/aboutTechnology';
-import AboutTechnology2 from '../components/rasgen/aboutTechnology2';
-import PotencialRynka from '../components/rasgen/potencialRynka';
-import MirovayaPraktika from '../components/rasgen/mirovayaPraktika';
-import Redzone from '../components/redzone';
-import Layout from '../components/Layout';
+import React from "react";
+import Head from "../components/head";
+import CalcAdv from "../components/calcAdv";
+import AboutTechnology from "../components/rasgen/aboutTechnology";
+import AboutTechnology2 from "../components/rasgen/aboutTechnology2";
+import PotencialRynka from "../components/rasgen/potencialRynka";
+import MirovayaPraktika from "../components/rasgen/mirovayaPraktika";
+import Redzone from "../components/redzone";
+import Layout from "../components/Layout";
 
 const RasGen = () => (
   <div>
     <Head
-      title="Распределенная генерация"
-      description="Распределенная генерация - новая современная технология!"
+      title="Распределённая генерация и новые технологии - Газовые машины"
+      description="Новости малой энергетики. Мировая практика и тенденции рынка распределённой генерации в России."
     />
 
     <Layout>

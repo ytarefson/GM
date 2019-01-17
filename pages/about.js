@@ -26,7 +26,7 @@ export class About extends Component {
     return (
       <div>
         <Head
-          title="О компании"
+          title='Контакты, история, факты компании ООО "Газовые машины"'
           description='Подбробная информация о деятельности компании ООО "Газовые машины"'
         />
         <Layout>
@@ -35,7 +35,7 @@ export class About extends Component {
               <div className="row m-0">
                 <div className="col-12 col-md-8 p-0">
                   <span className="subheading-red-top pl-3">О компании</span>
-                  <h2 className="header-razdel pl-3">История, факты...</h2>
+                  <h2 className="header-razdel pl-3">ООО "Газовые машины"</h2>
                   <p className="subheading-common-2 mt-5">
                     Компания «Газовые машины» образована 10 октября 2006 г. В
                     течение 12 лет основным профилем деятельности компании

@@ -8,8 +8,8 @@ import "../scss/services/services.scss";
 const Services = () => (
   <div>
     <Head
-      title="Услуги - Газовые машины"
-      description="Каталог продукции для любой техники"
+      title="Проектирование, расчёт, пусконаладка и обслуживание газопоршневых электростанций"
+      description='Компания "Газовые машины" осуществляет полный спектр работ по обслуживанию газовых электростанций. От расчёта мощности и проектирования, до ввода в эксплуатацию и поставки расходных материалов.'
     />
     <Layout>
       <div className="container-fluid services">
@@ -17,7 +17,7 @@ const Services = () => (
           <div className="row m-0">
             <div className="col-12 col-lg-8">
               <span className="subheading-red-top">Услуги</span>
-              <h2 className="header-razdel mb-3">Основные направления</h2>
+              <h1 className="header-razdel mb-3">Основные направления</h1>
               <p className="text-min">
                 Проектирование, разработка и производство газовых электростанций
                 тесно связаны с большим перечнем сопутствующих работ. Вы можете
