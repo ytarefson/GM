@@ -3,7 +3,7 @@ const next = require('next');
 var helper = require('sendgrid').mail;
 const async = require('async');
 const email = require('./routes/api/email');
-const testEmail = require('./routes/test/testEmail');
+//const testEmail = require('./routes/test/testEmail');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
@@ -127,7 +127,7 @@ app.prepare().then(() => {
     return app.render(req, res, '/about', req.query);
   });
   server.use('/api/email', email);
-  server.use('/test/testEmail', testEmail);
+  //server.use('/test/testEmail', testEmail);
   server.get('*', (req, res) => {
     return handle(req, res);
   });

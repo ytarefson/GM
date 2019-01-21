@@ -5,30 +5,36 @@ class FormPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ''
+      userEmail: '',
+      userPhone: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleChange = this.handleChange.bind(this);
+    this.handleChangeEmail = this.handleChangeEmail.bind(this);
+    this.handleChangePhone = this.handleChangePhone.bind(this);
   }
 
   handleSubmit(event) {
     event.preventDefault();
 
-    fetch('../../test/testEmail', {
+    fetch('../../api/email', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        email: this.state.value,
-        product: this.props.product
+        email: this.state.userEmail,
+        product: this.props.product,
+        phone: this.state.userPhone
       })
     });
   }
 
-  handleChange(e) {
-    this.setState({ value: e.target.value });
+  handleChangeEmail(e) {
+    this.setState({ userEmail: e.target.value });
+  }
+  handleChangePhone(e) {
+    this.setState({ userPhone: e.target.value });
   }
 
   render() {
@@ -42,7 +48,7 @@ class FormPage extends React.Component {
               Введите e-mail:{' '}
 						</label> */}
               <p className="text-common form-cta-title">
-                Заинтересовал продукт или услуга ?
+                Заинтересовал продукт или услуга?
               </p>
               <p className="text-common form-cta-text">
                 оставьте Ваши контакты, и наши специалисты проконсультируют вас
@@ -52,7 +58,7 @@ class FormPage extends React.Component {
           </div>
           <div className="col-12 col-md-6 col-xl-7 p-0 colform">
             <input
-              onChange={this.handleChange}
+              onChange={this.handleChangeEmail}
               type="email"
               className="userEmail text-common"
               id="userEmail"
@@ -60,11 +66,20 @@ class FormPage extends React.Component {
               placeholder="Введите e-mail:"
             />
             <input
+              onChange={this.handleChangePhone}
+              type="phone"
+              className="userEmail text-common"
+              id="userPhone"
+              aria-describedby="phoneHelp"
+              placeholder="Введите номер для связи:"
+            />
+
+            {/* <input
               type="datetime-local"
               className="callTime"
               id="callTime"
               placeholder="Введите время удобное для связи"
-            />
+            /> */}
             <button className="form-button">Заказать консультацию</button>
             <p className="form-cta-text-2">
               или свяжитесь с нами любым удобным способом

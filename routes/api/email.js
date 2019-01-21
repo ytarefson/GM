@@ -19,11 +19,17 @@ router.post('/', urlencodedParser, function(req, res) {
         function(callback) {
           sendEmail(
             callback,
-            'ytarefson@gmail.com',
-            ['ytarefson@gmail.com'],
-            'Subject Line',
+            'no-reply@gmenergo.ru', // From
+            ['info@intersell.su', 'market@gmenergo.ru'], // To
+            'Заявка с сайта',
             'Text Content',
-            '<p style="font-size: 32px;">HTML Content</p>'
+            '<h1 style="font-size: 26px;">Заяйвка с сайта</h1><p style="font-size: 18px;">С сайта gmenergo.ru поступила заявка. <br>Пользоваталель итересовался продуктом - ' +
+              req.body.product +
+              '. И оставил контакты для связи:<ul style="font-size: 18px;"><li>Почта - ' +
+              req.body.email +
+              '</li><li>Телефон - ' +
+              req.body.phone +
+              '</li></ul></p>'
           );
         }
       ],

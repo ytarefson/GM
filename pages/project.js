@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import projectList from '../components/tables/projectList';
 import Layout from '../components/Layout';
 import ProjectUnitPlate from '../components/projects/ProjectUnitPlate';
-import Galery from '../components/Galery';
+import Galery from '../components/galery';
 
 const Project = project => (
   <div>
