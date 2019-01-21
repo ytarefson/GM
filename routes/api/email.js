@@ -12,15 +12,13 @@ router.post('/', urlencodedParser, function(req, res) {
   if (!req.body) {
     return res.sendStatus(400);
   } else {
-    // res.send('welcome, ' + req.body.username);
-
     async.parallel(
       [
         function(callback) {
           sendEmail(
             callback,
             'no-reply@gmenergo.ru', // From
-            ['info@intersell.su', 'market@gmenergo.ru'], // To
+            ['info@intersell.su', 'market@gmenergo.ru'], // To, 'market@gmenergo.ru'
             'Заявка с сайта',
             'Text Content',
             '<h1 style="font-size: 26px;">Заяйвка с сайта</h1><p style="font-size: 18px;">С сайта gmenergo.ru поступила заявка. <br>Пользоваталель итересовался продуктом - ' +
@@ -45,31 +43,6 @@ router.post('/', urlencodedParser, function(req, res) {
   }
 });
 
-// router.post('/', (req, res) => {
-//   console.log(req);
-//   async.parallel(
-//     [
-//       function(callback) {
-//         sendEmail(
-//           callback,
-//           'ytarefson@gmail.com',
-//           ['ytarefson@gmail.com'],
-//           'Subject Line',
-//           'Text Content',
-//           '<p style="font-size: 32px;">HTML Content</p>'
-//         );
-//       }
-//     ],
-//     function(err, results) {
-//       res.send({
-//         success: true,
-//         message: 'Emails sent',
-//         successfulEmails: results[0].successfulEmails,
-//         errorEmails: results[0].errorEmails
-//       });
-//     }
-//   );
-// });
 function sendEmail(
   parentCallback,
   fromEmail,
