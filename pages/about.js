@@ -1,15 +1,16 @@
-import React, { Component } from "react";
-import Link from "next/link";
-import Head from "../components/head";
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
-import "../scss/about.scss";
-import Layout from "../components/Layout";
-import Lightbox from "react-image-lightbox";
+import React, { Component } from 'react';
+import Head from '../components/head';
+
+import '../scss/about.scss';
+import Layout from '../components/Layout';
+import Lightbox from 'react-image-lightbox';
+// Yandex Maps
+import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
 const images = [
-  "../static/images/about-1.jpg",
-  "../static/images/about-2.jpg",
-  "../static/images/about-3.jpg"
+  '../static/images/about-1.jpg',
+  '../static/images/about-2.jpg',
+  '../static/images/about-3.jpg'
 ];
 
 export class About extends Component {
@@ -157,14 +158,12 @@ export class About extends Component {
                       <span className="contacts-heading">Контакты:</span>
                     </li>
                     <li>
-                      <Link
+                      <a
                         href="https://yandex.ru/maps/-/CBFyIKsQPB"
-                        as="yandex-map"
+                        className="adres-map-link"
                       >
-                        <a className="adres-map-link">
-                          РОССИЯ, Ярославль, пр. Авиаторов, 155
-                        </a>
-                      </Link>
+                        РОССИЯ, Ярославль, пр. Авиаторов, 155
+                      </a>
                     </li>
                     <li>
                       <div className="adres-phones">
@@ -193,24 +192,27 @@ export class About extends Component {
                 </div>
               </div>
               <div className="col-12 col-md-8 map-container order-md-1 p-0">
-                <Map
-                  google={this.props.google}
-                  zoom={14}
-                  initialCenter={{
-                    lat: 57.659441,
-                    lng: 39.949507
+                <div
+                  className="myMap"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    position: 'relative'
                   }}
                 >
-                  <Marker
-                    onClick={this.onMarkerClick}
-                    name={"Current location"}
-                  />
-                  {/* <InfoWindow onClose={this.onInfoWindowClose}>
-                  <div>
-                    <h1>{this.state.selectedPlace.name}</h1>
-                  </div>
-                </InfoWindow> */}
-                </Map>
+                  <YMaps>
+                    <Map
+                      width="100%"
+                      height="458px"
+                      defaultState={{
+                        center: [57.659441, 39.949507],
+                        zoom: 16
+                      }}
+                    >
+                      <Placemark defaultGeometry={[57.66, 39.9505]} />
+                    </Map>
+                  </YMaps>
+                </div>
               </div>
             </div>
           </div>
@@ -360,6 +362,4 @@ export class About extends Component {
   }
 }
 
-export default GoogleApiWrapper({
-  apiKey: "AIzaSyCB0I6jT_lFFe5FCdsB7umIxzSSKrgaxvs"
-})(About);
+export default About;
