@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          <meta name="yandex-verification" content="9653be472d2730fd" />
           {/* <link
             rel="stylesheet"
             href="https://bootswatch.com/4/sketchy/bootstrap.min.css"
