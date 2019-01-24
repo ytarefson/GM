@@ -17,7 +17,7 @@ app.prepare().then(() => {
   server.get('/robots.txt', function(req, res) {
     res.type('text/plain');
     res.send(
-      'User-agent: *\nDisallow: /o-komnanii\nHost: gmenergo.ru\nSitemap: gmenergo.ru/sitemap.xml'
+      'User-agent: *\nDisallow: /o-komnanii\nHost: gmenergo.ru\nSitemap: http://gmenergo.ru/sitemap.xml'
     );
   });
   server.get('/sitemap.xml', function(req, res) {
