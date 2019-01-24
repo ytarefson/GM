@@ -1,8 +1,8 @@
-import React from "react";
-import Link from "next/link";
-import menu from "./menu";
-import serviceList from "../components/tables/serviceList";
-import "../scss/footer.scss";
+import React from 'react';
+import Link from 'next/link';
+import menu from './menu';
+import serviceList from '../components/tables/serviceList';
+import '../scss/footer.scss';
 
 const Footer = () => (
   <footer className="footer">
@@ -45,23 +45,25 @@ const Footer = () => (
           {/* <span className="contacts-header">Контакты:</span> */}
           <ul className="adres-list">
             <li>
-              <Link href="https://yandex.ru/maps/-/CBFyIKsQPB" as="yandex-map">
-                <a className="adres-map-link">
-                  РОССИЯ, Ярославль,
-                  <br />
-                  пр-т.&nbsp;Авиаторов-155
-                </a>
-              </Link>
+              <a
+                href="https://yandex.ru/maps/-/CBFyIKsQPB"
+                className="adres-map-link"
+                target="_blank"
+              >
+                РОССИЯ, Ярославль,
+                <br />
+                пр-т.&nbsp;Авиаторов-155
+              </a>
             </li>
             <li>
               <div className="adres-phones">
                 <a
-                  href="callto:+74852260368"
+                  href="tel:+74852260368"
                   className="phone-link phone-link-big"
                 >
                   +7 (4852) 26-03-68
                 </a>
-                <a href="callto:+74852267960" className="phone-link">
+                <a href="tel:+74852267960" className="phone-link">
                   +7 (4852) 26-79-60
                 </a>
               </div>

@@ -4,6 +4,7 @@ var helper = require('sendgrid').mail;
 const async = require('async');
 const email = require('./routes/api/email');
 //const testEmail = require('./routes/test/testEmail');
+const sitemap = require('./sitemap');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
@@ -13,6 +14,16 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
+  server.get('/robots.txt', function(req, res) {
+    res.type('text/plain');
+    res.send(
+      'User-agent: *\nDisallow: /o-komnanii\nHost: gmenergo.ru\nSitemap: gmenergo.ru/sitemap.xml'
+    );
+  });
+  server.get('/sitemap.xml', function(req, res) {
+    res.header('Content-Type', 'application/xml');
+    res.send(sitemap);
+  });
   server.get('/foryarndex.html', (req, res) => {
     return res.send('kek');
   });
