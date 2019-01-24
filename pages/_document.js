@@ -1,6 +1,5 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 import { GA_TRACKING_ID } from '../lib/gtag';
-import { YMInitializer } from 'react-yandex-metrika';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -38,7 +37,6 @@ export default class MyDocument extends Document {
           `
             }}
           />
-          <YMInitializer accounts={[51052037]} />
         </Head>
         <body className="custom_class">
           <Main />
