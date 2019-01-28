@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import projectListShort from "../tables/projectListShort";
-import Link from "next/link";
-import "../../scss/projects/projectsMain.scss";
+import React, { Component } from 'react';
+import projectListShort from '../tables/projectListShort';
+import Link from 'next/link';
+import '../../scss/projects/projectsMain.scss';
 
 export class ProjectsMain extends Component {
   render() {
@@ -27,7 +27,7 @@ export class ProjectsMain extends Component {
                   <div className="img-container">
                     <img
                       src={`../../static/images/${img}`}
-                      alt=""
+                      alt={`${label} - ${client}`}
                       className="project-card-img"
                     />
                   </div>

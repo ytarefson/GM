@@ -20,7 +20,7 @@ export class ProjectUnitPlate extends Component {
               <Link href="/">
                 <a className="crambs">Главная > </a>
               </Link>
-              <Link href="/projects">
+              <Link href="/proekti">
                 <a className="crambs">Проекты > </a>
               </Link>
               <span className="crambs cramb-main">{project.label}</span>
@@ -30,7 +30,7 @@ export class ProjectUnitPlate extends Component {
             <div className="row m-0">
               <div className="col-12 col-md-7">
                 <span className="text-common">{project.client}</span>
-                <h2 className="header-detail">{project.label}</h2>
+                <h1 className="header-detail">{project.label}</h1>
                 <span className="subheading-red-bottom">{project.city}</span>
                 <p className="text-min">{project.description}</p>
               </div>

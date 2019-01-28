@@ -1,8 +1,8 @@
-import React from "react";
-import Layout from "../components/Layout";
-import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
-import FormPage from "../components/form";
-import "../scss/services/optimal-agregats.scss";
+import React from 'react';
+import Layout from '../components/Layout';
+import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
+import FormPage from '../components/form';
+import '../scss/services/optimal-agregats.scss';
 
 const OptimalAgregates = serviceName => (
   <Layout>
@@ -21,7 +21,7 @@ const OptimalAgregates = serviceName => (
             <p className="text-min">
               Наши специалисты, при необходимости, проведут работы по
               мониторингу энергопотребления на объекте и подберут оптимальную по
-              электрической мощности мини-ТЭС.{" "}
+              электрической мощности мини-ТЭС.{' '}
             </p>
             <p className="text-min">
               Исходя из индивидуальных особенностей каждого объекта предложим
@@ -31,7 +31,10 @@ const OptimalAgregates = serviceName => (
           </div>
           <div className="col-12 col-md-4">
             <div className="img-container">
-              <img src="../static/images/services/agregates-1.jpg" alt="" />
+              <img
+                src="../static/images/services/agregates-1.jpg"
+                alt="Силовой агрегат газовой электростанции"
+              />
             </div>
           </div>
         </div>
@@ -42,7 +45,7 @@ const OptimalAgregates = serviceName => (
               мини-ТЭС вспомогательным оборудованием, для когенерации,
               тригенерации, производства пара, горячего воздуха,
               кондиционирования помещений, отопления, сушки, комплектное
-              модульное РУ.{" "}
+              модульное РУ.{' '}
             </p>
           </div>
         </div>

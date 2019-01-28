@@ -1,8 +1,8 @@
-import React from "react";
-import PortfolioLinks from "../components/portfolioLinks";
+import React from 'react';
+import PortfolioLinks from '../components/portfolioLinks';
 //import Router from 'next/router';
-import "../scss/mainAdv.scss";
-import Link from "./Link";
+import '../scss/mainAdv.scss';
+import Link from './Link';
 
 export default MainAdv => (
   <div className="container-fluid p-0 mainAdv">
@@ -22,6 +22,7 @@ export default MainAdv => (
                   <img
                     className="icon-catalog"
                     src="../static/images/icon-catalog.png"
+                    alt="Перейти в каталог"
                   />
                 </a>
               </Link>

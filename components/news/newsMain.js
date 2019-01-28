@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import Link from "next/link";
-import newsList from "../tables/newsList";
-import "../../scss/news/newsMain.scss";
+import React, { Component } from 'react';
+import Link from 'next/link';
+import newsList from '../tables/newsList';
+import '../../scss/news/newsMain.scss';
 
 export class NewsMain extends Component {
   render() {
@@ -35,7 +35,7 @@ export class NewsMain extends Component {
             <div className="img-container">
               <img
                 src={`../../static/images/${shortData.img}`}
-                alt=""
+                alt={shortData.label}
                 className="news-card-img"
               />
             </div>

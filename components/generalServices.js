@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import serviceList from "./tables/serviceList";
-import "../scss/generalServices.scss";
+import React from 'react';
+import Link from 'next/link';
+import serviceList from './tables/serviceList';
+import '../scss/generalServices.scss';
 
 export default GeneralServices => (
   <div className="container-fluid generalServices">
@@ -25,7 +25,7 @@ export default GeneralServices => (
             <Link href={`/uslugi/${href}`} as={`/uslugi/${as}`}>
               <a className="teh-card">
                 <div className="teh-image-container">
-                  <img src={img} alt="" className="teh-image" />
+                  <img src={img} alt={label} className="teh-image" />
                   <div className="header-container">
                     <h3 className="teh-header">{label}</h3>
                   </div>

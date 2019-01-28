@@ -16,7 +16,7 @@ export class NewsListPlate extends Component {
         />
         <div className="news-unit-plate">
           <div className="big-new">
-            <h2 className="header-razdel">{data.label}</h2>
+            <h1 className="header-razdel">{data.label}</h1>
           </div>
           <div className="img-container">
             <img src={`../../static/images/${data.img}`} alt={data.label} />

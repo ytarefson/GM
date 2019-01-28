@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Lightbox from "react-image-lightbox";
-import "../../scss/rasgen/aboutTechnology.scss";
+import React, { Component } from 'react';
+import Lightbox from 'react-image-lightbox';
+import '../../scss/rasgen/aboutTechnology.scss';
 
 export class AboutTechnology extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ export class AboutTechnology extends Component {
               <div className="img-container">
                 <img
                   src="../../static/images/about-tech.jpg"
-                  alt=""
+                  alt="Распределённая генерация"
                   className="about-tech-pic"
                   onClick={() => this.setState({ isOpen: true })}
                 />

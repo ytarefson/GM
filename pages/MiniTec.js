@@ -1,8 +1,8 @@
-import React from "react";
-import Layout from "../components/Layout";
-import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
-import FormPage from "../components/form";
-import "../scss/services/minitec.scss";
+import React from 'react';
+import Layout from '../components/Layout';
+import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
+import FormPage from '../components/form';
+import '../scss/services/minitec.scss';
 
 const MiniTec = serviceName => (
   <Layout>
@@ -24,7 +24,7 @@ const MiniTec = serviceName => (
         <p className="text-min">
           Нашими поставщиками являются концерны:
           <b>
-            {" "}
+            {' '}
             MAN, Liebherr, Leroy Somer, General Electric, ABB, Alfa Laval, Karl
             Dungs Gmbh, Motortech Gmbh, Grundfos, Aprovis Gmbh.
           </b>
@@ -34,14 +34,14 @@ const MiniTec = serviceName => (
         <div className="img-container">
           <img
             src="../static/images/services/minitec-1.jpg"
-            alt=""
+            alt="Сборочный цех мини ТЭЦ Газовые Машины"
             className="minitec-img"
           />
         </div>
         <div className="img-container">
           <img
             src="../static/images/services/minitec-2.jpg"
-            alt=""
+            alt="Сборочный цех мини ТЭЦ Газовые Машины"
             className="minitec-img"
           />
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import Head from '../components/head';
+// import Head from '../components/head';
+import NextHead from 'next/head';
 import Layout from '../components/Layout';
 import productsList from '../components/tables/productsList';
 import ProductsListPlate from '../components/products/ProductsListPlate';
@@ -8,10 +9,16 @@ import ProductsNew from '../components/products/ProductsNewContainer';
 
 const Products = data => (
   <div>
-    <Head
-      title='Автономные газовые электростанции. Каталог продукции ООО "Газовые машины"'
-      description="Каталог готовых решений газопоршневых электростанций на базе двигателей: MAN, LIEBHERR, MTU и ЯМЗ."
-    />
+    <NextHead>
+      <title>
+        Автономные газовые электростанции. Каталог продукции ООО "Газовые
+        машины"
+      </title>
+      <meta
+        name="description"
+        content="Каталог готовых решений газопоршневых электростанций на базе двигателей: MAN, LIEBHERR, MTU и ЯМЗ."
+      />
+    </NextHead>
     <Layout>
       <div className="container-fluid products">
         <div className="mycontainer mb-5">
@@ -33,7 +40,7 @@ const Products = data => (
               <div className="img-container">
                 <img
                   src="../static/images/products-img.png"
-                  alt=""
+                  alt="Силовые установки любой мощности"
                   className="products-img"
                 />
               </div>

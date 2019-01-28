@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "../scss/geo.scss";
+import '../scss/geo.scss';
 
 export default Geo => (
   <div className="container-fluid geo">
@@ -26,7 +26,7 @@ export default Geo => (
           <div className="geo-map">
             <img
               src="../static/images/map-big.png"
-              alt=""
+              alt="Газовые машины на карте"
               className="geo-img"
             />
           </div>

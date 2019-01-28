@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import Link from "next/link";
+import React, { Component } from 'react';
+import Link from 'next/link';
 
-import "../../scss/products/SimilarProducts.scss";
-import productsList from "../tables/productsList";
+import '../../scss/products/SimilarProducts.scss';
+import productsList from '../tables/productsList';
 
 export class SimilarProducts extends Component {
   render() {
@@ -26,7 +26,7 @@ export class SimilarProducts extends Component {
                       className="similar-card-img"
                     />
                   </div>
-                  <span className="similar-card-title">{`${label}`}</span>
+                  <span className="similar-card-title">{`Газопоршневая электростанция ${label}`}</span>
                 </a>
               </div>
             </Link>

@@ -48,7 +48,7 @@ export class PotencialRynka extends Component {
               <div className="img-container">
                 <img
                   src="../../static/images/potential-1.jpg"
-                  alt=""
+                  alt="Газопоршневый двигатель Liebherr"
                   className="potential-pic"
                   onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}
                 />
@@ -58,7 +58,7 @@ export class PotencialRynka extends Component {
               <div className="img-container">
                 <img
                   src="../../static/images/potential-2.jpg"
-                  alt=""
+                  alt="Газовый энергоцентр"
                   className="potential-pic"
                   onClick={() => this.setState({ isOpen: true, photoIndex: 1 })}
                 />

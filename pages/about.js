@@ -52,7 +52,7 @@ export class About extends Component {
                   <div className="logo-container">
                     <img
                       src="../static/images/logo-very-big.png"
-                      alt=""
+                      alt="Логотип Газовые Машины"
                       className="logo-very-big"
                     />
                   </div>
@@ -66,7 +66,7 @@ export class About extends Component {
                       onClick={() =>
                         this.setState({ isOpen: true, photoIndex: 0 })
                       }
-                      alt=""
+                      alt="Малая энергетика"
                       className="about-pic"
                     />
                   </div>
@@ -78,7 +78,7 @@ export class About extends Component {
                       onClick={() =>
                         this.setState({ isOpen: true, photoIndex: 1 })
                       }
-                      alt=""
+                      alt="Газовый энергоцентр"
                       className="about-pic"
                     />
                   </div>
@@ -90,7 +90,7 @@ export class About extends Component {
                       onClick={() =>
                         this.setState({ isOpen: true, photoIndex: 2 })
                       }
-                      alt=""
+                      alt="Сборочный цех Газовые машины"
                       className="about-pic"
                     />
                   </div>

@@ -72,7 +72,9 @@ export class ProductsUnitPlate extends Component {
           <div className="mycontainer section-plate">
             <div className="row m-0 pt-3 pb-3">
               <div className="col-12 col-md-8 order-md-1 order-2">
-                <h2 className="header-red">Описание {product.label}</h2>
+                <h1 className="header-red">
+                  Газопоршневая электростанция {product.label}
+                </h1>
                 <span className="product-energy">
                   Мощность: {product.electricPower} кВт
                 </span>

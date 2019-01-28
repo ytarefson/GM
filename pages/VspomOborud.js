@@ -1,8 +1,8 @@
-import React from "react";
-import Layout from "../components/Layout";
-import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
-import FormPage from "../components/form";
-import "../scss/services/serviceDetail.scss";
+import React from 'react';
+import Layout from '../components/Layout';
+import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
+import FormPage from '../components/form';
+import '../scss/services/serviceDetail.scss';
 
 const VspomOborud = serviceName => (
   <Layout>
@@ -14,7 +14,7 @@ const VspomOborud = serviceName => (
             <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-1.jpg"
-                alt=""
+                alt="Котлы – утилизаторы тепла"
                 className="tool-card-img"
               />
             </div>
@@ -29,7 +29,7 @@ const VspomOborud = serviceName => (
             <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-2.jpg"
-                alt=""
+                alt="Абсорбционные холодильные машины"
                 className="tool-card-img"
               />
             </div>
@@ -41,7 +41,7 @@ const VspomOborud = serviceName => (
             <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-3.jpg"
-                alt=""
+                alt="Радиаторы охлаждения"
                 className="tool-card-img"
               />
             </div>
@@ -53,7 +53,7 @@ const VspomOborud = serviceName => (
             <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-4.jpg"
-                alt=""
+                alt="Промышленные низкошумные глушители"
                 className="tool-card-img"
               />
             </div>
@@ -65,7 +65,7 @@ const VspomOborud = serviceName => (
             <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-5.jpg"
-                alt=""
+                alt="Высокотемпературные дымовые трубы"
                 className="tool-card-img"
               />
             </div>
@@ -77,7 +77,7 @@ const VspomOborud = serviceName => (
             <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-6.jpg"
-                alt=""
+                alt="Комплектные модульные РУ 0,4-6,3-10,5-35 кВ"
                 className="tool-card-img"
               />
             </div>
@@ -91,7 +91,7 @@ const VspomOborud = serviceName => (
             <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-1.jpg"
-                alt=""
+                alt="Модульные газовые котельные"
                 className="tool-card-img"
               />
             </div>
@@ -103,7 +103,7 @@ const VspomOborud = serviceName => (
             <div className="img-container-22">
               <img
                 src="../static/images/services/vspom-1.jpg"
-                alt=""
+                alt="оборудование модульных газовых котельных"
                 className="tool-card-img"
               />
             </div>
