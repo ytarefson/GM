@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import NextHead from 'next/head';
+// import NextHead from 'next/head';
 import ProductUnitPlate from '../components/products/ProductUnitPlate';
 import '../scss/product.scss';
 
 const Product = data => (
   <div>
-    <NextHead>
+    {/* <NextHead>
       <link rel="icon" href="../../../static/images/favicon/favicon.ico" />
       <link
         rel="apple-touch-icon"
@@ -34,7 +34,7 @@ const Product = data => (
         href="../../../static/images/favicon/safari-pinned-tab.svg"
         color="#5bbad5"
       />
-    </NextHead>
+    </NextHead> */}
     <Layout>
       <div className="container-fluid product-unit-wrapper">
         <div className="mycontainer">

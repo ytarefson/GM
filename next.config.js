@@ -11,9 +11,9 @@
 // const withSass = require('@zeit/next-sass');
 // module.exports = withSass();
 
-const withSass = require("@zeit/next-sass");
-const compose = require("next-compose");
-const withFonts = require("next-fonts");
+const withSass = require('@zeit/next-sass');
+const compose = require('next-compose');
+const withFonts = require('next-fonts');
 
 const sassConfig = {
   /** sass config here */
@@ -28,7 +28,7 @@ module.exports = compose([
   {
     webpack: config => {
       config.node = {
-        fs: "empty"
+        fs: 'empty'
       };
       return config;
     }

@@ -16,7 +16,6 @@ export default class GaleryProducts extends Component {
     const images = this.props.product.galery;
     const product = this.props.product;
     const { photoIndex, isOpen } = this.state;
-
     return (
       <div className="mycontainer section-plate galery-plate galery-products">
         {/* <span className="header-red header-red-2 pl-3">
