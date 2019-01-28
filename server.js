@@ -38,9 +38,9 @@ app.prepare().then(() => {
   server.get('/form', (req, res) => {
     return app.render(req, res, '/form', req.query);
   });
-  // server.get('/rasGen', (req, res) => {
-  //   return app.render(req, res, '/rasGen', req.query);
-  // });
+  server.get('/rasGen', (req, res) => {
+    return res.redirect('/raspredelennaya-generaciya');
+  });
   server.get('/novosti', (req, res) => {
     return app.render(req, res, '/news', req.query);
   });
