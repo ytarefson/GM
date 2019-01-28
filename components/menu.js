@@ -1,33 +1,33 @@
 const menu = [
   {
     label: 'Распределенная генерация',
-    href: '/rasGen',
+    href: '/raspredelennaya-generaciya',
     as: '/raspredelennaya-generaciya'
   },
   {
     label: 'Новости',
-    href: '/news',
+    href: '/novosti',
     as: '/novosti'
   },
   {
     label: 'Проекты',
-    href: '/projects',
+    href: '/proekti',
     as: '/proekti'
   },
   {
     label: 'Продукция',
     href: '/products',
-    as: '/produkciya'
+    as: '/products'
   },
   {
     label: 'Услуги',
-    href: '/services',
+    href: '/uslugi',
     as: '/uslugi'
   },
   {
     label: 'О компании',
     href: '/about',
-    as: '/o-komnanii'
+    as: '/about'
   }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;

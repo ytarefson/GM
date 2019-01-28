@@ -1,5 +1,6 @@
 import React from 'react';
 import '../scss/form.scss';
+import Router from 'next/router';
 
 class FormPage extends React.Component {
   constructor(props) {
@@ -27,7 +28,7 @@ class FormPage extends React.Component {
         product: this.props.product,
         phone: this.state.userPhone
       })
-    });
+    }).then(res => Router.push('/confirm-email'));
   }
 
   handleChangeEmail(e) {

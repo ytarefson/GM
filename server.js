@@ -5,6 +5,7 @@ const async = require('async');
 const email = require('./routes/api/email');
 //const testEmail = require('./routes/test/testEmail');
 const sitemap = require('./sitemap');
+const compression = require('compression');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
@@ -13,6 +14,7 @@ const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
   const server = express();
+  server.use(compression());
 
   server.get('/robots.txt', function(req, res) {
     res.type('text/plain');
@@ -30,12 +32,15 @@ app.prepare().then(() => {
   server.get('/raspredelennaya-generaciya', (req, res) => {
     return app.render(req, res, '/rasGen', req.query);
   });
+  server.get('/confirm-email', (req, res) => {
+    return app.render(req, res, '/confirm-email', req.query);
+  });
   server.get('/form', (req, res) => {
     return app.render(req, res, '/form', req.query);
   });
-  server.get('/rasGen', (req, res) => {
-    return app.render(req, res, '/rasGen', req.query);
-  });
+  // server.get('/rasGen', (req, res) => {
+  //   return app.render(req, res, '/rasGen', req.query);
+  // });
   server.get('/novosti', (req, res) => {
     return app.render(req, res, '/news', req.query);
   });
@@ -44,9 +49,9 @@ app.prepare().then(() => {
     const queryParams = { id: req.params.id };
     app.render(req, res, actualPage, queryParams);
   });
-  server.get('/news', (req, res) => {
-    return app.render(req, res, '/news', req.query);
-  });
+  // server.get('/news', (req, res) => {
+  //   return app.render(req, res, '/news', req.query);
+  // });
   server.get('/proekti', (req, res) => {
     return app.render(req, res, '/projects', req.query);
   });
@@ -55,9 +60,9 @@ app.prepare().then(() => {
     const queryParams = { id: req.params.id };
     app.render(req, res, actualPage, queryParams);
   });
-  server.get('/produkciya', (req, res) => {
-    return app.render(req, res, '/products', req.query);
-  });
+  // server.get('/produkciya', (req, res) => {
+  //   return app.render(req, res, '/products', req.query);
+  // });
   server.get('/products', (req, res) => {
     return app.render(req, res, '/products', req.query);
   });
@@ -72,9 +77,9 @@ app.prepare().then(() => {
   server.get('/uslugi', (req, res) => {
     return app.render(req, res, '/services', req.query);
   });
-  server.get('/services', (req, res) => {
-    return app.render(req, res, '/services', req.query);
-  });
+  // server.get('/services', (req, res) => {
+  //   return app.render(req, res, '/services', req.query);
+  // });
   server.get('/uslugi/proektirovanie-avtonomnih-energocentrov', (req, res) => {
     const actualPage = '/AutoCenters';
     const queryParams = {
@@ -131,9 +136,9 @@ app.prepare().then(() => {
     };
     app.render(req, res, actualPage, queryParams);
   });
-  server.get('/o-komnanii', (req, res) => {
-    return app.render(req, res, '/about', req.query);
-  });
+  // server.get('/o-komnanii', (req, res) => {
+  //   return app.render(req, res, '/about', req.query);
+  // });
   server.get('/about', (req, res) => {
     return app.render(req, res, '/about', req.query);
   });

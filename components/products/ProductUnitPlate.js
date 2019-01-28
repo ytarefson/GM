@@ -63,9 +63,9 @@ export class ProductsUnitPlate extends Component {
               <Link href="/products">
                 <a className="crambs">Продукты > </a>
               </Link>
-              <Link href={`/products?category=${category}`}>
+              {/* <Link href={`/products?category=${category}`}>
                 <a className="crambs">{category} > </a>
-              </Link>
+              </Link> */}
               <span className="crambs cramb-main">{product.label}</span>
             </div>
           </div>

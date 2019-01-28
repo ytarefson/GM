@@ -1,10 +1,10 @@
-import React from "react";
-import Link from "next/link";
-import Head from "../components/head";
-import Layout from "../components/Layout";
-import productsList from "../components/tables/productsList";
-import ProductsListPlate from "../components/products/ProductsListPlate";
-import ProductsNew from "../components/products/ProductsNewContainer";
+import React from 'react';
+import Link from 'next/link';
+import Head from '../components/head';
+import Layout from '../components/Layout';
+import productsList from '../components/tables/productsList';
+import ProductsListPlate from '../components/products/ProductsListPlate';
+import ProductsNew from '../components/products/ProductsNewContainer';
 
 const Products = data => (
   <div>
@@ -51,7 +51,7 @@ Products.getInitialProps = async function(context) {
   if (context.query.category !== undefined) {
     const category = context.query.category.toUpperCase();
     const data = [];
-    data.category = "";
+    data.category = '';
 
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
@@ -64,10 +64,10 @@ Products.getInitialProps = async function(context) {
     }
     return { data };
   } else {
-    const category = "MAN";
+    const category = 'MAN';
 
     let data = [];
-    data.category = "";
+    data.category = '';
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
         const element = productsList[cat];

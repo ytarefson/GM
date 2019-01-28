@@ -1,19 +1,19 @@
-import React from "react";
-import Head from "../components/head";
-import "../scss/style.scss";
-import MainAdv from "../components/mainAdv";
-import EnergyDecisions from "../components/energyDecisions";
-import CalcAdv from "../components/calcAdv";
-import GeneralServices from "../components/generalServices";
-import Geo from "../components/geo";
-import OurExp from "../components/ourExp";
-import Layout from "../components/Layout";
+import React from 'react';
+import Head from '../components/head';
+import '../scss/style.scss';
+import MainAdv from '../components/mainAdv';
+import EnergyDecisions from '../components/energyDecisions';
+import CalcAdv from '../components/calcAdv';
+import GeneralServices from '../components/generalServices';
+import Geo from '../components/geo';
+import OurExp from '../components/ourExp';
+import Layout from '../components/Layout';
 
 const Home = () => (
   <div className="home">
     <Head
-      title="Производство газовых электростанций"
-      description='Компания "Газовые машины" занимается проектированием и производством газопоршневых электростанций и мини ТЭЦ. Предоставляет услуги по обслуживанию, пусконаладке и комплектации автономных энергоцентров.'
+      title="Производство газовых электростанций - Газовые Машины"
+      description='"Газовые машины" занимаются проектированием, производством и шефмонтажем  газопоршневых электростанций и мини ТЭЦ. Услуги по обслуживанию, пусконаладке и комплектации автономных энергоцентров.'
     />
 
     <Layout>
