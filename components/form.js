@@ -7,7 +7,10 @@ class FormPage extends React.Component {
     super(props);
     this.state = {
       userEmail: '',
-      userPhone: ''
+      userPhone: '',
+      isEmailEmpty: true,
+      isPhoneEmpty: true,
+      isFormFullfiled: false
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChangeEmail = this.handleChangeEmail.bind(this);
@@ -65,6 +68,7 @@ class FormPage extends React.Component {
               id="userEmail"
               aria-describedby="emailHelp"
               placeholder="Введите e-mail:"
+              required
             />
             <input
               onChange={this.handleChangePhone}
@@ -73,6 +77,7 @@ class FormPage extends React.Component {
               id="userPhone"
               aria-describedby="phoneHelp"
               placeholder="Введите номер для связи:"
+              required
             />
 
             {/* <input
