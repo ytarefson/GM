@@ -1,11 +1,17 @@
-$noto-font: "NotoSans", sans-serif;
+$noto-font: "MuseoSans", sans-serif;
 $accent: #b3a764;
-$accent-red: #db3518;
+$accent-red: #d24a43;
 $accent-dark: #3f3f3f;
 $sub-color: #9b9b9b;
 $wall-color: #ebebeb;
 $accent-grey: #727272;
 $text: #333;
+// $yel-red-gradient: linear-gradient(
+//   to left,
+//   rgb(242, 125, 14) 0%,
+//   rgb(237, 27, 61) 100%
+// );
+$yel-red-gradient: linear-gradient(to right, #eecf32 0%, #c22328 100%);
 $red-gradient: linear-gradient(to left, #dc4622 0%, #b63b1d 100%);
 $box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 $box-shadow-up: 5px 10px 20px rgba(0, 0, 0, 0.1);

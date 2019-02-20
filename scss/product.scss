@@ -3,19 +3,7 @@
 .product-unit-wrapper {
   position: relative;
   padding-bottom: 80px;
-  &::after {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    display: block;
-    width: 30%;
-    height: 99%;
-    bottom: 0;
-    right: 0;
-    border-top: 2px solid #d44625;
-    //background-color: #ecebeb;
-    border-left: 3px solid #d44625;
-  }
+  padding: 0;
 }
 
 // Medium devices (tablets, 576px and up)

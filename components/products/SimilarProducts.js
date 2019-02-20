@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Link from 'next/link';
+import React, { Component } from "react";
+import Link from "next/link";
 
-import '../../scss/products/SimilarProducts.scss';
-import productsList from '../tables/productsList';
+import "../../scss/products/SimilarProducts.scss";
+import productsList from "../tables/productsList";
 
 export class SimilarProducts extends Component {
   render() {
@@ -10,27 +10,32 @@ export class SimilarProducts extends Component {
     const category = this.props.category;
 
     return (
-      <div className="mycontainer section-plate p-0">
-        <span className="header-red header-red-2 pl-4 m-0">
-          Силовые установки на базе двигателей {category}
-        </span>
-        <div className="similar-products">
-          {similar.map(({ label, key, id, img }) => (
-            <Link href={`/products/${category}/${id}`} key={`${key}+${id}`}>
-              <div className="similar-card-container">
-                <a className="d-block similar-card">
-                  <div className="img-container">
-                    <img
-                      src={`../../static/images/products/${img}`}
-                      alt={label}
-                      className="similar-card-img"
-                    />
+      <div className="mycontainer section-plate">
+        <div className="row">
+          <div className="col-12">
+            <h4 id="power-header" className="header-min-colored pb-1">
+              Силовые установки{" "}
+              <span className="dark-color">на базе двигателей {category}</span>
+            </h4>
+            <div className="similar-products">
+              {similar.map(({ label, key, id, img }) => (
+                <Link href={`/products/${category}/${id}`} key={`${key}+${id}`}>
+                  <div className="similar-card-container">
+                    <a className="d-block similar-card">
+                      <div className="img-container">
+                        <img
+                          src={`../../static/images/products/${img}`}
+                          alt={label}
+                          className="similar-card-img"
+                        />
+                      </div>
+                      <span className="similar-card-title">{`Газопоршневая электростанция ${label}`}</span>
+                    </a>
                   </div>
-                  <span className="similar-card-title">{`Газопоршневая электростанция ${label}`}</span>
-                </a>
-              </div>
-            </Link>
-          ))}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     );

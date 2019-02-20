@@ -1,8 +1,8 @@
-import React from 'react';
-import Layout from '../components/Layout';
+import React from "react";
+import Layout from "../components/Layout";
 // import NextHead from 'next/head';
-import ProductUnitPlate from '../components/products/ProductUnitPlate';
-import '../scss/product.scss';
+import ProductUnitPlate from "../components/products/ProductUnitPlate";
+import "../scss/product.scss";
 
 const Product = data => (
   <div>
@@ -36,17 +36,15 @@ const Product = data => (
       />
     </NextHead> */}
     <Layout>
-      <div className="container-fluid product-unit-wrapper">
-        <div className="mycontainer">
-          <ProductUnitPlate data={data} />
-        </div>
+      <div className="container-fluid product-unit-wrapper pb-5">
+        <ProductUnitPlate data={data} />
       </div>
     </Layout>
   </div>
 );
 
 Product.getInitialProps = async function(context) {
-  const data = { id: '', category: '' };
+  const data = { id: "", category: "" };
   data.id = context.query.id;
   data.category = context.query.category;
   return { data };

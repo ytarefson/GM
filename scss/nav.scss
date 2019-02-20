@@ -29,7 +29,8 @@ nav {
       }
       & .nav-link {
         font-family: $noto-font;
-        font-size: 14px;
+        font-size: 15px;
+        font-weight: 300;
         color: #525252;
         position: relative;
         &::before {
@@ -62,17 +63,22 @@ nav {
         font-family: $noto-font;
         padding: 0;
         display: block;
+        font-weight: 700;
         width: 130px;
         height: 30px;
         border-radius: 20px;
-        background-image: linear-gradient(to right, #d4722a 0%, #c62d28 100%);
+        background-image: linear-gradient(
+          to left,
+          rgb(242, 125, 14) 0%,
+          rgb(237, 27, 61) 100%
+        );
         color: #ffffff;
-        font-size: 14px;
-        font-weight: 300;
+        font-size: 12px;
+        letter-spacing: 0.2px;
         line-height: 30px;
         margin: 0 auto;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05),
-          -10px 10px 20px rgba(0, 0, 0, 0.05);
+        box-shadow: 10px 20px 30px -15px rgba(237, 27, 61, 0.55),
+          -10px 20px 30px -15px rgba(242, 125, 14, 0.55);
         transition: box-shadow 0.2s;
         &:hover {
           text-decoration: none;
@@ -156,10 +162,10 @@ nav {
   nav .navbar-nav .nav-item {
     padding: 0 10px;
     & .nav-link {
-      font-size: 15px;
+      font-size: 16px;
     }
     & .nav-calc-link {
-      width: 170px;
+      width: 160px;
       height: 40px;
       line-height: 40px;
     }
@@ -172,6 +178,9 @@ nav {
       font-size: 16px;
       &:last-child {
       }
+    }
+    & .nav-calc-link {
+      font-size: 14px;
     }
   }
 }

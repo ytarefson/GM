@@ -1,7 +1,7 @@
-import React from 'react';
-import Link from './Link';
-import menu from './menu';
-import '../scss/nav.scss';
+import React from "react";
+import Link from "./Link";
+import menu from "./menu";
+import "../scss/nav.scss";
 
 const Nav = () => (
   <nav className="navbar navbar-expand-lg navbar-light">
@@ -41,7 +41,7 @@ const Nav = () => (
         ))}
         <li className="nav-item">
           <Link href="/calculator" as="/calculator">
-            <a className="nav-link nav-calc-link">Калькулятор</a>
+            <a className="nav-link nav-calc-link">калькулятор</a>
           </Link>
         </li>
       </ul>

@@ -62,11 +62,11 @@ b {
 .header-red {
   font-family: $noto-font;
   display: block;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 26px;
   margin-bottom: 20px;
-  letter-spacing: -0.45px;
+  letter-spacing: -0.15px;
 }
 .header-razdel {
   font-size: 20px;
@@ -77,6 +77,20 @@ b {
   // line-height: 38px;
   // font-size: 30px;
   // margin-bottom: 30px;
+}
+
+/////////////////////
+
+.header-min-colored {
+  font-family: $noto-font;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: $accent-red;
+  & .dark-color {
+    color: #353535;
+    font-weight: 700;
+  }
 }
 .subheading-common {
   display: block;
@@ -119,6 +133,7 @@ b {
   font-weight: 700;
 }
 .subheading-red-top {
+  /////////////////////////////
   color: $accent-red;
   display: block;
   margin-top: 50px;
@@ -139,7 +154,7 @@ b {
   display: block;
   font-family: $noto-font;
   color: #3b3b3b;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 22px;
   margin-bottom: 0px;
@@ -149,29 +164,36 @@ b {
   font-family: $noto-font;
   color: #313131;
   //font-family: "Noto Sans";
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 20px;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 22px;
   // letter-spacing: -0.4px;
 }
 .text-italic {
   font-family: $noto-font;
   font-style: italic;
+  font-size: 15px;
+  line-height: 17px;
+}
+.text-black {
+  color: #353535;
 }
 .section-plate {
-  margin: 25px auto 25px;
-  background-color: #fff;
-  box-shadow: $box-shadow;
-  padding: 15px;
+  margin: 15px auto 15px;
+  //background-color: #fff;
+  //box-shadow: $box-shadow;
+  padding: 0 15px;
 }
 .breadcrumbs {
   margin-left: 15px;
 
   & .crambs {
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 500;
+    text-transform: uppercase;
     padding-right: 3px;
-    color: darkgrey;
+    color: #3f3f3f;
+    letter-spacing: 0.5px;
   }
   & .cramb-main {
     // color: grey;
@@ -183,6 +205,13 @@ b {
 .mycontainer {
   width: 100%;
 }
+.color-section {
+  background: $yel-red-gradient;
+}
+.white-section {
+  background-color: #fff;
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .mycontainer {
@@ -224,6 +253,13 @@ b {
     line-height: 30px;
     //margin-bottom: 30px;
   }
+  .header-red {
+    font-size: 26px;
+  }
+  .header-min-colored {
+    font-size: 22px;
+    letter-spacing: -0.2px;
+  }
   .subheading-common {
     font-size: 16px;
     line-height: 28px;
@@ -240,17 +276,15 @@ b {
     line-height: 36px;
     letter-spacing: -0.6px;
   }
-  .section-plate {
-    margin: 15px auto;
-    background-color: #fff;
-    box-shadow: $box-shadow;
-    padding: 15px;
-  }
+  // .section-plate {
+  //   margin: 15px auto;
+  //   padding: 15px;
+  // }
   .breadcrumbs {
     margin-left: 15px;
     & .crambs {
       font-size: 14px;
-      font-weight: 700;
+      //font-weight: 700;
       //letter-spacing: 2px;
       text-transform: uppercase;
       padding-right: 3px;
@@ -275,7 +309,12 @@ b {
     //justify-content: center;
   }
   .header-red {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .header-min-colored {
     font-size: 26px;
+    letter-spacing: -0.2px;
   }
   .subheading-common {
     margin-bottom: 0px;
@@ -311,22 +350,21 @@ b {
     font-weight: 300;
     line-height: 28px;
   }
+  .text-italic {
+    font-family: $noto-font;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 17px;
+  }
   .text-min {
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 18px;
+    //font-weight: 500;
     line-height: 28px;
-    margin-top: 15px;
   }
   .text-bold {
     font-size: 16px;
     font-weight: 700;
     line-height: 26px;
-  }
-  a {
-    //font-size: 18px;
-    //font-weight: 700;
-    //text-align: right;
-    //letter-spacing: 0.5px;
   }
 }
 
@@ -345,13 +383,35 @@ b {
     line-height: 36px;
     letter-spacing: -0.6px;
   }
+  .header-red {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+  }
+  .header-min-colored {
+    font-size: 30px;
+    letter-spacing: -0.2px;
+  }
   .subheading-common {
     font-size: 18px;
     line-height: 36px;
     // margin-bottom: 50px;
   }
-  .mycontainer {
-    // max-width: 960px;
+  .text-min {
+    display: block;
+    font-family: $noto-font;
+    color: #3b3b3b;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 33px;
+    margin-bottom: 0px;
+  }
+  .text-italic {
+    font-family: $noto-font;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 22px;
   }
   .text-common {
     font-size: 18px;
@@ -359,9 +419,27 @@ b {
     line-height: 36px;
   }
   .text-bold {
-    // font-size: 16px;
+    font-size: 21px;
     // font-weight: 700;
-    // line-height: 26px;
+    line-height: 33px;
+  }
+  .breadcrumbs {
+    margin-left: 15px;
+
+    & .crambs {
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding-right: 3px;
+      color: #3f3f3f;
+      letter-spacing: 0.2px;
+    }
+    & .cramb-main {
+      // color: grey;
+      // padding: 0;
+      // margin: 0;
+      color: $accent-red;
+    }
   }
 }
 // Extra large devices (large desktops, 1400px and up)

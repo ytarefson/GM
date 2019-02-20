@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import Link from 'next/link';
-import Head from '../../components/head';
-import productsList from '../tables/productsList';
-import SimilarProducts from '../products/SimilarProducts';
-import '../../scss/products/ProductUnitPlate.scss';
-import FormPage from '../form';
-import GaleryProducts from '../../components/GaleryProducts';
-import YoutubeVideo from '../YoutubeVideo';
-import Lightbox from 'react-image-lightbox';
+import React, { Component } from "react";
+import Link from "next/link";
+import Head from "../../components/head";
+import productsList from "../tables/productsList";
+import SimilarProducts from "../products/SimilarProducts";
+import "../../scss/products/ProductUnitPlate.scss";
+import FormPage from "../form";
+import GaleryProducts from "../../components/GaleryProducts";
+import YoutubeVideo from "../YoutubeVideo";
+import Lightbox from "react-image-lightbox";
 // import 'react-image-lightbox/style.css';
 
 export class ProductsUnitPlate extends Component {
@@ -51,8 +51,8 @@ export class ProductsUnitPlate extends Component {
     return (
       <div>
         <Head
-          title={`Продукт - ${product.label}`}
-          description="Лучший продукт"
+          title={`Газопоршневая электростанция ${product.label}`}
+          description={`${product.descriptionTwo}`}
         />
         <div className="container-fluid product-unit">
           <div className="mycontainer section-plate">
@@ -69,19 +69,40 @@ export class ProductsUnitPlate extends Component {
               <span className="crambs cramb-main">{product.label}</span>
             </div>
           </div>
+        </div>
+        <div className="container-fluid product-unit color-section">
           <div className="mycontainer section-plate">
-            <div className="row m-0 pt-3 pb-3">
-              <div className="col-12 col-md-8 order-md-1 order-2">
+            <div className="row m-0 pt-4 pb-4">
+              <div className="col-12 col-md-7 col-lg-8 col-xl-7 order-md-1 order-2">
                 <h1 className="header-red">
                   Газопоршневая электростанция {product.label}
                 </h1>
-                <span className="product-energy">
-                  Мощность: {product.electricPower} кВт
-                </span>
-                <p className="text-min">{product.description}</p>
+                <p className="text-min">
+                  Синхронный генератор: <b> {product.generator}</b>
+                </p>
+                <p className="text-min">
+                  Газовая линейка: <b> {product.gazLline}</b>
+                </p>
+                <p className="text-min">
+                  Группа охлаждения: <b> {product.freezGroup}</b>
+                </p>
+                <p className="text-min">
+                  Насосное оборудование: <b> {product.nasos}</b>
+                </p>
+                <p className="text-min">
+                  Силовое оборудование: <b> {product.powerSup}</b>
+                </p>
+                <p className="text-min">
+                  Система управления: <b> {product.controlSystem}</b>
+                </p>
+                <div className="product-energy-container">
+                  <span className="product-energy">
+                    {product.electricPower} кВт
+                  </span>
+                </div>
               </div>
 
-              <div className="col-12 col-md-4 order-md-2 order-1">
+              <div className="col-12 col-md-5 col-lg-4 col-xl-5 order-md-2 order-1">
                 <div className="product-img-container">
                   <img
                     src={`../../../static/images/products/thumb-${product.img}`}
@@ -109,25 +130,38 @@ export class ProductsUnitPlate extends Component {
                   )}
                 </div>
               </div>
-              <div className="col-12 order-3">
-                <p className="text-min">{product.descriptionOne}</p>
-                <p className="text-min">{product.descriptionTwo}</p>
-                <p className="text-min">{product.descriptionThree}</p>
-              </div>
             </div>
           </div>
-          <GaleryProducts product={product} />
+        </div>
+        <div className="container-fluid description product-unit pt-4 pb-2">
           <div className="mycontainer section-plate">
-            <h3 className="header-red pl-3">Характеристики {product.label}:</h3>
+            <div className="col-12">
+              <h4 className="header-min-colored pb-1">
+                Описание <span className="dark-color">{product.label}</span>
+              </h4>
+              <p className="text-min text-black">{product.descriptionTwo}</p>
+            </div>
+          </div>
+        </div>
+        <div className="container-fluid product-unit pt-4 white-section">
+          {/* <GaleryProducts product={product} /> */}
+          <div className="mycontainer section-plate">
+            <div className="col-12">
+              <h3 className="header-min-colored pb-1">
+                Характеристики{" "}
+                <span className="dark-color">{product.label}:</span>{" "}
+              </h3>
+              <p className="text-min text-black">{product.descriptionOne}</p>
+            </div>
             <div className="row m-0 parametrs-container">
               <div className="col-12 col-xl-8 text-col">
-                <div className="text-container">
+                <div className="text-container mt-3">
                   <span className="text-common">Марка двигателя: </span>
                   <span className="text-bold">{product.motorMark}</span>
                 </div>
                 <div className="text-container">
                   <span className="text-common">
-                    Электрическая мощность, кВт:{' '}
+                    Электрическая мощность, кВт:{" "}
                   </span>
                   <span className="text-bold">{product.electricPower}</span>
                 </div>
@@ -158,17 +192,17 @@ export class ProductsUnitPlate extends Component {
                   <span className="text-bold">{product.methaneNumber}</span>
                 </div>
                 {}
-                {product.gasPressure !== '' && (
+                {product.gasPressure !== "" && (
                   <div className="text-container">
                     <span className="text-common">
-                      Давление газа, кгс/см2:{' '}
+                      Давление газа, кгс/см2:{" "}
                     </span>
                     <span className="text-bold">{product.gasPressure}</span>
                   </div>
                 )}
                 <div className="text-container">
                   <span className="text-common">
-                    Расход газа в номинальном режиме, нм3/час:{' '}
+                    Расход газа в номинальном режиме, нм3/час:{" "}
                   </span>
                   <span className="text-bold">
                     {product.nominalGazConsumption}
@@ -184,40 +218,40 @@ export class ProductsUnitPlate extends Component {
                 </div>
                 <div className="text-container">
                   <span className="text-common">
-                    Общий ресурс электростанции:{' '}
+                    Общий ресурс электростанции:{" "}
                   </span>
                   <span className="text-bold">{product.totalPowerPlant}</span>
                 </div>
-                {product.gasMixer !== '' && (
+                {product.gasMixer !== "" && (
                   <div className="text-container">
                     <span className="text-common">
-                      Газовоздушный смеситель:{' '}
+                      Газовоздушный смеситель:{" "}
                     </span>
                     <span className="text-bold">{product.gasMixer}</span>
                   </div>
                 )}
-                {product.controlBlock !== '' && (
+                {product.controlBlock !== "" && (
                   <div className="text-container">
                     <span className="text-common">Блок управления: </span>
                     <span className="text-bold">{product.controlBlock}</span>
                   </div>
                 )}
-                {product.ignitionSystem !== '' && (
+                {product.ignitionSystem !== "" && (
                   <div className="text-container">
                     <span className="text-common">Система зажигания: </span>
                     <span className="text-bold">{product.ignitionSystem}</span>
                   </div>
                 )}
-                {product.throttleValve !== '' && (
+                {product.throttleValve !== "" && (
                   <div className="text-container">
                     <span className="text-common">Дроссельная заслонка: </span>
                     <span className="text-bold">{product.throttleValve}</span>
                   </div>
                 )}
-                {product.excessAirRatio !== '' && (
+                {product.excessAirRatio !== "" && (
                   <div className="text-container">
                     <span className="text-common">
-                      Коэффициент избытка воздуха, λ:{' '}
+                      Коэффициент избытка воздуха, λ:{" "}
                     </span>
                     <span className="text-bold">{product.excessAirRatio}</span>
                   </div>
@@ -230,15 +264,71 @@ export class ProductsUnitPlate extends Component {
               <div className="col-12 col-xl-4 calc-link d-none" />
             </div>
           </div>
+        </div>
+        <div className="container-fluid usage p-0 pt-4 pb-4">
+          <div className="mycontainer section-plate">
+            <div className="col">
+              <h4 className="header-min-colored pb-1">
+                Область использования{" "}
+                <span className="dark-color">
+                  {" "}
+                  газопоршневых электростанций
+                </span>
+              </h4>
+              <p className="text-min text-black">
+                Наши установки могут использоваться в качестве резервного,
+                вспомогательного или основного источника электроэнергии в
+                автономном режиме или совместно с централизованными системами
+                электроснабжения и тепла на:
+              </p>
+              <ul>
+                <li>
+                  <span className="text-italic">
+                    Промышленных предприятиях,
+                  </span>
+                </li>
+                <li>
+                  <span className="text-italic">
+                    Буровых платформах, скважинах и шахтах,
+                  </span>
+                </li>
+                <li>
+                  <span className="text-italic">Очистных сооружениях,</span>
+                </li>
+                <li>
+                  <span className="text-italic">В строительстве,</span>
+                </li>
+                <li>
+                  <span className="text-italic">
+                    Административных и медицинских учереждениях,
+                  </span>
+                </li>
+                <li>
+                  <span className="text-italic">
+                    Аэропортах, гостиницах, узлах связи, системах
+                    жизнеобеспечения и т. п.
+                  </span>
+                </li>
+              </ul>
+              <p className="text-bold pt-4 pb-4">
+                Газопоршневые электростанции имеют высокий показатель КПД,
+                отсутствует влияние на КПД температуры окружающего воздуха,
+                меньшее потребление газа по сравнении с микротурбинами,
+                соответственно меньше выхлопа в окружающую среду.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="container-fluid pt-2">
           {product.id == 12 && (
             <div className="mycontainer">
               <YoutubeVideo className="myVideo" />
             </div>
           )}
+          <SimilarProducts similar={similar} category={category} />
           <div className="mycontainer section-plate p-0">
             <FormPage product={product.label} />
           </div>
-          <SimilarProducts similar={similar} category={category} />
         </div>
       </div>
     );
