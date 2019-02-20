@@ -192,6 +192,21 @@
     }
   }
 }
+.form-bg {
+  position: relative;
+  padding: 0;
+  &::after {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: "";
+    top: -15px;
+    right: 0;
+    left: 0;
+    height: 35%;
+    background-color: white;
+  }
+}
 
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
@@ -246,7 +261,7 @@
       & .header-red {
         padding-bottom: 0px;
       }
-      & .text-min {
+      & .text {
         line-height: 24px;
         font-size: 17px;
         font-weight: 300;
@@ -305,7 +320,7 @@
       & .header-red {
         padding-bottom: 15px;
       }
-      & .text-min {
+      & .text {
         line-height: 26px;
         font-size: 18px;
         font-weight: 300;

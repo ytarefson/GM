@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import Lightbox from 'react-image-lightbox';
-import '../scss/galery.scss';
+import React, { Component } from "react";
+import Lightbox from "react-image-lightbox";
+
+import "../scss/galery.scss";
 
 export default class Galery extends Component {
   constructor(props) {
@@ -18,13 +19,16 @@ export default class Galery extends Component {
     const { photoIndex, isOpen } = this.state;
 
     return (
-      <div className="container-fluid">
+      <div className="container-fluid white-section p-0 pt-3 pb-4">
         <div className="mycontainer section-plate galery-plate">
-          <span className="header-red header-red-2 pl-3">
-            Дополнительные изображения - {project.label}
-          </span>
           <div className="galery row m-0">
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12">
+              <h4 className="header-min-colored pb-1">
+                Дополнительные изображения -{" "}
+                <span className="dark-color">{project.label}</span>
+              </h4>
+            </div>
+            <div className="col-12 img-container-plate">
               <div className="img-container">
                 <img
                   className="detail-img"
@@ -33,8 +37,7 @@ export default class Galery extends Component {
                   onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}
                 />
               </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-3">
+
               <div className="img-container">
                 <img
                   className="detail-img"
@@ -43,8 +46,7 @@ export default class Galery extends Component {
                   onClick={() => this.setState({ isOpen: true, photoIndex: 1 })}
                 />
               </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-3">
+
               <div className="img-container">
                 <img
                   className="detail-img"
@@ -53,8 +55,7 @@ export default class Galery extends Component {
                   onClick={() => this.setState({ isOpen: true, photoIndex: 2 })}
                 />
               </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-3">
+
               <div className="img-container">
                 <img
                   className="detail-img"

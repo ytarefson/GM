@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import Head from '../../components/head';
-import Link from '../Link';
-import Video from '../Video';
-import '../../scss/projects/ProjectsUnitPlate.scss';
+import React, { Component } from "react";
+import Head from "../../components/head";
+import Link from "../Link";
+import Video from "../Video";
+import FormPage from "../form";
+import "../../scss/projects/ProjectsUnitPlate.scss";
 
 export class ProjectUnitPlate extends Component {
   render() {
@@ -12,9 +13,12 @@ export class ProjectUnitPlate extends Component {
       isVideo = true;
     }
     return (
-      <div>
-        <Head title={`Проект - ${project.label}`} description="Лучший проект" />
-        <div className="container-fluid project-detail">
+      <div className="project-detail">
+        <Head
+          title={`${project.label}. Газовая электростанция`}
+          description={`${project.description}`}
+        />
+        <div className="container-fluid">
           <div className="mycontainer section-plate">
             <div className="breadcrumbs">
               <Link href="/">
@@ -26,16 +30,36 @@ export class ProjectUnitPlate extends Component {
               <span className="crambs cramb-main">{project.label}</span>
             </div>
           </div>
+        </div>
+        <div class="container-fluid color-section">
           <div className="mycontainer section-plate">
             <div className="row m-0">
-              <div className="col-12 col-md-7">
-                <span className="text-common">{project.client}</span>
-                <h1 className="header-detail">{project.label}</h1>
-                <span className="subheading-red-bottom">{project.city}</span>
-                <p className="text-min">{project.description}</p>
+              <div className="col-12 col-md-7 col-xl-6 order-2 order-md-1 mt-3">
+                <span className="text-min">{project.client}</span>
+                <h1 className="header-red">{project.label}</h1>
+                <div className="project-unitplate-props-container">
+                  <span className="text-min">
+                    Город: <b>{project.city}</b>
+                  </span>
+                  <span className="text-min project-unitplate-label">
+                    Заказчик: <b>{project.client}</b>
+                  </span>
+                  <span className="text-min project-unitplate-class">
+                    Класс объекта: <b>{project.class}</b>
+                  </span>
+                  <span className="text-min project-unitplate-year">
+                    Год ввода в эксплуатацию: <b>{project.year}</b>
+                  </span>
+                  <span className="text-min project-unitplate-energy">
+                    Тепловая мощность: <b> {project.tenergy}</b>
+                  </span>
+                </div>
+                <div className="project-energy-container">
+                  <span className="project-energy">{project.energy}</span>
+                </div>
               </div>
 
-              <div className="col-12 col-md-5 img-main-container">
+              <div className="col-12 col-md-5 col-xl-6 order-1 order-md-2 img-main-container">
                 <div className="img-container">
                   <img
                     src={`../static/images/${project.img}`}
@@ -46,30 +70,20 @@ export class ProjectUnitPlate extends Component {
               </div>
             </div>
           </div>
+        </div>
+        <section className="container-fluid pt-4 pb-5">
           <div className="mycontainer section-plate">
             <div className="row">
               <div className="col-12">
-                <div className="project-unitplate-props-container">
-                  <span className="project-unitplate-label">
-                    Заказчик: {project.label}
-                  </span>
-                  <span className="project-unitplate-class">
-                    Класс объекта: {project.class}
-                  </span>
-                  <span className="project-unitplate-year">
-                    Год ввода в эксплуатацию: {project.year}
-                  </span>
-                  <span className="project-unitplate-energy">
-                    Мощность: {project.energy}
-                  </span>
-                  <span className="project-unitplate-energy">
-                    Тепловая мощность: {project.tenergy}
-                  </span>
-                </div>
+                <h4 className="header-min-colored pb-1">
+                  Описание проекта -{" "}
+                  <span className="dark-color">{project.label}</span>
+                </h4>
+                <p className="text">{project.description}</p>
               </div>
             </div>
           </div>
-        </div>
+        </section>
         {isVideo && <Video />}
       </div>
     );

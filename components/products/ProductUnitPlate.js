@@ -133,17 +133,17 @@ export class ProductsUnitPlate extends Component {
             </div>
           </div>
         </div>
-        <div className="container-fluid description product-unit pt-4 pb-2">
+        <div className="container-fluid description product-unit pt-4 pb-5">
           <div className="mycontainer section-plate">
             <div className="col-12">
               <h4 className="header-min-colored pb-1">
                 Описание <span className="dark-color">{product.label}</span>
               </h4>
-              <p className="text-min text-black">{product.descriptionTwo}</p>
+              <p className="text text-black">{product.descriptionTwo}</p>
             </div>
           </div>
         </div>
-        <div className="container-fluid product-unit pt-4 white-section">
+        <div className="container-fluid product-unit pt-4 pb-2 white-section">
           {/* <GaleryProducts product={product} /> */}
           <div className="mycontainer section-plate">
             <div className="col-12">
@@ -151,7 +151,7 @@ export class ProductsUnitPlate extends Component {
                 Характеристики{" "}
                 <span className="dark-color">{product.label}:</span>{" "}
               </h3>
-              <p className="text-min text-black">{product.descriptionOne}</p>
+              <p className="text text-black">{product.descriptionOne}</p>
             </div>
             <div className="row m-0 parametrs-container">
               <div className="col-12 col-xl-8 text-col">
@@ -275,7 +275,7 @@ export class ProductsUnitPlate extends Component {
                   газопоршневых электростанций
                 </span>
               </h4>
-              <p className="text-min text-black">
+              <p className="text text-black">
                 Наши установки могут использоваться в качестве резервного,
                 вспомогательного или основного источника электроэнергии в
                 автономном режиме или совместно с централизованными системами
@@ -319,17 +319,16 @@ export class ProductsUnitPlate extends Component {
             </div>
           </div>
         </div>
-        <div className="container-fluid pt-2">
+        <div className="container-fluid white-section pt-2">
           {product.id == 12 && (
             <div className="mycontainer">
               <YoutubeVideo className="myVideo" />
             </div>
           )}
           <SimilarProducts similar={similar} category={category} />
-          <div className="mycontainer section-plate p-0">
-            <FormPage product={product.label} />
-          </div>
         </div>
+
+        <FormPage product={product.label} />
       </div>
     );
   }

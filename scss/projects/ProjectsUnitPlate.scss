@@ -1,41 +1,65 @@
-@import '../vars';
+@import "../vars";
 
-.project {
-  position: relative;
-  &::after {
-    z-index: -1;
-    position: absolute;
-    content: '';
-    display: block;
-    width: 29%;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #ecebeb;
-    border-left: 2px solid #cb4828;
-  }
-}
 .project-detail {
-  //padding-bottom: 70px;
-  position: relative;
-  &::after {
-    z-index: -1;
-    position: absolute;
-    content: '';
-    display: block;
-    width: 67%;
-    height: 97%;
-    bottom: 0;
-    left: 0;
-    //background-color: #ecebeb;
-    border-top: 2px solid #d44625;
-    border-right: 4px solid #d44625;
+  & .container-fluid {
+    padding: 0;
+    & .mycontainer {
+      padding-left: 15px;
+      padding-right: 15px;
+      & .row {
+        margin: 0;
+      }
+    }
   }
-  & .section-plate {
-    & .header-detail {
-      font-weight: 700;
-      letter-spacing: -0.6px;
+  & .color-section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    & .header-red {
+      color: white;
+      margin: 0;
+      margin-bottom: 30px;
+    }
+    & .project-unitplate-props-container {
+      & .text-min {
+        font-weight: 300;
+        letter-spacing: 0.3px;
+        display: block;
+        line-height: 22px;
+        color: white;
+        & b {
+          color: #353535;
+          font-weight: 700;
+        }
+      }
+    }
+    & .project-energy-container {
+      display: flex;
+      position: relative;
+      flex-direction: row-reverse;
+      width: 100%;
+      &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        top: 50%;
+        z-index: 0;
+        transform: translateY(-50%);
+      }
+      & .project-energy {
+        z-index: 1;
+        color: white;
+        margin: 5px 0 5px auto;
+        background-color: $accent-red;
+        display: block;
+        font-weight: 900;
+        padding: 5px 15px;
+        //width: auto;
+        border-radius: 30px;
+        border: 2px solid white;
+      }
     }
     & .img-main-container {
       height: auto;
@@ -46,8 +70,8 @@
       & .img-container {
         display: block;
         justify-content: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        //padding-top: 15px;
+        //padding-bottom: 15px;
         //height: 100%;
         max-height: 270px;
         overflow: hidden;
@@ -61,15 +85,6 @@
           height: auto;
           //max-height: 100%;
         }
-      }
-    }
-    & .project-unitplate-props-container {
-      padding: 15px;
-      & span {
-        font-weight: 700;
-        letter-spacing: -0.3px;
-        display: block;
-        line-height: 32px;
       }
     }
   }
@@ -90,10 +105,38 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .img-main-container {
+    & .img-container {
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .project-detail {
+    & .color-section {
+      & .project-unitplate-props-container {
+        & .text-min {
+          font-weight: 300;
+          display: block;
+          line-height: 28px;
+          color: white;
+          & b {
+            color: #353535;
+            font-weight: 700;
+          }
+        }
+      }
+      & .project-energy-container {
+        & .project-energy {
+          font-size: 24px;
+          padding: 5px 30px;
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)

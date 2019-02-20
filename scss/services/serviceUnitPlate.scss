@@ -1,15 +1,25 @@
 @import "../vars";
 
+.service-unit {
+  padding: 15px;
+  & .header-red {
+    color: white;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  & .text {
+    color: white;
+  }
+}
 .service-detail-card {
   & .section-plate {
     & .card-img-container {
-      height: 250px;
+      //height: 250px;
       overflow: hidden;
-      border-radius: 0;
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      box-shadow: $box-shadow;
       & .card-img {
       }
     }

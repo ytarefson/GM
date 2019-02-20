@@ -59,10 +59,11 @@ b {
   margin-top: 35px;
   margin-bottom: 0;
 }
+///////////////////////////////////
 .header-red {
   font-family: $noto-font;
   display: block;
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 700;
   line-height: 26px;
   margin-bottom: 20px;
@@ -126,10 +127,10 @@ b {
   padding-right: 15px;
 }
 .subheading-red-bottom {
-  color: $accent-red !important;
+  color: $accent-red;
   display: block;
   margin-bottom: 30px;
-  padding-left: 15px;
+
   font-weight: 700;
 }
 .subheading-red-top {
@@ -148,6 +149,15 @@ b {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: -0.35px;
+  margin-bottom: 0px;
+}
+.text {
+  display: block;
+  font-family: $noto-font;
+  color: #3b3b3b;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
   margin-bottom: 0px;
 }
 .text-min {
@@ -240,9 +250,6 @@ b {
       top: 16px;
       border-radius: 5px;
     }
-  }
-  .text-common {
-    line-height: 26px;
   }
 }
 
@@ -356,10 +363,19 @@ b {
     font-size: 18px;
     line-height: 17px;
   }
-  .text-min {
+  .text {
+    display: block;
+    font-family: $noto-font;
+    color: #3b3b3b;
     font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 0px;
+  }
+  .text-min {
+    font-size: 16px;
     //font-weight: 500;
-    line-height: 28px;
+    line-height: 24px;
   }
   .text-bold {
     font-size: 16px;
@@ -398,13 +414,22 @@ b {
     line-height: 36px;
     // margin-bottom: 50px;
   }
-  .text-min {
+  .text {
     display: block;
     font-family: $noto-font;
     color: #3b3b3b;
     font-size: 21px;
     font-weight: 500;
     line-height: 33px;
+    margin-bottom: 0px;
+  }
+  .text-min {
+    display: block;
+    font-family: $noto-font;
+    color: #3b3b3b;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
     margin-bottom: 0px;
   }
   .text-italic {
