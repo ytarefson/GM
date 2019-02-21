@@ -1,7 +1,18 @@
 @import "../vars";
 
+.service-breadcrumbs {
+  padding: 0;
+  & .mycontainer {
+    padding-left: 15px;
+    padding-right: 15px;
+    & .breadcrumbs {
+    }
+  }
+}
 .service-unit {
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  //padding: 15px;
   & .header-red {
     color: white;
     margin: 0;
@@ -28,6 +39,16 @@
 
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
+  .service-breadcrumbs {
+    padding: 0;
+    & .mycontainer {
+      padding-left: 15px;
+      padding-right: 15px;
+      & .breadcrumbs {
+        margin-left: 0;
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)

@@ -16,7 +16,7 @@ export class ServiceUnitPlate extends Component {
     return (
       <div>
         <Head title={`${service.label}`} description={service.text} />
-        <div className="container-fluid service-detail-card">
+        <div className="container-fluid service-breadcrumbs">
           <div className="mycontainer section-plate">
             <div className="breadcrumbs">
               <Link href="/">
@@ -29,6 +29,7 @@ export class ServiceUnitPlate extends Component {
             </div>
           </div>
         </div>
+
         <section className="service-unit container-fluid color-section">
           <div className="mycontainer section-plate">
             <div className="row m-0">

@@ -1,46 +1,52 @@
 @import "../vars";
 
 .pusko-naladka {
-  position: relative;
-  padding-bottom: 80px;
-  &::after {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    display: block;
-    width: 70%;
-    height: 98%;
-    bottom: 0;
-    right: 0;
-    border-top: 2px solid #d44625;
-    //background-color: #ecebeb;
-    border-left: 3px solid #d44625;
-  }
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
   & .section-plate {
     padding: 30px;
-    & .text-min {
-      //padding-bottom: 30px;
-    }
-    & .header-red {
-      margin-top: 30px;
-    }
-    & .razdel-list {
-      & .razdel-li {
-        & .text-min {
-          margin: 0;
-          padding: 0;
-          font-size: 14px;
-          padding-bottom: 15px;
-          //padding-left: 10px;
-          line-height: 20px;
+    & .row {
+      & .col-12 {
+        padding: 0;
+        & .header-min-colored {
+          margin-top: 30px;
         }
-        & .razdel-list-ul {
-          padding: 0;
-          font-size: 13px;
-          line-height: 18px;
-          display: block;
-          & .razdel-ul-li {
-            & .text-italic {
+        & .razdel-list {
+          & .razdel-li {
+            & .text-big {
+              padding-bottom: 7px;
+              line-height: 2 22px;
+            }
+            & .text {
+              padding-bottom: 7px;
+            }
+            & .razdel-list-ul {
+              padding: 0;
+              font-size: 13px;
+              line-height: 18px;
+              display: block;
+              & .razdel-ul-li {
+                padding: 0;
+                padding-bottom: 7px;
+                & .text-italic {
+                  display: block;
+                  position: relative;
+                  padding-left: 25px;
+                  &::before {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background-color: $accent-red;
+                    border-top-left-radius: 10px;
+                    left: 0px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                }
+              }
             }
           }
         }
@@ -51,6 +57,11 @@
 
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
+  .pusko-naladka {
+    & .section-plate {
+      padding: 15px;
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -59,13 +70,44 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .pusko-naladka {
+    & .section-plate {
+      & .row {
+        & .col-12 {
+          padding: 0;
+          & .header-min-colored {
+            margin-top: 30px;
+          }
+          & .razdel-list {
+            & .razdel-li {
+              & .text-big {
+                padding-bottom: 7px;
+                font-size: 20px;
+                line-height: 26px;
+              }
+              & .razdel-list-ul {
+                & .razdel-ul-li {
+                  & .text-italic {
+                    display: block;
+                    position: relative;
+                    padding-left: 25px;
+                    line-height: 26px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .pusko-naladka {
     & .section-plate {
-      padding: 30px;
+      padding: 15px;
       & .text-min {
         //padding-bottom: 30px;
       }

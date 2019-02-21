@@ -45,7 +45,7 @@ class FormPage extends React.Component {
     const product = this.props.product;
     return (
       <div class="container-fluid form-bg">
-        <div className="mycontainer section-plate mt-0 p-4">
+        <div className="mycontainer section-plate mt-5 p-0">
           <form className="forma" onSubmit={this.handleSubmit}>
             <div className="form-group row m-0">
               <div className="col-12 col-md-6 col-xl-5 p-0 colform">

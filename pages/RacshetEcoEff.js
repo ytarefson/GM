@@ -1,10 +1,12 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
+import React from "react";
+import Layout from "../components/Layout";
+import FormPage from "../components/form";
+import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
 
 const RacshetEcoEff = serviceName => (
   <Layout>
     <ServiceUnitPlate serviceName={serviceName} />
+    <FormPage product={serviceName} />
   </Layout>
 );
 

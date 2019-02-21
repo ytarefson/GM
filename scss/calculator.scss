@@ -67,8 +67,11 @@ input {
   color: white;
   margin-top: 30px;
   padding: 50px 15px;
-  box-shadow: $box-shadow;
-  background: linear-gradient(to right, #c42f09 0%, #cb4828 100%);
+  border-radius: 3px;
+  background: $new-gradient;
+  //box-shadow: $box-shadow;
+  box-shadow: 10px 20px 30px -15px rgba(237, 27, 61, 0.55),
+    -10px 20px 30px -15px rgba(242, 125, 14, 0.55);
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 400px) {
@@ -151,8 +154,7 @@ input {
 @media (min-width: 1200px) {
   .calc-form {
     padding: 50px 50px;
-    background: url("/static/images/logo-white.png") 90% 15% no-repeat, #cb4828;
-    background-size: 25%;
+    //background: url("/static/images/logo-white.png") 90% 15% no-repeat, #cb4828;
   }
   .calc-buttons {
     display: flex;

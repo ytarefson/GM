@@ -11,6 +11,11 @@ $text: #333;
 //   rgb(242, 125, 14) 0%,
 //   rgb(237, 27, 61) 100%
 // );
+$new-gradient: linear-gradient(
+  to left,
+  rgb(242, 125, 14) 0%,
+  rgb(237, 27, 61) 100%
+);
 $yel-red-gradient: linear-gradient(to right, #eecf32 0%, #c22328 100%);
 $red-gradient: linear-gradient(to left, #dc4622 0%, #b63b1d 100%);
 $box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);

@@ -173,11 +173,9 @@ b {
   display: block;
   font-family: $noto-font;
   color: #313131;
-  //font-family: "Noto Sans";
   font-size: 15px;
   font-weight: 900;
   line-height: 22px;
-  // letter-spacing: -0.4px;
 }
 .text-italic {
   font-family: $noto-font;
@@ -189,12 +187,13 @@ b {
   color: #353535;
 }
 .section-plate {
-  margin: 15px auto 15px;
+  margin: 7px auto 7px;
   //background-color: #fff;
   //box-shadow: $box-shadow;
   padding: 0 15px;
 }
 .breadcrumbs {
+  margin-top: 30px;
   margin-left: 15px;
 
   & .crambs {
@@ -420,7 +419,7 @@ b {
     color: #3b3b3b;
     font-size: 21px;
     font-weight: 500;
-    line-height: 33px;
+    line-height: 31px;
     margin-bottom: 0px;
   }
   .text-min {

@@ -6,20 +6,31 @@
   & .header-red {
     padding-left: 15px;
   }
-  & .text-min {
+  & .text {
     margin-bottom: 15px;
     margin-top: 15px;
   }
   & .img-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
     overflow: hidden;
-    box-shadow: $box-shadow;
+    display: flex;
+    justify-content: center;
     & img {
+      box-shadow: $box-shadow;
     }
   }
 }
 
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
+  .optimal-agregats {
+    & .row {
+      & .col-12 {
+        padding: 0;
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)

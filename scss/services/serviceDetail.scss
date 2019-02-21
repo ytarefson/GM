@@ -1,91 +1,88 @@
 .vspom-oborud {
-  margin-top: 30px;
+  //padding-top: 30px;
+  padding-left: 0;
+  padding-right: 0;
   padding-bottom: 80px;
-  & .cta {
-    display: block;
-    text-align: center;
-    font-weight: 700;
-    line-height: 28px;
-    font-size: 14px;
-    margin-top: 30px;
-  }
-  & .tools-list-2 {
-    padding: 0;
-    & .tool-card {
-      width: 100%;
-      //height: 80px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      //padding-bottom: 15px;
-      align-items: center;
-      margin-top: 15px;
-      border-bottom: 1px solid lightgrey;
-      & .img-container-22 {
+  & .row {
+    padding-left: 15px;
+    padding-right: 15px;
+    & .otstup {
+      display: block;
+      padding-left: 15px;
+      padding-right: 15px;
+      & .cta {
         display: block;
-        width: 150px;
-        height: 100%;
-        background-color: green;
-        overflow: hidden;
-        & .tool-card-img {
-          display: block;
+        text-align: center;
+        font-weight: 700;
+        line-height: 28px;
+        font-size: 14px;
+        margin-top: 30px;
+      }
+      & .header-min-colored {
+        display: block;
+        margin-top: 45px;
+        padding-bottom: 15px;
+      }
+      & .tools-list-2 {
+        display: block;
+        padding: 0;
+        margin-top: 15px;
+        & .tool-card {
+          width: 100%;
+          //height: 80px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          //padding-bottom: 15px;
+          align-items: center;
+          margin-top: 15px;
+          //border-bottom: 1px solid lightgrey;
+          & .img-container-22 {
+            display: block;
+            width: 150px;
+            height: 100%;
+            background-color: green;
+            overflow: hidden;
+            & .tool-card-img {
+              display: block;
+            }
+          }
+          & .tool-card-desc {
+            padding: 15px;
+            width: 65%;
+            & .text-bold {
+              font-size: 12px;
+              line-height: 14px;
+              font-weight: 500;
+            }
+          }
+        }
+        .tool-card:nth-child(even) {
+          background-color: rgb(231, 231, 231);
         }
       }
-      & .tool-card-desc {
-        padding: 15px;
-        width: 65%;
-        & .text-bold {
-          font-size: 12px;
-          line-height: 14px;
-          font-weight: 700;
-        }
-      }
-    }
-    .tool-card:nth-child(odd) {
-      background-color: rgb(231, 231, 231);
     }
   }
 }
 
-.vspomOborud {
-  position: relative;
-  padding-bottom: 80px;
-  &::after {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    display: block;
-    width: 70%;
-    height: 98%;
-    bottom: 0;
-    right: 0;
-    border-top: 2px solid #d44625;
-    //background-color: #ecebeb;
-    border-left: 3px solid #d44625;
-  }
-}
-.tools-list {
-  display: flex;
-  flex-direction: column;
-
-  & .tool-card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    & .img-containeer {
-      max-width: 20%;
-      width: 100%;
-      & .tool-card-img {
-      }
-    }
-    & .tool-card-desc {
-    }
-  }
-}
+// .vspomOborud {
+//   padding-top: 30px;
+//   padding-bottom: 80px;
+//   padding-left: 0px;
+//   padding-right: 0px;
+//   & .headers-container {
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     & .header-min-colored {
+//       display: block;
+//       padding-bottom: 15px;
+//     }
+//   }
+// }
 .documentation {
   & .orderlist {
     & .doc-point {
-      margin: 30px 15px;
+      margin: 15px;
       & .razdel {
         font-style: italic;
         text-transform: uppercase;
@@ -111,12 +108,48 @@
     }
   }
 }
+.tools-list {
+  display: flex;
+  flex-direction: column;
+
+  & .tool-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    & .img-containeer {
+      max-width: 20%;
+      width: 100%;
+      & .tool-card-img {
+      }
+    }
+    & .tool-card-desc {
+    }
+  }
+}
+
 .optimal-agregats {
   padding-bottom: 80px;
 }
 
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
+  .vspomOborud {
+    & .headers-container {
+      padding-left: 0px;
+      padding-right: 0px;
+      & .header-min-colored {
+        display: block;
+        padding-bottom: 15px;
+      }
+    }
+    .documentation {
+      & .orderlist {
+        & .doc-point {
+          margin: 15px 0px;
+        }
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -188,7 +221,6 @@
     & .tools-list-2 {
       padding: 0;
       & .tool-card {
-        border-top: 1px solid lightgrey;
         & .tool-card-desc {
           padding: 15px;
           padding-left: 30px;

@@ -195,17 +195,6 @@
 .form-bg {
   position: relative;
   padding: 0;
-  &::after {
-    z-index: -1;
-    display: block;
-    position: absolute;
-    content: "";
-    top: -15px;
-    right: 0;
-    left: 0;
-    height: 35%;
-    background-color: white;
-  }
 }
 
 // Medium devices (tablets, 576px and up)

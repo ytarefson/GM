@@ -1,57 +1,58 @@
 @import "../vars";
 
 .zapchasti {
+  padding: 0;
   padding-bottom: 80px;
-  & .header-red {
-    display: block;
-    margin-top: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    & b {
-      color: #cb4828;
+
+  & .text {
+    padding: 5px 0px 5px 25px;
+
+    position: relative;
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: $accent-red;
+      border-top-left-radius: 10px;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
-  & .text-bold {
-    line-height: 22px;
-    display: block;
-    margin-bottom: 12px;
-  }
   & .text-grey {
-    margin-top: 20px;
+    margin-top: 45px;
     padding-left: 15px;
     padding-right: 15px;
     display: block;
     font-size: 14px;
     color: #cb4828;
+    text-align: center;
   }
 }
 
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
+  .zapchasti {
+    & .col-12 {
+      padding-left: 0;
+      padding-right: 0;
+      & .text-grey {
+        font-weight: 700;
+        font-size: 16px;
+        color: #cb4828;
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .zapchasti {
-    padding-bottom: 80px;
-    & .header-red {
-      display: block;
-      margin-top: 30px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin-bottom: 30px;
-    }
-    & .text-bold {
-      line-height: 24px;
-      display: block;
-      margin-bottom: 20px;
-      font-size: 16px;
-      //letter-spacing: -0.5px;
-      font-weight: 300;
-    }
     & .text-grey {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 20px;
       color: #cb4828;
     }
   }
@@ -64,25 +65,10 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .zapchasti {
-    padding-bottom: 80px;
-    & .header-red {
-      display: block;
-      margin-top: 50px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin-bottom: 40px;
-    }
-    & .text-bold {
-      line-height: 24px;
-      display: block;
-      margin-bottom: 30px;
-      font-size: 18px;
-      letter-spacing: -0.5px;
-    }
     & .text-grey {
       font-weight: 700;
-      font-size: 16px;
-      color: #cb4828;
+      font-size: 24px;
+      color: rgb(66, 66, 66);
     }
   }
 }

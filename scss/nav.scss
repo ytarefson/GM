@@ -67,11 +67,7 @@ nav {
         width: 130px;
         height: 30px;
         border-radius: 20px;
-        background-image: linear-gradient(
-          to left,
-          rgb(242, 125, 14) 0%,
-          rgb(237, 27, 61) 100%
-        );
+        background-image: $new-gradient;
         color: #ffffff;
         font-size: 12px;
         letter-spacing: 0.2px;

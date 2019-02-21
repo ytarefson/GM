@@ -8,19 +8,24 @@ const AutoCenters = serviceName => (
   <Layout>
     <ServiceUnitPlate serviceName={serviceName} />
     <div className="container-fluid vspomOborud">
-      <div className="mycontainer section-plate">
-        <p className="text-min p-3">
-          При необходимости проводятся инженерные изыскания: геодезические,
-          геологические, экологические. Разработка проектной документации
-          осуществляется в соответствии с постановлением Правительства РФ от
-          16.02.2008 г. №87 «О составе разделов проектной документации и
-          требованиях к их содержанию».
-        </p>
+      <div className="mycontainer section-plate headers">
+        <div className="headers-container">
+          <span className="header-min-colored">
+            Стандартный состав комплекта{" "}
+            <span className="dark-color">
+              проектной и рабочей документации:
+            </span>
+          </span>
+          <p className="text">
+            При необходимости проводятся инженерные изыскания: геодезические,
+            геологические, экологические. Разработка проектной документации
+            осуществляется в соответствии с постановлением Правительства РФ от
+            16.02.2008 г. №87 «О составе разделов проектной документации и
+            требованиях к их содержанию».
+          </p>
+        </div>
       </div>
       <div className="mycontainer documentation section-plate">
-        <span className="header-red pl-3 pt-3">
-          Стандартный состав комплекта проектной и рабочей документации:
-        </span>
         <div className="orderlist">
           <div className="doc-point">
             <span className="razdel">Раздел 1</span>
@@ -51,33 +56,35 @@ const AutoCenters = serviceName => (
             </p>
             <ul className="razdel-list">
               <li className="razdel-li">
-                <span className="text-min">1. Технологическая часть</span>
+                <span className="text-min text-black">
+                  1. Технологическая часть
+                </span>
               </li>
               <li className="razdel-li">
-                <span className="text-min">2. Газоснабжение. </span>
+                <span className="text-min text-black">2. Газоснабжение. </span>
               </li>
               <li className="razdel-li">
-                <span className="text-min">
+                <span className="text-min text-black">
                   3. Отопление, вентиляция и кондиционирование, тепловые сети.
                 </span>
               </li>
               <li className="razdel-li">
-                <span className="text-min">
+                <span className="text-min text-black">
                   4. Водоснабжение и водоотведение.{" "}
                 </span>
               </li>
               <li className="razdel-li">
-                <span className="text-min">
+                <span className="text-min text-black">
                   5. Электроснабжение 0,4 кВ (внутренние сети)
                 </span>
               </li>
               <li className="razdel-li">
-                <span className="text-min">
+                <span className="text-min text-black">
                   6. Электроснабжение 10 кВ (внутренние и наружные сети)
                 </span>
               </li>
               <li className="razdel-li">
-                <span className="text-min">
+                <span className="text-min text-black">
                   7. Автоматизация (АСУ ТП, учет э/э, тепла, газа и воды)
                 </span>
               </li>
@@ -150,9 +157,8 @@ const AutoCenters = serviceName => (
           </div>
         </div>
       </div>
-      <div className="mycontainer section-plate p-0">
-        <FormPage product={serviceName} />
-      </div>
+
+      <FormPage product={serviceName} />
     </div>
   </Layout>
 );

@@ -1,28 +1,18 @@
 @import "./vars";
 
 .montazh {
-  position: relative;
   padding-bottom: 80px;
-  &::after {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    display: block;
-    width: 70%;
-    height: 98%;
-    bottom: 0;
-    right: 0;
-    border-top: 2px solid #d44625;
-    //background-color: #ecebeb;
-    border-left: 3px solid #d44625;
-  }
+  padding: 0;
   & .section-plate {
     padding: 30px;
-    & .text-min {
-      //padding-bottom: 30px;
+    & .text {
+      display: block;
+      margin-top: 0px;
+      margin-bottom: 20px;
     }
-    & .header-red {
+    & .header-min-colored {
       margin-top: 30px;
+      margin-bottom: 15px;
     }
     & .razdel-list {
       & .razdel-li {
@@ -51,6 +41,41 @@
 
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
+  .montazh {
+    padding-bottom: 80px;
+    padding: 0;
+    & .section-plate {
+      padding: 15px;
+      & .text-min {
+        //padding-bottom: 30px;
+      }
+      & .header-min-colored {
+        margin-top: 30px;
+      }
+      & .razdel-list {
+        & .razdel-li {
+          & .text-min {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            padding-bottom: 15px;
+            //padding-left: 10px;
+            line-height: 20px;
+          }
+          & .razdel-list-ul {
+            padding: 0;
+            font-size: 13px;
+            line-height: 18px;
+            display: block;
+            & .razdel-ul-li {
+              & .text-italic {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -65,7 +90,6 @@
 @media (min-width: 1200px) {
   .montazh {
     & .section-plate {
-      padding: 30px;
       & .text-min {
         //padding-bottom: 30px;
       }
