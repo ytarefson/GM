@@ -2,254 +2,340 @@
 
 .services {
   z-index: 0;
+  padding-bottom: 250px;
   background: #fafafa;
   position: relative;
   &::after {
     position: absolute;
+    //opacity: 0.3;
     z-index: -1;
     content: "";
     display: block;
     width: 100%;
-    height: 43%;
-    bottom: 0;
+    height: 80%;
+    top: 63%;
     right: 0;
     left: 0;
-    background-color: #ecebeb;
-    clip-path: polygon(0% 45%, 100% 0%, 100% 100%, 0% 100%);
+    transform: translateY(-50%);
+    background: url("/static/images/bg-services.jpg") 70% 50% no-repeat;
+    clip-path: polygon(0 15%, 100% 0, 100% 60%, 0 90%);
   }
-}
-.mycontainer-cards {
-  margin-top: 40px;
-  & .cards-container {
-    padding: 15px;
-  }
-}
-.teh-plate {
-  padding-left: 12px;
-  padding-right: 6px;
-}
-
-.teh-plate:nth-child(even) {
-  padding-left: 6px;
-  padding-right: 12px;
-}
-
-.teh-card {
-  display: block;
-
-  //box-shadow: $box-shadow;
-  box-shadow: $box-shadow-up;
-  border-radius: 0;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  background-color: #ffffff;
-  max-width: 142px;
-  max-height: 235px;
-  transition: all 0.2s;
-  &:hover {
-    cursor: pointer;
-    text-decoration: none;
-    box-shadow: $box-shadow;
-    & .teh-image-container::after {
-      z-index: 3;
-      background: none;
-      background: linear-gradient(
-        to bottom,
-        rgba(203, 72, 40, 0.5) 0%,
-        rgba(203, 72, 40, 1) 100%
-      );
-    }
-    & .teh-image-container .header-container .teh-header {
-      background: transparent;
-    }
-  }
-  & .teh-image-container {
-    // max-height: 113px;
-    overflow: hidden;
-    position: relative;
-    transition: all 0.2s;
-    background: linear-gradient(
-      to right,
-      #cfcfcf 0%,
-      #d0d0d0 50%,
-      #cfcfcf 100%
-    );
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 3;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      background-image: linear-gradient(
-        to bottom,
-        rgba(255, 0, 0, 0) 0%,
-        rgba(255, 0, 0, 0) 50%,
-        rgba(255, 0, 0, 0) 100%
-      );
-      transition-duration: 0.2s;
-    }
-    & .teh-image {
-      display: block;
-      margin: 0 auto;
-      width: auto;
-      max-width: 100%;
-      height: 155px;
-      object-fit: cover;
-      // border-radius: 5px;
-      transition: all 0.2s;
-      position: relative;
-      z-index: 2;
-    }
-    & .header-container {
-      z-index: 4;
-      position: absolute;
-      bottom: 0;
-      & .teh-header {
-        margin-bottom: 0;
-        color: white;
-        padding: 8px;
-        font-size: 13px;
-        line-height: 18px;
-        letter-spacing: -0.2px;
-        font-weight: 700;
-        font-family: $noto-font;
-        height: 40%;
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 0.65) 100%
-        );
-        &:hover {
-          background: transparent;
-        }
-      }
-    }
-  }
-  & .teh-content {
-    z-index: 4;
-    padding: 4px 8px;
-    display: flex;
-    height: 80px;
-    justify-content: flex-start;
-    flex-direction: column;
-    & .teh-desc {
-      color: #313131;
-      font-family: $noto-font;
-      font-size: 9px;
-      font-weight: 400;
-      line-height: 14px;
-      letter-spacing: -0.4px;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-}
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .services {
-    & .teh-plate {
-      margin-top: 0 !important;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-    & .teh-card {
-      & .teh-image-container {
-        & .teh-image {
-        }
-        & .header-container {
-          & .teh-header {
+  & .cards-col {
+    padding: 0;
+    & .cards-container {
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-gap: 15px;
+      & .teh-plate {
+        .teh-card {
+          display: block;
+          width: 100%;
+          transition: all 0.2s;
+          & .teh-image-container {
+            box-shadow: $box-shadow;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.2s;
+            background: linear-gradient(
+              to right,
+              #cfcfcf 0%,
+              #d0d0d0 50%,
+              #cfcfcf 100%
+            );
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              z-index: 3;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              background-image: linear-gradient(
+                to bottom,
+                rgba(255, 0, 0, 0) 0%,
+                rgba(255, 0, 0, 0) 50%,
+                rgba(255, 0, 0, 0) 100%
+              );
+              transition-duration: 0.2s;
+            }
+            & .teh-image {
+              display: block;
+              margin: 0 auto;
+              width: auto;
+              max-width: 100%;
+              height: 145px;
+              object-fit: cover;
+              // border-radius: 5px;
+              transition: all 0.2s;
+              position: relative;
+              z-index: 2;
+            }
+            & .teh-content {
+              display: none;
+            }
+            & .button-container {
+              display: none;
+            }
+          }
+          & .header-container {
+            z-index: 4;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & .teh-header {
+              color: #353535;
+              font-size: 13px;
+              line-height: 18px;
+              text-align: center;
+              font-weight: 700;
+              font-family: $noto-font;
+              height: 40%;
+              &:hover {
+                background: transparent;
+              }
+            }
           }
         }
       }
-      & .teh-content {
-        & .teh-desc {
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .services {
+    & .cards-col {
+      padding: 0;
+      & .cards-container {
+        padding: 15px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 15px;
+        & .teh-plate {
+          display: block;
+          width: 100%;
+          & .teh-card {
+            display: block;
+            width: 100%;
+            transition: all 0.2s;
+            & .teh-image-container {
+              & .teh-image {
+                width: auto;
+                max-width: 100%;
+                height: 155px;
+              }
+            }
+            & .header-container {
+              z-index: 4;
+              height: 100px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              & .teh-header {
+                font-size: 15px;
+                line-height: 20px;
+                text-align: center;
+                font-weight: 700;
+                height: 40%;
+                &:hover {
+                  background: transparent;
+                }
+              }
+            }
+          }
         }
       }
-    }
-    & .services-more {
     }
   }
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .services {
-    background-size: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    & .teh-plate {
-    }
-    & .teh-card {
-      max-width: 220px;
-      max-height: 366px;
-      & .teh-image-container {
-        & .teh-image {
-          height: 246px;
-        }
-        & .header-container {
+    & .cards-col {
+      padding: 0;
+      & .cards-container {
+        padding: 15px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-gap: 15px;
+        grid-row-gap: 30px;
+        & .teh-plate {
+          display: block;
           width: 100%;
-          & .teh-header {
-            font-size: 18px;
-            line-height: 22px;
-            padding: 0 20px 10px;
+          & .teh-card {
+            display: block;
+            width: 100%;
+            transition: all 0.2s;
+            & .teh-image-container {
+              & .teh-image {
+                width: auto;
+                max-width: 100%;
+                height: 155px;
+              }
+
+              & .button-container {
+                display: block;
+                z-index: 10;
+              }
+            }
+            & .header-container {
+              z-index: 4;
+              height: 110px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              & .teh-header {
+                padding-left: 15px;
+                padding-right: 15px;
+                font-size: 16px;
+                line-height: 22px;
+                text-align: center;
+                font-weight: 700;
+                //height: 40%;
+                &:hover {
+                  background: transparent;
+                }
+              }
+            }
           }
         }
       }
-      & .teh-content {
-        height: 120px;
-        padding: 10px 20px;
-        & .teh-desc {
-          font-size: 14px;
-          line-height: 20px;
-        }
-      }
-    }
-    & .services-more {
     }
   }
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .services {
+    & .cards-col {
+      padding: 0;
+      & .cards-container {
+        padding: 15px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-gap: 30px;
+        grid-row-gap: 30px;
+        & .teh-plate {
+          display: block;
+          width: 100%;
+          & .teh-card {
+            display: block;
+            width: 100%;
+            transition: all 0.2s;
+            & .teh-image-container {
+              & .teh-image {
+                width: auto;
+                max-width: 100%;
+                height: 140px;
+              }
+              & .teh-content {
+                //display: none;
+              }
+              & .button-container {
+                display: block;
+                z-index: 10;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .services {
-    & .cards-container {
-      max-width: 1000px;
+    & .titles {
+      margin-top: 50px;
+      text-align: center;
+      margin-bottom: 30px;
     }
-    & .mycontainer-cards {
-      max-width: 1140px;
-    }
-    & .teh-plate {
-    }
-    & .teh-card {
-      max-width: 200px;
-      max-height: 400px;
-      & .teh-image-container {
-        & .teh-image {
-          height: 220px;
-        }
-        & .header-container {
-          & .teh-header {
-            padding: 0 15px 15px;
-            font-size: 17px;
-            line-height: 20px;
-            text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    & .cards-col {
+      padding: 0;
+      & .cards-container {
+        padding: 15px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-gap: 30px;
+        grid-row-gap: 30px;
+        & .teh-plate {
+          display: block;
+          width: 100%;
+          & .teh-card {
+            display: block;
+            width: 100%;
+            transition: all 0.2s;
+            & .teh-image-container {
+              & .teh-image {
+                width: auto;
+                max-width: 100%;
+                height: 170px;
+              }
+              & .teh-content {
+                display: block;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(
+                  to bottom,
+                  rgba(0, 0, 0, 0.75) 0%,
+                  rgba(0, 0, 0, 0) 100%
+                );
+                z-index: 4;
+                height: 100px;
+                padding: 15px;
+                transition: all 0.2s ease-in;
+                & .teh-desc {
+                  color: white;
+                  font-size: 14px;
+                  letter-spacing: 0.5px;
+                  font-weight: 300;
+                  line-height: 18px;
+                }
+              }
+              & .button-container {
+                display: block;
+                z-index: 10;
+              }
+              &:hover > .teh-content {
+                opacity: 1;
+              }
+            }
+            & .header-container {
+              z-index: 4;
+              height: 110px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              & .teh-header {
+                padding-left: 15px;
+                padding-right: 15px;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                font-weight: 700;
+                //height: 40%;
+                &:hover {
+                  background: transparent;
+                }
+              }
+            }
           }
         }
       }
-      & .teh-content {
-        padding: 20px 15px;
-        height: 150px;
-        & .teh-desc {
-          font-size: 13px;
-          line-height: 19px;
-        }
-      }
-    }
-    & .services-more {
     }
   }
 }

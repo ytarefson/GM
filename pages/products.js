@@ -1,11 +1,11 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 // import Head from '../components/head';
-import NextHead from 'next/head';
-import Layout from '../components/Layout';
-import productsList from '../components/tables/productsList';
-import ProductsListPlate from '../components/products/ProductsListPlate';
-import ProductsNew from '../components/products/ProductsNewContainer';
+import NextHead from "next/head";
+import Layout from "../components/Layout";
+import productsList from "../components/tables/productsList";
+import ProductsListPlate from "../components/products/ProductsListPlate";
+import ProductsNew from "../components/products/ProductsNewContainer";
 
 const Products = data => (
   <div>
@@ -23,9 +23,10 @@ const Products = data => (
       <div className="container-fluid products">
         <div className="mycontainer mb-5">
           <div className="row m-0">
-            <div className="col-12 col-xl-8">
-              <span className="subheading-red-top">Продукция</span>
-              <h1 className="header-razdel mb-4">Газовые электростанции</h1>
+            <div className="col-12 col-xl-8 mt-5">
+              <h1 className="header-min-colored mb-3">
+                Газопоршневые <span className="dark-color">электростанции</span>
+              </h1>
               <p className="text-min">
                 Занимаясь проектированием, сборкой и обслуживанием газовых
                 электростанций уже более 12 лет, мы протестировали достаточное
@@ -58,7 +59,7 @@ Products.getInitialProps = async function(context) {
   if (context.query.category !== undefined) {
     const category = context.query.category.toUpperCase();
     const data = [];
-    data.category = '';
+    data.category = "";
 
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
@@ -71,10 +72,10 @@ Products.getInitialProps = async function(context) {
     }
     return { data };
   } else {
-    const category = 'MAN';
+    const category = "MAN";
 
     let data = [];
-    data.category = '';
+    data.category = "";
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
         const element = productsList[cat];

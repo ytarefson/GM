@@ -180,7 +180,7 @@
     }
     & .link-map {
       & .link-map-header {
-        padding-left: 8px;
+        //padding-left: 8px;
         text-align: left;
       }
       & .link-map-list {
@@ -189,7 +189,7 @@
         display: flex;
         flex-direction: column;
         & .link-map-item {
-          padding: 0px 8px;
+          padding: 0px 0px;
           & .link-map-link {
             display: block;
             color: #ffffff;
@@ -224,7 +224,7 @@
     }
     & .link-map {
       & .link-map-header {
-        padding-left: 8px;
+        padding-left: 0px;
         text-align: left;
       }
       & .link-map-list {
@@ -233,7 +233,7 @@
         display: flex;
         flex-direction: column;
         & .link-map-item {
-          padding: 0px 8px;
+          padding: 0px 0px;
           & .link-map-link {
             display: block;
             color: #ffffff;
