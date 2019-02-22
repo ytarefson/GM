@@ -154,7 +154,8 @@ input {
 @media (min-width: 1200px) {
   .calc-form {
     padding: 50px 50px;
-    //background: url("/static/images/logo-white.png") 90% 15% no-repeat, #cb4828;
+    background: url("/static/images/logo-white.png") 95% 5% no-repeat,
+      $new-gradient;
   }
   .calc-buttons {
     display: flex;

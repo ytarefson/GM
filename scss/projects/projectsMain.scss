@@ -11,186 +11,35 @@
     width: 100%;
     height: 55%;
     left: 0;
-    bottom: 0;
+    top: 55%;
     left: 0;
-    background: linear-gradient(to bottom, #d8d8d8 0%, #fafafa 100%);
+    transform: translateY(-50%);
+    background: url("/static/images/bg-projects.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px 25px 70px -40px rgba(0, 0, 0, 0.4),
+      inset 0px -25px 70px -40px rgba(0, 0, 0, 0.4);
   }
-  // &::before {
-  //   z-index: -1;
-  //   position: absolute;
-  //   content: "";
-  //   display: block;
-  //   width: 20%;
-  //   height: 70%;
-  //   left: 0;
-  //   bottom: 0;
-  //   left: 0;
-  //   background: white;
-  //   //clip-path: polygon(100% 0, 100% 80%, 80% 0, 40% 0, 25% 70%, 0 70%, 0 0);
-  // }
-}
-.project-cards-plate {
-  //padding: 15px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  & .project-card-container {
-    width: 100%;
-    margin-bottom: 30px;
-    padding: 0 15px;
-    & .project-card {
-      cursor: pointer;
-      display: block;
-      margin: 0 auto;
-      width: auto;
-      max-width: 310px;
-      height: 100%;
-      background: #fff;
-      box-shadow: $box-shadow-up;
-      // box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.1),
-      //   -7px 10px 15px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.2s ease-out;
-      &:hover {
-        box-shadow: $box-shadow;
-      }
-      & .img-container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        overflow-x: hidden;
-        //border-top: 15px solid #fff;
-        box-shadow: 0px 15px 40px -25px rgba(0, 0, 0, 0.4);
-        & .project-card-img {
-          max-width: auto;
-          height: 100%;
-          max-height: 270px;
-        }
-      }
-      & .project-card-header-container {
-        padding: 10px 15px;
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: space-between;
-        color: #313131;
-        & .flex-top {
-          width: 100%;
-          & .project-card-class {
-            display: block;
-            font-size: 10px;
-            line-height: 12px;
-          }
-          & .project-card-client {
-            display: block;
-            font-size: 10px;
-            line-height: 12px;
-            font-weight: 700;
-            margin-top: 5px;
-            padding-bottom: 5px;
-          }
-          & .project-card-header {
-            display: block;
-            font-size: 16px;
-            font-weight: 700;
-            //color: #cb4828;
-            letter-spacing: -0.6px;
-            border-top: 0.5px solid red;
-          }
-        }
-        & .flex-bot {
-          width: 100%;
-          & .project-card-city {
-            font-size: 10px;
-            text-align: right;
-            display: block;
-          }
-          & .project-card-energy {
-            display: block;
-            font-size: 12px;
-            font-weight: 700;
-            line-height: 12px;
-            color: red;
-            text-align: right;
-          }
-        }
-      }
+  & .mycontainer {
+    & .row {
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 }
+
 @media (min-width: 576px) {
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .project-cards-plate {
-    justify-content: space-around;
-    & .project-card-container {
-      width: 40%;
-      & .project-card {
-        //width: 100%;
-        //max-width: 221px;
-      }
-    }
-  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .project-cards-plate {
-    justify-content: space-around;
-    & .project-card-container {
-      width: 33%;
-      & .project-card {
-        //width: 100%;
-        //max-width: 221px;
-      }
-    }
-  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .project-cards-plate {
-    justify-content: space-between;
-    & .project-card-container {
-      width: 31.5%;
-      & .project-card {
-        max-width: 330px;
-        & .project-card-header-container {
-          padding-bottom: 20px;
-          & .flex-top {
-            & .project-card-client {
-              font-size: 12px;
-              line-height: 14px;
-              font-weight: 700;
-
-              margin-top: 5px;
-              padding-bottom: 5px;
-            }
-            & .project-card-header {
-              font-size: 22px;
-              letter-spacing: 1px;
-              text-transform: uppercase;
-              font-weight: 700;
-              //line-height: 18px;
-              color: grey;
-              margin-bottom: 15px;
-            }
-          }
-          & .flex-bot {
-            & .project-card-city {
-              font-size: 12px;
-            }
-            & .project-card-energy {
-              font-size: 16px;
-            }
-          }
-        }
-      }
-    }
-  }
 }
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {

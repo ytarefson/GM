@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import projectList from '../tables/projectList';
-import Link from 'next/link';
-import '../../scss/projects/projectsListPlate.scss';
+import React, { Component } from "react";
+import projectList from "../tables/projectList";
+import Link from "next/link";
+import "../../scss/projects/projectsListPlate.scss";
 
 export class ProjectsListPlate extends Component {
   render() {
     const data = projectList;
     const shortData = [];
-    data.map(item => {
-      if (item.id > 2) {
-        shortData.push(item);
-      }
-    });
+    // data.map(item => {
+    //   if (item.id > 2) {
+    //     shortData.push(item);
+    //   }
+    // });
 
     return (
       <div className="project-cards-small-plate">
-        {shortData.map(
+        {data.map(
           ({
             key,
             id,
@@ -31,22 +31,25 @@ export class ProjectsListPlate extends Component {
             <div className="project-card-small-container" key={key}>
               <Link href={`/proekti?id=${id}`} as={`/proekti/${id}`}>
                 <a className="project-card-small">
+                  <div className="project-card-header-container">
+                    <div className="flex-top">
+                      <span className="project-card-header">{label}</span>
+                      <span className="project-card-city">{city}</span>
+                    </div>
+                  </div>
+                  <div className="project-card-button-container">
+                    <div className="button-container">
+                      <div className="button-min" />
+                    </div>
+                  </div>
+                  <div className="project-card-energy">{energy}</div>
+
                   <div className="img-container">
                     <img
-                      src={`../../static/images/${img}`}
+                      src={`../../static/images/projects/${img}`}
                       alt={`${label} - ${client}`}
                       className="project-card-img"
                     />
-                  </div>
-                  <div className="project-card-header-container">
-                    <div className="flex-top">
-                      <span className="project-card-client">{client}</span>
-                      <span className="project-card-header">{label}</span>
-                    </div>
-                    <div className="flex-bot">
-                      <span className="project-card-city">{city}</span>
-                      <span className="project-card-energy">{energy}</span>
-                    </div>
                   </div>
                 </a>
               </Link>

@@ -1,12 +1,12 @@
-import React from 'react';
-import Link from 'next/link';
-import menu from './menu';
-import serviceList from '../components/tables/serviceList';
-import '../scss/footer.scss';
+import React from "react";
+import Link from "next/link";
+import menu from "./menu";
+import serviceList from "../components/tables/serviceList";
+import "../scss/footer.scss";
 
 const Footer = () => (
   <footer className="footer">
-    <div className="mycontainer p-0">
+    <div className="container">
       <div className="row m-0">
         <div className="col-12 col-md-6 col-lg-3 link-map">
           <span className="link-map-header">Карта сайта:</span>
