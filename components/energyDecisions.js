@@ -30,7 +30,7 @@ export default EnergyDecisions => (
               <div className="card-img-container">
                 <FontAwesomeIcon
                   icon={faBolt}
-                  size="5x"
+                  size="4x"
                   color="#d57d29"
                   className="icon"
                 />
@@ -49,7 +49,7 @@ export default EnergyDecisions => (
               <div className="card-img-container">
                 <FontAwesomeIcon
                   icon={faSun}
-                  size="5x"
+                  size="4x"
                   color="#d57d29"
                   className="icon"
                 />
@@ -68,7 +68,7 @@ export default EnergyDecisions => (
               <div className="card-img-container">
                 <FontAwesomeIcon
                   icon={faSnowflake}
-                  size="5x"
+                  size="4x"
                   color="#d57d29"
                   className="icon"
                 />
@@ -88,7 +88,7 @@ export default EnergyDecisions => (
               <div className="card-img-container">
                 <FontAwesomeIcon
                   icon={faRubleSign}
-                  size="5x"
+                  size="4x"
                   color="#d57d29"
                   className="icon"
                 />

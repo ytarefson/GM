@@ -26,7 +26,7 @@
                 position: absolute;
                 z-index: 0;
                 top: -38px;
-                left: 5%;
+                left: 10%;
                 transform: translateX(-50%);
                 filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
               }
@@ -39,7 +39,7 @@
                 z-index: 10;
                 font-family: $molot-font;
                 display: block;
-                font-size: 18px;
+                font-size: 20px;
                 color: #484848;
                 margin-top: 45px;
                 margin-bottom: 5px;
@@ -65,6 +65,34 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .energyDecisions {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: url("/static/images/mini-map.png") -20% 39% no-repeat;
+    & .container {
+      & .row {
+        & .cards-plate {
+          margin-top: 45px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto auto;
+          grid-gap: 30px;
+          & .smart-card-container {
+            text-align: center;
+            & .smart-card {
+              & .text-container {
+                & .card-heading {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)

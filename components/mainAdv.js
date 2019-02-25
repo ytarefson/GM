@@ -10,6 +10,7 @@ export default MainAdv => (
     <div className="gaz-mash" />
     <div className="border-left" />
     <div className="border-right" />
+
     <div className="container main-container">
       <div className="row">
         <div className="col-12 col-md-6">

@@ -1,75 +1,124 @@
 @import "./vars";
 .calcAdv {
-  //background: linear-gradient(to right, #cb4828 0%, #e46849 100%);
-  //background: linear-gradient(-265deg, #c81e23 0%, #e46849 100%);
-  background: $red-gradient;
-  //background: url("/static/images/bo_play_pattern.png");
-  //background-size: 2%;
-  background-blend-mode: screen;
-  padding: 32px 15px;
-  text-align: center;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-  z-index: 3;
-  & .calc-header {
+  overflow-x: hidden;
+  position: relative;
+  background-color: #fff;
+  border-top: 5px solid #dcdcdc;
+  border-bottom: 5px solid #dcdcdc;
+  z-index: 0;
+  //min-height: 420px;
+  & .dots-right {
+    position: absolute;
     display: block;
-    margin-bottom: 15px;
-    color: #ffffff;
-    font-family: $noto-font;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 36px;
-    // letter-spacing: -0.65px;
+    width: 213px;
+    height: 259px;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    background: url("/static/images/dots-min-white.png") 0% 0% no-repeat;
   }
-  & .calc-desc {
+  & .dots-left {
+    position: absolute;
     display: block;
-    color: #ffffff;
-    font-family: $noto-font;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    // letter-spacing: -0.4px;
+    width: 213px;
+    height: 259px;
+    left: 0;
+    bottom: 0;
+    background: url("/static/images/dots-min.png") 0% 0% no-repeat;
   }
-  & .calc-link {
+  & .arrow-left-yellow {
     display: block;
-    width: 170px;
-    margin: 30px auto 20px auto;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #eecf34;
-    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1),
-      -10px 15px 20px rgba(0, 0, 0, 0.1);
-    color: #cb4828;
-    font-family: $noto-font;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: -0.4px;
-    transition: box-shadow 0.2s;
-    &:hover {
-      text-decoration: none;
-      cursor: pointer;
-      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
-    }
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: -310px;
+    width: 350px;
+    height: 310px;
+    transform: translateY(-50%);
+    clip-path: polygon(0 0, 92% 0, 100% 45%, 92% 100%, 0 100%);
+    border-radius: 3px;
+    background-color: #d57c29;
+    //background: url("/static/images/dots-min.png") 0% 0% no-repeat, #d57c29;
   }
-  & .calc-container {
-    margin-top: 10px;
+  & .arrow-right-red {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: -310px;
+    width: 350px;
+    height: 310px;
+    transform: translateY(-50%);
+    clip-path: polygon(8% 0, 100% 0, 100% 100%, 8% 100%, 0 50%);
+    border-radius: 3px;
+    background-color: #c42729;
   }
-  & .text-container {
+  & .calcAdv-container {
     display: flex;
-    justify-content: center;
-    align-content: center;
     align-items: center;
-  }
-  & .calc-text {
-    display: block;
-    color: #ffffff;
-    font-family: $noto-font;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-    padding-left: 30px;
-    // letter-spacing: -0.3px;
+    justify-content: center;
+    height: 100%;
+    height: 410px;
+
+    & .row {
+      & .col-12 {
+        & .wrapper {
+          max-width: 230px;
+          margin: 0 auto;
+          & .header-min-colored {
+            font-size: 27px;
+            margin-bottom: 60px;
+            text-align: center;
+          }
+          & .calc-desc {
+            text-align: center;
+            display: block;
+            color: #444444;
+            font-family: $noto-font;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-bottom: 30px;
+          }
+          & .calc-link {
+            font-family: $molot-font;
+            padding: 0;
+            display: block;
+            font-weight: 700;
+            width: 170px;
+            height: 40px;
+            border-radius: 3px;
+            background-image: $new-gradient;
+            color: #ffffff;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            line-height: 40px;
+            margin: 0 auto;
+            text-align: center;
+            transform: skewX(-10deg);
+            box-shadow: 10px 20px 30px -15px rgba(237, 27, 61, 0.55),
+              -10px 20px 30px -15px rgba(242, 125, 14, 0.55);
+            transition: box-shadow 0.2s;
+            &:hover {
+              text-decoration: none;
+              cursor: pointer;
+              color: #ffffff;
+              box-shadow: $box-shadow;
+              &::before {
+                width: 0;
+              }
+            }
+            &:active {
+              box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
+            }
+            & span {
+              display: block;
+              transform: skewX(10deg);
+            }
+          }
+        }
+      }
+    }
   }
 }
 // Small devices (landscape phones, 576px and up)
@@ -82,94 +131,135 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .calcAdv {
-    padding: 50px 15px 40px 15px;
-    & .calc-header {
-      text-align: left;
-      font-size: 30px;
-      line-height: 48px;
-      margin-bottom: 0;
-      letter-spacing: -0.44px;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #fff;
+    border-top: 5px solid #dcdcdc;
+    border-bottom: 5px solid #dcdcdc;
+    z-index: 0;
+    //min-height: 420px;
+    & .dots-right {
+      position: absolute;
+      display: block;
+      width: 213px;
+      height: 259px;
+      top: -15%;
+      right: 0;
+      opacity: 0.3;
+      background: url("/static/images/dots-min-white.png") 0% 0% no-repeat;
     }
-    & .calc-desc {
-      text-align: left;
-      // letter-spacing: -0.6px;
-      font-size: 16px;
-      // width: 75%;
+    & .dots-left {
+      position: absolute;
+      display: block;
+      width: 213px;
+      height: 259px;
+      left: 0;
+      bottom: 0;
+      background: url("/static/images/dots-min.png") 0% 0% no-repeat;
     }
-    & .calc-container {
-      margin-top: 15px;
+    & .arrow-left-yellow {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: -100px;
+      width: 350px;
+      height: 310px;
+      transform: translateY(-50%);
+      clip-path: polygon(0 0, 92% 0, 100% 45%, 92% 100%, 0 100%);
+      border-radius: 3px;
+      background-color: #d57c29;
+      //background: url("/static/images/dots-min.png") 0% 0% no-repeat, #d57c29;
     }
-    & .calc-text {
+    & .arrow-right-red {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      right: -100px;
+      width: 350px;
+      height: 310px;
+      transform: translateY(-50%);
+      clip-path: polygon(8% 0, 100% 0, 100% 100%, 8% 100%, 0 50%);
+      border-radius: 3px;
+      background-color: #c42729;
     }
-    & .calc-link {
-      width: 100px;
-      margin: 20px auto 20px auto;
+    & .calcAdv-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      height: 410px;
 
-      height: 30px;
-
-      font-size: 12px;
-
-      line-height: 30px;
+      & .row {
+        & .col-12 {
+          & .wrapper {
+            max-width: 230px;
+            margin: 0 auto;
+            & .header-min-colored {
+              font-size: 28px;
+              margin-bottom: 60px;
+              text-align: center;
+            }
+            & .calc-desc {
+              text-align: center;
+              display: block;
+              color: #444444;
+              font-family: $noto-font;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 22px;
+              margin-bottom: 30px;
+            }
+            & .calc-link {
+              font-family: $molot-font;
+              padding: 0;
+              display: block;
+              font-weight: 700;
+              width: 170px;
+              height: 40px;
+              border-radius: 3px;
+              background-image: $new-gradient;
+              color: #ffffff;
+              font-size: 14px;
+              letter-spacing: 0.5px;
+              line-height: 40px;
+              margin: 0 auto;
+              text-align: center;
+              transform: skewX(-10deg);
+              box-shadow: 10px 20px 30px -15px rgba(237, 27, 61, 0.55),
+                -10px 20px 30px -15px rgba(242, 125, 14, 0.55);
+              transition: box-shadow 0.2s;
+              &:hover {
+                text-decoration: none;
+                cursor: pointer;
+                color: #ffffff;
+                box-shadow: $box-shadow;
+                &::before {
+                  width: 0;
+                }
+              }
+              &:active {
+                box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
+              }
+              & span {
+                display: block;
+                transform: skewX(10deg);
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .calcAdv {
-    padding: 50px 15px 30px 15px;
-    & .calc-header {
-      text-align: left;
-      font-size: 40px;
-      line-height: 60px;
-    }
-    & .calc-desc {
-      text-align: left;
-      font-size: 18px;
-      // width: 75%;
-    }
-    & .text-container {
-      display: flex;
-      justify-content: flex-start;
-      align-content: center;
-    }
-    & .calc-text {
-      font-size: 13px;
-    }
-    & .calc-link {
-      width: 170px;
-      margin: 20px auto 20px 0;
-
-      height: 40px;
-
-      font-size: 14px;
-
-      line-height: 40px;
-    }
-  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .calcAdv {
-    & .calc-header {
-      margin-bottom: 20px;
-      font-size: 50px;
-    }
-    & .calc-desc {
-      font-size: 24px;
-      line-height: 36px;
-    }
-    & .calc-container {
-      margin-top: 20px;
-    }
-    & .calc-text {
-      font-size: 16px;
-    }
-    & .calc-link {
-      font-size: 16px;
-    }
-  }
 }
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {

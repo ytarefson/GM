@@ -63,10 +63,74 @@
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+  .portfolio-links {
+    & .container {
+      & .row {
+        & .col-12 {
+          & .header-min-colored {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 15px;
+          }
+          & .portfolio-cards-plate {
+            margin: 0;
+            padding: 0;
+            padding-top: 15px;
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .portfolio-links {
+    & .container {
+      & .row {
+        & .col-12 {
+          & .header-min-colored {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+          }
+          & .portfolio-cards-plate {
+            margin: 0;
+            padding: 0;
+            padding-top: 15px;
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            & .card-container {
+              & .portfolio-card {
+                & .portfolio-link {
+                  margin-top: 10px;
+                  display: block;
+                  text-align: center;
+                  font-size: 16px;
+                  font-weight: 900;
+                  letter-spacing: normal;
+                }
+                & .portfolio-company {
+                  display: block;
+                  text-align: center;
+                  font-size: 14px;
+                  font-weight: 500;
+                  line-height: 14px;
+                  margin-bottom: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)

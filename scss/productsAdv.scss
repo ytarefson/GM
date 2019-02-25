@@ -1,0 +1,155 @@
+@import "./vars";
+
+.productsAdv {
+  padding-top: 30px;
+  padding-bottom: 90px;
+  position: relative;
+  & .dots-left {
+    position: absolute;
+    display: block;
+    width: 213px;
+    height: 259px;
+    left: -40%;
+    bottom: 0;
+    //z-index: 10;
+    //filter: saturate(0.5);
+    opacity: 0.5;
+    background: url("/static/images/dots-min-red.png") 0% 0% no-repeat;
+  }
+  & .container {
+    background-color: #e5e5e5;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    padding-bottom: 30px;
+    & .row {
+      & .col-12 {
+        & .header-min-colored {
+          display: block;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        & .text-big {
+          padding-bottom: 15px;
+          text-transform: uppercase;
+          font-size: 14px;
+          line-height: 22px;
+          font-weight: 700;
+          color: #404040;
+        }
+        & .text {
+          padding-bottom: 45px;
+        }
+        & .p-cards-plate {
+          display: grid;
+          grid-gap: 15px;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto auto;
+          & .p-card {
+            & .title {
+              color: #353535;
+              font-family: $molot-font;
+              & .red {
+                color: $accent-red;
+              }
+            }
+            & .img-container {
+              width: 100%;
+              height: 100%;
+              & .p-img {
+                width: auto;
+                max-width: 100%;
+                display: block;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 400px) {
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .productsAdv {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    position: relative;
+    & .dots-left {
+      position: absolute;
+      display: block;
+      width: 213px;
+      height: 259px;
+      left: 0;
+      bottom: 0;
+    }
+    & .container {
+      background-color: #e5e5e5;
+      border: 1px solid #dcdcdc;
+      border-radius: 3px;
+      padding-bottom: 30px;
+      & .row {
+        & .col-12 {
+          & .header-min-colored {
+            display: block;
+            margin-top: 30px;
+            margin-bottom: 15px;
+          }
+
+          & .p-cards-plate {
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            & .p-card {
+              & .title {
+                font-size: 21px;
+                color: #353535;
+                font-family: $molot-font;
+                & .red {
+                  color: $accent-red;
+                }
+              }
+              & .img-container {
+                width: 100%;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+
+                height: 100%;
+                & .p-img {
+                  width: auto;
+                  max-width: 100%;
+                  display: block;
+                  height: auto;
+                  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+                }
+              }
+            }
+          }
+          & .button-grey-container {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+}

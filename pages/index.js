@@ -6,8 +6,7 @@ import PortfolioLinks from "../components/portfolioLinks";
 import EnergyDecisions from "../components/energyDecisions";
 import CalcAdv from "../components/calcAdv";
 import GeneralServices from "../components/generalServices";
-import Geo from "../components/geo";
-import OurExp from "../components/ourExp";
+import ProductsAdv from "../components/productsAdv";
 import Layout from "../components/Layout";
 
 const Home = () => (
@@ -22,9 +21,8 @@ const Home = () => (
       <PortfolioLinks />
       <EnergyDecisions />
       <CalcAdv />
+      <ProductsAdv />
       <GeneralServices />
-      <Geo />
-      <OurExp />
     </Layout>
   </div>
 );

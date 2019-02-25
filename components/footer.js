@@ -32,7 +32,7 @@ const Footer = () => (
             ))}
           </ul>
         </div>
-        <div className="col-12 col-md-6 col-lg-3">
+        <div className="col-12 col-md-6 col-lg-3 order-1">
           <Link href="/">
             <a className="footer-logo-container">
               <img
@@ -42,7 +42,7 @@ const Footer = () => (
               />
             </a>
           </Link>
-          {/* <span className="contacts-header">Контакты:</span> */}
+          <span className="contacts-header">Контакты:</span>
           <ul className="adres-list">
             <li>
               <a

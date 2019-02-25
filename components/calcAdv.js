@@ -5,13 +5,18 @@ import "../scss/calcAdv.scss";
 
 export default CalcAdv => (
   <div className="container-fluid calcAdv">
-    <div className="container">
+    <div className="dots-right" />
+    <div className="dots-left" />
+
+    <div className="arrow-left-yellow" />
+    <div className="arrow-right-red" />
+    <div className="container calcAdv-container">
       <div className="row">
         <div className="col-12">
           <div className="wrapper">
             <h3 className="header-min-colored">
-              Хотите узнать сколько{" "}
-              <span className="dark-color"> мы для вас экономим?</span>
+              <span className="dark-color">Хотите узнать сколько </span>
+              мы для вас экономим?
             </h3>
             <span className="calc-desc">
               Воспользуйтесь автоматической формой, введите исходные данные и
@@ -19,7 +24,9 @@ export default CalcAdv => (
             </span>
 
             <Link href="/calculator.js" as="/calculator">
-              <a className="calc-link">Калькулятор</a>
+              <a className="calc-link">
+                <span>Калькулятор</span>
+              </a>
             </Link>
           </div>
         </div>

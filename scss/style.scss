@@ -304,24 +304,17 @@ b {
     margin-right: auto;
     margin-left: auto;
   }
+  .header-min-colored {
+    font-family: $molot-font;
+    font-size: 23px;
+  }
   .header-razdel {
     width: 90%;
   }
   .header-common {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 32px;
-    position: relative;
-    &::after {
-      position: absolute;
-      content: "";
-      width: 250px;
-      height: 2px;
-      background-color: $accent-red;
-      left: -260px;
-      top: 16px;
-      border-radius: 5px;
-    }
   }
 }
 
