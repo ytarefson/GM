@@ -1,138 +1,72 @@
-@import './vars';
+@import "./vars";
 
-.portfolio {
-  margin-top: 20px;
-  margin-bottom: -16px;
-}
-.portfolio-header {
-  line-height: 30px;
-  font-family: $noto-font;
-  padding-left: 30px;
-}
-.portfolio-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 0;
-  & .portfolio-a {
-    color: #313131;
-    & .portfolio-li {
-      background: #949494;
-      display: flex;
-      flex-direction: column;
-      padding: 4px 4px;
-      & .portfolio-company {
-        font-size: 10px;
-        letter-spacing: -0.35px;
-        font-weight: 500;
-      }
-      & .portfolio-link {
-        font-size: 11px;
-        font-weight: 500;
-        letter-spacing: -0.5px;
-      }
-    }
-    &:hover {
-      & .portfolio-li {
-        background: lighten($color: #949494, $amount: 20);
-      }
-      cursor: pointer;
-    }
-    &:nth-child(2) {
-      & .portfolio-li {
-        background: #acacac;
-      }
-      &:hover {
-        background: lighten($color: #acacac, $amount: 20);
-      }
-    }
-    &:nth-child(3) {
-      & .portfolio-li {
-        background: #c4c4c4;
-      }
-      &:hover {
-        background: lighten($color: #c4c4c4, $amount: 20);
-      }
-    }
-    &:nth-child(4) {
-      & .portfolio-li {
-        background: #fafafa;
-      }
-      &:hover {
-        background: #fff;
+.portfolio-links {
+  & .container {
+    & .row {
+      & .col-12 {
+        & .header-min-colored {
+          display: block;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        & .portfolio-cards-plate {
+          margin: 0;
+          padding: 0;
+          padding-top: 15px;
+          display: grid;
+          grid-gap: 15px;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto auto auto;
+          & .card-container {
+            padding: 0;
+            margin: 0;
+            & .portfolio-card {
+              width: 100%;
+              & .img-container {
+                display: block;
+                // justify-content: center;
+                // align-items: center;
+                height: auto;
+                //width: 100px;
+                & .portfolio-img {
+                  box-shadow: $box-shadow;
+                  display: block;
+                  width: 100%;
+                  height: auto;
+                }
+              }
+              & .portfolio-link {
+                margin-top: 15px;
+                display: block;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 900;
+                letter-spacing: normal;
+              }
+              & .portfolio-company {
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;
+                margin-bottom: 15px;
+              }
+            }
+          }
+        }
       }
     }
   }
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 400px) {
-  .portfolio-ul {
-    justify-content: flex-start;
-    padding: 0;
-    & .portfolio-a {
-      & .portfolio-li {
-        padding: 8px;
-        & .portfolio-company {
-          font-size: 10px;
-        }
-        & .portfolio-link {
-          font-size: 12px;
-        }
-      }
-    }
-  }
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  .portfolio-ul {
-    & .portfolio-a {
-      & .portfolio-li {
-        padding: 14px 16px;
-        & .portfolio-company {
-          font-size: 11px;
-        }
-        & .portfolio-link {
-          font-size: 14px;
-          font-weight: 700;
-        }
-      }
-    }
-  }
-  .portfolio {
-    & .mycontainer {
-      & .portfolio-header {
-        padding-left: 0px;
-      }
-    }
-  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  & .portfolio-header {
-    margin-bottom: 10px;
-  }
-  .portfolio-ul {
-    & .portfolio-a {
-      & .portfolio-li {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 170px;
-        height: 76px;
-        padding: 14px 20px;
-        & .portfolio-company {
-          font-size: 12px;
-          font-weight: 500;
-        }
-        & .portfolio-link {
-          font-size: 14px;
-          font-weight: 700;
-          letter-spacing: 0;
-        }
-      }
-    }
-  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -141,21 +75,6 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .portfolio-ul {
-    & .portfolio-a {
-      & .portfolio-li {
-        width: 200px;
-        height: 90px;
-        padding: 20px 20px;
-        & .portfolio-company {
-          font-size: 14px;
-        }
-        & .portfolio-link {
-          font-size: 16px;
-        }
-      }
-    }
-  }
 }
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {

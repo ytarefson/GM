@@ -1,13 +1,14 @@
-import React from 'react';
-import Head from '../components/head';
-import '../scss/style.scss';
-import MainAdv from '../components/mainAdv';
-import EnergyDecisions from '../components/energyDecisions';
-import CalcAdv from '../components/calcAdv';
-import GeneralServices from '../components/generalServices';
-import Geo from '../components/geo';
-import OurExp from '../components/ourExp';
-import Layout from '../components/Layout';
+import React from "react";
+import Head from "../components/head";
+import "../scss/style.scss";
+import MainAdv from "../components/mainAdv";
+import PortfolioLinks from "../components/portfolioLinks";
+import EnergyDecisions from "../components/energyDecisions";
+import CalcAdv from "../components/calcAdv";
+import GeneralServices from "../components/generalServices";
+import Geo from "../components/geo";
+import OurExp from "../components/ourExp";
+import Layout from "../components/Layout";
 
 const Home = () => (
   <div className="home">
@@ -18,6 +19,7 @@ const Home = () => (
 
     <Layout>
       <MainAdv />
+      <PortfolioLinks />
       <EnergyDecisions />
       <CalcAdv />
       <GeneralServices />

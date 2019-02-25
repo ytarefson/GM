@@ -1,4 +1,13 @@
 @font-face {
+  font-family: "Molot";
+  src: url("../static/fonts/Molot/MolotRegular/MolotRegular.woff")
+      format("woff"),
+    url("../static/fonts/Molot/MolotRegular/MolotRegular.ttf") format("ttf"),
+    url("../static/fonts/Molot/MolotRegular/MolotRegular.eot") format("eot");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
   font-family: "MuseoSans";
   src: url("../static/fonts/MuseoSans/MuseoSansBold/MuseoSansBold.woff")
       format("woff"),

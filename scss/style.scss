@@ -46,6 +46,46 @@ b {
   display: flex;
   flex-direction: column;
 }
+.button-grey-container {
+  margin-top: 15px;
+  & .button-grey {
+    font-family: $molot-font;
+
+    padding: 0;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    width: 170px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #7c7c7c;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 0 auto;
+    transform: skewX(-10deg);
+    box-shadow: $box-shadow;
+    transition: box-shadow 0.2s;
+    &:hover {
+      text-decoration: none;
+      cursor: pointer;
+      color: #ffffff;
+      box-shadow: $box-shadow-up;
+      &::before {
+        width: 0;
+      }
+    }
+    &:active {
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
+    }
+    & span {
+      display: block;
+      transform: skewX(10deg);
+    }
+  }
+}
+
 .button-container {
   position: relative;
   & .button-min {
@@ -80,16 +120,12 @@ b {
 }
 .header-common {
   font-family: $noto-font;
-  color: #313131;
+  color: #353535;
   display: block;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 32px;
-  font-style: bold;
-  letter-spacing: -0.65px;
-  padding-left: 15px;
-  margin-top: 35px;
-  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
 }
 ///////////////////////////////////
 .header-red {
@@ -115,7 +151,7 @@ b {
 /////////////////////
 
 .header-min-colored {
-  font-family: $noto-font;
+  font-family: $molot-font;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.2px;
@@ -224,6 +260,11 @@ b {
   //box-shadow: $box-shadow;
   padding: 0 15px;
 }
+.bg-container {
+  background-color: #e5e5e5;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+}
 .breadcrumbs {
   margin-top: 30px;
   margin-left: 15px;
@@ -324,7 +365,7 @@ b {
       font-size: 14px;
       //font-weight: 700;
       //letter-spacing: 2px;
-      text-transform: uppercase;
+      //text-transform: uppercase;
       padding-right: 3px;
       //color: darkgrey;
     }
@@ -485,7 +526,7 @@ b {
     & .crambs {
       font-size: 18px;
       font-weight: 500;
-      text-transform: uppercase;
+      //text-transform: uppercase;
       padding-right: 3px;
       color: #3f3f3f;
       letter-spacing: 0.2px;

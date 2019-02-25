@@ -5,32 +5,28 @@ import "../scss/portfolioLinks.scss";
 
 const portfolio = [
   {
-    label: "Аккус Актобэ",
+    label: "Энергоцентр ЯМЗ",
     company: "Энергоцентр",
-    href: "#",
-    id: "3",
-    as: "/akkus-aktobe"
-  },
-  {
-    label: "Ледовая Арена",
-    company: "Энергоцентр",
+    img: "project-avtodisel.jpg",
     href: "#",
     id: "0",
-    as: "/ledovaya-arena"
+    as: "/yamz"
   },
   {
     label: "Невская ратуша",
     company: "Энергоцентр",
+    img: "project-nevskaya.jpg",
     href: "#",
-    id: "7",
+    id: "1",
     as: "/nevskaya-ratusha"
   },
   {
-    label: "СтройГазМонтаж",
+    label: "Аккус Актобэ",
     company: "Энергоцентр",
+    img: "project-akkus.jpg",
     href: "#",
-    id: "4",
-    as: "/stroi-gaz-montazh"
+    id: "3",
+    as: "/akkus-aktobe"
   }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
@@ -38,23 +34,55 @@ const portfolio = [
 });
 
 const PortfolioLinks = () => (
-  <div className="container-fluid p-0 portfolio">
-    <div className="mycontainer">
-      <span className="portfolio-header d-block">Реализованные проекты:</span>
+  <section className="container-fluid portfolio-links">
+    <div className="container">
+      <div className="row">
+        <div className="col-12">
+          <span className="header-min-colored">
+            Реализованные <span className="dark-color"> проекты:</span>
+          </span>
+        </div>
+      </div>
     </div>
-    <ul className="portfolio-ul">
-      {portfolio.map(({ key, id, label, as, company }) => (
-        <Link href={`/proekti/${id}`} key={key}>
-          <a className="portfolio-a">
-            <li className="portfolio-li">
-              <span className="portfolio-company">{company}</span>
-              <span className="portfolio-link">{label}</span>
-            </li>
-          </a>
-        </Link>
-      ))}
-    </ul>
-  </div>
+
+    <div className="container bg-container">
+      <div className="row">
+        <div className="col-12">
+          <ul className="portfolio-cards-plate">
+            {portfolio.map(({ key, id, label, img, company }) => (
+              <Link href={`/proekti/${id}`} key={key}>
+                <li className="card-container">
+                  <a className="portfolio-card">
+                    <div className="img-container">
+                      <img
+                        src={`../static/images/${img}`}
+                        alt={(company, label)}
+                        className="portfolio-img"
+                      />
+                    </div>
+                    <span className="portfolio-link">{label}</span>
+                    <span className="portfolio-company">{company}</span>
+                  </a>
+                </li>
+              </Link>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div className="container">
+      <div className="row">
+        <div className="col-12">
+          <div className="button-grey-container">
+            <a href="#" className="button-grey">
+              <span>Портфолио</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 );
 
 export default PortfolioLinks;

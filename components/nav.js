@@ -8,7 +8,7 @@ const Nav = () => (
     <Link href="/">
       <a className="navbar-brand">
         <img
-          src="../../static/images/logo-grey.png"
+          src="../../static/images/logo-white.png"
           title="Перейти на главную"
           alt="Логотип Газовые Машины"
         />
@@ -41,7 +41,9 @@ const Nav = () => (
         ))}
         <li className="nav-item">
           <Link href="/calculator" as="/calculator">
-            <a className="nav-link nav-calc-link">калькулятор</a>
+            <a className="nav-link nav-calc-link">
+              <span>калькулятор</span>
+            </a>
           </Link>
         </li>
       </ul>
