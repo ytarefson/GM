@@ -5,8 +5,8 @@ import "../../scss/rasgen/mirovayaPraktika.scss";
 export default MirovayaPraktika => (
   <div className="container-fluid mirovayaPraktika">
     <div className="mycontainer ">
-      <h2 className="header-common">Мировая практика</h2>
-      <span className="subheading-red-bottom">доля малой энергетики</span>
+      <h2 className="header-sections">Мировая практика</h2>
+      {/* <span className="subheading-red-bottom">доля малой энергетики</span> */}
       <p className="text-min pl-3 pr-3">
         Распределенная генерация, которую часто называют еще термином малая
         энергетика, составляет на данный момент около 5% от общей выработки

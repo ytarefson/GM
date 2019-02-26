@@ -25,6 +25,7 @@ export default MainAdv => (
           </div>
         </div>
         <div className="col-12 col-md-6">
+          <div className="promo-fon" />
           <div className="img-container">
             <img
               src="../static/images/about-2.jpg"

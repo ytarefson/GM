@@ -61,6 +61,38 @@
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+  .energyDecisions {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: url("/static/images/mini-map.png") -20% 39% no-repeat;
+    & .container {
+      & .row {
+        & .cards-plate {
+          margin-top: 45px;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          grid-gap: 30px;
+          & .smart-card-container {
+            text-align: center;
+            & .smart-card {
+              & .card-img-container {
+                bottom: 0;
+                position: relative;
+                width: 100%;
+                & .icon {
+                  bottom: 0;
+                  left: 25%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -74,17 +106,35 @@
     & .container {
       & .row {
         & .cards-plate {
-          margin-top: 45px;
+          margin-top: 60px;
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: auto auto;
           grid-gap: 30px;
+          grid-row-gap: 60px;
           & .smart-card-container {
             text-align: center;
             & .smart-card {
+              & .card-img-container {
+                bottom: 0;
+                position: relative;
+                & .icon {
+                  position: relative;
+                  display: block;
+                  top: -10px;
+                  left: 50%;
+                  //margin: 0 auto;
+                  transform: translateX(-50%);
+                }
+              }
               & .text-container {
                 & .card-heading {
-                  font-size: 20px;
+                  margin-top: 0;
+                  font-size: 24px;
+                  color: #7e7e7e;
+                }
+                & .card-desc {
+                  font-size: 16px;
                 }
               }
             }
@@ -101,6 +151,53 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .energyDecisions {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 90px;
+    padding-bottom: 180px;
+    background: url("/static/images/bg-map-left.png") 0% 60% no-repeat,
+      url("/static/images/bg-map-right.png") 100% 65% no-repeat;
+    & .container {
+      & .row {
+        & .cards-plate {
+          margin-top: 60px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: auto;
+          grid-gap: 30px;
+          grid-row-gap: 60px;
+          & .smart-card-container {
+            text-align: center;
+            & .smart-card {
+              & .card-img-container {
+                bottom: 0;
+                position: relative;
+                & .icon {
+                  position: relative;
+                  display: block;
+                  top: -10px;
+                  left: 50%;
+                  //margin: 0 auto;
+                  transform: translateX(-50%);
+                }
+              }
+              & .text-container {
+                & .card-heading {
+                  margin-top: 0;
+                  font-size: 23px;
+                  color: #7e7e7e;
+                }
+                & .card-desc {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {

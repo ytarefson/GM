@@ -120,12 +120,13 @@ b {
 }
 .header-common {
   font-family: $noto-font;
-  color: #353535;
+  color: #7e7e7e;
   display: block;
   font-size: 15px;
   font-weight: 500;
   line-height: 24px;
   text-align: center;
+  margin-top: 30px;
 }
 ///////////////////////////////////
 .header-red {
@@ -152,7 +153,7 @@ b {
 
 .header-min-colored {
   font-family: $molot-font;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.2px;
   color: $accent-red;
@@ -161,6 +162,18 @@ b {
     font-weight: 700;
   }
 }
+.header-sections {
+  font-family: $noto-font;
+  color: #7e7e7e;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .subheading-common {
   display: block;
   font-family: $noto-font;
@@ -268,7 +281,7 @@ b {
 .breadcrumbs {
   margin-top: 30px;
   margin-left: 15px;
-
+  font-family: $molot-font;
   & .crambs {
     font-size: 13px;
     font-weight: 500;
@@ -288,7 +301,7 @@ b {
   width: 100%;
 }
 .color-section {
-  background: $yel-red-gradient;
+  background: $new-gradient;
 }
 .white-section {
   background-color: #fff;
@@ -316,6 +329,13 @@ b {
     font-weight: 700;
     line-height: 32px;
   }
+  .header-sections {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -325,11 +345,18 @@ b {
     line-height: 30px;
     //margin-bottom: 30px;
   }
+  .header-sections {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
   .header-red {
     font-size: 26px;
   }
   .header-min-colored {
-    font-size: 22px;
+    font-size: 23px;
     letter-spacing: -0.2px;
   }
   .subheading-common {
@@ -368,11 +395,10 @@ b {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .header-common {
-    font-size: 36px;
-    line-height: 44px;
-    &::after {
-      top: 23px;
-    }
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .tm-cont {
     display: flex;
@@ -385,7 +411,7 @@ b {
     line-height: 32px;
   }
   .header-min-colored {
-    font-size: 26px;
+    font-size: 27px;
     letter-spacing: -0.2px;
   }
   .subheading-common {
@@ -451,12 +477,30 @@ b {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .button-grey-container {
+    margin-top: 30px;
+    & .button-grey {
+      border-radius: 3px;
+      background-color: $accent-red;
+      color: #ffffff;
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 40px;
+    }
+  }
   .mycontainer {
     max-width: 1140px;
   }
   .header-common {
     font-size: 36px;
     // line-height: 44px;
+  }
+  .header-sections {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 45px;
+    margin-bottom: 30px;
   }
   .header-razdel {
     font-size: 36px;
@@ -517,9 +561,7 @@ b {
     margin-left: 15px;
 
     & .crambs {
-      font-size: 18px;
-      font-weight: 500;
-      //text-transform: uppercase;
+      font-size: 19px;
       padding-right: 3px;
       color: #3f3f3f;
       letter-spacing: 0.2px;

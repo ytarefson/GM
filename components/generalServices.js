@@ -6,11 +6,12 @@ import "../scss/generalServices.scss";
 export default GeneralServices => (
   <div className="container-fluid generalServices">
     <div className="dots-left" />
+    <div className="dots-right" />
     <div className="container">
       <div className="row">
         <div className="col-12">
           <div className="text-container">
-            <h3 className="header-min-colored ">
+            <h3 className="header-min-colored">
               Проектирование, производство и обслуживание <br />
               <span className="dark-color">газопоршневых электростанций</span>
             </h3>

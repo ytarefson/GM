@@ -117,12 +117,15 @@
       transform: translateY(-50%);
     }
     & .product-energy {
+      //font-family: $molot-font;
+      font-size: 17px;
+      font-weight: 900;
+      //letter-spacing: 2px;
       z-index: 1;
-      color: white;
+      color: #fafafa;
       margin: 15px 0 15px auto;
       background-color: $accent-red;
       display: block;
-      font-weight: 900;
       padding: 5px 15px;
       //width: auto;
       border-radius: 30px;
@@ -223,14 +226,10 @@
         }
         & .product-energy {
           z-index: 1;
-          color: white;
           margin: 0px 0 0px auto;
           background-color: $accent-red;
           display: block;
-          font-weight: 900;
           padding: 5px 15px;
-          //width: auto;
-          border-radius: 30px;
           border: 2px solid white;
         }
       }

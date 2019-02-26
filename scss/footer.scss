@@ -25,8 +25,8 @@
     font-family: $molot-font;
     display: block;
     width: 100%;
-    padding-left: 7px;
-    color: #ffffff;
+    color: #fafafa;
+    letter-spacing: 1px;
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 15px;
@@ -34,7 +34,7 @@
   }
   & .link-1 {
     display: block;
-    padding-left: 10px;
+
     color: white;
   }
   & .adres-list {
@@ -44,26 +44,30 @@
 
     margin-bottom: 15px;
     & li {
+      padding: 0;
       //margin-bottom: 10px;
     }
     & .adres-map-link {
       width: 100%;
       color: #ffffff;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 700;
-      line-height: 24px;
+      line-height: 26px;
       // font-family: 'Noto Sans';
       font-weight: 700;
-      letter-spacing: -0.5px;
+      letter-spacing: 2px;
     }
     & .adres-phones {
       width: 100%;
       display: block;
       & .phone-link {
+        font-family: $molot-font;
         display: block;
         margin: 0 auto;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 23px;
+        letter-spacing: 1px;
+        line-height: 30px;
         color: #ffffff;
       }
       & .phone-link-big {
@@ -83,8 +87,8 @@
       font-family: $molot-font;
       display: block;
       width: 100%;
-      padding-left: 7px;
-      color: #ffffff;
+      color: #fafafa;
+      letter-spacing: 1px;
       font-size: 24px;
       line-height: 30px;
       text-transform: uppercase;
@@ -95,6 +99,8 @@
       display: flex;
       flex-direction: column;
       & .link-map-item {
+        padding: 0;
+        margin-bottom: 5px;
         & .link-map-link {
           display: block;
           color: #ffffff;
@@ -171,6 +177,7 @@
   .footer {
     & .adres-list {
       text-align: left;
+
       & .adres-map-link {
         font-size: 20px;
       }
@@ -243,9 +250,10 @@
             display: block;
             color: #ffffff;
             width: 100%;
+            font-weight: 300;
             text-align: left;
             font-size: 16px;
-            line-height: 34px;
+            line-height: 26px;
           }
         }
       }

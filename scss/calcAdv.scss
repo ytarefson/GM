@@ -260,6 +260,121 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .calcAdv {
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    border-top: 5px solid #dcdcdc;
+    border-bottom: 5px solid #dcdcdc;
+    z-index: 0;
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      z-index: 1;
+      top: 50%;
+      left: -20px;
+      width: 250px;
+      height: 285px;
+      transform: translateY(-50%);
+      border: 15px solid rgba(255, 255, 255, 0.5);
+      clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
+    }
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      z-index: 1;
+      top: 50%;
+      right: -20px;
+      width: 250px;
+      height: 285px;
+      transform: translateY(-50%);
+      //border-radius: 3px;
+      clip-path: polygon(5% 0, 100% 0, 100% 100%, 6% 100%, 0 50%);
+      border: 15px solid rgba(255, 255, 255, 0.5);
+    }
+    & .dots-right {
+      position: absolute;
+      display: block;
+      width: 460px;
+      height: 560px;
+      top: -60%;
+      right: 0;
+      opacity: 0.1;
+      background: url("/static/images/dots-big-white.png") 0% 0% no-repeat;
+    }
+    & .dots-left {
+      position: absolute;
+      display: block;
+      width: 460px;
+      height: 560px;
+      left: 0;
+      bottom: -60%;
+      opacity: 0.1;
+      background: url("/static/images/dots-big-white.png") 0% 0% no-repeat;
+    }
+    & .arrow-left-yellow {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 0;
+      width: 350px;
+      height: 437px;
+      transform: translateY(-50%);
+      clip-path: polygon(0 0, 92% 0, 100% 45%, 92% 100%, 0 100%);
+      border-radius: 3px;
+      background-color: #d57c29;
+      //background: url("/static/images/dots-min.png") 0% 0% no-repeat, #d57c29;
+    }
+    & .arrow-right-red {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      right: 0px;
+      width: 350px;
+      height: 437px;
+      transform: translateY(-50%);
+      clip-path: polygon(8% 0, 100% 0, 100% 100%, 8% 100%, 0 50%);
+      border-radius: 3px;
+      background-color: #c42729;
+    }
+    & .calcAdv-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      height: 510px;
+
+      & .row {
+        & .col-12 {
+          & .wrapper {
+            max-width: 580px;
+            margin: 0 auto;
+            & .header-min-colored {
+              font-size: 36px;
+              margin-bottom: 45px;
+              text-align: center;
+            }
+            & .calc-desc {
+              text-align: center;
+              display: block;
+              color: #444444;
+              font-family: $noto-font;
+              font-size: 22px;
+              font-weight: 500;
+              line-height: 30px;
+              margin-bottom: 30px;
+            }
+            & .calc-link {
+            }
+          }
+        }
+      }
+    }
+  }
 }
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {

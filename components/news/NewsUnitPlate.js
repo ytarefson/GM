@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Head from '../../components/head';
-import '../../scss/news/newsUnitPlate.scss';
-var Parser = require('html-react-parser');
+import React, { Component } from "react";
+import Head from "../../components/head";
+import "../../scss/news/newsUnitPlate.scss";
+var Parser = require("html-react-parser");
 
 export class NewsListPlate extends Component {
   render() {
@@ -11,8 +11,9 @@ export class NewsListPlate extends Component {
     return (
       <div>
         <Head
-          title={`Детальная новость - ${data.label}`}
-          description='Подбробная информация о деятельности компании ООО "Газовые машины"'
+          title={`${data.label}`}
+          // description='Подбробная информация о деятельности компании ООО "Газовые машины"'
+          description={`Новости компании "Газовые машины". ${data.label}`}
         />
         <div className="news-unit-plate">
           <div className="big-new">

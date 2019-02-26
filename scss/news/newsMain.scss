@@ -1,8 +1,8 @@
 @import "../vars";
 
 .bg-color {
-  margin-top: 15px;
-  background-color: rgb(243, 243, 243);
+  //margin-top: 15px;
+  //background-color: rgb(243, 243, 243);
   padding-top: 15px;
   padding-bottom: 15px;
   //box-shadow: 0px 65px 100px -55px rgba(0, 0, 0, 0.1);
@@ -17,42 +17,44 @@
   position: relative;
   background-color: #fafafa;
   z-index: 0;
-  &:after {
-    position: absolute;
-    z-index: -1;
-    display: block;
-    content: "";
-    width: 33%;
-    min-width: 90px;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0%;
-    background-color: rgb(255, 255, 255);
-    clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
-  }
-  &:before {
-    position: absolute;
-    z-index: -1;
-    display: block;
-    content: "";
-    width: 33%;
-    min-width: 90px;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0%;
+  // &:after {
+  //   position: absolute;
+  //   z-index: -1;
+  //   display: block;
+  //   content: "";
+  //   width: 33%;
+  //   min-width: 90px;
+  //   height: 100%;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0%;
+  //   background-color: rgb(255, 255, 255);
+  //   clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+  // }
+  // &:before {
+  //   position: absolute;
+  //   z-index: -1;
+  //   display: block;
+  //   content: "";
+  //   width: 33%;
+  //   min-width: 90px;
+  //   height: 100%;
+  //   top: 0;
+  //   bottom: 0;
+  //   right: 0%;
 
-    background-color: rgb(242, 242, 242);
-    clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
-  }
+  //   background-color: rgb(242, 242, 242);
+  //   clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
+  // }
   & .razdel-name {
+    font-family: $molot-font;
     display: block;
     color: rgb(170, 170, 170);
     //text-shadow: 3px 3px 18px rgba(0, 0, 0, 0.15);
     font-weight: 700;
     padding-left: 16px;
     padding-top: 15px;
+    letter-spacing: 4px;
   }
   & .section-plate {
     display: block;

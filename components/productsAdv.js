@@ -5,9 +5,10 @@ import "../scss/productsAdv.scss";
 export default ProductsAdv => (
   <div className="container-fluid productsAdv">
     <div className="dots-left" />
+    <div className="dots-right" />
     <div className="container">
       <div className="row">
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 col-xl-4 offset-xl-1">
           <span className="header-min-colored">
             Наша <span className="dark-color"> продукция:</span>
           </span>
@@ -21,7 +22,7 @@ export default ProductsAdv => (
             предпринимательства.
           </p>
         </div>
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 offset-xl-1">
           <div className="p-cards-plate">
             <div className="p-card">
               <span className="title">
@@ -43,7 +44,7 @@ export default ProductsAdv => (
               <div className="img-container">
                 <img
                   src="/static/images/products/M700.jpg"
-                  title="Газопоршневая станция Liebher 1000"
+                  title="Газопоршневая станция MTU 700"
                   alt="Liebher 1000"
                   className="p-img"
                 />
@@ -56,7 +57,7 @@ export default ProductsAdv => (
               <div className="img-container">
                 <img
                   src="/static/images/products/Y300.jpg"
-                  title="Газопоршневая станция Liebher 1000"
+                  title="Газопоршневая станция ЯМЗ 300"
                   alt="Liebher 1000"
                   className="p-img"
                 />
@@ -69,7 +70,7 @@ export default ProductsAdv => (
               <div className="img-container">
                 <img
                   src="/static/images/products/M2020.jpg"
-                  title="Газопоршневая станция Liebher 1000"
+                  title="Газопоршневая станция MTU 2020"
                   alt="Liebher 1000"
                   className="p-img"
                 />
@@ -77,7 +78,7 @@ export default ProductsAdv => (
             </div>
           </div>
           <div className="button-grey-container">
-            <a href="#" className="button-grey">
+            <a href="/products" className="button-grey">
               {" "}
               <span>каталог</span>{" "}
             </a>

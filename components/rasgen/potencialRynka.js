@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import Lightbox from 'react-image-lightbox';
-import '../../scss/rasgen/potencialRynka.scss';
+import React, { Component } from "react";
+import Lightbox from "react-image-lightbox";
+import "../../scss/rasgen/potencialRynka.scss";
 
 const images = [
-  '../../static/images/potential-1.jpg',
-  '../../static/images/potential-2.jpg'
+  "../../static/images/potential-1.jpg",
+  "../../static/images/potential-2.jpg"
 ];
 export class PotencialRynka extends Component {
   constructor(props) {
@@ -21,8 +21,8 @@ export class PotencialRynka extends Component {
     return (
       <div className="container-fluid potencialRynka">
         <div className="mycontainer">
-          <h2 className="header-common">Потенциал Российского рынка</h2>
-          <span className="subheading-red-bottom">Новые возможности</span>
+          <h2 className="header-sections">Потенциал Российского рынка</h2>
+          {/* <span className="subheading-red-bottom">Новые возможности</span> */}
           <p className="text-min pl-3 pr-3">
             Потенциал Российского рынка малых генерирующих мощностей огромен. Он
             определяется в первую очередь отсутствием реальной конкуренции на
@@ -41,7 +41,7 @@ export class PotencialRynka extends Component {
             излишки продать в сеть. В России не мало также энергодефицитных
             районов. Стоимость подключения дополнительных мощностей зачастую
             может достигать значений существенно превышающих внедрения
-            оборудования распределенной генерации.{' '}
+            оборудования распределенной генерации.{" "}
           </p>
           <div className="row m-0">
             <div className="col-12 col-md-6 order-md-2">

@@ -50,8 +50,8 @@ const PortfolioLinks = () => (
         <div className="col-12">
           <ul className="portfolio-cards-plate">
             {portfolio.map(({ key, id, label, img, company }) => (
-              <Link href={`/proekti/${id}`} key={key}>
-                <li className="card-container">
+              <li key={key} className="card-container">
+                <Link href={`/proekti/${id}`}>
                   <a className="portfolio-card">
                     <div className="img-container">
                       <img
@@ -63,8 +63,8 @@ const PortfolioLinks = () => (
                     <span className="portfolio-link">{label}</span>
                     <span className="portfolio-company">{company}</span>
                   </a>
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -75,7 +75,7 @@ const PortfolioLinks = () => (
       <div className="row">
         <div className="col-12">
           <div className="button-grey-container">
-            <a href="#" className="button-grey">
+            <a href="/projects" className="button-grey">
               <span>Портфолио</span>
             </a>
           </div>

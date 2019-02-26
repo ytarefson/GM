@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import Head from '../components/head';
+import React, { Component } from "react";
+import Head from "../components/head";
 
-import '../scss/about.scss';
-import Layout from '../components/Layout';
-import Lightbox from 'react-image-lightbox';
+import "../scss/about.scss";
+import Layout from "../components/Layout";
+import Lightbox from "react-image-lightbox";
 // Yandex Maps
-import { YMaps, Map, Placemark } from 'react-yandex-maps';
+import { YMaps, Map, Placemark } from "react-yandex-maps";
 
 const images = [
-  '../static/images/about-1.jpg',
-  '../static/images/about-2.jpg',
-  '../static/images/about-3.jpg'
+  "../static/images/about-1.jpg",
+  "../static/images/about-2.jpg",
+  "../static/images/about-3.jpg"
 ];
 
 export class About extends Component {
@@ -195,9 +195,9 @@ export class About extends Component {
                 <div
                   className="myMap"
                   style={{
-                    width: '100%',
-                    height: '100%',
-                    position: 'relative'
+                    width: "100%",
+                    height: "100%",
+                    position: "relative"
                   }}
                 >
                   <YMaps>
@@ -218,7 +218,7 @@ export class About extends Component {
           </div>
           <div className="container-fluid">
             <div className="mycontainer pl-3 pr-3">
-              <h2 className="header-common pl-0">Сертификаты</h2>
+              <h2 className="header-sections pl-0">Сертификаты</h2>
               <div className="certs">
                 <a
                   className="d-flex certs-card"
@@ -318,10 +318,8 @@ export class About extends Component {
             <div className="mycontainer">
               <div className="row m-0">
                 <div className="col-12">
-                  <h2 className="header-common pl-0">Направления</h2>
-                  <span className="subheading-red-bottom pl-0">
-                    Полный цикл производства
-                  </span>
+                  <h2 className="header-sections pl-0">Направления</h2>
+
                   <p className="text-min">
                     Кроме производства мини-ТЭС мы осуществляем поставку,
                     трансформаторных подстанций, КРУ, и прочего вспомогательного

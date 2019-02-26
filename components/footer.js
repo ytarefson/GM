@@ -20,7 +20,7 @@ const Footer = () => (
             ))}
           </ul>
         </div>
-        <div className="col-12 col-md-6 col-lg-6 link-map">
+        <div className="col-12 col-md-6 col-lg-5 link-map">
           <span className="link-map-header">Услуги:</span>
           <ul className="link-map-list">
             {serviceList.map(item => (
@@ -32,9 +32,9 @@ const Footer = () => (
             ))}
           </ul>
         </div>
-        <div className="col-12 col-md-6 col-lg-3 order-1">
+        <div className="col-12 col-md-6 col-lg-4">
           <Link href="/">
-            <a className="footer-logo-container">
+            <a className="footer-logo-container d-none">
               <img
                 src="../../static/images/logo-big.png"
                 className="footer-logo"
@@ -47,10 +47,10 @@ const Footer = () => (
             <li>
               <a
                 href="https://yandex.ru/maps/-/CBFyIKsQPB"
-                className="adres-map-link"
+                className="adres-map-link pb-3"
                 target="_blank"
               >
-                РОССИЯ, Ярославль,
+                Россия, Ярославль,
                 <br />
                 пр-т.&nbsp;Авиаторов-155
               </a>
@@ -61,10 +61,10 @@ const Footer = () => (
                   href="tel:+74852260368"
                   className="phone-link phone-link-big"
                 >
-                  +7 (4852) 26-03-68
+                  +7 <bold className="text-black">(4852)</bold> 26-03-68
                 </a>
                 <a href="tel:+74852267960" className="phone-link">
-                  +7 (4852) 26-79-60
+                  +7 <bold className="text-black">(4852)</bold> 26-79-60
                 </a>
               </div>
             </li>
