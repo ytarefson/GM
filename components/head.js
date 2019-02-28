@@ -3,7 +3,7 @@ import NextHead from 'next/head';
 import { string } from 'prop-types';
 
 const defaultDescription = '';
-const defaultOGURL = 'gmenergo.ru';
+const defaultOGURL = 'http://gmenergo.ru';
 const defaultOGImage = '../static/images/banner.jpg';
 
 const Head = props => (
@@ -49,7 +49,7 @@ const Head = props => (
       href="http://gmenergo.ru/static/images/favicon/safari-pinned-tab.svg"
       color="#5bbad5"
     />
-
+    <meta property="og:type" content={props.url || defaultOGURL} />
     <meta property="og:url" content={props.url || defaultOGURL} />
     <meta property="og:title" content={props.title || ''} />
     <meta

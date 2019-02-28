@@ -1,7 +1,7 @@
-import React from "react";
-import Layout from "../components/Layout";
-import FormPage from "../components/form";
-import ServiceUnitPlate from "../components/services/ServiceUnitPlate";
+import React from 'react';
+import Layout from '../components/Layout';
+import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
+import FormPage from '../components/form';
 
 const RacshetEcoEff = serviceName => (
   <Layout>

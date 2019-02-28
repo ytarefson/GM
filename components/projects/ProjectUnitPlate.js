@@ -1,9 +1,8 @@
-import React, { Component } from "react";
-import Head from "../../components/head";
-import Link from "../Link";
-import Video from "../Video";
-import FormPage from "../form";
-import "../../scss/projects/ProjectsUnitPlate.scss";
+import React, { Component } from 'react';
+import Head from '../../components/head';
+import Link from '../Link';
+import Video from '../Video';
+import '../../scss/projects/ProjectsUnitPlate.scss';
 
 export class ProjectUnitPlate extends Component {
   render() {
@@ -78,7 +77,7 @@ export class ProjectUnitPlate extends Component {
             <div className="row">
               <div className="col-12">
                 <h4 className="header-min-colored pb-1">
-                  Описание проекта -{" "}
+                  Описание проекта -{' '}
                   <span className="dark-color">{project.label}</span>
                 </h4>
                 <p className="text">{project.description}</p>
