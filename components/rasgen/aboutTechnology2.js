@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Lightbox from 'react-image-lightbox';
+import React, { Component } from "react";
+import Lightbox from "react-image-lightbox";
 
 export class AboutTechnology2 extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ export class AboutTechnology2 extends Component {
     const { photoIndex, isOpen } = this.state;
     return (
       <div className="container-fluid aboutTechnology">
-        <div className="mycontainer mt-5">
+        <div className="mycontainer">
           <div className="row m-0">
             <div className="col-12 col-md-6">
               <div className="img-container">

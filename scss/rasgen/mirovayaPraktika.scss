@@ -27,7 +27,8 @@
         flex-direction: column;
         align-items: center;
         & .col-pic {
-          background: #cab4b4;
+          //background: rgb(199, 39, 39);
+          background-color: $accent-red;
           width: 50%;
           margin-bottom: 20px;
           position: relative;
@@ -38,7 +39,7 @@
             position: absolute;
             width: 160%;
             height: 22px;
-            background: radial-gradient(#d1d1d1 0%, #ffffff 100%);
+            background: radial-gradient(#c9c9c9 0%, #ffffff 100%);
             //background-color: rgba(173, 173, 173, 0.3);
             border-radius: 50%;
             filter: blur(3px);
@@ -71,14 +72,15 @@
           font-family: $noto-font;
           font-size: 10px;
           letter-spacing: 0.5px;
-          font-weight: 700;
+          font-weight: 900;
+          color: #353535;
         }
         & .col-percent {
           font-family: $noto-font;
           font-size: 10px;
           letter-spacing: -0.5px;
-          color: $accent-red;
-          font-weight: 700;
+          color: rgb(199, 39, 39);
+          font-weight: 900;
         }
       }
     }
@@ -98,7 +100,6 @@
         width: 20%;
         & .graph-col {
           & .col-heading {
-            font-family: $noto-font;
             font-size: 12px;
           }
           & .col-percent {
@@ -128,13 +129,13 @@
         & .graph-col {
           & .col-heading {
             //margin-top: 40px;
-            font-family: $noto-font;
+
             font-size: 16px;
           }
           & .col-percent {
             margin-top: 5px;
             font-family: $noto-font;
-            font-size: 16px;
+            font-size: 18px;
             letter-spacing: -0.5px;
           }
           & .col-pic-1 {
