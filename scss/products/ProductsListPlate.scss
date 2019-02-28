@@ -83,10 +83,10 @@
         max-width: 230px;
         width: 100%;
         height: 245px;
-        box-shadow: $box-shadow-up;
+        box-shadow: $box-shadow;
         transition: box-shadow 0.2s ease-out;
         &:hover {
-          box-shadow: $box-shadow;
+          box-shadow: $box-shadow-up;
         }
         & .img-container {
           display: flex;

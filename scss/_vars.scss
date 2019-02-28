@@ -2,7 +2,7 @@ $noto-font: "MuseoSans", sans-serif;
 $molot-font: "Molot", serif;
 $accent: #b3a764;
 //$accent-red: #d24a43;
-$accent-red: #c42729;
+$accent-red: #f53d40;
 $orange-color: #d57d29;
 $accent-dark: #3f3f3f;
 $sub-color: #9b9b9b;
@@ -16,8 +16,8 @@ $new-gradient: linear-gradient(
 );
 $yel-red-gradient: linear-gradient(to right, #eecf32 0%, #c22328 100%);
 $red-gradient: linear-gradient(to left, #dc4622 0%, #b63b1d 100%);
-$box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-$box-shadow-up: 5px 10px 20px rgba(0, 0, 0, 0.1);
+$box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+$box-shadow-up: 5px 23px 20px -15px rgba(0, 0, 0, 0.3);
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;

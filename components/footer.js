@@ -6,9 +6,23 @@ import "../scss/footer.scss";
 
 const Footer = () => (
   <footer className="footer">
+    <div className="gaz-mash" />
+    <div className="dots-right" />
+    <div className="white-stripe" />
     <div className="container">
       <div className="row m-0">
-        <div className="col-12 col-md-6 col-lg-3 link-map">
+        <div className="col-12">
+          <Link href="/">
+            <a className="footer-logo-container">
+              <img
+                src="../../static/images/logo-big.png"
+                className="footer-logo"
+                alt="ООО Газовые Машины"
+              />
+            </a>
+          </Link>
+        </div>
+        <div className="col-12 col-sm-6 col-lg-3 link-map">
           <span className="link-map-header">Карта сайта:</span>
           <ul className="link-map-list">
             {menu.map(({ key, href, label, as }) => (
@@ -20,7 +34,7 @@ const Footer = () => (
             ))}
           </ul>
         </div>
-        <div className="col-12 col-md-6 col-lg-5 link-map">
+        <div className="col-12 col-sm-6 col-lg-5 link-map">
           <span className="link-map-header">Услуги:</span>
           <ul className="link-map-list">
             {serviceList.map(item => (
@@ -33,15 +47,6 @@ const Footer = () => (
           </ul>
         </div>
         <div className="col-12 col-md-6 col-lg-4">
-          <Link href="/">
-            <a className="footer-logo-container d-none">
-              <img
-                src="../../static/images/logo-big.png"
-                className="footer-logo"
-                alt="ООО Газовые Машины"
-              />
-            </a>
-          </Link>
           <span className="contacts-header">Контакты:</span>
           <ul className="adres-list">
             <li>
@@ -61,10 +66,10 @@ const Footer = () => (
                   href="tel:+74852260368"
                   className="phone-link phone-link-big"
                 >
-                  +7 <bold className="text-black">(4852)</bold> 26-03-68
+                  +7 <b className="text-grey">(4852)</b> 26-03-68
                 </a>
                 <a href="tel:+74852267960" className="phone-link">
-                  +7 <bold className="text-black">(4852)</bold> 26-79-60
+                  +7 <b className="text-grey">(4852)</b> 26-79-60
                 </a>
               </div>
             </li>
@@ -79,18 +84,20 @@ const Footer = () => (
           <span className="link-1">пн-пт: 9:00-18:00</span>
         </div>
       </div>
-      <div className="rights-reserved">
-        2006 - 2019 ООО "Газовые машины" &copy; Все права защищены.
-      </div>
     </div>
     <div className="intersell">
       <a href="http://intersell.su/" className="interlink">
+        <div className="text-container">
+          <span className="logo-description">Создание сайта</span>
+          <span className="logo-name">intersell.su</span>
+        </div>
         <div className="logo-cont">
           <span className="logo">IS</span>
         </div>
-        <span className="logo-name">intersell.su</span>
-        <span className="logo-description">Создание сайта</span>
       </a>
+    </div>
+    <div className="rights-reserved">
+      2006 - 2019 ООО "Газовые машины" &copy; Все права защищены.
     </div>
   </footer>
 );

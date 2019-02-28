@@ -44,57 +44,64 @@ class FormPage extends React.Component {
   render() {
     const product = this.props.product;
     return (
-      <div class="container-fluid form-bg">
-        <div className="mycontainer section-plate mt-5 p-0">
-          <form className="forma" onSubmit={this.handleSubmit}>
-            <div className="form-group row m-0">
-              <div className="col-12 col-md-6 col-xl-5 p-0 colform">
-                <div className="form-context">
-                  {/* <label className="text-common" htmlFor="userEmail">
-              Введите e-mail:{' '}
-						</label> */}
-                  <p className="text-common form-cta-title">
-                    Заинтересовал продукт или услуга?
-                  </p>
-                  <p className="text-common form-cta-text">
-                    оставьте Ваши контакты, и наши специалисты проконсультируют
-                    вас в удобное время!
-                  </p>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-xl-7 p-0 colform">
-                <input
-                  onChange={this.handleChangeEmail}
-                  type="email"
-                  className="userEmail text-common"
-                  id="userEmail"
-                  aria-describedby="emailHelp"
-                  placeholder="Введите e-mail:"
-                  required
-                />
-                <input
-                  onChange={this.handleChangePhone}
-                  type="phone"
-                  className="userEmail text-common"
-                  id="userPhone"
-                  aria-describedby="phoneHelp"
-                  placeholder="Введите номер для связи:"
-                  required
-                />
+      <div className="container-fluid form-bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <form className="forma" onSubmit={this.handleSubmit}>
+                <div className="dots-left" />
+                <div className="form-group">
+                  <div className="form-left colform">
+                    <div className="form-context">
+                      {/* <label className="text-common" htmlFor="userEmail">
+								Введите e-mail:{' '}
+							</label> */}
+                      <p className="text-common form-cta-title">
+                        Заинтересовал продукт или услуга?
+                      </p>
+                      <p className="text-common form-cta-text">
+                        оставьте Ваши контакты, и наши специалисты
+                        проконсультируют вас в удобное время!
+                      </p>
+                    </div>
+                  </div>
+                  <div className="form-right colform">
+                    <input
+                      onChange={this.handleChangeEmail}
+                      type="email"
+                      className="userEmail text-common"
+                      id="userEmail"
+                      aria-describedby="emailHelp"
+                      placeholder="Введите e-mail:"
+                      required
+                    />
+                    <input
+                      onChange={this.handleChangePhone}
+                      type="phone"
+                      className="userEmail text-common"
+                      id="userPhone"
+                      aria-describedby="phoneHelp"
+                      placeholder="Введите номер для связи:"
+                      required
+                    />
 
-                {/* <input
-              type="datetime-local"
-              className="callTime"
-              id="callTime"
-              placeholder="Введите время удобное для связи"
-            /> */}
-                <button className="form-button">Заказать консультацию</button>
-                <p className="form-cta-text-2">
-                  или свяжитесь с нами любым удобным способом
-                </p>
-              </div>
+                    {/* <input
+								type="datetime-local"
+								className="callTime"
+								id="callTime"
+								placeholder="Введите время удобное для связи"
+							/> */}
+                    <button className="form-button">
+                      Заказать консультацию
+                    </button>
+                    <p className="form-cta-text-2">
+                      или свяжитесь с нами любым удобным способом
+                    </p>
+                  </div>
+                </div>
+              </form>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     );

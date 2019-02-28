@@ -59,11 +59,12 @@
             }
             & .project-card-city {
               //color: rgb(255, 0, 0);
+              font-family: $molot-font;
               font-size: 15px;
               line-height: 22px;
               font-weight: 700;
               letter-spacing: 1.5px;
-              text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+              //text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
             }
           }
         }
@@ -358,10 +359,10 @@
                 font-weight: 700;
                 letter-spacing: 0.5px;
                 padding-bottom: 0px;
-                color: rgb(219, 219, 219);
               }
               & .project-card-city {
                 //color: rgb(255, 0, 0);
+                color: rgb(219, 219, 219);
                 font-size: 15px;
                 line-height: 22px;
                 font-weight: 300;

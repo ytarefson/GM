@@ -105,7 +105,6 @@
               color: #ffffff;
               box-shadow: $box-shadow;
               &::before {
-                width: 0;
               }
             }
             &:active {
@@ -221,7 +220,7 @@
               border-radius: 3px;
               background-image: $new-gradient;
               color: #ffffff;
-              font-size: 14px;
+              font-size: 15px;
               letter-spacing: 0.5px;
               line-height: 40px;
               margin: 0 auto;
@@ -236,7 +235,6 @@
                 color: #ffffff;
                 box-shadow: $box-shadow;
                 &::before {
-                  width: 0;
                 }
               }
               &:active {
@@ -323,7 +321,7 @@
       width: 350px;
       height: 437px;
       transform: translateY(-50%);
-      clip-path: polygon(0 0, 92% 0, 100% 45%, 92% 100%, 0 100%);
+      clip-path: polygon(0 0, 88% 0, 100% 45%, 88% 100%, 0 100%);
       border-radius: 3px;
       background-color: #d57c29;
       //background: url("/static/images/dots-min.png") 0% 0% no-repeat, #d57c29;
@@ -337,7 +335,7 @@
       width: 350px;
       height: 437px;
       transform: translateY(-50%);
-      clip-path: polygon(8% 0, 100% 0, 100% 100%, 8% 100%, 0 50%);
+      clip-path: polygon(12% 0, 100% 0, 100% 100%, 12% 100%, 0 50%);
       border-radius: 3px;
       background-color: #c42729;
     }
@@ -369,6 +367,55 @@
               margin-bottom: 30px;
             }
             & .calc-link {
+              position: relative;
+              font-family: $molot-font;
+              padding: 0;
+              display: block;
+              font-weight: 700;
+              width: 270px;
+              height: 60px;
+              border-radius: 3px;
+              background-image: $new-gradient;
+              color: #ffffff;
+              font-size: 21px;
+              letter-spacing: 1px;
+              line-height: 60px;
+              margin: 0 auto;
+              text-align: center;
+              transform: skewX(-10deg);
+              box-shadow: 10px 20px 30px -15px rgba(237, 27, 61, 0.55),
+                -10px 20px 30px -15px rgba(242, 125, 14, 0.55);
+              transition: box-shadow 0.2s;
+              &::before {
+                position: absolute;
+                display: block;
+                content: "";
+                top: 7px;
+                left: 7px;
+                right: 7px;
+                bottom: 7px;
+                border-radius: 3px;
+                border: 2px solid white;
+                transition: all 0.2s ease-in 0.2s;
+              }
+              &:hover {
+                box-shadow: $box-shadow;
+                &::before {
+                  top: 12px;
+                  left: 25px;
+                  right: 25px;
+                  bottom: 12px;
+                  //border-radius: 30px;
+                  opacity: 0;
+                }
+              }
+              &:active {
+                box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
+              }
+              & span {
+                display: block;
+                transform: skewX(10deg);
+              }
             }
           }
         }

@@ -71,12 +71,19 @@ export class ProductsUnitPlate extends Component {
           </div>
         </div>
         <div className="container-fluid product-unit color-section">
+          <div className="border-left" />
+          <div className="border-right" />
           <div className="mycontainer section-plate">
             <div className="row m-0 pt-4 pb-4">
-              <div className="col-12 col-md-7 col-lg-8 col-xl-7 order-md-1 order-2">
+              <div className="col-12 col-md-7 col-lg-6 col-xl-6 order-md-1 order-2">
                 <h1 className="header-red">
                   Газопоршневая электростанция {product.label}
                 </h1>
+                <div className="product-energy-container">
+                  <span className="product-energy">
+                    {product.electricPower} кВт
+                  </span>
+                </div>
                 <p className="text-min">
                   Синхронный генератор: <b> {product.generator}</b>
                 </p>
@@ -95,14 +102,9 @@ export class ProductsUnitPlate extends Component {
                 <p className="text-min">
                   Система управления: <b> {product.controlSystem}</b>
                 </p>
-                <div className="product-energy-container">
-                  <span className="product-energy">
-                    {product.electricPower} кВт
-                  </span>
-                </div>
               </div>
 
-              <div className="col-12 col-md-5 col-lg-4 col-xl-5 order-md-2 order-1">
+              <div className="col-12 col-md-5 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 order-md-2 order-1">
                 <div className="product-img-container">
                   <img
                     src={`../../../static/images/products/thumb-${product.img}`}

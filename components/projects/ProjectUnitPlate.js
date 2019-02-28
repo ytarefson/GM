@@ -31,10 +31,12 @@ export class ProjectUnitPlate extends Component {
             </div>
           </div>
         </div>
-        <div class="container-fluid color-section">
+        <div className="container-fluid color-section">
+          <div className="border-left" />
+          <div className="border-right" />
           <div className="mycontainer section-plate">
             <div className="row m-0">
-              <div className="col-12 col-md-7 col-xl-6 order-2 order-md-1 mt-3">
+              <div className="col-12 col-md-6 col-xl-5 order-2 order-md-1 mt-3">
                 <span className="text-min">{project.client}</span>
                 <h1 className="header-red">{project.label}</h1>
                 <div className="project-unitplate-props-container">
@@ -59,7 +61,7 @@ export class ProjectUnitPlate extends Component {
                 </div>
               </div>
 
-              <div className="col-12 col-md-5 col-xl-6 order-1 order-md-2 img-main-container">
+              <div className="col-12 col-md-5 offset-md-1 col-xl-6 order-1 order-md-2 img-main-container">
                 <div className="img-container">
                   <img
                     src={`../static/images/${project.img}`}

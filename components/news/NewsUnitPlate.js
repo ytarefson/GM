@@ -15,7 +15,7 @@ export class NewsListPlate extends Component {
           // description='Подбробная информация о деятельности компании ООО "Газовые машины"'
           description={`Новости компании "Газовые машины". ${data.label}`}
         />
-        <div className="news-unit-plate">
+        <article className="news-unit-plate">
           <div className="big-new">
             <h1 className="header-razdel">{data.label}</h1>
           </div>
@@ -33,7 +33,7 @@ export class NewsListPlate extends Component {
             </span>
           </div>
           {desc}
-        </div>
+        </article>
         <div className="clearNews" />
       </div>
     );
