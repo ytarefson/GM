@@ -13,7 +13,7 @@
     width: 100%;
     position: absolute;
     left: 0;
-    background: linear-gradient(to top, #cfcfcf 0%, #cdcdcd 15%, #fafafa 100%);
+    background: linear-gradient(to top, #dbdbdb 0%, #dad9d9 15%, #fafafa 100%);
   }
   & .graph {
     display: flex;
@@ -28,7 +28,7 @@
         align-items: center;
         & .col-pic {
           //background: rgb(199, 39, 39);
-          background-color: $accent-red;
+          background-color: #ec8c85;
           width: 50%;
           margin-bottom: 20px;
           position: relative;
@@ -39,7 +39,7 @@
             position: absolute;
             width: 160%;
             height: 22px;
-            background: radial-gradient(#c9c9c9 0%, #ffffff 100%);
+            background: radial-gradient(#e2e2e2 0%, #fafafa 100%);
             //background-color: rgba(173, 173, 173, 0.3);
             border-radius: 50%;
             filter: blur(3px);
