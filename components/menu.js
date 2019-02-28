@@ -1,17 +1,17 @@
 const menu = [
   {
     label: 'Распределенная генерация',
-    href: '/raspredelennaya-generaciya',
+    href: '/rasGen',
     as: '/raspredelennaya-generaciya'
   },
   {
     label: 'Новости',
-    href: '/novosti',
+    href: '/news',
     as: '/novosti'
   },
   {
     label: 'Проекты',
-    href: '/proekti',
+    href: '/projects',
     as: '/proekti'
   },
   {
@@ -21,7 +21,7 @@ const menu = [
   },
   {
     label: 'Услуги',
-    href: '/uslugi',
+    href: '/services',
     as: '/uslugi'
   },
   {
