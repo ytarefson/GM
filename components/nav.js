@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "./Link";
-import menu from "./menu";
-import "../scss/nav.scss";
+import React from 'react';
+import Link from './Link';
+import menu from './menu';
+import '../scss/nav.scss';
 
 const Nav = () => (
   <nav className="navbar navbar-expand-lg navbar-light">
@@ -34,7 +34,7 @@ const Nav = () => (
         </li> */}
         {menu.map(({ key, href, label, as }) => (
           <li className="nav-item" key={key}>
-            <Link activeClassName="active" href={href}>
+            <Link activeClassName="active" href={href} as={as}>
               <a className="nav-link">{label}</a>
             </Link>
           </li>
