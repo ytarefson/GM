@@ -33,12 +33,9 @@ export default GeneralServices => (
                 <a className="teh-card">
                   <div className="teh-image-container">
                     <img src={img} alt={label} className="teh-image" />
+
                     <div className="teh-content">
                       <p className="teh-desc">{text}</p>
-                    </div>
-
-                    <div className="button-container">
-                      <div className="button-min" />
                     </div>
                   </div>
                   <div className="header-container">

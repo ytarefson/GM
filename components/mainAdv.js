@@ -2,6 +2,7 @@ import React from "react";
 //import Router from 'next/router';
 import "../scss/mainAdv.scss";
 import Link from "./Link";
+import Fade from "react-reveal/Fade";
 
 export default MainAdv => (
   <div className="container-fluid mainAdv">
@@ -15,9 +16,12 @@ export default MainAdv => (
       <div className="row">
         <div className="col-12 col-md-6">
           <div className="text-container">
-            <span className="main-heading">
-              Газопоршневые электростанции под ключь
-            </span>
+            <Fade left ssrFadeout>
+              <span className="main-heading">
+                Газопоршневые электростанции под ключь
+              </span>
+            </Fade>
+
             <h1 className="main-desc">
               Проектирование и производство газопоршневых электростанций и мини
               ТЭЦ.

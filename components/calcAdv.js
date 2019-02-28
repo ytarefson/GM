@@ -1,15 +1,19 @@
 import React from "react";
 import Link from "next/link";
-
+import Fade from "react-reveal/Fade";
 import "../scss/calcAdv.scss";
 
 export default CalcAdv => (
   <div className="container-fluid calcAdv">
     <div className="dots-right" />
     <div className="dots-left" />
+    <Fade left>
+      <div className="arrow-left-yellow" />
+    </Fade>
+    <Fade right>
+      <div className="arrow-right-red" />
+    </Fade>
 
-    <div className="arrow-left-yellow" />
-    <div className="arrow-right-red" />
     <div className="container calcAdv-container">
       <div className="row">
         <div className="col-12">

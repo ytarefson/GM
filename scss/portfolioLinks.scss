@@ -231,6 +231,7 @@
                     display: block;
                     width: 100%;
                     height: auto;
+                    transition: box-shadow 0.2s ease-in;
                   }
                 }
                 & .portfolio-link {
@@ -248,6 +249,16 @@
                   font-weight: 500;
                   line-height: 14px;
                   margin-bottom: 25px;
+                }
+                &:hover {
+                  & .img-container {
+                    & .portfolio-img {
+                      box-shadow: $box-shadow-up;
+                      display: block;
+                      width: 100%;
+                      height: auto;
+                    }
+                  }
                 }
               }
             }

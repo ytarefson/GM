@@ -29,12 +29,13 @@
   & .arrow-left-yellow {
     display: block;
     position: absolute;
-    z-index: -1;
-    top: 50%;
+    z-index: 0;
+    top: 50px;
     left: -310px;
     width: 350px;
     height: 310px;
-    transform: translateY(-50%);
+    opacity: 1;
+    //transform: translateY(-50%);
     clip-path: polygon(0 0, 92% 0, 100% 45%, 92% 100%, 0 100%);
     border-radius: 3px;
     background-color: #d57c29;
@@ -43,12 +44,13 @@
   & .arrow-right-red {
     display: block;
     position: absolute;
-    z-index: -1;
-    top: 50%;
+    z-index: 0;
+    top: 50px;
     right: -310px;
     width: 350px;
     height: 310px;
-    transform: translateY(-50%);
+    opacity: 1;
+    //transform: translateY(-50%);
     clip-path: polygon(8% 0, 100% 0, 100% 100%, 8% 100%, 0 50%);
     border-radius: 3px;
     background-color: #c42729;
@@ -160,11 +162,12 @@
       display: block;
       position: absolute;
       z-index: -1;
-      top: 50%;
+      top: 50px;
       left: -100px;
       width: 350px;
       height: 310px;
-      transform: translateY(-50%);
+      opacity: 0;
+      //transform: translateY(-50%);
       clip-path: polygon(0 0, 92% 0, 100% 45%, 92% 100%, 0 100%);
       border-radius: 3px;
       background-color: #d57c29;
@@ -174,11 +177,12 @@
       display: block;
       position: absolute;
       z-index: -1;
-      top: 50%;
+      top: 50px;
       right: -100px;
       width: 350px;
       height: 310px;
-      transform: translateY(-50%);
+      opacity: 0;
+      //transform: translateY(-50%);
       clip-path: polygon(8% 0, 100% 0, 100% 100%, 8% 100%, 0 50%);
       border-radius: 3px;
       background-color: #c42729;
@@ -276,7 +280,7 @@
       height: 285px;
       transform: translateY(-50%);
       border: 15px solid rgba(255, 255, 255, 0.5);
-      clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
+      //clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
     }
     &::before {
       display: block;
@@ -289,7 +293,7 @@
       height: 285px;
       transform: translateY(-50%);
       //border-radius: 3px;
-      clip-path: polygon(5% 0, 100% 0, 100% 100%, 6% 100%, 0 50%);
+      //clip-path: polygon(5% 0, 100% 0, 100% 100%, 6% 100%, 0 50%);
       border: 15px solid rgba(255, 255, 255, 0.5);
     }
     & .dots-right {
@@ -316,12 +320,12 @@
       display: block;
       position: absolute;
       z-index: -1;
-      top: 50%;
+      top: 35px;
       left: 0;
       width: 350px;
       height: 437px;
-      transform: translateY(-50%);
-      clip-path: polygon(0 0, 88% 0, 100% 45%, 88% 100%, 0 100%);
+      //transform: translateY(-50%);
+      //clip-path: polygon(0 0, 88% 0, 100% 45%, 88% 100%, 0 100%);
       border-radius: 3px;
       background-color: #d57c29;
       //background: url("/static/images/dots-min.png") 0% 0% no-repeat, #d57c29;
@@ -330,11 +334,11 @@
       display: block;
       position: absolute;
       z-index: -1;
-      top: 50%;
+      top: 35px;
       right: 0px;
       width: 350px;
       height: 437px;
-      transform: translateY(-50%);
+      //transform: translateY(-50%);
       clip-path: polygon(12% 0, 100% 0, 100% 100%, 12% 100%, 0 50%);
       border-radius: 3px;
       background-color: #c42729;

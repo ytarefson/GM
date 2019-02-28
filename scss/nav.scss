@@ -8,11 +8,11 @@
   &::after {
     display: block;
     position: absolute;
-    left: 130px;
-    bottom: -500px;
+    left: 80px;
+    bottom: -100px;
     transform: translateX(-50%) rotateZ(10deg);
     height: 1000px;
-    width: 300px;
+    width: 90%;
     content: "";
     background-color: white;
     z-index: -1;
@@ -20,11 +20,11 @@
   &::before {
     display: block;
     position: absolute;
-    left: 250px;
-    bottom: -500px;
+    left: 85px;
+    bottom: -100px;
     transform: translateX(-50%) rotateZ(10deg);
     height: 1000px;
-    width: 200px;
+    width: 100%;
     content: "";
     background-color: #ffd5d2;
     z-index: -1;
@@ -32,8 +32,9 @@
   & .navbar-brand {
     & img {
       display: block;
-      height: 30px;
-      filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.25));
+
+      height: 25px;
+      filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.15));
     }
   }
   & .navbar-collapse {
@@ -155,6 +156,28 @@
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+  .navbar {
+    &::after {
+      display: block;
+      position: absolute;
+      left: 60px;
+      bottom: -100px;
+      transform: translateX(-50%) rotateZ(10deg);
+      height: 1000px;
+      width: 90%;
+      content: "";
+    }
+    &::before {
+      display: block;
+      position: absolute;
+      left: 75px;
+      bottom: -100px;
+      transform: translateX(-50%) rotateZ(10deg);
+      height: 1000px;
+      width: 100%;
+      content: "";
+    }
+  }
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
@@ -162,6 +185,26 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .navbar {
+    &::after {
+      display: block;
+      position: absolute;
+      left: 60px;
+      bottom: -100px;
+      transform: translateX(-50%) rotateZ(10deg);
+      height: 1000px;
+      width: 35%;
+      content: "";
+    }
+    &::before {
+      display: block;
+      position: absolute;
+      left: 75px;
+      bottom: -100px;
+      transform: translateX(-50%) rotateZ(10deg);
+      height: 1000px;
+      width: 40%;
+      content: "";
+    }
     & .navbar-collapse {
       //margin-bottom: 0;
     }
@@ -191,7 +234,7 @@
 @media (min-width: 1200px) {
   .navbar {
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     & .navbar-brand {
       & img {
         display: block;
