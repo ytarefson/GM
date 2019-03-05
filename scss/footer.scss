@@ -9,11 +9,7 @@
   text-align: left;
   padding-top: 25px;
   padding-bottom: 60px;
-  background: linear-gradient(
-    115deg,
-    rgb(242, 125, 14) 0%,
-    rgb(237, 27, 61) 100%
-  );
+  background: linear-gradient(115deg, #353535 0%, #2f2f2f 100%);
   position: relative;
 
   & .gaz-mash {
@@ -23,9 +19,11 @@
     left: 0;
     right: 0;
     top: 40%;
+    transform: rotate(-90deg);
     width: auto;
     height: 200px;
-    background: url("/static/images/bg-gaz-mash.png") 0% 0% no-repeat;
+    opacity: 0.05;
+    background: url("/static/images/bg-gaz-mash.png") 50% 50% no-repeat;
     background-size: contain;
   }
   & .footer-logo-container {
@@ -46,8 +44,7 @@
     font-family: $molot-font;
     display: block;
     width: 100%;
-    color: #fafafa;
-    color: $accent-red;
+    color: $l-grey;
     letter-spacing: 1px;
     font-size: 24px;
     line-height: 30px;
@@ -109,7 +106,7 @@
       font-family: $molot-font;
       display: block;
       width: 100%;
-      color: #fafafa;
+      color: $l-grey;
       letter-spacing: 1px;
       font-size: 24px;
       line-height: 30px;
@@ -321,7 +318,7 @@
       height: 560px;
       top: 15%;
       right: -5%;
-      opacity: 0.1;
+      opacity: 0.05;
       z-index: 0;
       //transform: translateY(-50%);
       background: url("/static/images/dots-big-white.png") 0% 0% no-repeat;
@@ -331,7 +328,9 @@
       right: 0;
       top: 25%;
       width: auto;
-      height: 250px;
+      height: 350px;
+      transform: rotate(0deg);
+      background: url("/static/images/bg-gaz-mash.png") 5% 10% no-repeat;
     }
     & .footer-logo-container {
       & .footer-logo {
@@ -343,7 +342,7 @@
     }
     & .contacts-header {
       z-index: 1;
-      color: $orange-color;
+      color: #353535;
       //color: $accent-red;
     }
     & .adres-list {
@@ -364,7 +363,7 @@
       & .link-map-header {
         padding-left: 0px;
         text-align: left;
-        color: $orange-color;
+        color: #353535;
         //color: $accent-red;
       }
       & .link-map-list {

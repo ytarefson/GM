@@ -98,7 +98,7 @@ export class CalcPlate extends Component {
             </div>
           </div>
           <div className="col-12 col-md-3">
-            <span className="calc-text-2">
+            <span className="calc-text-2 mt-5">
               На основании расчета можно оперативно принять управленческое
               решение о целесообразности внедрения объекта собственной
               генерации.
@@ -107,7 +107,7 @@ export class CalcPlate extends Component {
         </div>
         <div className="row">
           <div className="col-12 ">
-            <span className="calc-text-2">
+            <span className="calc-text-2 mt-md-5">
               В случае сложных проектов, наши специалисты помогут вам рассчитать
               экономическую эффективность.
             </span>

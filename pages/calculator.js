@@ -12,18 +12,18 @@ const Calculator = () => (
     />
     <Layout>
       <div className="container-fluid calculator">
-        <span className="bg-calc">Калькулятор</span>
+        {/* <span className="bg-calc">Калькулятор</span> */}
         <div className="container">
-          <h1 className="header-min-colored mt-3">
-            <b className="dark-color">Калькулятор</b>
-            <br />
-            <b>энергетической</b>
-            <br />
-            эффективности
-          </h1>
-          <span className="calc-text-2">
-            Узнайте сколько мы для вас экономим ...
-          </span>
+          <div className="row">
+            <div className="col-12">
+              <h1 className="calc-header mt-3">
+                Калькулятор энергетической эффективности
+              </h1>
+              <span className="calc-text-2">
+                Узнайте сколько мы для вас экономим ...
+              </span>
+            </div>
+          </div>
         </div>
         <CalcPlate />
       </div>

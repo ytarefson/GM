@@ -4,8 +4,8 @@ import Link from "next/link";
 import NextHead from "next/head";
 import Layout from "../components/Layout";
 import productsList from "../components/tables/productsList";
-import ProductsListPlate from "../components/products/ProductsListPlate";
 import ProductsNew from "../components/products/ProductsNewContainer";
+import ProductsListPlate from "../components/products/ProductsListPlate";
 
 const Products = data => (
   <div>

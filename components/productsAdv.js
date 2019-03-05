@@ -8,7 +8,7 @@ export default ProductsAdv => (
     <div className="dots-right" />
     <div className="container">
       <div className="row">
-        <div className="col-12 col-md-6 col-xl-4 offset-xl-1">
+        <div className="col-12 col-md-6 offset-lg-1 col-lg-5 col-xl-4 offset-xl-1">
           <span className="header-min-colored">
             Наша <span className="dark-color"> продукция:</span>
           </span>
@@ -42,7 +42,6 @@ export default ProductsAdv => (
                 </div>
               </a>
             </Link>
-
             <Link
               href={{ pathname: "/products/MTU", query: "24" }}
               as="/products/MTU/24"
@@ -61,45 +60,6 @@ export default ProductsAdv => (
                 </div>
               </a>
             </Link>
-
-            {/* <Link
-              href={{ pathname: "/products/MTU", query: "30" }}
-              as="/products/MTU/30"
-            >
-              <a className="p-card">
-                <span className="title">
-                  MTU <span className="red">1600</span>{" "}
-                </span>
-                <div className="img-container">
-                  <img
-                    src="/static/images/products/M1600.jpg"
-                    title="Газопоршневая станция MTU 1600"
-                    alt="MTU 1600"
-                    className="p-img"
-                  />
-                </div>
-              </a>
-            </Link>
-
-            <Link
-              href={{ pathname: "/products/YAMZ", query: "23" }}
-              as="/products/YAMZ/23"
-            >
-              <a className="p-card">
-                <span className="title">
-                  ЯМЗ <span className="red">300</span>{" "}
-                </span>
-                <div className="img-container">
-                  <img
-                    src="/static/images/products/Y300.jpg"
-                    title="Газопоршневая станция ЯМЗ 300"
-                    alt="Liebher 1000"
-                    className="p-img"
-                  />
-                </div>
-              </a>
-            </Link> */}
-
             <Link
               href={{ pathname: "/products/YAMZ", query: "20" }}
               as="/products/YAMZ/20"

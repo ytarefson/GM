@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Head from '../../components/head';
-import Link from '../Link';
-import Video from '../Video';
-import '../../scss/projects/ProjectsUnitPlate.scss';
+import React, { Component } from "react";
+import Head from "../../components/head";
+import Link from "../Link";
+import Video from "../Video";
+import "../../scss/projects/ProjectsUnitPlate.scss";
 
 export class ProjectUnitPlate extends Component {
   render() {
@@ -38,6 +38,9 @@ export class ProjectUnitPlate extends Component {
               <div className="col-12 col-md-6 col-xl-5 order-2 order-md-1 mt-3">
                 <span className="text-min">{project.client}</span>
                 <h1 className="header-red">{project.label}</h1>
+                <div className="project-energy-container">
+                  <span className="project-energy">{project.energy}</span>
+                </div>
                 <div className="project-unitplate-props-container">
                   <span className="text-min">
                     Город: <b>{project.city}</b>
@@ -54,9 +57,6 @@ export class ProjectUnitPlate extends Component {
                   <span className="text-min project-unitplate-energy">
                     Тепловая мощность: <b> {project.tenergy}</b>
                   </span>
-                </div>
-                <div className="project-energy-container">
-                  <span className="project-energy">{project.energy}</span>
                 </div>
               </div>
 
@@ -77,7 +77,7 @@ export class ProjectUnitPlate extends Component {
             <div className="row">
               <div className="col-12">
                 <h4 className="header-min-colored pb-1">
-                  Описание проекта -{' '}
+                  Описание проекта -{" "}
                   <span className="dark-color">{project.label}</span>
                 </h4>
                 <p className="text">{project.description}</p>

@@ -273,28 +273,28 @@
       display: block;
       position: absolute;
       content: "";
-      z-index: 1;
+      z-index: -1;
       top: 50%;
       left: -20px;
-      width: 250px;
+      width: 540px;
       height: 285px;
       transform: translateY(-50%);
-      border: 15px solid rgba(255, 255, 255, 0.5);
+      border: 15px solid rgba(255, 255, 255, 1);
       //clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
     }
     &::before {
       display: block;
       position: absolute;
       content: "";
-      z-index: 1;
+      z-index: 0;
       top: 50%;
       right: -20px;
-      width: 250px;
+      width: 540px;
       height: 285px;
       transform: translateY(-50%);
       //border-radius: 3px;
       //clip-path: polygon(5% 0, 100% 0, 100% 100%, 6% 100%, 0 50%);
-      border: 15px solid rgba(255, 255, 255, 0.5);
+      border: 15px solid rgba(255, 255, 255, 1);
     }
     & .dots-right {
       position: absolute;
@@ -322,10 +322,10 @@
       z-index: -1;
       top: 35px;
       left: 0;
-      width: 350px;
+      width: 330px;
       height: 437px;
       //transform: translateY(-50%);
-      //clip-path: polygon(0 0, 88% 0, 100% 45%, 88% 100%, 0 100%);
+      clip-path: polygon(0 0, 88% 0, 100% 45%, 88% 100%, 0 100%);
       border-radius: 3px;
       background-color: #d57c29;
       //background: url("/static/images/dots-min.png") 0% 0% no-repeat, #d57c29;
@@ -336,7 +336,7 @@
       z-index: -1;
       top: 35px;
       right: 0px;
-      width: 350px;
+      width: 330px;
       height: 437px;
       //transform: translateY(-50%);
       clip-path: polygon(12% 0, 100% 0, 100% 100%, 12% 100%, 0 50%);
@@ -429,4 +429,37 @@
 }
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {
+  .calcAdv {
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: -20px;
+      width: 540px;
+      height: 285px;
+    }
+    &::before {
+      top: 50%;
+      right: -20px;
+      width: 540px;
+      height: 285px;
+      transform: translateY(-50%);
+
+      border: 15px solid rgba(255, 255, 255, 1);
+    }
+
+    & .arrow-left-yellow {
+      top: 35px;
+      left: 0;
+      width: 475px;
+      height: 437px;
+    }
+    & .arrow-right-red {
+      top: 35px;
+      right: 0px;
+      width: 475px;
+      height: 437px;
+    }
+  }
 }

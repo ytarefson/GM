@@ -281,7 +281,7 @@
     }
 
     & .category-header {
-      //color: #ed4b13;
+      //padding-top: 15px;
     }
     & .category-list {
       padding: 0;
@@ -306,13 +306,17 @@
           transition: all 0.2s;
         }
         &:active {
-          background-color: grey;
+          background-color: $accent-red;
         }
         &:hover {
-          background-color: rgb(177, 177, 177);
+          background-color: rgb(238, 120, 120);
+          & .category-link {
+            color: white;
+          }
         }
       }
       & .active {
+        background-color: $accent-red;
         & .category-link {
           color: white;
         }
@@ -335,6 +339,19 @@
       font-size: 20px;
       display: block;
       margin-bottom: 20px;
+    }
+    & .product-card-plate {
+      //background-color: green;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      & .product-card-container {
+        //background-color: red;
+        padding: 15px;
+        width: 33%;
+      }
     }
   }
 }
@@ -368,7 +385,7 @@
           transition: text-shadow 0.2s;
         }
         &:active {
-          background-color: grey;
+          background-color: $accent-red;
         }
         &:hover .category-link {
           //text-shadow: $box-shadow;

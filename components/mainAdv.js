@@ -16,9 +16,9 @@ export default MainAdv => (
       <div className="row">
         <div className="col-12 col-md-6">
           <div className="text-container">
-            <Fade left ssrFadeout>
+            <Fade big ssrFadeout>
               <span className="main-heading">
-                Газопоршневые электростанции под ключь
+                Газопоршневые электростанции под ключ
               </span>
             </Fade>
 

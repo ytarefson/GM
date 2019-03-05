@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Link from '../Link';
-import '../../scss/products/ProductsListPlate.scss';
+import React, { Component } from "react";
+import Link from "../Link";
+import "../../scss/products/ProductsListPlate.scss";
 
 export class ProductsListPlate extends Component {
   render() {

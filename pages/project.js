@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import projectList from "../components/tables/projectList";
 import Layout from "../components/Layout";
 import ProjectUnitPlate from "../components/projects/ProjectUnitPlate";
-import Galery from "../components/galery";
 import FormPage from "../components/form";
+import Galery from "../components/galery";
 
 const Project = project => (
   <div>

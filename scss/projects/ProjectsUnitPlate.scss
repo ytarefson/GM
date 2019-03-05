@@ -18,7 +18,7 @@
     & .header-red {
       color: white;
       margin: 0;
-      margin-bottom: 30px;
+      margin-bottom: 5px;
     }
     & .project-unitplate-props-container {
       & .text-min {
@@ -53,7 +53,7 @@
       & .project-energy {
         z-index: 1;
         color: white;
-        margin: 5px 0 5px auto;
+        margin: 0px 0 0px auto;
         background-color: $accent-red;
         display: block;
         font-weight: 900;
@@ -110,7 +110,7 @@
 @media (min-width: 768px) {
   .img-main-container {
     & .img-container {
-      box-shadow: 0px 25px 20px -15px rgba(0, 0, 0, 0.35);
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
     }
   }
 }
@@ -126,7 +126,7 @@
         z-index: 1;
         top: 50%;
         left: -40px;
-        width: 100px;
+        width: 70px;
         height: 70%;
         transform: translateY(-50%);
         border: 7px solid rgba(255, 255, 255, 0.3);
@@ -138,7 +138,7 @@
         z-index: 1;
         top: 50%;
         right: -40px;
-        width: 100px;
+        width: 70px;
         height: 70%;
         transform: translateY(-50%);
         border: 7px solid rgba(255, 255, 255, 0.3);

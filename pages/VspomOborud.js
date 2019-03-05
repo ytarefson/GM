@@ -8,7 +8,7 @@ const VspomOborud = serviceName => (
   <Layout>
     <ServiceUnitPlate serviceName={serviceName} />
     <div className="container-fluid vspom-oborud">
-      <div className="mycontainer section-plate">
+      <div className="container">
         <div className="row">
           <div className="col-12 otstup">
             <span className="header-min-colored">
@@ -137,9 +137,8 @@ const VspomOborud = serviceName => (
           </div>
         </div>
       </div>
-
-      <FormPage product={serviceName} />
     </div>
+    <FormPage product={serviceName} />
   </Layout>
 );
 

@@ -1,8 +1,28 @@
+.vspomOborud {
+  margin-top: 30px;
+  & .headers-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    & .header-min-colored {
+      display: block;
+      padding-bottom: 15px;
+      line-height: 26px;
+    }
+  }
+  .documentation {
+    & .orderlist {
+      & .doc-point {
+        margin: 15px 0px;
+      }
+    }
+  }
+}
+
 .vspom-oborud {
   //padding-top: 30px;
   padding-left: 0;
   padding-right: 0;
-  padding-bottom: 80px;
+  padding-bottom: 0px;
   & .row {
     padding-left: 15px;
     padding-right: 15px;
@@ -150,6 +170,27 @@
       }
     }
   }
+  .vspom-oborud {
+    & .row {
+      padding: 0;
+      & .otstup {
+        & .cta {
+        }
+        & .header-min-colored {
+        }
+        & .tools-list-2 {
+          & .tool-card {
+            & .tool-card-desc {
+              & .text-bold {
+                font-size: 15px;
+                line-height: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -209,6 +250,36 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .vspomOborud {
+    margin-top: 45px;
+    & .headers-container {
+      & .header-min-colored {
+        padding-bottom: 15px;
+        line-height: 34px;
+      }
+    }
+  }
+
+  .vspom-oborud {
+    & .row {
+      & .otstup {
+        & .cta {
+        }
+        & .header-min-colored {
+        }
+        & .tools-list-2 {
+          & .tool-card {
+            & .tool-card-desc {
+              & .text-bold {
+                font-size: 17px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)

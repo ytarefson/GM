@@ -72,9 +72,8 @@ const MiniTec = serviceName => (
           </p>
         </div>
       </div>
-
-      <FormPage product={serviceName} />
     </div>
+    <FormPage product={serviceName} />
   </Layout>
 );
 

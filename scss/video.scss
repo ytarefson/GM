@@ -1,6 +1,7 @@
-@import '../node_modules/video-react/styles/scss/video-react';
+@import "../node_modules/video-react/styles/scss/video-react";
 .myVideo {
-  padding: 0 !important;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 100%;
   height: 300px;
 }
@@ -8,6 +9,12 @@
   top: 0;
 }
 
+.myVideoKompleks-2 {
+  //margin-left: 15px;
+  //margin-right: 15px;
+  width: auto;
+  overflow: hidden;
+}
 // .text-bolddd {
 //   padding-bottom: 10px;
 //   font-size: 18px;

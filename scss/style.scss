@@ -47,7 +47,7 @@ b {
   flex-direction: column;
 }
 .button-grey-container {
-  margin-top: 15px;
+  margin-top: 30px;
   & .button-grey {
     position: relative;
     font-family: $molot-font;
@@ -102,77 +102,6 @@ b {
     }
   }
 }
-
-// .button-container {
-//   display: block;
-//   margin: 10px 10px;
-//   cursor: pointer;
-//   letter-spacing: 2px;
-//   height: 40px;
-//   width: 100%;
-//   perspective: 1000;
-//   .flipper {
-//     margin: 0 auto;
-//     transition: all 0.5s ease-in-out;
-//     transform-style: preserve-3d;
-//     position: relative;
-//   }
-
-//   .button {
-//     height: 40px;
-//     width: 170px;
-//     border-radius: 3px;
-//     backface-visibility: hidden;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     border: 1px solid $accent-red;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     box-shadow: 1px 2px 4px -1px rgba(165, 0, 0, 0.64);
-//     // i.fa {
-//     //   color: white;
-//     //   font-size: 20px;
-//     //   margin: auto;
-//     //   text-shadow: 0.5px 1px 2px #3c3c3c;
-//     // }
-//     &.front {
-//       z-index: 10;
-//       font-family: $molot-font;
-//       color: white;
-//       text-align: center;
-//     }
-//     &.back {
-//       text-align: center;
-//       color: white;
-//       font-family: $molot-font;
-//       font-size: 35px;
-//       text-transform: uppercase;
-//     }
-//   }
-// }
-
-// .button-flip3d-vertical2 {
-//   .flipper-flip3d-vertical2 {
-//     transform-origin: 100% 20px;
-//   }
-
-//   .front {
-//     transform: translateZ(20px) skewX(-10deg);
-//     background: $accent-red;
-//   }
-
-//   .back {
-//     transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(20px)
-//       skewX(10deg);
-//     background: $accent-red;
-//   }
-
-//   &:hover .flipper-flip3d-vertical2 {
-//     transform: rotateX(90deg);
-//   }
-// }
 
 .button-container {
   position: relative;
@@ -247,11 +176,11 @@ b {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.2px;
-  color: $accent-red;
-  & .dark-color {
-    color: #353535;
-    font-weight: 700;
-  }
+  color: #353535;
+  // & .dark-color {
+  //   color: #353535;
+  //   font-weight: 700;
+  // }
 }
 .header-sections {
   font-family: $noto-font;
@@ -277,10 +206,11 @@ b {
 }
 .subheading-common-2 {
   display: block;
-  color: grey;
+  color: rgb(82, 82, 82);
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   //font-style: italic;
   font-weight: 700;
   padding-left: 15px;
@@ -309,7 +239,7 @@ b {
   /////////////////////////////
   color: $accent-red;
   display: block;
-  margin-top: 50px;
+  margin-top: 30px;
   font-weight: 700;
 }
 .text-common {
@@ -370,10 +300,13 @@ b {
   border-radius: 3px;
 }
 .breadcrumbs {
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 12px;
   margin-left: 15px;
   font-family: $molot-font;
+  line-height: 15px;
   & .crambs {
+    display: inline-block;
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
@@ -392,7 +325,7 @@ b {
   width: 100%;
 }
 .color-section {
-  background: $new-gradient;
+  background: #6b6b6b;
 }
 .white-section {
   background-color: #fff;
@@ -408,10 +341,10 @@ b {
     margin-right: auto;
     margin-left: auto;
   }
-  .header-min-colored {
-    font-family: $molot-font;
-    font-size: 23px;
-  }
+  // .header-min-colored {
+  //   font-family: $molot-font;
+  //   font-size: 23px;
+  // }
   .header-razdel {
     width: 90%;
   }
@@ -564,6 +497,28 @@ b {
     font-weight: 700;
     line-height: 26px;
   }
+  .breadcrumbs {
+    margin-top: 30px;
+    margin-bottom: 12px;
+    margin-left: 15px;
+    font-family: $molot-font;
+    line-height: 15px;
+    & .crambs {
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding-right: 3px;
+      color: #3f3f3f;
+      letter-spacing: 0.5px;
+    }
+    & .cramb-main {
+      // color: grey;
+      // padding: 0;
+      // margin: 0;
+      color: $accent-red;
+    }
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -584,7 +539,7 @@ b {
   }
   .header-common {
     font-size: 36px;
-    // line-height: 44px;
+    line-height: 52px;
   }
   .header-sections {
     font-size: 36px;
@@ -650,18 +605,12 @@ b {
   }
   .breadcrumbs {
     margin-left: 15px;
-
+    margin-top: 45px;
+    margin-bottom: 20px;
     & .crambs {
       font-size: 19px;
       padding-right: 3px;
-      color: #3f3f3f;
       letter-spacing: 0.2px;
-    }
-    & .cramb-main {
-      // color: grey;
-      // padding: 0;
-      // margin: 0;
-      color: $accent-red;
     }
   }
 }

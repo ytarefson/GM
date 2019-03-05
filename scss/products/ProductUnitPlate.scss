@@ -234,7 +234,7 @@
       & .product-img-container {
         display: flex;
         align-items: center;
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        //box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
       }
     }
   }
@@ -245,7 +245,7 @@
   .color-section {
     & .section-plate {
       & .header-red {
-        padding-bottom: 0px;
+        padding-bottom: 3px;
       }
       & .text {
         line-height: 24px;

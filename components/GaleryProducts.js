@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Lightbox from 'react-image-lightbox';
-import '../scss/galery.scss';
+import React, { Component } from "react";
+import Lightbox from "react-image-lightbox";
+import "../scss/galery.scss";
 
 export default class GaleryProducts extends Component {
   constructor(props) {

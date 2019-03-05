@@ -15,19 +15,6 @@ const Services = () => (
       <div className="container-fluid services">
         <div className="mycontainer">
           <div className="row m-0">
-            <div className="col-12">
-              <div className="breadcrumbs ml-0">
-                <Link href="/">
-                  <a className="crambs">Главная > </a>
-                </Link>
-                <Link href="/services">
-                  <a className="crambs">Услуги </a>
-                </Link>
-                {/* <Link href={`/products?category=${category}`}>
-                <a className="crambs">{category} > </a>
-              </Link> */}
-              </div>
-            </div>
             <div className="col-12 titles">
               <h1 className="header-min-colored mb-3 mt-3">
                 Проектирование, производство и обслуживание <br />

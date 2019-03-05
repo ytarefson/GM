@@ -34,10 +34,10 @@ export class About extends Component {
           <div className="container-fluid about">
             <div className="mycontainer">
               <div className="row m-0">
-                <div className="col-12 col-md-8 p-0">
+                <div className="col-12 col-md-12 p-0">
                   <span className="subheading-red-top pl-3">О компании</span>
                   <h1 className="header-razdel pl-3">ООО "Газовые машины"</h1>
-                  <p className="subheading-common-2 mt-5">
+                  <p className="subheading-common-2">
                     Компания «Газовые машины» образована 10 октября 2006 г. В
                     течение 12 лет основным профилем деятельности компании
                     является производство и поставка "под ключ" автономных
@@ -48,7 +48,7 @@ export class About extends Component {
                     генераторов.
                   </p>
                 </div>
-                <div className="col-12 col-md-4 p-0">
+                {/* <div className="col-12 col-md-4 p-0">
                   <div className="logo-container">
                     <img
                       src="../static/images/logo-very-big.png"
@@ -56,9 +56,9 @@ export class About extends Component {
                       className="logo-very-big"
                     />
                   </div>
-                </div>
+                </div> */}
               </div>
-              <div className="row m-0 mt-5 mb-5">
+              <div className="row m-0 mt-3 mb-3">
                 <div className="col-12 col-md-4">
                   <div className="img-container">
                     <img
@@ -119,17 +119,20 @@ export class About extends Component {
               </div>
               <div className="row m-0">
                 <div className="col-12 p-0 pl-3 pr-3">
-                  <p className="text-min">
+                  <p className="text-min mb-3">
                     С 2006 г. до настоящего времени компанией выпущено
-                    <b>75 электростанций суммарной мощностью более 21 МВт.</b> В
-                    производственной линейке газовые электростанции MAN,
+                    <b>
+                      {" "}
+                      75 электростанций суммарной мощностью более 21 МВт.
+                    </b>{" "}
+                    В производственной линейке газовые электростанции MAN,
                     Liebherr, Jenbacher, MTU, MWM и ЯМЗ единичной мощностью до
                     10 МВт и напряжением до 10,5 кВ, работающие на природном,
                     сжиженном газе, пропан-бутановой смеси, попутном нефтяном
                     газе. Компания является официальным сервисным партнером MAN,
                     Liebherr, Motortech, Comap.
                   </p>
-                  <p className="text-min">
+                  <p className="text-min mb-3">
                     Производственные площади комании 1 900 кв.м. расположены в
                     г. Ярославле. Производство сертифицировано концерном MAN и
                     компанией Motortech, что подтверждает высокое качество
@@ -139,7 +142,7 @@ export class About extends Component {
                     Технические руководители компании имеют ученую степень
                     кандидатов технических наук.
                   </p>
-                  <p className="text-min">
+                  <p className="text-min mb-3">
                     <b>
                       Приглашаем посетить наше производство, где Вы, в удобное
                       для Вас время, сможете ознакомится с образцами продукции.
@@ -320,7 +323,7 @@ export class About extends Component {
                 <div className="col-12">
                   <h2 className="header-sections pl-0">Направления</h2>
 
-                  <p className="text-min">
+                  <p className="text-min pb-3">
                     Кроме производства мини-ТЭС мы осуществляем поставку,
                     трансформаторных подстанций, КРУ, и прочего вспомогательного
                     оборудования и обеспечиваем поставку запасных частей.
@@ -330,8 +333,8 @@ export class About extends Component {
                     первого дня до ввода в эксплуатацию, обучение
                     эксплуатирующего персонала, сервисное обслуживание.
                   </p>
-                  <br />
-                  <p className="text-min">
+
+                  <p className="text-min pb-3">
                     В нашей компетенции "готовые решения" по организации
                     автономного энергоснабжения для: промышленных предприятий,
                     объектов нефтегазовой сферы, объектов газотранспортной
@@ -340,8 +343,8 @@ export class About extends Component {
                     прочих спортивных объектов, гостиниц, санаториев, больниц и
                     лечебных учреждений, баз отдыха.
                   </p>
-                  <br />
-                  <p className="text-min">
+
+                  <p className="text-min pb-3">
                     Спектр поставляемого оборудования позволяет осуществлять
                     полную модернизацию энергетического хозяйства предприятий,
                     от замены устаревшего котельного оборудования, до
