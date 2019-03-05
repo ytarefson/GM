@@ -34,7 +34,7 @@
       display: block;
 
       height: 25px;
-      filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.15));
+      //filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.15));
     }
   }
   & .navbar-collapse {
@@ -241,7 +241,7 @@
       & img {
         display: block;
         height: 40px;
-        filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.2));
+        //filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.2));
       }
     }
     & .navbar-nav .nav-item {

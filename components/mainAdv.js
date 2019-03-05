@@ -16,15 +16,15 @@ export default MainAdv => (
       <div className="row">
         <div className="col-12 col-md-6">
           <div className="text-container">
-            <Fade big ssrFadeout>
+            <Fade ssrFadeout>
               <span className="main-heading">
                 Газопоршневые электростанции под ключ
               </span>
             </Fade>
 
             <h1 className="main-desc">
-              Проектирование и производство газопоршневых электростанций и мини
-              ТЭЦ.
+              Проектирование, производство и обслуживание газопоршневых
+              электростанций и мини ТЭЦ.
             </h1>
           </div>
         </div>
