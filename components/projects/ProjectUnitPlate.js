@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Head from "../../components/head";
 import Link from "../Link";
-import Video from "../Video";
 import "../../scss/projects/ProjectsUnitPlate.scss";
+import Video from "../Video";
 
 export class ProjectUnitPlate extends Component {
   render() {

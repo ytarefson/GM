@@ -1,9 +1,9 @@
 import React, { Component } from "react";
+import "../../scss/products/ProductUnitPlate.scss";
 import Link from "next/link";
 import Head from "../../components/head";
 import productsList from "../tables/productsList";
 import SimilarProducts from "../products/SimilarProducts";
-import "../../scss/products/ProductUnitPlate.scss";
 import FormPage from "../form";
 import GaleryProducts from "../../components/GaleryProducts";
 import YoutubeVideo from "../YoutubeVideo";

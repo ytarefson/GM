@@ -1,13 +1,13 @@
-import React from 'react';
-import Head from '../components/head';
-import '../scss/style.scss';
-import MainAdv from '../components/mainAdv';
-import PortfolioLinks from '../components/portfolioLinks';
-import EnergyDecisions from '../components/energyDecisions';
-import CalcAdv from '../components/calcAdv';
-import GeneralServices from '../components/generalServices';
-import ProductsAdv from '../components/productsAdv';
-import Layout from '../components/Layout';
+import React from "react";
+import "../scss/style.scss";
+import Head from "../components/head";
+import MainAdv from "../components/mainAdv";
+import PortfolioLinks from "../components/portfolioLinks";
+import EnergyDecisions from "../components/energyDecisions";
+import CalcAdv from "../components/calcAdv";
+import GeneralServices from "../components/generalServices";
+import ProductsAdv from "../components/productsAdv";
+import Layout from "../components/Layout";
 
 const Home = () => (
   <div className="home">
