@@ -17,7 +17,7 @@ router.post('/', urlencodedParser, function(req, res) {
         function(callback) {
           sendEmail(
             callback,
-            'no-reply1@gmenergo.ru', // From
+            'no-reply@gmenergo.ru', // From
             ['info@intersell.su', 'market@gmenergo.ru'], // To, 'market@gmenergo.ru'
             'Заявка с сайта',
             'Text Content',
