@@ -5,6 +5,9 @@ const async = require('async');
 const email = require('./routes/api/email');
 const sitemap = require('./sitemap');
 const compression = require('compression');
+const https = require('https');
+const fs = require('fs');
+const devcert = require('devcert');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
@@ -14,7 +17,7 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
   server.use(compression());
-  server.use(express.static('static'));
+  // server.use(express.static('static'));
 
   server.get('/robots.txt', function(req, res) {
     res.type('text/plain');
