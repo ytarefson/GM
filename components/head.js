@@ -4,7 +4,7 @@ import { string } from 'prop-types';
 
 const defaultDescription = '';
 const defaultOGURL = 'https://gmenergo.ru';
-const defaultOGImage = 'https://gmenergo.ru/static/images/banner.jpg';
+const defaultOGImage = 'https://gmenergo.ru/static/images/baner.jpg';
 
 const Head = props => (
   <NextHead>
