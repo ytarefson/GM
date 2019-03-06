@@ -21,7 +21,7 @@ app.prepare().then(() => {
   server.get('/robots.txt', function(req, res) {
     res.type('text/plain');
     res.send(
-      'User-agent: *\nDisallow: /o-komnanii\nHost: gmenergo.ru\nSitemap: http://gmenergo.ru/sitemap.xml'
+      'User-agent: *\nDisallow: /o-komnanii\nHost: gmenergo.ru\nSitemap: https://gmenergo.ru/sitemap.xml'
     );
   });
   server.get('/sitemap.xml', function(req, res) {
@@ -52,6 +52,16 @@ app.prepare().then(() => {
     const actualPage = '/newsUnit';
     const queryParams = { id: req.params.id };
     app.render(req, res, actualPage, queryParams);
+  });
+  // Redirects from pages
+  server.get('/projects', (req, res) => {
+    return res.redirect('/proekti');
+  });
+  server.get('/news', (req, res) => {
+    return res.redirect('/novosti');
+  });
+  server.get('/services', (req, res) => {
+    return res.redirect('/uslugi');
   });
 
   server.get('/proekti', (req, res) => {
