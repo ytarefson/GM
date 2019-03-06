@@ -1,15 +1,15 @@
-import React from 'react';
-import NextHead from 'next/head';
-import { string } from 'prop-types';
+import React from "react";
+import NextHead from "next/head";
+import { string } from "prop-types";
 
-const defaultDescription = '';
-const defaultOGURL = 'http://gmenergo.ru';
-const defaultOGImage = '../static/images/banner.jpg';
+const defaultDescription = "";
+const defaultOGURL = "http://gmenergo.ru";
+const defaultOGImage = "http://gmenergo.ru/static/images/banner.jpg";
 
 const Head = props => (
   <NextHead>
     <meta charSet="UTF-8" />
-    <title>{props.title || ''}</title>
+    <title>{props.title || ""}</title>
     <meta
       name="description"
       content={props.description || defaultDescription}
@@ -51,7 +51,7 @@ const Head = props => (
     />
     <meta property="og:type" content={props.url || defaultOGURL} />
     <meta property="og:url" content={props.url || defaultOGURL} />
-    <meta property="og:title" content={props.title || ''} />
+    <meta property="og:title" content={props.title || ""} />
     <meta
       property="og:description"
       content={props.description || defaultDescription}
