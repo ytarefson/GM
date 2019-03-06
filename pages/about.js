@@ -227,6 +227,7 @@ export class About extends Component {
                   className="d-flex certs-card"
                   href="../static/docs/сканирован0642.pdf"
                   target="_blank"
+                  rel="noopener"
                 >
                   <div className="img-container">
                     <img
@@ -240,6 +241,7 @@ export class About extends Component {
                   className="d-flex certs-card"
                   href="../static/docs/liebherr.pdf"
                   target="_blank"
+                  rel="noopener"
                 >
                   <div className="img-container">
                     <img
@@ -253,6 +255,7 @@ export class About extends Component {
                   className="d-flex certs-card"
                   href="../static/docs/motortech.pdf"
                   target="_blank"
+                  rel="noopener"
                 >
                   <div className="img-container">
                     <img
@@ -266,6 +269,7 @@ export class About extends Component {
                   className="d-flex certs-card"
                   href="../static/docs/sert.pdf"
                   target="_blank"
+                  rel="noopener"
                 >
                   <div className="img-container">
                     <img
@@ -279,6 +283,7 @@ export class About extends Component {
                   className="d-flex certs-card"
                   href="../static/docs/comap.pdf"
                   target="_blank"
+                  rel="noopener"
                 >
                   <div className="img-container">
                     <img
@@ -292,6 +297,7 @@ export class About extends Component {
                   className="d-flex certs-card"
                   href="../static/docs/man.pdf"
                   target="_blank"
+                  rel="noopener"
                 >
                   <div className="img-container">
                     <img
@@ -305,6 +311,7 @@ export class About extends Component {
                   className="d-flex certs-card"
                   href="../static/docs/сканирован0643.pdf"
                   target="_blank"
+                  rel="noopener"
                 >
                   <div className="img-container">
                     <img
