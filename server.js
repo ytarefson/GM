@@ -7,7 +7,6 @@ const sitemap = require('./sitemap');
 const compression = require('compression');
 const https = require('https');
 const fs = require('fs');
-const devcert = require('devcert');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
