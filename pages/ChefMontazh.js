@@ -11,19 +11,19 @@ const ChefMontazh = serviceName => (
       <div className="mycontainer section-plate">
         <div className="row p-0">
           <div className="col-12">
-            <h1 className="header-min-colored">
+            <h2 className="header-min-colored">
               Шеф-монтаж{" "}
               <span className="dark-color">
                 газопоршневых электростанций и мини ТЭЦ
               </span>
-            </h1>
+            </h2>
             <p className="text pb-4">
               Специалисты нашей компании прошли обучение на предприятиях MAN,
               Liebherr и ЯМЗ и обладают компетенцией для проведения наладки
               оборудования производства этих компаний. Стандартная программа
               шеф-монтажных и пусконаладочных работ включает в себя.
             </p>
-            <h2 className="header-min-colored">1. Монтаж и сборка</h2>
+            <h3 className="header-min-colored">1. Монтаж и сборка</h3>
             <div className="razdel-list">
               <div className="razdel-li">
                 <p className="text">
