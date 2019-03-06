@@ -1,9 +1,9 @@
-import React from "react";
-import Link from "next/link";
-import Head from "../components/head";
-import Layout from "../components/Layout";
-import serviceList from "../components/tables/serviceList";
-import "../scss/services/services.scss";
+import React from 'react';
+import '../scss/services/services.scss';
+import Link from 'next/link';
+import Head from '../components/head';
+import Layout from '../components/Layout';
+import serviceList from '../components/tables/serviceList';
 
 const Services = () => (
   <div>

@@ -1,4 +1,4 @@
-@import "./vars";
+@import './vars';
 .navbar {
   z-index: 1;
   min-height: 70px;
@@ -13,7 +13,7 @@
     transform: translateX(-50%) rotateZ(10deg);
     height: 1000px;
     width: 90%;
-    content: "";
+    content: '';
     background-color: white;
     z-index: -1;
   }
@@ -25,7 +25,7 @@
     transform: translateX(-50%) rotateZ(10deg);
     height: 1000px;
     width: 100%;
-    content: "";
+    content: '';
     background-color: #dfdfdf;
     z-index: -1;
   }
@@ -65,7 +65,7 @@
         }
         &::before {
           position: absolute;
-          content: "";
+          content: '';
           display: block;
           width: 0%;
           height: 2px;
@@ -137,7 +137,7 @@
       position: relative;
       &::before,
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         width: 21px;
         height: 2px;
@@ -165,7 +165,7 @@
       transform: translateX(-50%) rotateZ(10deg);
       height: 1000px;
       width: 90%;
-      content: "";
+      content: '';
     }
     &::before {
       display: block;
@@ -175,7 +175,7 @@
       transform: translateX(-50%) rotateZ(10deg);
       height: 1000px;
       width: 100%;
-      content: "";
+      content: '';
     }
   }
 }
@@ -195,7 +195,7 @@
       transform: translateX(-50%) rotateZ(10deg);
       height: 1000px;
       width: 35%;
-      content: "";
+      content: '';
     }
     &::before {
       display: block;
@@ -205,7 +205,7 @@
       transform: translateX(-50%) rotateZ(10deg);
       height: 1000px;
       width: 40%;
-      content: "";
+      content: '';
     }
     & .navbar-collapse {
       //margin-bottom: 0;
@@ -235,8 +235,8 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .navbar {
-    padding-top: 25px;
-    padding-bottom: 20px;
+    padding-top: 25px !important;
+    padding-bottom: 20px !important;
     & .navbar-brand {
       & img {
         display: block;
