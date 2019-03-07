@@ -42,6 +42,29 @@ a {
 b {
   font-weight: 700;
 }
+
+body::-webkit-scrollbar {
+  width: 1.2em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0px 0 3px rgba(0, 0, 0, 0.2);
+  background-color: #a8a8a8;
+  // background: linear-gradient(
+  //   to bottom,
+  //   rgb(242, 125, 14) 0%,
+  //   rgb(237, 27, 61) 100%
+  // );
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fafafa;
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.2),
+    0px -7px 5px -5px rgba(255, 0, 0, 0.2);
+  border-radius: 3px;
+  outline: 1px solid slategrey;
+}
+
 .home {
   display: flex;
   flex-direction: column;

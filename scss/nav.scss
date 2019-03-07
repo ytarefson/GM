@@ -1,4 +1,4 @@
-@import './vars';
+@import "./vars";
 .navbar {
   z-index: 1;
   min-height: 70px;
@@ -13,7 +13,7 @@
     transform: translateX(-50%) rotateZ(10deg);
     height: 1000px;
     width: 90%;
-    content: '';
+    content: "";
     background-color: white;
     z-index: -1;
   }
@@ -25,7 +25,7 @@
     transform: translateX(-50%) rotateZ(10deg);
     height: 1000px;
     width: 100%;
-    content: '';
+    content: "";
     background-color: #dfdfdf;
     z-index: -1;
   }
@@ -65,18 +65,18 @@
         }
         &::before {
           position: absolute;
-          content: '';
+          content: "";
           display: block;
           width: 0%;
-          height: 2px;
+          height: 1px;
           bottom: 0;
           left: 50%;
           transform: translateX(-50%);
           background: linear-gradient(
             to right,
-            rgba(250, 250, 250, 0) 0%,
-            rgb(228, 104, 73) 50%,
-            rgba(250, 250, 250, 0) 100%
+            rgba(255, 0, 0, 0) 0%,
+            rgb(211, 20, 20) 50%,
+            rgba(255, 0, 0, 0) 100%
           );
           transition: all 0.2s;
         }
@@ -137,7 +137,7 @@
       position: relative;
       &::before,
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 21px;
         height: 2px;
@@ -165,7 +165,7 @@
       transform: translateX(-50%) rotateZ(10deg);
       height: 1000px;
       width: 90%;
-      content: '';
+      content: "";
     }
     &::before {
       display: block;
@@ -175,7 +175,7 @@
       transform: translateX(-50%) rotateZ(10deg);
       height: 1000px;
       width: 100%;
-      content: '';
+      content: "";
     }
   }
 }
@@ -195,7 +195,7 @@
       transform: translateX(-50%) rotateZ(10deg);
       height: 1000px;
       width: 35%;
-      content: '';
+      content: "";
     }
     &::before {
       display: block;
@@ -205,7 +205,7 @@
       transform: translateX(-50%) rotateZ(10deg);
       height: 1000px;
       width: 40%;
-      content: '';
+      content: "";
     }
     & .navbar-collapse {
       //margin-bottom: 0;
@@ -261,15 +261,15 @@
 }
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {
-  nav .navbar-nav .nav-item {
-    & .nav-link {
-      font-size: 16px;
-      &:last-child {
+  .navbar {
+    & .navbar-nav {
+      & .nav-item {
+        & .nav-link {
+          font-size: 19px;
+          &:last-child {
+          }
+        }
       }
-    }
-    & .nav-calc-link {
-      font-size: 14px;
-      letter-spacing: 1px;
     }
   }
 }
