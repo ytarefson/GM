@@ -26,6 +26,7 @@ export class SimilarProducts extends Component {
                         <img
                           src={`../../static/images/products/${img}`}
                           alt={label}
+                          title={label}
                           className="similar-card-img"
                         />
                       </div>

@@ -48,6 +48,7 @@ export class ProjectsListPlate extends Component {
                     <img
                       src={`../../static/images/projects/${img}`}
                       alt={`${label} - ${client}`}
+                      title={`${label} - ${client}`}
                       className="project-card-img"
                     />
                   </div>

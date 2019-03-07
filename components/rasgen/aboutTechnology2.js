@@ -21,6 +21,7 @@ export class AboutTechnology2 extends Component {
                 <img
                   src="../../static/images/about-tech-2.jpg"
                   alt="Малая энергетика"
+                  title="Малая энергетика"
                   className="about-tech-pic"
                   onClick={() => this.setState({ isOpen: true })}
                 />

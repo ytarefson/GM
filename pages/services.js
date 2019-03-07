@@ -1,9 +1,9 @@
-import React from 'react';
-import '../scss/services/services.scss';
-import Link from 'next/link';
-import Head from '../components/head';
-import Layout from '../components/Layout';
-import serviceList from '../components/tables/serviceList';
+import React from "react";
+import "../scss/services/services.scss";
+import Link from "next/link";
+import Head from "../components/head";
+import Layout from "../components/Layout";
+import serviceList from "../components/tables/serviceList";
 
 const Services = () => (
   <div>
@@ -33,7 +33,12 @@ const Services = () => (
                     <Link href={href} as={`/uslugi/${as}`}>
                       <a className="teh-card">
                         <div className="teh-image-container">
-                          <img src={img} alt={label} className="teh-image" />
+                          <img
+                            src={img}
+                            alt={label}
+                            title={label}
+                            className="teh-image"
+                          />
                           <div className="teh-content">
                             <p className="teh-desc">{text}</p>
                           </div>

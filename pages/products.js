@@ -42,6 +42,7 @@ const Products = data => (
                 <img
                   src="../static/images/products-img.png"
                   alt="Силовые установки любой мощности"
+                  title="Силовые установки различной мощности"
                   className="products-img"
                 />
               </div>

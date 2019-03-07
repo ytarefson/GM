@@ -46,6 +46,7 @@ export class ProductsListPlate extends Component {
                       <img
                         src={`../../static/images/products/thumb-${item.img}`}
                         alt={item.label}
+                        title={item.label}
                         className="product-card-img"
                       />
                     </div>

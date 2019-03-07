@@ -109,6 +109,7 @@ export class ProductsUnitPlate extends Component {
                   <img
                     src={`../../../static/images/products/thumb-${product.img}`}
                     alt={product.label}
+                    title={product.label}
                     className="product-img"
                     onClick={() => this.setState({ isOpen: true })}
                   />

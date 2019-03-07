@@ -40,6 +40,7 @@ const OptimalAgregates = serviceName => (
               <img
                 src="../static/images/services/agregates-1.jpg"
                 alt="Силовой агрегат газовой электростанции"
+                title="Силовой агрегат газопоршневой электростанции"
               />
             </div>
           </div>

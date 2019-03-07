@@ -28,6 +28,7 @@ export default class GaleryProducts extends Component {
                 className="detail-img"
                 src={`../../static/images/products/thumb-${images[0]}`} // /products/
                 alt={product.label}
+                title={product.label}
                 onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}
               />
             </div>
@@ -38,6 +39,7 @@ export default class GaleryProducts extends Component {
                 className="detail-img"
                 src={`../../static/images/products/thumb-${images[1]}`} // /products/
                 alt={product.label}
+                title={product.label}
                 onClick={() => this.setState({ isOpen: true, photoIndex: 1 })}
               />
             </div>
@@ -48,6 +50,7 @@ export default class GaleryProducts extends Component {
                 className="detail-img"
                 src={`../../static/images/products/thumb-${images[2]}`} // /products/
                 alt={product.label}
+                title={product.label}
                 onClick={() => this.setState({ isOpen: true, photoIndex: 2 })}
               />
             </div>
@@ -58,6 +61,7 @@ export default class GaleryProducts extends Component {
                 className="detail-img"
                 src={`../../static/images/products/thumb-${images[3]}`} // /products/
                 alt={product.label}
+                title={product.label}
                 onClick={() => this.setState({ isOpen: true, photoIndex: 3 })}
               />
             </div>

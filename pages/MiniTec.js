@@ -43,6 +43,7 @@ const MiniTec = serviceName => (
             <img
               src="../static/images/services/minitec-1.jpg"
               alt="Сборочный цех мини ТЭЦ Газовые Машины"
+              title="Сборочный цех мини ТЭЦ Газовые Машины"
               className="minitec-img"
             />
           </div>
@@ -50,6 +51,7 @@ const MiniTec = serviceName => (
             <img
               src="../static/images/services/minitec-2.jpg"
               alt="Сборочный цех мини ТЭЦ Газовые Машины"
+              title="Производственная линия - Газовые Машины"
               className="minitec-img"
             />
           </div>

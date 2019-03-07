@@ -35,6 +35,7 @@ export default class Galery extends Component {
                   src={`../static/images/${images[0]}`} // /products/
                   alt={project.label}
                   onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}
+                  title={project.label}
                 />
               </div>
 
@@ -44,6 +45,7 @@ export default class Galery extends Component {
                   src={`../static/images/${images[1]}`} // /products/
                   alt={project.label}
                   onClick={() => this.setState({ isOpen: true, photoIndex: 1 })}
+                  title={project.label}
                 />
               </div>
 
@@ -53,6 +55,7 @@ export default class Galery extends Component {
                   src={`../static/images/${images[2]}`} // /products/
                   alt={project.label}
                   onClick={() => this.setState({ isOpen: true, photoIndex: 2 })}
+                  title={project.label}
                 />
               </div>
 
@@ -62,6 +65,7 @@ export default class Galery extends Component {
                   src={`../static/images/${images[3]}`} // /products/
                   alt={project.label}
                   onClick={() => this.setState({ isOpen: true, photoIndex: 3 })}
+                  title={project.label}
                 />
               </div>
             </div>

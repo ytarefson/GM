@@ -38,6 +38,7 @@ export class ServiceUnitPlate extends Component {
                   <img
                     src={service.imgDetail}
                     alt={service.label}
+                    title={service.label}
                     className="card-img"
                   />
                 </div>

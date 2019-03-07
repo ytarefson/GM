@@ -28,6 +28,7 @@ export class ProjectsMain extends Component {
                     <img
                       src={`../../static/images/${img}`}
                       alt={`${label} - ${client}`}
+                      title={`${label} - ${client}`}
                       className="project-card-img"
                     />
                   </div>
