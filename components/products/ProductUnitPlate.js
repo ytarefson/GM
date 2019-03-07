@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import "../../scss/products/ProductUnitPlate.scss";
-import Link from "next/link";
-import Head from "../../components/head";
-import productsList from "../tables/productsList";
-import SimilarProducts from "../products/SimilarProducts";
-import FormPage from "../form";
-import GaleryProducts from "../../components/GaleryProducts";
-import YoutubeVideo from "../YoutubeVideo";
-import Lightbox from "react-image-lightbox";
+import React, { Component } from 'react';
+import '../../scss/products/ProductUnitPlate.scss';
+import Link from 'next/link';
+import Head from '../../components/head';
+import productsList from '../tables/productsList';
+import SimilarProducts from '../products/SimilarProducts';
+import FormPage from '../form';
+import GaleryProducts from '../../components/GaleryProducts';
+import YoutubeVideo from '../YoutubeVideo';
+import Lightbox from 'react-image-lightbox';
 // import 'react-image-lightbox/style.css';
 
 export class ProductsUnitPlate extends Component {
@@ -70,13 +70,17 @@ export class ProductsUnitPlate extends Component {
             </div>
           </div>
         </div>
-        <div className="container-fluid product-unit color-section">
+        <div
+          itemScope
+          itemType="http://schema.org/Product"
+          className="container-fluid product-unit color-section"
+        >
           <div className="border-left" />
           <div className="border-right" />
           <div className="mycontainer section-plate">
             <div className="row m-0 pt-4 pb-4">
               <div className="col-12 col-md-7 col-lg-6 col-xl-6 order-md-1 order-2">
-                <h1 className="header-red">
+                <h1 itemProp="name" className="header-red">
                   Газопоршневая электростанция {product.label}
                 </h1>
                 <div className="product-energy-container">
@@ -107,6 +111,7 @@ export class ProductsUnitPlate extends Component {
               <div className="col-12 col-md-5 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 order-md-2 order-1">
                 <div className="product-img-container">
                   <img
+                    itemProp="image"
                     src={`../../../static/images/products/thumb-${product.img}`}
                     alt={product.label}
                     title={product.label}
@@ -116,19 +121,7 @@ export class ProductsUnitPlate extends Component {
                   {isOpen && (
                     <Lightbox
                       mainSrc={`../../static/images/products/${product.img}`}
-                      // nextSrc={images[(photoIndex + 1) % images.length]}
-                      // prevSrc={images[(photoIndex + images.length - 1) % images.length]}
                       onCloseRequest={() => this.setState({ isOpen: false })}
-                      // onMovePrevRequest={() =>
-                      //   this.setState({
-                      //     photoIndex: (photoIndex + images.length - 1) % images.length
-                      //   })
-                      // }
-                      // onMoveNextRequest={() =>
-                      //   this.setState({
-                      //     photoIndex: (photoIndex + 1) % images.length
-                      //   })
-                      // }
                     />
                   )}
                 </div>
@@ -142,17 +135,18 @@ export class ProductsUnitPlate extends Component {
               <h4 className="header-min-colored pb-1">
                 Описание <span className="dark-color">{product.label}</span>
               </h4>
-              <p className="text text-black">{product.descriptionTwo}</p>
+              <p itemProp="description" className="text text-black">
+                {product.descriptionTwo}
+              </p>
             </div>
           </div>
         </div>
         <div className="container-fluid product-unit pt-4 pb-2 white-section">
-          {/* <GaleryProducts product={product} /> */}
           <div className="mycontainer section-plate">
             <div className="col-12">
               <h3 className="header-min-colored pb-1">
-                Характеристики{" "}
-                <span className="dark-color">{product.label}:</span>{" "}
+                Характеристики{' '}
+                <span className="dark-color">{product.label}:</span>{' '}
               </h3>
               <p className="text text-black">{product.descriptionOne}</p>
             </div>
@@ -164,7 +158,7 @@ export class ProductsUnitPlate extends Component {
                 </div>
                 <div className="text-container">
                   <span className="text-common">
-                    Электрическая мощность, кВт:{" "}
+                    Электрическая мощность, кВт:{' '}
                   </span>
                   <span className="text-bold">{product.electricPower}</span>
                 </div>
@@ -195,17 +189,17 @@ export class ProductsUnitPlate extends Component {
                   <span className="text-bold">{product.methaneNumber}</span>
                 </div>
                 {}
-                {product.gasPressure !== "" && (
+                {product.gasPressure !== '' && (
                   <div className="text-container">
                     <span className="text-common">
-                      Давление газа, кгс/см2:{" "}
+                      Давление газа, кгс/см2:{' '}
                     </span>
                     <span className="text-bold">{product.gasPressure}</span>
                   </div>
                 )}
                 <div className="text-container">
                   <span className="text-common">
-                    Расход газа в номинальном режиме, нм3/час:{" "}
+                    Расход газа в номинальном режиме, нм3/час:{' '}
                   </span>
                   <span className="text-bold">
                     {product.nominalGazConsumption}
@@ -221,40 +215,40 @@ export class ProductsUnitPlate extends Component {
                 </div>
                 <div className="text-container">
                   <span className="text-common">
-                    Общий ресурс электростанции:{" "}
+                    Общий ресурс электростанции:{' '}
                   </span>
                   <span className="text-bold">{product.totalPowerPlant}</span>
                 </div>
-                {product.gasMixer !== "" && (
+                {product.gasMixer !== '' && (
                   <div className="text-container">
                     <span className="text-common">
-                      Газовоздушный смеситель:{" "}
+                      Газовоздушный смеситель:{' '}
                     </span>
                     <span className="text-bold">{product.gasMixer}</span>
                   </div>
                 )}
-                {product.controlBlock !== "" && (
+                {product.controlBlock !== '' && (
                   <div className="text-container">
                     <span className="text-common">Блок управления: </span>
                     <span className="text-bold">{product.controlBlock}</span>
                   </div>
                 )}
-                {product.ignitionSystem !== "" && (
+                {product.ignitionSystem !== '' && (
                   <div className="text-container">
                     <span className="text-common">Система зажигания: </span>
                     <span className="text-bold">{product.ignitionSystem}</span>
                   </div>
                 )}
-                {product.throttleValve !== "" && (
+                {product.throttleValve !== '' && (
                   <div className="text-container">
                     <span className="text-common">Дроссельная заслонка: </span>
                     <span className="text-bold">{product.throttleValve}</span>
                   </div>
                 )}
-                {product.excessAirRatio !== "" && (
+                {product.excessAirRatio !== '' && (
                   <div className="text-container">
                     <span className="text-common">
-                      Коэффициент избытка воздуха, λ:{" "}
+                      Коэффициент избытка воздуха, λ:{' '}
                     </span>
                     <span className="text-bold">{product.excessAirRatio}</span>
                   </div>
@@ -272,9 +266,9 @@ export class ProductsUnitPlate extends Component {
           <div className="mycontainer section-plate">
             <div className="col">
               <h4 className="header-min-colored pb-1">
-                Область использования{" "}
+                Область использования{' '}
                 <span className="dark-color">
-                  {" "}
+                  {' '}
                   газопоршневых электростанций
                 </span>
               </h4>
