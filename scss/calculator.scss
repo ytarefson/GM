@@ -1,4 +1,4 @@
-@import "./vars";
+@import './vars';
 
 .calculator {
   padding-top: 30px;
@@ -189,7 +189,7 @@ input {
   }
   .calc-form {
     padding: 50px 50px;
-    background: url("/static/images/logo-white.png") 95% 5% no-repeat,
+    background: url('/static/images/logo-white.png') 95% 5% no-repeat,
       $new-gradient;
   }
   .calc-buttons {
