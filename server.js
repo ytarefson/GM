@@ -5,6 +5,8 @@ const async = require('async');
 const email = require('./routes/api/email');
 const sitemap = require('./sitemap');
 const compression = require('compression');
+const https = require('https');
+const fs = require('fs');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
@@ -14,12 +16,12 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
   server.use(compression());
-  server.use(express.static('static'));
+  // server.use(express.static('static'));
 
   server.get('/robots.txt', function(req, res) {
     res.type('text/plain');
     res.send(
-      'User-agent: *\nDisallow: /o-komnanii\nHost: gmenergo.ru\nSitemap: http://gmenergo.ru/sitemap.xml'
+      'User-agent: *\nDisallow: /o-komnanii\nHost: gmenergo.ru\nSitemap: https://gmenergo.ru/sitemap.xml'
     );
   });
   server.get('/sitemap.xml', function(req, res) {
@@ -50,6 +52,16 @@ app.prepare().then(() => {
     const actualPage = '/newsUnit';
     const queryParams = { id: req.params.id };
     app.render(req, res, actualPage, queryParams);
+  });
+  // Redirects from pages
+  server.get('/projects', (req, res) => {
+    return res.redirect('/proekti');
+  });
+  server.get('/news', (req, res) => {
+    return res.redirect('/novosti');
+  });
+  server.get('/services', (req, res) => {
+    return res.redirect('/uslugi');
   });
 
   server.get('/proekti', (req, res) => {

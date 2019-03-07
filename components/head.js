@@ -1,15 +1,15 @@
-import React from "react";
-import NextHead from "next/head";
-import { string } from "prop-types";
+import React from 'react';
+import NextHead from 'next/head';
+import { string } from 'prop-types';
 
-const defaultDescription = "";
-const defaultOGURL = "http://gmenergo.ru";
-const defaultOGImage = "http://gmenergo.ru/static/images/banner.jpg";
+const defaultDescription = '';
+const defaultOGURL = 'https://gmenergo.ru';
+const defaultOGImage = 'https://gmenergo.ru/static/images/baner.jpg';
 
 const Head = props => (
   <NextHead>
     <meta charSet="UTF-8" />
-    <title>{props.title || ""}</title>
+    <title>{props.title || ''}</title>
     <meta
       name="description"
       content={props.description || defaultDescription}
@@ -20,38 +20,38 @@ const Head = props => (
     {/* <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" /> */}
     <link
       rel="icon"
-      href="http://gmenergo.ru/static/images/favicon/favicon.ico"
+      href="https://gmenergo.ru/static/images/favicon/favicon.ico"
     />
 
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="http://gmenergo.ru/static/images/favicon/apple-touch-icon.png"
+      href="https://gmenergo.ru/static/images/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="http://gmenergo.ru/static/images/favicon/favicon-32x32.png"
+      href="https://gmenergo.ru/static/images/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="http://gmenergo.ru/static/images/favicon/favicon-16x16.png"
+      href="https://gmenergo.ru/static/images/favicon/favicon-16x16.png"
     />
     <link
       rel="manifest"
-      href="http://gmenergo.ru/static/images/favicon/site.webmanifest"
+      href="https://gmenergo.ru/static/images/favicon/site.webmanifest"
     />
     <link
       rel="mask-icon"
-      href="http://gmenergo.ru/static/images/favicon/safari-pinned-tab.svg"
+      href="https://gmenergo.ru/static/images/favicon/safari-pinned-tab.svg"
       color="#5bbad5"
     />
     <meta property="og:type" content={props.url || defaultOGURL} />
     <meta property="og:url" content={props.url || defaultOGURL} />
-    <meta property="og:title" content={props.title || ""} />
+    <meta property="og:title" content={props.title || ''} />
     <meta
       property="og:description"
       content={props.description || defaultDescription}
