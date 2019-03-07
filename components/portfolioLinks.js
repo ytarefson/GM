@@ -76,7 +76,7 @@ const PortfolioLinks = () => (
       <div className="row">
         <div className="col-12">
           <div className="button-grey-container">
-            <a href="/projects" className="button-grey">
+            <a href="/proekti" className="button-grey">
               <span>Портфолио</span>
             </a>
           </div>
