@@ -32,7 +32,12 @@ export default GeneralServices => (
               <Link href={href} as={`/uslugi/${as}`}>
                 <a className="teh-card">
                   <div className="teh-image-container">
-                    <img src={img} alt={label} className="teh-image" />
+                    <img
+                      src={img}
+                      alt={label}
+                      title={label}
+                      className="teh-image"
+                    />
 
                     <div className="teh-content">
                       <p className="teh-desc">{text}</p>

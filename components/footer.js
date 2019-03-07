@@ -18,6 +18,7 @@ const Footer = () => (
                 src="../../static/images/logo-big.png"
                 className="footer-logo"
                 alt="ООО Газовые Машины"
+                title="Логотип - Газовые машины"
               />
             </a>
           </Link>

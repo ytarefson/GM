@@ -29,6 +29,7 @@ const VspomOborud = serviceName => (
                   <img
                     src="../static/images/services/vspom-1.jpg"
                     alt="Котлы – утилизаторы тепла"
+                    title="Котлы – утилизаторы тепла"
                     className="tool-card-img"
                   />
                 </div>
@@ -44,6 +45,7 @@ const VspomOborud = serviceName => (
                   <img
                     src="../static/images/services/vspom-2.jpg"
                     alt="Абсорбционные холодильные машины"
+                    title="Абсорбционные холодильные машины"
                     className="tool-card-img"
                   />
                 </div>
@@ -56,6 +58,7 @@ const VspomOborud = serviceName => (
                   <img
                     src="../static/images/services/vspom-3.jpg"
                     alt="Радиаторы охлаждения"
+                    title="Радиаторы охлаждения"
                     className="tool-card-img"
                   />
                 </div>
@@ -68,6 +71,7 @@ const VspomOborud = serviceName => (
                   <img
                     src="../static/images/services/vspom-4.jpg"
                     alt="Промышленные низкошумные глушители"
+                    title="Промышленные низкошумные глушители"
                     className="tool-card-img"
                   />
                 </div>
@@ -82,6 +86,7 @@ const VspomOborud = serviceName => (
                   <img
                     src="../static/images/services/vspom-5.jpg"
                     alt="Высокотемпературные дымовые трубы"
+                    title="Высокотемпературные дымовые трубы"
                     className="tool-card-img"
                   />
                 </div>
@@ -94,6 +99,7 @@ const VspomOborud = serviceName => (
                   <img
                     src="../static/images/services/vspom-6.jpg"
                     alt="Комплектные модульные РУ 0,4-6,3-10,5-35 кВ"
+                    title="Комплектные модульные РУ 0,4-6,3-10,5-35 кВ"
                     className="tool-card-img"
                   />
                 </div>
@@ -108,6 +114,7 @@ const VspomOborud = serviceName => (
                   <img
                     src="../static/images/services/vspom-1.jpg"
                     alt="Модульные газовые котельные"
+                    title="Модульные газовые котельные"
                     className="tool-card-img"
                   />
                 </div>
@@ -120,6 +127,7 @@ const VspomOborud = serviceName => (
                   <img
                     src="../static/images/services/vspom-1.jpg"
                     alt="оборудование модульных газовых котельных"
+                    title="Оборудование для модульных газовых котельных"
                     className="tool-card-img"
                   />
                 </div>

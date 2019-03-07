@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import newsList from '../tables/newsList';
-import Link from 'next/link';
-import '../../scss/news/newsListPlate.scss';
+import React, { Component } from "react";
+import newsList from "../tables/newsList";
+import Link from "next/link";
+import "../../scss/news/newsListPlate.scss";
 
 export class NewsListPlate extends Component {
   render() {
@@ -29,6 +29,7 @@ export class NewsListPlate extends Component {
                         <img
                           src={`../../static/images/${img}`}
                           alt={label}
+                          title={label}
                           className="news-card-img"
                         />
                       </div>

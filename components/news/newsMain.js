@@ -36,6 +36,7 @@ export class NewsMain extends Component {
               <img
                 src={`../../static/images/${shortData.img}`}
                 alt={shortData.label}
+                title={shortData.label}
                 className="news-card-img"
               />
             </div>

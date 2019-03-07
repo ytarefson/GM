@@ -65,6 +65,7 @@ export class ProjectUnitPlate extends Component {
                   <img
                     src={`../static/images/${project.img}`}
                     alt="Газовая мини-ТЭЦ"
+                    title="Газовая мини-ТЭЦ"
                     className="detail-img"
                   />
                 </div>

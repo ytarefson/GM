@@ -57,6 +57,7 @@ const PortfolioLinks = () => (
                       <img
                         src={`../static/images/${img}`}
                         alt={(company, label)}
+                        title={`Проект - ${label}`}
                         className="portfolio-img"
                       />
                     </div>

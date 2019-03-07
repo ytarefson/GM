@@ -20,7 +20,11 @@ export class NewsListPlate extends Component {
             <h1 className="header-razdel">{data.label}</h1>
           </div>
           <div className="img-container">
-            <img src={`../../static/images/${data.img}`} alt={data.label} />
+            <img
+              src={`../../static/images/${data.img}`}
+              alt={data.label}
+              title={data.label}
+            />
           </div>
           <div className="new-details">
             <span className="subheadding-red-bottom">

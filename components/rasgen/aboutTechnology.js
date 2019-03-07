@@ -29,6 +29,7 @@ export class AboutTechnology extends Component {
                 <img
                   src="../../static/images/about-tech.jpg"
                   alt="Распределённая генерация"
+                  title="Распределённая генерация"
                   className="about-tech-pic"
                   onClick={() => this.setState({ isOpen: true })}
                 />

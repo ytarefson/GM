@@ -67,6 +67,7 @@ export class About extends Component {
                         this.setState({ isOpen: true, photoIndex: 0 })
                       }
                       alt="Малая энергетика"
+                      title="Малая энергетика"
                       className="about-pic"
                     />
                   </div>
@@ -79,6 +80,7 @@ export class About extends Component {
                         this.setState({ isOpen: true, photoIndex: 1 })
                       }
                       alt="Газовый энергоцентр"
+                      title="Газовый энергоцентр"
                       className="about-pic"
                     />
                   </div>
@@ -91,6 +93,7 @@ export class About extends Component {
                         this.setState({ isOpen: true, photoIndex: 2 })
                       }
                       alt="Сборочный цех Газовые машины"
+                      title="Сборочный цех Газовые машины"
                       className="about-pic"
                     />
                   </div>
@@ -234,6 +237,7 @@ export class About extends Component {
                       className="certs-img certs-img-1"
                       src="../static/images/docs/сканирован0642.jpg"
                       alt="сертификат"
+                      title="Сертификат с выставки Собственная генерация"
                     />
                   </div>
                 </a>
@@ -248,6 +252,7 @@ export class About extends Component {
                       className="certs-img certs-img-1"
                       src="../static/images/docs/liebherr.jpg"
                       alt="сертификат"
+                      title="Сертификат Liebherr"
                     />
                   </div>
                 </a>
@@ -262,6 +267,7 @@ export class About extends Component {
                       className="certs-img certs-img-1"
                       src="../static/images/docs/motortech.jpg"
                       alt="сертификат"
+                      title="Сертификат Motortech"
                     />
                   </div>
                 </a>
@@ -276,6 +282,7 @@ export class About extends Component {
                       className="certs-img certs-img-1"
                       src="../static/images/docs/sert.jpg"
                       alt="сертификат"
+                      title="Сертификат соответствия ГОСТ"
                     />
                   </div>
                 </a>
@@ -290,6 +297,7 @@ export class About extends Component {
                       className="certs-img certs-img-1"
                       src="../static/images/docs/comap.jpg"
                       alt="сертификат"
+                      title="Сертификат ComAp"
                     />
                   </div>
                 </a>
@@ -304,6 +312,7 @@ export class About extends Component {
                       className="certs-img certs-img-1"
                       src="../static/images/docs/man.jpg"
                       alt="сертификат"
+                      title="Сертификат MAN"
                     />
                   </div>
                 </a>
@@ -318,6 +327,7 @@ export class About extends Component {
                       className="certs-img certs-img-2"
                       src="../static/images/docs/nagrada2.jpg"
                       alt="сертификат"
+                      title="Партнёрский сертификат MAN"
                     />
                   </div>
                 </a>
