@@ -40,7 +40,14 @@ export class ProductsListPlate extends Component {
           <div className="col-12 col-md-10 product-card-plate">
             {data.map(item => (
               <div className="product-card-container" key={item.key}>
-                <Link href={`/products/${category}/${item.id}`} key={item.key}>
+                <Link
+                  href={{
+                    pathname: "/product",
+                    query: { category: category, id: item.id }
+                  }}
+                  as={`/products/${category}/${item.id}`}
+                  key={item.key}
+                >
                   <a className="product-card">
                     <div className="img-container">
                       <img

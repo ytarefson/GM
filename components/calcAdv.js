@@ -27,7 +27,7 @@ export default CalcAdv => (
               узнайте результат.
             </span>
 
-            <Link href="/calculator.js" as="/calculator">
+            <Link href="/calculator" as="/calculator">
               <a className="calc-link">
                 <span>Калькулятор</span>
               </a>
