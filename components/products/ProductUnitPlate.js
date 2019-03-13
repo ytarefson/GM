@@ -49,7 +49,7 @@ export class ProductsUnitPlate extends Component {
       }
     });
     return (
-      <div>
+      <div itemScope itemType="http://schema.org/Product">
         <Head
           title={`Газопоршневая электростанция ${product.label}`}
           description={`${product.descriptionTwo}`}
@@ -63,18 +63,11 @@ export class ProductsUnitPlate extends Component {
               <Link href="/products">
                 <a className="crambs">Продукты > </a>
               </Link>
-              {/* <Link href={`/products?category=${category}`}>
-                <a className="crambs">{category} > </a>
-              </Link> */}
               <span className="crambs cramb-main">{product.label}</span>
             </div>
           </div>
         </div>
-        <div
-          itemScope
-          itemType="http://schema.org/Product"
-          className="container-fluid product-unit color-section"
-        >
+        <div className="container-fluid product-unit color-section">
           <div className="border-left" />
           <div className="border-right" />
           <div className="mycontainer section-plate">

@@ -1,32 +1,32 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 //import Router from 'next/router';
-import "../scss/portfolioLinks.scss";
+import '../scss/portfolioLinks.scss';
 
 const portfolio = [
   {
-    label: "Энергоцентр ЯМЗ",
-    company: "Энергоцентр",
-    img: "project-avtodisel.jpg",
-    href: "#",
-    id: "0",
-    as: "/yamz"
+    label: 'Энергоцентр ЯМЗ',
+    company: 'Энергоцентр',
+    img: 'project-avtodisel.jpg',
+    href: '#',
+    id: '0',
+    as: '/yamz'
   },
   {
-    label: "Невская ратуша",
-    company: "Энергоцентр",
-    img: "project-nevskaya.jpg",
-    href: "#",
-    id: "1",
-    as: "/nevskaya-ratusha"
+    label: 'Невская ратуша',
+    company: 'Энергоцентр',
+    img: 'project-nevskaya.jpg',
+    href: '#',
+    id: '1',
+    as: '/nevskaya-ratusha'
   },
   {
-    label: "Аккус Актобэ",
-    company: "Энергоцентр",
-    img: "project-akkus.jpg",
-    href: "#",
-    id: "3",
-    as: "/akkus-aktobe"
+    label: 'Аккус Актобэ',
+    company: 'Энергоцентр',
+    img: 'project-akkus.jpg',
+    href: '#',
+    id: '3',
+    as: '/akkus-aktobe'
   }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
@@ -38,9 +38,9 @@ const PortfolioLinks = () => (
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <span className="header-min-colored">
+          <h3 className="header-min-colored">
             Реализованные <span className="dark-color"> проекты:</span>
-          </span>
+          </h3>
         </div>
       </div>
     </div>

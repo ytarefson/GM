@@ -9,19 +9,10 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="ru">
         <Head>
           <meta name="yandex-verification" content="9653be472d2730fd" />
-          {/* <link
-            rel="stylesheet"
-            href="https://bootswatch.com/4/sketchy/bootstrap.min.css"
-          /> */}
-          {/* <link
-            rel="stylesheet"
-            href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
-          /> */}
-          {/* <link rel="stylesheet" href="../scss/style.scss" /> */}
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
+
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
@@ -56,7 +47,6 @@ export default class MyDocument extends Document {
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossOrigin="anonymous"
           />
-          <script href="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" />
         </body>
       </html>
     );
