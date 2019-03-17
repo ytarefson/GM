@@ -8,6 +8,7 @@ import CalcAdv from '../components/calcAdv';
 import GeneralServices from '../components/generalServices';
 import ProductsAdv from '../components/productsAdv';
 import Layout from '../components/Layout';
+import FormPage from '../components/form';
 
 const Home = () => (
   <div className="home">
@@ -22,6 +23,7 @@ const Home = () => (
       <CalcAdv />
       <ProductsAdv />
       <GeneralServices />
+      <FormPage />
     </Layout>
   </div>
 );

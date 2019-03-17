@@ -1,13 +1,14 @@
-import React from "react";
-import "../scss/form.scss";
-import Router from "next/router";
+import React from 'react';
+import '../scss/form.scss';
+import Router from 'next/router';
+import PropTypes from 'prop-types';
 
 class FormPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      userEmail: "",
-      userPhone: "",
+      userEmail: '',
+      userPhone: '',
       isEmailEmpty: true,
       isPhoneEmpty: true,
       isFormFullfiled: false
@@ -20,18 +21,18 @@ class FormPage extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    fetch("../../api/email", {
-      method: "POST",
+    fetch('../../api/email', {
+      method: 'POST',
       headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         email: this.state.userEmail,
         product: this.props.product,
         phone: this.state.userPhone
       })
-    }).then(res => Router.push("/confirm-email"));
+    }).then(res => Router.push('/confirm-email'));
   }
 
   handleChangeEmail(e) {
@@ -53,9 +54,6 @@ class FormPage extends React.Component {
                 <div className="form-group">
                   <div className="form-left colform">
                     <div className="form-context">
-                      {/* <label className="text-common" htmlFor="userEmail">
-								Введите e-mail:{' '}
-							</label> */}
                       <p className="text-common form-cta-title">
                         Заинтересовал продукт или услуга?
                       </p>
@@ -85,12 +83,6 @@ class FormPage extends React.Component {
                       required
                     />
 
-                    {/* <input
-								type="datetime-local"
-								className="callTime"
-								id="callTime"
-								placeholder="Введите время удобное для связи"
-							/> */}
                     <button className="form-button">
                       Заказать консультацию
                     </button>
@@ -107,5 +99,12 @@ class FormPage extends React.Component {
     );
   }
 }
+
+FormPage.defaultProps = {
+  product: ''
+};
+FormPage.propTypes = {
+  product: PropTypes.string.isRequired
+};
 
 export default FormPage;
