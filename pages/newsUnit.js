@@ -28,6 +28,7 @@ const NewsUnit = data => (
 
 NewsUnit.getInitialProps = async function(context) {
   const { id } = context.query;
+  //const data = newsList.filter(item => item.id === id);
   const data = newsList[id];
   return { data };
 };

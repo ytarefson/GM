@@ -6,8 +6,7 @@ import "../../scss/news/newsMain.scss";
 export class NewsMain extends Component {
   render() {
     const data = newsList;
-    const shortData = data[0];
-
+    const shortData = data[data.length - 1];
     return (
       <div className="news-main-plate">
         <div className="row m-0">
