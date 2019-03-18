@@ -19,6 +19,7 @@
     "next": "^7.0.2",
     "next-fonts": "^0.10.0",
     "node-sass": "^4.10.0",
+    "prop-types": "^15.7.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-image-lightbox": "^5.1.0",

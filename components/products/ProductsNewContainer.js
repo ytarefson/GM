@@ -4,6 +4,7 @@ import '../../scss/video.scss';
 import { Player } from 'video-react';
 import YoutubeVideo from '../YoutubeVideo';
 import YoutubeVideoMan from '../YoutubeVideoMan';
+import YoutubeVideoMan2 from '../YoutubeVideoMan2';
 import YoutubeVideo1 from '../YoutubeVideo1';
 import YoutubeVideoLiebherr2 from '../YoutubeVideoLiebherr2';
 import Link from '../Link';
@@ -425,6 +426,9 @@ class ProductsNew extends Component {
           <div className="row mt-5 m-0">
             <div className="col-12 col-md-10 offset-md-2">
               <YoutubeVideoMan className="myVideo" />
+            </div>
+            <div className="col-12 col-md-10 offset-md-2">
+              <YoutubeVideoMan2 className="myVideo" />
             </div>
           </div>
         )}
