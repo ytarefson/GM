@@ -21,7 +21,7 @@ class FormPage extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    fetch('../../api/email', {
+    fetch('/api/email', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
