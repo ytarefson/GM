@@ -196,10 +196,12 @@ body::-webkit-scrollbar-thumb {
 
 .header-min-colored {
   font-family: $molot-font;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 700;
   letter-spacing: -0.2px;
-  color: #353535;
+  //color: #353535;
+  color: #6d6d6d;
+  line-height: 24px;
   // & .dark-color {
   //   color: #353535;
   //   font-weight: 700;
@@ -460,6 +462,7 @@ body::-webkit-scrollbar-thumb {
   .header-min-colored {
     font-size: 27px;
     letter-spacing: -0.2px;
+    line-height: 32px;
   }
   .subheading-common {
     margin-bottom: 0px;
@@ -586,6 +589,7 @@ body::-webkit-scrollbar-thumb {
   .header-min-colored {
     font-size: 30px;
     letter-spacing: -0.2px;
+    line-height: 36px;
   }
   .subheading-common {
     font-size: 18px;

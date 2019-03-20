@@ -1,0 +1,115 @@
+@import "./vars";
+
+.newsAdv {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  & .newsAdv-col:first-child {
+    //padding-bottom: 15px;
+  }
+  & .newsAdv-col {
+    color: #353535;
+    //margin-top: 15px;
+    //margin-bottom: 15px;
+    //border-bottom: 1px solid #dcdcdc;
+    & .news-title-1 {
+      font-family: $molot-font;
+      font-size: 21px;
+      color: #6d6d6d;
+    }
+  }
+  & .news-item {
+    border-bottom: none;
+    //border-left: 1px solid #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px;
+    & .news-title {
+      display: block;
+      font-size: 15px;
+      line-height: 19px;
+    }
+    & .news-date {
+      display: block;
+      text-align: right;
+      margin-top: 7px;
+      font-size: 12px;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .newsAdv {
+    & .news-item {
+      & .news-title {
+        display: block;
+        font-size: 15px;
+        line-height: 19px;
+      }
+      & .news-date {
+        display: block;
+        text-align: left;
+        margin-top: 7px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .newsAdv {
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    & .newsAdv-col {
+      color: #353535;
+      //margin-top: 15px;
+      //margin-bottom: 15px;
+      //border-bottom: 1px solid #dcdcdc;
+      & .news-title-1 {
+        font-family: $molot-font;
+        font-size: 30px;
+        color: #6d6d6d;
+      }
+    }
+    & .news-title-col {
+      border-right: 1px solid #dcdcdc;
+      padding-top: 5px;
+    }
+    & .news-item {
+      border-bottom: none;
+      padding-left: 15px;
+      //border-left: 1px solid #dcdcdc;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      & .news-title {
+        display: block;
+        font-size: 15px;
+      }
+      & .news-date {
+        display: block;
+        text-align: right;
+        margin-top: 5px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
