@@ -17,15 +17,19 @@ export class ServiceUnitPlate extends Component {
       <div>
         <Head title={`${service.label}`} description={service.text} />
         <div className="container-fluid service-breadcrumbs">
-          <div className="mycontainer section-plate">
-            <div className="breadcrumbs">
-              <Link href="/">
-                <a className="crambs">Главная > </a>
-              </Link>
-              <Link href="/uslugi">
-                <a className="crambs">Услуги > </a>
-              </Link>
-              <span className="crambs cramb-main">{service.label}</span>
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="breadcrumbs">
+                  <Link href="/">
+                    <a className="crambs">Главная > </a>
+                  </Link>
+                  <Link href="/uslugi">
+                    <a className="crambs">Услуги > </a>
+                  </Link>
+                  <span className="crambs cramb-main">{service.label}</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

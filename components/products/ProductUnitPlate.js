@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import '../../scss/products/ProductUnitPlate.scss';
-import Link from 'next/link';
-import Head from '../../components/head';
-import productsList from '../tables/productsList';
-import SimilarProducts from '../products/SimilarProducts';
-import FormPage from '../form';
-import GaleryProducts from '../../components/GaleryProducts';
-import YoutubeVideo from '../YoutubeVideo';
-import Lightbox from 'react-image-lightbox';
+import React, { Component } from "react";
+import "../../scss/products/ProductUnitPlate.scss";
+import Link from "next/link";
+import Head from "../../components/head";
+import productsList from "../tables/productsList";
+import SimilarProducts from "../products/SimilarProducts";
+import FormPage from "../form";
+import GaleryProducts from "../../components/GaleryProducts";
+import YoutubeVideo from "../YoutubeVideo";
+import Lightbox from "react-image-lightbox";
 // import 'react-image-lightbox/style.css';
 
 export class ProductsUnitPlate extends Component {
@@ -54,23 +54,25 @@ export class ProductsUnitPlate extends Component {
           title={`Газопоршневая электростанция ${product.label}`}
           description={`${product.descriptionTwo}`}
         />
-        <div className="container-fluid product-unit">
-          <div className="mycontainer section-plate">
-            <div className="breadcrumbs">
-              <Link href="/">
-                <a className="crambs">Главная > </a>
-              </Link>
-              <Link href="/products">
-                <a className="crambs">Продукты > </a>
-              </Link>
-              <span className="crambs cramb-main">{product.label}</span>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="breadcrumbs">
+                <Link href="/">
+                  <a className="crambs">Главная > </a>
+                </Link>
+                <Link href="/products">
+                  <a className="crambs">Продукты > </a>
+                </Link>
+                <span className="crambs cramb-main">{product.label}</span>
+              </div>
             </div>
           </div>
         </div>
         <div className="container-fluid product-unit color-section">
           <div className="border-left" />
           <div className="border-right" />
-          <div className="mycontainer section-plate">
+          <div className="container section-plate">
             <div className="row m-0 pt-4 pb-4">
               <div className="col-12 col-md-7 col-lg-6 col-xl-6 order-md-1 order-2">
                 <h1 itemProp="name" className="header-red">
@@ -138,8 +140,8 @@ export class ProductsUnitPlate extends Component {
           <div className="mycontainer section-plate">
             <div className="col-12">
               <h3 className="header-min-colored pb-1">
-                Характеристики{' '}
-                <span className="dark-color">{product.label}:</span>{' '}
+                Характеристики{" "}
+                <span className="dark-color">{product.label}:</span>{" "}
               </h3>
               <p className="text text-black">{product.descriptionOne}</p>
             </div>
@@ -151,7 +153,7 @@ export class ProductsUnitPlate extends Component {
                 </div>
                 <div className="text-container">
                   <span className="text-common">
-                    Электрическая мощность, кВт:{' '}
+                    Электрическая мощность, кВт:{" "}
                   </span>
                   <span className="text-bold">{product.electricPower}</span>
                 </div>
@@ -182,17 +184,17 @@ export class ProductsUnitPlate extends Component {
                   <span className="text-bold">{product.methaneNumber}</span>
                 </div>
                 {}
-                {product.gasPressure !== '' && (
+                {product.gasPressure !== "" && (
                   <div className="text-container">
                     <span className="text-common">
-                      Давление газа, кгс/см2:{' '}
+                      Давление газа, кгс/см2:{" "}
                     </span>
                     <span className="text-bold">{product.gasPressure}</span>
                   </div>
                 )}
                 <div className="text-container">
                   <span className="text-common">
-                    Расход газа в номинальном режиме, нм3/час:{' '}
+                    Расход газа в номинальном режиме, нм3/час:{" "}
                   </span>
                   <span className="text-bold">
                     {product.nominalGazConsumption}
@@ -208,40 +210,40 @@ export class ProductsUnitPlate extends Component {
                 </div>
                 <div className="text-container">
                   <span className="text-common">
-                    Общий ресурс электростанции:{' '}
+                    Общий ресурс электростанции:{" "}
                   </span>
                   <span className="text-bold">{product.totalPowerPlant}</span>
                 </div>
-                {product.gasMixer !== '' && (
+                {product.gasMixer !== "" && (
                   <div className="text-container">
                     <span className="text-common">
-                      Газовоздушный смеситель:{' '}
+                      Газовоздушный смеситель:{" "}
                     </span>
                     <span className="text-bold">{product.gasMixer}</span>
                   </div>
                 )}
-                {product.controlBlock !== '' && (
+                {product.controlBlock !== "" && (
                   <div className="text-container">
                     <span className="text-common">Блок управления: </span>
                     <span className="text-bold">{product.controlBlock}</span>
                   </div>
                 )}
-                {product.ignitionSystem !== '' && (
+                {product.ignitionSystem !== "" && (
                   <div className="text-container">
                     <span className="text-common">Система зажигания: </span>
                     <span className="text-bold">{product.ignitionSystem}</span>
                   </div>
                 )}
-                {product.throttleValve !== '' && (
+                {product.throttleValve !== "" && (
                   <div className="text-container">
                     <span className="text-common">Дроссельная заслонка: </span>
                     <span className="text-bold">{product.throttleValve}</span>
                   </div>
                 )}
-                {product.excessAirRatio !== '' && (
+                {product.excessAirRatio !== "" && (
                   <div className="text-container">
                     <span className="text-common">
-                      Коэффициент избытка воздуха, λ:{' '}
+                      Коэффициент избытка воздуха, λ:{" "}
                     </span>
                     <span className="text-bold">{product.excessAirRatio}</span>
                   </div>
@@ -259,9 +261,9 @@ export class ProductsUnitPlate extends Component {
           <div className="mycontainer section-plate">
             <div className="col">
               <h4 className="header-min-colored pb-1">
-                Область использования{' '}
+                Область использования{" "}
                 <span className="dark-color">
-                  {' '}
+                  {" "}
                   газопоршневых электростанций
                 </span>
               </h4>

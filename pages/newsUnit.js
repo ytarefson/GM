@@ -8,18 +8,22 @@ import NewsUnitPlate from "../components/news/NewsUnitPlate";
 const NewsUnit = data => (
   <Layout>
     <div className="container-fluid news pt-3">
-      <div className="section-plate mb-3">
-        <div className="breadcrumbs">
-          <Link href="/">
-            <a className="crambs">Главная > </a>
-          </Link>
-          <Link href={{ pathname: "/news" }} as="/novosti">
-            <a className="crambs">Новости > </a>
-          </Link>
-          <span className="crambs cramb-main">{data.data.label}</span>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="breadcrumbs ml-0">
+              <Link href="/">
+                <a className="crambs">Главная > </a>
+              </Link>
+              <Link href={{ pathname: "/news" }} as="/novosti">
+                <a className="crambs">Новости > </a>
+              </Link>
+              <span className="crambs cramb-main">{data.data.label}</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="mycontainer">
+      <div className="container">
         <NewsUnitPlate data={data} />
       </div>
     </div>

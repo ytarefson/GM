@@ -17,6 +17,16 @@
   position: relative;
   background-color: #fafafa;
   z-index: 0;
+  // & .container {
+  //   & .row {
+  //     & .col-12 {
+  //       & .breadcrumbs {
+  //         margin-left: 0px !important;
+  //       }
+  //     }
+  //   }
+  // }
+
   // &:after {
   //   position: absolute;
   //   z-index: -1;

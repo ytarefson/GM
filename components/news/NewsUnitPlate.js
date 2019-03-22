@@ -15,30 +15,34 @@ export class NewsListPlate extends Component {
           // description='Подбробная информация о деятельности компании ООО "Газовые машины"'
           description={`Новости компании "Газовые машины". ${data.label}`}
         />
-        <article className="news-unit-plate">
-          <div className="big-new">
-            <h1 className="header-razdel">{data.label}</h1>
+        <div className="row">
+          <div className="col-12">
+            <article className="news-unit-plate">
+              <div className="big-new">
+                <h1 className="header-razdel">{data.label}</h1>
+              </div>
+              <div className="img-container">
+                <img
+                  src={`../../static/images/${data.img}`}
+                  alt={data.label}
+                  title={data.label}
+                />
+              </div>
+              <div className="new-details">
+                <span className="subheadding-red-bottom">
+                  Раздел: {data.category}
+                </span>
+                <span className="author">Автор публикации: {data.author}</span>
+                <span className="created">Опубликовано: {data.created_at}</span>
+                <span className="updated">
+                  Последний раз обновлено: {data.updated_at}
+                </span>
+              </div>
+              <p className="text-min">{desc}</p>
+            </article>
+            <div className="clearNews" />
           </div>
-          <div className="img-container">
-            <img
-              src={`../../static/images/${data.img}`}
-              alt={data.label}
-              title={data.label}
-            />
-          </div>
-          <div className="new-details">
-            <span className="subheadding-red-bottom">
-              Раздел: {data.category}
-            </span>
-            <span className="author">Автор публикации: {data.author}</span>
-            <span className="created">Опубликовано: {data.created_at}</span>
-            <span className="updated">
-              Последний раз обновлено: {data.updated_at}
-            </span>
-          </div>
-          {desc}
-        </article>
-        <div className="clearNews" />
+        </div>
       </div>
     );
   }

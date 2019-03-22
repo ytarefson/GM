@@ -5,10 +5,12 @@ import Link from "next/link";
 
 export default class NewsAdv extends Component {
   render() {
-    const news = newsList.slice(0, 3);
+    const news = newsList.slice(-3);
+
     let newsContent;
+
     if (news) {
-      newsContent = news.map((item, index) => (
+      newsContent = news.reverse().map((item, index) => (
         <Link
           href={`/novosti?id=${item.id}`}
           as={`/novosti/${item.id}`}
