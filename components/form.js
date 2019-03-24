@@ -44,6 +44,7 @@ class FormPage extends React.Component {
 
   render() {
     const product = this.props.product;
+    console.log(product);
     return (
       <div className="container-fluid form-bg">
         <div className="container">

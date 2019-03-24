@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import Head from "../../components/head";
-import Link from "next/link";
-import serviceList from "../tables/serviceList";
-import "../../scss/services/serviceUnitPlate.scss";
+import React, { Component } from 'react';
+import Head from '../../components/head';
+import Link from 'next/link';
+import serviceList from '../tables/serviceList';
+import '../../scss/services/serviceUnitPlate.scss';
 
 export class ServiceUnitPlate extends Component {
   render() {
-    const serviceName = this.props.serviceName.serviceName;
+    const serviceName = this.props.serviceName;
     let service = {};
     serviceList.map(item => {
       if (item.as === serviceName) {

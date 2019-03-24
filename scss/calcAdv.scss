@@ -1,4 +1,4 @@
-@import "./vars";
+@import './vars';
 .calcAdv {
   overflow-x: hidden;
   position: relative;
@@ -15,7 +15,7 @@
     top: 0;
     right: 0;
     opacity: 0.5;
-    background: url("/static/images/dots-min-white.png") 0% 0% no-repeat;
+    background: url('/static/images/dots-min-white.png') 0% 0% no-repeat;
   }
   & .dots-left {
     position: absolute;
@@ -24,7 +24,7 @@
     height: 259px;
     left: 0;
     bottom: 0;
-    background: url("/static/images/dots-min.png") 0% 0% no-repeat;
+    background: url('/static/images/dots-min.png') 0% 0% no-repeat;
   }
   & .arrow-left-yellow {
     display: block;
@@ -92,7 +92,7 @@
             border-radius: 3px;
             background-image: $new-gradient;
             color: #ffffff;
-            font-size: 14px;
+            font-size: 15px;
             letter-spacing: 0.5px;
             line-height: 40px;
             margin: 0 auto;
@@ -147,7 +147,7 @@
       top: -15%;
       right: 0;
       opacity: 0.3;
-      background: url("/static/images/dots-min-white.png") 0% 0% no-repeat;
+      background: url('/static/images/dots-min-white.png') 0% 0% no-repeat;
     }
     & .dots-left {
       position: absolute;
@@ -156,7 +156,7 @@
       height: 259px;
       left: 0;
       bottom: 0;
-      background: url("/static/images/dots-min.png") 0% 0% no-repeat;
+      background: url('/static/images/dots-min.png') 0% 0% no-repeat;
     }
     & .arrow-left-yellow {
       display: block;
@@ -272,7 +272,7 @@
     &::after {
       display: block;
       position: absolute;
-      content: "";
+      content: '';
       z-index: -1;
       top: 50%;
       left: -20px;
@@ -285,7 +285,7 @@
     &::before {
       display: block;
       position: absolute;
-      content: "";
+      content: '';
       z-index: 0;
       top: 50%;
       right: -20px;
@@ -304,7 +304,7 @@
       top: -60%;
       right: 0;
       opacity: 0.1;
-      background: url("/static/images/dots-big-white.png") 0% 0% no-repeat;
+      background: url('/static/images/dots-big-white.png') 0% 0% no-repeat;
     }
     & .dots-left {
       position: absolute;
@@ -314,7 +314,7 @@
       left: 0;
       bottom: -60%;
       opacity: 0.1;
-      background: url("/static/images/dots-big-white.png") 0% 0% no-repeat;
+      background: url('/static/images/dots-big-white.png') 0% 0% no-repeat;
     }
     & .arrow-left-yellow {
       display: block;
@@ -393,7 +393,7 @@
               &::before {
                 position: absolute;
                 display: block;
-                content: "";
+                content: '';
                 top: 7px;
                 left: 7px;
                 right: 7px;
@@ -433,7 +433,7 @@
     &::after {
       display: block;
       position: absolute;
-      content: "";
+      content: '';
       top: 50%;
       left: -20px;
       width: 540px;
