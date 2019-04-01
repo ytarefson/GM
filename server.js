@@ -1,12 +1,11 @@
 const express = require('express');
 const next = require('next');
-var helper = require('sendgrid').mail;
-const async = require('async');
-const email = require('./routes/api/email');
 const sitemap = require('./sitemap');
 const compression = require('compression');
-const https = require('https');
-const fs = require('fs');
+
+// API
+const email = require('./routes/api/email');
+const formValidation = require('./routes/api/form-validation');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
@@ -144,10 +143,16 @@ app.prepare().then(() => {
     };
     app.render(req, res, actualPage, queryParams);
   });
+
+  server.get('/askForm', (req, res) => {
+    return app.render(req, res, '/error', req.query);
+  });
+
   server.get('/about', (req, res) => {
     return app.render(req, res, '/about', req.query);
   });
   server.use('/api/email', email);
+  server.use('/api/form-validation', formValidation);
 
   server.get('*', (req, res) => {
     return handle(req, res);

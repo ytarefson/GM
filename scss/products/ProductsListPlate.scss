@@ -1,4 +1,4 @@
-@import "../vars";
+@import '../vars';
 
 .products {
   position: relative;
@@ -7,7 +7,7 @@
   &::after {
     position: absolute;
     z-index: -1;
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 43%;
@@ -412,6 +412,7 @@
           & .img-container {
             height: 200px;
             & .product-card-img {
+              max-width: 100%;
               width: auto;
               height: 100%;
             }
@@ -424,7 +425,7 @@
             justify-content: space-between;
             & .flex-top {
               & .product-name {
-                font-size: 27px;
+                font-size: 24px;
                 line-height: 22px;
                 margin-bottom: 15px;
               }

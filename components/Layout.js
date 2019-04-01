@@ -12,9 +12,10 @@ export default ({ children }) => (
   <div>
     <Nav />
     <YMInitializer accounts={[51052037]} />
-    <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
+    {/* <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
       {props => <div style={props}>{children}</div>}
-    </Spring>
+    </Spring> */}
+    {children}
     <Footer />
   </div>
 );

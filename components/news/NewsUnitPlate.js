@@ -1,7 +1,8 @@
-import React, { Component } from "react";
-import Head from "../../components/head";
-import "../../scss/news/newsUnitPlate.scss";
-var Parser = require("html-react-parser");
+import React, { Component } from 'react';
+import Head from '../../components/head';
+import '../../scss/news/newsUnitPlate.scss';
+import YoutubeVideo13 from '../YoutubeVideo13';
+var Parser = require('html-react-parser');
 
 export class NewsListPlate extends Component {
   render() {
@@ -39,6 +40,13 @@ export class NewsListPlate extends Component {
                 </span>
               </div>
               <p className="text-min">{desc}</p>
+
+              {data.id === 13 && (
+                <div className="myvideo-container">
+                  <div className="clearNews" />
+                  <YoutubeVideo13 className="myVideo" />
+                </div>
+              )}
             </article>
             <div className="clearNews" />
           </div>

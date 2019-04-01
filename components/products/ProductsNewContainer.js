@@ -365,6 +365,18 @@ class ProductsNew extends Component {
                   ЯМЗ
                 </a>
               </li>
+              <li
+                className={
+                  category == 'JENBACHER' ? 'category-li active' : 'category-li'
+                }
+              >
+                <a
+                  onClick={e => this.handleClick(e, 'JENBACHER')}
+                  className="category-link"
+                >
+                  JENBACHER
+                </a>
+              </li>
             </ul>
           </div>
 
