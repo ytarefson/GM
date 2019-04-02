@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import classnames from 'classnames';
-import PropTypes from 'prop-types';
-import TextFieldGroup from './TextFieldGroup';
+import React, { Component } from "react";
+import classnames from "classnames";
+import PropTypes from "prop-types";
+import TextFieldGroup from "./TextFieldGroup";
 
 class RadioInputGroup extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      other: '',
+      other: "",
       ckecked: false
     };
     this.onChange = this.onChange.bind(this);
@@ -16,7 +16,7 @@ class RadioInputGroup extends Component {
   onChange(e) {
     this.setState({
       other: e.target.value
-    });    
+    });
   }
 
   render() {
@@ -47,19 +47,21 @@ class RadioInputGroup extends Component {
 
     return (
       <div className="radio-input-group">
-        <span>{label}</span>
+        <span className="label-title">{label}</span>
         {radioInputContent}
         {askother && (
           <div className="radio-input-field">
             <input
+              className="radio-input-div"
               type={type}
               id={`${name}-other`}
               name={name}
               value={this.state.other}
               onClick={onSelect.bind(this)}
-              
             />
-            <label htmlFor={`${name}-other`}>{otherlabel}</label>
+            <label className="radio-label-div" htmlFor={`${name}-other`}>
+              {otherlabel}
+            </label>
             <TextFieldGroup
               name={name}
               placeholder="Другое"
@@ -87,6 +89,6 @@ RadioInputGroup.propTypes = {
 };
 
 RadioInputGroup.defaultProps = {
-  type: 'radio'
+  type: "radio"
 };
 export default RadioInputGroup;

@@ -1,6 +1,6 @@
-import React from 'react';
-import classnames from 'classnames';
-import PropTypes from 'prop-types';
+import React from "react";
+import classnames from "classnames";
+import PropTypes from "prop-types";
 
 const TextFieldGroup = ({
   name,
@@ -14,12 +14,18 @@ const TextFieldGroup = ({
   disabled
 }) => {
   return (
-    <div className="form-group">
-      {label ? <label htmlFor={name}>{label}</label> : ''}
+    <div className="form-group pt-1 pb-0">
+      {label ? (
+        <label className="label-title" htmlFor={name}>
+          {label}
+        </label>
+      ) : (
+        ""
+      )}
       <input
         type={type}
-        className={classnames('form-control form-control-lg', {
-          'is-invalid': error
+        className={classnames("form-control form-control-lg", {
+          "is-invalid": error
         })}
         placeholder={placeholder}
         name={name}
@@ -45,7 +51,7 @@ TextFieldGroup.propTypes = {
 };
 
 TextFieldGroup.defaultProps = {
-  type: 'text'
+  type: "text"
 };
 
 export default TextFieldGroup;

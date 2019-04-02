@@ -1,0 +1,213 @@
+@import "../vars";
+
+.razdel-title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 900;
+  color: $accent-grey;
+  line-height: 23px;
+  margin-bottom: 0px;
+}
+.title-description {
+  font-size: 14px;
+  line-height: 12px;
+}
+.form-razdel {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.fields {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  & .label-title {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-top: 7px;
+    margin-bottom: 5px;
+  }
+  & .form-control {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  & .radio-input-group {
+    & .label-title {
+      margin-bottom: 10px;
+    }
+    & .radio-input-field {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      & input {
+        //display: inline-block;
+        margin-right: 10px;
+      }
+      & label {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 0;
+        font-weight: 300;
+      }
+    }
+    & .radio-input-field:last-child {
+      display: block;
+    }
+  }
+}
+.form-razdel:nth-child(even) {
+  background-color: #fff;
+}
+
+.button-section {
+  & .button-submit {
+    display: block;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50px;
+    color: #fff;
+    font-family: $molot-font;
+    background-color: $accent-red;
+    border: none;
+    padding: 12px 20px;
+    letter-spacing: 1px;
+    margin: 15px auto;
+    box-shadow: $box-shadow-up;
+    font-size: 15px;
+    transition: all 0.2s ease-in;
+    &:hover {
+      cursor: pointer;
+      box-shadow: $box-shadow;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .razdel-title {
+    display: block;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 300;
+    color: $accent-grey;
+    line-height: 28px;
+    margin-bottom: 0px;
+  }
+  .title-description {
+    font-size: 16px;
+    line-height: 12px;
+  }
+  .form-razdel {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .fields {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    & .label-title {
+      display: block;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 700;
+      margin-top: 7px;
+      margin-bottom: 10px;
+    }
+    & .form-control {
+      font-size: 16px;
+      padding-left: 10px;
+    }
+    & .radio-input-group {
+      & .label-title {
+        margin-bottom: 12px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      & .radio-input-field {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        & input {
+          //display: inline-block;
+          margin-right: 10px;
+        }
+        & label {
+          font-size: 16px;
+          line-height: 18px;
+          margin-bottom: 0;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .razdel-title {
+    display: block;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 300;
+    color: $accent-grey;
+    line-height: 34px;
+    margin-bottom: 0px;
+    padding-right: 300px;
+  }
+  .title-description {
+    font-size: 16px;
+    line-height: 12px;
+  }
+  .form-razdel {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .fields {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    & .label-title {
+      display: block;
+      font-size: 22px;
+      line-height: 24px;
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 7px;
+    }
+    & .form-control {
+      font-size: 18px;
+      padding-left: 15px;
+    }
+    & .radio-input-group {
+      & .label-title {
+        margin-bottom: 15px;
+        font-size: 22px;
+        line-height: 24px;
+      }
+      & .radio-input-field {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        & input {
+          //display: inline-block;
+          margin-right: 10px;
+        }
+        & label {
+          font-size: 18px;
+          line-height: 18px;
+          margin-bottom: 0;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
