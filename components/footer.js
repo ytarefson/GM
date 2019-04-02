@@ -33,6 +33,12 @@ const Footer = () => (
                 </Link>
               </li>
             ))}
+            <a href="/calculator" className="footer-button calc-link">
+              Калькулятор
+            </a>
+            <a href="/askForm" className="footer-button askForm-link">
+              Опросный лист
+            </a>
           </ul>
         </div>
         <div className="col-12 col-sm-6 col-lg-5 link-map">

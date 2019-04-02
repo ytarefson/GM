@@ -1,0 +1,166 @@
+@import "./vars";
+
+.jumbo-askForm {
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  min-height: 150px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  & .wrapper {
+    // padding-left: 15px;
+    // padding-right: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 30px;
+    align-items: center;
+    & .text-container {
+      display: block;
+      width: 70%;
+      & .jumbo-title {
+        display: block;
+        font-size: 18px;
+        font-weight: 900;
+        color: $accent-dark;
+      }
+      & .jumbo-text {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+    & .button-container {
+      width: 100%;
+      & .button-askForm {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 270px;
+        height: 70px;
+        border-radius: 3px;
+        border: 3px solid $accent-dark;
+        color: $accent-dark;
+        text-align: center;
+        font-family: $molot-font;
+        line-height: 66px;
+        font-size: 24px;
+        overflow: hidden;
+        transition: all 0.2s;
+
+        &::after {
+          position: absolute;
+          display: block;
+          content: "";
+          height: 120px;
+          width: 35px;
+          background-color: rgb(238, 238, 238);
+          top: 50%;
+          transform: translateY(-50%) rotate(15deg);
+          left: -10px;
+          transition: all 0.2s;
+        }
+        &:hover {
+          // box-shadow: 0 0 40px rgba(255, 103, 1, 0.6);
+          &::after {
+            left: 240px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) {
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .jumbo-askForm {
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    min-height: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    & .wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .jumbo-askForm {
+    display: flex;
+    align-items: center;
+    & .wrapper {
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .jumbo-askForm {
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    min-height: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    & .wrapper {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 1fr;
+      & .text-container {
+        display: block;
+        width: 100%;
+        & .jumbo-title {
+          display: block;
+          font-size: 22px;
+          font-weight: 900;
+        }
+        & .jumbo-text {
+          display: block;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .jumbo-askForm {
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    min-height: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    & .wrapper {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 1fr;
+      & .text-container {
+        display: block;
+        width: 100%;
+        & .jumbo-title {
+          display: block;
+          font-size: 30px;
+          font-weight: 900;
+          line-height: 30px;
+        }
+        & .jumbo-text {
+          display: block;
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+}

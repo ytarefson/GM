@@ -152,7 +152,7 @@ class AskForm extends Component {
                     <TextFieldGroup
                       name="organizationname"
                       placeholder="ООО 'Ваша организация'"
-                      label="Название организации: *"
+                      label="Название организации:"
                       value={this.state.organizationname}
                       onChange={this.onChange}
                       error={errors.organizationname}
@@ -161,7 +161,7 @@ class AskForm extends Component {
                     <TextFieldGroup
                       name="organizationadres"
                       placeholder="123456 г. Ярославль, дом, корпус, помещение..."
-                      label="Адрес организации: *"
+                      label="Адрес организации:"
                       value={this.state.organizationadres}
                       onChange={this.onChange}
                       error={errors.organizationadres}
@@ -181,7 +181,7 @@ class AskForm extends Component {
                     <TextFieldGroup
                       name="personname"
                       placeholder="Иванов Иван Иванович"
-                      label="ФИО: *"
+                      label="ФИО:"
                       value={this.state.personname}
                       onChange={this.onChange}
                       error={errors.personname}
@@ -189,7 +189,7 @@ class AskForm extends Component {
                     <TextFieldGroup
                       name="personstatus"
                       placeholder="Коммерческий директор"
-                      label="Должность: *"
+                      label="Должность:"
                       value={this.state.personstatus}
                       onChange={this.onChange}
                       error={errors.personstatus}
@@ -197,7 +197,7 @@ class AskForm extends Component {
                     <TextFieldGroup
                       name="personemail"
                       placeholder="mail@mail.ru"
-                      label="e-mail: *"
+                      label="e-mail:"
                       value={this.state.personemail}
                       onChange={this.onChange}
                       error={errors.personemail}
@@ -253,7 +253,7 @@ class AskForm extends Component {
                     <TextFieldGroup
                       name="locationparams"
                       placeholder="промышленное предприятие, жилая зона, др."
-                      label="Характеристики места расположения: "
+                      label="Характеристики места расположения:"
                       value={this.state.locationparams}
                       onChange={this.onChange}
                       error={errors.locationparams}

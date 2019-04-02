@@ -27,9 +27,10 @@
       margin-top: 30px;
       & .form-context {
         & .form-cta-title {
+          font-family: $molot-font;
           font-weight: 700;
-          font-size: 26px;
-          line-height: 36px;
+          font-size: 24px;
+          line-height: 30px;
           color: white;
           padding-bottom: 15px;
           border-bottom: 3px solid white;
@@ -43,10 +44,10 @@
       }
       & .userEmail {
         display: block;
-        border-radius: 3px;
+        border-radius: 25px;
         padding-left: 15px;
         width: 100%;
-        height: 42px;
+        height: 50px;
         margin-bottom: 20px;
         background-color: #fff;
       }
@@ -55,7 +56,7 @@
         border-radius: 30px;
         padding-left: 15px;
         width: 100%;
-        height: 42px;
+        height: 50px;
         margin-bottom: 20px;
         color: grey;
         background-color: #fff;
@@ -119,7 +120,7 @@
         & .form-context {
           & .form-cta-title {
             font-weight: 700;
-            font-size: 26px;
+            font-size: 33px;
             line-height: 36px;
             color: white;
             padding-bottom: 15px;
@@ -134,10 +135,8 @@
         }
         & .userEmail {
           display: block;
-          border-radius: 3px;
           padding-left: 15px;
           width: 230px;
-          height: 42px;
           margin: 0 auto 20px;
         }
         & .callTime {
@@ -152,7 +151,7 @@
           display: block;
           border-radius: 50px;
           border: none;
-          padding: 10px 20px;
+          padding: 15px 20px;
           margin: 0 auto 20px;
           box-shadow: $box-shadow-up;
           transition: all 0.2s;
@@ -209,7 +208,7 @@
             text-transform: uppercase;
             border-bottom: 3px solid white;
             margin-bottom: 10px;
-            text-align: center;
+            //text-align: center;
           }
           & .form-cta-text {
             font-size: 17px;
@@ -220,10 +219,8 @@
         }
         & .userEmail {
           display: block;
-          border-radius: 3px;
           padding-left: 15px;
           width: 230px;
-          height: 40px;
           margin: 0 auto 20px;
         }
         & .callTime {
@@ -238,7 +235,6 @@
           display: block;
           border-radius: 50px;
           border: none;
-          padding: 10px 20px;
           margin: 0 auto 20px;
           box-shadow: $box-shadow-up;
           transition: all 0.2s;
@@ -272,7 +268,7 @@
         & .form-context {
           & .form-cta-title {
             font-weight: 700;
-            font-size: 38px;
+            font-size: 42px;
             line-height: 42px;
             text-transform: uppercase;
             color: white;
@@ -291,10 +287,8 @@
         }
         & .userEmail {
           display: block;
-          //border-radius: 30px;
           padding-left: 15px;
           width: 270px;
-          height: 42px;
           margin: 0 auto 20px;
         }
         & .callTime {
