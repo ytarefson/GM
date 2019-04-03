@@ -1,14 +1,14 @@
-import React from 'react';
-import '../scss/form.scss';
-import Router from 'next/router';
-import PropTypes from 'prop-types';
+import React from "react";
+import "../scss/form.scss";
+import Router from "next/router";
+import PropTypes from "prop-types";
 
 class FormPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      userEmail: '',
-      userPhone: '',
+      userEmail: "",
+      userPhone: "",
       isEmailEmpty: true,
       isPhoneEmpty: true,
       isFormFullfiled: false
@@ -21,18 +21,18 @@ class FormPage extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    fetch('/api/email', {
-      method: 'POST',
+    fetch("/api/email", {
+      method: "POST",
       headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json'
+        Accept: "application/json",
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
         email: this.state.userEmail,
         product: this.props.product,
         phone: this.state.userPhone
       })
-    }).then(res => Router.push('/confirm-email'));
+    }).then(res => Router.push("/confirm-email"));
   }
 
   handleChangeEmail(e) {
@@ -58,13 +58,18 @@ class FormPage extends React.Component {
                       <p className="text-common form-cta-title">
                         Заинтересовал продукт или услуга?
                       </p>
-                      <p className="text-common form-cta-text">
-                        оставьте Ваши контакты, и наши специалисты
-                        проконсультируют вас в удобное время!
+                      <p className="form-cta-text-2">
+                        Cвяжитесь с нами любым удобным способом
                       </p>
                     </div>
                   </div>
+                  <div className="form-mid colform">
+                    <p className="text-common form-text-or">ИЛИ</p>
+                  </div>
                   <div className="form-right colform">
+                    <p className="text-common form-cta-text-2 form-cta-text-22 mb-3">
+                      Заполните форму и наши специалисты свяжутся с вами!
+                    </p>
                     <input
                       onChange={this.handleChangeEmail}
                       type="email"
@@ -87,9 +92,6 @@ class FormPage extends React.Component {
                     <button className="form-button">
                       Заказать консультацию
                     </button>
-                    <p className="form-cta-text-2">
-                      или свяжитесь с нами любым удобным способом
-                    </p>
                   </div>
                 </div>
               </form>
@@ -102,7 +104,7 @@ class FormPage extends React.Component {
 }
 
 FormPage.defaultProps = {
-  product: ''
+  product: ""
 };
 FormPage.propTypes = {
   product: PropTypes.string.isRequired

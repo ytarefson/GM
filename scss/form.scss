@@ -6,11 +6,9 @@
   padding-right: 15px;
 }
 .forma {
-  padding: 0 30px 30px 30px;
+  padding: 15px 30px 30px 30px;
   margin-bottom: 150px;
   border-radius: 3px;
-
-  //background: linear-gradient(-45deg, #c42f09 0%, #cf6020 100%);
   background: linear-gradient(
     to left,
     rgb(242, 125, 14) 0%,
@@ -18,13 +16,44 @@
   );
   box-shadow: 10px 50px 30px -35px rgba(237, 27, 61, 0.35),
     -10px 50px 30px -35px rgba(242, 125, 14, 0.35);
-
   & .form-group {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 0;
     & .colform {
-      margin-top: 30px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      & .form-text-or {
+        display: block;
+        font-family: $molot-font;
+        color: #fff;
+        letter-spacing: 1px;
+        font-size: 24px;
+        text-align: center;
+        position: relative;
+        //overflow: hidden;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 45%;
+          right: -30px;
+          top: 50%;
+          transform: translateY(-50%) rotate(0deg);
+          height: 2px;
+          background-color: #fff;
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          width: 45%;
+          left: -30px;
+          top: 50%;
+          transform: translateY(-50%) rotate(0deg);
+          height: 2px;
+          background-color: #fff;
+        }
+      }
       & .form-context {
         & .form-cta-title {
           font-family: $molot-font;
@@ -33,34 +62,31 @@
           line-height: 30px;
           color: white;
           padding-bottom: 15px;
-          border-bottom: 3px solid white;
-          margin-bottom: 20px;
-        }
-        & .form-cta-text {
-          font-size: 14px;
-          line-height: 24px;
-          color: white;
+          //border-bottom: 3px solid white;
+          //margin-bottom: 20px;
         }
       }
       & .userEmail {
         display: block;
-        border-radius: 25px;
+        border-radius: 50px;
         padding-left: 15px;
         width: 100%;
-        height: 50px;
-        margin-bottom: 20px;
+        font-size: 16px;
+        height: 60px;
+        margin-bottom: 25px;
         background-color: #fff;
+        border: none;
       }
-      & .callTime {
-        display: block;
-        border-radius: 30px;
-        padding-left: 15px;
-        width: 100%;
-        height: 50px;
-        margin-bottom: 20px;
-        color: grey;
-        background-color: #fff;
-      }
+      // & .callTime {
+      //   display: block;
+      //   border-radius: 50px;
+      //   padding-left: 15px;
+      //   width: 100%;
+      //   height: 60px;
+      //   margin-bottom: 20px;
+      //   color: grey;
+      //   background-color: #fff;
+      // }
       & .form-button {
         display: block;
         border-radius: 50px;
@@ -70,7 +96,7 @@
         background-color: $accent-red;
         //background-image: linear-gradient(to right, #d4722a 0%, #c62d28 100%);
         border: none;
-        padding: 12px 20px;
+        padding: 20px 25px;
         letter-spacing: 1px;
         margin: 15px auto;
         box-shadow: $box-shadow;
@@ -84,22 +110,83 @@
         }
       }
       & .form-cta-text-2 {
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 16px;
+        //margin-bottom: 15px;
+        font-weight: 500;
+        line-height: 20px;
         color: white;
-        text-align: center;
+        //text-align: center;
       }
     }
   }
 }
 // Large devices (desktops, 576px and up)
 @media (min-width: 576px) {
-  .form-bg {
-    & .container {
-      & .row {
-        //margin: 0;
-        // padding-left: 15px;
-        // padding-right: 15px;
+  .forma {
+    padding: 15px 30px 30px 30px;
+    margin-bottom: 150px;
+    border-radius: 3px;
+    background: linear-gradient(
+      to left,
+      rgb(242, 125, 14) 0%,
+      rgb(237, 27, 61) 100%
+    );
+    box-shadow: 10px 50px 30px -35px rgba(237, 27, 61, 0.35),
+      -10px 50px 30px -35px rgba(242, 125, 14, 0.35);
+    & .form-group {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      margin-bottom: 0;
+      & .colform {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        & .form-text-or {
+          display: block;
+          font-family: $molot-font;
+          color: #fff;
+          letter-spacing: 1px;
+          font-size: 24px;
+          text-align: center;
+          position: relative;
+          //overflow: hidden;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 45%;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%) rotate(0deg);
+            height: 2px;
+            background-color: #fff;
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            width: 45%;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%) rotate(0deg);
+            height: 2px;
+            background-color: #fff;
+          }
+        }
+        & .form-context {
+          & .form-cta-title {
+            font-family: $molot-font;
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 34px;
+          }
+        }
+        & .userEmail {
+        }
+        & .form-cta-text-2 {
+          font-size: 18px;
+          padding-right: 80px;
+          line-height: 22px;
+          font-weight: 700;
+        }
       }
     }
   }
@@ -112,25 +199,49 @@
     padding: 30px;
     & .form-group {
       display: grid;
-      grid-gap: 30px;
-      grid-template-columns: 1fr 1fr;
+      grid-gap: 0px;
+      grid-template-columns: 10fr 1fr 10fr;
       grid-template-rows: auto;
+      & .form-mid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & .form-text-or {
+          display: block;
+          font-family: $molot-font;
+          color: #fff;
+          letter-spacing: 1px;
+          font-size: 36px;
+          text-align: center;
+          align-self: center;
+          position: relative;
+          //overflow: hidden;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 180px;
+            top: -120px;
+            //bottom: 0;
+            left: 50%;
+            //transform: translateX(-50%) rotate(0deg);
+            background-color: #fafafa;
+          }
+          &::before {
+            display: none;
+          }
+        }
+      }
       & .colform {
-        margin-top: 30px;
+        //margin-top: 30px;
         & .form-context {
           & .form-cta-title {
             font-weight: 700;
-            font-size: 33px;
-            line-height: 36px;
+            font-size: 36px;
+            line-height: 40px;
             color: white;
             padding-bottom: 15px;
-            border-bottom: 3px solid white;
             margin-bottom: 20px;
-          }
-          & .form-cta-text {
-            font-size: 14px;
-            line-height: 24px;
-            color: white;
           }
         }
         & .userEmail {
@@ -161,10 +272,16 @@
           }
         }
         & .form-cta-text-2 {
-          font-size: 14px;
+          font-size: 17px;
           line-height: 20px;
           color: white;
+          padding-right: 0;
+          //text-align: center;
+        }
+        & .form-cta-text-22 {
           text-align: center;
+          padding-right: 20px;
+          padding-left: 20px;
         }
       }
     }
@@ -175,7 +292,6 @@
 @media (min-width: 992px) {
   .forma {
     overflow: hidden;
-
     padding: 30px;
     // background: url("/static/images/dots-big-white.png") 100% 50% no-repeat,
     //   linear-gradient(to left, rgb(242, 125, 14) 0%, rgb(237, 27, 61) 100%);
@@ -192,49 +308,81 @@
     //   background: url("/static/images/dots-big-white.png") 0% 0% no-repeat;
     // }
     & .form-group {
+      padding-left: 30px;
       display: grid;
-      grid-gap: 30px;
-      grid-template-columns: 1fr 1fr;
+      grid-gap: 0px;
+      grid-template-columns: 10fr 1fr 11fr;
       grid-template-rows: auto;
+      & .form-mid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & .form-text-or {
+          display: block;
+          font-family: $molot-font;
+          color: #fff;
+          letter-spacing: 1px;
+          font-size: 44px;
+          text-align: center;
+          align-self: center;
+          position: relative;
+          border: 4px solid white;
+          padding: 30px;
+          border-radius: 3px;
+          //text-shadow: 5px -5px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 35px 0px 60px -20px rgba(0, 0, 0, 0.2),
+            -35px 0px 60px -20px rgba(0, 0, 0, 0.2);
+          //overflow: hidden;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 4px;
+            height: 200px;
+            top: -200px;
+            //bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) rotate(0deg);
+            background-color: #fafafa;
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            left: 50%;
+            top: 100px;
+            width: 4px;
+            height: 173px;
+            transform: translateX(-50%);
+            background-color: #fafafa;
+          }
+        }
+      }
+      & .form-right {
+        //margin-left: 15px;
+      }
       & .colform {
-        margin-top: 15px;
+        //margin-top: 30px;
         & .form-context {
           & .form-cta-title {
-            font-weight: 900;
-            font-size: 30px;
-            line-height: 40px;
+            font-size: 44px;
+            line-height: 48px;
             color: white;
-            padding: 0 30px 15px 30px;
-            text-transform: uppercase;
-            border-bottom: 3px solid white;
-            margin-bottom: 10px;
-            //text-align: center;
-          }
-          & .form-cta-text {
-            font-size: 17px;
-            line-height: 30px;
-            text-align: center;
-            color: white;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
           }
         }
         & .userEmail {
           display: block;
           padding-left: 15px;
-          width: 230px;
+          width: 270px;
           margin: 0 auto 20px;
         }
-        & .callTime {
-          display: block;
-          border-radius: 30px;
-          padding-left: 15px;
-          width: 230px;
-          height: 42px;
-          margin: 0 auto 20px;
-        }
+
         & .form-button {
           display: block;
           border-radius: 50px;
           border: none;
+          padding: 18px 20px;
           margin: 0 auto 20px;
           box-shadow: $box-shadow-up;
           transition: all 0.2s;
@@ -244,10 +392,16 @@
           }
         }
         & .form-cta-text-2 {
-          font-size: 17px;
-          line-height: 20px;
+          font-size: 22px;
+          line-height: 27px;
           color: white;
+          padding-right: 100px;
+          //text-align: center;
+        }
+        & .form-cta-text-22 {
           text-align: center;
+          padding-right: 50px;
+          padding-left: 50px;
         }
       }
     }
@@ -256,73 +410,6 @@
 
 // Large devices (desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .forma {
-    margin-left: 15px;
-    margin-right: 15px;
-
-    padding: 40px 30px 60px 90px;
-
-    & .form-group {
-      & .colform {
-        margin-top: 30px;
-        & .form-context {
-          & .form-cta-title {
-            font-weight: 700;
-            font-size: 42px;
-            line-height: 42px;
-            text-transform: uppercase;
-            color: white;
-            padding-bottom: 20px;
-            border-bottom: 4px solid white;
-            margin-bottom: 20px;
-            text-align: left;
-          }
-          & .form-cta-text {
-            font-size: 18px;
-            line-height: 30px;
-            color: white;
-            text-align: left;
-            padding-left: 30px;
-          }
-        }
-        & .userEmail {
-          display: block;
-          padding-left: 15px;
-          width: 270px;
-          margin: 0 auto 20px;
-        }
-        & .callTime {
-          display: block;
-          border-radius: 30px;
-          padding-left: 15px;
-          width: 270px;
-          height: 42px;
-          margin: 0 auto 40px;
-        }
-        & .form-button {
-          display: block;
-          height: 60px;
-          width: 270px;
-          border-radius: 50px;
-          border: none;
-          padding: 10px 20px;
-          margin: 0 auto 20px;
-          box-shadow: $box-shadow-up;
-          transition: all 0.2s;
-          &:hover {
-            cursor: pointer;
-            box-shadow: $box-shadow;
-          }
-        }
-        & .form-cta-text-2 {
-          font-size: 14px;
-          line-height: 20px;
-          color: white;
-          text-align: center;
-        }
-      }
-    }
-  }
 }
 
 @media (min-width: 1400px) {
