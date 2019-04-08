@@ -17,6 +17,7 @@ class AskForm extends Component {
       personemail: '',
       personphone: '',
       personmobile: '',
+      locationparams: '',
       projectmountadres: '',
       projectdescription: '',
       operationmode: '',
@@ -26,7 +27,6 @@ class AskForm extends Component {
       minimalload: '',
       energyloadgraph: '',
       installationsettings: '',
-      locationparams: '',
       fueltype: '',
       utilsystem: '',
       reqheatpower: '',
@@ -69,6 +69,7 @@ class AskForm extends Component {
       personemail: this.state.personemail,
       personphone: this.state.personphone,
       personmobile: this.state.personmobile,
+      locationparams: this.state.locationparams,
       projectmountadres: this.state.projectmountadres,
       projectdescription: this.state.projectdescription,
       operationmode: this.state.operationmode,
@@ -78,7 +79,6 @@ class AskForm extends Component {
       minimalload: this.state.minimalload,
       energyloadgraph: this.state.energyloadgraph,
       installationsettings: this.state.installationsettings,
-      locationparams: this.state.locationparams,
       fueltype: this.state.fueltype,
       utilsystem: this.state.utilsystem,
       reqheatpower: this.state.reqheatpower,
@@ -91,6 +91,7 @@ class AskForm extends Component {
       commentary: this.state.commentary
     };
     this.props.validateFormData(askFormData);
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -298,7 +299,7 @@ class AskForm extends Component {
                       onSelect={this.onSelect}
                       error={errors.installationsettings}
                     />
-                    {/* <RadioInputGroup
+                    <RadioInputGroup
                       name="fueltype"
                       label="Тип и характеристики используемого топлива: "
                       values={['Магистральный природный газ (метан)']}
@@ -308,7 +309,7 @@ class AskForm extends Component {
 											"
                       onSelect={this.onSelect}
                       error={errors.fueltype}
-                    /> */}
+                    />
                   </div>
                 </div>
               </div>

@@ -11,9 +11,17 @@ class RadioInputGroup extends Component {
       ckecked: false
     };
     this.onChange = this.onChange.bind(this);
+    this.onOtherSelect = this.onOtherSelect.bind(this);
   }
 
   onChange(e) {
+    this.setState({
+      other: e.target.value
+    });
+    this.props.onSelect(e);
+  }
+
+  onOtherSelect(e) {
     this.setState({
       other: e.target.value
     });
@@ -50,18 +58,23 @@ class RadioInputGroup extends Component {
         <span className="label-title">{label}</span>
         {radioInputContent}
         {askother && (
-          <div className="radio-input-field">
-            <input
-              className="radio-input-div"
-              type={type}
-              id={`${otherlabel}-other`}
-              name={name}
-              value={this.state.other}
-              onClick={onSelect.bind(this)}
-            />
-            <label className="radio-label-div" htmlFor={`${otherlabel}-other`}>
-              {otherlabel}
-            </label>
+          <div>
+            <div className="radio-input-field">
+              <input
+                className="radio-input-div"
+                type={type}
+                id={`${otherlabel}-other`}
+                name={name}
+                value={this.state.other}
+                //onClick={onSelect.bind(this)}
+              />
+              <label
+                className="radio-label-div"
+                htmlFor={`${otherlabel}-other`}
+              >
+                {otherlabel}
+              </label>
+            </div>
             <TextFieldGroup
               name={name}
               placeholder="Другое"
@@ -69,9 +82,9 @@ class RadioInputGroup extends Component {
               onChange={this.onChange}
               error={error}
             />
-            {error && <div className="invalid-feedback">{error}</div>}
           </div>
         )}
+        {error && <div className="invalid-feedback">{error}</div>}
       </div>
     );
   }
