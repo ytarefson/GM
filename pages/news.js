@@ -18,7 +18,7 @@ const News = () => (
           <span className="subheading-red-top pl-3">
             Новостная лента “Газовые машины”.
           </span>
-          <h1 className="header-razdel pl-3">Новости малой энергетики</h1>
+          <h1 className="header-min-colored pl-3">Новости малой энергетики</h1>
         </div>
       </div>
       <div className="container-fluid news">
