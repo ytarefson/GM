@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import classnames from "classnames";
-import PropTypes from "prop-types";
-import TextFieldGroup from "./TextFieldGroup";
+import React, { Component } from 'react';
+import classnames from 'classnames';
+import PropTypes from 'prop-types';
+import TextFieldGroup from './TextFieldGroup';
 
 class RadioInputGroup extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      other: "",
+      other: '',
       ckecked: false
     };
     this.onChange = this.onChange.bind(this);
@@ -36,12 +36,12 @@ class RadioInputGroup extends Component {
       <div className="radio-input-field" key={`radioItem-${index}`}>
         <input
           type={type}
-          id={`item-${index}`}
+          id={`item-${item}`}
           name={name}
           value={item}
           onClick={onSelect.bind(this)}
         />
-        <label htmlFor={`item-${index}`}>{item}</label>
+        <label htmlFor={`item-${item}`}>{item}</label>
       </div>
     ));
 
@@ -54,12 +54,12 @@ class RadioInputGroup extends Component {
             <input
               className="radio-input-div"
               type={type}
-              id={`${name}-other`}
+              id={`${otherlabel}-other`}
               name={name}
               value={this.state.other}
               onClick={onSelect.bind(this)}
             />
-            <label className="radio-label-div" htmlFor={`${name}-other`}>
+            <label className="radio-label-div" htmlFor={`${otherlabel}-other`}>
               {otherlabel}
             </label>
             <TextFieldGroup
@@ -84,11 +84,11 @@ RadioInputGroup.propTypes = {
   label: PropTypes.string.isRequired,
   otherlabel: PropTypes.string,
   askother: PropTypes.bool.isRequired,
-  error: PropTypes.string.isRequired,
+  error: PropTypes.string,
   onSelect: PropTypes.func.isRequired
 };
 
 RadioInputGroup.defaultProps = {
-  type: "radio"
+  type: 'radio'
 };
 export default RadioInputGroup;
