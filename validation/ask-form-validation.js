@@ -68,7 +68,7 @@ module.exports = function validateFormInput(data) {
   // Описание проекта:
   data.projectdescription = !isEmpty(data.projectdescription)
     ? data.projectdescription.trim()
-    : '';
+    : 'Описание проекта не оставили';
   if (Validator.isEmpty(data.projectdescription)) {
     errors.projectdescription = 'Поле не должно быть пустым';
   }
@@ -167,7 +167,9 @@ module.exports = function validateFormInput(data) {
     errors.currentheattarif = 'Поле не должно быть пустым';
   }
   // Комментарии:
-  data.commentary = !isEmpty(data.commentary) ? data.commentary.trim() : '';
+  data.commentary = !isEmpty(data.commentary)
+    ? data.commentary.trim()
+    : 'Комментарий не оставили';
   if (Validator.isEmpty(data.commentary)) {
     errors.commentary = 'Поле не должно быть пустым';
   }

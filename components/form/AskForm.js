@@ -203,7 +203,7 @@ class AskForm extends Component {
                     <TextFieldGroup
                       name="projectmountadres"
                       placeholder="адрес установки"
-                      label="Адрес установки (город расположения монтажной площадки): *"
+                      label="Адрес установки (город расположения монтажной площадки): "
                       value={this.state.projectmountadres}
                       onChange={this.onChange}
                       error={errors.projectmountadres}

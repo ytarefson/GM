@@ -1,14 +1,14 @@
-import React from "react";
-import "../scss/form.scss";
-import Router from "next/router";
-import PropTypes from "prop-types";
+import React from 'react';
+import '../scss/form.scss';
+import Router from 'next/router';
+import PropTypes from 'prop-types';
 
 class FormPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      userEmail: "",
-      userPhone: "",
+      userEmail: '',
+      userPhone: '',
       isEmailEmpty: true,
       isPhoneEmpty: true,
       isFormFullfiled: false
@@ -21,18 +21,18 @@ class FormPage extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    fetch("/api/email", {
-      method: "POST",
+    fetch('/api/email', {
+      method: 'POST',
       headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         email: this.state.userEmail,
         product: this.props.product,
         phone: this.state.userPhone
       })
-    }).then(res => Router.push("/confirm-email"));
+    }).then(res => Router.push('/confirm-email'));
   }
 
   handleChangeEmail(e) {
@@ -43,8 +43,6 @@ class FormPage extends React.Component {
   }
 
   render() {
-    const product = this.props.product;
-    console.log(product);
     return (
       <div className="container-fluid form-bg">
         <div className="container">
@@ -104,7 +102,7 @@ class FormPage extends React.Component {
 }
 
 FormPage.defaultProps = {
-  product: ""
+  product: ''
 };
 FormPage.propTypes = {
   product: PropTypes.string.isRequired
