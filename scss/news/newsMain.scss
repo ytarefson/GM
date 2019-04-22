@@ -1,12 +1,8 @@
 @import "../vars";
 
 .bg-color {
-  //margin-top: 15px;
-  //background-color: rgb(243, 243, 243);
   padding-top: 15px;
   padding-bottom: 15px;
-  //box-shadow: 0px 65px 100px -55px rgba(0, 0, 0, 0.1);
-  //z-index: 1;
   & .subheading-red-top {
     margin-top: 10px;
   }
@@ -17,50 +13,10 @@
   position: relative;
   background-color: #fafafa;
   z-index: 0;
-  // & .container {
-  //   & .row {
-  //     & .col-12 {
-  //       & .breadcrumbs {
-  //         margin-left: 0px !important;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // &:after {
-  //   position: absolute;
-  //   z-index: -1;
-  //   display: block;
-  //   content: "";
-  //   width: 33%;
-  //   min-width: 90px;
-  //   height: 100%;
-  //   top: 0;
-  //   bottom: 0;
-  //   left: 0%;
-  //   background-color: rgb(255, 255, 255);
-  //   clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
-  // }
-  // &:before {
-  //   position: absolute;
-  //   z-index: -1;
-  //   display: block;
-  //   content: "";
-  //   width: 33%;
-  //   min-width: 90px;
-  //   height: 100%;
-  //   top: 0;
-  //   bottom: 0;
-  //   right: 0%;
-
-  //   background-color: rgb(242, 242, 242);
-  //   clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
-  // }
   & .razdel-name {
     font-family: $molot-font;
     display: block;
     color: rgb(170, 170, 170);
-    //text-shadow: 3px 3px 18px rgba(0, 0, 0, 0.15);
     font-weight: 700;
     padding-left: 16px;
     padding-top: 15px;
@@ -92,22 +48,14 @@
   margin-top: 30px;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  //border-bottom: 1px solid lightgrey;
   & .news-button {
     margin: 20px 0 20px auto;
     display: block;
-    // justify-content: center;
-    // align-items: center;
-    //border-radius: 20px;
     width: 170px;
     height: 40px;
     text-align: center;
     line-height: 33px;
     border-radius: 2px;
-    //background-color: #e8e8e8;
-    //background: linear-gradient(-90deg, #ffffff 0%, #e8e8e8 100%);
-    // box-shadow: 10px 10px 0px rgba(209, 209, 209, 1),
-    //   -10px -10px 0 rgba(219, 219, 219, 1);
     box-shadow: 0px 10px 0px -5px rgba(220, 220, 220, 0.9),
       0px 20px 0px -10px rgba(220, 220, 220, 0.6),
       0px 30px 0px -15px rgba(220, 220, 220, 0.3);
@@ -115,9 +63,6 @@
     border: 3px solid rgb(192, 192, 192);
     &:hover {
       cursor: pointer;
-      //box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-      // box-shadow: 0px 20px 0px -7px rgba(209, 209, 209, 1),
-      //   0px 38px 0px -15px rgba(219, 219, 219, 1);
       box-shadow: -5px -5px 0px rgba(220, 220, 220, 0.6),
         5px 5px 0px rgba(220, 220, 220, 0.9);
     }

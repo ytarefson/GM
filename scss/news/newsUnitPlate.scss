@@ -66,18 +66,33 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .news-unit-plate {
+    margin-top: 15px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 3px;
+    //border: 1px solid rgba(0, 0, 0, 0.125);
+    //box-shadow: 0 0 20px rgba(0, 0, 0, 0.025);
     & .big-new {
       margin-bottom: 15px;
+      //margin-bottom: 20px;
       & .header-razdel {
         font-size: 36px;
-        line-height: 36px;
+        line-height: 42px;
+        margin-bottom: 30px;
       }
     }
-
     & .img-container {
       float: right;
-      margin-left: 25px;
+      margin-left: 30px;
       margin-top: 0;
+      margin-bottom: 15px;
+    }
+    & .new-details {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
+      color: grey;
     }
   }
 }
