@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import newsList from "../tables/newsList";
-import Link from "next/link";
-import "../../scss/news/newsListPlate.scss";
+import React, { Component } from 'react';
+import newsList from '../tables/newsList';
+import Link from 'next/link';
+import '../../scss/news/newsListPlate.scss';
 
 export class NewsListPlate extends Component {
   render() {
@@ -41,7 +41,7 @@ export class NewsListPlate extends Component {
                       <span className="news-updated">{updated_at}</span>
                     </div>
                     <h2 className="news-header-min">{label}</h2>
-                    <p className="news-description">{preview_text}</p>
+                    <div className="news-description">{preview_text}</div>
                   </div>
                 </div>
               </a>

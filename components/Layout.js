@@ -11,7 +11,11 @@ Router.events.on('routeChangeComplete', url => gtag.pageview(url));
 export default ({ children }) => (
   <div>
     <Nav />
-    <YMInitializer accounts={[51052037]} />
+    <YMInitializer
+      accounts={[51052037]}
+      options={{ webvisor: true }}
+      version="2"
+    />
     {/* <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
       {props => <div style={props}>{children}</div>}
     </Spring> */}

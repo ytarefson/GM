@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Head from '../../components/head';
 import '../../scss/news/newsUnitPlate.scss';
 import YoutubeVideo13 from '../YoutubeVideo13';
+import OtherNews from './OtherNews';
 var Parser = require('html-react-parser');
 
 export class NewsListPlate extends Component {
@@ -39,7 +40,7 @@ export class NewsListPlate extends Component {
                   Последний раз обновлено: {data.updated_at}
                 </span>
               </div>
-              <p className="text-min">{desc}</p>
+              <div className="text-min">{desc}</div>
 
               {data.id === 13 && (
                 <div className="myvideo-container">
@@ -48,9 +49,11 @@ export class NewsListPlate extends Component {
                 </div>
               )}
             </article>
-            <div className="clearNews" />
+            {/* <div className="clearNews" /> */}
           </div>
         </div>
+        <OtherNews id={data.id} />
+        <div className="clearNews" />
       </div>
     );
   }
