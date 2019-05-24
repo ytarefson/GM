@@ -1,16 +1,16 @@
-import React from "react";
-import "../scss/style.scss";
-import Head from "../components/head";
-import MainAdv from "../components/mainAdv";
-import PortfolioLinks from "../components/portfolioLinks";
-import EnergyDecisions from "../components/energyDecisions";
-import CalcAdv from "../components/calcAdv";
-import GeneralServices from "../components/generalServices";
-import ProductsAdv from "../components/productsAdv";
-import Layout from "../components/Layout";
-import FormPage from "../components/form";
-import TextBlock from "../components/textBlock";
-import NewsAdv from "../components/newsAdv";
+import React from 'react';
+import '../scss/style.scss';
+import Head from '../components/head';
+import MainAdv from '../components/mainAdv';
+import PortfolioLinks from '../components/portfolioLinks';
+import EnergyDecisions from '../components/energyDecisions';
+import CalcAdv from '../components/calcAdv';
+import GeneralServices from '../components/generalServices';
+import ProductsAdv from '../components/productsAdv';
+import Layout from '../components/Layout';
+import FormPage from '../components/form';
+import TextBlock from '../components/textBlock';
+import NewsAdv from '../components/newsAdv';
 
 const Home = () => (
   <div className="home">
