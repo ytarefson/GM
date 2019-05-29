@@ -40,11 +40,18 @@ const Nav = () => (
           </li>
         ))}
         <li className="nav-item">
-          <Link href="/calculator" as="/calculator">
+          <div className="contacts-container">
+            <span className="lorem">Энергетическое оборудование</span>
+            <span className="tel">
+              +7 (4852) 26&middot;03&middot;68, 26&middot;79&middot;60
+            </span>
+            <span className="pochta">market@gmenergo.ru</span>
+          </div>
+          {/* <Link href="/calculator" as="/calculator">
             <a className="nav-link nav-calc-link">
               <span>калькулятор</span>
             </a>
-          </Link>
+          </Link> */}
         </li>
       </ul>
     </div>
