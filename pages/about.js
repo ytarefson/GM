@@ -168,7 +168,7 @@ export class About extends Component {
                         href="https://yandex.ru/maps/-/CBFyIKsQPB"
                         className="adres-map-link"
                       >
-                        РОССИЯ, Ярославль, пр. Авиаторов, 155
+                        150062, Россия, г. Ярославль, пр. Авиаторов, 155
                       </a>
                     </li>
                     <li>

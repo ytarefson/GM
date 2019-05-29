@@ -62,7 +62,7 @@ const Footer = () => (
                 className="adres-map-link pb-3"
                 target="_blank"
               >
-                Россия, Ярославль,
+                150062, Россия, г. Ярославль,
                 <br />
                 пр-т.&nbsp;Авиаторов-155
               </a>
