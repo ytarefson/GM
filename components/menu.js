@@ -1,5 +1,10 @@
 const menu = [
   {
+    label: "Аренда и лизинг",
+    href: "/arenda",
+    as: "/arenda-i-lizing"
+  },
+  {
     label: "Распределенная генерация",
     href: "/rasGen",
     as: "/raspredelennaya-generaciya"

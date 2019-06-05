@@ -18,6 +18,19 @@ export default MainAdv => (
             <span className="main-heading">
               Газопоршневые электростанции под ключ
             </span>
+            <div className="spartners">
+              <div className="logos-container">
+                {/* <img
+                  src="../../static/images/liebherr.png"
+                  title="Сервисные партнёры"
+                  alt="service-partners"
+                  className="logos"
+                /> */}
+              </div>
+              <span className="descr-min">
+                мы являемся официальными сервисными партнёрами
+              </span>
+            </div>
             <h1 className="main-desc">
               Проектирование, производство и обслуживание газопоршневых
               электростанций и мини ТЭЦ.
