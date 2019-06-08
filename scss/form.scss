@@ -7,15 +7,18 @@
 }
 .forma {
   padding: 15px 30px 30px 30px;
-  margin-bottom: 150px;
+  margin-bottom: 30px;
   border-radius: 3px;
   background: linear-gradient(
-    to left,
-    rgb(242, 125, 14) 0%,
-    rgb(237, 27, 61) 100%
+    to bottom,
+    #fafafa 0%,
+    #fff 20%,
+    #fff 80%,
+    #fafafa 100%
   );
-  box-shadow: 10px 50px 30px -35px rgba(237, 27, 61, 0.35),
-    -10px 50px 30px -35px rgba(242, 125, 14, 0.35);
+  border: 1px solid #dcdcdc;
+  // box-shadow: 10px 50px 30px -35px rgba(237, 27, 61, 0.35),
+  //   -10px 50px 30px -35px rgba(242, 125, 14, 0.35);
   & .form-group {
     display: grid;
     grid-template-columns: 1fr;
@@ -27,7 +30,7 @@
       & .form-text-or {
         display: block;
         font-family: $molot-font;
-        color: #fff;
+        color: $accent-dark;
         letter-spacing: 1px;
         font-size: 24px;
         text-align: center;
@@ -41,7 +44,7 @@
           top: 50%;
           transform: translateY(-50%) rotate(0deg);
           height: 2px;
-          background-color: #fff;
+          background-color: $wall-color;
         }
         &::before {
           position: absolute;
@@ -51,7 +54,7 @@
           top: 50%;
           transform: translateY(-50%) rotate(0deg);
           height: 2px;
-          background-color: #fff;
+          background-color: $wall-color;
         }
       }
       & .form-context {
@@ -60,10 +63,8 @@
           font-weight: 700;
           font-size: 24px;
           line-height: 30px;
-          color: white;
+          color: $accent-dark;
           padding-bottom: 15px;
-          //border-bottom: 3px solid white;
-          //margin-bottom: 20px;
         }
       }
       & .userEmail {
@@ -71,38 +72,24 @@
         border-radius: 50px;
         padding-left: 15px;
         width: 100%;
-        font-size: 16px;
-        height: 60px;
-        margin-bottom: 25px;
-        background-color: #fff;
+        font-size: 14px;
+        height: 40px;
+        margin-bottom: 15px;
+        background-color: #e6e6e6;
         border: none;
       }
-      // & .callTime {
-      //   display: block;
-      //   border-radius: 50px;
-      //   padding-left: 15px;
-      //   width: 100%;
-      //   height: 60px;
-      //   margin-bottom: 20px;
-      //   color: grey;
-      //   background-color: #fff;
-      // }
       & .form-button {
         display: block;
         border-radius: 50px;
         color: #fff;
         font-family: $molot-font;
-        //background-color: #cf6020;
         background-color: $accent-red;
-        //background-image: linear-gradient(to right, #d4722a 0%, #c62d28 100%);
         border: none;
-        padding: 20px 25px;
+        padding: 10px 15px;
         letter-spacing: 1px;
-        margin: 15px auto;
+        margin: 15px auto 0;
         box-shadow: $box-shadow;
         font-size: 15px;
-
-        //box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
         transition: all 0.2s ease-in;
         &:hover {
           cursor: pointer;
@@ -111,11 +98,9 @@
       }
       & .form-cta-text-2 {
         font-size: 16px;
-        //margin-bottom: 15px;
         font-weight: 500;
         line-height: 20px;
-        color: white;
-        //text-align: center;
+        color: $sub-color;
       }
     }
   }
@@ -124,15 +109,8 @@
 @media (min-width: 576px) {
   .forma {
     padding: 15px 30px 30px 30px;
-    margin-bottom: 150px;
+    margin-bottom: 60px;
     border-radius: 3px;
-    background: linear-gradient(
-      to left,
-      rgb(242, 125, 14) 0%,
-      rgb(237, 27, 61) 100%
-    );
-    box-shadow: 10px 50px 30px -35px rgba(237, 27, 61, 0.35),
-      -10px 50px 30px -35px rgba(242, 125, 14, 0.35);
     & .form-group {
       display: grid;
       grid-template-columns: 1fr;
@@ -144,12 +122,10 @@
         & .form-text-or {
           display: block;
           font-family: $molot-font;
-          color: #fff;
           letter-spacing: 1px;
-          font-size: 24px;
+          font-size: 34px;
           text-align: center;
           position: relative;
-          //overflow: hidden;
           &::after {
             position: absolute;
             content: "";
@@ -158,7 +134,6 @@
             top: 50%;
             transform: translateY(-50%) rotate(0deg);
             height: 2px;
-            background-color: #fff;
           }
           &::before {
             position: absolute;
@@ -168,7 +143,6 @@
             top: 50%;
             transform: translateY(-50%) rotate(0deg);
             height: 2px;
-            background-color: #fff;
           }
         }
         & .form-context {
@@ -180,6 +154,22 @@
           }
         }
         & .userEmail {
+          margin-bottom: 20px;
+          height: 45px;
+        }
+        & .form-button {
+          display: block;
+          border-radius: 50px;
+          color: #fff;
+          font-family: $molot-font;
+          background-color: $accent-red;
+          border: none;
+          padding: 15px 30px;
+          letter-spacing: 1px;
+          margin: 15px auto 0;
+          box-shadow: $box-shadow;
+          font-size: 15px;
+          transition: all 0.2s ease-in;
         }
         & .form-cta-text-2 {
           font-size: 18px;
@@ -195,7 +185,7 @@
 // Large devices (desktops, 768px and up)
 @media (min-width: 768px) {
   .forma {
-    margin-bottom: 150px;
+    //margin-bottom: 150px;
     padding: 30px;
     & .form-group {
       display: grid;
@@ -209,7 +199,6 @@
         & .form-text-or {
           display: block;
           font-family: $molot-font;
-          color: #fff;
           letter-spacing: 1px;
           font-size: 36px;
           text-align: center;
@@ -217,15 +206,13 @@
           position: relative;
           //overflow: hidden;
           &::after {
+            display: none;
             position: absolute;
             content: "";
             width: 2px;
             height: 180px;
             top: -120px;
-            //bottom: 0;
             left: 50%;
-            //transform: translateX(-50%) rotate(0deg);
-            background-color: #fafafa;
           }
           &::before {
             display: none;
@@ -239,7 +226,6 @@
             font-weight: 700;
             font-size: 36px;
             line-height: 40px;
-            color: white;
             padding-bottom: 15px;
             margin-bottom: 20px;
           }
@@ -274,9 +260,7 @@
         & .form-cta-text-2 {
           font-size: 17px;
           line-height: 20px;
-          color: white;
           padding-right: 0;
-          //text-align: center;
         }
         & .form-cta-text-22 {
           text-align: center;
@@ -320,7 +304,6 @@
         & .form-text-or {
           display: block;
           font-family: $molot-font;
-          color: #fff;
           letter-spacing: 1px;
           font-size: 44px;
           text-align: center;
@@ -334,15 +317,15 @@
             -45px 0px 60px -30px rgba(255, 255, 255, 0.4);
           //overflow: hidden;
           &::after {
+            display: block;
             position: absolute;
             content: "";
-            width: 4px;
+            width: 2px;
             height: 200px;
             top: -200px;
             //bottom: 0;
             left: 50%;
             transform: translateX(-50%) rotate(0deg);
-            background-color: #fafafa;
           }
           &::before {
             position: absolute;
@@ -350,10 +333,9 @@
             display: block;
             left: 50%;
             top: 100px;
-            width: 4px;
+            width: 2px;
             height: 173px;
             transform: translateX(-50%);
-            background-color: #fafafa;
           }
         }
       }
@@ -366,24 +348,24 @@
           & .form-cta-title {
             font-size: 44px;
             line-height: 48px;
-            color: white;
             padding-bottom: 15px;
             margin-bottom: 20px;
           }
         }
         & .userEmail {
           display: block;
-          padding-left: 15px;
-          width: 270px;
+          padding-left: 30px;
+          height: 60px;
+          width: 300px;
           margin: 0 auto 20px;
+          font-size: 16px;
         }
-
         & .form-button {
           display: block;
           border-radius: 50px;
           border: none;
           padding: 18px 20px;
-          margin: 0 auto 20px;
+          margin: 15px auto 0px;
           box-shadow: $box-shadow-up;
           transition: all 0.2s;
           &:hover {
@@ -394,14 +376,13 @@
         & .form-cta-text-2 {
           font-size: 22px;
           line-height: 27px;
-          color: white;
           padding-right: 100px;
-          //text-align: center;
         }
         & .form-cta-text-22 {
           text-align: center;
           padding-right: 50px;
           padding-left: 50px;
+          margin-bottom: 15px;
         }
       }
     }

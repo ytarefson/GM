@@ -76,7 +76,7 @@
         }
       }
       & .nav-link {
-        font-family: $molot-font;
+        //font-family: $molot-font;
         font-size: 15px;
         font-weight: 300;
         color: #525252;
@@ -89,7 +89,7 @@
           content: "";
           display: block;
           width: 0%;
-          height: 2px;
+          height: 1px;
           bottom: 0;
           left: 50%;
           transform: translateX(-50%);
@@ -107,9 +107,10 @@
       }
       & .active {
         color: $accent-red !important;
-        &:before {
-          width: 100%;
-        }
+        font-weight: 500 !important;
+        // &:before {
+        //   width: 100%;
+        // }
       }
       // & .nav-calc-link {
       //   font-family: $molot-font;
@@ -313,7 +314,8 @@
       & .nav-item {
         padding: 0 4px;
         & .nav-link {
-          font-size: 19px;
+          font-size: 16px;
+          font-weight: 300;
         }
         & .contacts-container {
           margin-bottom: 0px;

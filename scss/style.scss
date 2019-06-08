@@ -290,7 +290,7 @@ body::-webkit-scrollbar-thumb {
   display: block;
   font-family: $noto-font;
   color: #3b3b3b;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 20px;
   margin-bottom: 0px;
@@ -385,6 +385,16 @@ body::-webkit-scrollbar-thumb {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  .subheading-common {
+    display: block;
+    font-family: $noto-font;
+    color: $accent-grey;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    //letter-spacing: -0.35px;
+    margin-top: 15px;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -411,7 +421,7 @@ body::-webkit-scrollbar-thumb {
   .subheading-common {
     font-size: 16px;
     line-height: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   .mycontainer {
     max-width: 720px;
