@@ -21,18 +21,8 @@
   }
 }
 .contacts {
-  background-image: $new-gradient;
-  & .adres-map-link {
-    width: 100%;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 30px;
-    font-family: $noto-font;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    text-align: center;
-  }
+  background-image: #fff;
+
   & .map-container {
     //box-shadow: 10px -10px 35px rgba(0, 0, 0, 0.1);
     & .myMap {
@@ -42,58 +32,84 @@
       overflow: hidden;
     }
   }
-  & .contacts-heading {
-    font-family: $molot-font;
-    text-align: center;
-    font-size: 21px;
-    color: #fafafa;
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    //font-weight: 700;
-    padding-top: 10px;
-    margin-bottom: 20px;
-  }
+
   & .adres-list {
-    padding: 0;
+    margin-bottom: 30px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-  }
-  & .map-container {
-    //height: 300px;
-    width: 100%;
-    padding-bottom: 15px !important;
-  }
-  & .adres-phones {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    // align-items: flex-start;
-    & .phone-link {
+    color: $accent-grey;
+    border: 3px solid $accent-grey;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: $box-shadow-up;
+    & .map-container {
+      //height: 300px;
+      width: 100%;
+      padding-bottom: 15px !important;
+    }
+    & .contacts-heading {
+      font-family: $molot-font;
+      text-align: center;
+      font-size: 21px;
+      color: $accent-grey;
       display: block;
-      margin: 0 auto;
-      font-weight: 400;
-      font-size: 18px;
-      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      //font-weight: 700;
+      //padding-top: 10px;
+      margin-bottom: 20px;
     }
-    & .phone-link-big {
-      font-size: 26px;
+    & .adres-map-link {
+      width: 100%;
+      color: $accent-grey;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      font-family: $noto-font;
+      letter-spacing: 0.5px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    & .adres-phones {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      // align-items: flex-start;
+      & .phone-link {
+        text-align: left;
+        display: block;
+        //margin: 0 auto;
+        font-weight: 400;
+        font-size: 14px;
+        color: $accent-grey;
+      }
+    }
+    & .adres-email {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      text-align: center;
+      color: $accent-grey;
+      width: 100%;
+      font-style: italic;
+      font-size: 16px;
       font-weight: 700;
+      letter-spacing: 1px;
     }
-  }
-  & .adres-email {
-    text-align: center;
-    color: #ffffff;
-    width: 100%;
-    font-style: italic;
-    font-size: 18px;
-    font-weight: 700;
-  }
-  & .link-1 {
-    display: block;
-    color: white;
+    & .link-1 {
+      font-size: 14px;
+      display: block;
+      font-weight: 300;
+      color: $accent-grey;
+    }
+    & .link-11 {
+      font-size: 14px;
+      display: block;
+      font-weight: 700;
+      color: $accent-grey;
+    }
   }
 }
 .napravleniya {
@@ -158,27 +174,86 @@
       }
     }
   }
+
   .contacts {
     & .map-container {
       transform: translateX(-15px);
       padding-bottom: 0 !important;
     }
     & .adres-list {
-      text-align: left;
-      & .adres-map-link {
-        text-align: left;
-        font-size: 20px;
+      margin-bottom: 30px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      color: $accent-grey;
+      border: 3px solid $accent-grey;
+
+      & .map-container {
+        //height: 300px;
+        width: 100%;
+        padding-bottom: 15px !important;
       }
-      & .adres-email {
-        text-align: left;
+      & .contacts-heading {
+        font-family: $molot-font;
+        text-align: center;
+        font-size: 21px;
+        color: $accent-grey;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        //font-weight: 700;
+        //padding-top: 10px;
+        margin-bottom: 20px;
+      }
+      & .adres-map-link {
+        width: 100%;
+        color: $accent-grey;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        font-family: $noto-font;
+        letter-spacing: 0.5px;
+        text-align: center;
+        margin-bottom: 15px;
       }
       & .adres-phones {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        // align-items: flex-start;
         & .phone-link {
-          margin: 0 auto 0 0 !important;
+          text-align: left;
+          display: block;
+          //margin: 0 auto;
+          font-weight: 400;
+          font-size: 14px;
+          color: $accent-grey;
         }
-        & .phone-link-big {
-          font-size: 24px;
-        }
+      }
+      & .adres-email {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        color: $accent-grey;
+        width: 100%;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      & .link-1 {
+        font-size: 14px;
+        display: block;
+        font-weight: 300;
+        color: $accent-grey;
+      }
+      & .link-11 {
+        font-size: 14px;
+        display: block;
+        font-weight: 700;
+        color: $accent-grey;
       }
     }
     & .link-map {
@@ -232,11 +307,74 @@
 @media (min-width: 1200px) {
   .contacts {
     padding-top: 0;
-    & .contacts-heading {
-      margin-top: 40px;
-      font-size: 34px;
-      color: white;
-      text-align: left;
+    & .adres-list {
+      height: 100%;
+      box-shadow: none;
+      border: 1px solid grey;
+      padding-left: 45px;
+      & .contacts-heading {
+        font-family: $molot-font;
+        text-align: left;
+        font-size: 27px;
+        color: $accent-grey;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        //font-weight: 700;
+        //padding-top: 10px;
+        margin-bottom: 20px;
+      }
+      & .adres-map-link {
+        width: 100%;
+        color: $accent-grey;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 28px;
+        font-family: $noto-font;
+        letter-spacing: 0.5px;
+        text-align: left;
+        margin-bottom: 30px;
+      }
+      & .adres-phones {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: center;
+        // align-items: flex-start;
+        & .phone-link {
+          text-align: left;
+          display: block;
+          //margin: 0 auto;
+          font-weight: 700;
+          font-size: 19px;
+          color: $accent-grey;
+        }
+      }
+      & .adres-email {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: left;
+        color: $accent-red;
+        width: 100%;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 3px;
+      }
+      & .link-1 {
+        font-size: 16px;
+        display: block;
+        font-weight: 300;
+        color: $accent-grey;
+        line-height: 22px;
+      }
+      & .link-11 {
+        font-size: 17px;
+        display: block;
+        font-weight: 700;
+        color: $accent-grey;
+      }
     }
     & .map-container {
       height: 458px;
