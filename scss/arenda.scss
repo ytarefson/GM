@@ -15,7 +15,7 @@
   background-color: #fafafa;
   border-radius: 40px 40px 0 0;
   box-shadow: 0 -40px 20px -30px rgba(0, 0, 0, 0.15);
-  border-bottom: 1px solid rgb(199, 199, 199);
+  //border-bottom: 1px solid rgb(199, 199, 199);
   & .arenda-promo {
     & .subheading {
       display: block;
@@ -390,7 +390,7 @@
     background-color: #fafafa;
     border-radius: 0;
     box-shadow: none;
-    border-bottom: 1px solid rgb(199, 199, 199);
+    //border-bottom: 1px solid rgb(199, 199, 199);
     & .arenda-promo {
       & .subheading {
         line-height: 18px;
@@ -578,7 +578,9 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .arenda {
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    background-color: #fff;
     border-bottom: 1px solid $l-grey;
     & .arenda-promo {
       height: 100%;
@@ -659,7 +661,7 @@
   .arenda-oborud {
     margin-top: 60px;
     & .text {
-      margin-bottom: 30px;
+      margin-bottom: 45px;
     }
     & .items-container {
       grid-template-columns: 1fr 1fr 1fr;
@@ -670,6 +672,8 @@
         padding-bottom: 10px;
         padding-left: 15px;
         padding-right: 15px;
+        // box-shadow: none;
+        // box-shadow: 0 0 30px rgba(0, 0, 0, 0.025);
         & .item-title {
           font-size: 17px;
         }
@@ -700,7 +704,7 @@
       display: grid;
       grid-template: 1fr / 2fr 1fr;
       grid-gap: 30px;
-      border-radius: 5px;
+      //border-radius: 5px;
       border-left: 8px solid $orange-color;
       & .text-container {
         display: block;

@@ -192,7 +192,7 @@
     // background: url("/static/images/bg-products.jpg") 50% 50% no-repeat;
     // background-size: cover;
     // padding-top: 0px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     // position: relative;
     // height: auto;
     & .dots-left {
@@ -217,7 +217,7 @@
       // background: url("/static/images/dots-big-red.png") 0% 0% no-repeat;
     }
     & .container {
-      padding-top: 30px;
+      padding-top: 0px;
       background-color: rgba(0, 0, 0, 0);
       border: none;
       border-radius: 0;
@@ -247,8 +247,10 @@
           }
           & .text-big {
             font-size: 17px;
-            line-height: 24px;
-            font-weight: 900;
+            line-height: 26px;
+            font-weight: 300;
+            letter-spacing: 0.4px;
+            color: $accent-red;
           }
           & .p-cards-plate {
             margin-top: 30px;

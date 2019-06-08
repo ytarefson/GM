@@ -107,13 +107,19 @@ export class ProductsUnitPlate extends Component {
                 <p className="text-min">
                   Система управления: <b> {product.controlSystem}</b>
                 </p>
-                <div className="cta-button-container">
-                  <a
-                    href="https://gmenergo.bitrix24.ru/pub/form/4_uznayte_vse_podrobnosti_i_usloviya_sotrudnichestva/c1mwzy/"
-                    className="cta-button"
-                  >
-                    Узнайте подробности
-                  </a>
+                <div className="button-group">
+                  <div className="cta-button-container">
+                    <a
+                      href="https://gmenergo.bitrix24.ru/pub/form/4_uznayte_vse_podrobnosti_i_usloviya_sotrudnichestva/c1mwzy/"
+                      className="cta-button"
+                    >
+                      Узнайте подробности
+                    </a>
+                  </div>
+                  <p className="arenda-text-min">
+                    Оставьте контактную информацию и наши специалисты подробно
+                    расскажут об условиях сотрудничества.
+                  </p>
                 </div>
               </div>
               <div className="col-12 col-md-5 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 order-md-2 order-1">

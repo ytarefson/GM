@@ -48,8 +48,8 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .textBlock {
-    padding-top: 45px;
-
+    padding-top: 75px;
+    padding-bottom: 30px;
     & .text-mission {
       font-size: 18px;
       font-weight: 300;

@@ -136,27 +136,37 @@
       padding: 4px 15px;
     }
   }
-  & .cta-button-container {
-    margin-top: 30px;
-    & .cta-button {
-      display: block;
-      //margin: 0 0 0 auto;
-      width: 210px;
-      height: 50px;
-      border-radius: 2px;
-      //background: $new-gradient;
-      //border: 1px solid $accent-red;
-      border: 3px solid $accent-red;
-      text-align: center;
-      color: $accent-red;
-      font-size: 15px;
-      font-weight: 700;
-      line-height: 45px;
-      //box-shadow: $box-shadow-up;
-      transition: all 0.2s ease-out;
-      &:hover {
-        box-shadow: $box-shadow;
+  & .button-group {
+    border-bottom: 1px solid rgb(199, 199, 199);
+    & .cta-button-container {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      & .cta-button {
+        display: block;
+        margin: 0 auto;
+        width: 210px;
+        height: 50px;
+        border-radius: 2px;
+        //background: $new-gradient;
+        //border: 1px solid $accent-red;
+        border: 3px solid $accent-red;
+        text-align: center;
+        color: $accent-red;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 45px;
+        //box-shadow: $box-shadow-up;
+        transition: all 0.2s ease-out;
+        &:hover {
+          box-shadow: $box-shadow;
+        }
       }
+    }
+    & .arenda-text-min {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 12px;
+      color: #9b9b9b;
     }
   }
   & .product-img-container {
@@ -229,6 +239,28 @@
 
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
+  .section-plate {
+    & .button-group {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto;
+      grid-gap: 15px;
+      align-items: center;
+      & .cta-button-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        & .cta-button {
+          display: block;
+          margin: 0;
+        }
+      }
+      & .arenda-text-min {
+        display: block;
+        margin-bottom: 0;
+        margin-left: 15px;
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
