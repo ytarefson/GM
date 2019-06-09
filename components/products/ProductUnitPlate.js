@@ -75,54 +75,60 @@ export class ProductsUnitPlate extends Component {
           <div className="border-right" />
           <div className="container section-plate">
             <div className="row m-0 pt-4 pb-4">
-              <div className="col-12 col-md-7 col-lg-6 col-xl-6 order-md-1 order-2">
-                <h1 itemProp="name" className="header-red">
-                  Газопоршневая электростанция {product.label}
-                </h1>
-                <div className="product-energy-container">
-                  <span className="product-energy">
-                    {product.electricPower} кВт
-                  </span>
-                </div>
-                <p className="text-min">
-                  Синхронный генератор: <b> {product.generator}</b>
-                </p>
-                {product.gazLline !== "" && (
-                  <p className="text-min">
-                    Газовая линейка: <b> {product.gazLline}</b>
-                  </p>
-                )}
-                <p className="text-min">
-                  Группа охлаждения: <b> {product.freezGroup}</b>
-                </p>
-                {product.nasos !== "" && (
-                  <p className="text-min">
-                    Насосное оборудование: <b> {product.nasos}</b>
-                  </p>
-                )}
+              <div className="col-12 col-md-7 col-lg-7 col-xl-6 order-md-1 order-2">
+                <div className="flex-container">
+                  <div className="flex-top">
+                    <h1 itemProp="name" className="header-red">
+                      Газопоршневая электростанция {product.label}
+                    </h1>
+                    <div className="product-energy-container">
+                      <span className="product-energy">
+                        {product.electricPower} кВт
+                      </span>
+                    </div>
+                    <p className="text-min">
+                      Синхронный генератор: <b> {product.generator}</b>
+                    </p>
+                    {product.gazLline !== "" && (
+                      <p className="text-min">
+                        Газовая линейка: <b> {product.gazLline}</b>
+                      </p>
+                    )}
+                    <p className="text-min">
+                      Группа охлаждения: <b> {product.freezGroup}</b>
+                    </p>
+                    {product.nasos !== "" && (
+                      <p className="text-min">
+                        Насосное оборудование: <b> {product.nasos}</b>
+                      </p>
+                    )}
 
-                <p className="text-min">
-                  Силовое оборудование: <b> {product.powerSup}</b>
-                </p>
-                <p className="text-min">
-                  Система управления: <b> {product.controlSystem}</b>
-                </p>
-                <div className="button-group">
-                  <div className="cta-button-container">
-                    <a
-                      href="https://gmenergo.bitrix24.ru/pub/form/4_uznayte_vse_podrobnosti_i_usloviya_sotrudnichestva/c1mwzy/"
-                      className="cta-button"
-                    >
-                      Узнайте подробности
-                    </a>
+                    <p className="text-min">
+                      Силовое оборудование: <b> {product.powerSup}</b>
+                    </p>
+                    <p className="text-min">
+                      Система управления: <b> {product.controlSystem}</b>
+                    </p>
                   </div>
-                  <p className="arenda-text-min">
-                    Оставьте контактную информацию и наши специалисты подробно
-                    расскажут об условиях сотрудничества.
-                  </p>
+                  <div className="flex-bottom">
+                    <div className="button-group">
+                      <div className="cta-button-container">
+                        <a
+                          href="https://gmenergo.bitrix24.ru/pub/form/4_uznayte_vse_podrobnosti_i_usloviya_sotrudnichestva/c1mwzy/"
+                          className="cta-button"
+                        >
+                          Узнайте подробности
+                        </a>
+                      </div>
+                      <p className="arenda-text-min">
+                        Оставьте контактную информацию и наши специалисты
+                        подробно расскажут об условиях сотрудничества.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="col-12 col-md-5 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 order-md-2 order-1">
+              <div className="col-12 col-md-5 col-lg-5 col-xl-5 offset-xl-1 order-md-2 order-1">
                 <div className="product-img-container">
                   <img
                     itemProp="image"
@@ -348,7 +354,7 @@ export class ProductsUnitPlate extends Component {
             </div>
           </div>
         </div>
-        <div className="container-fluid white-section pt-2">
+        <div className="container-fluid pt-2">
           {product.id == 12 && (
             <div className="mycontainer">
               <YoutubeVideo className="myVideo" />

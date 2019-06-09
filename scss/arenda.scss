@@ -578,10 +578,18 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .arenda {
-    padding-top: 30px;
+    padding-top: 45px;
     padding-bottom: 45px;
-    background-color: #fff;
+    //border-top: 1px solid $l-grey;
     border-bottom: 1px solid $l-grey;
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(
+        to right,
+        rgba(205, 205, 205, 0.91) 0%,
+        rgba(205, 205, 205, 1) 40%,
+        rgba(205, 205, 205, 0.91) 100%
+      ),
+      url("/static/images/bg-promo-stripe-white.jpg") 50% 50% no-repeat;
     & .arenda-promo {
       height: 100%;
       display: flex;
@@ -589,35 +597,58 @@
       justify-content: space-between;
       & .arenda-top {
         & .header-min-colored {
+          font-size: 42px;
           margin-bottom: 5px;
+          letter-spacing: 0.4px;
+          line-height: 48px;
+          color: white;
+          text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
         }
         & .subheading {
           font-weight: 900;
           font-size: 16px;
           margin-bottom: 30px;
         }
+        & .text {
+          color: $text;
+        }
         & .button-group {
-          border-bottom: 1px solid $l-grey;
+          border-bottom: 1px solid white;
+          & .button-container-new {
+            & .button-new {
+              background-color: rgb(230, 230, 230);
+            }
+          }
           & .arenda-text-min {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 300;
             line-height: 19px;
-            letter-spacing: 0.2px;
+            letter-spacing: 0.4px;
+            color: white;
           }
         }
       }
       & .arenda-bottom {
         & .header-razdel {
+          display: block;
           font-size: 28px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          color: $text;
         }
         & .grid-container {
           margin-top: 15px;
           margin-bottom: 0px;
+          align-items: end;
+          grid-gap: 20px;
           & .grid-cell {
             font-size: 14px;
             font-weight: 300;
             letter-spacing: 0.3px;
             position: relative;
+            border: none;
+            background-color: #fafafa;
+            padding-bottom: 30px;
             &::before {
               position: absolute;
               display: block;
@@ -627,7 +658,7 @@
               width: 18px;
               height: 2px;
               border-radius: 3px;
-              background-color: #121212;
+              background-color: #aaaaaa;
             }
             &::after {
               position: absolute;
@@ -638,7 +669,7 @@
               width: 2px;
               height: 18px;
               border-radius: 3px;
-              background-color: #121212;
+              background-color: #aaaaaa;
             }
           }
         }
@@ -650,8 +681,10 @@
       margin-top: 0px;
       margin-bottom: 0;
       display: grid;
-      grid-template: 1fr 1fr / 1fr;
+      grid-template: auto auto / 1fr;
       grid-gap: 15px;
+      align-items: end;
+      align-content: end;
       width: 100%;
       & .arenda-img {
         margin-bottom: 0px;
