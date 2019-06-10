@@ -2,7 +2,7 @@ const express = require('express');
 const next = require('next');
 const sitemap = require('./sitemap');
 const compression = require('compression');
-
+const path = require('path');
 // API
 const email = require('./routes/api/email');
 const formValidation = require('./routes/api/form-validation');
@@ -16,6 +16,11 @@ app.prepare().then(() => {
   const server = express();
   server.use(compression());
   // server.use(express.static('static'));
+
+  // Service Worker
+  server.get('/sw.js', (req, res) => {
+    app.serveStatic(req, res, path.resolve('./static/sw.js'));
+  });
 
   server.get('/robots.txt', function(req, res) {
     res.type('text/plain');
