@@ -8,7 +8,7 @@ export default ProductsAdv => (
     <div className="dots-right" />
     <div className="container">
       <div className="row">
-        <div className="col-12 col-md-6 offset-lg-1 col-lg-5 col-xl-4 offset-xl-1">
+        <div className="col-12 col-md-6 col-lg-5 col-xl-5">
           <span className="header-min-colored">
             Наша <span className="dark-color"> продукция:</span>
           </span>
@@ -19,8 +19,14 @@ export default ProductsAdv => (
             АО «Региональная лизинговая компания Ярославской области» предлагает
             Вам воспользоваться программой льготного лизинга на приобретение
             нового оборудования для субъектов индивидуального и малого
-            предпринимательства.
+            предпринимательства по ставке от 6,5%.
           </p>
+          <div className="button-grey-container">
+            <a href="/products" className="button-grey">
+              {" "}
+              <span>каталог</span>{" "}
+            </a>
+          </div>
         </div>
         <div className="col-12 col-md-6 offset-xl-1">
           <div className="p-cards-plate">
@@ -98,12 +104,7 @@ export default ProductsAdv => (
               </a>
             </Link>
           </div>
-          <div className="button-grey-container">
-            <a href="/products" className="button-grey">
-              {" "}
-              <span>каталог</span>{" "}
-            </a>
-          </div>
+
           {/* <div className="button-container button-flip3d-vertical2">
             <div className="flipper flipper-flip3d-vertical2">
               <div className="button front">

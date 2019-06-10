@@ -1,4 +1,4 @@
-@import '../vars';
+@import "../vars";
 
 .products {
   position: relative;
@@ -7,7 +7,7 @@
   &::after {
     position: absolute;
     z-index: -1;
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 43%;
@@ -339,6 +339,7 @@
       font-size: 20px;
       display: block;
       margin-bottom: 20px;
+      line-height: 20px;
     }
     & .product-card-plate {
       //background-color: green;
@@ -350,6 +351,7 @@
       & .product-card-container {
         //background-color: red;
         padding: 15px;
+        padding-top: 0;
         width: 33%;
       }
     }
@@ -397,7 +399,7 @@
       justify-content: flex-start;
       & .product-card-container {
         margin-bottom: 15px;
-        padding: 15px;
+        //padding: 15px;
         width: 25%;
         & .product-card {
           cursor: pointer;
@@ -408,7 +410,8 @@
           margin: 0 auto;
           background: #fff;
           width: 100%;
-          height: 430px;
+          height: 400px;
+          border-radius: 3px;
           & .img-container {
             height: 200px;
             & .product-card-img {
@@ -418,8 +421,8 @@
             }
           }
           & .text-container {
-            height: 240px;
-            padding: 35px 15px;
+            height: 210px;
+            padding: 30px 15px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;

@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import '../../scss/news/otherNews.scss';
-import PropTypes from 'prop-types';
-import news from '../tables/newsList';
-import Link from 'next/link';
+import React, { Component } from "react";
+import "../../scss/news/otherNews.scss";
+import PropTypes from "prop-types";
+import news from "../tables/newsList";
+import Link from "next/link";
 
 class OtherNews extends Component {
   render() {
     const { id } = this.props;
     let newsStartId;
-    let otherNewsContent = '';
+    let otherNewsContent = "";
     let newsData = [];
 
     // Определяем начальный ID откуда будем начинать показывать новости
@@ -53,8 +53,8 @@ class OtherNews extends Component {
 
     return (
       <div className="row">
-        <div className="col-12 my-3">
-          <h2 className="subheading-common">Лента новостей:</h2>
+        <div className="col-12">
+          <span className="subheading-common">Лента новостей:</span>
         </div>
         {otherNewsContent}
       </div>

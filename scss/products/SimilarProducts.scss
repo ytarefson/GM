@@ -12,6 +12,7 @@
   margin: 0;
   margin-bottom: 20px;
   border: 1px solid rgb(224, 224, 224);
+  border-radius: 3px;
   & .similar-card-container {
     padding: 13px;
     width: 50%;
@@ -40,6 +41,33 @@
 }
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
+  .similar-products {
+    & .similar-card-container {
+      padding: 15px;
+      width: 50%;
+      & .similar-card {
+        cursor: pointer;
+        & .img-container {
+          height: 120px;
+          & .similar-card-img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+          }
+        }
+        & .similar-card-title {
+          padding-top: 8px;
+          padding-left: 0px;
+          padding-right: 35px;
+          display: block;
+          font-size: 14px;
+          font-weight: 500;
+          text-align: left;
+          line-height: 18px;
+        }
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -56,7 +84,7 @@
       width: 25%;
       & .similar-card {
         & .img-container {
-          height: 80px;
+          //height: 80px;
           & .similar-card-img {
             width: 100%;
             object-fit: cover;
@@ -65,8 +93,9 @@
         }
         & .similar-card-title {
           display: block;
-          font-size: 14px;
-          font-weight: 700;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 20px;
         }
       }
     }
@@ -102,9 +131,9 @@
           }
         }
         & .img-container {
-          height: 100px;
+          height: 180px;
           & .similar-card-img {
-            box-shadow: $box-shadow;
+            //box-shadow: $box-shadow;
             width: 100%;
             object-fit: cover;
             height: 100%;
@@ -113,8 +142,10 @@
         }
         & .similar-card-title {
           display: block;
-          font-size: 14px;
-          font-weight: 700;
+          font-size: 17px;
+          padding-right: 0;
+          font-weight: 300;
+          line-height: 22px;
         }
       }
     }

@@ -86,13 +86,13 @@
   }
   & .header-red {
     display: block;
-    color: white;
+    color: $text;
     margin-top: 15px;
     margin-bottom: 0px;
   }
   & .text-min {
     ////////////////////////////////////
-    color: white;
+    color: $text;
     & b {
       color: #2e2e2e;
     }
@@ -112,7 +112,8 @@
       content: "";
       width: 100%;
       height: 1px;
-      background-color: #fff;
+      background-color: $sub-color;
+      //border-top: 1px solid $sub-color;
       top: 50%;
       z-index: 0;
       transform: translateY(-50%);
@@ -120,17 +121,52 @@
     & .product-energy {
       //font-family: $molot-font;
       font-weight: 900;
-      padding: 5px 15px;
+      font-size: 13px;
       //width: auto;
       border-radius: 3px;
-      border: 2px solid white;
+      border: 1px solid $sub-color;
+      top: 50%;
+      display: inline-block;
       //letter-spacing: 2px;
       z-index: 1;
-      color: #fafafa;
+      color: $accent-red;
       margin: 15px 0 15px auto;
-      background-color: $accent-red;
+      background-color: #fff;
       display: block;
-      padding: 5px 15px;
+      padding: 4px 15px;
+    }
+  }
+  & .button-group {
+    //border-bottom: 1px solid rgb(199, 199, 199);
+    & .cta-button-container {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      & .cta-button {
+        display: block;
+        margin: 0 auto;
+        width: 210px;
+        height: 50px;
+        border-radius: 2px;
+        //background: $new-gradient;
+        //border: 1px solid $accent-red;
+        border: 3px solid $accent-red;
+        text-align: center;
+        color: $accent-red;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 45px;
+        //box-shadow: $box-shadow-up;
+        transition: all 0.2s ease-out;
+        &:hover {
+          box-shadow: $box-shadow;
+        }
+      }
+    }
+    & .arenda-text-min {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 12px;
+      color: #9b9b9b;
     }
   }
   & .product-img-container {
@@ -203,12 +239,38 @@
 
 // Medium devices (tablets, 576px and up)
 @media (min-width: 576px) {
+  .section-plate {
+    & .button-group {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto;
+      grid-gap: 15px;
+      align-items: center;
+      & .cta-button-container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        & .cta-button {
+          display: block;
+          margin: 0;
+        }
+      }
+      & .arenda-text-min {
+        display: block;
+        margin-bottom: 0;
+        margin-left: 15px;
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .color-section {
     & .section-plate {
+      & .header-red {
+        margin-top: 0px;
+      }
       & .product-energy-container {
         margin-top: 8px;
         margin-bottom: 5px;
@@ -222,7 +284,6 @@
           content: "";
           width: 100%;
           height: 1px;
-          background-color: #fff;
           top: 50%;
           z-index: 0;
           transform: translateY(-50%);
@@ -256,9 +317,9 @@
         //margin-top: 8px;
 
         & .product-energy {
-          font-size: 22px;
-          padding: 3px 12px;
-          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+          font-size: 18px;
+          padding: 5px 15px;
+          //box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
       }
     }
@@ -328,18 +389,40 @@
       border: 15px solid rgba(255, 255, 255, 0.3);
       border-radius: 3px;
     }
-    & .section-plate {
-      & .header-red {
-        padding-bottom: 15px;
+  }
+  .product-unit {
+    height: 100%;
+    & .flex-container {
+      height: auto;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      & .flex-top {
+        & .header-red {
+          padding-bottom: 15px;
+        }
+        & .text {
+          line-height: 26px;
+          font-size: 18px;
+          font-weight: 300;
+        }
+        & .product-energy-container {
+          margin-top: 0px;
+          & .product-energy {
+            padding: 5px 20px 3px;
+            font-weight: 500;
+            font-size: 18px;
+          }
+        }
       }
-      & .text {
-        line-height: 26px;
-        font-size: 18px;
-        font-weight: 300;
-      }
-      & .product-energy-container {
-        margin-top: 0px;
-        & .product-energy {
+      & .flex-bottom {
+        & .button-group {
+          margin-top: 30px;
+          & .cta-button-container {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
         }
       }
     }

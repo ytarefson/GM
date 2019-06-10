@@ -91,8 +91,8 @@
       font-weight: 700;
       line-height: 26px;
       // font-family: 'Noto Sans';
-      font-weight: 700;
-      letter-spacing: 2px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
     }
     & .adres-phones {
       width: 100%;
@@ -264,7 +264,7 @@
       text-align: left;
 
       & .adres-map-link {
-        font-size: 20px;
+        font-size: 18px;
       }
       & .adres-phones {
         & .phone-link {
@@ -366,7 +366,7 @@
     & .adres-list {
       text-align: left;
       & .adres-map-link {
-        font-size: 20px;
+        font-size: 18px;
       }
       & .adres-phones {
         & .phone-link {

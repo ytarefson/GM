@@ -77,15 +77,34 @@
           & .main-heading {
             display: block;
             font-family: $molot-font;
-            font-size: 27px;
+            font-size: 28px;
             line-height: 32px;
-            color: #353535;
+            text-shadow: 3px 3px 2px #8f8f8f;
+            color: white;
+            letter-spacing: 0.5px;
             margin-bottom: 15px;
+          }
+          & .spartners {
+            margin-bottom: 20px;
+            & .logos-container {
+              width: 100%;
+              height: 30px;
+              margin: 0;
+              background: url("/static/images/liebherr.png") 0 50% no-repeat;
+              background-size: contain;
+            }
+            & .descr-min {
+              display: block;
+              margin-top: 3px;
+              font-size: 10px;
+              line-height: 10px;
+              font-weight: 300;
+            }
           }
           & .main-desc {
             font-size: 16px;
             font-weight: 500;
-            color: #353535;
+            color: #383838;
           }
         }
         & .img-container {
@@ -192,11 +211,22 @@
               line-height: 48px;
 
               letter-spacing: 1px;
-              margin-bottom: 30px;
+              margin-bottom: 18px;
               z-index: 10;
+            }
+            & .spartners {
+              margin-bottom: 25px;
+              & .logos-container {
+                height: 35px;
+              }
+              & .descr-min {
+                margin-top: 5px;
+                font-size: 11px;
+              }
             }
             & .main-desc {
               font-size: 18px;
+              line-height: 23px;
             }
           }
           & .img-container {
@@ -225,23 +255,26 @@
     overflow: hidden;
     background: linear-gradient(
         to right,
-        rgba(225, 225, 225, 0.9) 0%,
-        rgba(177, 177, 177, 0.9) 100%
+        rgba(207, 207, 207, 0.4) 0%,
+        rgba(182, 182, 182, 0.9) 50%,
+        rgba(177, 177, 177, 0.6) 100%
       ),
-      url("/static/images/bg-promo.jpg") 0% 100% no-repeat;
+      url("/static/images/bg-projects.jpg") 50% 50% no-repeat;
     background-size: cover;
     display: block;
-    min-height: 700px;
-    max-height: 900px;
+    min-height: 630px;
+    max-height: 750px;
     z-index: 0;
     height: 65vh;
     position: relative;
+    border-bottom: 15px solid white;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
     & .dots-right {
       width: 460px;
       height: 560px;
       top: 50%;
       right: -200px;
-      opacity: 0.3;
+      opacity: 0.15;
       z-index: -1;
       transform: translateY(-50%);
       background: url("/static/images/dots-big-white.png") 0% 0% no-repeat;
@@ -252,13 +285,13 @@
       width: 460px;
       height: 560px;
       z-index: -1;
-      opacity: 0.3;
+      opacity: 0.15;
       background: url("/static/images/dots-big-white.png") 0% 0% no-repeat;
     }
     & .gaz-mash {
       position: absolute;
       display: block;
-
+      opacity: 0.2;
       left: 30px;
       right: 0;
       top: 30px;
@@ -273,10 +306,10 @@
 
       top: 50%;
       left: -40px;
-      width: 100px;
+      width: 60px;
       height: 400px;
       transform: translateY(-50%);
-      border: 15px solid rgba(255, 255, 255, 0.5);
+      border: 15px solid rgba(255, 255, 255, 1);
       border-radius: 3px;
     }
     & .border-right {
@@ -285,10 +318,10 @@
 
       top: 50%;
       right: -40px;
-      width: 100px;
+      width: 60px;
       height: 400px;
       transform: translateY(-50%);
-      border: 15px solid rgba(255, 255, 255, 0.5);
+      border: 15px solid rgba(255, 255, 255, 1);
       border-radius: 3px;
     }
     & .main-container {
@@ -298,22 +331,36 @@
           display: flex;
           justify-content: flex-start;
           align-items: center;
+          height: 100%;
           & .text-container {
-            padding-left: 15px;
-            padding-right: 15px;
+            margin-top: 15px;
+            padding-left: 0px;
+            padding-right: 30px;
             & .main-heading {
               font-size: 60px;
               line-height: 64px;
-              text-shadow: 3px 3px 0px #ffffff;
+              text-shadow: 3px 3px 2px #838383;
+              color: white;
+              margin-bottom: 10px;
+            }
+            & .spartners {
+              margin-bottom: 25px;
+              & .logos-container {
+                height: 50px;
+              }
+              & .descr-min {
+                margin-top: 7px;
+                font-size: 14px;
+              }
             }
             & .main-desc {
-              font-size: 24px;
-              color: black;
-              font-weight: 700;
+              font-size: 23px;
+              //color: black;
+              font-weight: 500;
               //text-transform: uppercase;
-              line-height: 28px;
-              padding-bottom: 30px;
-              border-bottom: 15px solid white;
+              line-height: 32px;
+              padding-top: 15px;
+              border-top: 2px solid white;
             }
           }
           & .promo-fon {
@@ -322,8 +369,9 @@
             bottom: 0;
             left: 45px;
             right: 15px;
-            background: linear-gradient(85deg, #fff 0%, #fafafa 100%);
+            background: linear-gradient(87deg, #fff 0%, #fff 100%);
             transform: skewX(10deg);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
           }
           & .img-container {
             position: relative;
@@ -333,7 +381,7 @@
             overflow: hidden;
             background-color: grey;
             border-left: 15px solid #fff;
-            border-right: 15px solid #fafafa;
+            border-right: 15px solid #fff;
             transform: skewX(-10deg);
             display: flex;
             justify-content: center;

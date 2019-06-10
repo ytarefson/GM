@@ -25,7 +25,8 @@ const Products = data => (
           <div className="row m-0">
             <div className="col-12 col-xl-8 mt-5">
               <h1 className="header-min-colored mb-3">
-                Газопоршневые <span className="dark-color">электростанции</span>
+                Газопоршневые{" "}
+                <span className="dark-color">электростанции и мини-ТЭС</span>
               </h1>
               <p className="text-min">
                 Занимаясь проектированием, сборкой и обслуживанием газовых

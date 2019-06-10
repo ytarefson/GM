@@ -23,7 +23,7 @@ const Projects = () => (
                 <span className="dark-color">газопоршневых электростанций</span>
               </h1>
             </div>
-            <div className="col-12">
+            <div className="col-12 col-xl-9">
               <p className="text mb-5">
                 В течении 12 лет основным профилем деятельности ООО “Газовые
                 машины” является проектирование, производство и поставка "под
@@ -34,7 +34,7 @@ const Projects = () => (
             <div className="col-12 projects-list-plate">
               <ProjectsListPlate />
             </div>
-            <div className="col-12 text-area">
+            <div className="col-12 col-xl-12 text-area">
               <p className="text">
                 С 2006 года до настоящего времени, компанией выпущено 75
                 электростанций суммарной мощностью более 21 МВт. В

@@ -159,42 +159,29 @@ export class About extends Component {
             <div className="row m-0">
               <div className="col-12 col-md-4 order-md-2">
                 <div className="contacts-content">
-                  <ul className="adres-list">
-                    <li>
-                      <span className="contacts-heading">Контакты:</span>
-                    </li>
-                    <li>
-                      <a
-                        href="https://yandex.ru/maps/-/CBFyIKsQPB"
-                        className="adres-map-link"
-                      >
-                        РОССИЯ, Ярославль, пр. Авиаторов, 155
+                  <div className="adres-list">
+                    <span className="contacts-heading">Контакты:</span>
+                    <a
+                      href="https://yandex.ru/maps/-/CBFyIKsQPB"
+                      className="adres-map-link"
+                    >
+                      150062,&nbsp;Россия, г.&nbsp;Ярославль,
+                      пр.&nbsp;Авиаторов,&nbsp;155
+                    </a>
+                    <div className="adres-phones">
+                      <a href="callto:+74852260368" className="phone-link">
+                        +7 (4852) 26-03-68
                       </a>
-                    </li>
-                    <li>
-                      <div className="adres-phones">
-                        <a href="callto:+74852260368" className="phone-link">
-                          +7 (4852) 26-03-68
-                        </a>
-                        <a href="callto:+74852267960" className="phone-link">
-                          +7 (4852) 26-79-60
-                        </a>
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        href="mailto:market@gmenergo.ru"
-                        className="adres-email"
-                      >
-                        market@gmenergo.ru
+                      <a href="callto:+74852267960" className="phone-link">
+                        +7 (4852) 26-79-60
                       </a>
-                    </li>
-                    <li>
-                      <span className="link-1">График работы:</span>
-                      <br />
-                      <span className="link-1">пн-пт: 9:00-18:00</span>
-                    </li>
-                  </ul>
+                    </div>
+                    <a href="mailto:market@gmenergo.ru" className="adres-email">
+                      market@gmenergo.ru
+                    </a>
+                    <span className="link-1">График работы:</span>
+                    <span className="link-1 link-11">пн-пт: 9:00-18:00</span>
+                  </div>
                 </div>
               </div>
               <div className="col-12 col-md-8 map-container order-md-1 p-0">
