@@ -1,4 +1,4 @@
-@import "../vars";
+@import '../vars';
 
 .react-fancybox .box {
   position: fixed;
@@ -109,7 +109,7 @@
     &::after {
       display: block;
       position: absolute;
-      content: "";
+      content: '';
       width: 100%;
       height: 1px;
       background-color: $sub-color;
@@ -219,7 +219,7 @@
       padding-left: 25px;
       &::before {
         display: block;
-        content: "";
+        content: '';
         position: absolute;
         width: 14px;
         height: 14px;
@@ -281,7 +281,7 @@
         &::after {
           display: block;
           position: absolute;
-          content: "";
+          content: '';
           width: 100%;
           height: 1px;
           top: 50%;
@@ -346,7 +346,7 @@
         padding-left: 35px;
         &::before {
           display: block;
-          content: "";
+          content: '';
           position: absolute;
           width: 14px;
           height: 14px;
@@ -392,6 +392,11 @@
   }
   .product-unit {
     height: 100%;
+    & .parametrs-container {
+      & .text-container {
+        margin-right: 30px;
+      }
+    }
     & .flex-container {
       height: auto;
       min-height: 100%;

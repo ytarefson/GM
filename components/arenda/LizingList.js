@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import Link from "next/link";
-import PropTypes from "prop-types";
-import productsList from "../tables/productsList";
+import React, { Component } from 'react';
+import Link from 'next/link';
+import PropTypes from 'prop-types';
+import productsList from '../tables/productsList';
 
 class LizingList extends Component {
   render() {
     const { idlist } = this.props;
     let needProducts = [];
-    let content = "";
+    let content = '';
     productsList.map(category => {
       category.products.map(product => {
         if (idlist.includes(product.id)) {
@@ -20,7 +20,7 @@ class LizingList extends Component {
     content = needProducts.map((product, index) => (
       // <div className="row">
       <Link href={`/products/${product.cat}/${product.id}`}>
-        <a key={index} className="item">
+        <a key={`${index}-item`} className="item">
           <span className="item-title">{product.label}</span>
           <div className="item-props">
             <span className="item-engine">{product.motorMark}</span>
