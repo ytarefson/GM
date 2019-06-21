@@ -1,5 +1,5 @@
-import Document, { Head, Main, NextScript } from 'next/document';
-import { GA_TRACKING_ID } from '../lib/gtag';
+import Document, { Head, Main, NextScript } from "next/document";
+import { GA_TRACKING_ID } from "../lib/gtag";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
       <html lang="ru">
         <Head>
           <meta name="yandex-verification" content="9653be472d2730fd" />
-
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}

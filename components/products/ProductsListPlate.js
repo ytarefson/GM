@@ -7,8 +7,8 @@ export class ProductsListPlate extends Component {
     const data = this.props.data.data[0];
     const category = this.props.data.data[1];
     return (
-      <div className="mycontainer mt-5">
-        <div className="row m-0">
+      <div className="container">
+        <div className="row">
           <div className="col-12 col-md-2">
             <span className="category-header">Бренды:</span>
             <ul className="category-list">

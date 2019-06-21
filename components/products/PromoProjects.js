@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import '../../scss/products/PromoProjects.scss';
-import projects from '../tables/projectList';
-import Link from 'next/link';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import "../../scss/products/PromoProjects.scss";
+import projects from "../tables/projectList";
+import Link from "next/link";
 
 class PromoProjects extends Component {
   constructor(props) {
@@ -26,9 +27,16 @@ class PromoProjects extends Component {
   }
 
   render() {
+    const { itemsCount } = this.props;
+    let projectsZero = [];
     let promoprojects = [];
-    let content = '';
-    promoprojects = this.randomArray(projects, 3);
+    let content = "";
+    projects.map(item => {
+      if (item.id !== 0) {
+        projectsZero.push(item);
+      }
+    });
+    promoprojects = this.randomArray(projectsZero, itemsCount);
     content = promoprojects.map((item, index) => (
       <Link key={`${index}-promoproj`} href={`/proekti/${item.id}`}>
         <a key={`${index}-promoproj`} className="d-block promoproj-card">
@@ -39,18 +47,22 @@ class PromoProjects extends Component {
               className="w-100"
             />
           </div>
-          <span className="text-common text-right">{item.label}</span>
+          <span className="text-common">{item.label}</span>
         </a>
       </Link>
     ));
 
     return (
-      <div className="col-12 col-xl-4 promo-projects">
-        <h4 className="header-razdel">Выполненные проекты:</h4>
+      <>
+        <h4 className="header-min-colored">Выполненные проекты:</h4>
         <div className="proj-feed">{content}</div>
-      </div>
+      </>
     );
   }
 }
+
+PromoProjects.propTypes = {
+  itemsCount: PropTypes.number.isRequired
+};
 
 export default PromoProjects;

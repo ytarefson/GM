@@ -30,7 +30,7 @@ class OtherNews extends Component {
 
     // Обходим newsData и формируем контент
     otherNewsContent = newsData.map(item => (
-      <div className="col-12 col-sm-6 col-lg-3" key={`other-${item.id}`}>
+      <div className="" key={`other-${item.id}`}>
         <Link
           href={`/novosti?id=${item.id}`}
           as={`/novosti/${item.id}`}
@@ -56,7 +56,7 @@ class OtherNews extends Component {
         <div className="col-12">
           <span className="subheading-common">Лента новостей:</span>
         </div>
-        {otherNewsContent}
+        <div className="col-12 other-new-plate">{otherNewsContent}</div>
       </div>
     );
   }

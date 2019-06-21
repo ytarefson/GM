@@ -12,12 +12,12 @@ export class SimilarProducts extends Component {
     return (
       <div className="mycontainer section-plate">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 border-simprod">
             <h4 id="power-header" className="header-min-colored pt-2 pb-1">
               Силовые установки{" "}
               <span className="dark-color">на базе двигателей {category}</span>
             </h4>
-            <div className="similar-products pb-3">
+            <div className="similar-products">
               {similar.map(({ label, key, id, img }) => (
                 <Link href={`/products/${category}/${id}`} key={`${key}+${id}`}>
                   <div className="similar-card-container">

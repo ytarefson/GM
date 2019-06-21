@@ -1,34 +1,49 @@
 @import "../vars";
 
-.other-new {
-  display: block;
-  margin-bottom: 30px;
-  & .img-container {
-    // height: 150px;
-    overflow: hidden;
-    margin-bottom: 15px;
-    & .detail-img {
-      max-width: 100%;
+.other-new-plate {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr;
+  grid-gap: 30px;
+  & .other-new {
+    display: block;
+    & .img-container {
+      border-radius: 7px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+      & .detail-img {
+        max-width: 100%;
+      }
     }
-  }
-  & .other-new-title {
-    color: $accent-dark;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
+    & .other-new-title {
+      color: $accent-dark;
+      text-decoration: none;
+      display: block;
+      margin-top: 2px;
+      font-size: 14px;
+      line-height: 17px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  .other-new {
-    & .img-container {
-      height: 150px;
-      overflow: hidden;
+  .other-new-plate {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 15px;
+    .other-new {
+      & .img-container {
+        height: 150px;
+        overflow: hidden;
 
-      & .detail-img {
-        max-width: 100%;
+        & .detail-img {
+          max-width: 100%;
+        }
       }
     }
   }
@@ -37,9 +52,11 @@
 @media (min-width: 768px) {
   .other-new {
     & .img-container {
-      height: 210px;
+      height: 230px;
       overflow: hidden;
-
+      display: flex;
+      justify-content: center;
+      align-items: center;
       & .detail-img {
         max-width: 100%;
       }
@@ -48,26 +65,50 @@
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .other-new {
-    & .img-container {
-      height: 130px;
-      overflow: hidden;
-
-      & .detail-img {
-        max-width: 100%;
+  .other-new-plate {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+    .other-new {
+      & .img-container {
+        height: 155px;
+        overflow: hidden;
+        border-radius: 10px;
+        & .detail-img {
+          display: block;
+          min-width: 105%;
+          height: 105%;
+        }
       }
     }
   }
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .other-new {
-    & .img-container {
-      height: 160px;
-      overflow: hidden;
+  .subheading-common {
+    display: block;
+    margin-top: 30px;
+  }
+  .other-new-plate {
+    padding-top: 15px;
+    .other-new {
+      & .img-container {
+        height: 160px;
+        overflow: hidden;
 
-      & .detail-img {
-        max-width: 100%;
+        & .detail-img {
+          max-width: 100%;
+        }
+      }
+      & .other-new-title {
+        margin-top: 7px;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 300;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

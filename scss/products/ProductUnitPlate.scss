@@ -1,4 +1,4 @@
-@import '../vars';
+@import "../vars";
 
 .react-fancybox .box {
   position: fixed;
@@ -109,7 +109,7 @@
     &::after {
       display: block;
       position: absolute;
-      content: '';
+      content: "";
       width: 100%;
       height: 1px;
       background-color: $sub-color;
@@ -170,7 +170,9 @@
     }
   }
   & .product-img-container {
-    //box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
   }
   & .parametrs-container {
     padding-bottom: 40px;
@@ -203,35 +205,7 @@
     }
   }
 }
-.usage {
-  & ul {
-    padding: 0;
-    padding-top: 15px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    & li {
-      position: relative;
-      padding: 0;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-left: 25px;
-      &::before {
-        display: block;
-        content: '';
-        position: absolute;
-        width: 14px;
-        height: 14px;
-        background-color: $accent-red;
-        border-top-left-radius: 10px;
-        left: 0px;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-    }
-  }
-}
+
 .form-bg {
   position: relative;
   padding: 0;
@@ -281,7 +255,7 @@
         &::after {
           display: block;
           position: absolute;
-          content: '';
+          content: "";
           width: 100%;
           height: 1px;
           top: 50%;
@@ -332,29 +306,6 @@
         padding-bottom: 15px;
         & .text-bold {
           font-size: 18px;
-        }
-      }
-    }
-  }
-  .usage {
-    & ul {
-      & li {
-        position: relative;
-        padding: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 35px;
-        &::before {
-          display: block;
-          content: '';
-          position: absolute;
-          width: 14px;
-          height: 14px;
-          background-color: $accent-red;
-          border-top-left-radius: 10px;
-          left: 0px;
-          top: 50%;
-          transform: translateY(-50%);
         }
       }
     }
