@@ -118,9 +118,11 @@
 .news-main-plate {
   & .img-container {
     margin-bottom: 15px;
+    //box-shadow: $box-shadow;
+    border-radius: $border-radius;
     & .news-card-img {
       max-width: 100%;
-      //border: 5px solid white;
+      border-radius: $border-radius;
       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
   }

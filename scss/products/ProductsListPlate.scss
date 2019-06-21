@@ -787,10 +787,11 @@
         position: absolute;
 
         & .text-min {
-          color: black;
+          color: rgb(41, 41, 41);
           line-height: 20px;
           font-size: 16px;
           margin-top: 20px;
+          //font-weight: 500;
         }
       }
     }

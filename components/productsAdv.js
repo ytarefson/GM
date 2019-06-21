@@ -31,54 +31,54 @@ export default ProductsAdv => (
         <div className="col-12 col-md-6 offset-xl-1">
           <div className="p-cards-plate">
             <Link
-              href={{ pathname: "/products/LIEBHERR", query: "13" }}
-              as="/products/LIEBHERR/13"
+              href={{ pathname: "/products/MAN", query: "1" }}
+              as="/products/MAN/1"
             >
               <a className="p-card">
                 <span className="title">
-                  Liebherr <span className="red">1000</span>{" "}
+                  MAN <span className="red">250</span>{" "}
                 </span>
                 <div className="img-container">
                   <img
-                    src="/static/images/products/L1000.jpg"
-                    title="Газопоршневая станция Liebher 1000"
-                    alt="Liebher 1000"
+                    src="/static/images/products/MAN250.jpg"
+                    title="Газопоршневая станция MAN 250"
+                    alt="MAN 250"
                     className="p-img"
                   />
                 </div>
               </a>
             </Link>
             <Link
-              href={{ pathname: "/products/MTU", query: "24" }}
-              as="/products/MTU/24"
+              href={{ pathname: "/products/MAN", query: "5" }}
+              as="/products/MAN/5"
             >
               <a className="p-card">
                 <span className="title">
-                  MTU <span className="red">700</span>{" "}
+                  MAN <span className="red">500</span>{" "}
                 </span>
                 <div className="img-container">
                   <img
-                    src="/static/images/products/M700.jpg"
-                    title="Газопоршневая станция MTU 700"
-                    alt="MTU 700"
+                    src="/static/images/products/MAN500.jpg"
+                    title="Газопоршневая станция MAN 500"
+                    alt="MAN 500"
                     className="p-img"
                   />
                 </div>
               </a>
             </Link>
             <Link
-              href={{ pathname: "/products/YAMZ", query: "20" }}
-              as="/products/YAMZ/20"
+              href={{ pathname: "/products/JENBACHER", query: "41" }}
+              as="/products/JENBACHER/41"
             >
               <a className="p-card">
                 <span className="title">
-                  ЯМЗ <span className="red">100</span>{" "}
+                  JENBACHER <span className="red">1000</span>{" "}
                 </span>
                 <div className="img-container">
                   <img
-                    src="/static/images/products/Y100.jpg"
-                    title="Газопоршневая станция ЯМЗ 100"
-                    alt="ЯМЗ 100"
+                    src="/static/images/products/jenbacher-1000.jpg"
+                    title="Газопоршневая станция Jenbacher 1000"
+                    alt="Jenbacher 1000"
                     className="p-img"
                   />
                 </div>

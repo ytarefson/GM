@@ -1,3 +1,5 @@
+@import "../vars";
+
 .news-cards-small-plate {
   margin-top: 15px;
   & .news-card-small {
@@ -24,7 +26,9 @@
     }
     & .img-container {
       & .news-card-img {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: $box-shadow;
+        border-radius: $border-radius;
+        //box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         max-width: 100%;
         //border: 5px solid white;
       }
