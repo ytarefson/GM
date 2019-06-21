@@ -10,6 +10,7 @@ $sub-color: #9b9b9b;
 $wall-color: #ebebeb;
 $accent-grey: #727272;
 $text: #333;
+$border-radius: 7px;
 $new-gradient: linear-gradient(
   to right,
   rgb(242, 125, 14) 0%,
@@ -19,7 +20,7 @@ $new-gradient: linear-gradient(
 $yel-red-gradient: linear-gradient(to right, #eecf32 0%, #c22328 100%);
 $red-gradient: linear-gradient(to left, #dc4622 0%, #b63b1d 100%);
 
-$box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+$box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
 $box-shadow-up: 5px 23px 20px -15px rgba(0, 0, 0, 0.35);
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"

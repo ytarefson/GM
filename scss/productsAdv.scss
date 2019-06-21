@@ -57,7 +57,9 @@
             & .img-container {
               width: 100%;
               height: 100%;
+              border-radius: $border-radius;
               & .p-img {
+                border-radius: $border-radius;
                 width: auto;
                 max-width: 100%;
                 display: block;
@@ -254,9 +256,10 @@
           }
           & .p-cards-plate {
             margin-top: 30px;
+            grid-gap: 25px;
             & .p-card {
               & .title {
-                font-size: 21px;
+                font-size: 27px;
                 color: #353535;
                 font-family: $molot-font;
                 & .red {
@@ -264,6 +267,7 @@
                 }
               }
               & .img-container {
+                margin-top: 4px;
                 & .p-img {
                   width: auto;
                   max-width: 100%;

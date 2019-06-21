@@ -448,6 +448,7 @@
               overflow: hidden;
               position: relative;
               transition: all 0.2s;
+              border-radius: $border-radius;
               & .teh-image {
                 display: block;
                 position: relative;

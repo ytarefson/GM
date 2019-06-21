@@ -79,7 +79,7 @@
         cursor: pointer;
         position: relative;
         z-index: 0;
-        border-radius: 10px;
+        border-radius: $border-radius;
         display: block;
         margin: 0 auto;
         background: #fff;
@@ -99,7 +99,7 @@
           height: 100px;
           width: 100%;
           overflow: hidden;
-          border-radius: 10px 10px 0 0;
+          border-radius: 7px 7px 0 0;
           & .product-card-img {
             height: auto;
             width: 100%;
@@ -218,7 +218,7 @@
       grid-gap: 15px;
       & .promoproj-card {
         & .proj-img {
-          border-radius: 7px;
+          border-radius: $border-radius;
           overflow: hidden;
         }
         & .text-common {
@@ -364,7 +364,7 @@
         & .promoproj-card {
           & .proj-img {
             box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 7px;
+            border-radius: $border-radius;
             overflow: hidden;
           }
           & .text-common {
@@ -402,7 +402,7 @@
       grid-gap: 15px;
       & .card-container {
         & .card {
-          border-radius: 10px;
+          border-radius: $border-radius;
           border: 3px solid white;
           background: none;
           padding: 15px;
@@ -514,7 +514,7 @@
         padding: 0;
         & .product-card {
           z-index: 0;
-          border-radius: 10px;
+          border-radius: $border-radius;
           height: 100%;
           &:hover {
             box-shadow: $box-shadow-up;
@@ -622,7 +622,7 @@
         grid-gap: 15px;
         & .promoproj-card {
           & .proj-img {
-            border-radius: 10px;
+            border-radius: $border-radius;
             overflow: hidden;
           }
           & .text-common {
@@ -802,7 +802,7 @@
 
       & .card-container {
         transition: all 0.15s ease-in-out;
-        border-radius: 10px;
+        border-radius: $border-radius;
         &:hover {
           box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
           & .card {
@@ -816,7 +816,7 @@
         }
         & .card {
           background: rgba(255, 255, 255, 0.05);
-          border-radius: 10px;
+          border-radius: $border-radius;
           border: 3px solid white;
           background: none;
           padding: 15px;

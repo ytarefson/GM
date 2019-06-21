@@ -139,12 +139,13 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   #power-header {
+    margin-top: 30px;
     padding-left: 15px;
   }
   .similar-products {
     //background: #fff;
     margin: 0 15px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     grid-gap: 30px;
     & .similar-card-container {
       & .similar-card {
@@ -159,7 +160,7 @@
         }
         & .img-container {
           height: 180px;
-          border-radius: 10px;
+          border-radius: $border-radius;
           overflow: hidden;
           box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
           transition: all 0.1s ease-in;
