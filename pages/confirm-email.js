@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Head from '../components/head';
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import '../scss/confirmEmail.scss';
+import ym from 'react-yandex-metrika';
 
-const ConfirmEmailSend = () => (
+class  ConfirmEmailSend extends Component {
+  componentDidMount() {
+    ym('hit', '/confirm-email');
+  }
+  render() {
+    return (
   <div>
     <Head
       title="Сообщение успешно отправлено - Газовые машины"
@@ -27,5 +33,6 @@ const ConfirmEmailSend = () => (
     </Layout>
   </div>
 );
+    ]}
 
 export default ConfirmEmailSend;

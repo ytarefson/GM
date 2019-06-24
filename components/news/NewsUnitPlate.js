@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import Head from "../../components/head";
-import "../../scss/news/newsUnitPlate.scss";
-import YoutubeVideo13 from "../YoutubeVideo13";
-import OtherNews from "./OtherNews";
-var Parser = require("html-react-parser");
+import React, { Component } from 'react';
+import Head from '../../components/head';
+import '../../scss/news/newsUnitPlate.scss';
+import YoutubeVideo13 from '../YoutubeVideo13';
+import OtherNews from './OtherNews';
+var Parser = require('html-react-parser');
 
 export class NewsListPlate extends Component {
   render() {
-    const data = this.props.data.data;
+    const data = this.props.data;
     const desc = Parser(data.description);
 
     return (

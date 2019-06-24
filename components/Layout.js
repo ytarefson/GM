@@ -13,7 +13,7 @@ export default ({ children }) => (
     <Nav />
     <YMInitializer
       accounts={[51052037]}
-      options={{ webvisor: true, clickmap: true }}
+      options={{ defer: true, webvisor: true, clickmap: true }}
       version="2"
     />
     {/* <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>

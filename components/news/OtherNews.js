@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import "../../scss/news/otherNews.scss";
-import PropTypes from "prop-types";
-import news from "../tables/newsList";
-import Link from "next/link";
+import React, { Component } from 'react';
+import '../../scss/news/otherNews.scss';
+import PropTypes from 'prop-types';
+import news from '../tables/newsList';
+import Link from 'next/link';
 
 class OtherNews extends Component {
   render() {
     const { id } = this.props;
     let newsStartId;
-    let otherNewsContent = "";
+    let otherNewsContent = '';
     let newsData = [];
 
     // Определяем начальный ID откуда будем начинать показывать новости
@@ -66,4 +66,7 @@ OtherNews.propTypes = {
   id: PropTypes.number.isRequired
 };
 
+OtherNews.defaultProps = {
+  id: 0
+};
 export default OtherNews;

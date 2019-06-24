@@ -3,8 +3,12 @@ import Layout from '../components/Layout';
 import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
 import FormPage from '../components/form';
 import '../scss/services/minitec.scss';
+import ym from 'react-yandex-metrika';
 
 class MiniTec extends Component {
+  componentDidMount() {
+    ym('hit', '/uslugi/izgotovlenie-i-postavka-mini-tec');
+  }
   render() {
     const { serviceName } = this.props;
     return (

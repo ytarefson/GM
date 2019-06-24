@@ -3,8 +3,12 @@ import Layout from '../components/Layout';
 import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
 import FormPage from '../components/form';
 import '../scss/services/optimal-agregats.scss';
+import ym from 'react-yandex-metrika';
 
 class OptimalAgregates extends Component {
+  componentDidMount() {
+    ym('hit', '/uslugi/podbor-optimalnih-agregatov');
+  }
   render() {
     const { serviceName } = this.props;
     return (

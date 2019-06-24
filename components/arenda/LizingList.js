@@ -19,7 +19,10 @@ class LizingList extends Component {
     });
     content = needProducts.map((product, index) => (
       // <div className="row">
-      <Link href={`/products/${product.cat}/${product.id}`}>
+      <Link
+        key={`${index}-item`}
+        href={`/products/${product.cat}/${product.id}`}
+      >
         <a key={`${index}-item`} className="item">
           <span className="item-title">{product.label}</span>
           <div className="item-props">

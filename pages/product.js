@@ -1,12 +1,21 @@
-import React from "react";
-import Layout from "../components/Layout";
+import React, { Component } from 'react';
+import Layout from '../components/Layout';
 // import NextHead from 'next/head';
-import ProductUnitPlate from "../components/products/ProductUnitPlate";
-import "../scss/product.scss";
+import ProductUnitPlate from '../components/products/ProductUnitPlate';
+import '../scss/product.scss';
+import ym from 'react-yandex-metrika';
 
-const Product = data => (
-  <div>
-    {/* <NextHead>
+class Product extends Component {
+  componentDidMount() {
+    const { data } = this.props;
+    ym('hit', `/products/${data.category}/${data.id}`);
+  }
+  render() {
+    const { data } = this.props;
+
+    return (
+      <div>
+        {/* <NextHead>
       <link rel="icon" href="../../../static/images/favicon/favicon.ico" />
       <link
         rel="apple-touch-icon"
@@ -35,16 +44,18 @@ const Product = data => (
         color="#5bbad5"
       />
     </NextHead> */}
-    <Layout>
-      <div className="container-fluid product-unit-wrapper pb-5">
-        <ProductUnitPlate data={data} />
+        <Layout>
+          <div className="container-fluid product-unit-wrapper pb-5">
+            <ProductUnitPlate data={data} />
+          </div>
+        </Layout>
       </div>
-    </Layout>
-  </div>
-);
+    );
+  }
+}
 
 Product.getInitialProps = async function(context) {
-  const data = { id: "", category: "" };
+  const data = { id: '', category: '' };
   data.id = context.query.id;
   data.category = context.query.category;
   return { data };

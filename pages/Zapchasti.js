@@ -3,8 +3,12 @@ import Layout from '../components/Layout';
 import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
 import FormPage from '../components/form';
 import '../scss/services/zapchasti.scss';
+import ym from 'react-yandex-metrika';
 
 class Zapchasti extends Component {
+  componentDidMount() {
+    ym('hit', '/uslugi/postavka-zapasnih-chastei');
+  }
   render() {
     const { serviceName } = this.props;
     return (

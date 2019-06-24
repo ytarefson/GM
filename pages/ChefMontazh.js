@@ -3,8 +3,12 @@ import Layout from '../components/Layout';
 import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
 import FormPage from '../components/form';
 import '../scss/montazh.scss';
+import ym from 'react-yandex-metrika';
 
 class ChefMontazh extends Component {
+  componentDidMount() {
+    ym('hit', '/uslugi/chef-montazh');
+  }
   render() {
     const { serviceName } = this.props;
     return (

@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import Head from "../../components/head";
-import Link from "../Link";
-import "../../scss/projects/ProjectsUnitPlate.scss";
-import Video from "../Video";
+import React, { Component } from 'react';
+import Head from '../../components/head';
+import Link from '../Link';
+import '../../scss/projects/ProjectsUnitPlate.scss';
+import Video from '../Video';
 
 export class ProjectUnitPlate extends Component {
   render() {
-    const project = this.props.project.project;
+    const project = this.props.project;
     let isVideo = false;
     if (project.id == 6) {
       isVideo = true;
@@ -78,7 +78,7 @@ export class ProjectUnitPlate extends Component {
             <div className="row">
               <div className="col-12">
                 <h4 className="header-min-colored pb-1">
-                  Описание проекта -{" "}
+                  Описание проекта -{' '}
                   <span className="dark-color">{project.label}</span>
                 </h4>
                 <p className="text">{project.description}</p>

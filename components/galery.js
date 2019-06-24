@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Lightbox from "react-image-lightbox";
+import React, { Component } from 'react';
+import Lightbox from 'react-image-lightbox';
 
-import "../scss/galery.scss";
+import '../scss/galery.scss';
 
-export default class Galery extends Component {
+class Galery extends Component {
   constructor(props) {
     super(props);
 
@@ -14,8 +14,8 @@ export default class Galery extends Component {
   }
 
   render() {
-    const images = this.props.project.project.galery;
-    const project = this.props.project.project;
+    const images = this.props.project.galery;
+    const project = this.props.project;
     const { photoIndex, isOpen } = this.state;
 
     return (
@@ -24,7 +24,7 @@ export default class Galery extends Component {
           <div className="galery row m-0">
             <div className="col-12">
               <h4 className="header-min-colored pb-1">
-                Дополнительные изображения -{" "}
+                Дополнительные изображения -{' '}
                 <span className="dark-color">{project.label}</span>
               </h4>
             </div>
@@ -100,3 +100,5 @@ export default class Galery extends Component {
     );
   }
 }
+
+export default Galery;
