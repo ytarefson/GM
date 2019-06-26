@@ -2,7 +2,7 @@ import React from 'react';
 import Router from 'next/router';
 import Nav from './nav';
 import Footer from './footer';
-import { Spring } from 'react-spring';
+// import { Spring } from 'react-spring';
 import * as gtag from '../lib/gtag';
 import { YMInitializer } from 'react-yandex-metrika';
 
@@ -13,7 +13,14 @@ export default ({ children }) => (
     <Nav />
     <YMInitializer
       accounts={[51052037]}
-      options={{ defer: true, webvisor: true, clickmap: true }}
+      options={{
+        defer: true,
+        webvisor: true,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        trackHash: true
+      }}
       version="2"
     />
     {/* <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
