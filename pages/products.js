@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import Link from 'next/link';
+import React, { Component } from "react";
+import Link from "next/link";
 // import Head from '../components/head';
-import NextHead from 'next/head';
-import Layout from '../components/Layout';
-import productsList from '../components/tables/productsList';
-import ProductsNew from '../components/products/ProductsNewContainer';
-import ProductsTextSections from '../components/products/ProductsTextSections';
-import ProductsUsage from '../components/products/ProductsUsage';
+import NextHead from "next/head";
+import Layout from "../components/Layout";
+import productsList from "../components/tables/productsList";
+import ProductsNew from "../components/products/ProductsNewContainer";
+import ProductsTextSections from "../components/products/ProductsTextSections";
+import ProductsUsage from "../components/products/ProductsUsage";
 
-import OtherNews from '../components/news/OtherNews';
-import PromoProjects from '../components/products/PromoProjects';
-import ProductsListPlate from '../components/products/ProductsListPlate';
+import OtherNews from "../components/news/OtherNews";
+import PromoProjects from "../components/products/PromoProjects";
+import ProductsListPlate from "../components/products/ProductsListPlate";
 
 class Products extends Component {
   render() {
@@ -165,7 +165,7 @@ Products.getInitialProps = async function(context) {
   if (context.query.category !== undefined) {
     const category = context.query.category.toUpperCase();
     const data = [];
-    data.category = '';
+    data.category = "";
 
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
@@ -178,10 +178,10 @@ Products.getInitialProps = async function(context) {
     }
     return { data };
   } else {
-    const category = 'MAN';
+    const category = "MAN";
 
     let data = [];
-    data.category = '';
+    data.category = "";
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
         const element = productsList[cat];

@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import '../scss/arenda.scss';
-import Link from 'next/link';
-import Head from '../components/head';
-import Layout from '../components/Layout';
-import LizingList from '../components/arenda/LizingList';
-import OtherNews from '../components/news/OtherNews';
-import FormPage from '../components/form';
+import React, { Component } from "react";
+import "../scss/arenda.scss";
+import Link from "next/link";
+import Head from "../components/head";
+import Layout from "../components/Layout";
+import LizingList from "../components/arenda/LizingList";
+import FormPage from "../components/form";
+import OtherNews from "../components/news/OtherNews";
 
 class Arenda extends Component {
   render() {

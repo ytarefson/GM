@@ -9,6 +9,7 @@ import FormPage from "../form";
 import JumboAskForm from "../JumboAskForm";
 import GaleryProducts from "../../components/GaleryProducts";
 import YoutubeVideo from "../YoutubeVideo";
+import OtherNews from "../../components/news/OtherNews";
 import PromoProjects from "./PromoProjects";
 import Lightbox from "react-image-lightbox";
 // import 'react-image-lightbox/style.css';
@@ -306,7 +307,7 @@ export class ProductsUnitPlate extends Component {
         </div>
         <JumboAskForm />
 
-        <div className="container-fluid pt-2">
+        <div className="container-fluid bg-gradient-white pt-2">
           {product.id == 12 && (
             <div className="mycontainer">
               <YoutubeVideo className="myVideo" />
@@ -316,6 +317,11 @@ export class ProductsUnitPlate extends Component {
         </div>
 
         <FormPage product={product.label} />
+        <div className="container-fluid">
+          <div className="container pl-xl-4 pr-xl-4">
+            <OtherNews />
+          </div>
+        </div>
       </div>
     );
   }

@@ -27,6 +27,8 @@
       cursor: pointer;
       & .img-container {
         //height: 80px;
+        border-radius: $border-radius;
+        overflow: hidden;
         & .similar-card-img {
           width: 100%;
           object-fit: cover;
@@ -141,6 +143,9 @@
   #power-header {
     margin-top: 30px;
     padding-left: 15px;
+  }
+  .bg-gradient-white {
+    background: linear-gradient(to bottom, #fff 0%, #fafafa 100%);
   }
   .similar-products {
     //background: #fff;
