@@ -3,12 +3,8 @@ import Head from '../components/head';
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import '../scss/form/confirmAskForm.scss';
-import ym from 'react-yandex-metrika';
 
 class ConfirmAskForm extends Component {
-  componentDidMount() {
-    ym('hit', '/confirm-askform');
-  }
   render() {
     return (
       <div>

@@ -5,12 +5,8 @@ import newsList from '../components/tables/newsList';
 import Layout from '../components/Layout';
 import NewsMain from '../components/news/newsMain';
 import NewsListPlate from '../components/news/newsListPlate';
-import ym from 'react-yandex-metrika';
 
 class News extends Component {
-  componentDidMount() {
-    ym('hit', '/novosti');
-  }
   render() {
     return (
       <div>

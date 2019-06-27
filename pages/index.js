@@ -11,12 +11,8 @@ import Layout from "../components/Layout";
 import FormPage from "../components/form";
 import TextBlock from "../components/textBlock";
 import NewsAdv from "../components/newsAdv";
-import ym from "react-yandex-metrika";
 
 class Home extends Component {
-  componentDidMount() {
-    ym("hit", "/");
-  }
   render() {
     return (
       <div className="home">

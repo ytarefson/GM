@@ -6,12 +6,8 @@ import Layout from '../components/Layout';
 import LizingList from '../components/arenda/LizingList';
 import OtherNews from '../components/news/OtherNews';
 import FormPage from '../components/form';
-import ym from 'react-yandex-metrika';
 
 class Arenda extends Component {
-  componentDidMount() {
-    ym('hit', '/arenda-i-lizing');
-  }
   render() {
     return (
       <div>
@@ -194,7 +190,7 @@ class Arenda extends Component {
             <div className="container">
               {/* <div className="row">
             <div className="col"> */}
-              <OtherNews id={17} />
+              <OtherNews />
               {/* </div>
           </div> */}
             </div>

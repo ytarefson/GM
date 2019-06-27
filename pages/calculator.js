@@ -3,12 +3,8 @@ import Link from 'next/link';
 import Head from '../components/head';
 import Layout from '../components/Layout';
 import CalcPlate from '../components/calcPlate';
-import ym from 'react-yandex-metrika';
 
 class Calculator extends Component {
-  componentDidMount() {
-    ym('hit', '/calculatorabout');
-  }
   render() {
     return (
       <div>

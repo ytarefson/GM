@@ -3,12 +3,8 @@ import Head from '../components/head';
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import '../scss/confirmEmail.scss';
-import ym from 'react-yandex-metrika';
 
 class ConfirmEmailSend extends Component {
-  componentDidMount() {
-    ym('hit', '/confirm-email');
-  }
   render() {
     return (
       <div>

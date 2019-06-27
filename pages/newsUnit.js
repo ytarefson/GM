@@ -3,13 +3,8 @@ import Link from 'next/link';
 import newsList from '../components/tables/newsList';
 import Layout from '../components/Layout';
 import NewsUnitPlate from '../components/news/NewsUnitPlate';
-import ym from 'react-yandex-metrika';
 
 class NewsUnit extends Component {
-  componentDidMount() {
-    const { data } = this.props;
-    ym('hit', `/novosti/${data.id}`);
-  }
   render() {
     const { data } = this.props;
     return (

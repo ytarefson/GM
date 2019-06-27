@@ -4,12 +4,8 @@ import Link from 'next/link';
 import Head from '../components/head';
 import Layout from '../components/Layout';
 import serviceList from '../components/tables/serviceList';
-import ym from 'react-yandex-metrika';
 
 class Services extends Component {
-  componentDidMount() {
-    ym('hit', '/uslugi');
-  }
   render() {
     return (
       <div>
