@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import "../../scss/products/PromoProjects.scss";
-import projects from "../tables/projectList";
-import Link from "next/link";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import '../../scss/products/PromoProjects.scss';
+import projects from '../tables/projectList';
+import Link from 'next/link';
 
 class PromoProjects extends Component {
   constructor(props) {
@@ -30,7 +30,7 @@ class PromoProjects extends Component {
     const { itemsCount } = this.props;
     let projectsZero = [];
     let promoprojects = [];
-    let content = "";
+    let content = '';
     projects.map(item => {
       if (item.id !== 0) {
         projectsZero.push(item);
@@ -42,8 +42,9 @@ class PromoProjects extends Component {
         <a key={`${index}-promoproj`} className="d-block promoproj-card">
           <div className="proj-img">
             <img
-              src={`../../static/images/projects/${item.img}`}
-              alt=""
+              src={`/static/images/projects/${item.img}`}
+              alt={item.label}
+              title={item.label}
               className="w-100"
             />
           </div>

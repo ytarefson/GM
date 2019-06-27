@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import Lightbox from 'react-image-lightbox';
 // Yandex Maps
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
-import ym from 'react-yandex-metrika';
+
 const images = [
   '../static/images/about-1.jpg',
   '../static/images/about-2.jpg',
@@ -21,10 +21,6 @@ export class About extends Component {
       photoIndex: 0,
       isOpen: false
     };
-  }
-
-  componentDidMount() {
-    ym('hit', '/about');
   }
 
   render() {

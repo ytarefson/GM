@@ -11,13 +11,8 @@ import ProductsUsage from '../components/products/ProductsUsage';
 import OtherNews from '../components/news/OtherNews';
 import PromoProjects from '../components/products/PromoProjects';
 import ProductsListPlate from '../components/products/ProductsListPlate';
-import ym from 'react-yandex-metrika';
 
 class Products extends Component {
-  componentDidMount() {
-    ym('hit', '/products');
-  }
-
   render() {
     const { data } = this.props;
     return (

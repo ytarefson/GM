@@ -1,32 +1,34 @@
 import React, { Component } from 'react';
 import '../../scss/news/otherNews.scss';
-import PropTypes from 'prop-types';
 import news from '../tables/newsList';
 import Link from 'next/link';
 
 class OtherNews extends Component {
+  constructor(props) {
+    super(props);
+    this.randomArray = this.randomArray.bind(this);
+  }
+
+  randomArray(arr, count) {
+    let shuffled = arr.slice(0);
+    let i = arr.length;
+    let min = i - count;
+    let temp;
+    let index;
+
+    while (i-- > min) {
+      index = Math.floor((i + 1) * Math.random());
+      temp = shuffled[index];
+      shuffled[index] = shuffled[i];
+      shuffled[i] = temp;
+    }
+    return shuffled.slice(min);
+  }
+
   render() {
-    const { id } = this.props;
-    let newsStartId;
     let otherNewsContent = '';
     let newsData = [];
-
-    // Определяем начальный ID откуда будем начинать показывать новости
-    if (id < 4) {
-      newsStartId = id + 4;
-    } else {
-      newsStartId = 0;
-    }
-
-    // Формируем массив объектов newsData для дальнейшего вывода
-    for (let i = newsStartId; i < newsStartId + 4; i++) {
-      let item = {
-        label: news[i].label,
-        img: news[i].img,
-        id: news[i].id
-      };
-      newsData.push(item);
-    }
+    newsData = this.randomArray(news, 4);
 
     // Обходим newsData и формируем контент
     otherNewsContent = newsData.map(item => (
@@ -62,11 +64,4 @@ class OtherNews extends Component {
   }
 }
 
-OtherNews.propTypes = {
-  id: PropTypes.number.isRequired
-};
-
-OtherNews.defaultProps = {
-  id: 0
-};
 export default OtherNews;

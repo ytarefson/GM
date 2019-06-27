@@ -3,13 +3,8 @@ import Layout from '../components/Layout';
 // import NextHead from 'next/head';
 import ProductUnitPlate from '../components/products/ProductUnitPlate';
 import '../scss/product.scss';
-import ym from 'react-yandex-metrika';
 
 class Product extends Component {
-  componentDidMount() {
-    const { data } = this.props;
-    ym('hit', `/products/${data.category}/${data.id}`);
-  }
   render() {
     const { data } = this.props;
 

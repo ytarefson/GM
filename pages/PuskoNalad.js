@@ -3,13 +3,8 @@ import Layout from '../components/Layout';
 import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
 import FormPage from '../components/form';
 import '../scss/services/pusko-naladka.scss';
-import ym from 'react-yandex-metrika';
 
 class PuskoNalad extends Component {
-  componentDidMount() {
-    ym('hit', '/uslugi/pusko-naladochnie-rabotiabout');
-  }
-
   render() {
     const { serviceName } = this.props;
     return (
