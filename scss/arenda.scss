@@ -616,7 +616,10 @@
           border-bottom: 1px solid white;
           & .button-container-new {
             & .button-new {
-              background-color: rgb(230, 230, 230);
+              background: rgba(255, 255, 255, 0.1);
+              &:hover {
+                background: rgba(255, 255, 255, 0.95);
+              }
             }
           }
           & .arenda-text-min {

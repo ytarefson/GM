@@ -32,7 +32,7 @@
   & .container {
     & .text-container {
       padding-bottom: 30px;
-      text-align: center;
+      text-align: left;
       & .header-min-colored {
         padding-bottom: 15px;
         letter-spacing: 1px;
@@ -125,12 +125,12 @@
       }
     }
     & .button-grey-container {
+      margin-top: 0;
       padding-bottom: 30px;
       & .button-grey {
-        line-height: 40px;
         & span {
           color: white;
-          font-size: 15px;
+          font-size: 16px;
         }
       }
     }
@@ -153,7 +153,7 @@
     & .container {
       & .text-container {
         padding-bottom: 30px;
-        text-align: center;
+        text-align: left;
         & .header-min-colored {
           padding-bottom: 15px;
           letter-spacing: 1px;
@@ -237,10 +237,8 @@
         }
       }
       & .button-grey-container {
-        padding-bottom: 90px;
+        padding-bottom: 30px;
         & .button-grey {
-          line-height: 40px;
-
           & span {
             color: white;
           }
@@ -338,10 +336,7 @@
       & .button-grey-container {
         padding-bottom: 90px;
         & .button-grey {
-          line-height: 40px;
-
           & span {
-            color: white;
           }
         }
       }
@@ -351,6 +346,7 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .generalServices {
+    margin-top: 60px;
     & .container {
       & .text-container {
         padding-bottom: 30px;
@@ -424,14 +420,18 @@
     }
     & .container {
       & .text-container {
+        display: block;
         padding-bottom: 45px;
+        text-align: left;
         & .header-min-colored {
           font-size: 36px;
           line-height: 46px;
-          padding-left: 50px;
-          padding-right: 50px;
+          padding-left: 0px;
+          padding-right: 110px;
         }
         & .text {
+          text-align: left;
+          font-weight: 300;
           // background-color: #fafafa;
           // border: 1px solid #dcdcdc;
           // border-radius: 3px;
@@ -532,7 +532,7 @@
       }
       & .button-grey-container {
         margin-top: 15px;
-        padding-bottom: 30px;
+        padding-bottom: 0px;
         & .button-grey {
           line-height: 40px;
 

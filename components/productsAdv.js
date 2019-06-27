@@ -24,7 +24,11 @@ export default ProductsAdv => (
           <div className="button-grey-container">
             <a href="/products" className="button-grey">
               {" "}
-              <span>каталог</span>{" "}
+              <span>Каталог</span>{" "}
+            </a>
+            <a href="/arenda-i-lizing" className="arenda-button">
+              {" "}
+              <span>Аренда и лизинг</span>{" "}
             </a>
           </div>
         </div>

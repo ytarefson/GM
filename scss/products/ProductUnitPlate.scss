@@ -76,6 +76,50 @@
 }
 .description {
   background-color: #fafafa;
+  & .benefits-plate {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr;
+    grid-gap: 15px;
+    & .benefit-card {
+      display: flex;
+      align-items: center;
+      border-radius: $border-radius;
+      padding: 15px;
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      & .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+        background-color: $accent-red;
+        border-radius: 30px;
+        & .bene-icon {
+          transform: scale(0.75);
+          filter: invert(100%);
+        }
+      }
+      & .text-container {
+        & .bene-title {
+          display: block;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 300;
+          color: #636363;
+        }
+        & .bene-text {
+          display: block;
+          color: #4c4c4c;
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }
 .section-plate {
   & .product-img-container {
@@ -273,6 +317,12 @@
       }
     }
   }
+  .description {
+    & .benefits-plate {
+      margin-top: -15px;
+      grid-template: 1fr 1fr / 1fr 1fr;
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -378,6 +428,56 @@
           & .cta-button-container {
             margin-top: 0;
             margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .description {
+    & .benefits-plate {
+      margin-bottom: 45px;
+      display: grid;
+      grid-template: 1fr / 1fr 1fr 1fr 1fr;
+      grid-gap: 15px;
+      & .benefit-card {
+        height: 90px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        padding-right: 5px;
+        box-shadow: none;
+        background-color: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        border-radius: $border-radius;
+        & .icon-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 45px;
+          height: 45px;
+          margin-right: 15px;
+          background-color: $accent-red;
+          border-radius: 30px;
+          & .bene-icon {
+            transform: scale(0.75);
+            filter: invert(100%);
+          }
+        }
+        & .text-container {
+          & .bene-title {
+            display: block;
+            font-size: 13px;
+            line-height: 16px;
+            font-weight: 300;
+            color: #838383;
+          }
+          & .bene-text {
+            margin-top: 3px;
+            display: block;
+            color: #242424;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 700;
           }
         }
       }

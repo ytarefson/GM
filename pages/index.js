@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import '../scss/style.scss';
-import Head from '../components/head';
-import MainAdv from '../components/mainAdv';
-import PortfolioLinks from '../components/portfolioLinks';
-import EnergyDecisions from '../components/energyDecisions';
-import CalcAdv from '../components/calcAdv';
-import GeneralServices from '../components/generalServices';
-import ProductsAdv from '../components/productsAdv';
-import Layout from '../components/Layout';
-import FormPage from '../components/form';
-import TextBlock from '../components/textBlock';
-import NewsAdv from '../components/newsAdv';
-import ym from 'react-yandex-metrika';
+import React, { Component } from "react";
+import "../scss/style.scss";
+import Head from "../components/head";
+import MainAdv from "../components/mainAdv";
+import PortfolioLinks from "../components/portfolioLinks";
+import EnergyDecisions from "../components/energyDecisions";
+import CalcAdv from "../components/calcAdv";
+import GeneralServices from "../components/generalServices";
+import ProductsAdv from "../components/productsAdv";
+import Layout from "../components/Layout";
+import FormPage from "../components/form";
+import TextBlock from "../components/textBlock";
+import NewsAdv from "../components/newsAdv";
+import ym from "react-yandex-metrika";
 
 class Home extends Component {
   componentDidMount() {
-    ym('hit', '/');
+    ym("hit", "/");
   }
   render() {
     return (
@@ -29,11 +29,11 @@ class Home extends Component {
           <ProductsAdv />
           <PortfolioLinks />
           <TextBlock />
+          <GeneralServices />
           <NewsAdv />
           <EnergyDecisions />
-          <CalcAdv />
-          <GeneralServices />
           <FormPage />
+          <CalcAdv />
         </Layout>
       </div>
     );
