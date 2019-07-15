@@ -150,14 +150,14 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .jumbo-askForm {
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     background: url("/static/images/textures/gplaypattern_@2X.png");
     min-height: 150px;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 0px;
-    //box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    //box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-top: 15px solid rgb(240, 240, 240);
+    border-bottom: 15px solid rgb(240, 240, 240);
     & .wrapper {
       display: grid;
       grid-template-columns: 3fr 1fr;
@@ -178,8 +178,8 @@
         & .jumbo-text {
           display: block;
           font-size: 18px;
-          font-weight: 700;
-          color: $accent-red;
+          font-weight: 900;
+          color: $accent-grey;
         }
       }
       & .button-container {
