@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import Head from "../../components/head";
-import Link from "next/link";
-import serviceList from "../tables/serviceList";
-import "../../scss/services/serviceUnitPlate.scss";
+import React, { Component } from 'react';
+import Head from '../../components/head';
+import Link from 'next/link';
+import serviceList from '../tables/serviceList';
+import '../../scss/services/serviceUnitPlate.scss';
 
 export class ServiceUnitPlate extends Component {
   render() {
@@ -54,6 +54,24 @@ export class ServiceUnitPlate extends Component {
                     <p className="text pb-3">{service.text}</p>
                   </div>
                   <div className="bottom-content">
+                    {service.doc ? (
+                      <div>
+                        <a
+                          className="doc-link"
+                          href={`../../static/docs/${service.doc}`}
+                          target="_blank"
+                          rel="noopener"
+                        >
+                          <img
+                            src="../../static/images/icons/pdf.png"
+                            alt="Документация"
+                          />
+                          Скачать - {service.docname}
+                        </a>
+                      </div>
+                    ) : (
+                      ''
+                    )}
                     <div className="button-group">
                       <div className="button-container-new">
                         <a
