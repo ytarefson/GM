@@ -20,7 +20,7 @@ app.prepare().then(() => {
   server.get('/robots.txt', function(req, res) {
     res.type('text/plain');
     res.send(
-      'User-agent: *\nDisallow: /o-komnanii\nHost: gmenergo.ru\nSitemap: https://gmenergo.ru/sitemap.xml'
+      'User-agent: *\nDisallow: /o-komnanii\nHost: https://gmenergo.ru\nSitemap: https://gmenergo.ru/sitemap.xml'
     );
   });
   // Old sitemap settings
