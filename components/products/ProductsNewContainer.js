@@ -8,6 +8,7 @@ import YoutubeVideoMan2 from '../YoutubeVideoMan2';
 import YoutubeVideo1 from '../YoutubeVideo1';
 import YoutubeVideoLiebherr2 from '../YoutubeVideoLiebherr2';
 import Link from '../Link';
+import PropTypes from 'prop-types';
 
 class ProductsNew extends Component {
   constructor(props) {
@@ -310,6 +311,8 @@ class ProductsNew extends Component {
   render() {
     const data = this.state.itemsSelected;
     const category = this.state.categorySelected;
+    const brand = this.props.brand;
+    console.log('brand is ' + brand);
 
     return (
 			<div className="container-fluid products">
@@ -378,6 +381,30 @@ class ProductsNew extends Component {
 										JENBACHER
 									</a>
 								</li>
+								<li
+									className={
+										category == 'MTU' ? 'category-li active' : 'category-li'
+									}
+								>
+									<Link href='/products?brand=MTU' scroll={false}>
+                    <a className="category-link">
+                      MTU
+                    </a>
+                  </Link>
+								</li>
+
+								<li
+									className={
+										category == 'MAN' ? 'category-li active' : 'category-li'
+									}
+								>
+                  <Link href='/products?brand=MAN' scroll={false}>
+                    <a className="category-link">
+										  MAN
+                    </a>									
+                    </Link>
+								</li>
+
 							</ul>
 						</div>
 
@@ -449,6 +476,13 @@ class ProductsNew extends Component {
 			</div>
     );
   }
+}
+
+ProductsNew.propTypes = {
+  brand: PropTypes.string
+}
+ProductsNew.defaultProps = {
+  brand: 'MTU'
 }
 
 export default ProductsNew;

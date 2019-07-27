@@ -1,20 +1,24 @@
-import React, { Component } from "react";
-import Link from "next/link";
+import React, { Component } from 'react';
+import Link from 'next/link';
 // import Head from '../components/head';
-import NextHead from "next/head";
-import Layout from "../components/Layout";
-import productsList from "../components/tables/productsList";
-import ProductsNew from "../components/products/ProductsNewContainer";
-import ProductsTextSections from "../components/products/ProductsTextSections";
-import ProductsUsage from "../components/products/ProductsUsage";
+import NextHead from 'next/head';
+import Layout from '../components/Layout';
+import productsList from '../components/tables/productsList';
+import ProductsNew from '../components/products/ProductsNewContainer';
+import Catalog from '../components/products/Catalog';
+import ProductsTextSections from '../components/products/ProductsTextSections';
+import ProductsUsage from '../components/products/ProductsUsage';
 
-import OtherNews from "../components/news/OtherNews";
-import PromoProjects from "../components/products/PromoProjects";
-import ProductsListPlate from "../components/products/ProductsListPlate";
+import OtherNews from '../components/news/OtherNews';
+import PromoProjects from '../components/products/PromoProjects';
+import ProductsListPlate from '../components/products/ProductsListPlate';
 
 class Products extends Component {
   render() {
     const { data } = this.props;
+    const { brand } = this.props;
+    console.log('products brand is ' + data.brand);
+    console.log('products2 brand is ' + brand);
     return (
       <div>
         <NextHead>
@@ -136,7 +140,8 @@ class Products extends Component {
               </div>
             </div>
           </div>
-          <ProductsNew />
+          <Catalog brand={brand} />
+          {/* <ProductsNew brand={data.brand} /> */}
           <ProductsTextSections />
           <div className="container-fluid promo-projects-product-page">
             <div className="container">
@@ -161,12 +166,20 @@ class Products extends Component {
   }
 }
 
-Products.getInitialProps = async function(context) {
+Products.getInitialProps = async function(context, query) {
+  console.log('context');
+  console.log(context);
+  let brand = context.query.brand;
+  console.log('query');
+  console.log(query);
   if (context.query.category !== undefined) {
     const category = context.query.category.toUpperCase();
     const data = [];
-    data.category = "";
-
+    data.category = '';
+    if (context.query && context.query.brand) {
+      console.log(context.query.brand);
+      data.brand = context.query.brand;
+    }
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
         const element = productsList[cat];
@@ -176,12 +189,16 @@ Products.getInitialProps = async function(context) {
         }
       }
     }
-    return { data };
+    return { data, brand };
   } else {
-    const category = "MAN";
+    const category = 'MAN';
 
     let data = [];
-    data.category = "";
+    data.category = '';
+    if (context.query && context.query.brand) {
+      console.log(context.query.brand);
+      data.brand = context.query.brand;
+    }
     for (const cat in productsList) {
       if (productsList.hasOwnProperty(cat)) {
         const element = productsList[cat];
@@ -192,7 +209,8 @@ Products.getInitialProps = async function(context) {
         }
       }
     }
-    return { data };
+
+    return { data, brand };
   }
 };
 
