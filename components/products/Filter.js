@@ -1,7 +1,7 @@
-import '../../scss/filter.scss';
-import React, { Component } from 'react';
-import InputRange from 'react-input-range';
-import PropTypes from 'prop-types';
+import "../../scss/filter.scss";
+import React, { Component } from "react";
+import InputRange from "react-input-range";
+import PropTypes from "prop-types";
 
 class Filter extends Component {
   constructor(props) {
@@ -18,8 +18,8 @@ class Filter extends Component {
   }
   render() {
     return (
-      <div className="container-fluid">
-        <div className="container">
+      <div className="filter-block">
+        <div className="input-block">
           <InputRange
             maxValue={5000}
             minValue={0}

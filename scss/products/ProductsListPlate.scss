@@ -34,6 +34,18 @@
     color: grey;
     letter-spacing: 4px;
   }
+  & .filter {
+    & .filter-container {
+      & .filter-block {
+        & .input-block {
+        }
+      }
+    }
+    & .button-container {
+      & .button-group {
+      }
+    }
+  }
   & .category-list {
     padding: 0;
     display: flex;
@@ -439,12 +451,11 @@
       display: block;
       position: absolute;
       letter-spacing: 1px;
-      font-size: 17px;
-      top: 365px;
+      top: 460px;
       transform: rotate(-90deg);
       right: -31px;
-      color: #868686;
-      font-size: 26px;
+      color: #d5d5d5;
+      font-size: 48px;
       line-height: 26px;
     }
     & .category-list {
@@ -645,7 +656,7 @@
     padding-bottom: 30px;
     & .category-header {
       letter-spacing: 1px;
-      font-size: 22px;
+      font-size: 48px;
     }
     & .category-list {
       padding: 0;
@@ -697,7 +708,7 @@
       }
     }
     & .product-card-plate {
-      padding: 0;
+      //padding: 0;
       display: grid;
       padding-left: 25px;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -884,6 +895,144 @@
   .products {
     padding-top: 18px;
     & .category-header {
+    }
+    & .filter {
+      & .filter-component {
+        //border: 1px solid #7b7b7b;
+        box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+        border-radius: $border-radius;
+        padding: 15px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        & .filter-group {
+          width: 70%;
+          & .filter-block {
+            & .input-block {
+            }
+          }
+        }
+        & .button-group {
+          width: auto;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          border-left: 1px solid #b4b4b4;
+          & .view-item {
+            z-index: 0;
+            display: block;
+            position: relative;
+            width: 44px;
+            height: 44px;
+            background-color: red;
+            border: none;
+            margin-left: 15px;
+            cursor: pointer;
+          }
+          & .list {
+            position: relative;
+            & .block {
+              z-index: 1;
+              position: absolute;
+              display: block;
+              background-color: #fff;
+              width: 6px;
+              height: 6px;
+            }
+            & .block-1 {
+              top: 6px;
+              left: 6px;
+            }
+            & .block-2 {
+              top: 6px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            & .block-3 {
+              top: 6px;
+              right: 6px;
+            }
+            & .block-4 {
+              top: 50%;
+              transform: translateY(-50%);
+              left: 6px;
+            }
+            & .block-5 {
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+            & .block-6 {
+              top: 50%;
+              right: 6px;
+              transform: translateY(-50%);
+            }
+            & .block-7 {
+              bottom: 6px;
+              left: 6px;
+            }
+            & .block-8 {
+              bottom: 6px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            & .block-9 {
+              bottom: 6px;
+              right: 6px;
+            }
+          }
+          & .plate {
+            position: relative;
+            & .block-min {
+              z-index: 1;
+              position: absolute;
+              display: block;
+              background-color: #fff;
+              width: 6px;
+              height: 6px;
+            }
+            & .block-max {
+              z-index: 1;
+              position: absolute;
+              display: block;
+              background-color: #fff;
+              width: 18px;
+              height: 6px;
+            }
+            & .block-1 {
+              top: 6px;
+              left: 6px;
+            }
+            & .block-2 {
+              top: 50%;
+              left: 6px;
+              transform: translateY(-50%);
+            }
+            & .block-3 {
+              bottom: 6px;
+              left: 6px;
+            }
+            & .block-4 {
+              top: 6px;
+              right: 6px;
+            }
+            & .block-5 {
+              top: 50%;
+              right: 6px;
+              transform: translateY(-50%);
+            }
+            & .block-6 {
+              bottom: 6px;
+              right: 6px;
+            }
+          }
+        }
+      }
     }
     & .category-list {
       & .category-li {
