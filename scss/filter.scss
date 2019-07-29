@@ -1,0 +1,22 @@
+.input-range {
+  & .input-range__track {
+    position: relative;
+    height: 22px;
+  }
+  & .input-range__track--active {
+    background: grey;
+    margin-left: 11px;
+  }
+  & .input-range__track--background {
+    background: red;
+  }
+  & .input-range__slider {
+    background: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+  }
+  & .input-range__slider-container {
+    top: -22px;
+  }
+}

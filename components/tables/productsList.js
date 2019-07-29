@@ -4,6 +4,7 @@ const productsList = [
     products: [
       {
         label: 'MTU 700',
+        category: 'MTU',
         id: 24,
         img: 'mtu700.jpg',
         galery: ['mtu700.jpg', 'mtu700.jpg', 'mtu700.jpg', 'mtu700.jpg'],
@@ -15,7 +16,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400',
-        electricPower: '776',
+        electricPower: 776,
         thermalPower: '886',
         electricEfficiency: '41,9',
         thermalEfficiency: '46,7',
@@ -41,6 +42,7 @@ const productsList = [
       },
       {
         label: 'MTU 800',
+        category: 'MTU',
         id: 25,
         img: 'mtu800.jpg',
         galery: ['mtu800.jpg', 'mtu800.jpg', 'mtu800.jpg', 'mtu800.jpg'],
@@ -52,7 +54,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400',
-        electricPower: '854',
+        electricPower: 854,
         thermalPower: '891',
         electricEfficiency: '42,8',
         thermalEfficiency: '44,8',
@@ -78,6 +80,7 @@ const productsList = [
       },
       {
         label: 'MTU 1000',
+        category: 'MTU',
         id: 26,
         img: 'mtu1000.jpg',
         galery: ['mtu1000.jpg', 'mtu1000.jpg', 'mtu1000.jpg', 'mtu1000.jpg'],
@@ -89,7 +92,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400',
-        electricPower: '1013',
+        electricPower: 1013,
         thermalPower: '969',
         electricEfficiency: '43,4',
         thermalEfficiency: '42,6',
@@ -113,6 +116,7 @@ const productsList = [
       },
       {
         label: 'MTU 1100',
+        category: 'MTU',
         id: 27,
         img: 'mtu1100.jpg',
         galery: ['mtu1100.jpg', 'mtu1100.jpg', 'mtu1100.jpg', 'mtu1100.jpg'],
@@ -124,7 +128,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400, 6300, 10500',
-        electricPower: '1169',
+        electricPower: 1169,
         thermalPower: '1228',
         electricEfficiency: '42,8',
         thermalEfficiency: '45,0',
@@ -148,6 +152,7 @@ const productsList = [
       },
       {
         label: 'MTU 1200',
+        category: 'MTU',
         id: 28,
         img: 'mtu1200.jpg',
         galery: ['mtu1200.jpg', 'mtu1200.jpg', 'mtu1200.jpg', 'mtu1200.jpg'],
@@ -159,7 +164,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400, 6300, 10500',
-        electricPower: '1286',
+        electricPower: 1286,
         thermalPower: '1323',
         electricEfficiency: '43,2',
         thermalEfficiency: '44,5',
@@ -183,6 +188,7 @@ const productsList = [
       },
       {
         label: 'MTU 1500',
+        category: 'MTU',
         id: 29,
         img: 'mtu1500.jpg',
         galery: ['mtu1500.jpg', 'mtu1500.jpg', 'mtu1500.jpg', 'mtu1500.jpg'],
@@ -194,7 +200,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400, 6300, 10500',
-        electricPower: '1521',
+        electricPower: 1521,
         thermalPower: '1403',
         electricEfficiency: '44,3',
         thermalEfficiency: '40,8',
@@ -218,6 +224,7 @@ const productsList = [
       },
       {
         label: 'MTU 1600',
+        category: 'MTU',
         id: 30,
         img: 'mtu1600.jpg',
         galery: ['mtu1600.jpg', 'mtu1600.jpg', 'mtu1600.jpg', 'mtu1600.jpg'],
@@ -229,7 +236,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400, 6300, 10500',
-        electricPower: '1560',
+        electricPower: 1560,
         thermalPower: '1662',
         electricEfficiency: '42,8',
         thermalEfficiency: '45,6',
@@ -253,6 +260,7 @@ const productsList = [
       },
       {
         label: 'MTU 1700',
+        category: 'MTU',
         id: 31,
         img: 'mtu1700.jpg',
         galery: ['mtu1700.jpg', 'mtu1700.jpg', 'mtu1700.jpg', 'mtu1700.jpg'],
@@ -264,7 +272,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400, 6300, 10500',
-        electricPower: '1718',
+        electricPower: 1718,
         thermalPower: '1795',
         electricEfficiency: '43',
         thermalEfficiency: '45',
@@ -288,6 +296,7 @@ const productsList = [
       },
       {
         label: 'MTU 2000',
+        category: 'MTU',
         id: 32,
         img: 'mtu2000.jpg',
         galery: ['mtu2000.jpg', 'mtu2000.jpg', 'mtu2000.jpg', 'mtu2000.jpg'],
@@ -299,7 +308,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400, 6300, 10500',
-        electricPower: '2028',
+        electricPower: 2028,
         thermalPower: '1901',
         electricEfficiency: '44,3',
         thermalEfficiency: '41,6',
@@ -323,6 +332,7 @@ const productsList = [
       },
       {
         label: 'MTU 2020',
+        category: 'MTU',
         id: 33,
         img: 'mtu2000.jpg',
         galery: ['mtu2000.jpg', 'mtu2000.jpg', 'mtu2000.jpg', 'mtu2000.jpg'],
@@ -334,7 +344,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400, 6300, 10500',
-        electricPower: '2145',
+        electricPower: 2145,
         thermalPower: '2239',
         electricEfficiency: '43',
         thermalEfficiency: '44,9',
@@ -363,6 +373,7 @@ const productsList = [
     products: [
       {
         label: 'MAN 200',
+        category: 'MAN',
         id: 0,
         img: 'MAN200.jpg',
         galery: ['MAN200.jpg', 'MAN200.jpg', 'MAN200.jpg', 'MAN200.jpg'],
@@ -374,7 +385,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1',
         voltage: '400',
-        electricPower: '200',
+        electricPower: 200,
         thermalPower: '316',
         electricEfficiency: '36,7',
         thermalEfficiency: '56,3',
@@ -400,6 +411,7 @@ const productsList = [
       },
       {
         label: 'MAN 250',
+        category: 'MAN',
         id: 1,
         img: 'MAN250.jpg',
         galery: ['MAN250.jpg', 'MAN250.jpg', 'MAN250.jpg', 'MAN250.jpg'],
@@ -411,7 +423,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1',
         voltage: '400',
-        electricPower: '250',
+        electricPower: 250,
         thermalPower: '380',
         electricEfficiency: '38',
         thermalEfficiency: '54,8',
@@ -437,6 +449,7 @@ const productsList = [
       },
       {
         label: 'MAN 300',
+        category: 'MAN',
         id: 2,
         img: 'MAN300.jpg',
         galery: ['MAN300.jpg', 'MAN300.jpg', 'MAN300.jpg', 'MAN300.jpg'],
@@ -448,7 +461,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1,7',
         voltage: '400',
-        electricPower: '350',
+        electricPower: 350,
         thermalPower: '320',
         electricEfficiency: '41,7',
         thermalEfficiency: '47,5',
@@ -473,6 +486,7 @@ const productsList = [
       },
       {
         label: 'MAN 350',
+        category: 'MAN',
         id: 3,
         img: 'MAN350.jpg',
         galery: ['MAN350.jpg', 'MAN350.jpg', 'MAN350.jpg', 'MAN350.jpg'],
@@ -484,7 +498,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1,69',
         voltage: '400',
-        electricPower: '350',
+        electricPower: 350,
         thermalPower: '445',
         electricEfficiency: '40,2',
         thermalEfficiency: '50,1',
@@ -509,6 +523,7 @@ const productsList = [
       },
       {
         label: 'MAN 430',
+        category: 'MAN',
         id: 4,
         img: 'MAN500.jpg',
         galery: ['MAN500.jpg', 'MAN500.jpg', 'MAN500.jpg', 'MAN500.jpg'],
@@ -520,7 +535,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1,6',
         voltage: '400',
-        electricPower: '430',
+        electricPower: 430,
         thermalPower: '505',
         electricEfficiency: '39,7',
         thermalEfficiency: '50,6',
@@ -545,6 +560,7 @@ const productsList = [
       },
       {
         label: 'MAN 530',
+        category: 'MAN',
         id: 5,
         img: 'MAN500.jpg',
         galery: ['MAN500.jpg', 'MAN500.jpg', 'MAN500.jpg', 'MAN500.jpg'],
@@ -556,7 +572,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1,63',
         voltage: '400, 6 300, 10 500',
-        electricPower: '500',
+        electricPower: 500,
         thermalPower: '652',
         electricEfficiency: '40,6',
         thermalEfficiency: '49,8',
@@ -587,6 +603,7 @@ const productsList = [
     products: [
       {
         label: 'LIEBHERR 230',
+        category: 'LIEBHERR',
         id: 10,
         img: 'liebherr-230.jpg',
         galery: [
@@ -603,7 +620,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1,74',
         voltage: '400',
-        electricPower: '230',
+        electricPower: 230,
         thermalPower: '262',
         electricEfficiency: '41,5',
         thermalEfficiency: '44,2',
@@ -628,6 +645,7 @@ const productsList = [
       },
       {
         label: 'LIEBHERR 300',
+        category: 'LIEBHERR',
         id: 11,
         img: 'liebherr-230.jpg',
         galery: [
@@ -644,7 +662,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1,7',
         voltage: '400',
-        electricPower: '300',
+        electricPower: 300,
         thermalPower: '340',
         electricEfficiency: '40',
         thermalEfficiency: '42',
@@ -669,6 +687,7 @@ const productsList = [
       },
       {
         label: 'LIEBHERR 500',
+        category: 'LIEBHERR',
         id: 12,
         img: 'liebherr-230.jpg',
         galery: [
@@ -685,7 +704,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1.7',
         voltage: '400, 6 300, 10 500',
-        electricPower: '500',
+        electricPower: 500,
         thermalPower: '652',
         electricEfficiency: '40,6',
         thermalEfficiency: '49,8',
@@ -710,6 +729,7 @@ const productsList = [
       },
       {
         label: 'LIEBHERR 1000',
+        category: 'LIEBHERR',
         id: 13,
         img: 'liebherr-1000.jpg',
         galery: [
@@ -726,7 +746,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1.7',
         voltage: '400, 6 300, 10 500',
-        electricPower: '1 000',
+        electricPower: 1000,
         thermalPower: '1 100',
         electricEfficiency: '44',
         thermalEfficiency: '43,5',
@@ -756,6 +776,7 @@ const productsList = [
     products: [
       {
         label: 'ЯМЗ 100',
+        category: 'ЯМЗ',
         id: 20,
         img: 'YAMZ100.jpg',
         galery: [
@@ -772,7 +793,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1.6',
         voltage: '400',
-        electricPower: '100',
+        electricPower: 100,
         thermalPower: '100',
         electricEfficiency: '44',
         thermalEfficiency: '43,5',
@@ -797,6 +818,7 @@ const productsList = [
       },
       {
         label: 'ЯМЗ 140',
+        category: 'ЯМЗ',
         id: 21,
         img: 'YAMZ140.jpg',
         galery: ['YAMZ140.jpg', 'YAMZ140.jpg', 'YAMZ140.jpg', 'YAMZ140.jpg'],
@@ -808,7 +830,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1.6',
         voltage: '400',
-        electricPower: '140',
+        electricPower: 140,
         thermalPower: '190',
         electricEfficiency: '44',
         thermalEfficiency: '43,5',
@@ -833,6 +855,7 @@ const productsList = [
       },
       {
         label: 'ЯМЗ 200',
+        category: 'ЯМЗ',
         id: 22,
         img: 'YAMZ200.jpg',
         galery: ['YAMZ200.jpg', 'YAMZ200.jpg', 'YAMZ200.jpg', 'YAMZ200.jpg'],
@@ -844,7 +867,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1.6',
         voltage: '400',
-        electricPower: '200',
+        electricPower: 200,
         thermalPower: '280',
         electricEfficiency: '29',
         thermalEfficiency: '40,6',
@@ -869,6 +892,7 @@ const productsList = [
       },
       {
         label: 'ЯМЗ 300',
+        category: 'ЯМЗ',
         id: 23,
         img: 'YAMZ300.jpg',
         galery: ['YAMZ300.jpg', 'YAMZ300.jpg', 'YAMZ300.jpg', 'YAMZ300.jpg'],
@@ -880,7 +904,7 @@ const productsList = [
         throttleValve: 'Motortech ITB',
         excessAirRatio: '1.6',
         voltage: '400',
-        electricPower: '280',
+        electricPower: 280,
         thermalPower: '450',
         electricEfficiency: '30',
         thermalEfficiency: '47',
@@ -910,6 +934,7 @@ const productsList = [
     products: [
       {
         label: 'JENBACHER 630',
+        category: 'JENBACHER',
         id: 40,
         img: 'jenbacher-630.jpg',
         galery: [
@@ -926,7 +951,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400',
-        electricPower: '635',
+        electricPower: 635,
         thermalPower: '739',
         electricEfficiency: '40.8',
         thermalEfficiency: '47.4',
@@ -955,6 +980,7 @@ const productsList = [
       },
       {
         label: 'JENBACHER 1000',
+        category: 'JENBACHER',
         id: 41,
         img: 'jenbacher-1000.jpg',
         galery: [
@@ -971,7 +997,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400, 6 300, 10 500',
-        electricPower: '1 067',
+        electricPower: 1067,
         thermalPower: '1241',
         electricEfficiency: '40.9',
         thermalEfficiency: '47.6',
@@ -1000,6 +1026,7 @@ const productsList = [
       },
       {
         label: 'JENBACHER 1500',
+        category: 'JENBACHER',
         id: 42,
         img: 'jenbacher-1500.jpg',
         galery: [
@@ -1016,7 +1043,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400, 6 300, 10 500',
-        electricPower: '1 497',
+        electricPower: 1497,
         thermalPower: '1546',
         electricEfficiency: '43.3',
         thermalEfficiency: '44.7',
@@ -1045,6 +1072,7 @@ const productsList = [
       },
       {
         label: 'JENBACHER 2000',
+        category: 'JENBACHER',
         id: 43,
         img: 'jenbacher-2000.jpg',
         galery: [
@@ -1061,7 +1089,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400, 6 300, 10 500',
-        electricPower: '2 004',
+        electricPower: 2004,
         thermalPower: '1 883',
         electricEfficiency: '45.5',
         thermalEfficiency: '42.8',
@@ -1090,6 +1118,7 @@ const productsList = [
       },
       {
         label: 'JENBACHER 4000',
+        category: 'JENBACHER',
         id: 44,
         img: 'jenbacher-4000.jpg',
         galery: [
@@ -1106,7 +1135,7 @@ const productsList = [
         throttleValve: '',
         excessAirRatio: '',
         voltage: '400, 6 300, 10 500',
-        electricPower: '4 404',
+        electricPower: 4404,
         thermalPower: '4 050 ',
         electricEfficiency: '46.6',
         thermalEfficiency: '42.9',

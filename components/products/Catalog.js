@@ -9,14 +9,21 @@ import YoutubeVideo1 from '../YoutubeVideo1';
 import YoutubeVideoLiebherr2 from '../YoutubeVideoLiebherr2';
 import Link from '../Link';
 import PropTypes from 'prop-types';
+import Filter from './Filter';
+import ProductsPlate from './ProductsPlate';
 
 class Catalog extends Component {
   constructor(props) {
     super(props);
     this.state = {
       items: productsList,
-      itemsSelected: []
+      itemsSelected: [],
+      minValue: 100,
+      maxValue: 4000,
+      view: 'list'
     };
+    this.onFilterChange = this.onFilterChange.bind(this);
+    this.onViewTypeChange = this.onViewTypeChange.bind(this);
   }
 
   componentWillMount() {
@@ -43,20 +50,24 @@ class Catalog extends Component {
     this.setState({ itemsSelected: itemsSelected });
   }
 
+  onFilterChange(minValue, maxValue) {
+    this.setState({ minValue, maxValue });
+  }
+  onViewTypeChange(view) {
+    this.setState({ view });
+  }
+
   render() {
     // const data = this.state.itemsSelected;
     const category = this.props.brand;
     const brand = this.props.brand;
-    console.log('brand is ' + brand);
+    const { minValue, maxValue } = this.state;
 
     let data = [];
-
     if (brand == 'ALL') {
-      console.log('ALL');
       this.state.items.map(category => {
         data.push(category.products);
       });
-      console.log(data);
     } else {
       for (const productsCategory in this.state.items) {
         if (this.state.items.hasOwnProperty(productsCategory)) {
@@ -72,9 +83,37 @@ class Catalog extends Component {
       <div className="container-fluid products">
         <div className="container">
           <div className="row">
+            <div className="col-10">
+              <Filter onFilterChange={this.onFilterChange} />
+            </div>
+            <div className="col-2">
+              <button
+                onClick={() => this.onViewTypeChange('list')}
+                className="view-item"
+              >
+                Список
+              </button>
+              <button
+                onClick={() => this.onViewTypeChange('plate')}
+                className="view-item"
+              >
+                Плитка
+              </button>
+            </div>
+          </div>
+          <div className="row">
             <div className="col-12 col-md-3 col-lg-2">
               <span className="category-header">Бренды:</span>
               <ul className="category-list">
+                <li
+                  className={
+                    category == 'ALL' ? 'category-li active' : 'category-li'
+                  }
+                >
+                  <Link href="/products?brand=ALL" scroll={false}>
+                    <a className="category-link">Все</a>
+                  </Link>
+                </li>
                 <li
                   className={
                     category == 'MTU' ? 'category-li active' : 'category-li'
@@ -131,61 +170,13 @@ class Catalog extends Component {
               </ul>
             </div>
 
-            <div className="col-12 col-md-9 col-lg-10 product-card-plate">
-              <input
-                type="range"
-                min="100"
-                max="4100"
-                step="100"
-                value="500"
-                multiple
-                className=""
-              />
-              {data.map(item => (
-                <div className="product-card-container" key={item.id}>
-                  <Link
-                    href={`/products/${category}/${item.id}`}
-                    key={item.key}
-                  >
-                    <a className="product-card">
-                      <div className="img-container">
-                        <img
-                          src={`../../static/images/products/thumb-${item.img}`}
-                          alt={item.label}
-                          className="product-card-img"
-                        />
-                      </div>
-                      <div className="text-container">
-                        <div className="flex-top">
-                          <span className="product-name">{item.label}</span>
-                        </div>
-                        <div className="flex-bot">
-                          <div className="flex-row">
-                            <span className="product-card-motor-title">
-                              Двигатель:
-                            </span>
-                            <span className="product-card-motor">
-                              {item.motorMark}
-                            </span>
-                          </div>
-                          <div className="flex-row">
-                            <span className="product-card-power-title">
-                              Мощность:
-                            </span>
-                            <span className="product-card-power">
-                              {item.electricPower} кВт
-                            </span>
-                            <span className="product-card-details">
-                              Подробнее...
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </Link>
-                </div>
-              ))}
-            </div>
+            <ProductsPlate
+              data={data}
+              brand={brand}
+              minValue={minValue}
+              maxValue={maxValue}
+              view={this.state.view}
+            />
           </div>
           {category == 'LIEBHERR' && (
             <div className="row mt-5 m-0 d-flex flex-column">

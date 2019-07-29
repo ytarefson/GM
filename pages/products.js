@@ -167,17 +167,13 @@ class Products extends Component {
 }
 
 Products.getInitialProps = async function(context, query) {
-  console.log('context');
-  console.log(context);
   let brand = context.query.brand;
-  console.log('query');
-  console.log(query);
+
   if (context.query.category !== undefined) {
     const category = context.query.category.toUpperCase();
     const data = [];
     data.category = '';
     if (context.query && context.query.brand) {
-      console.log(context.query.brand);
       data.brand = context.query.brand;
     }
     for (const cat in productsList) {
@@ -196,7 +192,6 @@ Products.getInitialProps = async function(context, query) {
     let data = [];
     data.category = '';
     if (context.query && context.query.brand) {
-      console.log(context.query.brand);
       data.brand = context.query.brand;
     }
     for (const cat in productsList) {
