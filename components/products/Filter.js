@@ -22,7 +22,7 @@ class Filter extends Component {
         <div className="input-block">
           <InputRange
             maxValue={5000}
-            minValue={0}
+            minValue={100}
             step={100}
             value={this.state.value}
             onChange={value => this.onChangeHandle(value)}

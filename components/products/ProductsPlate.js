@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import productsList from '../tables/productsList';
-import Link from 'next/link';
-import classNames from 'classnames';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import productsList from "../tables/productsList";
+import Link from "next/link";
+import classNames from "classnames";
 
 class ProductsPlate extends Component {
   render() {
     const { brand, minValue, maxValue, data, view } = this.props;
-    let productsContent = '';
+    let productsContent = "";
 
     let productItems = [];
 
-    if (brand == 'ALL') {
+    if (brand == "ALL") {
       data.map(category => {
         category.map(item => {
           productItems.push(item);
@@ -61,8 +61,8 @@ class ProductsPlate extends Component {
                       <span className="product-card-power">
                         {item.electricPower} кВт
                       </span>
-                      <span className="product-card-details">Подробнее...</span>
                     </div>
+                    <span className="product-card-details">Подробнее</span>
                   </div>
                 </div>
               </a>
@@ -73,14 +73,14 @@ class ProductsPlate extends Component {
     );
     let viewSwitch = true;
 
-    if (view == 'list') {
+    if (view == "list") {
       viewSwitch = true;
     } else {
       viewSwitch = false;
     }
 
     let plateClass = classNames(
-      'col-12 col-md-9 col-lg-10 product-card-plate ',
+      "col-12 col-md-9 col-lg-10 product-card-plate ",
       view
     );
 
@@ -99,7 +99,7 @@ ProductsPlate.propTypes = {
 ProductsPlate.defaultProps = {
   minValue: 100,
   maxValue: 4000,
-  view: 'list'
+  view: "list"
 };
 
 export default ProductsPlate;

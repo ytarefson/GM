@@ -90,8 +90,8 @@ class Catalog extends Component {
                 </div>
                 <div className="button-group">
                   <button
-                    onClick={() => this.onViewTypeChange("list")}
-                    className="view-item list"
+                    onClick={() => this.onViewTypeChange("plate")}
+                    className="view-item plate-icon"
                   >
                     <div className="block block-1" />
                     <div className="block block-2" />
@@ -104,8 +104,8 @@ class Catalog extends Component {
                     <div className="block block-9" />
                   </button>
                   <button
-                    onClick={() => this.onViewTypeChange("plate")}
-                    className="view-item plate"
+                    onClick={() => this.onViewTypeChange("list")}
+                    className="view-item list-icon"
                   >
                     <div className="block-min block-1" />
                     <div className="block-min block-2" />
