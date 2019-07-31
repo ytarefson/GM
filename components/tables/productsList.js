@@ -776,7 +776,7 @@ const productsList = [
     products: [
       {
         label: 'ЯМЗ 100',
-        category: 'ЯМЗ',
+        category: 'YAMZ',
         id: 20,
         img: 'YAMZ100.jpg',
         galery: [
@@ -818,7 +818,7 @@ const productsList = [
       },
       {
         label: 'ЯМЗ 140',
-        category: 'ЯМЗ',
+        category: 'YAMZ',
         id: 21,
         img: 'YAMZ140.jpg',
         galery: ['YAMZ140.jpg', 'YAMZ140.jpg', 'YAMZ140.jpg', 'YAMZ140.jpg'],
@@ -855,7 +855,7 @@ const productsList = [
       },
       {
         label: 'ЯМЗ 200',
-        category: 'ЯМЗ',
+        category: 'YAMZ',
         id: 22,
         img: 'YAMZ200.jpg',
         galery: ['YAMZ200.jpg', 'YAMZ200.jpg', 'YAMZ200.jpg', 'YAMZ200.jpg'],
@@ -892,7 +892,7 @@ const productsList = [
       },
       {
         label: 'ЯМЗ 300',
-        category: 'ЯМЗ',
+        category: 'YAMZ',
         id: 23,
         img: 'YAMZ300.jpg',
         galery: ['YAMZ300.jpg', 'YAMZ300.jpg', 'YAMZ300.jpg', 'YAMZ300.jpg'],

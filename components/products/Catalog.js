@@ -1,16 +1,17 @@
-import React, { Component } from "react";
-import productsList from "../tables/productsList";
-import "../../scss/video.scss";
-import { Player } from "video-react";
-import YoutubeVideo from "../YoutubeVideo";
-import YoutubeVideoMan from "../YoutubeVideoMan";
-import YoutubeVideoMan2 from "../YoutubeVideoMan2";
-import YoutubeVideo1 from "../YoutubeVideo1";
-import YoutubeVideoLiebherr2 from "../YoutubeVideoLiebherr2";
-import Link from "../Link";
-import PropTypes from "prop-types";
-import Filter from "./Filter";
-import ProductsPlate from "./ProductsPlate";
+import React, { Component } from 'react';
+import productsList from '../tables/productsList';
+import '../../scss/video.scss';
+import { Player } from 'video-react';
+import YoutubeVideo from '../YoutubeVideo';
+import YoutubeVideoMan from '../YoutubeVideoMan';
+import YoutubeVideoMan2 from '../YoutubeVideoMan2';
+import YoutubeVideo1 from '../YoutubeVideo1';
+import YoutubeVideoLiebherr2 from '../YoutubeVideoLiebherr2';
+import Link from '../Link';
+import PropTypes from 'prop-types';
+import Filter from './Filter';
+import ProductsPlate from './ProductsPlate';
+import classNames from 'classnames';
 
 class Catalog extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class Catalog extends Component {
       itemsSelected: [],
       minValue: 100,
       maxValue: 4000,
-      view: "list"
+      view: 'list'
     };
     this.onFilterChange = this.onFilterChange.bind(this);
     this.onViewTypeChange = this.onViewTypeChange.bind(this);
@@ -28,11 +29,10 @@ class Catalog extends Component {
 
   componentWillMount() {
     const brand = this.props.brand;
-    console.log("Component will mount got brand - " + brand);
 
     let itemsSelected = [];
 
-    if (brand == "ALL") {
+    if (brand == 'ALL') {
       this.state.items.map(category => {
         itemsSelected.push(category.products);
       });
@@ -64,7 +64,7 @@ class Catalog extends Component {
     const { minValue, maxValue } = this.state;
 
     let data = [];
-    if (brand == "ALL") {
+    if (brand == 'ALL') {
       this.state.items.map(category => {
         data.push(category.products);
       });
@@ -78,6 +78,18 @@ class Catalog extends Component {
         }
       }
     }
+    let view = true;
+    if (this.state.view == 'list') {
+      view = true;
+    } else {
+      view = false;
+    }
+    let buttonListClass = classNames('view-item list-icon ', {
+      active: view
+    });
+    let buttonPlateClass = classNames('view-item plate-icon ', {
+      active: !view
+    });
 
     return (
       <div className="container-fluid products">
@@ -90,8 +102,8 @@ class Catalog extends Component {
                 </div>
                 <div className="button-group">
                   <button
-                    onClick={() => this.onViewTypeChange("plate")}
-                    className="view-item plate-icon"
+                    onClick={() => this.onViewTypeChange('plate')}
+                    className={buttonPlateClass}
                   >
                     <div className="block block-1" />
                     <div className="block block-2" />
@@ -104,8 +116,8 @@ class Catalog extends Component {
                     <div className="block block-9" />
                   </button>
                   <button
-                    onClick={() => this.onViewTypeChange("list")}
-                    className="view-item list-icon"
+                    onClick={() => this.onViewTypeChange('list')}
+                    className={buttonListClass}
                   >
                     <div className="block-min block-1" />
                     <div className="block-min block-2" />
@@ -124,7 +136,7 @@ class Catalog extends Component {
               <ul className="category-list">
                 <li
                   className={
-                    category == "ALL" ? "category-li active" : "category-li"
+                    category == 'ALL' ? 'category-li active' : 'category-li'
                   }
                 >
                   <Link href="/products?brand=ALL" scroll={false}>
@@ -133,7 +145,7 @@ class Catalog extends Component {
                 </li>
                 <li
                   className={
-                    category == "MTU" ? "category-li active" : "category-li"
+                    category == 'MTU' ? 'category-li active' : 'category-li'
                   }
                 >
                   <Link href="/products?brand=MTU" scroll={false}>
@@ -143,7 +155,7 @@ class Catalog extends Component {
 
                 <li
                   className={
-                    category == "MAN" ? "category-li active" : "category-li"
+                    category == 'MAN' ? 'category-li active' : 'category-li'
                   }
                 >
                   <Link href="/products?brand=MAN" scroll={false}>
@@ -153,9 +165,9 @@ class Catalog extends Component {
 
                 <li
                   className={
-                    category == "LIEBHERR"
-                      ? "category-li active"
-                      : "category-li"
+                    category == 'LIEBHERR'
+                      ? 'category-li active'
+                      : 'category-li'
                   }
                 >
                   <Link href="/products?brand=LIEBHERR" scroll={false}>
@@ -165,7 +177,7 @@ class Catalog extends Component {
 
                 <li
                   className={
-                    category == "YAMZ" ? "category-li active" : "category-li"
+                    category == 'YAMZ' ? 'category-li active' : 'category-li'
                   }
                 >
                   <Link href="/products?brand=YAMZ" scroll={false}>
@@ -175,9 +187,9 @@ class Catalog extends Component {
 
                 <li
                   className={
-                    category == "JENBACHER"
-                      ? "category-li active"
-                      : "category-li"
+                    category == 'JENBACHER'
+                      ? 'category-li active'
+                      : 'category-li'
                   }
                 >
                   <Link href="/products?brand=JENBACHER" scroll={false}>
@@ -195,7 +207,7 @@ class Catalog extends Component {
               view={this.state.view}
             />
           </div>
-          {category == "LIEBHERR" && (
+          {category == 'LIEBHERR' && (
             <div className="row mt-5 m-0 d-flex flex-column">
               <div className="col-12 col-md-10 offset-md-2">
                 <YoutubeVideo1 className="myVideo" />
@@ -205,7 +217,7 @@ class Catalog extends Component {
               </div>
             </div>
           )}
-          {category == "MAN" && (
+          {category == 'MAN' && (
             <div className="row mt-5 m-0">
               <div className="col-12 col-md-10 col-xl-6">
                 <YoutubeVideoMan className="myVideo" />
@@ -225,7 +237,7 @@ Catalog.propTypes = {
   brand: PropTypes.string
 };
 Catalog.defaultProps = {
-  brand: "ALL"
+  brand: 'ALL'
 };
 
 export default Catalog;

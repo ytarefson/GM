@@ -132,18 +132,27 @@
 					position: relative;
 					width: 22px;
 					height: 24px;
-					background-color: red;
+					background-color: transparent;
 					border: none;
 					margin-left: 8px;
 					cursor: pointer;
-				}
+        }
+        & .active {
+          background-color: $accent-red;
+          & .block {
+            background-color: #fff !important;
+          }        
+          & .block-min, .block-max {
+            background-color: #fff !important;
+          }
+        }               
 				& .plate-icon {
 					position: relative;
 					& .block {
 						z-index: 1;
 						position: absolute;
 						display: block;
-						background-color: #fff;
+						background-color: $l-grey;
 						width: 4px;
 						height: 4px;
 					}
@@ -195,7 +204,7 @@
 						z-index: 1;
 						position: absolute;
 						display: block;
-						background-color: #fff;
+						background-color: $l-grey;
 						width: 4px;
 						height: 4px;
 					}
@@ -203,7 +212,7 @@
 						z-index: 1;
 						position: absolute;
 						display: block;
-						background-color: #fff;
+						background-color: $l-grey;
 						width: 12px;
 						height: 4px;
 					}
@@ -1302,7 +1311,7 @@
             position: relative;
             width: 22px;
             height: 24px;
-            background-color: red;
+            // background-color: red;
             border: none;
             margin-left: 15px;
             cursor: pointer;
@@ -1313,7 +1322,7 @@
 							z-index: 1;
 							position: absolute;
 							display: block;
-							background-color: #fff;
+							// background-color: #fff;
 							width: 4px;
 							height: 4px;
 						}
@@ -1365,7 +1374,7 @@
 							z-index: 1;
 							position: absolute;
 							display: block;
-							background-color: #fff;
+							// background-color: #fff;
 							width: 4px;
 							height: 4px;
 						}
@@ -1373,7 +1382,7 @@
 							z-index: 1;
 							position: absolute;
 							display: block;
-							background-color: #fff;
+							// background-color: #fff;
 							width: 12px;
 							height: 4px;
 						}
