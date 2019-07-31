@@ -19,7 +19,11 @@ class Filter extends Component {
   render() {
     return (
       <>
-        <span className="filter-text">Выбор диапазона мощности</span>
+				<div className="text-container">
+        	<span className="filter-text">Выбор диапазона мощности</span>
+					<span className="search-text">Найдено: </span>
+					<span className="search-text-value"> позиций</span>
+				</div>
         <div className="filter-block">
           <div className="input-block">
             <InputRange
