@@ -18,18 +18,21 @@ class Filter extends Component {
   }
   render() {
     return (
-      <div className="filter-block">
-        <div className="input-block">
-          <InputRange
-            maxValue={5000}
-            minValue={100}
-            step={100}
-            value={this.state.value}
-            onChange={value => this.onChangeHandle(value)}
-            draggableTrack={true}
-          />
+      <>
+        <span className="filter-text">Выбор диапазона мощности</span>
+        <div className="filter-block">
+          <div className="input-block">
+            <InputRange
+              maxValue={5000}
+              minValue={100}
+              step={100}
+              value={this.state.value}
+              onChange={value => this.onChangeHandle(value)}
+              draggableTrack={true}
+            />
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 }
