@@ -17,8 +17,6 @@ class Products extends Component {
   render() {
     const { data } = this.props;
     const { brand } = this.props;
-    console.log('products brand is ' + data.brand);
-    console.log('products2 brand is ' + brand);
     return (
       <div>
         <NextHead>
