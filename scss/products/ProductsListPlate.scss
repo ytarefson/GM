@@ -1782,7 +1782,7 @@
         //border: 1px solid #7b7b7b;
         box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
         border-radius: $border-radius;
-        padding: 17px 15px 11px 25px;
+        padding: 17px 15px 13px 25px;
         margin-bottom: 0px;
         display: flex;
         flex-direction: row;
@@ -1802,7 +1802,7 @@
 						& .filter-text {
 							display: block;
 							color: $sub-color;
-							font-weight: 900;
+							font-weight: 700;
 							font-size: 15px;
 							line-height: 18px;
 							
@@ -2051,10 +2051,10 @@
 							& .product-name {
 								display: block;
 								font-family: $noto-font;
-								font-size: 20px;
+								font-size: 18px;
 								font-weight: 900;
 								line-height: 24px;
-								color: grey;
+								color:$accent-grey;
 								margin-bottom: 0px;
 								letter-spacing: 0px;
 								&::first-word() {
@@ -2090,7 +2090,7 @@
 								& .product-card-power {
 									font-size: 16px;
 									font-weight: 900;
-									color: grey;
+									color: $text;
 									letter-spacing: -0.6px;
 									display: block;
 									line-height: 14px;
