@@ -21,7 +21,8 @@ class Catalog extends Component {
       itemsSelected: [],
       minValue: 100,
       maxValue: 4000,
-      view: 'list'
+      view: 'list',
+      foundItems: 0
     };
     this.onFilterChange = this.onFilterChange.bind(this);
     this.onViewTypeChange = this.onViewTypeChange.bind(this);
@@ -61,7 +62,7 @@ class Catalog extends Component {
     // const data = this.state.itemsSelected;
     const category = this.props.brand;
     const brand = this.props.brand;
-    const { minValue, maxValue } = this.state;
+    const { minValue, maxValue, foundItems } = this.state;
 
     let data = [];
     if (brand == 'ALL') {
@@ -98,7 +99,10 @@ class Catalog extends Component {
             <div className="col-12">
               <div className="filter-component">
                 <div className="filter-group">
-                  <Filter onFilterChange={this.onFilterChange} />
+                  <Filter
+                    foundItems={foundItems}
+                    onFilterChange={this.onFilterChange}
+                  />
                 </div>
                 <div className="button-group">
                   <button
@@ -205,6 +209,7 @@ class Catalog extends Component {
               minValue={minValue}
               maxValue={maxValue}
               view={this.state.view}
+              onFoundChange={this.onFoundChange}
             />
           </div>
           {category == 'LIEBHERR' && (
