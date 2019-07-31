@@ -30,6 +30,7 @@ class Products extends Component {
             name="description"
             content="Каталог газопоршневыех электростанций и мини-тэц на базе двигателей: MAN, LIEBHERR, MTU, JENBACHER и ЯМЗ."
           />
+          <link rel="canonical" href="https://gmenergo/products" />
         </NextHead>
         <Layout>
           <div className="container-fluid products-promo">

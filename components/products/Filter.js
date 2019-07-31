@@ -1,7 +1,7 @@
-import "../../scss/filter.scss";
-import React, { Component } from "react";
-import InputRange from "react-input-range";
-import PropTypes from "prop-types";
+import '../../scss/filter.scss';
+import React, { Component } from 'react';
+import InputRange from 'react-input-range';
+import PropTypes from 'prop-types';
 
 class Filter extends Component {
   constructor(props) {
@@ -17,13 +17,14 @@ class Filter extends Component {
     this.setState({ value });
   }
   render() {
+    const { foundItems } = this.props;
     return (
       <>
-				<div className="text-container">
-        	<span className="filter-text">Выбор диапазона мощности</span>
-					<span className="search-text">Найдено: </span>
-					<span className="search-text-value"> позиций</span>
-				</div>
+        <div className="text-container">
+          <span className="filter-text">Выбор диапазона мощности</span>
+          {/* <span className="search-text">Найдено: </span>
+          <span className="search-text-value">{foundItems}</span> */}
+        </div>
         <div className="filter-block">
           <div className="input-block">
             <InputRange
@@ -42,6 +43,7 @@ class Filter extends Component {
 }
 
 Filter.propTypes = {
-  onFilterChange: PropTypes.func.isRequired
+  onFilterChange: PropTypes.func.isRequired,
+  foundItems: PropTypes.number.isRequired
 };
 export default Filter;

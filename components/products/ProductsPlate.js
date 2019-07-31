@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import productsList from '../tables/productsList';
 import Link from 'next/link';
 import classNames from 'classnames';
 
