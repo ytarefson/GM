@@ -427,7 +427,7 @@
         z-index: 0;
         border-radius: 0;
 				display: grid;
-				grid-template-columns: 1fr 2fr; 
+				grid-template-columns: 2fr 3fr; 
         //background: #fff;
         width: 100%;
 				height: auto;
@@ -436,13 +436,10 @@
 				border-bottom: 1px solid rgba(0, 0, 0, 0.125);
         //box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
         transition: box-shadow 0.2s ease-out;
-        &:hover {
-          box-shadow: $box-shadow-up;
-        }
         & .img-container {
           display: flex;
           justify-content: center;
-          align-items: center;
+          align-items: flex-start;
 
           width: 100%;
 					overflow: hidden;
@@ -454,11 +451,10 @@
           }
         }
         & .text-container {
-
           padding: 0px 15px;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+          display: block;
+          // flex-direction: column;
+          // justify-content: space-between;
           & .flex-top {
             & .product-name {
               display: block;
@@ -468,7 +464,7 @@
               font-size: 17px;
               line-height: 18px;
               color: $accent-red;
-              margin-bottom: 10px;
+              margin-bottom: 20px;
               font-weight: 700;
               letter-spacing: 0.3px;
               //border-bottom: 1px solid grey;
@@ -495,12 +491,13 @@
                 padding-bottom: 2px;
               }
               & .product-card-motor {
-                font-size: 11px;
+                font-size: 13px;
                 font-weight: 700;
                 letter-spacing: -0.6px;
-                color: grey;
+                color: black;
                 display: block;
-                line-height: 14px;
+								line-height: 14px;
+								margin-bottom: 5px;
               }
               & .product-card-power-title {
                 line-height: 13px;
@@ -510,21 +507,21 @@
                 padding-bottom: 2px;
               }
               & .product-card-power {
-                font-size: 11px;
+                font-size: 13px;
                 font-weight: 700;
-                color: grey;
+                color: black;
                 letter-spacing: -0.6px;
                 display: block;
                 line-height: 14px;
-                margin-bottom: 10px;
-              }
-              & .product-card-details {
-                font-size: 9px;
-                text-align: right;
-                display: none;
-                color: $accent-red;
+                //margin-bottom: 10px;
               }
             }
+						& .product-card-details {
+							font-size: 9px;
+							text-align: right;
+							display: none;
+							color: $accent-red;
+						}
           }
         }
       }
@@ -746,14 +743,14 @@
 								flex-wrap: nowrap;
 								margin-bottom: 5px;
 								& .product-card-motor-title {
-									font-size: 12px;
+									font-size: 13px;
 									line-height: 14px;
 									color: $sub-color;
 									display: block;
 									padding-bottom: 2px;
 								}
 								& .product-card-motor {
-									font-size: 14px;
+									font-size: 16px;
 									font-weight: 700;
 									letter-spacing: -0.6px;
 									color: grey;
@@ -762,13 +759,13 @@
 								}
 								& .product-card-power-title {
 									line-height: 14px;
-									font-size: 12px;
+									font-size: 14px;
 									color: $sub-color;
 									display: block;
 									padding-bottom: 2px;
 								}
 								& .product-card-power {
-									font-size: 14px;
+									font-size: 16px;
 									font-weight: 700;
 									color: grey;
 									letter-spacing: -0.6px;
@@ -777,12 +774,12 @@
 									margin-bottom: 10px;
 								}
 							}
-									& .product-card-details {
-										font-size: 12px;
-										text-align: right;
-										display: block;
-										color: $accent-red;
-									}
+							// & .product-card-details {
+							// 	font-size: 12px;
+							// 	text-align: right;
+							// 	display: block;
+							// 	color: $accent-red;
+							// }
 						}
 					}
 				}
@@ -1155,12 +1152,12 @@
 									margin-bottom: 0px;
 								}
 							}
-							& .product-card-details {
-								font-size: 12px;
-								text-align: right;
-								display: block;
-								color: $accent-red;
-							}
+							// & .product-card-details {
+							// 	font-size: 12px;
+							// 	text-align: right;
+							// 	display: block;
+							// 	color: $accent-red;
+							// }
 						}
 					}
 				}
@@ -1309,7 +1306,6 @@
           flex-direction: row;
           justify-content: flex-end;
           align-items: center;
-          border-left: 1px solid #b4b4b4;
           & .view-item {
             z-index: 0;
             display: block;
@@ -1780,9 +1776,11 @@
     & .filter {
       & .filter-component {
         //border: 1px solid #7b7b7b;
-        box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
-        border-radius: $border-radius;
-        padding: 17px 15px 13px 25px;
+        //box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 15px 30px -10px rgba(0, 0, 0, 0.07);
+        //box-shadow: $card-shadow;
+        border-radius: 10px;
+        padding: 20px 15px 17px 25px;
         margin-bottom: 0px;
         display: flex;
         flex-direction: row;
@@ -2017,24 +2015,26 @@
 					display: grid;
 					grid-template-columns: 1fr 7fr; 
 					width: 100%;
-					height: auto;
+					height: 100px;
+					min-height: 100px;
 					padding-bottom: 0px;
 					border-radius: $border-radius;
-					box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-					//box-shadow: $box-shadow;
+					//box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+					box-shadow: $card-shadow;
 					border: none;
 					transition: box-shadow 0.15s ease-out;
 					background-color: #fff;
 					&:hover {
-						box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
-          	//box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+						//box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+          	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 						background-color: #fff;
 					}
 					& .img-container {
 						display: flex;
-						justify-content: center;
-						align-items: center;
+						justify-content: flex-start;
+						align-items: flex-start;
 						width: 100%;
+						height: 100%;
 						overflow: hidden;
 						& .product-card-img {
 							height: auto;
