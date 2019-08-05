@@ -1,5 +1,23 @@
 @import "../vars";
 
+.enter {
+  opacity: 0;
+}
+.enter-active {
+  transition: opacity 200ms ease-in;
+  opacity: 1;
+}
+.enter-done {
+  opacity: 1;
+}
+ .exit {
+  opacity: 1;  
+}
+.exit-active {  
+  transition: opacity 200ms ease-in;
+  opacity: 0;
+}
+
 .products-promo {
   background: linear-gradient(to right, #e1e1e1 0%, #b1b1b1 100%);
   padding-top: 30px;
@@ -285,6 +303,7 @@
       }
     }
   }
+  
   & .plate {
     padding: 0;
     padding-bottom: 30px;
@@ -294,6 +313,8 @@
     grid-gap: 15px;
     justify-items: center;
     align-items: center;
+    
+
     & .product-card-container {
       width: 100%;
       height: 100%;

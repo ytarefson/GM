@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import classNames from 'classnames';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 class ProductsPlate extends Component {
   render() {
@@ -31,7 +32,8 @@ class ProductsPlate extends Component {
     productsContent = (
       <>
         {result.map(item => (
-          <div className="product-card-container" key={item.id}>
+          <CSSTransition key={item.id} timeout={500}>
+            <div className="product-card-container" />
             <Link
               href={`/products/${item.category}/${item.id}`}
               key={`key0-${item.id}`}
@@ -70,7 +72,7 @@ class ProductsPlate extends Component {
                 </div>
               </a>
             </Link>
-          </div>
+          </CSSTransition>
         ))}
       </>
     );
@@ -87,7 +89,11 @@ class ProductsPlate extends Component {
       view
     );
 
-    return <div className={plateClass}>{productsContent}</div>;
+    return (
+      <TransitionGroup className={plateClass}>
+        {productsContent}
+      </TransitionGroup>
+    );
   }
 }
 

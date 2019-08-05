@@ -10,7 +10,7 @@ import YoutubeVideoLiebherr2 from '../YoutubeVideoLiebherr2';
 import Link from '../Link';
 import PropTypes from 'prop-types';
 import Filter from './Filter';
-import ProductsPlate from './ProductsPlate';
+import ProductPlate from './ProductPlate';
 import classNames from 'classnames';
 
 class Catalog extends Component {
@@ -203,7 +203,7 @@ class Catalog extends Component {
               </ul>
             </div>
 
-            <ProductsPlate
+            <ProductPlate
               data={data}
               brand={brand}
               minValue={minValue}
