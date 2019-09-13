@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import Head from '../components/head';
+import React, { Component } from "react";
+import Head from "../components/head";
 
-import '../scss/about.scss';
-import Layout from '../components/Layout';
-import Lightbox from 'react-image-lightbox';
+import "../scss/about.scss";
+import Layout from "../components/Layout";
+import Lightbox from "react-image-lightbox";
 // Yandex Maps
-import { YMaps, Map, Placemark } from 'react-yandex-maps';
+import { YMaps, Map, Placemark } from "react-yandex-maps";
 
 const images = [
-  '../static/images/about-1.jpg',
-  '../static/images/about-2.jpg',
-  '../static/images/about-3.jpg'
+  "../static/images/about-1.jpg",
+  "../static/images/about-2.jpg",
+  "../static/images/about-3.jpg"
 ];
 
 export class About extends Component {
@@ -126,9 +126,9 @@ export class About extends Component {
                   <p className="text-min mb-3">
                     С 2006 г. до настоящего времени компанией выпущено
                     <b>
-                      {' '}
+                      {" "}
                       75 электростанций суммарной мощностью более 21 МВт.
-                    </b>{' '}
+                    </b>{" "}
                     В производственной линейке газовые электростанции MAN,
                     Liebherr, Jenbacher, MTU, MWM и ЯМЗ единичной мощностью до
                     10 МВт и напряжением до 10,5 кВ, работающие на природном,
@@ -189,9 +189,9 @@ export class About extends Component {
                 <div
                   className="myMap"
                   style={{
-                    width: '100%',
-                    height: '100%',
-                    position: 'relative'
+                    width: "100%",
+                    height: "100%",
+                    position: "relative"
                   }}
                 >
                   <YMaps>
