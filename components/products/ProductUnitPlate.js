@@ -112,6 +112,9 @@ export class ProductsUnitPlate extends Component {
                     <p className="text-min">
                       Система управления: <b> {product.controlSystem}</b>
                     </p>
+                    {product.price !== '' ? <p className="text-min">
+                      Цена: <b> {product.price} руб.</b>
+                    </p> : ''}
                   </div>
                   <div className="flex-bottom">
                     <div className="button-group">
