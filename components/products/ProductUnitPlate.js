@@ -89,32 +89,56 @@ export class ProductsUnitPlate extends Component {
                         {product.electricPower} кВт
                       </span>
                     </div>
-                    <p className="text-min">
-                      Синхронный генератор: <b> {product.generator}</b>
-                    </p>
+                    <div className="text-container-2">
+                      <p className="text-min">Синхронный генератор:</p>
+                      <span className="text-min-value">
+                        {product.generator}
+                      </span>
+                    </div>
                     {product.gazLline !== "" && (
-                      <p className="text-min">
-                        Газовая линейка: <b> {product.gazLline}</b>
-                      </p>
+                      <div className="text-container-2">
+                        <p className="text-min">Газовая линейка:</p>
+                        <span className="text-min-value">
+                          {product.gazLline}
+                        </span>
+                      </div>
                     )}
-                    <p className="text-min">
-                      Группа охлаждения: <b> {product.freezGroup}</b>
-                    </p>
+                    <div className="text-container-2">
+                      <p className="text-min">Группа охлаждения:</p>
+                      <span className="text-min-value">
+                        {product.freezGroup}
+                      </span>
+                    </div>
+
                     {product.nasos !== "" && (
-                      <p className="text-min">
-                        Насосное оборудование: <b> {product.nasos}</b>
-                      </p>
+                      <div className="text-container-2">
+                        <p className="text-min">Насосное оборудование:</p>
+                        <span className="text-min-value">{product.nasos}</span>
+                      </div>
                     )}
 
-                    <p className="text-min">
-                      Силовое оборудование: <b> {product.powerSup}</b>
-                    </p>
-                    <p className="text-min">
-                      Система управления: <b> {product.controlSystem}</b>
-                    </p>
-                    {product.price !== '' ? <p className="text-min">
-                      Цена: <b> {product.price} руб.</b>
-                    </p> : ''}
+                    <div className="text-container-2">
+                      <p className="text-min">Силовое оборудование:</p>
+                      <span className="text-min-value">{product.powerSup}</span>
+                    </div>
+
+                    <div className="text-container-2">
+                      <p className="text-min">Система управления:</p>
+                      <span className="text-min-value">
+                        {product.controlSystem}
+                      </span>
+                    </div>
+
+                    {product.price !== "" ? (
+                      <div className="text-container-2">
+                        <p className="text-min">Цена:</p>
+                        <span className="text-min-value text-min-value-price">
+                          {product.price} руб.
+                        </span>
+                      </div>
+                    ) : (
+                      ""
+                    )}
                   </div>
                   <div className="flex-bottom">
                     <div className="button-group">

@@ -134,11 +134,24 @@
     margin-top: 15px;
     margin-bottom: 0px;
   }
-  & .text-min {
-    ////////////////////////////////////
-    color: $text;
-    & b {
+  & .text-container-2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & .text-min {
+      color: $text;
+    }
+    & .text-min-value {
+      font-size: 13px;
       color: #2e2e2e;
+    }
+    & .text-min-value-price {
+      font-size: 16px;
+      letter-spacing: normal;
+      font-weight: 900;
     }
   }
   & .text-black {
@@ -291,7 +304,7 @@
       }
       & .product-energy-container {
         margin-top: 8px;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         display: flex;
         position: relative;
         flex-direction: row-reverse;
@@ -308,6 +321,28 @@
         }
         & .product-energy {
           margin: 0px 0 0px auto;
+        }
+      }
+      & .text-container-2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & .text-min {
+          color: $text;
+        }
+        & .text-min-value {
+          font-size: 16px;
+          color: #2e2e2e;
+          font-weight: 700;
+        }
+        & .text-min-value-price {
+          font-size: 18px;
+          letter-spacing: normal;
+          font-weight: 900;
+          color: $sub-color;
         }
       }
       & .product-img-container {
@@ -408,13 +443,11 @@
         & .header-red {
           padding-bottom: 15px;
         }
-        & .text {
-          line-height: 26px;
-          font-size: 18px;
-          font-weight: 300;
+        & .text-min {
         }
         & .product-energy-container {
           margin-top: 0px;
+          margin-bottom: 15px;
           & .product-energy {
             padding: 5px 20px 3px;
             font-weight: 500;
