@@ -443,7 +443,30 @@
         & .header-red {
           padding-bottom: 15px;
         }
-        & .text-min {
+        & .text-container-2 {
+          margin-top: 4px;
+          margin-bottom: 4px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          & .text-min {
+            color: $accent-grey;
+            font-weight: 500;
+            letter-spacing: normal;
+            font-size: 14px;
+          }
+          & .text-min-value {
+            font-size: 16px;
+            color: #2e2e2e;
+            font-weight: 700;
+          }
+          & .text-min-value-price {
+            font-size: 18px;
+            letter-spacing: normal;
+            font-weight: 700;
+            color: $sub-color;
+          }
         }
         & .product-energy-container {
           margin-top: 0px;

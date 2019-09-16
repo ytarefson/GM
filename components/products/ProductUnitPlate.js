@@ -117,17 +117,23 @@ export class ProductsUnitPlate extends Component {
                       </div>
                     )}
 
-                    <div className="text-container-2">
-                      <p className="text-min">Силовое оборудование:</p>
-                      <span className="text-min-value">{product.powerSup}</span>
-                    </div>
+                    {product.powerSup !== "" && (
+                      <div className="text-container-2">
+                        <p className="text-min">Силовое оборудование:</p>
+                        <span className="text-min-value">
+                          {product.powerSup}
+                        </span>
+                      </div>
+                    )}
 
-                    <div className="text-container-2">
-                      <p className="text-min">Система управления:</p>
-                      <span className="text-min-value">
-                        {product.controlSystem}
-                      </span>
-                    </div>
+                    {product.controlSystem !== "" && (
+                      <div className="text-container-2">
+                        <p className="text-min">Система управления:</p>
+                        <span className="text-min-value">
+                          {product.controlSystem}
+                        </span>
+                      </div>
+                    )}
 
                     {product.price !== "" ? (
                       <div className="text-container-2">
