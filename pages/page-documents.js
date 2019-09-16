@@ -1,14 +1,15 @@
-import React, { Component } from "react";
-import "../scss/page-documents.scss";
-import Head from "../components/head";
-import Layout from "../components/Layout";
-import mtuList from "../components/tables/mtuList";
-import FormPage from "../components/form";
-import OtherNews from "../components/news/OtherNews";
+import React, { Component } from 'react';
+import '../scss/page-documents.scss';
+import Head from '../components/head';
+import Layout from '../components/Layout';
+import mtuList from '../components/tables/mtuList';
+import FormPage from '../components/form';
+import news from '../components/tables/newsList';
+import OtherNews from '../components/news/OtherNews';
 
 class PageDocuments extends Component {
   render() {
-    let content = "";
+    let content = '';
 
     content = mtuList.map((item, index) => (
       <details className="product-category" key={`part-${index}`}>
@@ -91,7 +92,7 @@ class PageDocuments extends Component {
             <div className="container">
               {/* <div className="row">
             <div className="col"> */}
-              <OtherNews />
+              <OtherNews news={news} />
               {/* </div>
           </div> */}
             </div>

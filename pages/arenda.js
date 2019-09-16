@@ -1,11 +1,12 @@
-import React, { Component } from "react";
-import "../scss/arenda.scss";
-import Link from "next/link";
-import Head from "../components/head";
-import Layout from "../components/Layout";
-import LizingList from "../components/arenda/LizingList";
-import FormPage from "../components/form";
-import OtherNews from "../components/news/OtherNews";
+import React, { Component } from 'react';
+import '../scss/arenda.scss';
+import Link from 'next/link';
+import Head from '../components/head';
+import Layout from '../components/Layout';
+import LizingList from '../components/arenda/LizingList';
+import FormPage from '../components/form';
+import news from '../components/tables/newsList';
+import OtherNews from '../components/news/OtherNews';
 
 class Arenda extends Component {
   render() {
@@ -190,7 +191,7 @@ class Arenda extends Component {
             <div className="container">
               {/* <div className="row">
             <div className="col"> */}
-              <OtherNews />
+              <OtherNews news={news} />
               {/* </div>
           </div> */}
             </div>
