@@ -216,6 +216,21 @@ export class About extends Component {
               <div className="certs">
                 <a
                   className="d-flex certs-card"
+                  href="../static/docs/dungs.pdf"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div className="img-container">
+                    <img
+                      className="certs-img certs-img-1"
+                      src="../static/images/docs/dungs.jpg"
+                      alt="сертификат"
+                      title="Сертификат DUNGS"
+                    />
+                  </div>
+                </a>
+                <a
+                  className="d-flex certs-card"
                   href="../static/docs/сканирован0642.pdf"
                   target="_blank"
                   rel="noopener"
