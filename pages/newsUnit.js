@@ -3,6 +3,7 @@ import Link from 'next/link';
 import newsList from '../components/tables/newsList';
 import Layout from '../components/Layout';
 import NewsUnitPlate from '../components/news/NewsUnitPlate';
+import OtherNews from '../components/news/OtherNews';
 
 class NewsUnit extends Component {
   render() {
@@ -27,6 +28,7 @@ class NewsUnit extends Component {
           </div>
           <div className="container">
             <NewsUnitPlate data={data} />
+            <OtherNews news={newsList} />
           </div>
         </div>
       </Layout>

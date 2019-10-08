@@ -8,7 +8,7 @@ import ProductsNew from '../components/products/ProductsNewContainer';
 import Catalog from '../components/products/Catalog';
 import ProductsTextSections from '../components/products/ProductsTextSections';
 import ProductsUsage from '../components/products/ProductsUsage';
-
+import news from '../components/tables/newsList';
 import OtherNews from '../components/news/OtherNews';
 import PromoProjects from '../components/products/PromoProjects';
 import ProductsListPlate from '../components/products/ProductsListPlate';
@@ -156,7 +156,7 @@ class Products extends Component {
           <ProductsUsage />
           <div className="container-fluid">
             <div className="container">
-              <OtherNews />
+              <OtherNews news={news} />
             </div>
           </div>
         </Layout>

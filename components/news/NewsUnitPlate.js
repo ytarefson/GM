@@ -52,7 +52,7 @@ export class NewsListPlate extends Component {
             {/* <div className="clearNews" /> */}
           </div>
         </div>
-        <OtherNews />
+        {/* <OtherNews /> */}
         {/* <div className="clearNews" /> */}
       </div>
     );

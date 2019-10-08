@@ -1,37 +1,35 @@
 import React, { Component } from 'react';
 import '../../scss/news/otherNews.scss';
-import news from '../tables/newsList';
+import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 class OtherNews extends Component {
   constructor(props) {
     super(props);
-    this.randomArray = this.randomArray.bind(this);
+    this.state = {
+      otherNews: []
+    };
   }
 
-  randomArray(arr, count) {
-    let shuffled = arr.slice(0);
-    let i = arr.length;
-    let min = i - count;
-    let temp;
-    let index;
-
-    while (i-- > min) {
-      index = Math.floor((i + 1) * Math.random());
-      temp = shuffled[index];
-      shuffled[index] = shuffled[i];
-      shuffled[i] = temp;
+  componentDidMount() {
+    const { news } = this.props;
+    let max = news.length - 1;
+    let min = 1;
+    let array = [];
+    for (array.length; array.length < 4; false) {
+      let index = Math.floor(Math.random() * (max - min + 1)) + min;
+      let newItem = news[index];
+      if (!array.includes(newItem)) {
+        array.push(newItem);
+      }
     }
-    return shuffled.slice(min);
+    this.setState({ otherNews: array });
   }
 
   render() {
-    let otherNewsContent = '';
-    let newsData = [];
-    newsData = this.randomArray(news, 4);
-
-    // Обходим newsData и формируем контент
-    otherNewsContent = newsData.map(item => (
+    const { otherNews } = this.state;
+    let otherNewsContent = 'Загрузка...';
+    otherNewsContent = otherNews.map(item => (
       <div className="" key={`other-${item.id}`}>
         <Link
           href={`/novosti?id=${item.id}`}
@@ -52,6 +50,7 @@ class OtherNews extends Component {
         </Link>
       </div>
     ));
+    // }
 
     return (
       <div className="row">
@@ -63,5 +62,9 @@ class OtherNews extends Component {
     );
   }
 }
+
+OtherNews.propTypes = {
+  news: PropTypes.array.isRequired
+};
 
 export default OtherNews;
