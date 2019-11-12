@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import newsList from '../tables/newsList';
-import Link from 'next/link';
-import '../../scss/news/newsListPlate.scss';
+import React, { Component } from "react";
+import newsList from "../tables/newsList";
+import Link from "next/link";
+import "../../scss/news/newsListPlate.scss";
 
 export class NewsListPlate extends Component {
   render() {
@@ -34,7 +34,7 @@ export class NewsListPlate extends Component {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-9">
+                  <div className="col-12 col-md-9 pl-xl-4">
                     <div className="news-details">
                       <span className="news-created">{created_at}</span>
                       <span className="news-category">{category}</span>
