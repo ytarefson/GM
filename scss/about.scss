@@ -117,6 +117,9 @@
 }
 .napravleniya {
   padding: 30px 0 50px 0;
+  & .header-sections {
+    text-align: left;
+  }
 }
 .certs {
   margin-top: 10px;

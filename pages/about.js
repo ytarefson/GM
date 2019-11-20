@@ -35,10 +35,12 @@ export class About extends Component {
           <div className="container-fluid about">
             <div className="mycontainer">
               <div className="row m-0">
-                <div className="col-12 col-md-12 p-0">
-                  <span className="subheading-red-top pl-3">О компании</span>
+                <div className="col-12 col-md-12 col-xl-9 p-0">
+                  <span className="subheading-red-top pl-3 mt-5">
+                    О компании
+                  </span>
                   <h1 className="header-razdel pl-3">ООО "Газовые машины"</h1>
-                  <p className="subheading-common-2">
+                  <p className="subheading-common-2 mt-4">
                     Компания «Газовые машины» образована 10 октября 2006 г. В
                     течение 12 лет основным профилем деятельности компании
                     является производство и поставка "под ключ" автономных
@@ -59,7 +61,7 @@ export class About extends Component {
                   </div>
                 </div> */}
               </div>
-              <div className="row m-0 mt-3 mb-3">
+              <div className="row m-0 mt-5 mb-5">
                 <div className="col-12 col-md-4">
                   <div className="img-container">
                     <img
@@ -122,8 +124,8 @@ export class About extends Component {
                 </div>
               </div>
               <div className="row m-0">
-                <div className="col-12 p-0 pl-3 pr-3">
-                  <p className="text-min mb-3">
+                <div className="col-12 col-xl-9 p-0 pl-3 pr-3">
+                  <p className="text-min mb-4">
                     С 2006 г. до настоящего времени компанией выпущено
                     <b>
                       {" "}
@@ -136,7 +138,7 @@ export class About extends Component {
                     газе. Компания является официальным сервисным партнером MAN,
                     Liebherr, Motortech, Comap.
                   </p>
-                  <p className="text-min mb-3">
+                  <p className="text-min mb-4">
                     Производственные площади комании 1 900 кв.м. расположены в
                     г. Ярославле. Производство сертифицировано концерном MAN и
                     компанией Motortech, что подтверждает высокое качество
@@ -156,7 +158,7 @@ export class About extends Component {
               </div>
             </div>
           </div>
-          <div className="container-fluid contacts mt-5 mb-3">
+          <div className="container-fluid contacts mt-5 mb-5">
             <div className="row m-0">
               <div className="col-12 col-md-4 order-md-2">
                 <div className="contacts-content">
@@ -210,10 +212,25 @@ export class About extends Component {
               </div>
             </div>
           </div>
-          <div className="container-fluid">
+          <div className="container-fluid pt-3">
             <div className="mycontainer pl-3 pr-3">
               <h2 className="header-sections pl-0">Сертификаты</h2>
               <div className="certs">
+                <a
+                  className="d-flex certs-card"
+                  href="../static/docs/sert-mbk.pdf"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div className="img-container">
+                    <img
+                      className="certs-img certs-img-1"
+                      src="../static/images/docs/sert-mbk.jpg"
+                      alt="сертификат"
+                      title="Сертификат МВК"
+                    />
+                  </div>
+                </a>
                 <a
                   className="d-flex certs-card"
                   href="../static/docs/dungs.pdf"
@@ -340,8 +357,8 @@ export class About extends Component {
           <div className="container-fluid napravleniya">
             <div className="mycontainer">
               <div className="row m-0">
-                <div className="col-12">
-                  <h2 className="header-sections pl-0">Направления</h2>
+                <div className="col-12 col-xl-9">
+                  <h2 className="header-sections pl-0 pb-3">Направления</h2>
 
                   <p className="text-min pb-3">
                     Кроме производства мини-ТЭС мы осуществляем поставку,
