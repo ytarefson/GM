@@ -1,17 +1,29 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Link from 'next/link';
-import classNames from 'classnames';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import Link from "next/link";
+import classNames from "classnames";
+// import { CSSTransition, TransitionGroup } from "react-transition-group";
+import gsap from "gsap";
 
 class ProductsPlate extends Component {
+  componentDidMount() {
+    console.log("here we are");
+    const tl = gsap.timeline();
+    tl.from(".product-card-container", {
+      duration: 0.75,
+      scale: 0.75,
+      opacity: 0,
+      ease: "power2"
+    });
+  }
+
   render() {
     const { brand, minValue, maxValue, data, view } = this.props;
-    let productsContent = '';
+    let productsContent = "";
 
     let productItems = [];
 
-    if (brand == 'ALL') {
+    if (brand == "ALL") {
       data.map(category => {
         category.map(item => {
           productItems.push(item);
@@ -32,8 +44,7 @@ class ProductsPlate extends Component {
     productsContent = (
       <>
         {result.map(item => (
-          <CSSTransition key={item.id} timeout={500}>
-            <div className="product-card-container" />
+          <div className="product-card-container">
             <Link
               href={`/products/${item.category}/${item.id}`}
               key={`key0-${item.id}`}
@@ -72,28 +83,24 @@ class ProductsPlate extends Component {
                 </div>
               </a>
             </Link>
-          </CSSTransition>
+          </div>
         ))}
       </>
     );
     let viewSwitch = true;
 
-    if (view == 'list') {
+    if (view == "list") {
       viewSwitch = true;
     } else {
       viewSwitch = false;
     }
 
     let plateClass = classNames(
-      'col-12 col-md-9 col-lg-10 product-card-plate ',
+      "col-12 col-md-9 col-lg-10 product-card-plate ",
       view
     );
 
-    return (
-      <TransitionGroup className={plateClass}>
-        {productsContent}
-      </TransitionGroup>
-    );
+    return <>{productsContent}</>;
   }
 }
 
@@ -108,7 +115,7 @@ ProductsPlate.propTypes = {
 ProductsPlate.defaultProps = {
   minValue: 100,
   maxValue: 4000,
-  view: 'list'
+  view: "list"
 };
 
 export default ProductsPlate;

@@ -1,41 +1,26 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Link from 'next/link';
-import classNames from 'classnames';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import Link from "next/link";
+import classNames from "classnames";
+// import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-class ProductItems extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      result: this.props.data
-    };
-  }
+export default function ProductItems(props) {
+  const [result, setResult] = useState();
 
-  componentWillReceiveProps(newProps) {
-    this.setState({ result: newProps.data });
-  }
+  useEffect(() => {
+    setResult(props.data);
+  }, [props]);
 
-  render() {
-    const { view } = this.props;
-    const { result } = this.state;
+  let plateClass = classNames(
+    "col-12 col-md-9 col-lg-10 product-card-plate ",
+    props.view
+  );
 
-    // Переключатель вида отображения товаров и его класс
-
-    let plateClass = classNames(
-      'col-12 col-md-9 col-lg-10 product-card-plate ',
-      view
-    );
-
-    return (
-      <TransitionGroup className={plateClass}>
-        {result.map(item => (
-          <CSSTransition
-            key={item.id}
-            timeout={200}
-            className="product-card-container"
-          >
-            <div>
+  return (
+    <div className={plateClass}>
+      {result
+        ? result.map(item => (
+            <div key={item.id} className="product-card-container">
               <Link
                 href={`/products/${item.category}/${item.id}`}
                 key={`key0-${item.id}`}
@@ -75,16 +60,8 @@ class ProductItems extends Component {
                 </a>
               </Link>
             </div>
-          </CSSTransition>
-        ))}
-      </TransitionGroup>
-    );
-  }
+          ))
+        : ""}
+    </div>
+  );
 }
-
-ProductItems.propTypes = {
-  data: PropTypes.array.isRequired,
-  view: PropTypes.string
-};
-
-export default ProductItems;
