@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import ProductItems from './ProductItems';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import ProductItems from "./ProductItems";
 
 class ProductsPlate extends Component {
   render() {
@@ -9,7 +9,7 @@ class ProductsPlate extends Component {
     // Формирование начального массива продуктов по бренду
     let productItems = [];
     // Если все - то добавляем все продукты в массив
-    if (brand == 'ALL') {
+    if (brand == "ALL") {
       data.map(category => {
         category.map(item => {
           productItems.push(item);
@@ -43,7 +43,7 @@ ProductsPlate.propTypes = {
 ProductsPlate.defaultProps = {
   minValue: 100,
   maxValue: 4000,
-  view: 'list'
+  view: "list"
 };
 
 export default ProductsPlate;
