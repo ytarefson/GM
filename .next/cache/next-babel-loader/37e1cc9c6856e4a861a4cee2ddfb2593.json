@@ -1,0 +1,1 @@
+{"ast":null,"code":"// All action types should live here\nexport const GET_ERRORS = 'GET_ERRORS';\nexport const CLEAR_ERRORS = 'CLEAR_ERRORS';","map":null,"metadata":{},"sourceType":"module"}
