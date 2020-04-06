@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "node -r dotenv/config server.js",
     "export": "next build & next export",
     "server": "node server.js"
   },
