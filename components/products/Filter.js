@@ -1,4 +1,3 @@
-import '../../scss/filter.scss';
 import React, { Component } from 'react';
 import InputRange from 'react-input-range';
 import PropTypes from 'prop-types';
@@ -8,7 +7,7 @@ class Filter extends Component {
     super(props);
 
     this.state = {
-      value: { min: 100, max: 4000 }
+      value: { min: 100, max: 4000 },
     };
     this.onChangeHandle = this.onChangeHandle.bind(this);
   }
@@ -32,11 +31,33 @@ class Filter extends Component {
               minValue={100}
               step={100}
               value={this.state.value}
-              onChange={value => this.onChangeHandle(value)}
+              onChange={(value) => this.onChangeHandle(value)}
               draggableTrack={true}
             />
           </div>
         </div>
+        <style jsx global>{`
+          .input-range .input-range__track {
+            position: relative;
+            height: 22px;
+          }
+          .input-range .input-range__track--active {
+            background: grey;
+            margin-left: 11px;
+          }
+          .input-range .input-range__track--background {
+            background: red;
+          }
+          .input-range .input-range__slider {
+            background: white;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+          }
+          .input-range .input-range__slider-container {
+            top: -22px;
+          }
+        `}</style>
       </>
     );
   }
@@ -44,6 +65,6 @@ class Filter extends Component {
 
 Filter.propTypes = {
   onFilterChange: PropTypes.func.isRequired,
-  foundItems: PropTypes.number.isRequired
+  foundItems: PropTypes.number.isRequired,
 };
 export default Filter;

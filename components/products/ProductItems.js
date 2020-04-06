@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
-import Link from "next/link";
-import classNames from "classnames";
+import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import Link from 'next/link';
+import classNames from 'classnames';
 // import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 export default function ProductItems(props) {
@@ -12,7 +12,7 @@ export default function ProductItems(props) {
   }, [props]);
 
   let plateClass = classNames(
-    "col-12 col-md-9 col-lg-10 product-card-plate ",
+    'col-12 col-md-9 col-lg-10 product-card-plate ',
     props.view
   );
 
@@ -28,7 +28,7 @@ export default function ProductItems(props) {
                 <a className="product-card">
                   <div className="img-container">
                     <img
-                      src={`../../static/images/products/thumb-${item.img}`}
+                      src={`/images/products/thumb-${item.img}`}
                       alt={item.label}
                       className="product-card-img"
                     />
@@ -61,7 +61,7 @@ export default function ProductItems(props) {
               </Link>
             </div>
           ))
-        : ""}
+        : ''}
     </div>
   );
 }

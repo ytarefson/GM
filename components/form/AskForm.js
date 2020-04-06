@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../../scss/form/ask-form.scss';
 import PropTypes from 'prop-types';
 import TextFieldGroup from '../common/TextFieldGroup';
 import RadioInputGroup from '../common/RadioInputGroup';
@@ -444,6 +443,244 @@ class AskForm extends Component {
             </div>
           </div>
         </div>
+        <style jsx>{`
+          .razdel-title {
+            display: block;
+            text-transform: uppercase;
+            font-size: 17px;
+            font-weight: 900;
+            color: var(--accent-grey);
+            line-height: 23px;
+            margin-bottom: 0px;
+          }
+          .title-description {
+            font-size: 14px;
+            line-height: 12px;
+          }
+          .form-razdel {
+            padding-top: 30px;
+            padding-bottom: 15px;
+          }
+          .fields {
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+          .fields .label-title {
+            display: block;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+            margin-top: 7px;
+            margin-bottom: 5px;
+          }
+          .fields .form-control {
+            font-size: 16px;
+            padding-left: 10px;
+            font-weight: 300;
+          }
+          .fields .radio-input-group .label-title {
+            margin-bottom: 10px;
+          }
+          .fields .radio-input-group .radio-input-field {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            padding-left: 25px;
+          }
+          .fields .radio-input-group .radio-input-field input {
+            width: 100%;
+            height: inherit;
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            opacity: 0;
+            margin-right: 10px;
+          }
+          .fields
+            .radio-input-group
+            .radio-input-field
+            input:checked
+            + label::after {
+            opacity: 1;
+          }
+          .fields .radio-input-group .radio-input-field label {
+            position: relative;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 0;
+            margin-left: 5px;
+            font-weight: 300;
+            cursor: pointer;
+          }
+          .fields .radio-input-group .radio-input-field label::before {
+            position: absolute;
+            display: block;
+            content: '';
+            top: 50%;
+            transform: translateY(-50%);
+            left: -30px;
+            width: 20px;
+            height: 20px;
+            border-radius: 13px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+          }
+          .fields .radio-input-group .radio-input-field label::after {
+            position: absolute;
+            display: block;
+            content: '';
+            top: 50%;
+            transform: translateY(-50%);
+            left: -25px;
+            width: 10px;
+            height: 10px;
+            border-radius: 13px;
+            background: var(--accent-red);
+            opacity: 0;
+          }
+          .radio:checked + label:after {
+            opacity: 1;
+          }
+          .radio:focus + label:before {
+            box-shadow: 0 0 0 3px rgba(255, 255, 0, 0.7);
+          }
+          .fields .radio-input-group .radio-input-field:last-child {
+            display: block;
+          }
+          .form-razdel:nth-child(even) {
+            background-color: #fff;
+          }
+
+          .button-section .button-submit {
+            display: block;
+            margin: 0 auto;
+            display: block;
+            border-radius: 50px;
+            color: #fff;
+            font-family: var(--molot-font);
+            background-color: var(--accent-red);
+            border: none;
+            padding: 12px 20px;
+            letter-spacing: 1px;
+            margin: 15px auto;
+            box-shadow: var(--box-shadow-up);
+            font-size: 15px;
+            transition: all 0.2s ease-in;
+          }
+          .button-section .button-submit:hover {
+            cursor: pointer;
+            box-shadow: var(--box-shadow);
+          }
+          @media (min-width: 768px) {
+            .razdel-title {
+              display: block;
+              text-transform: uppercase;
+              font-size: 21px;
+              font-weight: 300;
+              color: var(--accent-grey);
+              line-height: 28px;
+              margin-bottom: 0px;
+            }
+            .title-description {
+              font-size: 16px;
+              line-height: 12px;
+            }
+            .form-razdel {
+              padding-top: 30px;
+              padding-bottom: 15px;
+            }
+            .fields {
+              padding-top: 15px;
+              padding-bottom: 15px;
+            }
+            .fields .label-title {
+              display: block;
+              font-size: 20px;
+              line-height: 24px;
+              font-weight: 700;
+              margin-top: 7px;
+              margin-bottom: 10px;
+            }
+            .fields .form-control {
+              font-size: 16px;
+              padding-left: 10px;
+            }
+            .fields .radio-input-group .label-title {
+              margin-bottom: 12px;
+              font-size: 20px;
+              line-height: 24px;
+            }
+            .fields .radio-input-group .radio-input-field {
+              display: flex;
+              align-items: center;
+              margin-bottom: 12px;
+            }
+            .fields .radio-input-group .radio-input-field input {
+              margin-right: 10px;
+            }
+            .fields .radio-input-group .radio-input-field label {
+              font-size: 16px;
+              line-height: 18px;
+              margin-bottom: 0;
+              font-weight: 300;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .razdel-title {
+              display: block;
+              text-transform: uppercase;
+              font-size: 27px;
+              font-weight: 300;
+              color: var(--accent-grey);
+              line-height: 34px;
+              margin-bottom: 0px;
+              padding-right: 300px;
+            }
+            .title-description {
+              font-size: 16px;
+              line-height: 12px;
+            }
+            .form-razdel {
+              padding-top: 30px;
+              padding-bottom: 15px;
+            }
+            .fields {
+              padding-top: 15px;
+              padding-bottom: 15px;
+            }
+            .fields .label-title {
+              display: block;
+              font-size: 22px;
+              line-height: 24px;
+              font-weight: 700;
+              margin-top: 10px;
+              margin-bottom: 7px;
+            }
+            .fields .form-control {
+              font-size: 18px;
+              padding-left: 15px;
+            }
+            .fields .radio-input-group .label-title {
+              margin-bottom: 15px;
+              font-size: 22px;
+              line-height: 24px;
+            }
+            .fields .radio-input-group .radio-input-field {
+              display: flex;
+              align-items: center;
+              margin-bottom: 15px;
+            }
+            .fields .radio-input-group .radio-input-field input {
+              margin-right: 10px;
+            }
+            .fields .radio-input-group .radio-input-field label {
+              font-size: 18px;
+              line-height: 18px;
+              margin-bottom: 0;
+              font-weight: 300;
+            }
+          }
+        `}</style>
       </form>
     );
   }
@@ -458,7 +695,4 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 
-export default connect(
-  mapStateToProps,
-  { validateFormData }
-)(AskForm);
+export default connect(mapStateToProps, { validateFormData })(AskForm);

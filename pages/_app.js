@@ -1,30 +1,34 @@
+import App from 'next/app';
 import React from 'react';
-import App, { Container } from 'next/app';
-import withReduxStore from '../lib/with-redux-store';
-import { Provider } from 'react-redux';
+import globalStyles from '../style/global';
+// import '../styles/style.scss';
 
 class MyApp extends App {
-  static async getInitialProps({ Component, router, ctx }) {
-    let pageProps = {};
-
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
+  componentDidMount() {
+    // Service Worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('/service-worker.js')
+        .then(registration => {
+          console.log('service worker registration successful');
+        })
+        .catch(err => {
+          console.warn('service worker registration failed', err.message);
+        });
     }
-
-    return { pageProps };
   }
-
   render() {
-    const { Component, pageProps, reduxStore } = this.props;
+    const { Component, pageProps } = this.props;
 
     return (
-      <Container>
-        <Provider store={reduxStore}>
-          <Component {...pageProps} />
-        </Provider>
-      </Container>
+      <>
+        <Component {...pageProps} />
+        <style jsx global>
+          {globalStyles}
+        </style>
+      </>
     );
   }
 }
 
-export default withReduxStore(MyApp);
+export default MyApp;

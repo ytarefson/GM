@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import Lightbox from "react-image-lightbox";
+import React, { Component } from 'react';
+import Lightbox from 'react-image-lightbox';
 
 export class AboutTechnology2 extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ export class AboutTechnology2 extends Component {
             <div className="col-12 col-md-6">
               <div className="img-container">
                 <img
-                  src="../../static/images/about-tech-2.jpg"
+                  src="/images/about-tech-2.jpg"
                   alt="Малая энергетика"
                   title="Малая энергетика"
                   className="about-tech-pic"
@@ -27,7 +27,7 @@ export class AboutTechnology2 extends Component {
                 />
                 {isOpen && (
                   <Lightbox
-                    mainSrc={`../../static/images/about-tech-2.jpg`}
+                    mainSrc={`/images/about-tech-2.jpg`}
                     onCloseRequest={() => this.setState({ isOpen: false })}
                   />
                 )}

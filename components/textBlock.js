@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import "../scss/textBlock.scss";
+import React, { Component } from 'react';
 
 export default class TextBlock extends Component {
   render() {
@@ -35,7 +34,7 @@ export default class TextBlock extends Component {
               <div className="col-12 d-none d-md-block col-md-3 offset-lg-1">
                 <div className="text-img-container">
                   <img
-                    src="static/images/text-img.png"
+                    src="/images/text-img.png"
                     alt="Дешевая энергия"
                     title="Дешевая энергия"
                     className="text-img"
@@ -45,6 +44,69 @@ export default class TextBlock extends Component {
             </div>
           </div>
         </div>
+        <style jsx>{`
+          .textBlock {
+            padding-top: 60px;
+            padding-bottom: 30px;
+          }
+          .textBlock .text-mission {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 19px;
+            padding-bottom: 15px;
+          }
+
+          @media (min-width: 768px) {
+            .textBlock .text-img-container {
+              width: 100%;
+              height: 100%;
+              background-color: #fff;
+              border: 1px solid #dcdcdc;
+              border-radius: var(--border-radius);
+              padding: 15px;
+              display: flex;
+              align-items: center;
+            }
+            .textBlock .text-img-container .text-img {
+              width: 100%;
+            }
+          }
+          @media (min-width: 992px) {
+            .textBlock {
+              padding-top: 75px;
+            }
+            .textBlock .text-mission {
+              font-size: 16px;
+              font-weight: 300;
+              line-height: 20px;
+              padding-bottom: 15px;
+            }
+          }
+          @media (min-width: 1200px) {
+            .textBlock {
+              padding-top: 75px;
+              padding-bottom: 30px;
+            }
+            .textBlock .text-mission {
+              font-size: 18px;
+              font-weight: 300;
+              line-height: 25px;
+              padding-bottom: 15px;
+            }
+            .text-img-container {
+              width: 100%;
+              height: auto;
+              background-color: #fff;
+              border: 1px solid #dcdcdc;
+              padding: 15px;
+              display: flex;
+              align-items: center;
+            }
+            .text-img-container .text-img {
+              width: 100%;
+            }
+          }
+        `}</style>
       </div>
     );
   }

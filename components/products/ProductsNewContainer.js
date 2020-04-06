@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import productsList from '../tables/productsList';
-import '../../scss/video.scss';
 import { Player } from 'video-react';
 import YoutubeVideo from '../YoutubeVideo';
 import YoutubeVideoMan from '../YoutubeVideoMan';
@@ -315,174 +314,176 @@ class ProductsNew extends Component {
     console.log('brand is ' + brand);
 
     return (
-			<div className="container-fluid products">
-				<div className="container">
-					<div className="row">
-						<div className="col-12 col-md-3 col-lg-2">
-							<span className="category-header">Бренды:</span>
-							<ul className="category-list">
-								<li
-									className={
-										category == 'MTU' ? 'category-li active' : 'category-li'
-									}
-								>
-									<a
-										onClick={e => this.handleClick(e, 'MTU')}
-										className="category-link"
-									>
-										MTU
-									</a>
-								</li>
-								<li
-									className={
-										category == 'MAN' ? 'category-li active' : 'category-li'
-									}
-								>
-									<a
-										onClick={e => this.handleClick(e, 'MAN')}
-										className="category-link"
-									>
-										MAN
-									</a>
-								</li>
-								<li
-									className={
-										category == 'LIEBHERR' ? 'category-li active' : 'category-li'
-									}
-								>
-									<a
-										onClick={e => this.handleClick(e, 'LIEBHERR')}
-										className="category-link"
-									>
-										Liebherr
-									</a>
-								</li>
-								<li
-									className={
-										category == 'YAMZ' ? 'category-li active' : 'category-li'
-									}
-								>
-									<a
-										onClick={e => this.handleClick(e, 'YAMZ')}
-										className="category-link"
-									>
-										ЯМЗ
-									</a>
-								</li>
-								<li
-									className={
-										category == 'JENBACHER' ? 'category-li active' : 'category-li'
-									}
-								>
-									<a
-										onClick={e => this.handleClick(e, 'JENBACHER')}
-										className="category-link"
-									>
-										JENBACHER
-									</a>
-								</li>
-								<li
-									className={
-										category == 'MTU' ? 'category-li active' : 'category-li'
-									}
-								>
-									<Link href='/products?brand=MTU' scroll={false}>
-                    <a className="category-link">
-                      MTU
+      <div className="container-fluid products">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-3 col-lg-2">
+              <span className="category-header">Бренды:</span>
+              <ul className="category-list">
+                <li
+                  className={
+                    category == 'MTU' ? 'category-li active' : 'category-li'
+                  }
+                >
+                  <a
+                    onClick={e => this.handleClick(e, 'MTU')}
+                    className="category-link"
+                  >
+                    MTU
+                  </a>
+                </li>
+                <li
+                  className={
+                    category == 'MAN' ? 'category-li active' : 'category-li'
+                  }
+                >
+                  <a
+                    onClick={e => this.handleClick(e, 'MAN')}
+                    className="category-link"
+                  >
+                    MAN
+                  </a>
+                </li>
+                <li
+                  className={
+                    category == 'LIEBHERR'
+                      ? 'category-li active'
+                      : 'category-li'
+                  }
+                >
+                  <a
+                    onClick={e => this.handleClick(e, 'LIEBHERR')}
+                    className="category-link"
+                  >
+                    Liebherr
+                  </a>
+                </li>
+                <li
+                  className={
+                    category == 'YAMZ' ? 'category-li active' : 'category-li'
+                  }
+                >
+                  <a
+                    onClick={e => this.handleClick(e, 'YAMZ')}
+                    className="category-link"
+                  >
+                    ЯМЗ
+                  </a>
+                </li>
+                <li
+                  className={
+                    category == 'JENBACHER'
+                      ? 'category-li active'
+                      : 'category-li'
+                  }
+                >
+                  <a
+                    onClick={e => this.handleClick(e, 'JENBACHER')}
+                    className="category-link"
+                  >
+                    JENBACHER
+                  </a>
+                </li>
+                <li
+                  className={
+                    category == 'MTU' ? 'category-li active' : 'category-li'
+                  }
+                >
+                  <Link href="/products?brand=MTU" scroll={false}>
+                    <a className="category-link">MTU</a>
+                  </Link>
+                </li>
+
+                <li
+                  className={
+                    category == 'MAN' ? 'category-li active' : 'category-li'
+                  }
+                >
+                  <Link href="/products?brand=MAN" scroll={false}>
+                    <a className="category-link">MAN</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="col-12 col-md-9 col-lg-10 product-card-plate">
+              {data.map(item => (
+                <div className="product-card-container" key={item.id}>
+                  <Link
+                    href={`/products/${category}/${item.id}`}
+                    key={item.key}
+                  >
+                    <a className="product-card">
+                      <div className="img-container">
+                        <img
+                          src={`/images/products/thumb-${item.img}`}
+                          alt={item.label}
+                          className="product-card-img"
+                        />
+                      </div>
+                      <div className="text-container">
+                        <div className="flex-top">
+                          <span className="product-name">{item.label}</span>
+                        </div>
+                        <div className="flex-bot">
+                          <div className="flex-row">
+                            <span className="product-card-motor-title">
+                              Двигатель:
+                            </span>
+                            <span className="product-card-motor">
+                              {item.motorMark}
+                            </span>
+                          </div>
+                          <div className="flex-row">
+                            <span className="product-card-power-title">
+                              Мощность:
+                            </span>
+                            <span className="product-card-power">
+                              {item.electricPower} кВт
+                            </span>
+                            <span className="product-card-details">
+                              Подробнее...
+                            </span>
+                          </div>
+                        </div>
+                      </div>
                     </a>
                   </Link>
-								</li>
-
-								<li
-									className={
-										category == 'MAN' ? 'category-li active' : 'category-li'
-									}
-								>
-                  <Link href='/products?brand=MAN' scroll={false}>
-                    <a className="category-link">
-										  MAN
-                    </a>									
-                    </Link>
-								</li>
-
-							</ul>
-						</div>
-
-						<div className="col-12 col-md-9 col-lg-10 product-card-plate">
-							{data.map(item => (
-								<div className="product-card-container" key={item.id}>
-									<Link href={`/products/${category}/${item.id}`} key={item.key}>
-										<a className="product-card">
-											<div className="img-container">
-												<img
-													src={`../../static/images/products/thumb-${item.img}`}
-													alt={item.label}
-													className="product-card-img"
-												/>
-											</div>
-											<div className="text-container">
-												<div className="flex-top">
-													<span className="product-name">{item.label}</span>
-												</div>
-												<div className="flex-bot">
-													<div className="flex-row">
-														<span className="product-card-motor-title">
-															Двигатель:
-														</span>
-														<span className="product-card-motor">
-															{item.motorMark}
-														</span>
-													</div>
-													<div className="flex-row">
-														<span className="product-card-power-title">
-															Мощность:
-														</span>
-														<span className="product-card-power">
-															{item.electricPower} кВт
-														</span>
-														<span className="product-card-details">
-															Подробнее...
-														</span>
-													</div>
-												</div>
-											</div>
-										</a>
-									</Link>
-								</div>
-							))}
-						</div>
-					</div>
-					{category == 'LIEBHERR' && (
-						<div className="row mt-5 m-0 d-flex flex-column">
-							<div className="col-12 col-md-10 offset-md-2">
-								<YoutubeVideo1 className="myVideo" />
-							</div>
-							<div className="col-12 col-md-10 offset-md-2">
-								<YoutubeVideoLiebherr2 className="myVideo" />
-							</div>
-						</div>
-					)}
-					{category == 'MAN' && (
-						<div className="row mt-5 m-0">
-							<div className="col-12 col-md-10 col-xl-6">
-								<YoutubeVideoMan className="myVideo" />
-							</div>
-							<div className="col-12 col-md-10 col-xl-6">
-								<YoutubeVideoMan2 className="myVideo" />
-							</div>
-						</div>
-					)}
-				</div>
-			</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          {category == 'LIEBHERR' && (
+            <div className="row mt-5 m-0 d-flex flex-column">
+              <div className="col-12 col-md-10 offset-md-2">
+                <YoutubeVideo1 className="myVideo" />
+              </div>
+              <div className="col-12 col-md-10 offset-md-2">
+                <YoutubeVideoLiebherr2 className="myVideo" />
+              </div>
+            </div>
+          )}
+          {category == 'MAN' && (
+            <div className="row mt-5 m-0">
+              <div className="col-12 col-md-10 col-xl-6">
+                <YoutubeVideoMan className="myVideo" />
+              </div>
+              <div className="col-12 col-md-10 col-xl-6">
+                <YoutubeVideoMan2 className="myVideo" />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
     );
   }
 }
 
 ProductsNew.propTypes = {
   brand: PropTypes.string
-}
+};
 ProductsNew.defaultProps = {
   brand: 'MTU'
-}
+};
 
 export default ProductsNew;

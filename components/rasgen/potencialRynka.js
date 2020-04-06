@@ -1,11 +1,7 @@
-import React, { Component } from "react";
-import Lightbox from "react-image-lightbox";
-import "../../scss/rasgen/potencialRynka.scss";
+import React, { Component } from 'react';
+import Lightbox from 'react-image-lightbox';
 
-const images = [
-  "../../static/images/potential-1.jpg",
-  "../../static/images/potential-2.jpg"
-];
+const images = ['/images/potential-1.jpg', '/images/potential-2.jpg'];
 export class PotencialRynka extends Component {
   constructor(props) {
     super(props);
@@ -41,13 +37,13 @@ export class PotencialRynka extends Component {
             излишки продать в сеть. В России не мало также энергодефицитных
             районов. Стоимость подключения дополнительных мощностей зачастую
             может достигать значений существенно превышающих внедрения
-            оборудования распределенной генерации.{" "}
+            оборудования распределенной генерации.{' '}
           </p>
           <div className="row m-0">
             <div className="col-12 col-md-6 order-md-2">
               <div className="img-container">
                 <img
-                  src="../../static/images/potential-1.jpg"
+                  src="/images/potential-1.jpg"
                   alt="Газопоршневый двигатель Liebherr"
                   title="Газопоршневый двигатель Liebherr"
                   className="potential-pic"
@@ -58,7 +54,7 @@ export class PotencialRynka extends Component {
             <div className="col-12 col-md-6 order-md-2">
               <div className="img-container">
                 <img
-                  src="../../static/images/potential-2.jpg"
+                  src="/images/potential-2.jpg"
                   alt="Газовый энергоцентр"
                   title="Газовый энергоцентр"
                   className="potential-pic"
@@ -88,6 +84,18 @@ export class PotencialRynka extends Component {
             )}
           </div>
         </div>
+        <style jsx>{`
+          .potencialRynka {
+            padding-bottom: 80px;
+            margin-top: 80px;
+          }
+          .potencialRynka .img-container .potential-pic {
+            max-width: 100%;
+            height: auto;
+            margin-top: 80px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+          }
+        `}</style>
       </div>
     );
   }

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Layout from '../components/Layout';
 import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
 import FormPage from '../components/form';
-import '../scss/montazh.scss';
 
 class ChefMontazh extends Component {
   render() {
@@ -75,6 +74,84 @@ class ChefMontazh extends Component {
 
           <FormPage product={serviceName} />
         </div>
+        <style jsx>{`
+          .montazh {
+            padding-bottom: 80px;
+            padding: 0;
+          }
+          .montazh .section-plate {
+            padding: 30px;
+          }
+          .montazh .section-plate .text {
+            display: block;
+            margin-top: 0px;
+            margin-bottom: 20px;
+          }
+          .montazh .section-plate .header-min-colored {
+            margin-top: 30px;
+            margin-bottom: 15px;
+          }
+          .montazh .section-plate .razdel-list .razdel-li .text-min {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            padding-bottom: 15px;
+            line-height: 20px;
+          }
+          .montazh .section-plate .razdel-list .razdel-li .razdel-list-ul {
+            padding: 0;
+            font-size: 13px;
+            line-height: 18px;
+            display: block;
+          }
+
+          @media (min-width: 576px) {
+            .montazh {
+              padding-bottom: 80px;
+              padding: 0;
+            }
+            .montazh .section-plate {
+              padding: 15px;
+            }
+            .montazh .section-plate .header-min-colored {
+              margin-top: 30px;
+            }
+            .montazh .section-plate .razdel-list .razdel-li .text-min {
+              margin: 0;
+              padding: 0;
+              font-size: 16px;
+              padding-bottom: 15px;
+              line-height: 20px;
+            }
+            .montazh .section-plate .razdel-list .razdel-li .razdel-list-ul {
+              padding: 0;
+              font-size: 13px;
+              line-height: 18px;
+              display: block;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .montazh .section-plate .header-red {
+              margin-top: 30px;
+            }
+            .montazh .section-plate .razdel-list .razdel-li .text-min {
+              margin: 0;
+              padding: 0;
+              font-size: 16px;
+              padding-bottom: 15px;
+              padding-left: 27px;
+              line-height: 24px;
+            }
+            .montazh .section-plate .razdel-list .razdel-li .razdel-list-ul {
+              padding: 0;
+              padding-left: 46px;
+              font-size: 15px;
+              line-height: 18px;
+              display: block;
+            }
+          }
+        `}</style>
       </Layout>
     );
   }

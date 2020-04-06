@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Lightbox from 'react-image-lightbox';
 
-import '../scss/galery.scss';
-
 class Galery extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +30,7 @@ class Galery extends Component {
               <div className="img-container">
                 <img
                   className="detail-img"
-                  src={`../static/images/${images[0]}`} // /products/
+                  src={`/images/${images[0]}`} // /products/
                   alt={project.label}
                   onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}
                   title={project.label}
@@ -42,7 +40,7 @@ class Galery extends Component {
               <div className="img-container">
                 <img
                   className="detail-img"
-                  src={`../static/images/${images[1]}`} // /products/
+                  src={`/images/${images[1]}`} // /products/
                   alt={project.label}
                   onClick={() => this.setState({ isOpen: true, photoIndex: 1 })}
                   title={project.label}
@@ -52,7 +50,7 @@ class Galery extends Component {
               <div className="img-container">
                 <img
                   className="detail-img"
-                  src={`../static/images/${images[2]}`} // /products/
+                  src={`/images/${images[2]}`} // /products/
                   alt={project.label}
                   onClick={() => this.setState({ isOpen: true, photoIndex: 2 })}
                   title={project.label}
@@ -62,7 +60,7 @@ class Galery extends Component {
               <div className="img-container">
                 <img
                   className="detail-img"
-                  src={`../static/images/${images[3]}`} // /products/
+                  src={`/images/${images[3]}`} // /products/
                   alt={project.label}
                   onClick={() => this.setState({ isOpen: true, photoIndex: 3 })}
                   title={project.label}
@@ -74,12 +72,12 @@ class Galery extends Component {
 
         {isOpen && (
           <Lightbox
-            mainSrc={`../static/images/${images[photoIndex]}`} // /products/
-            nextSrc={`../static/images/${
+            mainSrc={`/images/${images[photoIndex]}`} // /products/
+            nextSrc={`/images/${
               // /products/
               images[(photoIndex + 1) % images.length]
             }`}
-            prevSrc={`../static/images/${
+            prevSrc={`/images/${
               // /products/
               images[(photoIndex + images.length - 1) % images.length]
             }`}
@@ -96,6 +94,60 @@ class Galery extends Component {
             }
           />
         )}
+        <style jsx>{`
+          .galery-plate {
+            margin-bottom: 30px;
+          }
+          .galery-products {
+            margin-bottom: 0;
+          }
+          .galery {
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+          .galery .img-container-plate {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 120px 120px;
+            grid-gap: 15px;
+          }
+          .galery .img-container-plate .img-container {
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+          }
+          .galery .img-container-plate .img-container .detail-img {
+            width: auto;
+            height: 100%;
+          }
+
+          @media (min-width: 768px) {
+            .galery .img-container-plate {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              grid-template-rows: 120px;
+              grid-gap: 15px;
+            }
+          }
+          @media (min-width: 992px) {
+            .galery .img-container-plate {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              grid-template-rows: 150px;
+            }
+          }
+          @media (min-width: 1200px) {
+            .galery .img-container-plate {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              grid-template-rows: 180px;
+              grid-gap: 30px;
+            }
+          }
+        `}</style>
       </div>
     );
   }

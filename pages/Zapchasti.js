@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Layout from '../components/Layout';
 import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
 import FormPage from '../components/form';
-import '../scss/services/zapchasti.scss';
 
 class Zapchasti extends Component {
   render() {
@@ -75,12 +74,79 @@ class Zapchasti extends Component {
             <FormPage product={serviceName} />
           </div>
         </div>
+        <style jsx>{`
+          .zapchasti {
+            padding: 0;
+            padding-bottom: 80px;
+          }
+          .zapchasti .text {
+            padding: 5px 0px 5px 25px;
+
+            position: relative;
+          }
+          .zapchasti .text::before {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: var(--accent-red);
+            border-radius: 10px;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: var(--box-shadow);
+          }
+          .zapchasti .text-grey {
+            margin-top: 45px;
+            padding-left: 15px;
+            padding-right: 15px;
+            display: block;
+            font-size: 14px;
+            color: #cb4828;
+            text-align: center;
+          }
+
+          @media (min-width: 576px) {
+            .zapchasti .col-12 {
+              padding-left: 0;
+              padding-right: 0;
+            }
+            .zapchasti .col-12 .text-grey {
+              font-weight: 700;
+              font-size: 16px;
+              color: #cb4828;
+            }
+          }
+
+          @media (min-width: 768px) {
+            .zapchasti .text-grey {
+              font-weight: 700;
+              font-size: 20px;
+              color: #cb4828;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .zapchasti {
+              padding-top: 30px;
+            }
+            .zapchasti .text {
+              padding: 8px 0px 8px 35px;
+            }
+            .zapchasti .text-grey {
+              font-weight: 700;
+              font-size: 24px;
+              color: rgb(66, 66, 66);
+            }
+          }
+        `}</style>
       </Layout>
     );
   }
 }
 
-Zapchasti.getInitialProps = async function(context) {
+Zapchasti.getInitialProps = async function (context) {
   const serviceName = context.query.serviceName;
   return { serviceName };
 };

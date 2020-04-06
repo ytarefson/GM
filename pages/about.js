@@ -1,16 +1,15 @@
-import React, { Component } from "react";
-import Head from "../components/head";
+import React, { Component } from 'react';
+import Head from '../components/head';
 
-import "../scss/about.scss";
-import Layout from "../components/Layout";
-import Lightbox from "react-image-lightbox";
+import Layout from '../components/Layout';
+import Lightbox from 'react-image-lightbox';
 // Yandex Maps
-import { YMaps, Map, Placemark } from "react-yandex-maps";
+import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
 const images = [
-  "../static/images/about-1.jpg",
-  "../static/images/about-2.jpg",
-  "../static/images/about-3.jpg"
+  '/images/about-1.jpg',
+  '/images/about-2.jpg',
+  '/images/about-3.jpg'
 ];
 
 export class About extends Component {
@@ -51,21 +50,12 @@ export class About extends Component {
                     генераторов.
                   </p>
                 </div>
-                {/* <div className="col-12 col-md-4 p-0">
-                  <div className="logo-container">
-                    <img
-                      src="../static/images/logo-very-big.png"
-                      alt="Логотип Газовые Машины"
-                      className="logo-very-big"
-                    />
-                  </div>
-                </div> */}
               </div>
               <div className="row m-0 mt-5 mb-5">
                 <div className="col-12 col-md-4">
                   <div className="img-container">
                     <img
-                      src="../static/images/about-1.jpg"
+                      src="/images/about-1.jpg"
                       onClick={() =>
                         this.setState({ isOpen: true, photoIndex: 0 })
                       }
@@ -78,7 +68,7 @@ export class About extends Component {
                 <div className="col-12 col-md-4">
                   <div className="img-container">
                     <img
-                      src="../static/images/about-2.jpg"
+                      src="/images/about-2.jpg"
                       onClick={() =>
                         this.setState({ isOpen: true, photoIndex: 1 })
                       }
@@ -91,7 +81,7 @@ export class About extends Component {
                 <div className="col-12 col-md-4">
                   <div className="img-container">
                     <img
-                      src="../static/images/about-3.jpg"
+                      src="/images/about-3.jpg"
                       onClick={() =>
                         this.setState({ isOpen: true, photoIndex: 2 })
                       }
@@ -128,9 +118,9 @@ export class About extends Component {
                   <p className="text-min mb-4">
                     С 2006 г. до настоящего времени компанией выпущено
                     <b>
-                      {" "}
+                      {' '}
                       75 электростанций суммарной мощностью более 21 МВт.
-                    </b>{" "}
+                    </b>{' '}
                     В производственной линейке газовые электростанции MAN,
                     Liebherr, Jenbacher, MTU, MWM и ЯМЗ единичной мощностью до
                     10 МВт и напряжением до 10,5 кВ, работающие на природном,
@@ -191,9 +181,9 @@ export class About extends Component {
                 <div
                   className="myMap"
                   style={{
-                    width: "100%",
-                    height: "100%",
-                    position: "relative"
+                    width: '100%',
+                    height: '100%',
+                    position: 'relative'
                   }}
                 >
                   <YMaps>
@@ -218,14 +208,14 @@ export class About extends Component {
               <div className="certs">
                 <a
                   className="d-flex certs-card"
-                  href="../static/docs/sert-mbk.pdf"
+                  href="/docs/sert-mbk.pdf"
                   target="_blank"
                   rel="noopener"
                 >
                   <div className="img-container">
                     <img
                       className="certs-img certs-img-1"
-                      src="../static/images/docs/sert-mbk.jpg"
+                      src="/images/docs/sert-mbk.jpg"
                       alt="сертификат"
                       title="Сертификат МВК"
                     />
@@ -233,14 +223,14 @@ export class About extends Component {
                 </a>
                 <a
                   className="d-flex certs-card"
-                  href="../static/docs/dungs.pdf"
+                  href="/docs/dungs.pdf"
                   target="_blank"
                   rel="noopener"
                 >
                   <div className="img-container">
                     <img
                       className="certs-img certs-img-1"
-                      src="../static/images/docs/dungs.jpg"
+                      src="/images/docs/dungs.jpg"
                       alt="сертификат"
                       title="Сертификат DUNGS"
                     />
@@ -248,14 +238,14 @@ export class About extends Component {
                 </a>
                 <a
                   className="d-flex certs-card"
-                  href="../static/docs/сканирован0642.pdf"
+                  href="/docs/сканирован0642.pdf"
                   target="_blank"
                   rel="noopener"
                 >
                   <div className="img-container">
                     <img
                       className="certs-img certs-img-1"
-                      src="../static/images/docs/сканирован0642.jpg"
+                      src="/images/docs/сканирован0642.jpg"
                       alt="сертификат"
                       title="Сертификат с выставки Собственная генерация"
                     />
@@ -263,14 +253,14 @@ export class About extends Component {
                 </a>
                 <a
                   className="d-flex certs-card"
-                  href="../static/docs/liebherr.pdf"
+                  href="/docs/liebherr.pdf"
                   target="_blank"
                   rel="noopener"
                 >
                   <div className="img-container">
                     <img
                       className="certs-img certs-img-1"
-                      src="../static/images/docs/liebherr.jpg"
+                      src="/images/docs/liebherr.jpg"
                       alt="сертификат"
                       title="Сертификат Liebherr"
                     />
@@ -278,14 +268,14 @@ export class About extends Component {
                 </a>
                 <a
                   className="d-flex certs-card"
-                  href="../static/docs/motortech.pdf"
+                  href="/docs/motortech.pdf"
                   target="_blank"
                   rel="noopener"
                 >
                   <div className="img-container">
                     <img
                       className="certs-img certs-img-1"
-                      src="../static/images/docs/motortech.jpg"
+                      src="/images/docs/motortech.jpg"
                       alt="сертификат"
                       title="Сертификат Motortech"
                     />
@@ -293,14 +283,14 @@ export class About extends Component {
                 </a>
                 <a
                   className="d-flex certs-card"
-                  href="../static/docs/sert.pdf"
+                  href="/docs/sert.pdf"
                   target="_blank"
                   rel="noopener"
                 >
                   <div className="img-container">
                     <img
                       className="certs-img certs-img-1"
-                      src="../static/images/docs/sert.jpg"
+                      src="/images/docs/sert.jpg"
                       alt="сертификат"
                       title="Сертификат соответствия ГОСТ"
                     />
@@ -308,14 +298,14 @@ export class About extends Component {
                 </a>
                 <a
                   className="d-flex certs-card"
-                  href="../static/docs/comap.pdf"
+                  href="/docs/comap.pdf"
                   target="_blank"
                   rel="noopener"
                 >
                   <div className="img-container">
                     <img
                       className="certs-img certs-img-1"
-                      src="../static/images/docs/comap.jpg"
+                      src="/images/docs/comap.jpg"
                       alt="сертификат"
                       title="Сертификат ComAp"
                     />
@@ -323,14 +313,14 @@ export class About extends Component {
                 </a>
                 <a
                   className="d-flex certs-card"
-                  href="../static/docs/man.pdf"
+                  href="/docs/man.pdf"
                   target="_blank"
                   rel="noopener"
                 >
                   <div className="img-container">
                     <img
                       className="certs-img certs-img-1"
-                      src="../static/images/docs/man.jpg"
+                      src="/images/docs/man.jpg"
                       alt="сертификат"
                       title="Сертификат MAN"
                     />
@@ -338,14 +328,14 @@ export class About extends Component {
                 </a>
                 <a
                   className="d-flex certs-card"
-                  href="../static/docs/сканирован0643.pdf"
+                  href="/docs/сканирован0643.pdf"
                   target="_blank"
                   rel="noopener"
                 >
                   <div className="img-container">
                     <img
                       className="certs-img certs-img-2"
-                      src="../static/images/docs/nagrada2.jpg"
+                      src="/images/docs/nagrada2.jpg"
                       alt="сертификат"
                       title="Партнёрский сертификат MAN"
                     />
@@ -395,6 +385,365 @@ export class About extends Component {
             </div>
           </div>
         </Layout>
+        <style jsx>{`
+          .about .logo-container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .about .logo-container .logo-very-big {
+            display: block;
+            width: 50%;
+            height: auto;
+          }
+          .about .img-container {
+            margin-bottom: 15px;
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            border-radius: var(--border-radius);
+          }
+          .about .img-container .about-pic {
+            width: 100%;
+          }
+          .contacts {
+            background-image: #fff;
+          }
+          .contacts .map-container {
+            border-radius: var(--border-radius);
+          }
+          .contacts .map-container .myMap {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+          }
+
+          .contacts .adres-list {
+            margin-bottom: 30px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            color: var(--accent-grey);
+            border: 3px solid var(--accent-grey);
+            border-radius: 3px;
+            background-color: #fff;
+            box-shadow: var(--box-shadow-up);
+          }
+
+          .contacts .adres-list .map-container {
+            width: 100%;
+            padding-bottom: 15px !important;
+          }
+          .contacts .adres-list .contacts-heading {
+            font-family: var(--molot-font);
+            text-align: center;
+            font-size: 21px;
+            color: var(--accent-grey);
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+          }
+          .contacts .adres-list .adres-map-link {
+            width: 100%;
+            color: var(--accent-grey);
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            font-family: var(--noto-font);
+            letter-spacing: 0.5px;
+            text-align: center;
+            margin-bottom: 15px;
+          }
+          .contacts .adres-list .adres-phones {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+          }
+          .contacts .adres-list .adres-phones .phone-link {
+            text-align: left;
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            color: var(--accent-grey);
+          }
+          .contacts .adres-list .adres-email {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+            color: var(--accent-grey);
+            width: 100%;
+            font-style: italic;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1px;
+          }
+          .contacts .adres-list .link-1 {
+            font-size: 14px;
+            display: block;
+            font-weight: 300;
+            color: var(--accent-grey);
+          }
+          .contacts .adres-list .link-11 {
+            font-size: 14px;
+            display: block;
+            font-weight: 700;
+            color: var(--accent-grey);
+          }
+
+          .napravleniya {
+            padding: 30px 0 50px 0;
+          }
+          .napravleniya .header-sections {
+            text-align: left;
+          }
+          .certs {
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+          }
+          .certs .certs-card {
+            padding: 15px;
+            width: 50%;
+            cursor: pointer;
+          }
+          .certs .certs-card .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .certs .certs-card .img-container .certs-img-1 {
+            width: 100%;
+            transition: all 0.2s ease-in;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: var(--box-shadow);
+          }
+          .certs .certs-card .img-container:hover {
+            box-shadow: 0 5px 40px -15px rgba(0, 0, 0, 0.55);
+          }
+          .certs .certs-card .img-container .certs-img-2 {
+            width: 100%;
+          }
+
+          @media (min-width: 768px) {
+            .about .logo-container {
+              height: 100%;
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-end;
+            }
+            .about .logo-container .logo-very-big {
+              display: block;
+              margin-bottom: 30px;
+              width: 70%;
+              height: auto;
+            }
+            .about .img-container .about-pic {
+              max-width: 100%;
+              box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+            }
+
+            .contacts .map-container {
+              transform: translateX(-15px);
+              padding-bottom: 0 !important;
+            }
+
+            .contacts .adres-list {
+              margin-bottom: 30px;
+              padding: 30px;
+              display: flex;
+              flex-direction: column;
+              color: var(--accent-grey);
+              border: 3px solid var(--accent-grey);
+            }
+            .contacts .adres-list .map-container {
+              width: 100%;
+              padding-bottom: 15px !important;
+            }
+            .contacts .adres-list .contacts-heading {
+              font-family: var(--molot-font);
+              text-align: center;
+              font-size: 21px;
+              color: var(--accent-grey);
+              display: block;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              margin-bottom: 20px;
+            }
+            .contacts .adres-list .adres-map-link {
+              width: 100%;
+              color: var(--accent-grey);
+              font-size: 14px;
+              font-weight: 300;
+              line-height: 20px;
+              font-family: var(--noto-font);
+              letter-spacing: 0.5px;
+              text-align: center;
+              margin-bottom: 15px;
+            }
+            .contacts .adres-list .adres-phones {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              align-content: center;
+            }
+            .contacts .adres-list .adres-phones .phone-link {
+              text-align: left;
+              display: block;
+              font-weight: 400;
+              font-size: 14px;
+              color: var(--accent-grey);
+            }
+            .contacts .adres-list .adres-email {
+              margin-top: 15px;
+              margin-bottom: 15px;
+              text-align: center;
+              color: var(--accent-grey);
+              width: 100%;
+              font-style: italic;
+              font-size: 16px;
+              font-weight: 700;
+              letter-spacing: 1px;
+            }
+            .contacts .adres-list .link-1 {
+              font-size: 14px;
+              display: block;
+              font-weight: 300;
+              color: var(--accent-grey);
+            }
+            .contacts .adres-list .link-11 {
+              font-size: 14px;
+              display: block;
+              font-weight: 700;
+              color: var(--accent-grey);
+            }
+            .contacts .link-map .link-map-header {
+              padding-left: 8px;
+              text-align: left;
+            }
+            .contacts .link-map .link-map-list {
+              margin-top: 10px;
+              padding-left: 0;
+              display: flex;
+              flex-direction: column;
+            }
+            .contacts .link-map .link-map-list .link-map-item {
+              padding: 0px 8px;
+            }
+            .contacts .link-map .link-map-list .link-map-item .link-map-link {
+              display: block;
+              color: #ffffff;
+              width: 100%;
+              text-align: left;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 28px;
+            }
+            .certs {
+              margin-top: 10px;
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: space-around;
+            }
+            .certs .certs-card {
+              padding: 15px;
+              width: 32%;
+            }
+          }
+
+          @media (min-width: 992px) {
+            .certs {
+              flex-wrap: nowrap;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .contacts {
+              padding-top: 0;
+            }
+            .contacts .adres-list {
+              height: 100%;
+              box-shadow: var(--box-shadow);
+              border-radius: var(--border-radius);
+              border: none;
+              padding-left: 45px;
+            }
+            .contacts .adres-list .contacts-heading {
+              font-family: var(--molot-font);
+              text-align: left;
+              font-size: 27px;
+              color: var(--accent-grey);
+              display: block;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              margin-bottom: 20px;
+            }
+            .contacts .adres-list .adres-map-link {
+              width: 100%;
+              color: var(--accent-grey);
+              font-size: 22px;
+              font-weight: 300;
+              line-height: 28px;
+              font-family: var(--noto-font);
+              letter-spacing: 0.5px;
+              text-align: left;
+              margin-bottom: 30px;
+            }
+            .contacts .adres-list .adres-phones {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              align-content: center;
+            }
+            .contacts .adres-list .adres-phones .phone-link {
+              text-align: left;
+              display: block;
+              font-weight: 700;
+              font-size: 19px;
+              color: var(--accent-grey);
+            }
+            .contacts .adres-list .adres-email {
+              margin-top: 15px;
+              margin-bottom: 15px;
+              text-align: left;
+              color: var(--accent-red);
+              width: 100%;
+              font-style: italic;
+              font-size: 16px;
+              font-weight: 500;
+              letter-spacing: 3px;
+            }
+            .contacts .adres-list .link-1 {
+              font-size: 16px;
+              display: block;
+              font-weight: 300;
+              color: var(--accent-grey);
+              line-height: 22px;
+            }
+            .contacts .adres-list .link-11 {
+              font-size: 17px;
+              display: block;
+              font-weight: 700;
+              color: var(--accent-grey);
+            }
+            .contacts .map-container {
+              height: 458px;
+              width: 100%;
+            }
+          }
+        `}</style>
       </div>
     );
   }

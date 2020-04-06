@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function ProductsBenefits() {
   return (
@@ -6,7 +6,7 @@ export default function ProductsBenefits() {
       <div className="benefit-card">
         <div className="icon-container">
           <img
-            src="../../../static/images/icons/debit-card.png"
+            src="/images/icons/debit-card.png"
             title="Выгодные условия оплаты"
             alt="Условия оплаты"
             className="bene-icon"
@@ -20,7 +20,7 @@ export default function ProductsBenefits() {
       <div className="benefit-card">
         <div className="icon-container">
           <img
-            src="../../../static/images/icons/bar-chart.png"
+            src="/images/icons/bar-chart.png"
             title="Окупаемость 12 месяцев"
             alt="Срок окупаемости проекта"
             className="bene-icon"
@@ -34,7 +34,7 @@ export default function ProductsBenefits() {
       <div className="benefit-card">
         <div className="icon-container">
           <img
-            src="../../../static/images/icons/location.png"
+            src="/images/icons/location.png"
             title="Все регионы РФ"
             alt="Доставка и обслуживание"
             className="bene-icon"
@@ -48,7 +48,7 @@ export default function ProductsBenefits() {
       <div className="benefit-card">
         <div className="icon-container">
           <img
-            src="../../../static/images/icons/customer-support.png"
+            src="/images/icons/customer-support.png"
             title="Гарантия на оборудование 24 месяца"
             alt="Гарантийное обслуживание"
             className="bene-icon"

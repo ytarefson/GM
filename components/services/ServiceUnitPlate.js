@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import Head from '../../components/head';
 import Link from 'next/link';
 import serviceList from '../tables/serviceList';
-import '../../scss/services/serviceUnitPlate.scss';
 
 export class ServiceUnitPlate extends Component {
   render() {
     const serviceName = this.props.serviceName;
     let service = {};
-    serviceList.map(item => {
+    serviceList.map((item) => {
       if (item.as === serviceName) {
         service = item;
       }
@@ -58,14 +57,11 @@ export class ServiceUnitPlate extends Component {
                       <div>
                         <a
                           className="doc-link"
-                          href={`../../static/docs/${service.doc}`}
+                          href={`/docs/${service.doc}`}
                           target="_blank"
                           rel="noopener"
                         >
-                          <img
-                            src="../../static/images/icons/pdf.png"
-                            alt="Документация"
-                          />
+                          <img src="/images/icons/pdf.png" alt="Документация" />
                           Скачать - {service.docname}
                         </a>
                       </div>
@@ -92,6 +88,307 @@ export class ServiceUnitPlate extends Component {
             </div>
           </div>
         </section>
+        <style jsx>{`
+          .service-breadcrumbs {
+            padding: 0;
+          }
+          .service-breadcrumbs .mycontainer {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          .service-unit {
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+
+          .service-unit .header-red {
+            margin: 0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+          }
+
+          .service-unit .button-group {
+            border-bottom: none;
+          }
+          .service-unit .button-group .button-container-new {
+            margin-bottom: 15px;
+          }
+          .service-unit .button-group .button-container-new .button-new {
+            display: block;
+            margin: 0 auto;
+            width: 210px;
+            height: 50px;
+            border-radius: 2px;
+            border: 3px solid var(--accent-red);
+            text-align: center;
+            color: var(--accent-red);
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 45px;
+            transition: all 0.2s ease-out;
+          }
+          .service-unit .button-group .button-container-new .button-new:hover {
+            box-shadow: var(--box-shadow);
+          }
+          .service-unit .button-group .arenda-text-min {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 12px;
+            color: #9b9b9b;
+          }
+          .section-plate .card-img-container {
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+          }
+          .section-plate .card-img-container .card-img {
+            width: 100%;
+          }
+
+          .doc-link {
+            display: flex;
+            align-items: center;
+            color: grey;
+            margin-bottom: 15px;
+            font-size: 12px;
+            color: #9b9b9b;
+          }
+          .doc-link img {
+            margin-right: 10px;
+          }
+
+          @media (min-width: 576px) {
+            .service-breadcrumbs {
+              padding: 0;
+            }
+
+            .service-breadcrumbs .mycontainer {
+              padding-left: 15px;
+              padding-right: 15px;
+            }
+            .service-breadcrumbs .mycontainer .breadcrumbs {
+              margin-left: 0;
+            }
+            .service-unit .button-group {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: auto;
+              grid-gap: 15px;
+              align-items: center;
+              margin-top: 15px;
+            }
+            .service-unit .button-group .button-container-new {
+              margin-bottom: 0px;
+            }
+            .service-unit .button-group .button-container-new .button-new {
+              display: block;
+              margin: 0;
+            }
+            .service-unit .button-group .arenda-text-min {
+              display: block;
+              margin-bottom: 0px;
+            }
+          }
+
+          @media (min-width: 768px) {
+            .service-unit {
+              text-align: center;
+              padding-top: 30px;
+              padding-bottom: 30px;
+            }
+            .service-unit .mycontainer .button-group {
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: 1fr 1fr;
+              grid-gap: 15px;
+              align-items: center;
+              margin-top: 15px;
+            }
+            .service-unit .mycontainer .button-group .button-container-new {
+              margin: 0 auto;
+            }
+            .service-unit
+              .mycontainer
+              .button-group
+              .button-container-new
+              .button-new {
+              display: block;
+              margin: 0;
+              margin-top: 5px;
+              margin-bottom: 5px;
+            }
+            .service-unit .mycontainer .button-group .arenda-text-min {
+              display: block;
+              margin-bottom: 0px;
+            }
+            .service-unit .mycontainer .card-img-container {
+              width: 90%;
+            }
+            .service-unit .header-red {
+              font-size: 24px;
+              margin-top: 0px;
+              margin-bottom: 15px;
+            }
+            .service-unit .text {
+              display: block;
+              font-size: 14px;
+              line-height: 20px;
+            }
+            .service-unit .button-group {
+              grid-template-columns: 1fr;
+              grid-template-rows: auto auto;
+            }
+            .service-unit .button-group .arenda-text-min {
+              padding-left: 30px;
+              padding-right: 30px;
+              display: block;
+              margin-bottom: 0px;
+              font-size: 10px;
+              letter-spacing: 0.2px;
+              color: #9b9b9b;
+            }
+          }
+
+          @media (min-width: 992px) {
+            .service-unit {
+              text-align: left;
+              padding-top: 30px;
+              padding-bottom: 30px;
+            }
+            .service-unit .mycontainer .card-img-container {
+              padding-right: 0;
+            }
+            .service-unit .content-wrapper {
+              padding-left: 15px;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            }
+            .service-unit .content-wrapper .top-content .header-red {
+              font-size: 30px;
+              margin-top: 0px;
+              margin-bottom: 15px;
+            }
+            .service-unit .content-wrapper .top-content .text {
+              display: block;
+              font-size: 16px;
+              line-height: 20px;
+            }
+            .service-unit .content-wrapper .bottom-content .button-group {
+              grid-template-columns: 1fr 2fr;
+              grid-template-rows: auto;
+              grid-gap: 30px;
+              border-top: 1px solid rgb(199, 199, 199);
+              margin-top: 0;
+              padding-top: 20px;
+              padding-bottom: 0px;
+            }
+            .service-unit
+              .content-wrapper
+              .bottom-content
+              .button-group
+              .button-container-new {
+              margin-top: 0px;
+              margin-bottom: 0px;
+            }
+            .service-unit
+              .content-wrapper
+              .bottom-content
+              .button-group
+              .button-container-new
+              .button-new {
+              display: block;
+              margin: 0 auto;
+            }
+            .service-unit
+              .content-wrapper
+              .bottom-content
+              .button-group
+              .arenda-text-min {
+              font-size: 11px;
+              padding-left: 0;
+              display: block;
+              margin-bottom: 0px;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .service-unit {
+              text-align: left;
+            }
+            .service-unit .mycontainer .card-img-container {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .service-unit .mycontainer .card-img-container .card-img {
+              display: block;
+            }
+            .service-unit .content-wrapper {
+              padding-left: 30px;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            }
+            .service-unit .content-wrapper .top-content .header-red {
+              font-size: 32px;
+              margin-top: 0px;
+              margin-bottom: 15px;
+            }
+            .service-unit .content-wrapper .top-content .text {
+              display: block;
+              font-size: 16px;
+              line-height: 22px;
+              font-weight: 500;
+            }
+            .service-unit .content-wrapper .bottom-content .button-group {
+              display: grid;
+              grid-template-columns: 1fr 2fr;
+              grid-template-rows: auto;
+              grid-gap: 30px;
+              align-items: center;
+              border-top: 1px solid rgb(199, 199, 199);
+              margin-top: 0;
+              padding-top: 20px;
+              padding-bottom: 0px;
+            }
+            .service-unit
+              .content-wrapper
+              .bottom-content
+              .button-group
+              .button-container-new {
+              margin-top: 0px;
+              margin-bottom: 0px;
+            }
+            .service-unit
+              .content-wrapper
+              .bottom-content
+              .button-group
+              .button-container-new
+              .button-new {
+              display: block;
+              margin: 0 auto;
+            }
+            .service-unit
+              .content-wrapper
+              .bottom-content
+              .button-group
+              .arenda-text-min {
+              display: block;
+              margin-bottom: 0px;
+              font-size: 12px;
+              letter-spacing: 0.2px;
+              color: #9b9b9b;
+            }
+          }
+        `}</style>
       </div>
     );
   }

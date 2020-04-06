@@ -1,6 +1,5 @@
 import React from 'react';
 import YouTube from 'react-youtube';
-import '../scss/video.scss';
 
 class YoutubeVideoLiebherr2 extends React.Component {
   render() {
@@ -12,12 +11,42 @@ class YoutubeVideoLiebherr2 extends React.Component {
     };
 
     return (
-      <YouTube
-        className="myVideo"
-        videoId="bxHzXBenLTY"
-        opts={opts}
-        onReady={this._onReady}
-      />
+      <>
+        <YouTube
+          className="myVideo"
+          videoId="bxHzXBenLTY"
+          opts={opts}
+          onReady={this._onReady}
+        />
+        <style jsx>{`
+          @import '../node_modules/video-react/dist/video-react';
+          .myVideo {
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+            height: 300px;
+          }
+          .video-react-poster {
+            top: 0;
+          }
+
+          .myVideoKompleks-2 {
+            width: auto;
+            overflow: hidden;
+          }
+
+          @media (min-width: 992px) {
+            .myVideo {
+              height: 400px;
+            }
+          }
+          @media (min-width: 1200px) {
+            .myVideo {
+              height: 400px;
+            }
+          }
+        `}</style>
+      </>
     );
   }
 

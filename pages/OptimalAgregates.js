@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Layout from '../components/Layout';
 import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
 import FormPage from '../components/form';
-import '../scss/services/optimal-agregats.scss';
 
 class OptimalAgregates extends Component {
   render() {
@@ -41,7 +40,7 @@ class OptimalAgregates extends Component {
               <div className="col-12 col-md-4 offset-md-1">
                 <div className="img-container">
                   <img
-                    src="../static/images/services/agregates-1.jpg"
+                    src="/images/services/agregates-1.jpg"
                     alt="Силовой агрегат газовой электростанции"
                     title="Силовой агрегат газопоршневой электростанции"
                   />
@@ -62,6 +61,42 @@ class OptimalAgregates extends Component {
           </div>
         </div>
         <FormPage product={serviceName} />
+        <style jsx>{`
+          .optimal-agregats {
+            padding-top: 30px;
+            padding-bottom: 80px;
+          }
+          .optimal-agregats .header-red {
+            padding-left: 15px;
+          }
+          .optimal-agregats .text {
+            margin-bottom: 15px;
+            margin-top: 15px;
+          }
+          .optimal-agregats .img-container {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+          }
+          .optimal-agregats .img-container img {
+            box-shadow: var(--box-shadow);
+          }
+
+          @media (min-width: 576px) {
+            .optimal-agregats .row .col-12 {
+              padding: 0;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .forma {
+              margin-left: 0;
+              margin-right: 0;
+            }
+          }
+        `}</style>
       </Layout>
     );
   }

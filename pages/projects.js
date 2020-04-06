@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Head from '../components/head';
-import '../scss/projects/projectsMain.scss';
 import ProjectsListPlate from '../components/projects/projectsListPlate';
 import Layout from '../components/Layout';
 
@@ -53,7 +52,7 @@ class Projects extends Component {
                   <div className="referenc-list-unit">
                     <a
                       className="referenc-list"
-                      href="../static/docs/referenc-list-converted.pdf"
+                      href="/docs/referenc-list-converted.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -65,6 +64,32 @@ class Projects extends Component {
             </div>
           </div>
         </Layout>
+        <style jsx>{`
+          .projects {
+            position: relative;
+            padding-bottom: 50px;
+          }
+          .projects::after {
+            z-index: -2;
+            position: absolute;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 55%;
+            left: 0;
+            top: 55%;
+            left: 0;
+            transform: translateY(-50%);
+            background: url('/images/bg-projects.jpg') 50% 50% no-repeat;
+            background-size: cover;
+            box-shadow: inset 0px 25px 70px -40px rgba(0, 0, 0, 0.4),
+              inset 0px -25px 70px -40px rgba(0, 0, 0, 0.4);
+          }
+          .projects .mycontainer .row {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+        `}</style>
       </div>
     );
   }

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Layout from '../components/Layout';
 import ServiceUnitPlate from '../components/services/ServiceUnitPlate';
 import FormPage from '../components/form';
-import '../scss/services/pusko-naladka.scss';
 
 class PuskoNalad extends Component {
   render() {
@@ -273,6 +272,166 @@ class PuskoNalad extends Component {
           </div>
         </div>
         <FormPage product={serviceName} />
+        <style jsx>{`
+          .pusko-naladka {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 30px;
+          }
+          .pusko-naladka .section-plate {
+            padding: 30px;
+          }
+          .pusko-naladka .section-plate .row .col-12 {
+            padding: 0;
+          }
+          .pusko-naladka .section-plate .row .col-12 .header-min-colored {
+            margin-top: 30px;
+          }
+          .pusko-naladka
+            .section-plate
+            .row
+            .col-12
+            .razdel-list
+            .razdel-li
+            .text-big {
+            padding-bottom: 7px;
+            line-height: 22px;
+          }
+          .pusko-naladka
+            .section-plate
+            .row
+            .col-12
+            .razdel-list
+            .razdel-li
+            .text {
+            padding-bottom: 7px;
+          }
+          .pusko-naladka
+            .section-plate
+            .row
+            .col-12
+            .razdel-list
+            .razdel-li
+            .razdel-list-ul {
+            padding: 0;
+            font-size: 13px;
+            line-height: 18px;
+            display: block;
+          }
+          .pusko-naladka
+            .section-plate
+            .row
+            .col-12
+            .razdel-list
+            .razdel-li
+            .razdel-list-ul
+            .razdel-ul-li {
+            padding: 0;
+            padding-bottom: 10px;
+          }
+          .pusko-naladka
+            .section-plate
+            .row
+            .col-12
+            .razdel-list
+            .razdel-li
+            .razdel-list-ul
+            .razdel-ul-li
+            .text-italic {
+            display: block;
+            position: relative;
+            padding-left: 25px;
+          }
+          .pusko-naladka
+            .section-plate
+            .row
+            .col-12
+            .razdel-list
+            .razdel-li
+            .razdel-list-ul
+            .razdel-ul-li
+            .text-italic::before {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background-color: var(--accent-red);
+            border-top-left-radius: 10px;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          @media (min-width: 576px) {
+            .pusko-naladka .section-plate {
+              padding: 15px;
+            }
+          }
+
+          @media (min-width: 992px) {
+            .pusko-naladka .section-plate .row .col-12 {
+              padding: 0;
+            }
+            .pusko-naladka .section-plate .row .col-12 .header-min-colored {
+              margin-top: 30px;
+            }
+            .pusko-naladka
+              .section-plate
+              .row
+              .col-12
+              .razdel-list
+              .razdel-li
+              .text-big {
+              padding-bottom: 7px;
+              font-size: 20px;
+              line-height: 26px;
+            }
+
+            .pusko-naladka
+              .section-plate
+              .row
+              .col-12
+              .razdel-list
+              .razdel-li
+              .razdel-list-ul
+              .razdel-ul-li
+              .text-italic {
+              display: block;
+              position: relative;
+              padding-left: 25px;
+              line-height: 26px;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .pusko-naladka .section-plate {
+              padding: 15px;
+            }
+            .pusko-naladka .section-plate .header-red {
+              margin-top: 30px;
+            }
+            .pusko-naladka .section-plate .razdel-list .razdel-li .text-min {
+              margin: 0;
+              padding: 0;
+              font-size: 16px;
+              padding-bottom: 15px;
+              padding-left: 27px;
+              line-height: 24px;
+            }
+            .pusko-naladka
+              .section-plate
+              .razdel-list
+              .razdel-li
+              .razdel-list-ul {
+              padding: 0;
+              padding-left: 46px;
+              font-size: 15px;
+              line-height: 18px;
+              display: block;
+            }
+          }
+        `}</style>
       </Layout>
     );
   }

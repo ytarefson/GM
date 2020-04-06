@@ -1,22 +1,42 @@
 const express = require('express');
 const next = require('next');
-const sitemap = require('./sitemap');
+const bodyParser = require('body-parser');
 const compression = require('compression');
-
-// API
-const email = require('./routes/api/email');
-const formValidation = require('./routes/api/form-validation');
-
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
+const { join } = require('path');
+const { parse } = require('url');
+const helmet = require('helmet');
 
+const email = require('./routes/api/email');
+const formValidation = require('./routes/api/form-validation');
+///////////////////////////////////////////
+///////// Server Configuration  ///////////
+///////////////////////////////////////////
 app.prepare().then(() => {
   const server = express();
+  server.use(helmet());
   server.use(compression());
-  // server.use(express.static('static'));
+  // Body parser middleware
+  server.use(bodyParser.urlencoded({ extended: false }));
+  server.use(bodyParser.json());
 
+  ///////////////////////////////////////////
+  ////////////  Service Worker  /////////////
+  ///////////////////////////////////////////
+
+  server.get('/service-worker.js', (req, res) => {
+    const parsedUrl = parse(req.url, true);
+    let { pathname } = parsedUrl;
+    const filePath = join(__dirname, '.next', pathname);
+    app.serveStatic(req, res, filePath);
+  });
+
+  ///////////////////////////////////////////
+  ////////////    Robots.txt    /////////////
+  ///////////////////////////////////////////
   server.get('/robots.txt', function(req, res) {
     res.type('text/plain');
     res.send(
@@ -160,9 +180,11 @@ app.prepare().then(() => {
   server.use('/api/email', email);
   server.use('/api/form-validation', formValidation);
 
-  server.get('*', (req, res) => {
-    return handle(req, res);
-  });
+  //////////////////////////////////////////////
+  ///// Как себя ведем в остальных случаях /////
+  //////////////////////////////////////////////
+
+  server.get('*', (req, res) => handle(req, res));
 
   server.listen(port, err => {
     if (err) throw err;

@@ -1,6 +1,5 @@
-import React, { Component } from "react";
-import Lightbox from "react-image-lightbox";
-import "../../scss/rasgen/aboutTechnology.scss";
+import React, { Component } from 'react';
+import Lightbox from 'react-image-lightbox';
 
 export class AboutTechnology extends Component {
   constructor(props) {
@@ -27,7 +26,7 @@ export class AboutTechnology extends Component {
             <div className="col-12 col-lg-6 order-lg-2">
               <div className="img-container">
                 <img
-                  src="../../static/images/about-tech.jpg"
+                  src="/images/about-tech.jpg"
                   alt="Распределённая генерация"
                   title="Распределённая генерация"
                   className="about-tech-pic"
@@ -35,7 +34,7 @@ export class AboutTechnology extends Component {
                 />
                 {isOpen && (
                   <Lightbox
-                    mainSrc={`../../static/images/about-tech.jpg`}
+                    mainSrc={`/images/about-tech.jpg`}
                     onCloseRequest={() => this.setState({ isOpen: false })}
                   />
                 )}
@@ -56,6 +55,17 @@ export class AboutTechnology extends Component {
             </div>
           </div>
         </div>
+        <style jsx>{`
+          .aboutTechnology {
+            margin-bottom: 30px;
+          }
+          .aboutTechnology .img-container .about-tech-pic {
+            max-width: 100%;
+            height: auto;
+            margin: 30px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+          }
+        `}</style>
       </div>
     );
   }

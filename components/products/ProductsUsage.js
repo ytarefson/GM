@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import "../../scss/products/products-usage.scss";
+import React, { Component } from 'react';
 
 export default function ProductsUsage() {
   return (
@@ -56,6 +55,108 @@ export default function ProductsUsage() {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        .usage {
+          background-color: var(--l-grey);
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+        .usage .text-bold {
+          color: var(--accent-grey);
+          font-weight: 300;
+        }
+        .usage ul {
+          padding: 0;
+          margin-top: 30px;
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+        }
+        .usage ul li {
+          position: relative;
+          padding: 0;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-left: 35px;
+          margin-bottom: 5px;
+        }
+        .usage ul li::before {
+          display: block;
+          content: '';
+          position: absolute;
+          width: 14px;
+          height: 14px;
+          background-color: var(--accent-red);
+          border-radius: 10px;
+          left: 0px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .usage ul li .text {
+          line-height: 20px;
+        }
+
+        @media (min-width: 768px) {
+          .usage {
+            padding-top: 45px;
+            padding-bottom: 45px;
+          }
+          .usage .text-bold {
+            line-height: 25px;
+            font-size: 19px;
+          }
+          .usage ul li .text {
+            font-size: 19px;
+            line-height: 20px;
+          }
+        }
+        @media (min-width: 992px) {
+          .usage {
+            background-color: #fafafa;
+            padding-top: 30px;
+            padding-bottom: 30px;
+          }
+          .usage .usage-wrapper {
+            padding: 45px;
+            background-color: transparent;
+            background: linear-gradient(
+                to right,
+                #fff 25%,
+                rgba(255, 255, 255, 0.85)
+              ),
+              url('/images/IMG_2.jpg') 100% 100% no-repeat;
+            border-radius: 10px;
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.15);
+          }
+          .usage .usage-wrapper .text-bold {
+            line-height: 26px;
+            font-size: 18px;
+            color: var(--text);
+            font-weight: 500;
+          }
+          .usage .usage-wrapper ul li {
+            position: relative;
+            padding: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 35px;
+          }
+          .usage .usage-wrapper ul li::before {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background-color: var(--accent-red);
+            border-top-left-radius: 10px;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+          }
+        }
+      `}</style>
     </div>
   );
 }

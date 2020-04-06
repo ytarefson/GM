@@ -1,6 +1,5 @@
-import React, { Component } from "react";
-import Lightbox from "react-image-lightbox";
-import "../scss/galery.scss";
+import React, { Component } from 'react';
+import Lightbox from 'react-image-lightbox';
 
 export default class GaleryProducts extends Component {
   constructor(props) {
@@ -26,7 +25,7 @@ export default class GaleryProducts extends Component {
             <div className="img-container">
               <img
                 className="detail-img"
-                src={`../../static/images/products/thumb-${images[0]}`} // /products/
+                src={`/images/products/thumb-${images[0]}`} // /products/
                 alt={product.label}
                 title={product.label}
                 onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}
@@ -37,7 +36,7 @@ export default class GaleryProducts extends Component {
             <div className="img-container">
               <img
                 className="detail-img"
-                src={`../../static/images/products/thumb-${images[1]}`} // /products/
+                src={`/images/products/thumb-${images[1]}`} // /products/
                 alt={product.label}
                 title={product.label}
                 onClick={() => this.setState({ isOpen: true, photoIndex: 1 })}
@@ -48,7 +47,7 @@ export default class GaleryProducts extends Component {
             <div className="img-container">
               <img
                 className="detail-img"
-                src={`../../static/images/products/thumb-${images[2]}`} // /products/
+                src={`/images/products/thumb-${images[2]}`} // /products/
                 alt={product.label}
                 title={product.label}
                 onClick={() => this.setState({ isOpen: true, photoIndex: 2 })}
@@ -59,7 +58,7 @@ export default class GaleryProducts extends Component {
             <div className="img-container">
               <img
                 className="detail-img"
-                src={`../../static/images/products/thumb-${images[3]}`} // /products/
+                src={`/images/products/thumb-${images[3]}`} // /products/
                 alt={product.label}
                 title={product.label}
                 onClick={() => this.setState({ isOpen: true, photoIndex: 3 })}
@@ -69,12 +68,12 @@ export default class GaleryProducts extends Component {
         </div>
         {isOpen && (
           <Lightbox
-            mainSrc={`../../static/images/products/${images[photoIndex]}`} // /products/
-            nextSrc={`../../static/images/products/${
+            mainSrc={`/images/products/${images[photoIndex]}`} // /products/
+            nextSrc={`/images/products/${
               // /products/
               images[(photoIndex + 1) % images.length]
             }`}
-            prevSrc={`../../static/images/products/${
+            prevSrc={`/images/products/${
               // /products/
               images[(photoIndex + images.length - 1) % images.length]
             }`}
@@ -91,6 +90,60 @@ export default class GaleryProducts extends Component {
             }
           />
         )}
+        <style jsx>{`
+          .galery-plate {
+            margin-bottom: 30px;
+          }
+          .galery-products {
+            margin-bottom: 0;
+          }
+          .galery {
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+          .galery .img-container-plate {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 120px 120px;
+            grid-gap: 15px;
+          }
+          .galery .img-container-plate .img-container {
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+          }
+          .galery .img-container-plate .img-container .detail-img {
+            width: auto;
+            height: 100%;
+          }
+
+          @media (min-width: 768px) {
+            .galery .img-container-plate {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              grid-template-rows: 120px;
+              grid-gap: 15px;
+            }
+          }
+          @media (min-width: 992px) {
+            .galery .img-container-plate {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              grid-template-rows: 150px;
+            }
+          }
+          @media (min-width: 1200px) {
+            .galery .img-container-plate {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              grid-template-rows: 180px;
+              grid-gap: 30px;
+            }
+          }
+        `}</style>
       </div>
     );
   }

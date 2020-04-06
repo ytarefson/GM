@@ -1,4 +1,2 @@
-Useragent: *
-Disalow: /o-komnanii
-Host: https://gmenergo.ru
-Sitemap: https://gmenergo.ru/sitemap.xml
+User-agent: *
+Disallow: /

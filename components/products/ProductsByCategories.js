@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import '../../scss/products/productsByCategories.scss';
-
 const ProductsByCategories = data => <div className="mycontainer" />;
 
 ProductsByCategories.getInitialProps = async function(context) {

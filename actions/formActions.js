@@ -4,7 +4,6 @@ import Router from 'next/router';
 
 // validate email
 export const validateFormData = data => dispatch => {
-  console.log(data);
   axios
     .post('/api/form-validation', data)
     .then(res => {
