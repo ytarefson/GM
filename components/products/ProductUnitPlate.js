@@ -19,7 +19,7 @@ export class ProductsUnitPlate extends Component {
 
     this.state = {
       photoIndex: 0,
-      isOpen: false
+      isOpen: false,
     };
   }
 
@@ -30,10 +30,10 @@ export class ProductsUnitPlate extends Component {
     let products = [];
     let product = [];
     const isVideo = false;
-    data.map(item => {
+    data.map((item) => {
       if (item.category === category) {
         products = item.products;
-        products.map(item => {
+        products.map((item) => {
           if (item.id === Number(id)) {
             product = item;
           }
@@ -44,7 +44,7 @@ export class ProductsUnitPlate extends Component {
       isVideo = true;
     }
     let similar = [];
-    products.map(item => {
+    products.map((item) => {
       if (item.id !== Number(id)) {
         if (similar.length < 4) {
           similar.push(item);
@@ -354,7 +354,7 @@ export class ProductsUnitPlate extends Component {
             <OtherNews news={news} />
           </div>
         </div>
-        <style jsx>{`
+        <style jsx global>{`
           .react-fancybox .box {
             position: fixed;
             background-color: rgba(0, 0, 0, 0.4);

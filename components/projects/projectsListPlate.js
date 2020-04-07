@@ -20,7 +20,7 @@ export class ProjectsListPlate extends Component {
             year,
             label,
             as,
-            img
+            img,
           }) => (
             <div className="project-card-small-container" key={key}>
               <Link href={`/proekti?id=${id}`} as={`/proekti/${id}`}>
@@ -51,7 +51,7 @@ export class ProjectsListPlate extends Component {
             </div>
           )
         )}
-        <style jsx>{`
+        <style jsx global>{`
           .projects-list-plate {
             position: relative;
           }
