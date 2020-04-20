@@ -12,6 +12,7 @@
 
 
 # misc
+keys.txt
 .DS_Store
 .env
 npm-debug.log*
