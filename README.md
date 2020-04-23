@@ -1,8 +1,9 @@
-## Рента 76
-
 Использованы основные технологии:
 
 - Next.js
-- Strapi
 - React
-- MongoDB
+- Express
+- Service Worker
+- Sendgrid
+- Bitrix24
+- Bootstrap 
