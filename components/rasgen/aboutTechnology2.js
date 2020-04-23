@@ -7,7 +7,7 @@ export class AboutTechnology2 extends Component {
 
     this.state = {
       photoIndex: 0,
-      isOpen: false
+      isOpen: false,
     };
   }
   render() {
@@ -49,6 +49,11 @@ export class AboutTechnology2 extends Component {
             </div>
           </div>
         </div>
+        <style jsx>{`
+          .about-tech-pic {
+            max-width: 100%;
+          }
+        `}</style>
       </div>
     );
   }

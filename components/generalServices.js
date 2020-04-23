@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import serviceList from './tables/serviceList';
 
-export default GeneralServices => (
+export default (GeneralServices) => (
   <div className="container-fluid generalServices">
     <div className="dots-left" />
     <div className="dots-right" />
@@ -686,13 +686,16 @@ export default GeneralServices => (
           .teh-image-container {
           box-shadow: var(--box-shadow-up);
         }
-        .generalServices
+         {
+          /* .generalServices
           .container
           .cards-container
           .teh-plate:hover
+          .teh-card
           .teh-image-container
           .teh-image {
           filter: blur(4px);
+        } */
         }
         .generalServices
           .container
