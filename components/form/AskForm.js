@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
+import Router from 'next/router';
 import TextFieldGroup from '../common/TextFieldGroup';
 import RadioInputGroup from '../common/RadioInputGroup';
-import { connect } from 'react-redux';
-import { validateFormData } from '../../actions/formActions';
 
-class AskForm extends Component {
+class AskForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,17 +34,12 @@ class AskForm extends Component {
       currentenergytarif: '',
       currentheattarif: '',
       commentary: '',
-      errors: {}
+      isValid: false,
+      errors: {},
     };
     this.onSelect = this.onSelect.bind(this);
     this.onChange = this.onChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.errors) {
-      this.setState({ errors: nextProps.errors });
-    }
   }
 
   onChange(e) {
@@ -60,41 +53,46 @@ class AskForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    const askFormData = {
-      organizationname: this.state.organizationname,
-      organizationadres: this.state.organizationadres,
-      personname: this.state.personname,
-      personstatus: this.state.personstatus,
-      personemail: this.state.personemail,
-      personphone: this.state.personphone,
-      personmobile: this.state.personmobile,
-      locationparams: this.state.locationparams,
-      projectmountadres: this.state.projectmountadres,
-      projectdescription: this.state.projectdescription,
-      operationmode: this.state.operationmode,
-      proposedmodel: this.state.proposedmodel,
-      electricpower: this.state.electricpower,
-      connectiontype: this.state.connectiontype,
-      minimalload: this.state.minimalload,
-      energyloadgraph: this.state.energyloadgraph,
-      installationsettings: this.state.installationsettings,
-      fueltype: this.state.fueltype,
-      utilsystem: this.state.utilsystem,
-      reqheatpower: this.state.reqheatpower,
-      chefmontage: this.state.chefmontage,
-      stafflearning: this.state.stafflearning,
-      otherworks: this.state.otherworks,
-      gasprice: this.state.gasprice,
-      currentenergytarif: this.state.currentenergytarif,
-      currentheattarif: this.state.currentheattarif,
-      commentary: this.state.commentary
-    };
-    this.props.validateFormData(askFormData);
+    fetch('/api/form-validation', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        organizationname: this.state.organizationname,
+        organizationadres: this.state.organizationadres,
+        personname: this.state.personname,
+        personstatus: this.state.personstatus,
+        personemail: this.state.personemail,
+        personphone: this.state.personphone,
+        personmobile: this.state.personmobile,
+        locationparams: this.state.locationparams,
+        projectmountadres: this.state.projectmountadres,
+        projectdescription: this.state.projectdescription,
+        operationmode: this.state.operationmode,
+        proposedmodel: this.state.proposedmodel,
+        electricpower: this.state.electricpower,
+        connectiontype: this.state.connectiontype,
+        minimalload: this.state.minimalload,
+        energyloadgraph: this.state.energyloadgraph,
+        installationsettings: this.state.installationsettings,
+        fueltype: this.state.fueltype,
+        utilsystem: this.state.utilsystem,
+        reqheatpower: this.state.reqheatpower,
+        chefmontage: this.state.chefmontage,
+        stafflearning: this.state.stafflearning,
+        otherworks: this.state.otherworks,
+        gasprice: this.state.gasprice,
+        currentenergytarif: this.state.currentenergytarif,
+        currentheattarif: this.state.currentheattarif,
+        commentary: this.state.commentary,
+      }),
+    }).then((res) => Router.push('/confirm-email'));
+
     window.scrollTo(0, 0);
   }
-
   render() {
-    const { errors } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
         <div className="container-fluid form-razdel ask-form">
@@ -125,7 +123,7 @@ class AskForm extends Component {
                       label="Название организации:"
                       value={this.state.organizationname}
                       onChange={this.onChange}
-                      error={errors.organizationname}
+                      error={this.state.errors?.organizationname}
                       info=""
                     />
                     <TextFieldGroup
@@ -134,7 +132,7 @@ class AskForm extends Component {
                       label="Адрес организации:"
                       value={this.state.organizationadres}
                       onChange={this.onChange}
-                      error={errors.organizationadres}
+                      error={this.state.errors?.organizationadres}
                     />
                     <TextFieldGroup
                       name="personname"
@@ -142,7 +140,7 @@ class AskForm extends Component {
                       label="ФИО:"
                       value={this.state.personname}
                       onChange={this.onChange}
-                      error={errors.personname}
+                      error={this.state.errors?.personname}
                     />
                     <TextFieldGroup
                       name="personstatus"
@@ -150,7 +148,7 @@ class AskForm extends Component {
                       label="Должность:"
                       value={this.state.personstatus}
                       onChange={this.onChange}
-                      error={errors.personstatus}
+                      error={this.state.errors?.personstatus}
                     />
                     <TextFieldGroup
                       name="personemail"
@@ -158,7 +156,7 @@ class AskForm extends Component {
                       label="e-mail:"
                       value={this.state.personemail}
                       onChange={this.onChange}
-                      error={errors.personemail}
+                      error={this.state.errors?.personemail}
                     />
                     <TextFieldGroup
                       name="personphone"
@@ -166,7 +164,7 @@ class AskForm extends Component {
                       label="Городской телефон:"
                       value={this.state.personphone}
                       onChange={this.onChange}
-                      error={errors.personphone}
+                      error={this.state.errors?.personphone}
                     />
                     <TextFieldGroup
                       name="personmobile"
@@ -174,7 +172,7 @@ class AskForm extends Component {
                       label="Мобильный телефон:"
                       value={this.state.personmobile}
                       onChange={this.onChange}
-                      error={errors.personmobile}
+                      error={this.state.errors?.personmobile}
                     />
                   </div>
                 </div>
@@ -197,7 +195,7 @@ class AskForm extends Component {
                       label="Характеристики места расположения:"
                       value={this.state.locationparams}
                       onChange={this.onChange}
-                      error={errors.locationparams}
+                      error={this.state.errors?.locationparams}
                     />
                     <TextFieldGroup
                       name="projectmountadres"
@@ -205,7 +203,7 @@ class AskForm extends Component {
                       label="Адрес установки (город расположения монтажной площадки): "
                       value={this.state.projectmountadres}
                       onChange={this.onChange}
-                      error={errors.projectmountadres}
+                      error={this.state.errors?.projectmountadres}
                     />
                     <TextFieldGroup
                       name="projectdescription"
@@ -213,7 +211,7 @@ class AskForm extends Component {
                       label="Дополнительная информация о проекте: "
                       value={this.state.projectdescription}
                       onChange={this.onChange}
-                      error={errors.projectdescription}
+                      error={this.state.errors?.projectdescription}
                     />
                   </div>
                 </div>
@@ -236,12 +234,12 @@ class AskForm extends Component {
                       values={[
                         'Резервный генератор (аварийный)',
                         'Посменный длительный режим',
-                        'Постоянный режим работы (круглосуточный)'
+                        'Постоянный режим работы (круглосуточный)',
                       ]}
                       askother={true}
                       otherlabel="Другой"
                       onSelect={this.onSelect}
-                      error={errors.operationmode}
+                      error={this.state.errors?.operationmode}
                     />
                     <TextFieldGroup
                       name="proposedmodel"
@@ -250,7 +248,7 @@ class AskForm extends Component {
                     и количество генераторных установок: "
                       value={this.state.proposedmodel}
                       onChange={this.onChange}
-                      error={errors.proposedmodel}
+                      error={this.state.errors?.proposedmodel}
                     />
                     {/* <span>
                       Электрические параметры для подбора оборудования:
@@ -261,7 +259,7 @@ class AskForm extends Component {
                       label="Требуемая электрическая мощность (кВт): "
                       value={this.state.electricpower}
                       onChange={this.onChange}
-                      error={errors.electricpower}
+                      error={this.state.errors?.electricpower}
                     />
                     <RadioInputGroup
                       name="connectiontype"
@@ -269,12 +267,12 @@ class AskForm extends Component {
                       values={[
                         'Один генератор на изолированную нагрузку (изолированно от централизованной сети)',
                         'Параллельная работа нескольких генераторов на общую нагрузку (изолированно от сети )',
-                        'Параллельная работа с централизованной сетью (с запретом экспорта электроэнергии в сеть)'
+                        'Параллельная работа с централизованной сетью (с запретом экспорта электроэнергии в сеть)',
                       ]}
                       askother={true}
                       otherlabel="Другое"
                       onSelect={this.onSelect}
-                      error={errors.connectiontype}
+                      error={this.state.errors?.connectiontype}
                     />
                     <TextFieldGroup
                       name="minimalload"
@@ -282,7 +280,7 @@ class AskForm extends Component {
                       label="Минимальная продолжительная нагрузка: "
                       value={this.state.minimalload}
                       onChange={this.onChange}
-                      error={errors.minimalload}
+                      error={this.state.errors?.minimalload}
                     />
                     <RadioInputGroup
                       name="installationsettings"
@@ -291,12 +289,12 @@ class AskForm extends Component {
                         'Поставка в открытом исполнении (монтаж в здании)',
                         'Поставка в шумозащитном кожухе на улице',
                         'Поставка в шумозащитном кожухе в здании',
-                        'В контейнере (монтажная площадка расположена на улице)'
+                        'В контейнере (монтажная площадка расположена на улице)',
                       ]}
                       askother={true}
                       otherlabel="Другое"
                       onSelect={this.onSelect}
-                      error={errors.installationsettings}
+                      error={this.state.errors?.installationsettings}
                     />
                     <RadioInputGroup
                       name="fueltype"
@@ -307,7 +305,7 @@ class AskForm extends Component {
 											(для любого газа кроме метана, приложить компонентный состав)
 											"
                       onSelect={this.onSelect}
-                      error={errors.fueltype}
+                      error={this.state.errors?.fueltype}
                     />
                   </div>
                 </div>
@@ -328,7 +326,7 @@ class AskForm extends Component {
                       label="Система Утилизации Тепла (СУТ): "
                       value={this.state.utilsystem}
                       onChange={this.onChange}
-                      error={errors.utilsystem}
+                      error={this.state.errors?.utilsystem}
                     />
                     <TextFieldGroup
                       name="reqheatpower"
@@ -336,7 +334,7 @@ class AskForm extends Component {
                       label="Требуемая тепловая мощность: "
                       value={this.state.reqheatpower}
                       onChange={this.onChange}
-                      error={errors.reqheatpower}
+                      error={this.state.errors?.reqheatpower}
                     />
                   </div>
                 </div>
@@ -357,7 +355,7 @@ class AskForm extends Component {
                       label="Шеф-монтажные работы и Пуско-наладочные работы: "
                       value={this.state.chefmontage}
                       onChange={this.onChange}
-                      error={errors.chefmontage}
+                      error={this.state.errors?.chefmontage}
                     />
                     <TextFieldGroup
                       name="stafflearning"
@@ -365,7 +363,7 @@ class AskForm extends Component {
                       label="Обучение эксплуатирующего персонала: "
                       value={this.state.stafflearning}
                       onChange={this.onChange}
-                      error={errors.stafflearning}
+                      error={this.state.errors?.stafflearning}
                     />
                     <TextFieldGroup
                       name="otherworks"
@@ -373,7 +371,7 @@ class AskForm extends Component {
                       label="Перечислите желаемые дополнительные работы и услуги: "
                       value={this.state.otherworks}
                       onChange={this.onChange}
-                      error={errors.otherworks}
+                      error={this.state.errors?.otherworks}
                     />
                   </div>
                 </div>
@@ -398,7 +396,7 @@ class AskForm extends Component {
                       label="Стоимость 1000 м3 газа (руб./1000 м3): "
                       value={this.state.gasprice}
                       onChange={this.onChange}
-                      error={errors.gasprice}
+                      error={this.state.errors?.gasprice}
                     />
                     <TextFieldGroup
                       name="currentenergytarif"
@@ -406,7 +404,7 @@ class AskForm extends Component {
                       label="Текущий тариф на электроэнергию, руб./кВт*час: "
                       value={this.state.currentenergytarif}
                       onChange={this.onChange}
-                      error={errors.currentenergytarif}
+                      error={this.state.errors?.currentenergytarif}
                     />
                     <TextFieldGroup
                       name="currentheattarif"
@@ -414,7 +412,7 @@ class AskForm extends Component {
                       label="Текущий тариф на тепловую энергию, руб./Гкал: "
                       value={this.state.currentheattarif}
                       onChange={this.onChange}
-                      error={errors.currentheattarif}
+                      error={this.state.errors?.currentheattarif}
                     />
                     <TextFieldGroup
                       name="commentary"
@@ -422,7 +420,7 @@ class AskForm extends Component {
                       label="Комментарии: "
                       value={this.state.commentary}
                       onChange={this.onChange}
-                      error={errors.commentary}
+                      error={this.state.errors?.commentary}
                     />
                   </div>
                 </div>
@@ -443,7 +441,7 @@ class AskForm extends Component {
             </div>
           </div>
         </div>
-        <style jsx>{`
+        <style jsx global>{`
           .razdel-title {
             display: block;
             text-transform: uppercase;
@@ -686,13 +684,4 @@ class AskForm extends Component {
   }
 }
 
-AskForm.propTypes = {
-  validateFormData: PropTypes.func.isRequired,
-  errors: PropTypes.object.isRequired
-};
-
-const mapStateToProps = state => ({
-  errors: state.errors
-});
-
-export default connect(mapStateToProps, { validateFormData })(AskForm);
+export default AskForm;

@@ -4,10 +4,6 @@ import Layout from '../components/Layout';
 import AskForm from '../components/form/AskForm';
 
 class Home extends Component {
-  static getInitialProps({ reduxStore, req }) {
-    return {};
-  }
-
   render() {
     return (
       <div className="home">

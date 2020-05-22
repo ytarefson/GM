@@ -18228,7 +18228,7 @@ function Home() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 4:
 /*!**********************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=G%3A%5COSPanel%5Cdomains%5Cgmnext9%5Cpages%5Cindex.js ***!
   \**********************************************************************************************************************/
@@ -18251,5 +18251,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

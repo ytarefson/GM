@@ -4,13 +4,13 @@ import thunkMiddleware from 'redux-thunk';
 import rootReducer from './reducers';
 
 const initialState = {
-  errors: {}
+  errors: {},
 };
 
-export function initializeStore(initialState = initialState) {
+export function initializeStore(State = initialState) {
   return createStore(
     rootReducer,
-    initialState,
+    State,
     composeWithDevTools(applyMiddleware(thunkMiddleware))
   );
 }
