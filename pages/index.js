@@ -10,6 +10,7 @@ import Layout from '../components/Layout';
 import FormPage from '../components/form';
 import TextBlock from '../components/textBlock';
 import NewsAdv from '../components/newsAdv';
+import JumboAskForm from '../components/JumboAskForm';
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <Head url="https://gmenergo.ru" ogImage="/images/favicon.ico" />
       <Layout>
         <MainAdv />
+        <JumboAskForm />
         <ProductsAdv />
         <PortfolioLinks />
         <TextBlock />

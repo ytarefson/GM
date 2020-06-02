@@ -102,8 +102,8 @@ export default function JumboAskForm() {
             padding-bottom: 30px;
           }
           .jumbo-askForm .wrapper {
-            padding-left: 15px;
-            padding-right: 15px;
+            //padding-left: 15px;
+            //padding-right: 15px;
           }
         }
         @media (min-width: 768px) {
@@ -164,13 +164,14 @@ export default function JumboAskForm() {
         }
         @media (min-width: 1200px) {
           .jumbo-askForm {
-            background: url('/images/textures/gplaypattern_@2X.png');
+            background: none;
+            //background: url('/images/textures/gplaypattern_@2X.png');
             min-height: 150px;
             padding-top: 30px;
             padding-bottom: 30px;
             margin-bottom: 0px;
-            border-top: 15px solid rgb(240, 240, 240);
-            border-bottom: 15px solid rgb(240, 240, 240);
+            //border-top: 15px solid rgb(240, 240, 240);
+            //border-bottom: 15px solid rgb(240, 240, 240);
           }
           .jumbo-askForm .wrapper {
             display: grid;
