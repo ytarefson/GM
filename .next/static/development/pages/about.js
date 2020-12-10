@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\news.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\about.js"],{
 
 /***/ "./components/Layout.js":
 /*!******************************!*\
@@ -522,491 +522,6 @@ var Nav = function Nav() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
-
-/***/ }),
-
-/***/ "./components/news/newsListPlate.js":
-/*!******************************************!*\
-  !*** ./components/news/newsListPlate.js ***!
-  \******************************************/
-/*! exports provided: NewsListPlate, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewsListPlate", function() { return NewsListPlate; });
-/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _tables_newsList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../tables/newsList */ "./components/tables/newsList.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_8__);
-
-
-
-
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
-
-function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, result); }; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-
-
-
-var NewsListPlate = /*#__PURE__*/function (_Component) {
-  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(NewsListPlate, _Component);
-
-  var _super = _createSuper(NewsListPlate);
-
-  function NewsListPlate() {
-    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, NewsListPlate);
-
-    return _super.apply(this, arguments);
-  }
-
-  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(NewsListPlate, [{
-    key: "render",
-    value: function render() {
-      var data = _tables_newsList__WEBPACK_IMPORTED_MODULE_7__["default"].slice().reverse();
-      data = data.slice(1);
-      return __jsx("div", {
-        className: "jsx-159698758" + " " + "news-cards-small-plate"
-      }, data.map(function (_ref) {
-        var key = _ref.key,
-            id = _ref.id,
-            label = _ref.label,
-            preview_text = _ref.preview_text,
-            img = _ref.img,
-            updated_at = _ref.updated_at,
-            created_at = _ref.created_at,
-            category = _ref.category;
-        return __jsx(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-          href: "/novosti?id=".concat(id),
-          as: "/novosti/".concat(id),
-          key: key
-        }, __jsx("a", {
-          className: "jsx-159698758" + " " + "news-card-small"
-        }, __jsx("div", {
-          className: "jsx-159698758" + " " + "row m-0"
-        }, __jsx("div", {
-          className: "jsx-159698758" + " " + "col-12 col-md-3"
-        }, __jsx("div", {
-          className: "jsx-159698758" + " " + "img-container"
-        }, __jsx("img", {
-          src: "/images/".concat(img),
-          alt: label,
-          title: label,
-          className: "jsx-159698758" + " " + "news-card-img"
-        }))), __jsx("div", {
-          className: "jsx-159698758" + " " + "col-12 col-md-9 pl-xl-4"
-        }, __jsx("div", {
-          className: "jsx-159698758" + " " + "news-details"
-        }, __jsx("span", {
-          className: "jsx-159698758" + " " + "news-created"
-        }, created_at), __jsx("span", {
-          className: "jsx-159698758" + " " + "news-category"
-        }, category), __jsx("span", {
-          className: "jsx-159698758" + " " + "news-updated"
-        }, updated_at)), __jsx("h2", {
-          className: "jsx-159698758" + " " + "news-header-min"
-        }, label), __jsx("div", {
-          className: "jsx-159698758" + " " + "news-description"
-        }, preview_text)))));
-      }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default.a, {
-        id: "159698758"
-      }, [".news-cards-small-plate.jsx-159698758{margin-top:15px;}", ".news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758{display:block;margin:0px 0;padding-top:40px;padding-bottom:40px;-webkit-transition:all 0.2s ease-in;transition:all 0.2s ease-in;position:relative;}", ".news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758::before{display:block;position:absolute;content:'';bottom:0;left:0;right:0;width:100%;height:1px;background-color:rgb(255,252,252);}", ".news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758::after{display:block;position:absolute;content:'';bottom:2px;left:0;right:0;width:100%;height:1px;background-color:rgb(223,223,223);}", ".news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758:hover .news-header-min.jsx-159698758{color:var(--accent-grey);}", ".news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758 .img-container.jsx-159698758{margin-bottom:10px;}", ".news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758 .img-container.jsx-159698758 .news-card-img.jsx-159698758{box-shadow:var(--box-shadow);border-radius:var(--border-radius);max-width:100%;}", ".news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758 .news-details.jsx-159698758{margin-top:10px;line-height:18px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}", ".news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758 .news-details.jsx-159698758:nth-child(1){font-size:12px;}", ".news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758 .news-header-min.jsx-159698758{font-size:16px;font-weight:700;line-height:24px;color:#313131;}", ".news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758 .news-description.jsx-159698758{color:#8b8b8b;}", "@media (min-width:768px){.news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758 .img-container.jsx-159698758{padding-top:0px;}.news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758 .news-details.jsx-159698758{margin-top:0px;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}", "@media (min-width:992px){.news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758{padding-top:30px;padding-bottom:30px;}.news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758 .news-details.jsx-159698758{line-height:18px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}.news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758 .news-details.jsx-159698758:nth-child(1){font-size:14px;font-weight:300;color:darkgrey;}}", "@media (min-width:1200px){.news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758{margin-top:30px;margin-bottom:30px;}.news-cards-small-plate.jsx-159698758 .news-card-small.jsx-159698758 .news-header-min.jsx-159698758{font-size:22px;-webkit-letter-spacing:-0.6px;-moz-letter-spacing:-0.6px;-ms-letter-spacing:-0.6px;letter-spacing:-0.6px;line-height:30px;margin-bottom:20px;margin-top:15px;}}"]));
-    }
-  }]);
-
-  return NewsListPlate;
-}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
-/* harmony default export */ __webpack_exports__["default"] = (NewsListPlate);
-
-/***/ }),
-
-/***/ "./components/news/newsMain.js":
-/*!*************************************!*\
-  !*** ./components/news/newsMain.js ***!
-  \*************************************/
-/*! exports provided: NewsMain, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewsMain", function() { return NewsMain; });
-/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _tables_newsList__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../tables/newsList */ "./components/tables/newsList.js");
-
-
-
-
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
-
-function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, result); }; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-
-
-
-var NewsMain = /*#__PURE__*/function (_Component) {
-  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(NewsMain, _Component);
-
-  var _super = _createSuper(NewsMain);
-
-  function NewsMain() {
-    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, NewsMain);
-
-    return _super.apply(this, arguments);
-  }
-
-  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(NewsMain, [{
-    key: "render",
-    value: function render() {
-      var data = _tables_newsList__WEBPACK_IMPORTED_MODULE_8__["default"];
-      var shortData = data[data.length - 1];
-      return __jsx("div", {
-        className: "jsx-3823657879" + " " + "news-main-plate"
-      }, __jsx("div", {
-        className: "jsx-3823657879" + " " + "row m-0"
-      }, __jsx("div", {
-        className: "jsx-3823657879" + " " + "col-12 col-md-6 p-0 order-2 order-md-1 pl-3 pr-4 news-details-plate"
-      }, __jsx("div", {
-        className: "jsx-3823657879" + " " + "news-details"
-      }, __jsx("span", {
-        className: "jsx-3823657879" + " " + "news-created"
-      }, shortData.created_at), __jsx("span", {
-        className: "jsx-3823657879" + " " + "news-category"
-      }, shortData.category), __jsx("span", {
-        className: "jsx-3823657879" + " " + "news-updated"
-      }, shortData.updated_at)), __jsx("h2", {
-        className: "jsx-3823657879" + " " + "news-header"
-      }, shortData.label), __jsx("p", {
-        className: "jsx-3823657879" + " " + "text-common news-description"
-      }, shortData.preview_text), __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        href: "/novosti?id=".concat(shortData.id),
-        as: "/novosti/".concat(shortData.id),
-        key: shortData.key
-      }, __jsx("div", {
-        className: "jsx-3823657879" + " " + "news-button"
-      }, __jsx("a", {
-        className: "jsx-3823657879" + " " + "news-button-link"
-      }, "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435")))), __jsx("div", {
-        className: "jsx-3823657879" + " " + "col-12 col-md-6 pl-3 pr-3 order-1 order-md-2"
-      }, __jsx("div", {
-        className: "jsx-3823657879" + " " + "img-container"
-      }, __jsx("img", {
-        src: "/images/".concat(shortData.img),
-        alt: shortData.label,
-        title: shortData.label,
-        className: "jsx-3823657879" + " " + "news-card-img"
-      })))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default.a, {
-        id: "3823657879"
-      }, [".bg-color.jsx-3823657879{padding-top:15px;padding-bottom:15px;}", ".bg-color.jsx-3823657879 .subheading-red-top.jsx-3823657879{margin-top:10px;}", ".news.jsx-3823657879{padding-bottom:80px;position:relative;background-color:#fafafa;z-index:0;}", ".news.jsx-3823657879 .razdel-name.jsx-3823657879{font-family:var(--molot-font);display:block;color:rgb(170,170,170);font-weight:700;padding-left:16px;padding-top:15px;-webkit-letter-spacing:4px;-moz-letter-spacing:4px;-ms-letter-spacing:4px;letter-spacing:4px;}", ".news.jsx-3823657879 .section-plate.jsx-3823657879{display:block;max-width:1170px;margin:10px auto;}", ".news-ul.jsx-3823657879{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding-left:0;}", ".tg.jsx-3823657879{margin:0 -5px;}", ".tg.jsx-3823657879 tbody.jsx-3823657879 tr.jsx-3823657879 th.jsx-3823657879,.tg.jsx-3823657879 tbody.jsx-3823657879 tr.jsx-3823657879 td.jsx-3823657879{border:1px solid black;}", ".tg.jsx-3823657879 tbody.jsx-3823657879 tr.jsx-3823657879 th.jsx-3823657879 span.jsx-3823657879,.tg.jsx-3823657879 tbody.jsx-3823657879 tr.jsx-3823657879 td.jsx-3823657879 span.jsx-3823657879{display:block;padding:10px;}", ".news-main-plate.jsx-3823657879{margin-top:30px;margin-bottom:30px;padding-bottom:30px;}", ".news-main-plate.jsx-3823657879 .news-button.jsx-3823657879{margin:20px 0 20px auto;display:block;width:240px;height:60px;text-align:center;line-height:53px;border-radius:3px;-webkit-transition:all 0.15s ease-in;transition:all 0.15s ease-in;border:3px solid rgb(192,192,192);}", ".news-main-plate.jsx-3823657879 .news-button.jsx-3823657879:hover{background-color:#fff;border:3px solid rgb(245,61,64);cursor:pointer;box-shadow:var(--box-shadow);}", ".news-main-plate.jsx-3823657879 .news-button.jsx-3823657879:hover .news-button-link.jsx-3823657879{color:var(--accent-red);}", ".news-main-plate.jsx-3823657879 .news-button.jsx-3823657879:active{background-color:lightgrey;}", ".news-main-plate.jsx-3823657879 .news-button.jsx-3823657879 .news-button-link.jsx-3823657879{font-weight:700;color:grey;}", ".news-details-plate.jsx-3823657879{margin-bottom:20px;}", ".news-details.jsx-3823657879{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;color:#c4c4c4;font-family:var(--noto-font);font-size:12px;font-weight:400;line-height:16px;-webkit-letter-spacing:-0.35px;-moz-letter-spacing:-0.35px;-ms-letter-spacing:-0.35px;letter-spacing:-0.35px;margin-bottom:10px;padding-bottom:5px;border-bottom:1px solid #c4c4c4;}", ".news-details.jsx-3823657879 .news-created.jsx-3823657879{margin-right:8px;}", ".news-details.jsx-3823657879 .news-category.jsx-3823657879{margin-right:8px;}", ".news-details.jsx-3823657879 .news-updated.jsx-3823657879{margin-right:8px;}", ".news-header.jsx-3823657879{color:#313131;font-family:var(--noto-font);font-size:18px;font-weight:700;line-height:22px;margin-bottom:10px;-webkit-letter-spacing:-0.6px;-moz-letter-spacing:-0.6px;-ms-letter-spacing:-0.6px;letter-spacing:-0.6px;}", ".news-description.jsx-3823657879{display:block;margin-bottom:10px;}", ".news-main-plate.jsx-3823657879 .img-container.jsx-3823657879{margin-bottom:15px;border-radius:var(--border-radius);}", ".news-main-plate.jsx-3823657879 .img-container.jsx-3823657879 .news-card-img.jsx-3823657879{max-width:100%;border-radius:var(--border-radius);box-shadow:2px 2px 4px rgba(0,0,0,0.2);}", "@media (min-width:576px){.news-main-plate.jsx-3823657879 .news-details.jsx-3823657879{font-size:14px;}.news-header.jsx-3823657879{font-size:20px;margin-top:20px;line-height:24px;margin-bottom:10px;}.news-description.jsx-3823657879{display:block;margin-bottom:30px;}}", "@media (min-width:768px){.news-description.jsx-3823657879{display:block;margin-bottom:10px;}.news-main-plate.jsx-3823657879 .news-button.jsx-3823657879{margin:0 auto 0 0;}}", "@media (min-width:992px){.news-header.jsx-3823657879{font-size:24px;margin-top:0px;line-height:28px;margin-bottom:20px;}.news-description.jsx-3823657879{display:block;margin-bottom:10px;}.news-main-plate.jsx-3823657879 .news-button.jsx-3823657879{margin:20px auto 0 0;}}", "@media (min-width:1200px){.bg-color.jsx-3823657879 .subheading-red-top.jsx-3823657879{margin-top:10px;}.news-header.jsx-3823657879{font-size:28px;margin-top:30px;line-height:36px;margin-bottom:20px;}.news-description.jsx-3823657879{display:block;font-size:16px;line-height:24px;margin-bottom:30px;font-weight:300;color:var(--accent-grey);}.news-main-plate.jsx-3823657879{padding-bottom:0;}.news-main-plate.jsx-3823657879 .news-button.jsx-3823657879{margin:45px auto 0 0;}}"]));
-    }
-  }]);
-
-  return NewsMain;
-}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
-/* harmony default export */ __webpack_exports__["default"] = (NewsMain);
-
-/***/ }),
-
-/***/ "./components/tables/newsList.js":
-/*!***************************************!*\
-  !*** ./components/tables/newsList.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var newsList = [{
-  label: 'Льготный лизинг энергетического оборудования',
-  id: 0,
-  img: 'news/lizing.jpg',
-  category: 'Наука и техника',
-  created_at: '12.10.2018',
-  updated_at: '12.10.2018:14.58',
-  author: 'А.В. Хухарев',
-  preview_text: 'Информируем Вас о новом формате поддержки производственных предприятий - льготном лизинге энергетического оборудования.',
-  description: '<p>Информируем Вас о новом формате поддержки производственных предприятий - льготном лизинге энергетического оборудования.</p><br><p>При участии АО «Федеральная корпорация по развитию малого и среднего предпринимательства» в Российской Федерации созданы 4 региональные лизинговые компании.</p><br><p>АО «Региональная лизинговая компания Ярославской области» находиться в г. Ярославль и преимущественно работает по центральному и северо-западному федеральному округу. Руководитель компании - Филиппов Илья Олегович .</p><br><p>АО «Региональная лизинговая компания Ярославской области» предлагает  Вам  воспользоваться программой льготного лизинга на приобретение нового оборудования для субъектов индивидуального и малого предпринимательства.</p><br><p><b>Условия предоставления льготного лизинга:</b></p><br><table class="tg"><tr><th class="tg-0lax"><span>процентная ставка</span></th><th class="tg-0lax"><span>6% годовых - для российского оборудования</span><br><span>8% годовых - для иностранного оборудования</span></th></tr><tr><td class="tg-0lax"><span>авансовый платеж</span></td><td class="tg-0lax"><span>от 15% стоимости предмета лизинга</span></td></tr><tr><td class="tg-0lax"><span>сумма финансирования</span></td><td class="tg-0lax"><span>от 5 млн. рублей до 200 млн. рублей</span></td></tr><tr><td class="tg-0lax"><span>срок финансирования</span></td><td class="tg-0lax"><span>от 13 месяцев до 5 лет</span></td></tr></table><br><p><b>Предмет лизинга:</b></p><br><ul class="news-ul"><li>Высокотехнологичное и инновационное оборудование</li><li>Промышленное оборудование</li><li>Оборудование в сфере переработки и хранения с/х продукции</li></ul><br><p>С более детальной информацией о нашей компании и предоставляемых услугах Вы можете ознакомиться в ООО «Газовые машины», либо позвонить по телефону: <b>8 (4852) 58-80-84.</b></p>'
-}, {
-  label: 'Расширение гарантии и Увеличение межсервисных интервалов на газопоршневые электростанции MAN',
-  id: 1,
-  img: 'news/interval.jpg',
-  category: 'Наука и техника',
-  created_at: '12.10.2018',
-  updated_at: '12.10.2018:14.58',
-  author: 'А.В. Хухарев',
-  preview_text: 'В результате совместной работы с инженерами концерна MAN, направленной на  реализацию комплекса мероприятий по улучшению качества выпускаемых газопоршневых электростанций с двигателями MAN...',
-  description: '<p>В результате совместной работы с инженерами концерна MAN, направленной на  реализацию комплекса мероприятий по улучшению качества выпускаемых газопоршневых электростанций с двигателями MAN, увеличен гарантийный срок на электростанции нашего производства до 24 месяцев.</p><br><p>Кроме того, согласовано расширение межсервисных интервалов на электростанции MAN 200 - 250 с 1 000 до 1500 моточасов, MAN 300-500 c 900 до 1000 моточасов, что позволяет нашим заказчикам существенно экономить на эксплуатационных расходах.</p>'
-}, {
-  label: 'Изготовлен первый образец газопоршневой электростанции с двигателем ЯМЗ 530 CNG',
-  id: 2,
-  img: 'news/first-maid.jpg',
-  category: 'Наука и техника',
-  created_at: '12.10.2018',
-  updated_at: '12.10.2018:14.58',
-  author: 'А.В. Хухарев',
-  preview_text: 'ООО «Газовые машины» совместно с ПАО «Автодизель» изготовлен первый серийный образец газовой электростанции',
-  description: '<p>ООО «Газовые машины» совместно с ПАО «Автодизель» изготовлен первый серийный образец газовой электростанции мощностью 150 кВт на базе нового перспективного семейства газопоршневых рядных двигателей ЯМЗ 530 CNG.</p><br><p>На базе этого семейства двигателей «Газовые машины» совместно с «Группой ГАЗ» планируют выпускать модельный ряд газопоршневых электростанций мощностью от 30 до 150 кВт экологического класса 5. </p><br><p>4-х и 6-цилиндровые модели ЯМЗ-530 CNG разработаны совместно с компанией Westport – мировым лидером в создании газовых двигателей для коммерческого транспорта (изделия компаний Cummins, Caterpillar, GM, Kenworth, Hyundai, Volvo, Weichai).</p><br><p>ЯМЗ-530 CNG по техническим характеристикам и потребительским качествам не уступают лучшим мировым аналогам, обеспечивает выполнение экологических параметров euro-5 и ресурс до капитального ремонта на уровне лучших мировых образцов (не менее 50 000 моточасов).</p><br><p>Изготовление газовых двигателей ЯМЗ-530 CNG осуществляется на современном производстве средних рядных двигателей в едином потоке с дизельными моделями с обеспечением мирового уровня качества. Компоненты CNG крупнейших мировых производителей Federal Mogul, Bosch, Nikki, MotorTech, KarlDungs</p><br><p>Семейство двигателей представлено 4-х и 6-ти цилиндровыми газовыми двигателями (CNG) семейства ЯМЗ-530, 4-тактные, с рядным расположением цилиндров, жидкостной системой охлаждения, турбонаддувом и охлаждением наддувочного воздуха. Степень сжатия 12. По выбросам вредных веществ соответствуют экологическому классу 5 – ТР ТС 018/2011, Правила ООН № 49-05В2 (G) - Euro 5.</p><br><p>Инженерами ООО «Газовые машины», совместно с компанией Motortech (Германия) проведены работы по адаптации транспортной версии газового двигателя для применения в составе стационарных электростанций. </p><br><p>17 августа 2017 г. электростанции были презентованы Президентом Группы ГАЗ Вадимом Сорокиным Генеральному директору ПАО «Россети» Олегу Бударину.<br>Первые единицы электростанций уже отгружены потребителям.</p>'
-}, {
-  label: 'Проведен аудит производства концерном MAN',
-  id: 3,
-  img: 'news/audit-man.jpg',
-  category: 'Наука и техника',
-  created_at: '12.10.2018',
-  updated_at: '12.10.2018:14.58',
-  author: 'А.В. Хухарев',
-  preview_text: 'Завершен ежегодный технический аудит производства ООО «Газовые машины» техническими специалистами концерна MAN.',
-  description: '<p>Завершен ежегодный технический аудит производства ООО «Газовые машины» техническими специалистами концерна MAN. В ходе аудита поставлена высокая оценка качеству выпускаемых нашей компанией газопоршневых электростанций с применением двигателей MAN. По результатам аудита действие сертификата производителя техники с двигателями MAN для нашей компании продлено на год, до 06 сентября 2019 г.</p>'
-}, {
-  label: 'Прошли обучение в концерне Liebherr',
-  id: 4,
-  img: 'news/libherr-study.jpg',
-  category: 'Наука и техника',
-  created_at: '12.10.2018',
-  updated_at: '12.10.2018:14.58',
-  author: 'А.В. Хухарев',
-  preview_text: 'Ведущие инженеры ООО «Газовые Машины» успешно  прошли курс обучения в г. Бюль (Швейцария) в учебном центре концерна Liebherr.',
-  description: '<p>Ведущие инженеры ООО «Газовые Машины» успешно  прошли курс обучения в г. Бюль (Швейцария) в учебном центре концерна Liebherr. Полученные знания значительно расширили возможности нашей компании по производству электростанций с применением двигателей Liebherr, а также по сервисному обслуживанию и ремонту техники Liebherr.</p>'
-}, {
-  label: 'Прошли обучение в концерне MAN',
-  id: 5,
-  img: 'news/man-study.jpg',
-  category: 'Наука и техника',
-  created_at: '12.10.2018',
-  updated_at: '12.10.2018:14.58',
-  author: 'А.В. Хухарев',
-  preview_text: 'Ведущие инженеры ООО «Газовые Машины» успешно  прошли курс обучения в г. Нюрнберг в учебном центре концерна MAN. ',
-  description: '<p>Ведущие инженеры ООО «Газовые Машины» успешно  прошли курс обучения в г. Нюрнберг в учебном центре концерна MAN. Полученные знания значительно расширили возможности нашей компании по производству электростанций с применением двигателей MAN, а также по сервисному обслуживанию и ремонту техники MAN.</p>'
-}, {
-  label: 'Генеральный директор ООО «Газовые машины» В.Г. Жуков избран в состав Общественного Совета Ярославской области.',
-  id: 6,
-  img: 'news/zhukov.jpg',
-  category: 'Наука и техника',
-  created_at: '12.10.2018',
-  updated_at: '12.10.2018:14.58',
-  author: 'А.В. Хухарев',
-  preview_text: 'Приказом департамента инвестиций и промышленности Ярославской области от 18 декабря 2017 года № 313-ОД утвержден состав Общественного совета при департаменте департамента инвестиций и промышленности Ярославской области.',
-  description: '<p>Приказом департамента инвестиций и промышленности Ярославской области от 18 декабря 2017 года № 313-ОД утвержден состав Общественного совета при департаменте департамента инвестиций и промышленности Ярославской области. Число членов Общественного совета – 9 человек.</p><br><p>В состав совета включены: Бердичевская Виктория Олеговна, Брюханов Дмитрий Юрьевич, Галагаев ВладА.В.Хухаревич, Жуков Владимир Геннадьевич, Можейко Леонид Чеславович, Николаев Валерий Юрьевич, Поляков Сергей Валерьевич, Симонов ВладА.В.Хухаревич, Шелкошвейн Петр Алексеевич</p><br><p> Срок полномочий – до декабря 2020 года.</p><br><p>Общественный совет является постоянно действующим консультативно-согласовательным органом, образованным в целях обеспечения участия граждан в выработке и реализации государственной политики в сфере, относящейся к полномочиям департамента инвестиций и промышленности Ярославской области.</p>'
-}, {
-  label: 'Введен в эксплуатацию энергоцентр ПАО «Автодизель» (ПСРД)',
-  id: 7,
-  img: 'news/avtodisel.jpg',
-  category: 'Наука и техника',
-  created_at: '12.10.2018',
-  updated_at: '12.10.2018:14.58',
-  author: 'А.В. Хухарев',
-  preview_text: 'ООО «Газовые машины» по договору генерального подряда завершило работы по внедрению «под ключ» автономного энергоцентра для ПАО «Автодизель».',
-  description: '<p>ООО «Газовые машины» по договору генерального подряда завершило работы по внедрению «под ключ» автономного энергоцентра для ПАО «Автодизель». В ходе выполнения EPC контракта нашими специалистами проведен сбор технических условий, комплекс инженерных изысканий, выполнены работы по проектированию, изготовлено основное оборудование для генерации. Проведен комплекс строительно-монтажных работ: строительство фундаментов, монтаж металлоконструкций и эстакад, монтаж теплотрассы и газопровода, монтаж узлов учета тепловой электрической энергии, газа. Выполнены прокладка кабельных линий и сетей связи и автоматики. Проведены пуско-наладочные работы.</p><br><p>Энергоцентр создан на базе пяти энергоблоков 300 кВт производства ООО «Газовые машины». В основе газопоршневых установок используются двигатели Э8502.10 производства ЯМЗ электрической мощностью 300 кВт., тепловой мощностью  470 кВт.</p><br><p>Тепловая энергия станции будет использоваться для производства горячей воды. Оборудование размещается на открытой площадке, в непосредственной близости от котельной. Станция работает в режиме   синхронизации с сетью. Топливо – природный газ. </p><br><p>В составе станции смонтированы ГРПШ и КТП. Действуют системы АСКУЭ,- локальной и удаленной диспетчеризации технологического оборудования. <i>«ЯМЗ» – одно из крупнейших российских предприятий по производству дизельных двигателей многоцелевого назначения, сцеплений, коробок передач, запасных частей к ним, а также стационарных агрегатов на их базе. Ярославскими двигателями оснащаются несколько сотен моделей транспортных средств, изделий специального назначения, ДГУ и ГПУ производимых в России и Белоруссии.</i></p>'
-}, {
-  label: 'Генеральный директор ООО «Газовые машины» В.Г. Жуков в составе делегации Ярославской области посетил респ. Крым',
-  id: 8,
-  img: 'news/visit-krim.jpg',
-  category: 'Наука и техника',
-  created_at: '12.10.2018',
-  updated_at: '12.10.2018:14.58',
-  author: 'А.В. Хухарев',
-  preview_text: 'Делегация Ярославской области во главе с губернатором Дмитрием Мироновым прибыла с рабочим визитом в Республику Крым. Регион также представляют председатель Правительства Дмитрий Степаненко, его заместители, руководители промышленных и сельскохозяйственных предприятий, ректоры вузов.',
-  description: '<p>Делегация Ярославской области во главе с губернатором Дмитрием Мироновым прибыла с рабочим визитом в Республику Крым. Регион также представляют председатель Правительства Дмитрий Степаненко, его заместители, руководители промышленных и сельскохозяйственных предприятий, ректоры вузов.</p><br><p>В Министерстве промышленной политики республики прошел круглый стол по межрегиональному торгово-экономическому взаимодействию, где представители правительства Ярославского региона и руководители промышленных предприятий вместе с крымскими коллегами обсудили вопросы расширения поставок в Крым ярославской продукции. На круглом столе в Министерстве промышленности республики Крым продукцию ярославской компании «Ангстрем» представил генеральный директор предприятия Евгений Завитухин.</p><br><p>«Задача наших электролабораторий в том, чтобы электроэнергия, которая передается потребителю, была качественной, – пояснил Евгений Завитухин. – У нас есть в том числе и уникальные системы, которые в России и странах СНГ раньше не производились. Продукцию мы уже поставляли на несколько предприятий Крыма и сейчас продолжаем искать партнеров, которые смогли бы обслуживать наши лаборатории».</p><br><p>На сегодняшний день в Крыму функционируют энергокомплексы на базе газопоршневых установок ЯМЗ производства ООО «Газовые машины» на объектах в г. Алушта. Кроме того, газопоршневые электростанции ООО «Газовые машины» обеспечивают электроэнергией добычу природного газа на шельфе Черного моря. </p><br><p>В тот же день в Симферополе состоялась встреча членов официальной делегации Ярославской области с и. о. ректора Крымского федерального университета имени В.И. Вернадского Андреем Фалалеевым. Регион представляли руководитель аппарата губернатора Кирилл Сорокин и руководители трех вузов: ЯрГУ – Александр Русаков, ЯГСХА – Светлана Гусар и ЯГТУ – Елена Степанова.</p><br><p>Ярославцы представили крымским коллегам опыт создания регионального Агентства технологического развития: в него вошли три вуза в рамках работы по созданию научно-технологической платформы. Заведующие основными кафедрами Крымского университета рассказали о своей работе, показали, как функционируют лаборатории.</p><br><p>Итогом мероприятия стало подписание двусторонних соглашений о сотрудничестве между тремя ярославскими вузами и Крымским федеральным университетом. Документами предусмотрена реализация совместных образовательных программ, содействие организации практического обучения студентов на предприятиях регионов, совместная научная работа, стажировки, научные и молодежные проекты.</p><br><p>О перспективах сотрудничества Ярославской области и Крыма в сфере агропромышленного комплекса и потребительского рынка говорили также на круглом столе, прошедшем в  Министерстве сельского хозяйства республики.</p><br><p>«Наблюдается положительная динамика увеличения поставок ярославской продукции в Республику Крым, – отметил заместитель председателя Правительства Ярославской области Валерий Холодов. – Объем товарооборота продукции АПК в 2016 году составлял почти 35 миллионов рублей, в конце 2017-го был увеличен до 101 миллиона».</p><br><p>В 2018 году планируется, что объем товарооборота по сравнению с 2016 годом будет увеличен в 5 раз и достигнет 181 миллиона рублей.</p>'
-}, {
-  label: 'ООО «Газовые машины» участвовало в выставке «Собственная генерация-Юг» (Краснодар)',
-  id: 9,
-  img: 'news/sobsvennaya-generaciya.jpg',
-  category: 'Наука и техника',
-  created_at: '01.07.2014',
-  updated_at: '12.12.2018:14.58',
-  author: 'А.В. Хухарев',
-  preview_text: 'ВЦ «КубаньЭкспоцентр», г. Краснодар, состоялся I Форум-выставка Юга России «Собственная генерация на предприятии',
-  description: '<p>1-2 июля 2014 г. в ВЦ «КубаньЭкспоцентр», г. Краснодар, состоялся I Форум-выставка Юга России «Собственная генерация на предприятии: ставка на энергоэффективность, бесперебойность и снижение затрат». Организатором Форума является компания Redenex – профессиональный организатор деловых мероприятий международного уровня.</p><br><p>Собственная выработка электричества позволяет предприятиям не только серьезно сократить расходы на электроэнергию, но и обеспечить ее бесперебойность, удовлетворить растущие потребности в новых мощностях, а в ряде отраслей – утилизировать отходы производства.</p><br><p>Целью Форума-выставки послужило содействие внедрению и эксплуатации объектов малой и средней генерации на предприятиях Юга России, а также продвижение технологических решений в сфере распределенной энергетики. </p><br><p>Программа мероприятия включала в себя двухдневный форум, выставку энергооборудования, мастер-классы и опыт предприятий, работу центра Business Connect, консультации юристов и ежедневные экскурсии на действующие энергообъекты. Мы надеемся, что знакомство с последними тенденциями в области распределенной энергетики и примерами успешной реализации проектов по созданию и использованию собственной генерации будет способствовать повышению эффективности и развитию вашего бизнеса, а также и экономики региона в целом». </p><br><p>Первая дискуссия была посвящена перспективам развития распределенной энергетики на Юге России. «Собственная генерация – насущная тема для многих предприятий России. В то время, когда растут тарифы на электроэнергию, предприятия, у которых электроэнергия занимает большую долю в себестоимости, это очень сильно ощущают.</p><br><p>Кроме того, в первый день обсуждались такие вопросы как взаимодействие субъектов энергетической отрасли и юридические аспекты внедрения собственной генерации. Достойным завершением первого дня стал визит на уникальную ГГЭС предприятия ООО «Центр Соя», функционирующую на биомассе из лузги в сплоченном виде.</p><br><p>Второй день Форума был посвящен вопросам финансирования и сокращению издержек проектов по внедрению собственной генерации. Также участники сравнили эффективность проектов с использованием отечественных дизельных и газопоршневых генераторов и электрических агрегатов для малой энергетики. Особый интерес аудитории вызвали мастер-классы и выступления экспертов, поделившихся практическим опытом внедрения собственной генерации на производстве.</p><br><p>В завершение Форума участники смогли посетить действующий энергоцентр компании ЗАО «Тандер» (сеть магазинов «Магнит»). Энергоцентр мощностью 17.2 МВт с когенерацией и выработкой СО2 из выхлопных газов обеспечивает энергоснабжение крупнейшего на юге России тепличного комплекса «Зеленая линия» и административных помещений компании Магнит. </p><br><p>Параллельно с деловой программой работала выставка, где все посетители могли ознакомиться с различными видами оборудования: генерирующим, энергосберегающим, оборудованием, работающим на органических видах топлива, системами бесперебойного электроснабжения, сервисным оборудованием для малой генерации и др. </p><br><p>За два дня работы Форум посетили более 200 делегатов, среди которых руководители и главные энергетики таких компаний, как: Лукойл, Роснефть, РЖД, Нипигазпереработка, Сибур, Евроцемент, Тандер (сеть магазинов Магнит), Еврохим, Сад Гигант, Юг Руси, Макс Моторс, Ростовтеплоэлектропроект и многие другие. </p><br><p>На площадке Форума работала система Business Connect, которая в очередной раз доказала свою эффективность в организации деловых переговоров, – было проведено более 150 встреч, которые безусловно стали основой для длительного и взаимовыгодного сотрудничества.'
-}, {
-  label: 'Выработка электрической энергии из свалочного газа',
-  id: 10,
-  img: 'news/bio-energy.jpg',
-  category: 'Наука и техника',
-  created_at: '21.01.2019',
-  updated_at: '21.01.2019:09.30',
-  author: 'А.В. Хухарев',
-  preview_text: 'Мусор при гниении выделяет свалочный газ, 50% которого составляет метан –  горючий газ. Для извлечения метана используется расположенная в теле полигона газосборная система...',
-  description: 'Газа, вырабатываемого из содержимого одной городской мусорной свалки среднего размера, достаточно для обеспечения электроэнергией целого городского микрорайона. Европейские компании осуществляют утилизацию свалочного газа по этой технологии уже много лет. Свободное распространение свалочного газа приводит к загрязнению атмосферы токсичными и дурно пахнущими соединениями, кроме того, в определенных концентрациях свалочный газ может представлять опасность для человека. Для устранения этой угрозы свалочный газ необходимо утилизировать.<br><br>Суть технологии состоит в том, чтобы исключить проникновение продуктов распада отходов глубоко в грунт и, затем в груновые воды, путем укладки на дно котлована геомембраны. Для исключения массового выхода свалочных газов, по всей поверхности полигона устраивается экран из глины, который дополнительно перекрывает доступ кислорода вглубь полигона. Мусор при гниении выделяет свалочный газ, 50% которого составляет метан –  горючий газ. Для извлечения метана используется расположенная в теле полигона газосборная система,  состоящая из разветвлённой сети трубопроводов и колодцев-накопителей в местах скопления.<br><br>По системе трубопроводов свалочный газ поступает в накопители и далее сжигается в газопоршневых двигателях,  генераторы вырабатывают электроэнергию. Давление газа в системе поддерживается комплексом компрессорных установок. Новые технологии не только позволяют получать электроэнергию из свалочного газа, но и существенно улучшают экологическую обстановку в районе.<br><br>Следует отметить, что поступление свалочного газа не стабильно, и для обеспечения полной его утилизации целесообразно на полигоне смонтировать установку для подмешивания в свалочный газ природного, либо сжиженного газа. Это обеспечит утилизацию свалочного газа в полном объеме даже в периоды, когда его будет недостаточно для стабильной работы газопоршневого двигателя.<br>Компания «Газовые машины» предлагает полностью комплектные решения для утилизации свалочных газов, основанные на применение модульных газопоршневых электростанций собственного производства 100% заводской готовности.<br><br>Двигатели электростанций полностью адаптированы для работы на свалочном газе в заводских условиях.'
-}, {
-  label: 'Лизинг газопоршневых установок',
-  id: 11,
-  img: 'news/lizing-rlk.jpg',
-  category: 'Наука и техника',
-  created_at: '13.03.2019',
-  updated_at: '13.03.2019:09.30',
-  author: 'А.В. Хухарев',
-  preview_text: 'РЛК ЯО будет осуществлять финансирование проектов, направленных на внедрение автономных энергоцентров на базе модульного энергетического оборудования производства компании «Газовые машины».',
-  description: '13 марта 2019 года подписано соглашение о сотрудничестве Региональной лизинговой компании Ярославской области (РЛК ЯО) и ООО «Газовые машины».<br><br>Согласно подписанного документа РЛК ЯО будет осуществлять финансирование проектов, направленных на внедрение автономных энергоцентров на базе модульного энергетического оборудования производства компании «Газовые машины».<br><br>Первый контракт заключен с сельхозпредприятием из Ростовского района. Благодаря специальной программе финансирования Заказчик получил возможность приобрести оборудование в лизинг под 6% годовых.<br><br>«Газовые машины» не только изготовят для Заказчика когенерационную установку MAN мощностью 260 кВт, но и осуществят доставку оборудования, монтаж и пуско-наладочные работы. Когенерационная установка MAN будет обеспечивать электроэнергией и теплом животноводческий комплекс.<br><br>Решение о финансировании этого проекта нами уже принято - сообщил генеральный директор РЛК ЯО Илья Филиппов.<br><br>Сотрудничество между РЛК ЯО и «Газовыми машинами» открывает для малого и среднего бизнеса возможность для существенного сокращения производственных затрат за счет снижения стоимости энергоресурсов. Так в настоящее время, средняя стоимость 1 кВт.ч электрической энергии для малого бизнеса составляет более 6 рублей, стоимость 1 Гкал тепловой энергии более 2 000 рублей.<br><br>Применение высокоэффективных когенерационных установок производства «Газовые машины» позволяет заказчикам получить себестоимость электрической энергии на уровне 2 рублей за 1 кВт.ч, при этом тепловая энергия получается без дополнительных затрат.<br><br>Доступные цены на выпускаемое нами оборудование, в совокупности с выгодным финансированием проектов со стороны РЛК ЯО, позволяют сформировать уникальное предложение для организаций малого и среднего бизнеса, нуждающихся в оптимизации энергозатрат, - отметил генеральный директор ООО «Газовые машины» Владимир Жуков.'
-}, {
-  label: 'Запасные части и комплектующие компании Motortech',
-  id: 12,
-  img: 'news/parts-motortech.jpg',
-  category: 'Наука и техника',
-  created_at: '22.03.2019',
-  updated_at: '22.03.2019:09.30',
-  author: 'А.В. Хухарев',
-  preview_text: 'Прямые поставки от производителя любых комплектующих компании Motortech со склада в г. Ярославле',
-  description: 'Уважаемые потребители, с текущего года, наша компания имеет возможность предложить Вам оригинальные комплектующие и запасные части к газопоршневых двигателям MAN, Jenbacher, MTU, MWM, Liebherr, Cummins, Caterpillar, Waukesha, Perkins, производства компании Motortech GMBH (Мотортех, Германия).<br><br>Прямые поставки от производителя позволяют нам в оперативные сроки и по низкой цене осуществить поставку любых комплектующих компании Motortech со склада в г.Ярославле.<br><br>В номенклатуре:<br>- Свечи зажигания и свечные наконечники (высоковольтные провода) Motortech GE 2-3, GI 3-4, GK 3-7, GL 3-4, MHP, MBP, MPC, IPC, XT, XTL;<br>- Масляные фильтра;<br>- Катушки зажигания Motortech и Altronic;<br>- Блоки управления зажиганием и комплектные системы MIC 3, MIC 4, MIC 5, MIC 6, PowerView 3, Alpharail,  триггерные диски;<br>- Системы контроля детонации Detcon20, Alpharail;<br>- Модули температурного контроля TempScan20;<br>- Дроссельные заслонки ITB Throttle Body, дроссельные заслонки для газовых двигателей;<br>- Газовоздушные смесители VariFuel 2 и блоки управления VariStep 3;<br>- Системы контроля эмиссии EmCon 5;<br>- Системы управления генераторными установками All In One;<br><br>Наши специалисты, подберут для Вас необходимые комплектующие и проведут работы по их монтажу на Вашем объекте.'
-}, {
-  label: 'Газовые двигатели MAN для применения в составе когенерационных установок',
-  id: 13,
-  img: 'news/MAN-E-3268-LE-242.jpg',
-  category: 'Наука и техника',
-  created_at: '31.03.2019',
-  updated_at: '31.03.2019:13.34',
-  author: 'А.В. Хухарев',
-  preview_text: 'MAN Engines производит малозагрязненные газовые двигатели для когенерационных установок мощностью от...',
-  description: 'MAN Engines производит малозагрязненные газовые двигатели для когенерационных установок мощностью от 37 кВт до 500 кВт на природном газе и от 68 кВт до 500 кВт на специальном газом (биогаз, свалочный газ, канализационный газ). Двигатели МАН, разработанные специально для работы на  природном и специальных газах, обладают высочайшей надежностью и самым  высоким КПД. Оптимальный процесс сгорания позволяет достигать общей эффективности свыше 90 процентов. Благодаря широкому ассортименту атмосферных двигателей с невысокой стоимостью технического обслуживания самые низкие уровни выбросов могут быть достигнуты за счет использования 3-ходового каталитического нейтрализатора.<br><br>Газовые двигатели МАН положительно зарекомендовали себя благодаря своей надежности в сочетании с устойчивой работой в период пиковых нагрузок и непрерывной работой, в сельском хозяйстве, муниципальной сфере, в гостиницах и больницах, а также во многих других отраслях. Длинные интервалы обслуживания и высокий срок службы газовых двигателей МАН обеспечивают низкую общую стоимость владения.<br><br><b>Технические характеристики двигателей полностью подтверждены ресурсными испытаниями</b><br><br>Двигатели MAN для работы природного газа и специального газа (биогаз, свалочный газ, канализационный газ) гарантируют безопасность применения. Испытанные и оптимизированные по результатам в полевых испытаний, они доказывают свою надежность при эксплуатации в самых неблагоприятных условиях окружающей среды. Выбирая двигатель МАН Вы можете быть уверены в использовании полностью разработанного продукта, на который вы можете рассчитывать. Портфолио двигателей покрывает ряд мощности от 37 до 500 kW. Это делает двигатели МАН идеальным поставщиком энергии для самого широкого спектра операций в когенерации – для коммунальных предприятий, сельскохозяйственных и промышленных предприятий.<br><br><b>Гибкость и индивидуальность</b><br><br>МАН знает: каждое решение должно быть индивидуальным, так как задачи разные. Компетенция компании «Газовые машины» дает Вам возможность применения различных систем управления или дополнительных компонент, что позволяет выбрать наилучший вариант компоновки энергоустановки для Вашего объекта с учетом любых индивидуальных особенностей.<br><br><b>Прочная и одновременно компактная конструкция</b><br><br>Компактность с высокой производительностью: специальные газовые двигатели МАН объединяют оба эти преимущества. При работе в непрерывном режиме, они гарантированно поставляют энергию, в течение всего длительного срока службы. При выполнения регламента обслуживания гарантированный срок службы двигателей МАН до капитального ремонта составляет 50 000 моточасов. Общий ресурс двигателей МАН составляет не менее 100 000 моточасов. Конструкция двигателей МАН позволяет легко поддерживать их в исправном состоянии, оперативно, эффективно, и по низким ценам.<br><br><b>Эффективность благодаря длинным межсервисным интервалам</b><br><br>Двигатели МАН обладают простотой и надежностью конструкции, что позволяет в значительной мере сократить эксплуатационные расходы. Компактная и легко доступная конструкция облегчает и ускоряет операции обслуживания.<br><br><b>Низкие уровни выбросов</b><br><br>Газовые двигатели МАН имеют низкий уровень загрязнения окружающей среды. В соответствии со строгими директивами по выбросам TA-Luft и TA-Luft½, очистка выхлопных газов зачастую даже не требуется. На специальных газовых двигателях, предназначенных для работы на биогазе, может потребоваться применение каталитического нейтрализатора. 3 - полюсный каталитический нейтрализатор достаточен для атмосферных двигателей, работающих на природном газе. Таким образом, вы можете рассчитать низкие затраты на покупку.<br><br>Низкий уровень загрязняющих веществ и оснащенные современной технологией сжигания, газовые и специальные двигатели MAN прокладывают путь к будущему когенерации. Энергоснабжение является важным компонентом экономического успеха. Поэтому, конечно, вы всегда можете рассчитывать на нашу корпорацию после покупки, если вы нуждаетесь в помощи.<br><br>МАН и «Газовые машины» предлагают вам, индивидуальную концепцию обслуживания. Наши компании регулярно проводят учебные курсы для обучения персонала обслуживанию когенерационных установок с применением двигателей МАН, используя глубокие и проверенные знания МАН: надежные и эффективные – так же, как газовый двигатель МАН. '
-}, {
-  label: 'Паровые турбины MAN для выработки энергии из отходов',
-  id: 14,
-  img: 'news/turbina.jpg',
-  category: 'Наука и техника',
-  created_at: '07.04.2019',
-  updated_at: '08.04.2019:10.21',
-  author: 'А.В. Хухарев',
-  preview_text: 'Производство электроэнергии основанное на переработке отходов является классическим примером применения паровых турбин МАН',
-  description: 'Отходы в энергию (WtE) - это переработка и преобразование отходов в электричество или тепло. На комплексах WtE цель состоит в том, чтобы генерировать энергию путем сжигания отходов.<br><br>Тепло, выделяемое в результате этого процесса обязательств, используется для производства электроэнергии, что приводит к дополнительной прибыли для оператора. Деятельность WtE в Европе значительно активизировалась после принятия в 2005 году Директивы ЕС, запрещающей захоронение неочищенных отходов.<br><br><b>Паровые турбины для WtE</b><br><br>В зависимости от требований заказчика, компания "Газовые машины» подберет паротурбинные генераторы «МАН Энерджи Солюшнс" для установок WtE. Объем поставки также может включать оборудование водо-парового цикла, такого как, отопительные конденсаторы, конденсаторы воздушного охлаждения, предпусковые подогреватели, обходные станции и соединительные трубы.<br><br><b>Классическое применение турбин МАН</b><br><br>Производство электроэнергии основанное на переработке отходов является классическим примером применения паровых турбин МАН. Недавно компания ONE Energy Solutions поставила самую большую паротурбинную генераторную установку для завода WtE в Великобритании мощностью 80 МВт.<br><br>'
-}, {
-  label: 'Газопоршневые электростанции Liebherr на страже энергетической эффективности.',
-  id: 15,
-  img: 'news/liebherr-gaz.jpg',
-  category: 'Наука и техника',
-  created_at: '15.04.2019',
-  updated_at: '16.04.2019:15.44',
-  author: 'А.В. Хухарев',
-  preview_text: 'Газовые электростанции совместного производства Liebherr и Газовых машин используются в построении децентрализованных систем выработки тепловой и электроэнергии...',
-  description: 'С увеличением численности населения стремительно растет мировой спрос на энергоносители. Вместе с тем увеличивается потребность в использовании возобновляемых энергоресурсов и экологически безопасных технологий. Перспективной видится идея выработки энергии там, где она фактически используется. Это позволит не только сократить потери при транспортировке, но и уменьшить затраты на инфраструктуру.<br><br>Компания Liebherr вносит свой вклад в развитие данного направления, создавая газовые электростанции для экологически безопасной выработки энергии на автономных блочных тепловых электростанциях и генераторных установках. Двигатель может работать на разных видах газа, обеспечивая эффективную утилизацию отходов — например, на биогазовых или очистных установках.<br><br>Газовые электростанции совместного производства Liebherr и Газовых машин используются в построении децентрализованных систем выработки тепловой и электроэнергии, и применяются в различных сферах деятельности:<br><br>⦁	Использование в жилищной сфере (многоквартирных домах, жилых постройках и т.п.)<br><br>⦁	Использование в сфере обслуживания и производства (отелях, ресторанах, крупных предприятиях, центрах электронной обработки данных и т.п.)<br><br>⦁	Использование в социальной сфере (вокзалы, бассейны, больницы)<br><br>⦁	Биогазовые установки<br><br>⦁	Очистные установки<br><br>⦁	Сельскохозяйственные предприятия<br><br>⦁	Насосные станции<br><br>Газовые электростанции Liebherr отличаются безотказной работой, высоким КПД и простотой установки. Для обеспечения этих преимуществ они поставляются полностью укомплектованными.<br><br><b>Высокая производительность благодаря оптимизированной системной интеграции</b><br><br>Механический КПД газовых двигателей Liebherr составляет более 43%. Это лучший показатель для двигателей данного класса мощности. Такой эффективности удалось достичь благодаря многолетнему опыту, интенсивным проектно-конструкторским работам, тщательному подбору компонентов и высокой степени системной интеграции аппаратного и программного обеспечения.<br><br>Модульные газовые электростанции Liebherr поставляются в собранном виде и сразу готовы к установке.<br><br><b>Оптимизированное оборудование</b><br><br>Все компоненты оборудования тщательно подобраны и оптимизированы для этих электростанций. Они проходят длительные испытания и строгую проверку качества. Систему можно без особых усилий и с высокой точностью откалибровать для конкретных условий использования.<br><br><b>Электронные компоненты</b><br><br>Наши газовые электростанции оснащены полностью автоматической системой управления, легко интегрируемой в общие системы управления предприятием. Программное обеспечение уже настроено должным образом<br><br><b>ПО и настройка параметров электростанции</b><br><br>В поставляемом программном обеспечении уже настроены все необходимые параметры. Тщательная проверка на соответствие и регулировка значений параметров позволяет обеспечить гарантированно высокую производительность двигателей Liebherr. Кроме того, существует достаточно возможностей выполнить точную настройку в условиях эксплуатации.<br><br>Производственная линейка газовых двигателей Liebherr охватывает широкий спектр моделей от 4-цилиндровых рядных двигателей до 20-цилиндровых V-образных двигателей. Помимо полностью оборудованных и готовых к установке комплектов, мы также поставляем базовые модели повышенной прочности, которые могут использоваться в биогазовых установках.<br><br>Мощностной ряд электростанции Liebherr составляет от 50 до  1 000 кВт.'
-}, {
-  label: 'Как выбрать электростанцию? Энергоснабжение обособленных и удаленных объектов.',
-  id: 16,
-  img: 'news/energy-choise.jpg',
-  category: 'Наука и техника',
-  created_at: '21.04.2019',
-  updated_at: '22.04.2019:12.24',
-  author: 'А.В. Хухарев',
-  preview_text: 'Что выбрать: дизельная или газовая электростанция, работающая на сжиженном газе? Аспекты выбора электростанций.',
-  description: '<b>Энергоснабжение обособленных и удаленных объектов, аспекты выбора, дизельная электростанция или газовая электростанция, работающая на сжиженном газе.</b><br><br>В настоящее время энергоснабжение многих небольших вахтовых поселков, строительных городков и т.п., производится от дизельных электростанций. В условиях роста цен на дизельное топливо электроснабжение таких объектов влетает в копеечку.<br><br>Например, максимальная потребность в электрической энергии городка на 500 человек (при условии применения электрического отопления) составляет порядка 1 300 кВт.час. При стоимости дизельного топлива 50 руб. за 1 литр, затраты на выработку 1 кВт.час. электрической энергии составят  11,5 руб. или 14 950 руб. в час. (без учета затрат на сервисное обслуживание оборудования). Кроме того, не секрет, что легкий доступ к дизельному топливу создает предпосылки для несанкционированной заправки транспортных средств за счет топлива, предназначенного для работы дизельной электростанции. В результате, на практике, затраты на выработку 1 кВт.часа электрической энергии дизельной электростанцией достигает 15 руб. После чего, многие руководители вахтовых поселков и городков, задумываются об альтернативных вариантах организации электроснабжения.<br><br>Наиболее надежным из них, является генерация с применением газопоршневой электростанции. При цене природного газа 6 руб. за 1 куб.м. себестоимость 1 кВт.час. электрической энергии при выработке электростанцией 500 кВт. составит 2,12 руб. (включая стоимость сервисного обслуживания и затраты на текущий и капитальный ремонты).<br><br><b>В разрезе месяца экономия от применения ГПУ на объекте с постоянным потреблением электроэнергии 500 кВт составит 4 636 800 руб. Срок окупаемости инвестиций в приобретение ГПУ составляет менее 1 года.</b><br><br>Положительный опыт применения ГПУ в качестве источника энергоснабжения получен нами совместно с компанией «СтройТрансГаз». Электроснабжение вахтового поселка Сывьдарьма уже более года осуществляется газовой электростанцией MAN 500 кВт производства компании «Газовые машины». До запуска газовой электростанции поселок обеспечивался электрической энергией от дизельных электростанций. Ежемесячные расходы на покупку дизельного топлива составляли 4,5 млн. рублей. После запуска газовой электростанции расходы на выработку электрической энергии были снижены до 650 тыс. руб. в месяц.<br><br>Вместе с тем, при проработке такого варианта, наши клиенты сталкиваются со следующими задачами. Зачастую объекты, требующие электроснабжения носят временный характер, и прокладка магистрального газопровода к ним экономически не оправдана. В таких условиях, возможно применение газопоршневых установок, работающие на пропан-бутановой смеси, которую можно доставлять на объект по мере необходимости. Здесь возникает следующий вопрос, большинство европейских производителей газопоршневых электростанций не согласовывает применение своего оборудования при работе на пропан-бутановой смеси. А опыт применения электростанций на базе ДВС российского или китайского производства, свидетельствует о крайне низкой надежности и нестабильной работе этого оборудования на пропан-бутановой смеси.<br><br>Для решения этой ситуации инженеры концерна «МАН» (Германия) совместно со специалистами компании «Газовые машины», разработали модульную газопоршневую электростанцию, адаптированную для работы на пропан-бутановой смеси. Газопоршневой двигатель, выпускается с завода в Германии, предварительно настроенный для работы на пропан-бутановой смеси. Программное обеспечение, разработанное специалистами компании «Газовые машины» позволяет электростанции работать стабильно и устойчиво, не зависимо от меняющегося состава топливной смеси, без ухода в режимы детонации.<br><br>В настоящее время для поставки доступны две модели модульных электростанций, мощностью 250 и 500 кВт. Модуля поставляются полной заводской готовности.'
-}, {
-  label: 'Используем аэрационный газ для газопоршневых установок',
-  id: 17,
-  img: 'news/utilizaciya.jpg',
-  category: 'Наука и техника',
-  created_at: '12.05.2019',
-  updated_at: '13.05.2019:08.05',
-  author: 'А.В. Хухарев',
-  preview_text: 'Существует эффективный способ утилизации газа от очистных сооружений путем использования его в качестве топлива для когенерационных установок...',
-  description: 'В процессе очистки сточных вод путем анаэробного брожения на очистных сооружения крупных городов вырабатывается в большом количестве аэрационный (канализационный) биогаз. При этом, в большинстве случаев он не используется и выбрасывается в атмосферу, загрязняя окружающую среду.<br><br>Вместе с тем, по своему составу этот газ пригоден для утилизации (содержание метана до 70 %), которая осуществляется в основном путем сжигания в котлах и использования тепла на нужды отопления. Но в летний период времени утилизация биогаза этим способом не востребована не в полном объеме, так как превышает потребности очистных сооружений в тепловой энергии.<br><br>Компания «Газовые машины» предлагает более эффективный способ утилизации газа от очистных сооружений путем использования его в качестве топлива для когенерационной установки, вырабатывающей электрическую и тепловую энергию.<br><br>Высокий КПД газопоршневой мини-тэц (до 90 %) позволяет эффективно использовать биогаз  от очистных сооружений и частично обеспечивать их работу даже при аварии централизованного электроснабжения. Тепло вырабатываемое от мини-тэс используется для поддержания рабочих процессов в метантенках.<br><br>Таким образом, применение когенерационной установки для утилизации биогаза от очистных сооружений позволяет решить следующие задачи:<br><br>⦁	снизить энергозатраты на очистку сточных вод;<br><br>⦁	снизить нагрузку на электрические сети в населенном пункте;<br><br>⦁	улучшить экологическую ситуацию в населенном пункте.<br><br>Компания «Газовые машины» предлагает к поставке модельный ряд модульных когенерационных установок, адаптированных для работы на биогазе от очистных сооружений, мощностью от 250 до 2 000 кВт, на базе двигателей MAN, Liebherr, Jenbacher.<br><br><b>Срок окупаемости инвестиций в биогазовую мини-тэц (с  учетом приобретения оборудования по подготовке топливного газа) составляет не более 5 лет.</b>'
-}, {
-  label: 'Новый газопоршневый двигатель MAN E3268. Электрическая эффективность 41,7%!',
-  id: 18,
-  img: 'news/MAN-E3268.jpg',
-  category: 'Наука и техника',
-  created_at: '15.07.2019',
-  updated_at: '15.07.2019:08.05',
-  author: 'А.В. Хухарев',
-  preview_text: 'Новая модель двигателя E3268 LE242 разработана как усиленная 4-х тактная версия газового двигателя с 8 цилиндрами , расположенными в форме V-образной версии.',
-  description: '40% электрической эффективности в деятельности природного газа-смешение природного газа с 250 мг оксида азота  с соблюдением  требований технических инструкций по качеству контроля воздуха только с катализатором окисления.<br><br><b>Концерн МАН будет презентовать  модель газового двигателя MAN E3268 мощностью 320kw на выставке EnergyDecentral.</b><br><br>На выставке EnergyDecentral 2018 Концерн МАН впервые будет представлен газовый двигатель MAN E3268 мощностью 320kw и частотой в 50 Гц. Двигатель MAN E3268 LE242 разработан на базе двигателя E3268 with 370 kW, который был представлен в 2013 г. и впоследствии доработан и протестирован. 8-ми цилиндровый двигатель является оптимизированным вариантом для работы на природном газе с коэффициентом сжатия в ε 12 : 1 и может быть также использован для биогаза с коэффициентом сжатия ε 13.6 : 1.<br><br>Использование отрегулированной версии тока (в сочетании тепла и энергии) может применяться,  начиная с промышленных и коммерческих областей  до  муниципальных и развлекательных секторов.<br><br><b>Новая модель двигателя E3268 LE242 разработана как усиленная 4-х тактная версия газового двигателя с 8 цилиндрами , расположенными в форме V-образной версии.<br><br>Благодаря цилиндрическому отверстию в 132мм и удару в 157 мм двигатель E3268 LE242 предлагает 17,2 л цилиндрическую способность.</b><br><br>Для достижения выходной мощности  в 320 Kw c частотой вращения 1500 мин -1  перезарядка была значительно оптимизирована. Это оказало полезное воздействие на электрическую эффективность, которая возрасла до 41.7 % для природного газа.<br><br>«Эта отличный механический показатель эффективности   позволяет достичь волшебного значения в 40 % преобразования энергетической эффективности. В некоторых странах это достигается тяжело из-за сокращения субсидий», говорит Гюнтер Зайбс, глава концерна MAN.<br><br>Двигатель E3268 LE242 мощностью 320 kw вытеснит двигатель E2848 LE322 предыдущей серии и cокращает мощностной разрыв  с 220 до 370 kw среди турбированных двигателей MAN. Испытанная система регистрации данных со стандартными сенсорами и кабелем дает дополнительную выгоду для покупателей. Через СAN монитор важные параметры такие как охлаждение, потребление масла и температура исходящих газов также как и уровень заряда и масляного давления обеспечивается системой контроля с минимальными усилиями.<br><br>Двигатель E3268 LE242 прекрасно оснащен под будущие требования по выбросам благодаря разработке варианта с уровнем оксида азота в 250 mg/Nm3 NOx (5% O2).<br><br>В тоже время выходная мощность в 320 kw двигателя MAN,оснащенная оксидным катализатором отвечает требованиями технических инструкций воздушного контроля качества (TA Luft)½<br><br>Для потребителей с частотой в 60 Гц двигатели MAN также предлагает эксплуатационный вариант двигателя E3268 LE242 для природного газ с частотой вращения 1800 мин-1<br><br>Этот двигатель имеет выходную мощность в 340 kw  и достигает механической степени эффективности в 40,3 % и термической эффективности в 48,2%, в сумме 88,5%.<br><br>Двигатель E3268 LE242 будет доступен начиная с первого квартала 2019 и представлен впервые на выставке EnergyDecentral - Международная выставка по инновациям в энергетической сфере в Ганновере.'
-}, {
-  label: 'Касательно применения двухопорных генераторов в газовых электростанциях MAN',
-  id: 19,
-  img: 'news/man-generator.png',
-  category: 'Важно',
-  created_at: '13.09.2019',
-  updated_at: '13.09.2019:08.05',
-  author: 'А.В. Хухарев',
-  preview_text: 'По данному вопросу получен однозначный ответ от Руководителя инженерной поддержки продаж и сервисного обслуживания MAN Engines г-на Бенджамина Круга.',
-  description: 'В связи с регулярно поступающими обращениями от наших Заказчиков, в отношении применения двухопорных синхронных генераторов в газовых электростанциях MAN сообщаем следующую информацию.<br><br>По данному вопросу получен однозначный ответ от Руководителя инженерной поддержки продаж и сервисного обслуживания MAN Engines г-на Бенджамина Круга.<br><br>В своем письме Б. Круг допускает применение как однопоорных, так и двухопорных генераторов в газопоршневых электростанциях  MAN, без каких либо ограничений по ресурсу двигателя и генератора.<br><br>При этом, для сохранения гарантии на двигатель MAN производитель электростанции должен соблюдать следующие условия:<br><br>- при применении одноопорного генератора вес его ротора не должен превышать 630 кг и момент инерции 11 кг. (что позволяет применять без ограничения синхронные генераторы мощностью до 530 кВт);<br><br>- при применении двухопорного генератора, производитель должен произвести расчет размеров муфты, а также выполнить расчет крутильных колебаний и согласовать все эти расчеты с компанией MAN.'
-}, {
-  label: 'Приглашаем всех на выставку Heat&Power 2019.',
-  id: 20,
-  img: 'news/expo.jpg',
-  category: 'Наука и техника',
-  created_at: '16.09.2019',
-  updated_at: '16.09.2019:06.31',
-  author: 'А.В. Хухарев',
-  preview_text: 'Компания «Газовые машины» приглашает всех заинтересованных во внедрении объектов автономной энергетики, а также организации, эксплуатирующие объекты распределенной малой генерации, посетить наш стенд.',
-  description: 'Компания «Газовые машины» приглашает всех заинтересованных во внедрении объектов автономной энергетики, а также организации эксплуатирующие объекты распределенной малой генерации посетить наш стенд C 201 в период с 22 по 24 октября в «Крокус-Экспо» (Москва) в рамках 4-ой международной выставки промышленного котельного, теплообменного, электрогенерирующего оборудования и трубопроводных систем для тепловых сетей «Heat&Power 2019».<br><br>В ходе выставки Вы можете получить бесплатную консультацию специалистов нашей компании по вопросам, связанным с оценкой вариантов создания на Вашем объекте, автономного источника энергии. Подготовить предпроектные решения для Вашего объекта. Подобрать оптимальное энергетическое оборудование. Получить информацию о актуальных ценах на оборудование для собственной генерации. Договорится о поставке материалов и запасных частей для сервисного обслуживания энергетического оборудования.<br><br>Также на выставке Вы сможете задать свои вопросы непосредственно техническим руководителям концерна MAN, отвечающим за производство промышленных газовых двигателей.<br><br><b>Ждем Вас на выставке!</b>'
-}, {
-  label: 'Газовые машины – сервисный партнер «Карл Дунгс»',
-  id: 21,
-  img: 'news/dungs.jpg',
-  category: 'Наука и техника',
-  created_at: '07.10.2019',
-  updated_at: '07.10.2019:10.45',
-  author: 'А.В. Хухарев',
-  preview_text: 'Компания «Газовые машины» получила статус официального сервисного партнера известной немецкой компании – производителя газорегулирующего оборудования «Карл Дунгс» (Урбах, Германия).',
-  description: 'Компания «Газовые машины» получила статус официального сервисного партнера известной немецкой компании – производителя газорегулирующего оборудования «Карл Дунгс» (Урбах, Германия).<br><br>Компания «Карл Дунгс» основана в 1945 г., численность сотрудников 670 человек, годовой оборот компании 129 млн. Евро.<br><br>«Карл Дунгс» является заводом-изготовителем атмосферных и вентиляторных теплогенераторов, конденсационных установок, паяльных горелок, газорегулирующего оборудования газовых двигателей и промышленных тепловых топочных установок.<br><br>«Газовые машины» и «Карл Дунгс» сотрудничают с 2012 г. В текущем году статус сотрудничества обновлен. Это дает нашим клиентам ряд дополнительных преимуществ, таких как:<br><br><ul><li>расширение линейки оборудования «Карл Дунгс» на нашем складе;</li><li>оперативный доступ к складу сервисных запасных частей;</li><li>оперативное сервисное обслуживание оборудования «Карл Дунгс»;</li><li>услуги по модернизации газорегулирующего оборудования на действующих объектах;</li></ul>   <br><br>По вопросам связанным, с оборудованием «Карл Дунгс» Вы можете обращаться в наш отдел продаж по тел.: <b>+7 (4852) 26–79–60.</b>'
-}, {
-  label: 'Электроэнергия для сельского хозяйства',
-  id: 22,
-  img: 'news/village.png',
-  category: 'Наука и техника',
-  created_at: '05.03.2020',
-  updated_at: '16.03.2020:10.45',
-  author: 'А.В. Хухарев',
-  preview_text: 'Модульная газовая мини-ТЭЦ мощностью 260 кВт обеспечивает электрической энергией и теплом животноводческий комплекс на 2 000 голов крупного рогатого скота.',
-  description: 'Компания «Газовые машины», при партнерстве с Региональной лизинговой компанией Ярославской области запустила газовую мини-ТЭЦ на животноводческом комплексе сельхозпредприятия «Красный Маяк» (д. Марково, Ярославской области). Сотрудничество с региональной лизинговой компанией Ярославской области позволяет нашим клиентам приобретать оборудование в лизинг по рекордно низким ставкам от 6,5 % годовых.<br><br>Модульная газовая мини-ТЭЦ мощностью 260 кВт обеспечивает электрической энергией и теплом животноводческий комплекс на 2 000 голов крупного рогатого скота.<br><br>Линейка премиальных Мини-ТЭЦ базе индустриальных газовых двигателей MAN разработана компанией «Газовые машины» в 2012 г. Все мини-ТЭЦ выпускаются в унифицированных заводских модулях полной готовности, что обеспечивает быстрый запуск в эксплуатацию в течении 2-3 дней с даты поставки оборудования на объект<br><br>В настоящее время компания «Газовые машины» предлагает услуги по внедрению автономных энергокомплексов на природном газе мощностью до 24 МВт на условиях «под ключ». На нашем производстве в г. Ярославле Вы можете ознакомиться с образцами продукции в удобное для Вас время. При посещении вы также можете получить квалифицированные консультации специалистов по проектированию и эксплуатации газовых мини-ТЭЦ. Ждем Вас.'
-}, {
-  label: "Энергоцентр для ТРЦ Виконда (500 кВт)",
-  id: 23,
-  img: 'news/GPES-500.jpg',
-  category: 'Наука и техника',
-  created_at: '13.11.2020',
-  updated_at: '24.11.2020:11.35',
-  author: 'А.В. Хухарев',
-  preview_text: 'Компания «Газовые машины» завершила комплекс работ по запуску автономного энергоцентра на базе газопоршневых когенерационных установок мощностью 500 кВт для Торгово-развлекательного центра «Виконда» в г. Рыбинске.',
-  description: 'Компания «Газовые машины» завершила комплекс работ по запуску автономного энергоцентра на базе газопоршневых когенерационных установок мощностью 500 кВт для Торгово-развлекательного центра «Виконда» в г. Рыбинске.<br><br>Инженерной службой нашей компании разработан уникальный проект, позволяющий эксплуатировать оборудование в условиях плотной городской застройки, не нарушая требования экологического законодательства по шуму и вредным выбросам.<br><br>Для снижения уровня шумового давления оборудование смонтировано в бетонные модуля заводской готовности, также применены высокоэффективные глушители компании «Апровис» (Германия). Такое решение позволило обеспечить уровень шума менее 70 Дб. в 1 метре от энергоцентра.<br><br>Разработанная нашими специалистами проектная документация успешно прошла государственную экспертизу.<br><br>В качестве основного генерирующего оборудования выбраны газовые электростанции MAN, единичной мощностью 500 кВт. Эти машины отличаются легендарной надежностью  и невысокой стоимостью обслуживания порядка 0,4 коп. на 1 кВт/час выработанной электрической энергии.<br><br>Применение технологии когенерации позволяет повысить КПД газовой электростанции до 90 %. По результатам трех месяцев эксплуатации энергоцентра, собственником принято решение отказаться от эксплуатации блочно-модульной котельной, ранее отапливавшей часть помещений энергоцентра.<br><br>Нашими специалистами осуществляется круглосуточный мониторинг работы энергоцентра и его гарантийное и сервисное обслуживание.<br><br>Полный цикл сборки газовых электростанции с двигателями MAN осуществляется на производственных площадях компании «Газовые машины» в г. Ярославле, по адресу: пр. Авиаторов 155. Посетить его Вы можете в любое удобное для Вас время. Сборка электростанций осуществляется строго в соответствии  с требованиями концерна MAN при проведении регулярного инспекционного контроля со стороны наших немецких партнеров.<br><br>На сегодняшний день гарантия на газовые электростанции с двигателями MAN составляет 36 месяцев.<br><br>'
-}, {
-  label: "Газовые мини-ТЭС MAN производства «Газовые машины»",
-  id: 24,
-  img: 'news/mini-tec-man.jpg',
-  category: 'Наука и техника',
-  created_at: '03.12.2020',
-  updated_at: '03.12.2020:12.35',
-  author: 'А.В. Хухарев',
-  preview_text: 'Компания «Газовые машины» является авторизованным партнером концерна MAN по производству газопоршневых мини-ТЭС с двигателями MAN',
-  description: 'Мини-ТЭС серии MAN выпускаются по согласованной с MAN документации под строгим контролем технических специалистов концерна MAN. Ежегодно проводится аудит производства инженерами концерна MAN, по результатам которого выдается сертификат подтверждающий качество, выпускаемых нами мини-ТЭС MAN. <br/><br/>MAN Engines производит газовые двигатели для когенерационных установок мощностью от 37 кВт до 500 кВт на природном газе и от 68 кВт до 500 кВт на специальном газом (биогаз, свалочный газ, канализационный газ). Двигатели МАN, разработанные специально для  работы на  природном и специальных газах, обладают высочайшей надежностью и самым  высоким КПД. Оптимальный процесс сгорания позволяет достигать общей эффективности свыше 90 процентов. Благодаря широкому ассортименту атмосферных двигателей с невысокой стоимостью технического обслуживания самые низкие уровни выбросов могут быть достигнуты за счет использования 3-ходового каталитического нейтрализатора. <br/><br/>Газовые двигатели МАN положительно зарекомендовали себя благодаря своей надежности в сочетании с устойчивой работой в период пиковых нагрузок и непрерывной работой,  в сельском хозяйстве, муниципальной сфере, в гостиницах и больницах, а также во многих других отраслях. Длинные интервалы обслуживания и высокий срок службы газовых двигателей МАN обеспечивают низкую общую стоимость владения. Технические характеристики двигателей полностью подтверждены ресурсными испытаниями. Двигатели MAN для работы природного газа и специального газа (биогаз, свалочный газ, канализационный газ) гарантируют безопасность применения. Испытанные и оптимизированные по результатам в полевых испытаний, они доказывают свою надежность при эксплуатации в самых неблагоприятных условиях окружающей среды. <br/><br/> Выбирая двигатель МАN Вы можете быть уверены в использовании полностью разработанного продукта, на который вы можете рассчитывать. Мы знаем: каждое решение должно быть индивидуальным, так как задачи разные. Компетенция компании «Газовые машины» дает Вам возможность применения различных систем управления или дополнительных компонент, что позволяет выбрать наилучший вариант компоновки энергоустановки для Вашего объекта с учетом любых индивидуальных особенностей. <br/><br/> Компактность с высокой производительностью: газовые мини-ТЭС МАN производства нашей компании объединяют оба эти преимущества. При работе в непрерывном режиме, они гарантированно поставляют энергию, в течение всего длительного срока службы. При выполнения регламента обслуживания гарантированный срок службы мини-ТЭС МАN до капитального ремонта составляет 50 000 моточасов. Общий ресурс мини-ТЭС МАN составляет не менее 100 000 моточасов. Конструкция мини-ТЭС, от компании Газовые машины, позволяет легко поддерживать их в исправном состоянии, оперативно, эффективно, и по низким ценам.<br/><br/>Газовые мини-ТЭС МАN имеют низкий уровень загрязнения окружающей среды. В соответствии со строгими директивами по выбросам TA-Luft и TA-Luft½, очистка выхлопных газов зачастую даже не требуется. На специальных газовых двигателях, предназначенных для работы на биогазе, может потребоваться применение каталитического нейтрализатора. 3 - полюсный каталитический нейтрализатор достаточен для атмосферных двигателей, работающих на природном газе. Таким образом, вы можете рассчитать низкие затраты на покупку. <br/><br/>Энергоснабжение является важным компонентом экономического успеха. Поэтому, конечно, вы всегда можете рассчитывать на нашу компанию после покупки, если вы нуждаетесь в помощи. <br/><br/>МАN и «Газовые машины» предлагают вам, индивидуальную концепцию обслуживания. Наши компании регулярно проводят учебные курсы для обучения персонала обслуживанию когенерационных установок с применением двигателей МАN, используя глубокие и проверенные знания МАN: надежные и эффективные – так же, как газовый двигатель МАN.'
-}, {
-  label: "Пуск энергоцентра АО «Элдин»",
-  id: 25,
-  img: 'news/gruppa-1.png',
-  category: 'Наука и техника',
-  created_at: '10.12.2020',
-  updated_at: '10.12.2020:12.22',
-  author: 'А.В. Хухарев',
-  preview_text: 'Компания «Газовые машины» запустила в эксплуатацию автономный энергоцентр для нужд АО «Элдин»',
-  description: 'Компания «Газовые машины» запустила в эксплуатацию автономный энергоцентр для нужд АО «Элдин». В составе энергоцентра 4 модуля с газопоршневыми когенерационными электростанциями MAN мощностью 500 кВт каждая.<br/><br/>Энергоцентр в автоматическом режиме обеспечивает электрической и тепловой энергией предприятие в объеме 2 МВт.<br/><br/>Проект реализован компанией «Газовые машины» на условиях «под ключ». Все работы, начиная от разработки и согласования проектно-сметной документации, производства комплекта оборудования (включая модульную трансформаторную подстанция), строительно-монтажных и пуско-наладочных работ.<br/><br/>Ожидаемая экономия от внедрения энергоцентра для АО «Элдин» составит не менее 38 млн. руб. в год, при инвестиционных затратах 44 тыс. рублей на 1 кВт/ч.<br/><br/><iframe width="560" height="315" src="https://www.youtube.com/embed/aXzy1N9zX04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-}].map(function (link) {
-  link.key = "nav-link-".concat(link.id, "-").concat(link.id);
-  return link;
-});
-/* harmony default export */ __webpack_exports__["default"] = (newsList);
 
 /***/ }),
 
@@ -1820,6 +1335,54 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 /***/ }),
 
+/***/ "./node_modules/exenv/index.js":
+/*!*************************************!*\
+  !*** ./node_modules/exenv/index.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2015 Jed Watson.
+  Based on code that is Copyright 2013-2015, Facebook, Inc.
+  All rights reserved.
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var canUseDOM = !!(
+		typeof window !== 'undefined' &&
+		window.document &&
+		window.document.createElement
+	);
+
+	var ExecutionEnvironment = {
+
+		canUseDOM: canUseDOM,
+
+		canUseWorkers: typeof Worker !== 'undefined',
+
+		canUseEventListeners:
+			canUseDOM && !!(window.addEventListener || window.attachEvent),
+
+		canUseViewport: canUseDOM && !!window.screen
+
+	};
+
+	if (true) {
+		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return ExecutionEnvironment;
+		}).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+
+}());
+
+
+/***/ }),
+
 /***/ "./node_modules/function-bind/implementation.js":
 /*!******************************************************!*\
   !*** ./node_modules/function-bind/implementation.js ***!
@@ -1954,21 +1517,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnews&absolutePagePath=G%3A%5COSPanel%5Cdomains%5Cgmnext9%5Cpages%5Cnews.js!./":
-/*!*********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnews&absolutePagePath=G%3A%5COSPanel%5Cdomains%5Cgmnext9%5Cpages%5Cnews.js ***!
-  \*********************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=G%3A%5COSPanel%5Cdomains%5Cgmnext9%5Cpages%5Cabout.js!./":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=G%3A%5COSPanel%5Cdomains%5Cgmnext9%5Cpages%5Cabout.js ***!
+  \***********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/news", function() {
-      var mod = __webpack_require__(/*! ./pages/news.js */ "./pages/news.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/about", function() {
+      var mod = __webpack_require__(/*! ./pages/about.js */ "./pages/about.js")
       if(true) {
-        module.hot.accept(/*! ./pages/news.js */ "./pages/news.js", function() {
-          if(!next.router.components["/news"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/news.js */ "./pages/news.js")
-          next.router.update("/news", updatedPage)
+        module.hot.accept(/*! ./pages/about.js */ "./pages/about.js", function() {
+          if(!next.router.components["/about"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/about.js */ "./pages/about.js")
+          next.router.update("/about", updatedPage)
         })
       }
       return mod
@@ -5272,6 +4835,2045 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ }),
 
+/***/ "./node_modules/react-dom/index.js":
+/*!***********************************************************************************************!*\
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_2adc2403d89adc16ead0 ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0 */ "dll-reference dll_2adc2403d89adc16ead0"))("./node_modules/react-dom/index.js");
+
+/***/ }),
+
+/***/ "./node_modules/react-image-lightbox/dist/index.es.js":
+/*!************************************************************!*\
+  !*** ./node_modules/react-image-lightbox/dist/index.es.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-modal */ "./node_modules/react-modal/lib/index.js");
+/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_modal__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (typeof call === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _slicedToArray(arr, i) {
+  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();
+}
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
+
+    return arr2;
+  }
+}
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+function _iterableToArray(iter) {
+  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+}
+
+function _iterableToArrayLimit(arr, i) {
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance");
+}
+
+/**
+ * Placeholder for future translate functionality
+ */
+function translate(str) {
+  var replaceStrings = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+
+  if (!str) {
+    return '';
+  }
+
+  var translated = str;
+
+  if (replaceStrings) {
+    Object.keys(replaceStrings).forEach(function (placeholder) {
+      translated = translated.replace(placeholder, replaceStrings[placeholder]);
+    });
+  }
+
+  return translated;
+}
+function getWindowWidth() {
+  return typeof global.window !== 'undefined' ? global.window.innerWidth : 0;
+}
+function getWindowHeight() {
+  return typeof global.window !== 'undefined' ? global.window.innerHeight : 0;
+} // Get the highest window context that isn't cross-origin
+// (When in an iframe)
+
+function getHighestSafeWindowContext() {
+  var self = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : global.window.self;
+  var referrer = self.document.referrer; // If we reached the top level, return self
+
+  if (self === global.window.top || !referrer) {
+    return self;
+  }
+
+  var getOrigin = function getOrigin(href) {
+    return href.match(/(.*\/\/.*?)(\/|$)/)[1];
+  }; // If parent is the same origin, we can move up one context
+  // Reference: https://stackoverflow.com/a/21965342/1601953
+
+
+  if (getOrigin(self.location.href) === getOrigin(referrer)) {
+    return getHighestSafeWindowContext(self.parent);
+  } // If a different origin, we consider the current level
+  // as the top reachable one
+
+
+  return self;
+}
+
+// Min image zoom level
+var MIN_ZOOM_LEVEL = 0; // Max image zoom level
+
+var MAX_ZOOM_LEVEL = 300; // Size ratio between previous and next zoom levels
+
+var ZOOM_RATIO = 1.007; // How much to increase/decrease the zoom level when the zoom buttons are clicked
+
+var ZOOM_BUTTON_INCREMENT_SIZE = 100; // Used to judge the amount of horizontal scroll needed to initiate a image move
+
+var WHEEL_MOVE_X_THRESHOLD = 200; // Used to judge the amount of vertical scroll needed to initiate a zoom action
+
+var WHEEL_MOVE_Y_THRESHOLD = 1;
+var KEYS = {
+  ESC: 27,
+  LEFT_ARROW: 37,
+  RIGHT_ARROW: 39
+}; // Actions
+
+var ACTION_NONE = 0;
+var ACTION_MOVE = 1;
+var ACTION_SWIPE = 2;
+var ACTION_PINCH = 3;
+
+var SOURCE_ANY = 0;
+var SOURCE_MOUSE = 1;
+var SOURCE_TOUCH = 2;
+var SOURCE_POINTER = 3; // Minimal swipe distance
+
+var MIN_SWIPE_DISTANCE = 200;
+
+var ReactImageLightbox =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ReactImageLightbox, _Component);
+
+  _createClass(ReactImageLightbox, null, [{
+    key: "isTargetMatchImage",
+    value: function isTargetMatchImage(target) {
+      return target && /ril-image-current/.test(target.className);
+    }
+  }, {
+    key: "parseMouseEvent",
+    value: function parseMouseEvent(mouseEvent) {
+      return {
+        id: 'mouse',
+        source: SOURCE_MOUSE,
+        x: parseInt(mouseEvent.clientX, 10),
+        y: parseInt(mouseEvent.clientY, 10)
+      };
+    }
+  }, {
+    key: "parseTouchPointer",
+    value: function parseTouchPointer(touchPointer) {
+      return {
+        id: touchPointer.identifier,
+        source: SOURCE_TOUCH,
+        x: parseInt(touchPointer.clientX, 10),
+        y: parseInt(touchPointer.clientY, 10)
+      };
+    }
+  }, {
+    key: "parsePointerEvent",
+    value: function parsePointerEvent(pointerEvent) {
+      return {
+        id: pointerEvent.pointerId,
+        source: SOURCE_POINTER,
+        x: parseInt(pointerEvent.clientX, 10),
+        y: parseInt(pointerEvent.clientY, 10)
+      };
+    } // Request to transition to the previous image
+
+  }, {
+    key: "getTransform",
+    value: function getTransform(_ref) {
+      var _ref$x = _ref.x,
+          x = _ref$x === void 0 ? 0 : _ref$x,
+          _ref$y = _ref.y,
+          y = _ref$y === void 0 ? 0 : _ref$y,
+          _ref$zoom = _ref.zoom,
+          zoom = _ref$zoom === void 0 ? 1 : _ref$zoom,
+          width = _ref.width,
+          targetWidth = _ref.targetWidth;
+      var nextX = x;
+      var windowWidth = getWindowWidth();
+
+      if (width > windowWidth) {
+        nextX += (windowWidth - width) / 2;
+      }
+
+      var scaleFactor = zoom * (targetWidth / width);
+      return {
+        transform: "translate3d(".concat(nextX, "px,").concat(y, "px,0) scale3d(").concat(scaleFactor, ",").concat(scaleFactor, ",1)")
+      };
+    }
+  }]);
+
+  function ReactImageLightbox(props) {
+    var _this;
+
+    _classCallCheck(this, ReactImageLightbox);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(ReactImageLightbox).call(this, props));
+    _this.state = {
+      //-----------------------------
+      // Animation
+      //-----------------------------
+      // Lightbox is closing
+      // When Lightbox is mounted, if animation is enabled it will open with the reverse of the closing animation
+      isClosing: !props.animationDisabled,
+      // Component parts should animate (e.g., when images are moving, or image is being zoomed)
+      shouldAnimate: false,
+      //-----------------------------
+      // Zoom settings
+      //-----------------------------
+      // Zoom level of image
+      zoomLevel: MIN_ZOOM_LEVEL,
+      //-----------------------------
+      // Image position settings
+      //-----------------------------
+      // Horizontal offset from center
+      offsetX: 0,
+      // Vertical offset from center
+      offsetY: 0,
+      // image load error for srcType
+      loadErrorStatus: {}
+    }; // Refs
+
+    _this.outerEl = react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();
+    _this.zoomInBtn = react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();
+    _this.zoomOutBtn = react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();
+    _this.caption = react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();
+    _this.closeIfClickInner = _this.closeIfClickInner.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleImageDoubleClick = _this.handleImageDoubleClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleImageMouseWheel = _this.handleImageMouseWheel.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleKeyInput = _this.handleKeyInput.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleMouseUp = _this.handleMouseUp.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleMouseDown = _this.handleMouseDown.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleMouseMove = _this.handleMouseMove.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleOuterMousewheel = _this.handleOuterMousewheel.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleTouchStart = _this.handleTouchStart.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleTouchMove = _this.handleTouchMove.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleTouchEnd = _this.handleTouchEnd.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handlePointerEvent = _this.handlePointerEvent.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleCaptionMousewheel = _this.handleCaptionMousewheel.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleWindowResize = _this.handleWindowResize.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleZoomInButtonClick = _this.handleZoomInButtonClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleZoomOutButtonClick = _this.handleZoomOutButtonClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.requestClose = _this.requestClose.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.requestMoveNext = _this.requestMoveNext.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.requestMovePrev = _this.requestMovePrev.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    return _this;
+  }
+
+  _createClass(ReactImageLightbox, [{
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      // Timeouts - always clear it before umount
+      this.timeouts = []; // Current action
+
+      this.currentAction = ACTION_NONE; // Events source
+
+      this.eventsSource = SOURCE_ANY; // Empty pointers list
+
+      this.pointerList = []; // Prevent inner close
+
+      this.preventInnerClose = false;
+      this.preventInnerCloseTimeout = null; // Used to disable animation when changing props.mainSrc|nextSrc|prevSrc
+
+      this.keyPressed = false; // Used to store load state / dimensions of images
+
+      this.imageCache = {}; // Time the last keydown event was called (used in keyboard action rate limiting)
+
+      this.lastKeyDownTime = 0; // Used for debouncing window resize event
+
+      this.resizeTimeout = null; // Used to determine when actions are triggered by the scroll wheel
+
+      this.wheelActionTimeout = null;
+      this.resetScrollTimeout = null;
+      this.scrollX = 0;
+      this.scrollY = 0; // Used in panning zoomed images
+
+      this.moveStartX = 0;
+      this.moveStartY = 0;
+      this.moveStartOffsetX = 0;
+      this.moveStartOffsetY = 0; // Used to swipe
+
+      this.swipeStartX = 0;
+      this.swipeStartY = 0;
+      this.swipeEndX = 0;
+      this.swipeEndY = 0; // Used to pinch
+
+      this.pinchTouchList = null;
+      this.pinchDistance = 0; // Used to differentiate between images with identical src
+
+      this.keyCounter = 0; // Used to detect a move when all src's remain unchanged (four or more of the same image in a row)
+
+      this.moveRequested = false;
+
+      if (!this.props.animationDisabled) {
+        // Make opening animation play
+        this.setState({
+          isClosing: false
+        });
+      }
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      // Prevents cross-origin errors when using a cross-origin iframe
+      this.windowContext = getHighestSafeWindowContext();
+      this.listeners = {
+        resize: this.handleWindowResize,
+        mouseup: this.handleMouseUp,
+        touchend: this.handleTouchEnd,
+        touchcancel: this.handleTouchEnd,
+        pointerdown: this.handlePointerEvent,
+        pointermove: this.handlePointerEvent,
+        pointerup: this.handlePointerEvent,
+        pointercancel: this.handlePointerEvent
+      };
+      Object.keys(this.listeners).forEach(function (type) {
+        _this2.windowContext.addEventListener(type, _this2.listeners[type]);
+      });
+      this.loadAllImages();
+    }
+  }, {
+    key: "componentWillReceiveProps",
+    value: function componentWillReceiveProps(nextProps) {
+      var _this3 = this;
+
+      // Iterate through the source types for prevProps and nextProps to
+      //  determine if any of the sources changed
+      var sourcesChanged = false;
+      var prevSrcDict = {};
+      var nextSrcDict = {};
+      this.getSrcTypes().forEach(function (srcType) {
+        if (_this3.props[srcType.name] !== nextProps[srcType.name]) {
+          sourcesChanged = true;
+          prevSrcDict[_this3.props[srcType.name]] = true;
+          nextSrcDict[nextProps[srcType.name]] = true;
+        }
+      });
+
+      if (sourcesChanged || this.moveRequested) {
+        // Reset the loaded state for images not rendered next
+        Object.keys(prevSrcDict).forEach(function (prevSrc) {
+          if (!(prevSrc in nextSrcDict) && prevSrc in _this3.imageCache) {
+            _this3.imageCache[prevSrc].loaded = false;
+          }
+        });
+        this.moveRequested = false; // Load any new images
+
+        this.loadAllImages(nextProps);
+      }
+    }
+  }, {
+    key: "shouldComponentUpdate",
+    value: function shouldComponentUpdate() {
+      // Wait for move...
+      return !this.moveRequested;
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      var _this4 = this;
+
+      this.didUnmount = true;
+      Object.keys(this.listeners).forEach(function (type) {
+        _this4.windowContext.removeEventListener(type, _this4.listeners[type]);
+      });
+      this.timeouts.forEach(function (tid) {
+        return clearTimeout(tid);
+      });
+    }
+  }, {
+    key: "setTimeout",
+    value: function (_setTimeout) {
+      function setTimeout(_x, _x2) {
+        return _setTimeout.apply(this, arguments);
+      }
+
+      setTimeout.toString = function () {
+        return _setTimeout.toString();
+      };
+
+      return setTimeout;
+    }(function (func, time) {
+      var _this5 = this;
+
+      var id = setTimeout(function () {
+        _this5.timeouts = _this5.timeouts.filter(function (tid) {
+          return tid !== id;
+        });
+        func();
+      }, time);
+      this.timeouts.push(id);
+      return id;
+    })
+  }, {
+    key: "setPreventInnerClose",
+    value: function setPreventInnerClose() {
+      var _this6 = this;
+
+      if (this.preventInnerCloseTimeout) {
+        this.clearTimeout(this.preventInnerCloseTimeout);
+      }
+
+      this.preventInnerClose = true;
+      this.preventInnerCloseTimeout = this.setTimeout(function () {
+        _this6.preventInnerClose = false;
+        _this6.preventInnerCloseTimeout = null;
+      }, 100);
+    } // Get info for the best suited image to display with the given srcType
+
+  }, {
+    key: "getBestImageForType",
+    value: function getBestImageForType(srcType) {
+      var imageSrc = this.props[srcType];
+      var fitSizes = {};
+
+      if (this.isImageLoaded(imageSrc)) {
+        // Use full-size image if available
+        fitSizes = this.getFitSizes(this.imageCache[imageSrc].width, this.imageCache[imageSrc].height);
+      } else if (this.isImageLoaded(this.props["".concat(srcType, "Thumbnail")])) {
+        // Fall back to using thumbnail if the image has not been loaded
+        imageSrc = this.props["".concat(srcType, "Thumbnail")];
+        fitSizes = this.getFitSizes(this.imageCache[imageSrc].width, this.imageCache[imageSrc].height, true);
+      } else {
+        return null;
+      }
+
+      return {
+        src: imageSrc,
+        height: this.imageCache[imageSrc].height,
+        width: this.imageCache[imageSrc].width,
+        targetHeight: fitSizes.height,
+        targetWidth: fitSizes.width
+      };
+    } // Get sizing for when an image is larger than the window
+
+  }, {
+    key: "getFitSizes",
+    value: function getFitSizes(width, height, stretch) {
+      var boxSize = this.getLightboxRect();
+      var maxHeight = boxSize.height - this.props.imagePadding * 2;
+      var maxWidth = boxSize.width - this.props.imagePadding * 2;
+
+      if (!stretch) {
+        maxHeight = Math.min(maxHeight, height);
+        maxWidth = Math.min(maxWidth, width);
+      }
+
+      var maxRatio = maxWidth / maxHeight;
+      var srcRatio = width / height;
+
+      if (maxRatio > srcRatio) {
+        // height is the constraining dimension of the photo
+        return {
+          width: width * maxHeight / height,
+          height: maxHeight
+        };
+      }
+
+      return {
+        width: maxWidth,
+        height: height * maxWidth / width
+      };
+    }
+  }, {
+    key: "getMaxOffsets",
+    value: function getMaxOffsets() {
+      var zoomLevel = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.state.zoomLevel;
+      var currentImageInfo = this.getBestImageForType('mainSrc');
+
+      if (currentImageInfo === null) {
+        return {
+          maxX: 0,
+          minX: 0,
+          maxY: 0,
+          minY: 0
+        };
+      }
+
+      var boxSize = this.getLightboxRect();
+      var zoomMultiplier = this.getZoomMultiplier(zoomLevel);
+      var maxX = 0;
+
+      if (zoomMultiplier * currentImageInfo.width - boxSize.width < 0) {
+        // if there is still blank space in the X dimension, don't limit except to the opposite edge
+        maxX = (boxSize.width - zoomMultiplier * currentImageInfo.width) / 2;
+      } else {
+        maxX = (zoomMultiplier * currentImageInfo.width - boxSize.width) / 2;
+      }
+
+      var maxY = 0;
+
+      if (zoomMultiplier * currentImageInfo.height - boxSize.height < 0) {
+        // if there is still blank space in the Y dimension, don't limit except to the opposite edge
+        maxY = (boxSize.height - zoomMultiplier * currentImageInfo.height) / 2;
+      } else {
+        maxY = (zoomMultiplier * currentImageInfo.height - boxSize.height) / 2;
+      }
+
+      return {
+        maxX: maxX,
+        maxY: maxY,
+        minX: -1 * maxX,
+        minY: -1 * maxY
+      };
+    } // Get image src types
+
+  }, {
+    key: "getSrcTypes",
+    value: function getSrcTypes() {
+      return [{
+        name: 'mainSrc',
+        keyEnding: "i".concat(this.keyCounter)
+      }, {
+        name: 'mainSrcThumbnail',
+        keyEnding: "t".concat(this.keyCounter)
+      }, {
+        name: 'nextSrc',
+        keyEnding: "i".concat(this.keyCounter + 1)
+      }, {
+        name: 'nextSrcThumbnail',
+        keyEnding: "t".concat(this.keyCounter + 1)
+      }, {
+        name: 'prevSrc',
+        keyEnding: "i".concat(this.keyCounter - 1)
+      }, {
+        name: 'prevSrcThumbnail',
+        keyEnding: "t".concat(this.keyCounter - 1)
+      }];
+    }
+    /**
+     * Get sizing when the image is scaled
+     */
+
+  }, {
+    key: "getZoomMultiplier",
+    value: function getZoomMultiplier() {
+      var zoomLevel = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.state.zoomLevel;
+      return Math.pow(ZOOM_RATIO, zoomLevel);
+    }
+    /**
+     * Get the size of the lightbox in pixels
+     */
+
+  }, {
+    key: "getLightboxRect",
+    value: function getLightboxRect() {
+      if (this.outerEl.current) {
+        return this.outerEl.current.getBoundingClientRect();
+      }
+
+      return {
+        width: getWindowWidth(),
+        height: getWindowHeight(),
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      };
+    }
+  }, {
+    key: "clearTimeout",
+    value: function (_clearTimeout) {
+      function clearTimeout(_x3) {
+        return _clearTimeout.apply(this, arguments);
+      }
+
+      clearTimeout.toString = function () {
+        return _clearTimeout.toString();
+      };
+
+      return clearTimeout;
+    }(function (id) {
+      this.timeouts = this.timeouts.filter(function (tid) {
+        return tid !== id;
+      });
+      clearTimeout(id);
+    }) // Change zoom level
+
+  }, {
+    key: "changeZoom",
+    value: function changeZoom(zoomLevel, clientX, clientY) {
+      // Ignore if zoom disabled
+      if (!this.props.enableZoom) {
+        return;
+      } // Constrain zoom level to the set bounds
+
+
+      var nextZoomLevel = Math.max(MIN_ZOOM_LEVEL, Math.min(MAX_ZOOM_LEVEL, zoomLevel)); // Ignore requests that don't change the zoom level
+
+      if (nextZoomLevel === this.state.zoomLevel) {
+        return;
+      }
+
+      if (nextZoomLevel === MIN_ZOOM_LEVEL) {
+        // Snap back to center if zoomed all the way out
+        this.setState({
+          zoomLevel: nextZoomLevel,
+          offsetX: 0,
+          offsetY: 0
+        });
+        return;
+      }
+
+      var imageBaseSize = this.getBestImageForType('mainSrc');
+
+      if (imageBaseSize === null) {
+        return;
+      }
+
+      var currentZoomMultiplier = this.getZoomMultiplier();
+      var nextZoomMultiplier = this.getZoomMultiplier(nextZoomLevel); // Default to the center of the image to zoom when no mouse position specified
+
+      var boxRect = this.getLightboxRect();
+      var pointerX = typeof clientX !== 'undefined' ? clientX - boxRect.left : boxRect.width / 2;
+      var pointerY = typeof clientY !== 'undefined' ? clientY - boxRect.top : boxRect.height / 2;
+      var currentImageOffsetX = (boxRect.width - imageBaseSize.width * currentZoomMultiplier) / 2;
+      var currentImageOffsetY = (boxRect.height - imageBaseSize.height * currentZoomMultiplier) / 2;
+      var currentImageRealOffsetX = currentImageOffsetX - this.state.offsetX;
+      var currentImageRealOffsetY = currentImageOffsetY - this.state.offsetY;
+      var currentPointerXRelativeToImage = (pointerX - currentImageRealOffsetX) / currentZoomMultiplier;
+      var currentPointerYRelativeToImage = (pointerY - currentImageRealOffsetY) / currentZoomMultiplier;
+      var nextImageRealOffsetX = pointerX - currentPointerXRelativeToImage * nextZoomMultiplier;
+      var nextImageRealOffsetY = pointerY - currentPointerYRelativeToImage * nextZoomMultiplier;
+      var nextImageOffsetX = (boxRect.width - imageBaseSize.width * nextZoomMultiplier) / 2;
+      var nextImageOffsetY = (boxRect.height - imageBaseSize.height * nextZoomMultiplier) / 2;
+      var nextOffsetX = nextImageOffsetX - nextImageRealOffsetX;
+      var nextOffsetY = nextImageOffsetY - nextImageRealOffsetY; // When zooming out, limit the offset so things don't get left askew
+
+      if (this.currentAction !== ACTION_PINCH) {
+        var maxOffsets = this.getMaxOffsets();
+
+        if (this.state.zoomLevel > nextZoomLevel) {
+          nextOffsetX = Math.max(maxOffsets.minX, Math.min(maxOffsets.maxX, nextOffsetX));
+          nextOffsetY = Math.max(maxOffsets.minY, Math.min(maxOffsets.maxY, nextOffsetY));
+        }
+      }
+
+      this.setState({
+        zoomLevel: nextZoomLevel,
+        offsetX: nextOffsetX,
+        offsetY: nextOffsetY
+      });
+    }
+  }, {
+    key: "closeIfClickInner",
+    value: function closeIfClickInner(event) {
+      if (!this.preventInnerClose && event.target.className.search(/\bril-inner\b/) > -1) {
+        this.requestClose(event);
+      }
+    }
+    /**
+     * Handle user keyboard actions
+     */
+
+  }, {
+    key: "handleKeyInput",
+    value: function handleKeyInput(event) {
+      event.stopPropagation(); // Ignore key input during animations
+
+      if (this.isAnimating()) {
+        return;
+      } // Allow slightly faster navigation through the images when user presses keys repeatedly
+
+
+      if (event.type === 'keyup') {
+        this.lastKeyDownTime -= this.props.keyRepeatKeyupBonus;
+        return;
+      }
+
+      var keyCode = event.which || event.keyCode; // Ignore key presses that happen too close to each other (when rapid fire key pressing or holding down the key)
+      // But allow it if it's a lightbox closing action
+
+      var currentTime = new Date();
+
+      if (currentTime.getTime() - this.lastKeyDownTime < this.props.keyRepeatLimit && keyCode !== KEYS.ESC) {
+        return;
+      }
+
+      this.lastKeyDownTime = currentTime.getTime();
+
+      switch (keyCode) {
+        // ESC key closes the lightbox
+        case KEYS.ESC:
+          event.preventDefault();
+          this.requestClose(event);
+          break;
+        // Left arrow key moves to previous image
+
+        case KEYS.LEFT_ARROW:
+          if (!this.props.prevSrc) {
+            return;
+          }
+
+          event.preventDefault();
+          this.keyPressed = true;
+          this.requestMovePrev(event);
+          break;
+        // Right arrow key moves to next image
+
+        case KEYS.RIGHT_ARROW:
+          if (!this.props.nextSrc) {
+            return;
+          }
+
+          event.preventDefault();
+          this.keyPressed = true;
+          this.requestMoveNext(event);
+          break;
+      }
+    }
+    /**
+     * Handle a mouse wheel event over the lightbox container
+     */
+
+  }, {
+    key: "handleOuterMousewheel",
+    value: function handleOuterMousewheel(event) {
+      var _this7 = this;
+
+      // Prevent scrolling of the background
+      event.stopPropagation();
+      var xThreshold = WHEEL_MOVE_X_THRESHOLD;
+      var actionDelay = 0;
+      var imageMoveDelay = 500;
+      this.clearTimeout(this.resetScrollTimeout);
+      this.resetScrollTimeout = this.setTimeout(function () {
+        _this7.scrollX = 0;
+        _this7.scrollY = 0;
+      }, 300); // Prevent rapid-fire zoom behavior
+
+      if (this.wheelActionTimeout !== null || this.isAnimating()) {
+        return;
+      }
+
+      if (Math.abs(event.deltaY) < Math.abs(event.deltaX)) {
+        // handle horizontal scrolls with image moves
+        this.scrollY = 0;
+        this.scrollX += event.deltaX;
+        var bigLeapX = xThreshold / 2; // If the scroll amount has accumulated sufficiently, or a large leap was taken
+
+        if (this.scrollX >= xThreshold || event.deltaX >= bigLeapX) {
+          // Scroll right moves to next
+          this.requestMoveNext(event);
+          actionDelay = imageMoveDelay;
+          this.scrollX = 0;
+        } else if (this.scrollX <= -1 * xThreshold || event.deltaX <= -1 * bigLeapX) {
+          // Scroll left moves to previous
+          this.requestMovePrev(event);
+          actionDelay = imageMoveDelay;
+          this.scrollX = 0;
+        }
+      } // Allow successive actions after the set delay
+
+
+      if (actionDelay !== 0) {
+        this.wheelActionTimeout = this.setTimeout(function () {
+          _this7.wheelActionTimeout = null;
+        }, actionDelay);
+      }
+    }
+  }, {
+    key: "handleImageMouseWheel",
+    value: function handleImageMouseWheel(event) {
+      var yThreshold = WHEEL_MOVE_Y_THRESHOLD;
+
+      if (Math.abs(event.deltaY) >= Math.abs(event.deltaX)) {
+        event.stopPropagation(); // If the vertical scroll amount was large enough, perform a zoom
+
+        if (Math.abs(event.deltaY) < yThreshold) {
+          return;
+        }
+
+        this.scrollX = 0;
+        this.scrollY += event.deltaY;
+        this.changeZoom(this.state.zoomLevel - event.deltaY, event.clientX, event.clientY);
+      }
+    }
+    /**
+     * Handle a double click on the current image
+     */
+
+  }, {
+    key: "handleImageDoubleClick",
+    value: function handleImageDoubleClick(event) {
+      if (this.state.zoomLevel > MIN_ZOOM_LEVEL) {
+        // A double click when zoomed in zooms all the way out
+        this.changeZoom(MIN_ZOOM_LEVEL, event.clientX, event.clientY);
+      } else {
+        // A double click when zoomed all the way out zooms in
+        this.changeZoom(this.state.zoomLevel + ZOOM_BUTTON_INCREMENT_SIZE, event.clientX, event.clientY);
+      }
+    }
+  }, {
+    key: "shouldHandleEvent",
+    value: function shouldHandleEvent(source) {
+      if (this.eventsSource === source) {
+        return true;
+      }
+
+      if (this.eventsSource === SOURCE_ANY) {
+        this.eventsSource = source;
+        return true;
+      }
+
+      switch (source) {
+        case SOURCE_MOUSE:
+          return false;
+
+        case SOURCE_TOUCH:
+          this.eventsSource = SOURCE_TOUCH;
+          this.filterPointersBySource();
+          return true;
+
+        case SOURCE_POINTER:
+          if (this.eventsSource === SOURCE_MOUSE) {
+            this.eventsSource = SOURCE_POINTER;
+            this.filterPointersBySource();
+            return true;
+          }
+
+          return false;
+
+        default:
+          return false;
+      }
+    }
+  }, {
+    key: "addPointer",
+    value: function addPointer(pointer) {
+      this.pointerList.push(pointer);
+    }
+  }, {
+    key: "removePointer",
+    value: function removePointer(pointer) {
+      this.pointerList = this.pointerList.filter(function (_ref2) {
+        var id = _ref2.id;
+        return id !== pointer.id;
+      });
+    }
+  }, {
+    key: "filterPointersBySource",
+    value: function filterPointersBySource() {
+      var _this8 = this;
+
+      this.pointerList = this.pointerList.filter(function (_ref3) {
+        var source = _ref3.source;
+        return source === _this8.eventsSource;
+      });
+    }
+  }, {
+    key: "handleMouseDown",
+    value: function handleMouseDown(event) {
+      if (this.shouldHandleEvent(SOURCE_MOUSE) && ReactImageLightbox.isTargetMatchImage(event.target)) {
+        this.addPointer(ReactImageLightbox.parseMouseEvent(event));
+        this.multiPointerStart(event);
+      }
+    }
+  }, {
+    key: "handleMouseMove",
+    value: function handleMouseMove(event) {
+      if (this.shouldHandleEvent(SOURCE_MOUSE)) {
+        this.multiPointerMove(event, [ReactImageLightbox.parseMouseEvent(event)]);
+      }
+    }
+  }, {
+    key: "handleMouseUp",
+    value: function handleMouseUp(event) {
+      if (this.shouldHandleEvent(SOURCE_MOUSE)) {
+        this.removePointer(ReactImageLightbox.parseMouseEvent(event));
+        this.multiPointerEnd(event);
+      }
+    }
+  }, {
+    key: "handlePointerEvent",
+    value: function handlePointerEvent(event) {
+      if (this.shouldHandleEvent(SOURCE_POINTER)) {
+        switch (event.type) {
+          case 'pointerdown':
+            if (ReactImageLightbox.isTargetMatchImage(event.target)) {
+              this.addPointer(ReactImageLightbox.parsePointerEvent(event));
+              this.multiPointerStart(event);
+            }
+
+            break;
+
+          case 'pointermove':
+            this.multiPointerMove(event, [ReactImageLightbox.parsePointerEvent(event)]);
+            break;
+
+          case 'pointerup':
+          case 'pointercancel':
+            this.removePointer(ReactImageLightbox.parsePointerEvent(event));
+            this.multiPointerEnd(event);
+            break;
+        }
+      }
+    }
+  }, {
+    key: "handleTouchStart",
+    value: function handleTouchStart(event) {
+      var _this9 = this;
+
+      if (this.shouldHandleEvent(SOURCE_TOUCH) && ReactImageLightbox.isTargetMatchImage(event.target)) {
+        [].forEach.call(event.changedTouches, function (eventTouch) {
+          return _this9.addPointer(ReactImageLightbox.parseTouchPointer(eventTouch));
+        });
+        this.multiPointerStart(event);
+      }
+    }
+  }, {
+    key: "handleTouchMove",
+    value: function handleTouchMove(event) {
+      if (this.shouldHandleEvent(SOURCE_TOUCH)) {
+        this.multiPointerMove(event, [].map.call(event.changedTouches, function (eventTouch) {
+          return ReactImageLightbox.parseTouchPointer(eventTouch);
+        }));
+      }
+    }
+  }, {
+    key: "handleTouchEnd",
+    value: function handleTouchEnd(event) {
+      var _this10 = this;
+
+      if (this.shouldHandleEvent(SOURCE_TOUCH)) {
+        [].map.call(event.changedTouches, function (touch) {
+          return _this10.removePointer(ReactImageLightbox.parseTouchPointer(touch));
+        });
+        this.multiPointerEnd(event);
+      }
+    }
+  }, {
+    key: "decideMoveOrSwipe",
+    value: function decideMoveOrSwipe(pointer) {
+      if (this.state.zoomLevel <= MIN_ZOOM_LEVEL) {
+        this.handleSwipeStart(pointer);
+      } else {
+        this.handleMoveStart(pointer);
+      }
+    }
+  }, {
+    key: "multiPointerStart",
+    value: function multiPointerStart(event) {
+      this.handleEnd(null);
+
+      switch (this.pointerList.length) {
+        case 1:
+          {
+            event.preventDefault();
+            this.decideMoveOrSwipe(this.pointerList[0]);
+            break;
+          }
+
+        case 2:
+          {
+            event.preventDefault();
+            this.handlePinchStart(this.pointerList);
+            break;
+          }
+      }
+    }
+  }, {
+    key: "multiPointerMove",
+    value: function multiPointerMove(event, pointerList) {
+      switch (this.currentAction) {
+        case ACTION_MOVE:
+          {
+            event.preventDefault();
+            this.handleMove(pointerList[0]);
+            break;
+          }
+
+        case ACTION_SWIPE:
+          {
+            event.preventDefault();
+            this.handleSwipe(pointerList[0]);
+            break;
+          }
+
+        case ACTION_PINCH:
+          {
+            event.preventDefault();
+            this.handlePinch(pointerList);
+            break;
+          }
+      }
+    }
+  }, {
+    key: "multiPointerEnd",
+    value: function multiPointerEnd(event) {
+      if (this.currentAction !== ACTION_NONE) {
+        this.setPreventInnerClose();
+        this.handleEnd(event);
+      }
+
+      switch (this.pointerList.length) {
+        case 0:
+          {
+            this.eventsSource = SOURCE_ANY;
+            break;
+          }
+
+        case 1:
+          {
+            event.preventDefault();
+            this.decideMoveOrSwipe(this.pointerList[0]);
+            break;
+          }
+
+        case 2:
+          {
+            event.preventDefault();
+            this.handlePinchStart(this.pointerList);
+            break;
+          }
+      }
+    }
+  }, {
+    key: "handleEnd",
+    value: function handleEnd(event) {
+      switch (this.currentAction) {
+        case ACTION_MOVE:
+          this.handleMoveEnd(event);
+          break;
+
+        case ACTION_SWIPE:
+          this.handleSwipeEnd(event);
+          break;
+
+        case ACTION_PINCH:
+          this.handlePinchEnd(event);
+          break;
+      }
+    } // Handle move start over the lightbox container
+    // This happens:
+    // - On a mouseDown event
+    // - On a touchstart event
+
+  }, {
+    key: "handleMoveStart",
+    value: function handleMoveStart(_ref4) {
+      var clientX = _ref4.x,
+          clientY = _ref4.y;
+
+      if (!this.props.enableZoom) {
+        return;
+      }
+
+      this.currentAction = ACTION_MOVE;
+      this.moveStartX = clientX;
+      this.moveStartY = clientY;
+      this.moveStartOffsetX = this.state.offsetX;
+      this.moveStartOffsetY = this.state.offsetY;
+    } // Handle dragging over the lightbox container
+    // This happens:
+    // - After a mouseDown and before a mouseUp event
+    // - After a touchstart and before a touchend event
+
+  }, {
+    key: "handleMove",
+    value: function handleMove(_ref5) {
+      var clientX = _ref5.x,
+          clientY = _ref5.y;
+      var newOffsetX = this.moveStartX - clientX + this.moveStartOffsetX;
+      var newOffsetY = this.moveStartY - clientY + this.moveStartOffsetY;
+
+      if (this.state.offsetX !== newOffsetX || this.state.offsetY !== newOffsetY) {
+        this.setState({
+          offsetX: newOffsetX,
+          offsetY: newOffsetY
+        });
+      }
+    }
+  }, {
+    key: "handleMoveEnd",
+    value: function handleMoveEnd() {
+      var _this11 = this;
+
+      this.currentAction = ACTION_NONE;
+      this.moveStartX = 0;
+      this.moveStartY = 0;
+      this.moveStartOffsetX = 0;
+      this.moveStartOffsetY = 0; // Snap image back into frame if outside max offset range
+
+      var maxOffsets = this.getMaxOffsets();
+      var nextOffsetX = Math.max(maxOffsets.minX, Math.min(maxOffsets.maxX, this.state.offsetX));
+      var nextOffsetY = Math.max(maxOffsets.minY, Math.min(maxOffsets.maxY, this.state.offsetY));
+
+      if (nextOffsetX !== this.state.offsetX || nextOffsetY !== this.state.offsetY) {
+        this.setState({
+          offsetX: nextOffsetX,
+          offsetY: nextOffsetY,
+          shouldAnimate: true
+        });
+        this.setTimeout(function () {
+          _this11.setState({
+            shouldAnimate: false
+          });
+        }, this.props.animationDuration);
+      }
+    }
+  }, {
+    key: "handleSwipeStart",
+    value: function handleSwipeStart(_ref6) {
+      var clientX = _ref6.x,
+          clientY = _ref6.y;
+      this.currentAction = ACTION_SWIPE;
+      this.swipeStartX = clientX;
+      this.swipeStartY = clientY;
+      this.swipeEndX = clientX;
+      this.swipeEndY = clientY;
+    }
+  }, {
+    key: "handleSwipe",
+    value: function handleSwipe(_ref7) {
+      var clientX = _ref7.x,
+          clientY = _ref7.y;
+      this.swipeEndX = clientX;
+      this.swipeEndY = clientY;
+    }
+  }, {
+    key: "handleSwipeEnd",
+    value: function handleSwipeEnd(event) {
+      var xDiff = this.swipeEndX - this.swipeStartX;
+      var xDiffAbs = Math.abs(xDiff);
+      var yDiffAbs = Math.abs(this.swipeEndY - this.swipeStartY);
+      this.currentAction = ACTION_NONE;
+      this.swipeStartX = 0;
+      this.swipeStartY = 0;
+      this.swipeEndX = 0;
+      this.swipeEndY = 0;
+
+      if (!event || this.isAnimating() || xDiffAbs < yDiffAbs * 1.5) {
+        return;
+      }
+
+      if (xDiffAbs < MIN_SWIPE_DISTANCE) {
+        var boxRect = this.getLightboxRect();
+
+        if (xDiffAbs < boxRect.width / 4) {
+          return;
+        }
+      }
+
+      if (xDiff > 0 && this.props.prevSrc) {
+        event.preventDefault();
+        this.requestMovePrev();
+      } else if (xDiff < 0 && this.props.nextSrc) {
+        event.preventDefault();
+        this.requestMoveNext();
+      }
+    }
+  }, {
+    key: "calculatePinchDistance",
+    value: function calculatePinchDistance() {
+      var _ref8 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.pinchTouchList,
+          _ref9 = _slicedToArray(_ref8, 2),
+          a = _ref9[0],
+          b = _ref9[1];
+
+      return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));
+    }
+  }, {
+    key: "calculatePinchCenter",
+    value: function calculatePinchCenter() {
+      var _ref10 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.pinchTouchList,
+          _ref11 = _slicedToArray(_ref10, 2),
+          a = _ref11[0],
+          b = _ref11[1];
+
+      return {
+        x: a.x - (a.x - b.x) / 2,
+        y: a.y - (a.y - b.y) / 2
+      };
+    }
+  }, {
+    key: "handlePinchStart",
+    value: function handlePinchStart(pointerList) {
+      if (!this.props.enableZoom) {
+        return;
+      }
+
+      this.currentAction = ACTION_PINCH;
+      this.pinchTouchList = pointerList.map(function (_ref12) {
+        var id = _ref12.id,
+            x = _ref12.x,
+            y = _ref12.y;
+        return {
+          id: id,
+          x: x,
+          y: y
+        };
+      });
+      this.pinchDistance = this.calculatePinchDistance();
+    }
+  }, {
+    key: "handlePinch",
+    value: function handlePinch(pointerList) {
+      this.pinchTouchList = this.pinchTouchList.map(function (oldPointer) {
+        for (var i = 0; i < pointerList.length; i += 1) {
+          if (pointerList[i].id === oldPointer.id) {
+            return pointerList[i];
+          }
+        }
+
+        return oldPointer;
+      });
+      var newDistance = this.calculatePinchDistance();
+      var zoomLevel = this.state.zoomLevel + newDistance - this.pinchDistance;
+      this.pinchDistance = newDistance;
+
+      var _this$calculatePinchC = this.calculatePinchCenter(this.pinchTouchList),
+          clientX = _this$calculatePinchC.x,
+          clientY = _this$calculatePinchC.y;
+
+      this.changeZoom(zoomLevel, clientX, clientY);
+    }
+  }, {
+    key: "handlePinchEnd",
+    value: function handlePinchEnd() {
+      this.currentAction = ACTION_NONE;
+      this.pinchTouchList = null;
+      this.pinchDistance = 0;
+    } // Handle the window resize event
+
+  }, {
+    key: "handleWindowResize",
+    value: function handleWindowResize() {
+      this.clearTimeout(this.resizeTimeout);
+      this.resizeTimeout = this.setTimeout(this.forceUpdate.bind(this), 100);
+    }
+  }, {
+    key: "handleZoomInButtonClick",
+    value: function handleZoomInButtonClick() {
+      var nextZoomLevel = this.state.zoomLevel + ZOOM_BUTTON_INCREMENT_SIZE;
+      this.changeZoom(nextZoomLevel);
+
+      if (nextZoomLevel === MAX_ZOOM_LEVEL) {
+        this.zoomOutBtn.current.focus();
+      }
+    }
+  }, {
+    key: "handleZoomOutButtonClick",
+    value: function handleZoomOutButtonClick() {
+      var nextZoomLevel = this.state.zoomLevel - ZOOM_BUTTON_INCREMENT_SIZE;
+      this.changeZoom(nextZoomLevel);
+
+      if (nextZoomLevel === MIN_ZOOM_LEVEL) {
+        this.zoomInBtn.current.focus();
+      }
+    }
+  }, {
+    key: "handleCaptionMousewheel",
+    value: function handleCaptionMousewheel(event) {
+      event.stopPropagation();
+
+      if (!this.caption.current) {
+        return;
+      }
+
+      var _this$caption$current = this.caption.current.getBoundingClientRect(),
+          height = _this$caption$current.height;
+
+      var _this$caption$current2 = this.caption.current,
+          scrollHeight = _this$caption$current2.scrollHeight,
+          scrollTop = _this$caption$current2.scrollTop;
+
+      if (event.deltaY > 0 && height + scrollTop >= scrollHeight || event.deltaY < 0 && scrollTop <= 0) {
+        event.preventDefault();
+      }
+    } // Detach key and mouse input events
+
+  }, {
+    key: "isAnimating",
+    value: function isAnimating() {
+      return this.state.shouldAnimate || this.state.isClosing;
+    } // Check if image is loaded
+
+  }, {
+    key: "isImageLoaded",
+    value: function isImageLoaded(imageSrc) {
+      return imageSrc && imageSrc in this.imageCache && this.imageCache[imageSrc].loaded;
+    } // Load image from src and call callback with image width and height on load
+
+  }, {
+    key: "loadImage",
+    value: function loadImage(srcType, imageSrc, done) {
+      var _this12 = this;
+
+      // Return the image info if it is already cached
+      if (this.isImageLoaded(imageSrc)) {
+        this.setTimeout(function () {
+          done();
+        }, 1);
+        return;
+      }
+
+      var inMemoryImage = new global.Image();
+
+      if (this.props.imageCrossOrigin) {
+        inMemoryImage.crossOrigin = this.props.imageCrossOrigin;
+      }
+
+      inMemoryImage.onerror = function (errorEvent) {
+        _this12.props.onImageLoadError(imageSrc, srcType, errorEvent); // failed to load so set the state loadErrorStatus
+
+
+        _this12.setState(function (prevState) {
+          return {
+            loadErrorStatus: _objectSpread({}, prevState.loadErrorStatus, _defineProperty({}, srcType, true))
+          };
+        });
+
+        done(errorEvent);
+      };
+
+      inMemoryImage.onload = function () {
+        _this12.props.onImageLoad(imageSrc, srcType, inMemoryImage);
+
+        _this12.imageCache[imageSrc] = {
+          loaded: true,
+          width: inMemoryImage.width,
+          height: inMemoryImage.height
+        };
+        done();
+      };
+
+      inMemoryImage.src = imageSrc;
+    } // Load all images and their thumbnails
+
+  }, {
+    key: "loadAllImages",
+    value: function loadAllImages() {
+      var _this13 = this;
+
+      var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.props;
+
+      var generateLoadDoneCallback = function generateLoadDoneCallback(srcType, imageSrc) {
+        return function (err) {
+          // Give up showing image on error
+          if (err) {
+            return;
+          } // Don't rerender if the src is not the same as when the load started
+          // or if the component has unmounted
+
+
+          if (_this13.props[srcType] !== imageSrc || _this13.didUnmount) {
+            return;
+          } // Force rerender with the new image
+
+
+          _this13.forceUpdate();
+        };
+      }; // Load the images
+
+
+      this.getSrcTypes().forEach(function (srcType) {
+        var type = srcType.name; // there is no error when we try to load it initially
+
+        if (props[type] && _this13.state.loadErrorStatus[type]) {
+          _this13.setState(function (prevState) {
+            return {
+              loadErrorStatus: _objectSpread({}, prevState.loadErrorStatus, _defineProperty({}, type, false))
+            };
+          });
+        } // Load unloaded images
+
+
+        if (props[type] && !_this13.isImageLoaded(props[type])) {
+          _this13.loadImage(type, props[type], generateLoadDoneCallback(type, props[type]));
+        }
+      });
+    } // Request that the lightbox be closed
+
+  }, {
+    key: "requestClose",
+    value: function requestClose(event) {
+      var _this14 = this;
+
+      // Call the parent close request
+      var closeLightbox = function closeLightbox() {
+        return _this14.props.onCloseRequest(event);
+      };
+
+      if (this.props.animationDisabled || event.type === 'keydown' && !this.props.animationOnKeyInput) {
+        // No animation
+        closeLightbox();
+        return;
+      } // With animation
+      // Start closing animation
+
+
+      this.setState({
+        isClosing: true
+      }); // Perform the actual closing at the end of the animation
+
+      this.setTimeout(closeLightbox, this.props.animationDuration);
+    }
+  }, {
+    key: "requestMove",
+    value: function requestMove(direction, event) {
+      var _this15 = this;
+
+      // Reset the zoom level on image move
+      var nextState = {
+        zoomLevel: MIN_ZOOM_LEVEL,
+        offsetX: 0,
+        offsetY: 0
+      }; // Enable animated states
+
+      if (!this.props.animationDisabled && (!this.keyPressed || this.props.animationOnKeyInput)) {
+        nextState.shouldAnimate = true;
+        this.setTimeout(function () {
+          return _this15.setState({
+            shouldAnimate: false
+          });
+        }, this.props.animationDuration);
+      }
+
+      this.keyPressed = false;
+      this.moveRequested = true;
+
+      if (direction === 'prev') {
+        this.keyCounter -= 1;
+        this.setState(nextState);
+        this.props.onMovePrevRequest(event);
+      } else {
+        this.keyCounter += 1;
+        this.setState(nextState);
+        this.props.onMoveNextRequest(event);
+      }
+    } // Request to transition to the next image
+
+  }, {
+    key: "requestMoveNext",
+    value: function requestMoveNext(event) {
+      this.requestMove('next', event);
+    } // Request to transition to the previous image
+
+  }, {
+    key: "requestMovePrev",
+    value: function requestMovePrev(event) {
+      this.requestMove('prev', event);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this16 = this;
+
+      var _this$props = this.props,
+          animationDisabled = _this$props.animationDisabled,
+          animationDuration = _this$props.animationDuration,
+          clickOutsideToClose = _this$props.clickOutsideToClose,
+          discourageDownloads = _this$props.discourageDownloads,
+          enableZoom = _this$props.enableZoom,
+          imageTitle = _this$props.imageTitle,
+          nextSrc = _this$props.nextSrc,
+          prevSrc = _this$props.prevSrc,
+          toolbarButtons = _this$props.toolbarButtons,
+          reactModalStyle = _this$props.reactModalStyle,
+          _onAfterOpen = _this$props.onAfterOpen,
+          imageCrossOrigin = _this$props.imageCrossOrigin,
+          reactModalProps = _this$props.reactModalProps;
+      var _this$state = this.state,
+          zoomLevel = _this$state.zoomLevel,
+          offsetX = _this$state.offsetX,
+          offsetY = _this$state.offsetY,
+          isClosing = _this$state.isClosing,
+          loadErrorStatus = _this$state.loadErrorStatus;
+      var boxSize = this.getLightboxRect();
+      var transitionStyle = {}; // Transition settings for sliding animations
+
+      if (!animationDisabled && this.isAnimating()) {
+        transitionStyle = _objectSpread({}, transitionStyle, {
+          transition: "transform ".concat(animationDuration, "ms")
+        });
+      } // Key endings to differentiate between images with the same src
+
+
+      var keyEndings = {};
+      this.getSrcTypes().forEach(function (_ref13) {
+        var name = _ref13.name,
+            keyEnding = _ref13.keyEnding;
+        keyEndings[name] = keyEnding;
+      }); // Images to be displayed
+
+      var images = [];
+
+      var addImage = function addImage(srcType, imageClass, transforms) {
+        // Ignore types that have no source defined for their full size image
+        if (!_this16.props[srcType]) {
+          return;
+        }
+
+        var bestImageInfo = _this16.getBestImageForType(srcType);
+
+        var imageStyle = _objectSpread({}, transitionStyle, ReactImageLightbox.getTransform(_objectSpread({}, transforms, bestImageInfo)));
+
+        if (zoomLevel > MIN_ZOOM_LEVEL) {
+          imageStyle.cursor = 'move';
+        } // support IE 9 and 11
+
+
+        var hasTrueValue = function hasTrueValue(object) {
+          return Object.keys(object).some(function (key) {
+            return object[key];
+          });
+        }; // when error on one of the loads then push custom error stuff
+
+
+        if (bestImageInfo === null && hasTrueValue(loadErrorStatus)) {
+          images.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "".concat(imageClass, " ril__image ril-errored"),
+            style: imageStyle,
+            key: _this16.props[srcType] + keyEndings[srcType]
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "ril__errorContainer"
+          }, _this16.props.imageLoadErrorMessage)));
+          return;
+        }
+
+        if (bestImageInfo === null) {
+          var loadingIcon = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "ril-loading-circle ril__loadingCircle ril__loadingContainer__icon"
+          }, _toConsumableArray(new Array(12)).map(function (_, index) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              // eslint-disable-next-line react/no-array-index-key
+              key: index,
+              className: "ril-loading-circle-point ril__loadingCirclePoint"
+            });
+          })); // Fall back to loading icon if the thumbnail has not been loaded
+
+          images.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "".concat(imageClass, " ril__image ril-not-loaded"),
+            style: imageStyle,
+            key: _this16.props[srcType] + keyEndings[srcType]
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "ril__loadingContainer"
+          }, loadingIcon)));
+          return;
+        }
+
+        var imageSrc = bestImageInfo.src;
+
+        if (discourageDownloads) {
+          imageStyle.backgroundImage = "url('".concat(imageSrc, "')");
+          images.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "".concat(imageClass, " ril__image ril__imageDiscourager"),
+            onDoubleClick: _this16.handleImageDoubleClick,
+            onWheel: _this16.handleImageMouseWheel,
+            style: imageStyle,
+            key: imageSrc + keyEndings[srcType]
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "ril-download-blocker ril__downloadBlocker"
+          })));
+        } else {
+          images.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", _extends({}, imageCrossOrigin ? {
+            crossOrigin: imageCrossOrigin
+          } : {}, {
+            className: "".concat(imageClass, " ril__image"),
+            onDoubleClick: _this16.handleImageDoubleClick,
+            onWheel: _this16.handleImageMouseWheel,
+            onDragStart: function onDragStart(e) {
+              return e.preventDefault();
+            },
+            style: imageStyle,
+            src: imageSrc,
+            key: imageSrc + keyEndings[srcType],
+            alt: typeof imageTitle === 'string' ? imageTitle : translate('Image'),
+            draggable: false
+          })));
+        }
+      };
+
+      var zoomMultiplier = this.getZoomMultiplier(); // Next Image (displayed on the right)
+
+      addImage('nextSrc', 'ril-image-next ril__imageNext', {
+        x: boxSize.width
+      }); // Main Image
+
+      addImage('mainSrc', 'ril-image-current', {
+        x: -1 * offsetX,
+        y: -1 * offsetY,
+        zoom: zoomMultiplier
+      }); // Previous Image (displayed on the left)
+
+      addImage('prevSrc', 'ril-image-prev ril__imagePrev', {
+        x: -1 * boxSize.width
+      });
+      var modalStyle = {
+        overlay: _objectSpread({
+          zIndex: 1000,
+          backgroundColor: 'transparent'
+        }, reactModalStyle.overlay),
+        content: _objectSpread({
+          backgroundColor: 'transparent',
+          overflow: 'hidden',
+          // Needed, otherwise keyboard shortcuts scroll the page
+          border: 'none',
+          borderRadius: 0,
+          padding: 0,
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0
+        }, reactModalStyle.content)
+      };
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_modal__WEBPACK_IMPORTED_MODULE_2___default.a, _extends({
+        isOpen: true,
+        onRequestClose: clickOutsideToClose ? this.requestClose : undefined,
+        onAfterOpen: function onAfterOpen() {
+          // Focus on the div with key handlers
+          if (_this16.outerEl.current) {
+            _this16.outerEl.current.focus();
+          }
+
+          _onAfterOpen();
+        },
+        style: modalStyle,
+        contentLabel: translate('Lightbox'),
+        appElement: typeof global.window !== 'undefined' ? global.window.document.body : undefined
+      }, reactModalProps), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        // eslint-disable-line jsx-a11y/no-static-element-interactions
+        // Floating modal with closing animations
+        className: "ril-outer ril__outer ril__outerAnimating ".concat(this.props.wrapperClassName, " ").concat(isClosing ? 'ril-closing ril__outerClosing' : ''),
+        style: {
+          transition: "opacity ".concat(animationDuration, "ms"),
+          animationDuration: "".concat(animationDuration, "ms"),
+          animationDirection: isClosing ? 'normal' : 'reverse'
+        },
+        ref: this.outerEl,
+        onWheel: this.handleOuterMousewheel,
+        onMouseMove: this.handleMouseMove,
+        onMouseDown: this.handleMouseDown,
+        onTouchStart: this.handleTouchStart,
+        onTouchMove: this.handleTouchMove,
+        tabIndex: "-1" // Enables key handlers on div
+        ,
+        onKeyDown: this.handleKeyInput,
+        onKeyUp: this.handleKeyInput
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        // eslint-disable-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events
+        // Image holder
+        className: "ril-inner ril__inner",
+        onClick: clickOutsideToClose ? this.closeIfClickInner : undefined
+      }, images), prevSrc && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        // Move to previous image button
+        type: "button",
+        className: "ril-prev-button ril__navButtons ril__navButtonPrev",
+        key: "prev",
+        "aria-label": this.props.prevLabel,
+        onClick: !this.isAnimating() ? this.requestMovePrev : undefined // Ignore clicks during animation
+
+      }), nextSrc && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        // Move to next image button
+        type: "button",
+        className: "ril-next-button ril__navButtons ril__navButtonNext",
+        key: "next",
+        "aria-label": this.props.nextLabel,
+        onClick: !this.isAnimating() ? this.requestMoveNext : undefined // Ignore clicks during animation
+
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        // Lightbox toolbar
+        className: "ril-toolbar ril__toolbar"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "ril-toolbar-left ril__toolbarSide ril__toolbarLeftSide"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "ril-toolbar__item ril__toolbarItem"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "ril-toolbar__item__child ril__toolbarItemChild"
+      }, imageTitle))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "ril-toolbar-right ril__toolbarSide ril__toolbarRightSide"
+      }, toolbarButtons && toolbarButtons.map(function (button, i) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          key: "button_".concat(i + 1),
+          className: "ril-toolbar__item ril__toolbarItem"
+        }, button);
+      }), enableZoom && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "ril-toolbar__item ril__toolbarItem"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        // Lightbox zoom in button
+        type: "button",
+        key: "zoom-in",
+        "aria-label": this.props.zoomInLabel,
+        className: ['ril-zoom-in', 'ril__toolbarItemChild', 'ril__builtinButton', 'ril__zoomInButton'].concat(_toConsumableArray(zoomLevel === MAX_ZOOM_LEVEL ? ['ril__builtinButtonDisabled'] : [])).join(' '),
+        ref: this.zoomInBtn,
+        disabled: this.isAnimating() || zoomLevel === MAX_ZOOM_LEVEL,
+        onClick: !this.isAnimating() && zoomLevel !== MAX_ZOOM_LEVEL ? this.handleZoomInButtonClick : undefined
+      })), enableZoom && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "ril-toolbar__item ril__toolbarItem"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        // Lightbox zoom out button
+        type: "button",
+        key: "zoom-out",
+        "aria-label": this.props.zoomOutLabel,
+        className: ['ril-zoom-out', 'ril__toolbarItemChild', 'ril__builtinButton', 'ril__zoomOutButton'].concat(_toConsumableArray(zoomLevel === MIN_ZOOM_LEVEL ? ['ril__builtinButtonDisabled'] : [])).join(' '),
+        ref: this.zoomOutBtn,
+        disabled: this.isAnimating() || zoomLevel === MIN_ZOOM_LEVEL,
+        onClick: !this.isAnimating() && zoomLevel !== MIN_ZOOM_LEVEL ? this.handleZoomOutButtonClick : undefined
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "ril-toolbar__item ril__toolbarItem"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        // Lightbox close button
+        type: "button",
+        key: "close",
+        "aria-label": this.props.closeLabel,
+        className: "ril-close ril-toolbar__item__child ril__toolbarItemChild ril__builtinButton ril__closeButton",
+        onClick: !this.isAnimating() ? this.requestClose : undefined // Ignore clicks during animation
+
+      })))), this.props.imageCaption && // eslint-disable-next-line jsx-a11y/no-static-element-interactions
+      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        // Image caption
+        onWheel: this.handleCaptionMousewheel,
+        onMouseDown: function onMouseDown(event) {
+          return event.stopPropagation();
+        },
+        className: "ril-caption ril__caption",
+        ref: this.caption
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "ril-caption-content ril__captionContent"
+      }, this.props.imageCaption))));
+    }
+  }]);
+
+  return ReactImageLightbox;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+ReactImageLightbox.propTypes = {
+  //-----------------------------
+  // Image sources
+  //-----------------------------
+  // Main display image url
+  mainSrc: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  // eslint-disable-line react/no-unused-prop-types
+  // Previous display image url (displayed to the left)
+  // If left undefined, movePrev actions will not be performed, and the button not displayed
+  prevSrc: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  // Next display image url (displayed to the right)
+  // If left undefined, moveNext actions will not be performed, and the button not displayed
+  nextSrc: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  //-----------------------------
+  // Image thumbnail sources
+  //-----------------------------
+  // Thumbnail image url corresponding to props.mainSrc
+  mainSrcThumbnail: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  // eslint-disable-line react/no-unused-prop-types
+  // Thumbnail image url corresponding to props.prevSrc
+  prevSrcThumbnail: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  // eslint-disable-line react/no-unused-prop-types
+  // Thumbnail image url corresponding to props.nextSrc
+  nextSrcThumbnail: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  // eslint-disable-line react/no-unused-prop-types
+  //-----------------------------
+  // Event Handlers
+  //-----------------------------
+  // Close window event
+  // Should change the parent state such that the lightbox is not rendered
+  onCloseRequest: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
+  // Move to previous image event
+  // Should change the parent state such that props.prevSrc becomes props.mainSrc,
+  //  props.mainSrc becomes props.nextSrc, etc.
+  onMovePrevRequest: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  // Move to next image event
+  // Should change the parent state such that props.nextSrc becomes props.mainSrc,
+  //  props.mainSrc becomes props.prevSrc, etc.
+  onMoveNextRequest: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  // Called when an image fails to load
+  // (imageSrc: string, srcType: string, errorEvent: object): void
+  onImageLoadError: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  // Called when image successfully loads
+  onImageLoad: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  // Open window event
+  onAfterOpen: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  //-----------------------------
+  // Download discouragement settings
+  //-----------------------------
+  // Enable download discouragement (prevents [right-click -> Save Image As...])
+  discourageDownloads: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  //-----------------------------
+  // Animation settings
+  //-----------------------------
+  // Disable all animation
+  animationDisabled: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  // Disable animation on actions performed with keyboard shortcuts
+  animationOnKeyInput: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  // Animation duration (ms)
+  animationDuration: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+  //-----------------------------
+  // Keyboard shortcut settings
+  //-----------------------------
+  // Required interval of time (ms) between key actions
+  // (prevents excessively fast navigation of images)
+  keyRepeatLimit: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+  // Amount of time (ms) restored after each keyup
+  // (makes rapid key presses slightly faster than holding down the key to navigate images)
+  keyRepeatKeyupBonus: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+  //-----------------------------
+  // Image info
+  //-----------------------------
+  // Image title
+  imageTitle: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
+  // Image caption
+  imageCaption: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
+  // Optional crossOrigin attribute
+  imageCrossOrigin: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  //-----------------------------
+  // Lightbox style
+  //-----------------------------
+  // Set z-index style, etc., for the parent react-modal (format: https://github.com/reactjs/react-modal#styles )
+  reactModalStyle: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({}),
+  // Padding (px) between the edge of the window and the lightbox
+  imagePadding: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+  wrapperClassName: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  //-----------------------------
+  // Other
+  //-----------------------------
+  // Array of custom toolbar buttons
+  toolbarButtons: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node),
+  // When true, clicks outside of the image close the lightbox
+  clickOutsideToClose: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  // Set to false to disable zoom functionality and hide zoom buttons
+  enableZoom: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  // Override props set on react-modal (https://github.com/reactjs/react-modal)
+  reactModalProps: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({}),
+  // Aria-labels
+  nextLabel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  prevLabel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  zoomInLabel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  zoomOutLabel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  closeLabel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  imageLoadErrorMessage: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node
+};
+ReactImageLightbox.defaultProps = {
+  imageTitle: null,
+  imageCaption: null,
+  toolbarButtons: null,
+  reactModalProps: {},
+  animationDisabled: false,
+  animationDuration: 300,
+  animationOnKeyInput: false,
+  clickOutsideToClose: true,
+  closeLabel: 'Close lightbox',
+  discourageDownloads: false,
+  enableZoom: true,
+  imagePadding: 10,
+  imageCrossOrigin: null,
+  keyRepeatKeyupBonus: 40,
+  keyRepeatLimit: 180,
+  mainSrcThumbnail: null,
+  nextLabel: 'Next image',
+  nextSrc: null,
+  nextSrcThumbnail: null,
+  onAfterOpen: function onAfterOpen() {},
+  onImageLoadError: function onImageLoadError() {},
+  onImageLoad: function onImageLoad() {},
+  onMoveNextRequest: function onMoveNextRequest() {},
+  onMovePrevRequest: function onMovePrevRequest() {},
+  prevLabel: 'Previous image',
+  prevSrc: null,
+  prevSrcThumbnail: null,
+  reactModalStyle: {},
+  wrapperClassName: '',
+  zoomInLabel: 'Zoom in',
+  zoomOutLabel: 'Zoom out',
+  imageLoadErrorMessage: 'This image failed to load'
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ReactImageLightbox);
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
 /***/ "./node_modules/react-is/cjs/react-is.development.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
@@ -5525,6 +7127,1608 @@ if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js ***!
+  \****************************************************************************/
+/*! exports provided: polyfill */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "polyfill", function() { return polyfill; });
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+function componentWillMount() {
+  // Call this.constructor.gDSFP to support sub-classes.
+  var state = this.constructor.getDerivedStateFromProps(this.props, this.state);
+  if (state !== null && state !== undefined) {
+    this.setState(state);
+  }
+}
+
+function componentWillReceiveProps(nextProps) {
+  // Call this.constructor.gDSFP to support sub-classes.
+  // Use the setState() updater to ensure state isn't stale in certain edge cases.
+  function updater(prevState) {
+    var state = this.constructor.getDerivedStateFromProps(nextProps, prevState);
+    return state !== null && state !== undefined ? state : null;
+  }
+  // Binding "this" is important for shallow renderer support.
+  this.setState(updater.bind(this));
+}
+
+function componentWillUpdate(nextProps, nextState) {
+  try {
+    var prevProps = this.props;
+    var prevState = this.state;
+    this.props = nextProps;
+    this.state = nextState;
+    this.__reactInternalSnapshotFlag = true;
+    this.__reactInternalSnapshot = this.getSnapshotBeforeUpdate(
+      prevProps,
+      prevState
+    );
+  } finally {
+    this.props = prevProps;
+    this.state = prevState;
+  }
+}
+
+// React may warn about cWM/cWRP/cWU methods being deprecated.
+// Add a flag to suppress these warnings for this special case.
+componentWillMount.__suppressDeprecationWarning = true;
+componentWillReceiveProps.__suppressDeprecationWarning = true;
+componentWillUpdate.__suppressDeprecationWarning = true;
+
+function polyfill(Component) {
+  var prototype = Component.prototype;
+
+  if (!prototype || !prototype.isReactComponent) {
+    throw new Error('Can only polyfill class components');
+  }
+
+  if (
+    typeof Component.getDerivedStateFromProps !== 'function' &&
+    typeof prototype.getSnapshotBeforeUpdate !== 'function'
+  ) {
+    return Component;
+  }
+
+  // If new component APIs are defined, "unsafe" lifecycles won't be called.
+  // Error if any of these lifecycles are present,
+  // Because they would work differently between older and newer (16.3+) versions of React.
+  var foundWillMountName = null;
+  var foundWillReceivePropsName = null;
+  var foundWillUpdateName = null;
+  if (typeof prototype.componentWillMount === 'function') {
+    foundWillMountName = 'componentWillMount';
+  } else if (typeof prototype.UNSAFE_componentWillMount === 'function') {
+    foundWillMountName = 'UNSAFE_componentWillMount';
+  }
+  if (typeof prototype.componentWillReceiveProps === 'function') {
+    foundWillReceivePropsName = 'componentWillReceiveProps';
+  } else if (typeof prototype.UNSAFE_componentWillReceiveProps === 'function') {
+    foundWillReceivePropsName = 'UNSAFE_componentWillReceiveProps';
+  }
+  if (typeof prototype.componentWillUpdate === 'function') {
+    foundWillUpdateName = 'componentWillUpdate';
+  } else if (typeof prototype.UNSAFE_componentWillUpdate === 'function') {
+    foundWillUpdateName = 'UNSAFE_componentWillUpdate';
+  }
+  if (
+    foundWillMountName !== null ||
+    foundWillReceivePropsName !== null ||
+    foundWillUpdateName !== null
+  ) {
+    var componentName = Component.displayName || Component.name;
+    var newApiName =
+      typeof Component.getDerivedStateFromProps === 'function'
+        ? 'getDerivedStateFromProps()'
+        : 'getSnapshotBeforeUpdate()';
+
+    throw Error(
+      'Unsafe legacy lifecycles will not be called for components using new component APIs.\n\n' +
+        componentName +
+        ' uses ' +
+        newApiName +
+        ' but also contains the following legacy lifecycles:' +
+        (foundWillMountName !== null ? '\n  ' + foundWillMountName : '') +
+        (foundWillReceivePropsName !== null
+          ? '\n  ' + foundWillReceivePropsName
+          : '') +
+        (foundWillUpdateName !== null ? '\n  ' + foundWillUpdateName : '') +
+        '\n\nThe above lifecycles should be removed. Learn more about this warning here:\n' +
+        'https://fb.me/react-async-component-lifecycle-hooks'
+    );
+  }
+
+  // React <= 16.2 does not support static getDerivedStateFromProps.
+  // As a workaround, use cWM and cWRP to invoke the new static lifecycle.
+  // Newer versions of React will ignore these lifecycles if gDSFP exists.
+  if (typeof Component.getDerivedStateFromProps === 'function') {
+    prototype.componentWillMount = componentWillMount;
+    prototype.componentWillReceiveProps = componentWillReceiveProps;
+  }
+
+  // React <= 16.2 does not support getSnapshotBeforeUpdate.
+  // As a workaround, use cWU to invoke the new lifecycle.
+  // Newer versions of React will ignore that lifecycle if gSBU exists.
+  if (typeof prototype.getSnapshotBeforeUpdate === 'function') {
+    if (typeof prototype.componentDidUpdate !== 'function') {
+      throw new Error(
+        'Cannot polyfill getSnapshotBeforeUpdate() for components that do not define componentDidUpdate() on the prototype'
+      );
+    }
+
+    prototype.componentWillUpdate = componentWillUpdate;
+
+    var componentDidUpdate = prototype.componentDidUpdate;
+
+    prototype.componentDidUpdate = function componentDidUpdatePolyfill(
+      prevProps,
+      prevState,
+      maybeSnapshot
+    ) {
+      // 16.3+ will not execute our will-update method;
+      // It will pass a snapshot value to did-update though.
+      // Older versions will require our polyfilled will-update value.
+      // We need to handle both cases, but can't just check for the presence of "maybeSnapshot",
+      // Because for <= 15.x versions this might be a "prevContext" object.
+      // We also can't just check "__reactInternalSnapshot",
+      // Because get-snapshot might return a falsy value.
+      // So check for the explicit __reactInternalSnapshotFlag flag to determine behavior.
+      var snapshot = this.__reactInternalSnapshotFlag
+        ? this.__reactInternalSnapshot
+        : maybeSnapshot;
+
+      componentDidUpdate.call(this, prevProps, prevState, snapshot);
+    };
+  }
+
+  return Component;
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/components/Modal.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-modal/lib/components/Modal.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.bodyOpenClassName = exports.portalClassName = undefined;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _ModalPortal = __webpack_require__(/*! ./ModalPortal */ "./node_modules/react-modal/lib/components/ModalPortal.js");
+
+var _ModalPortal2 = _interopRequireDefault(_ModalPortal);
+
+var _ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ "./node_modules/react-modal/lib/helpers/ariaAppHider.js");
+
+var ariaAppHider = _interopRequireWildcard(_ariaAppHider);
+
+var _safeHTMLElement = __webpack_require__(/*! ../helpers/safeHTMLElement */ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js");
+
+var _safeHTMLElement2 = _interopRequireDefault(_safeHTMLElement);
+
+var _reactLifecyclesCompat = __webpack_require__(/*! react-lifecycles-compat */ "./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js");
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var portalClassName = exports.portalClassName = "ReactModalPortal";
+var bodyOpenClassName = exports.bodyOpenClassName = "ReactModal__Body--open";
+
+var isReact16 = _reactDom2.default.createPortal !== undefined;
+
+var getCreatePortal = function getCreatePortal() {
+  return isReact16 ? _reactDom2.default.createPortal : _reactDom2.default.unstable_renderSubtreeIntoContainer;
+};
+
+function getParentElement(parentSelector) {
+  return parentSelector();
+}
+
+var Modal = function (_Component) {
+  _inherits(Modal, _Component);
+
+  function Modal() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Modal);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Modal.__proto__ || Object.getPrototypeOf(Modal)).call.apply(_ref, [this].concat(args))), _this), _this.removePortal = function () {
+      !isReact16 && _reactDom2.default.unmountComponentAtNode(_this.node);
+      var parent = getParentElement(_this.props.parentSelector);
+      if (parent) {
+        parent.removeChild(_this.node);
+      } else {
+        // eslint-disable-next-line no-console
+        console.warn('React-Modal: "parentSelector" prop did not returned any DOM ' + "element. Make sure that the parent element is unmounted to " + "avoid any memory leaks.");
+      }
+    }, _this.portalRef = function (ref) {
+      _this.portal = ref;
+    }, _this.renderPortal = function (props) {
+      var createPortal = getCreatePortal();
+      var portal = createPortal(_this, _react2.default.createElement(_ModalPortal2.default, _extends({ defaultStyles: Modal.defaultStyles }, props)), _this.node);
+      _this.portalRef(portal);
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(Modal, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      if (!_safeHTMLElement.canUseDOM) return;
+
+      if (!isReact16) {
+        this.node = document.createElement("div");
+      }
+      this.node.className = this.props.portalClassName;
+
+      var parent = getParentElement(this.props.parentSelector);
+      parent.appendChild(this.node);
+
+      !isReact16 && this.renderPortal(this.props);
+    }
+  }, {
+    key: "getSnapshotBeforeUpdate",
+    value: function getSnapshotBeforeUpdate(prevProps) {
+      var prevParent = getParentElement(prevProps.parentSelector);
+      var nextParent = getParentElement(this.props.parentSelector);
+      return { prevParent: prevParent, nextParent: nextParent };
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, _, snapshot) {
+      if (!_safeHTMLElement.canUseDOM) return;
+      var _props = this.props,
+          isOpen = _props.isOpen,
+          portalClassName = _props.portalClassName;
+
+
+      if (prevProps.portalClassName !== portalClassName) {
+        this.node.className = portalClassName;
+      }
+
+      var prevParent = snapshot.prevParent,
+          nextParent = snapshot.nextParent;
+
+      if (nextParent !== prevParent) {
+        prevParent.removeChild(this.node);
+        nextParent.appendChild(this.node);
+      }
+
+      // Stop unnecessary renders if modal is remaining closed
+      if (!prevProps.isOpen && !isOpen) return;
+
+      !isReact16 && this.renderPortal(this.props);
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (!_safeHTMLElement.canUseDOM || !this.node || !this.portal) return;
+
+      var state = this.portal.state;
+      var now = Date.now();
+      var closesAt = state.isOpen && this.props.closeTimeoutMS && (state.closesAt || now + this.props.closeTimeoutMS);
+
+      if (closesAt) {
+        if (!state.beforeClose) {
+          this.portal.closeWithTimeout();
+        }
+
+        setTimeout(this.removePortal, closesAt - now);
+      } else {
+        this.removePortal();
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (!_safeHTMLElement.canUseDOM || !isReact16) {
+        return null;
+      }
+
+      if (!this.node && isReact16) {
+        this.node = document.createElement("div");
+      }
+
+      var createPortal = getCreatePortal();
+      return createPortal(_react2.default.createElement(_ModalPortal2.default, _extends({
+        ref: this.portalRef,
+        defaultStyles: Modal.defaultStyles
+      }, this.props)), this.node);
+    }
+  }], [{
+    key: "setAppElement",
+    value: function setAppElement(element) {
+      ariaAppHider.setElement(element);
+    }
+
+    /* eslint-disable react/no-unused-prop-types */
+
+    /* eslint-enable react/no-unused-prop-types */
+
+  }]);
+
+  return Modal;
+}(_react.Component);
+
+Modal.propTypes = {
+  isOpen: _propTypes2.default.bool.isRequired,
+  style: _propTypes2.default.shape({
+    content: _propTypes2.default.object,
+    overlay: _propTypes2.default.object
+  }),
+  portalClassName: _propTypes2.default.string,
+  bodyOpenClassName: _propTypes2.default.string,
+  htmlOpenClassName: _propTypes2.default.string,
+  className: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.shape({
+    base: _propTypes2.default.string.isRequired,
+    afterOpen: _propTypes2.default.string.isRequired,
+    beforeClose: _propTypes2.default.string.isRequired
+  })]),
+  overlayClassName: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.shape({
+    base: _propTypes2.default.string.isRequired,
+    afterOpen: _propTypes2.default.string.isRequired,
+    beforeClose: _propTypes2.default.string.isRequired
+  })]),
+  appElement: _propTypes2.default.instanceOf(_safeHTMLElement2.default),
+  onAfterOpen: _propTypes2.default.func,
+  onRequestClose: _propTypes2.default.func,
+  closeTimeoutMS: _propTypes2.default.number,
+  ariaHideApp: _propTypes2.default.bool,
+  shouldFocusAfterRender: _propTypes2.default.bool,
+  shouldCloseOnOverlayClick: _propTypes2.default.bool,
+  shouldReturnFocusAfterClose: _propTypes2.default.bool,
+  parentSelector: _propTypes2.default.func,
+  aria: _propTypes2.default.object,
+  data: _propTypes2.default.object,
+  role: _propTypes2.default.string,
+  contentLabel: _propTypes2.default.string,
+  shouldCloseOnEsc: _propTypes2.default.bool,
+  overlayRef: _propTypes2.default.func,
+  contentRef: _propTypes2.default.func
+};
+Modal.defaultProps = {
+  isOpen: false,
+  portalClassName: portalClassName,
+  bodyOpenClassName: bodyOpenClassName,
+  role: "dialog",
+  ariaHideApp: true,
+  closeTimeoutMS: 0,
+  shouldFocusAfterRender: true,
+  shouldCloseOnEsc: true,
+  shouldCloseOnOverlayClick: true,
+  shouldReturnFocusAfterClose: true,
+  parentSelector: function parentSelector() {
+    return document.body;
+  }
+};
+Modal.defaultStyles = {
+  overlay: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "rgba(255, 255, 255, 0.75)"
+  },
+  content: {
+    position: "absolute",
+    top: "40px",
+    left: "40px",
+    right: "40px",
+    bottom: "40px",
+    border: "1px solid #ccc",
+    background: "#fff",
+    overflow: "auto",
+    WebkitOverflowScrolling: "touch",
+    borderRadius: "4px",
+    outline: "none",
+    padding: "20px"
+  }
+};
+
+
+(0, _reactLifecyclesCompat.polyfill)(Modal);
+
+exports.default = Modal;
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/components/ModalPortal.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-modal/lib/components/ModalPortal.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _focusManager = __webpack_require__(/*! ../helpers/focusManager */ "./node_modules/react-modal/lib/helpers/focusManager.js");
+
+var focusManager = _interopRequireWildcard(_focusManager);
+
+var _scopeTab = __webpack_require__(/*! ../helpers/scopeTab */ "./node_modules/react-modal/lib/helpers/scopeTab.js");
+
+var _scopeTab2 = _interopRequireDefault(_scopeTab);
+
+var _ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ "./node_modules/react-modal/lib/helpers/ariaAppHider.js");
+
+var ariaAppHider = _interopRequireWildcard(_ariaAppHider);
+
+var _classList = __webpack_require__(/*! ../helpers/classList */ "./node_modules/react-modal/lib/helpers/classList.js");
+
+var classList = _interopRequireWildcard(_classList);
+
+var _safeHTMLElement = __webpack_require__(/*! ../helpers/safeHTMLElement */ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js");
+
+var _safeHTMLElement2 = _interopRequireDefault(_safeHTMLElement);
+
+var _portalOpenInstances = __webpack_require__(/*! ../helpers/portalOpenInstances */ "./node_modules/react-modal/lib/helpers/portalOpenInstances.js");
+
+var _portalOpenInstances2 = _interopRequireDefault(_portalOpenInstances);
+
+__webpack_require__(/*! ../helpers/bodyTrap */ "./node_modules/react-modal/lib/helpers/bodyTrap.js");
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// so that our CSS is statically analyzable
+var CLASS_NAMES = {
+  overlay: "ReactModal__Overlay",
+  content: "ReactModal__Content"
+};
+
+var TAB_KEY = 9;
+var ESC_KEY = 27;
+
+var ariaHiddenInstances = 0;
+
+var ModalPortal = function (_Component) {
+  _inherits(ModalPortal, _Component);
+
+  function ModalPortal(props) {
+    _classCallCheck(this, ModalPortal);
+
+    var _this = _possibleConstructorReturn(this, (ModalPortal.__proto__ || Object.getPrototypeOf(ModalPortal)).call(this, props));
+
+    _this.setOverlayRef = function (overlay) {
+      _this.overlay = overlay;
+      _this.props.overlayRef && _this.props.overlayRef(overlay);
+    };
+
+    _this.setContentRef = function (content) {
+      _this.content = content;
+      _this.props.contentRef && _this.props.contentRef(content);
+    };
+
+    _this.afterClose = function () {
+      var _this$props = _this.props,
+          appElement = _this$props.appElement,
+          ariaHideApp = _this$props.ariaHideApp,
+          htmlOpenClassName = _this$props.htmlOpenClassName,
+          bodyOpenClassName = _this$props.bodyOpenClassName;
+
+      // Remove classes.
+
+      bodyOpenClassName && classList.remove(document.body, bodyOpenClassName);
+
+      htmlOpenClassName && classList.remove(document.getElementsByTagName("html")[0], htmlOpenClassName);
+
+      // Reset aria-hidden attribute if all modals have been removed
+      if (ariaHideApp && ariaHiddenInstances > 0) {
+        ariaHiddenInstances -= 1;
+
+        if (ariaHiddenInstances === 0) {
+          ariaAppHider.show(appElement);
+        }
+      }
+
+      if (_this.props.shouldFocusAfterRender) {
+        if (_this.props.shouldReturnFocusAfterClose) {
+          focusManager.returnFocus();
+          focusManager.teardownScopedFocus();
+        } else {
+          focusManager.popWithoutFocus();
+        }
+      }
+
+      if (_this.props.onAfterClose) {
+        _this.props.onAfterClose();
+      }
+
+      _portalOpenInstances2.default.deregister(_this);
+    };
+
+    _this.open = function () {
+      _this.beforeOpen();
+      if (_this.state.afterOpen && _this.state.beforeClose) {
+        clearTimeout(_this.closeTimer);
+        _this.setState({ beforeClose: false });
+      } else {
+        if (_this.props.shouldFocusAfterRender) {
+          focusManager.setupScopedFocus(_this.node);
+          focusManager.markForFocusLater();
+        }
+
+        _this.setState({ isOpen: true }, function () {
+          _this.setState({ afterOpen: true });
+
+          if (_this.props.isOpen && _this.props.onAfterOpen) {
+            _this.props.onAfterOpen({
+              overlayEl: _this.overlay,
+              contentEl: _this.content
+            });
+          }
+        });
+      }
+    };
+
+    _this.close = function () {
+      if (_this.props.closeTimeoutMS > 0) {
+        _this.closeWithTimeout();
+      } else {
+        _this.closeWithoutTimeout();
+      }
+    };
+
+    _this.focusContent = function () {
+      return _this.content && !_this.contentHasFocus() && _this.content.focus();
+    };
+
+    _this.closeWithTimeout = function () {
+      var closesAt = Date.now() + _this.props.closeTimeoutMS;
+      _this.setState({ beforeClose: true, closesAt: closesAt }, function () {
+        _this.closeTimer = setTimeout(_this.closeWithoutTimeout, _this.state.closesAt - Date.now());
+      });
+    };
+
+    _this.closeWithoutTimeout = function () {
+      _this.setState({
+        beforeClose: false,
+        isOpen: false,
+        afterOpen: false,
+        closesAt: null
+      }, _this.afterClose);
+    };
+
+    _this.handleKeyDown = function (event) {
+      if (event.keyCode === TAB_KEY) {
+        (0, _scopeTab2.default)(_this.content, event);
+      }
+
+      if (_this.props.shouldCloseOnEsc && event.keyCode === ESC_KEY) {
+        event.stopPropagation();
+        _this.requestClose(event);
+      }
+    };
+
+    _this.handleOverlayOnClick = function (event) {
+      if (_this.shouldClose === null) {
+        _this.shouldClose = true;
+      }
+
+      if (_this.shouldClose && _this.props.shouldCloseOnOverlayClick) {
+        if (_this.ownerHandlesClose()) {
+          _this.requestClose(event);
+        } else {
+          _this.focusContent();
+        }
+      }
+      _this.shouldClose = null;
+    };
+
+    _this.handleContentOnMouseUp = function () {
+      _this.shouldClose = false;
+    };
+
+    _this.handleOverlayOnMouseDown = function (event) {
+      if (!_this.props.shouldCloseOnOverlayClick && event.target == _this.overlay) {
+        event.preventDefault();
+      }
+    };
+
+    _this.handleContentOnClick = function () {
+      _this.shouldClose = false;
+    };
+
+    _this.handleContentOnMouseDown = function () {
+      _this.shouldClose = false;
+    };
+
+    _this.requestClose = function (event) {
+      return _this.ownerHandlesClose() && _this.props.onRequestClose(event);
+    };
+
+    _this.ownerHandlesClose = function () {
+      return _this.props.onRequestClose;
+    };
+
+    _this.shouldBeClosed = function () {
+      return !_this.state.isOpen && !_this.state.beforeClose;
+    };
+
+    _this.contentHasFocus = function () {
+      return document.activeElement === _this.content || _this.content.contains(document.activeElement);
+    };
+
+    _this.buildClassName = function (which, additional) {
+      var classNames = (typeof additional === "undefined" ? "undefined" : _typeof(additional)) === "object" ? additional : {
+        base: CLASS_NAMES[which],
+        afterOpen: CLASS_NAMES[which] + "--after-open",
+        beforeClose: CLASS_NAMES[which] + "--before-close"
+      };
+      var className = classNames.base;
+      if (_this.state.afterOpen) {
+        className = className + " " + classNames.afterOpen;
+      }
+      if (_this.state.beforeClose) {
+        className = className + " " + classNames.beforeClose;
+      }
+      return typeof additional === "string" && additional ? className + " " + additional : className;
+    };
+
+    _this.attributesFromObject = function (prefix, items) {
+      return Object.keys(items).reduce(function (acc, name) {
+        acc[prefix + "-" + name] = items[name];
+        return acc;
+      }, {});
+    };
+
+    _this.state = {
+      afterOpen: false,
+      beforeClose: false
+    };
+
+    _this.shouldClose = null;
+    _this.moveFromContentToOverlay = null;
+    return _this;
+  }
+
+  _createClass(ModalPortal, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      if (this.props.isOpen) {
+        this.open();
+      }
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, prevState) {
+      if (true) {
+        if (prevProps.bodyOpenClassName !== this.props.bodyOpenClassName) {
+          // eslint-disable-next-line no-console
+          console.warn('React-Modal: "bodyOpenClassName" prop has been modified. ' + "This may cause unexpected behavior when multiple modals are open.");
+        }
+        if (prevProps.htmlOpenClassName !== this.props.htmlOpenClassName) {
+          // eslint-disable-next-line no-console
+          console.warn('React-Modal: "htmlOpenClassName" prop has been modified. ' + "This may cause unexpected behavior when multiple modals are open.");
+        }
+      }
+
+      if (this.props.isOpen && !prevProps.isOpen) {
+        this.open();
+      } else if (!this.props.isOpen && prevProps.isOpen) {
+        this.close();
+      }
+
+      // Focus only needs to be set once when the modal is being opened
+      if (this.props.shouldFocusAfterRender && this.state.isOpen && !prevState.isOpen) {
+        this.focusContent();
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (this.state.isOpen) {
+        this.afterClose();
+      }
+      clearTimeout(this.closeTimer);
+    }
+  }, {
+    key: "beforeOpen",
+    value: function beforeOpen() {
+      var _props = this.props,
+          appElement = _props.appElement,
+          ariaHideApp = _props.ariaHideApp,
+          htmlOpenClassName = _props.htmlOpenClassName,
+          bodyOpenClassName = _props.bodyOpenClassName;
+
+      // Add classes.
+
+      bodyOpenClassName && classList.add(document.body, bodyOpenClassName);
+
+      htmlOpenClassName && classList.add(document.getElementsByTagName("html")[0], htmlOpenClassName);
+
+      if (ariaHideApp) {
+        ariaHiddenInstances += 1;
+        ariaAppHider.hide(appElement);
+      }
+
+      _portalOpenInstances2.default.register(this);
+    }
+
+    // Don't steal focus from inner elements
+
+  }, {
+    key: "render",
+    value: function render() {
+      var _props2 = this.props,
+          id = _props2.id,
+          className = _props2.className,
+          overlayClassName = _props2.overlayClassName,
+          defaultStyles = _props2.defaultStyles;
+
+      var contentStyles = className ? {} : defaultStyles.content;
+      var overlayStyles = overlayClassName ? {} : defaultStyles.overlay;
+
+      return this.shouldBeClosed() ? null : _react2.default.createElement(
+        "div",
+        {
+          ref: this.setOverlayRef,
+          className: this.buildClassName("overlay", overlayClassName),
+          style: _extends({}, overlayStyles, this.props.style.overlay),
+          onClick: this.handleOverlayOnClick,
+          onMouseDown: this.handleOverlayOnMouseDown
+        },
+        _react2.default.createElement(
+          "div",
+          _extends({
+            id: id,
+            ref: this.setContentRef,
+            style: _extends({}, contentStyles, this.props.style.content),
+            className: this.buildClassName("content", className),
+            tabIndex: "-1",
+            onKeyDown: this.handleKeyDown,
+            onMouseDown: this.handleContentOnMouseDown,
+            onMouseUp: this.handleContentOnMouseUp,
+            onClick: this.handleContentOnClick,
+            role: this.props.role,
+            "aria-label": this.props.contentLabel
+          }, this.attributesFromObject("aria", this.props.aria || {}), this.attributesFromObject("data", this.props.data || {}), {
+            "data-testid": this.props.testId
+          }),
+          this.props.children
+        )
+      );
+    }
+  }]);
+
+  return ModalPortal;
+}(_react.Component);
+
+ModalPortal.defaultProps = {
+  style: {
+    overlay: {},
+    content: {}
+  },
+  defaultStyles: {}
+};
+ModalPortal.propTypes = {
+  isOpen: _propTypes2.default.bool.isRequired,
+  defaultStyles: _propTypes2.default.shape({
+    content: _propTypes2.default.object,
+    overlay: _propTypes2.default.object
+  }),
+  style: _propTypes2.default.shape({
+    content: _propTypes2.default.object,
+    overlay: _propTypes2.default.object
+  }),
+  className: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
+  overlayClassName: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
+  bodyOpenClassName: _propTypes2.default.string,
+  htmlOpenClassName: _propTypes2.default.string,
+  ariaHideApp: _propTypes2.default.bool,
+  appElement: _propTypes2.default.instanceOf(_safeHTMLElement2.default),
+  onAfterOpen: _propTypes2.default.func,
+  onAfterClose: _propTypes2.default.func,
+  onRequestClose: _propTypes2.default.func,
+  closeTimeoutMS: _propTypes2.default.number,
+  shouldFocusAfterRender: _propTypes2.default.bool,
+  shouldCloseOnOverlayClick: _propTypes2.default.bool,
+  shouldReturnFocusAfterClose: _propTypes2.default.bool,
+  role: _propTypes2.default.string,
+  contentLabel: _propTypes2.default.string,
+  aria: _propTypes2.default.object,
+  data: _propTypes2.default.object,
+  children: _propTypes2.default.node,
+  shouldCloseOnEsc: _propTypes2.default.bool,
+  overlayRef: _propTypes2.default.func,
+  contentRef: _propTypes2.default.func,
+  id: _propTypes2.default.string,
+  testId: _propTypes2.default.string
+};
+exports.default = ModalPortal;
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/ariaAppHider.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/ariaAppHider.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.assertNodeList = assertNodeList;
+exports.setElement = setElement;
+exports.validateElement = validateElement;
+exports.hide = hide;
+exports.show = show;
+exports.documentNotReadyOrSSRTesting = documentNotReadyOrSSRTesting;
+exports.resetForTesting = resetForTesting;
+
+var _warning = __webpack_require__(/*! warning */ "./node_modules/warning/warning.js");
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _safeHTMLElement = __webpack_require__(/*! ./safeHTMLElement */ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var globalElement = null;
+
+function assertNodeList(nodeList, selector) {
+  if (!nodeList || !nodeList.length) {
+    throw new Error("react-modal: No elements were found for selector " + selector + ".");
+  }
+}
+
+function setElement(element) {
+  var useElement = element;
+  if (typeof useElement === "string" && _safeHTMLElement.canUseDOM) {
+    var el = document.querySelectorAll(useElement);
+    assertNodeList(el, useElement);
+    useElement = "length" in el ? el[0] : el;
+  }
+  globalElement = useElement || globalElement;
+  return globalElement;
+}
+
+function validateElement(appElement) {
+  if (!appElement && !globalElement) {
+    (0, _warning2.default)(false, ["react-modal: App element is not defined.", "Please use `Modal.setAppElement(el)` or set `appElement={el}`.", "This is needed so screen readers don't see main content", "when modal is opened. It is not recommended, but you can opt-out", "by setting `ariaHideApp={false}`."].join(" "));
+
+    return false;
+  }
+
+  return true;
+}
+
+function hide(appElement) {
+  if (validateElement(appElement)) {
+    (appElement || globalElement).setAttribute("aria-hidden", "true");
+  }
+}
+
+function show(appElement) {
+  if (validateElement(appElement)) {
+    (appElement || globalElement).removeAttribute("aria-hidden");
+  }
+}
+
+function documentNotReadyOrSSRTesting() {
+  globalElement = null;
+}
+
+function resetForTesting() {
+  globalElement = null;
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/bodyTrap.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/bodyTrap.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _portalOpenInstances = __webpack_require__(/*! ./portalOpenInstances */ "./node_modules/react-modal/lib/helpers/portalOpenInstances.js");
+
+var _portalOpenInstances2 = _interopRequireDefault(_portalOpenInstances);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// Body focus trap see Issue #742
+
+var before = void 0,
+    after = void 0,
+    instances = [];
+
+function focusContent() {
+  if (instances.length === 0) {
+    if (true) {
+      // eslint-disable-next-line no-console
+      console.warn("React-Modal: Open instances > 0 expected");
+    }
+    return;
+  }
+  instances[instances.length - 1].focusContent();
+}
+
+function bodyTrap(eventType, openInstances) {
+  if (!before || !after) {
+    before = document.createElement("div");
+    before.setAttribute("data-react-modal-body-trap", "");
+    before.style.position = "absolute";
+    before.style.opacity = "0";
+    before.setAttribute("tabindex", "0");
+    before.addEventListener("focus", focusContent);
+    after = before.cloneNode();
+    after.addEventListener("focus", focusContent);
+  }
+
+  instances = openInstances;
+
+  if (instances.length > 0) {
+    // Add focus trap
+    if (document.body.firstChild !== before) {
+      document.body.insertBefore(before, document.body.firstChild);
+    }
+    if (document.body.lastChild !== after) {
+      document.body.appendChild(after);
+    }
+  } else {
+    // Remove focus trap
+    if (before.parentElement) {
+      before.parentElement.removeChild(before);
+    }
+    if (after.parentElement) {
+      after.parentElement.removeChild(after);
+    }
+  }
+}
+
+_portalOpenInstances2.default.subscribe(bodyTrap);
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/classList.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/classList.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.dumpClassLists = dumpClassLists;
+var htmlClassList = {};
+var docBodyClassList = {};
+
+function dumpClassLists() {
+  if (true) {
+    var classes = document.getElementsByTagName("html")[0].className;
+    var buffer = "Show tracked classes:\n\n";
+
+    buffer += "<html /> (" + classes + "):\n";
+    for (var x in htmlClassList) {
+      buffer += "  " + x + " " + htmlClassList[x] + "\n";
+    }
+
+    classes = document.body.className;
+
+    // eslint-disable-next-line max-len
+    buffer += "\n\ndoc.body (" + classes + "):\n";
+    for (var _x in docBodyClassList) {
+      buffer += "  " + _x + " " + docBodyClassList[_x] + "\n";
+    }
+
+    buffer += "\n";
+
+    // eslint-disable-next-line no-console
+    console.log(buffer);
+  }
+}
+
+/**
+ * Track the number of reference of a class.
+ * @param {object} poll The poll to receive the reference.
+ * @param {string} className The class name.
+ * @return {string}
+ */
+var incrementReference = function incrementReference(poll, className) {
+  if (!poll[className]) {
+    poll[className] = 0;
+  }
+  poll[className] += 1;
+  return className;
+};
+
+/**
+ * Drop the reference of a class.
+ * @param {object} poll The poll to receive the reference.
+ * @param {string} className The class name.
+ * @return {string}
+ */
+var decrementReference = function decrementReference(poll, className) {
+  if (poll[className]) {
+    poll[className] -= 1;
+  }
+  return className;
+};
+
+/**
+ * Track a class and add to the given class list.
+ * @param {Object} classListRef A class list of an element.
+ * @param {Object} poll         The poll to be used.
+ * @param {Array}  classes      The list of classes to be tracked.
+ */
+var trackClass = function trackClass(classListRef, poll, classes) {
+  classes.forEach(function (className) {
+    incrementReference(poll, className);
+    classListRef.add(className);
+  });
+};
+
+/**
+ * Untrack a class and remove from the given class list if the reference
+ * reaches 0.
+ * @param {Object} classListRef A class list of an element.
+ * @param {Object} poll         The poll to be used.
+ * @param {Array}  classes      The list of classes to be untracked.
+ */
+var untrackClass = function untrackClass(classListRef, poll, classes) {
+  classes.forEach(function (className) {
+    decrementReference(poll, className);
+    poll[className] === 0 && classListRef.remove(className);
+  });
+};
+
+/**
+ * Public inferface to add classes to the document.body.
+ * @param {string} bodyClass The class string to be added.
+ *                           It may contain more then one class
+ *                           with ' ' as separator.
+ */
+var add = exports.add = function add(element, classString) {
+  return trackClass(element.classList, element.nodeName.toLowerCase() == "html" ? htmlClassList : docBodyClassList, classString.split(" "));
+};
+
+/**
+ * Public inferface to remove classes from the document.body.
+ * @param {string} bodyClass The class string to be added.
+ *                           It may contain more then one class
+ *                           with ' ' as separator.
+ */
+var remove = exports.remove = function remove(element, classString) {
+  return untrackClass(element.classList, element.nodeName.toLowerCase() == "html" ? htmlClassList : docBodyClassList, classString.split(" "));
+};
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/focusManager.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/focusManager.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.handleBlur = handleBlur;
+exports.handleFocus = handleFocus;
+exports.markForFocusLater = markForFocusLater;
+exports.returnFocus = returnFocus;
+exports.popWithoutFocus = popWithoutFocus;
+exports.setupScopedFocus = setupScopedFocus;
+exports.teardownScopedFocus = teardownScopedFocus;
+
+var _tabbable = __webpack_require__(/*! ../helpers/tabbable */ "./node_modules/react-modal/lib/helpers/tabbable.js");
+
+var _tabbable2 = _interopRequireDefault(_tabbable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var focusLaterElements = [];
+var modalElement = null;
+var needToFocus = false;
+
+function handleBlur() {
+  needToFocus = true;
+}
+
+function handleFocus() {
+  if (needToFocus) {
+    needToFocus = false;
+    if (!modalElement) {
+      return;
+    }
+    // need to see how jQuery shims document.on('focusin') so we don't need the
+    // setTimeout, firefox doesn't support focusin, if it did, we could focus
+    // the element outside of a setTimeout. Side-effect of this implementation
+    // is that the document.body gets focus, and then we focus our element right
+    // after, seems fine.
+    setTimeout(function () {
+      if (modalElement.contains(document.activeElement)) {
+        return;
+      }
+      var el = (0, _tabbable2.default)(modalElement)[0] || modalElement;
+      el.focus();
+    }, 0);
+  }
+}
+
+function markForFocusLater() {
+  focusLaterElements.push(document.activeElement);
+}
+
+/* eslint-disable no-console */
+function returnFocus() {
+  var toFocus = null;
+  try {
+    if (focusLaterElements.length !== 0) {
+      toFocus = focusLaterElements.pop();
+      toFocus.focus();
+    }
+    return;
+  } catch (e) {
+    console.warn(["You tried to return focus to", toFocus, "but it is not in the DOM anymore"].join(" "));
+  }
+}
+/* eslint-enable no-console */
+
+function popWithoutFocus() {
+  focusLaterElements.length > 0 && focusLaterElements.pop();
+}
+
+function setupScopedFocus(element) {
+  modalElement = element;
+
+  if (window.addEventListener) {
+    window.addEventListener("blur", handleBlur, false);
+    document.addEventListener("focus", handleFocus, true);
+  } else {
+    window.attachEvent("onBlur", handleBlur);
+    document.attachEvent("onFocus", handleFocus);
+  }
+}
+
+function teardownScopedFocus() {
+  modalElement = null;
+
+  if (window.addEventListener) {
+    window.removeEventListener("blur", handleBlur);
+    document.removeEventListener("focus", handleFocus);
+  } else {
+    window.detachEvent("onBlur", handleBlur);
+    document.detachEvent("onFocus", handleFocus);
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/portalOpenInstances.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/portalOpenInstances.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Tracks portals that are open and emits events to subscribers
+
+var PortalOpenInstances = function PortalOpenInstances() {
+  var _this = this;
+
+  _classCallCheck(this, PortalOpenInstances);
+
+  this.register = function (openInstance) {
+    if (_this.openInstances.indexOf(openInstance) !== -1) {
+      if (true) {
+        // eslint-disable-next-line no-console
+        console.warn("React-Modal: Cannot register modal instance that's already open");
+      }
+      return;
+    }
+    _this.openInstances.push(openInstance);
+    _this.emit("register");
+  };
+
+  this.deregister = function (openInstance) {
+    var index = _this.openInstances.indexOf(openInstance);
+    if (index === -1) {
+      if (true) {
+        // eslint-disable-next-line no-console
+        console.warn("React-Modal: Unable to deregister " + openInstance + " as " + "it was never registered");
+      }
+      return;
+    }
+    _this.openInstances.splice(index, 1);
+    _this.emit("deregister");
+  };
+
+  this.subscribe = function (callback) {
+    _this.subscribers.push(callback);
+  };
+
+  this.emit = function (eventType) {
+    _this.subscribers.forEach(function (subscriber) {
+      return subscriber(eventType,
+      // shallow copy to avoid accidental mutation
+      _this.openInstances.slice());
+    });
+  };
+
+  this.openInstances = [];
+  this.subscribers = [];
+};
+
+var portalOpenInstances = new PortalOpenInstances();
+
+exports.default = portalOpenInstances;
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/safeHTMLElement.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.canUseDOM = undefined;
+
+var _exenv = __webpack_require__(/*! exenv */ "./node_modules/exenv/index.js");
+
+var _exenv2 = _interopRequireDefault(_exenv);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var EE = _exenv2.default;
+
+var SafeHTMLElement = EE.canUseDOM ? window.HTMLElement : {};
+
+var canUseDOM = exports.canUseDOM = EE.canUseDOM;
+
+exports.default = SafeHTMLElement;
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/scopeTab.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/scopeTab.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = scopeTab;
+
+var _tabbable = __webpack_require__(/*! ./tabbable */ "./node_modules/react-modal/lib/helpers/tabbable.js");
+
+var _tabbable2 = _interopRequireDefault(_tabbable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function scopeTab(node, event) {
+  var tabbable = (0, _tabbable2.default)(node);
+
+  if (!tabbable.length) {
+    // Do nothing, since there are no elements that can receive focus.
+    event.preventDefault();
+    return;
+  }
+
+  var target = void 0;
+
+  var shiftKey = event.shiftKey;
+  var head = tabbable[0];
+  var tail = tabbable[tabbable.length - 1];
+
+  // proceed with default browser behavior on tab.
+  // Focus on last element on shift + tab.
+  if (node === document.activeElement) {
+    if (!shiftKey) return;
+    target = tail;
+  }
+
+  if (tail === document.activeElement && !shiftKey) {
+    target = head;
+  }
+
+  if (head === document.activeElement && shiftKey) {
+    target = tail;
+  }
+
+  if (target) {
+    event.preventDefault();
+    target.focus();
+    return;
+  }
+
+  // Safari radio issue.
+  //
+  // Safari does not move the focus to the radio button,
+  // so we need to force it to really walk through all elements.
+  //
+  // This is very error prone, since we are trying to guess
+  // if it is a safari browser from the first occurence between
+  // chrome or safari.
+  //
+  // The chrome user agent contains the first ocurrence
+  // as the 'chrome/version' and later the 'safari/version'.
+  var checkSafari = /(\bChrome\b|\bSafari\b)\//.exec(navigator.userAgent);
+  var isSafariDesktop = checkSafari != null && checkSafari[1] != "Chrome" && /\biPod\b|\biPad\b/g.exec(navigator.userAgent) == null;
+
+  // If we are not in safari desktop, let the browser control
+  // the focus
+  if (!isSafariDesktop) return;
+
+  var x = tabbable.indexOf(document.activeElement);
+
+  if (x > -1) {
+    x += shiftKey ? -1 : 1;
+  }
+
+  target = tabbable[x];
+
+  // If the tabbable element does not exist,
+  // focus head/tail based on shiftKey
+  if (typeof target === "undefined") {
+    event.preventDefault();
+    target = shiftKey ? tail : head;
+    target.focus();
+    return;
+  }
+
+  event.preventDefault();
+
+  target.focus();
+}
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/tabbable.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/tabbable.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = findTabbableDescendants;
+/*!
+ * Adapted from jQuery UI core
+ *
+ * http://jqueryui.com
+ *
+ * Copyright 2014 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/ui-core/
+ */
+
+var tabbableNode = /input|select|textarea|button|object/;
+
+function hidesContents(element) {
+  var zeroSize = element.offsetWidth <= 0 && element.offsetHeight <= 0;
+
+  // If the node is empty, this is good enough
+  if (zeroSize && !element.innerHTML) return true;
+
+  // Otherwise we need to check some styles
+  var style = window.getComputedStyle(element);
+  return zeroSize ? style.getPropertyValue("overflow") !== "visible" ||
+  // if 'overflow: visible' set, check if there is actually any overflow
+  element.scrollWidth <= 0 && element.scrollHeight <= 0 : style.getPropertyValue("display") == "none";
+}
+
+function visible(element) {
+  var parentElement = element;
+  while (parentElement) {
+    if (parentElement === document.body) break;
+    if (hidesContents(parentElement)) return false;
+    parentElement = parentElement.parentNode;
+  }
+  return true;
+}
+
+function focusable(element, isTabIndexNotNaN) {
+  var nodeName = element.nodeName.toLowerCase();
+  var res = tabbableNode.test(nodeName) && !element.disabled || (nodeName === "a" ? element.href || isTabIndexNotNaN : isTabIndexNotNaN);
+  return res && visible(element);
+}
+
+function tabbable(element) {
+  var tabIndex = element.getAttribute("tabindex");
+  if (tabIndex === null) tabIndex = undefined;
+  var isTabIndexNaN = isNaN(tabIndex);
+  return (isTabIndexNaN || tabIndex >= 0) && focusable(element, !isTabIndexNaN);
+}
+
+function findTabbableDescendants(element) {
+  return [].slice.call(element.querySelectorAll("*"), 0).filter(tabbable);
+}
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/react-modal/lib/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Modal = __webpack_require__(/*! ./components/Modal */ "./node_modules/react-modal/lib/components/Modal.js");
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Modal2.default;
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/react-yandex-maps/dist/production/react-yandex-maps.esm.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/react-yandex-maps/dist/production/react-yandex-maps.esm.js ***!
+  \*********************************************************************************/
+/*! exports provided: withYMaps, YMaps, Map, Panorama, Button, FullscreenControl, GeolocationControl, ListBox, ListBoxItem, RouteButton, RouteEditor, RoutePanel, RulerControl, SearchControl, TrafficControl, TypeSelector, ZoomControl, Clusterer, ObjectManager, GeoObject, Circle, Placemark, Polygon, Polyline, Rectangle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withYMaps", function() { return g; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YMaps", function() { return R; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Map", function() { return L; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Panorama", function() { return W; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return q; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FullscreenControl", function() { return z; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeolocationControl", function() { return I; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListBox", function() { return Z; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListBoxItem", function() { return G; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouteButton", function() { return V; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouteEditor", function() { return Y; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RoutePanel", function() { return H; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RulerControl", function() { return J; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchControl", function() { return K; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TrafficControl", function() { return Q; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TypeSelector", function() { return X; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZoomControl", function() { return tt; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Clusterer", function() { return et; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ObjectManager", function() { return nt; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeoObject", function() { return st; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Circle", function() { return it; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Placemark", function() { return at; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Polygon", function() { return ct; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Polyline", function() { return ut; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Rectangle", function() { return pt; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{};function n(t){return t&&t.__esModule&&Object.prototype.hasOwnProperty.call(t,"default")?t.default:t}function o(t,e){return t(e={exports:{}},e.exports),e.exports}var r=o(function(t,e){Object.defineProperty(e,"__esModule",{value:!0});var n="function"==typeof Symbol&&Symbol.for,o=n?Symbol.for("react.element"):60103,r=n?Symbol.for("react.portal"):60106,s=n?Symbol.for("react.fragment"):60107,i=n?Symbol.for("react.strict_mode"):60108,a=n?Symbol.for("react.profiler"):60114,c=n?Symbol.for("react.provider"):60109,u=n?Symbol.for("react.context"):60110,p=n?Symbol.for("react.async_mode"):60111,f=n?Symbol.for("react.concurrent_mode"):60111,l=n?Symbol.for("react.forward_ref"):60112,d=n?Symbol.for("react.suspense"):60113,m=n?Symbol.for("react.memo"):60115,h=n?Symbol.for("react.lazy"):60116;function y(t){if("object"==typeof t&&null!==t){var e=t.$$typeof;switch(e){case o:switch(t=t.type){case p:case f:case s:case a:case i:case d:return t;default:switch(t=t&&t.$$typeof){case u:case l:case c:return t;default:return e}}case h:case m:case r:return e}}}function v(t){return y(t)===f}e.typeOf=y,e.AsyncMode=p,e.ConcurrentMode=f,e.ContextConsumer=u,e.ContextProvider=c,e.Element=o,e.ForwardRef=l,e.Fragment=s,e.Lazy=h,e.Memo=m,e.Portal=r,e.Profiler=a,e.StrictMode=i,e.Suspense=d,e.isValidElementType=function(t){return"string"==typeof t||"function"==typeof t||t===s||t===f||t===a||t===i||t===d||"object"==typeof t&&null!==t&&(t.$$typeof===h||t.$$typeof===m||t.$$typeof===c||t.$$typeof===u||t.$$typeof===l)},e.isAsyncMode=function(t){return v(t)||y(t)===p},e.isConcurrentMode=v,e.isContextConsumer=function(t){return y(t)===u},e.isContextProvider=function(t){return y(t)===c},e.isElement=function(t){return"object"==typeof t&&null!==t&&t.$$typeof===o},e.isForwardRef=function(t){return y(t)===l},e.isFragment=function(t){return y(t)===s},e.isLazy=function(t){return y(t)===h},e.isMemo=function(t){return y(t)===m},e.isPortal=function(t){return y(t)===r},e.isProfiler=function(t){return y(t)===a},e.isStrictMode=function(t){return y(t)===i},e.isSuspense=function(t){return y(t)===d}});n(r),n(o(function(t,e){})),o(function(t){t.exports=r}),Object,Object,Object,function(){try{if(!Object.assign)return!1;var t=new String("abc");if(t[5]="de","5"===Object.getOwnPropertyNames(t)[0])return!1;for(var e={},n=0;n<10;n++)e["_"+String.fromCharCode(n)]=n;if("0123456789"!==Object.getOwnPropertyNames(e).map(function(t){return e[t]}).join(""))return!1;var o={};return"abcdefghijklmnopqrst".split("").forEach(function(t){o[t]=t}),"abcdefghijklmnopqrst"===Object.keys(Object.assign({},o)).join("")}catch(t){return!1}}()&&Object;var s="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";function i(){}function a(){}Function.call.bind(Object.prototype.hasOwnProperty),a.resetWarningCache=i;var c=o(function(t){t.exports=function(){function t(t,e,n,o,r,i){if(i!==s){var a=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");throw a.name="Invariant Violation",a}}function e(){return t}t.isRequired=t;var n={array:t,bool:t,func:t,number:t,object:t,string:t,symbol:t,any:t,arrayOf:e,element:t,elementType:t,instanceOf:e,node:t,objectOf:e,oneOf:e,oneOfType:e,shape:e,exact:e,checkPropTypes:a,resetWarningCache:i};return n.PropTypes=n,n}()}),u=n(o(function(t,e){Object.defineProperty(e,"__esModule",{value:!0}),e.default=function(t){return t.displayName||t.name||("string"==typeof t&&t.length>0?t:"Unknown")}})),p=function(t,e){var n={};for(var o in t)-1===e.indexOf(o)&&(n[o]=t[o]);return n},f="__global_unique_id__",l=function(){return e[f]=(e[f]||0)+1};function d(t){return function(){return t}}var m=function(){};m.thatReturns=d,m.thatReturnsFalse=d(!1),m.thatReturnsTrue=d(!0),m.thatReturnsNull=d(null),m.thatReturnsThis=function(){return this},m.thatReturnsArgument=function(t){return t};var h=m,y=o(function(e,n){n.__esModule=!0;var o=s(c),r=s(l);function s(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function a(t,e){if(!t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!e||"object"!=typeof e&&"function"!=typeof e?t:e}function u(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function, not "+typeof e);t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,enumerable:!1,writable:!0,configurable:!0}}),e&&(Object.setPrototypeOf?Object.setPrototypeOf(t,e):t.__proto__=e)}s(h),n.default=function(e,n){var s,c,p="__create-react-context-"+(0,r.default)()+"__",f=function(t){function e(){var n,o,r,s;i(this,e);for(var c=arguments.length,u=Array(c),p=0;p<c;p++)u[p]=arguments[p];return n=o=a(this,t.call.apply(t,[this].concat(u))),o.emitter=(r=o.props.value,s=[],{on:function(t){s.push(t)},off:function(t){s=s.filter(function(e){return e!==t})},get:function(){return r},set:function(t,e){r=t,s.forEach(function(t){return t(r,e)})}}),a(o,n)}return u(e,t),e.prototype.getChildContext=function(){var t;return(t={})[p]=this.emitter,t},e.prototype.componentWillReceiveProps=function(t){if(this.props.value!==t.value){var e=this.props.value,o=t.value,r=void 0;((s=e)===(i=o)?0!==s||1/s==1/i:s!=s&&i!=i)?r=0:(r="function"==typeof n?n(e,o):1073741823,0!=(r|=0)&&this.emitter.set(t.value,r))}var s,i},e.prototype.render=function(){return this.props.children},e}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);f.childContextTypes=((s={})[p]=o.default.object.isRequired,s);var l=function(t){function n(){var e,o;i(this,n);for(var r=arguments.length,s=Array(r),c=0;c<r;c++)s[c]=arguments[c];return e=o=a(this,t.call.apply(t,[this].concat(s))),o.state={value:o.getValue()},o.onUpdate=function(t,e){0!=((0|o.observedBits)&e)&&o.setState({value:o.getValue()})},a(o,e)}return u(n,t),n.prototype.componentWillReceiveProps=function(t){var e=t.observedBits;this.observedBits=null==e?1073741823:e},n.prototype.componentDidMount=function(){this.context[p]&&this.context[p].on(this.onUpdate);var t=this.props.observedBits;this.observedBits=null==t?1073741823:t},n.prototype.componentWillUnmount=function(){this.context[p]&&this.context[p].off(this.onUpdate)},n.prototype.getValue=function(){return this.context[p]?this.context[p].get():e},n.prototype.render=function(){return(t=this.props.children,Array.isArray(t)?t[0]:t)(this.state.value);var t},n}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);return l.contextTypes=((c={})[p]=o.default.object,c),{Provider:f,Consumer:l}},e.exports=n.default});n(y);var v=n(o(function(e,n){n.__esModule=!0;var o=s(react__WEBPACK_IMPORTED_MODULE_0___default.a),r=s(y);function s(t){return t&&t.__esModule?t:{default:t}}n.default=o.default.createContext||r.default,e.exports=n.default})),b=v(null),j=function(e){var n=u(e);return function(o){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(b.Consumer,null,function(r){if(null===r)throw new Error("Couldn't find Yandex.Maps API in the context. Make sure that <"+n+" /> is inside <YMaps /> provider");return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(e,Object.assign({},{ymaps:r},o))})}},O=v(null),_=function(e){return function(n){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(O.Consumer,null,function(o){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(e,Object.assign({},{parent:o},n))})}};function g(e,n,o){void 0===n&&(n=!1),void 0===o&&(o=[]);var r=function(r){function s(){r.call(this),this.state={loading:!0},this._isMounted=!1}return r&&(s.__proto__=r),(s.prototype=Object.create(r&&r.prototype)).constructor=s,s.prototype.componentDidMount=function(){var t=this;this._isMounted=!0,this.props.ymaps.load().then(function(e){return Promise.all(o.concat(t.props.modules).map(e.loadModule)).then(function(){!0===t._isMounted&&t.setState({loading:!1},function(){t.props.onLoad(e)})})}).catch(function(e){!0===t._isMounted&&t.props.onError(e)})},s.prototype.componentWillUnmount=function(){this._isMounted=!1},s.prototype.render=function(){var o=this.props.ymaps,r=!1===n||!1===this.state.loading,s=p(this.props,["onLoad","onError","modules","ymaps"]);return r&&react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(e,Object.assign({},{ymaps:o.getApi()},s))},s}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);return r.defaultProps={onLoad:Function.prototype,onError:Function.prototype,modules:[]},j(r)}var E={lang:"ru_RU",load:"",ns:"",mode:"release"},C={},w=function(t){var e=Date.now().toString(32);this.options=t,this.namespace=t.query.ns||E.ns,this.onload="__yandex-maps-api-onload__$$"+e,this.onerror="__yandex-maps-api-onerror__$$"+e};w.prototype.getApi=function(){return"undefined"!=typeof window&&this.namespace?window[this.namespace]:this.api},w.prototype.setApi=function(t){return this.api=t},w.prototype.getPromise=function(){return this.namespace?C[this.namespace]:this.promise},w.prototype.setPromise=function(t){return this.namespace?C[this.namespace]=this.promise=t:this.promise=t},w.prototype.load=function(){var t=this;if(this.getApi())return Promise.resolve(this.setApi(this.getApi()));if(this.getPromise())return this.setPromise(this.getPromise());var e=Object.assign({onload:this.onload,onerror:this.onerror},E,this.options.query),n=Object.keys(e).map(function(t){return t+"="+e[t]}).join("&"),o=["https://"+(this.options.enterprise?"enterprise.":"")+"api-maps.yandex.ru",this.options.version,"?"+n].join("/"),r=new Promise(function(e,n){window[t.onload]=function(n){delete window[t.onload],n.loadModule=t.loadModule.bind(t),n.ready(function(){return e(t.setApi(n))})},window[t.onerror]=function(e){delete window[t.onerror],n(e)},t.fetchScript(o).catch(window[t.onerror])});return this.setPromise(r)},w.prototype.fetchScript=function(t){var e=this;return new Promise(function(n,o){e.script=document.createElement("script"),e.script.type="text/javascript",e.script.onload=n,e.script.onerror=o,e.script.src=t,e.script.async="async",document.head.appendChild(e.script)})},w.prototype.loadModule=function(t){var e=this;return new Promise(function(n,o){e.getApi().modules.require(t,function(o){!function(t,e,n,o){void 0===o&&(o=!1),e="string"==typeof e?e.split("."):e.slice();for(var r,s=t;e.length>1;)s[r=e.shift()]||(s[r]={}),s=s[r];s[e[0]]=!0===o&&s[e[0]]||n}(e.api,t,o,!0),n(o)},o,e.getApi())})},w._name="__react-yandex-maps__";var R=function(e){function n(t){e.call(this,t),this.ymaps=new w(t)}return e&&(n.__proto__=e),(n.prototype=Object.create(e&&e.prototype)).constructor=n,n.prototype.componentDidMount=function(){!0===this.props.preload&&this.ymaps.load()},n.prototype.render=function(){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(b.Provider,{value:this.ymaps},this.props.children)},n}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);R.defaultProps={version:"2.1",enterprise:!1,query:{lang:"ru_RU",load:"",ns:""},preload:!1};var P=/^on(?=[A-Z])/;function M(t){return Object.keys(t).reduce(function(e,n){if(P.test(n)){var o=n.replace(P,"").toLowerCase();e._events[o]=t[n]}else e[n]=t[n];return e},{_events:{}})}function S(t,e,n){"function"==typeof n&&t.events.add(e,n)}function x(t,e,n){"function"==typeof n&&t.events.remove(e,n)}function T(t,e,n){Object.keys(Object.assign({},e,n)).forEach(function(o){e[o]!==n[o]&&(x(t,o,e[o]),S(t,o,n[o]))})}var k=function(t){return"default"+t.charAt(0).toUpperCase()+t.slice(1)};function A(t,e){return void 0!==t[e]||void 0===t[k(e)]}function U(t,e,n){return(A(t,e)?t[e]:t[k(e)])||n}function $(t,e,n){void 0===n&&(n=null),t&&t!==e&&(t.hasOwnProperty("current")?t.current=null:"function"==typeof t&&t(null)),e&&(e.hasOwnProperty("current")?e.current=n:"function"==typeof e&&e(n))}function B(t){var e=t.width,n=t.height,o=t.style,r=t.className;return void 0!==o||void 0!==r?Object.assign({},o&&{style:o},r&&{className:r}):{style:{width:e,height:n}}}var D=function(e){function n(){var t=this;e.call(this),this.state={instance:null},this._parentElement=null,this._getRef=function(e){t._parentElement=e}}return e&&(n.__proto__=e),(n.prototype=Object.create(e&&e.prototype)).constructor=n,n.prototype.componentDidMount=function(){var t=n.mountObject(this._parentElement,this.props.ymaps.Map,this.props);this.setState({instance:t})},n.prototype.componentDidUpdate=function(t){null!==this.state.instance&&n.updateObject(this.state.instance,t,this.props)},n.prototype.componentWillUnmount=function(){n.unmountObject(this.state.instance,this.props)},n.prototype.render=function(){var e=B(this.props),n=M(this.props),o=p(n,["_events","state","defaultState","options","defaultOptions","instanceRef","ymaps","children","width","height","style","className"]);return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(O.Provider,{value:this.state.instance},react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",Object.assign({},{ref:this._getRef},e,o),this.props.children))},n.mountObject=function(t,e,n){var o=M(n),r=o.instanceRef,s=o._events,i=new e(t,U(n,"state"),U(n,"options"));return Object.keys(s).forEach(function(t){return S(i,t,s[t])}),$(null,r,i),i},n.updateObject=function(t,e,n){var o=M(n),r=o._events,s=o.instanceRef,i=M(e),a=i._events,c=i.instanceRef;if(A(n,"state")){var u=U(e,"state",{}),p=U(n,"state",{});u.type!==p.type&&t.setType(p.type),u.behaviors!==p.behaviors&&(u.behaviors&&t.behaviors.disable(u.behaviors),p.behaviors&&t.behaviors.enable(p.behaviors)),u.zoom!==p.zoom&&t.setZoom(p.zoom),u.center!==p.center&&t.setCenter(p.center),p.bounds&&u.bounds!==p.bounds&&t.setBounds(p.bounds)}if(A(n,"options")){var f=U(e,"options"),l=U(n,"options",{});f!==l&&t.options.set(l)}U(e,"width")===U(n,"width")&&U(e,"height")===U(n,"height")||t.container.fitToViewport(),T(t,a,r),$(c,s,t)},n.unmountObject=function(t,e){var n=M(e),o=n.instanceRef,r=n._events;null!==t&&(Object.keys(r).forEach(function(e){return x(t,e,r[e])}),t.destroy(),$(o))},n}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);D.defaultProps={width:320,height:240};var L=g(D,!0,["Map"]),F=function(e){function n(){var t=this;e.call(this),this.state={instance:null},this._parentElement=null,this._getRef=function(e){t._parentElement=e}}return e&&(n.__proto__=e),(n.prototype=Object.create(e&&e.prototype)).constructor=n,n.prototype.componentDidMount=function(){var t=this;this._mounted=!0,this.props.ymaps.panorama.isSupported()&&n.mountObject(this._parentElement,this.props.ymaps.panorama,this.props).then(function(e){return t._mounted&&t.setState({instance:e})})},n.prototype.componentDidUpdate=function(t){null!==this.state.instance&&n.updateObject(this.state.instance,t,this.props)},n.prototype.componentWillUnmount=function(){this._mounted=!1,n.unmountObject(this.state.instance,this.props)},n.prototype.render=function(){var e=B(this.props);return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",Object.assign({},{ref:this._getRef},e))},n.mountObject=function(t,e,n){var o=M(n),r=o.instanceRef,s=o._events,i=U(n,"point"),a=U(n,"locateOptions"),c=U(n,"options");return new Promise(function(n,o){e.locate(i,a).done(function(o){if(o.length>0){var i=new e.Player(t,o[0],c);$(null,r,i),Object.keys(s).forEach(function(t){return S(i,t,s[t])}),n(i)}},o)})},n.updateObject=function(t,e,n){var o=M(n),r=o._events,s=o.instanceRef,i=M(e),a=i._events,c=i.instanceRef;if(A(n,"options")){var u=U(e,"options"),p=U(n,"options");u!==p&&t.options.set(p)}if(A(n,"point")){var f=U(n,"point"),l=U(e,"point"),d=U(n,"locateOptions");f!==l&&t.moveTo(f,d)}T(t,a,r),$(c,s,t)},n.unmountObject=function(t,e){var n=M(e),o=n.instanceRef,r=n._events;null!==t&&(Object.keys(r).forEach(function(e){return x(t,e,r[e])}),$(o))},n}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);F.defaultProps={width:320,height:240};var W=g(F,!0,["panorama.isSupported","panorama.locate","panorama.createPlayer","panorama.Player"]),N=function(e){function n(){e.call(this),this.state={instance:null}}return e&&(n.__proto__=e),(n.prototype=Object.create(e&&e.prototype)).constructor=n,n.prototype.componentDidMount=function(){var t=n.mountControl(this.props.ymaps.control[this.props.name],this.props);this.setState({instance:t})},n.prototype.componentDidUpdate=function(t){null!==this.state.instance&&n.updateControl(this.state.instance,t,this.props)},n.prototype.componentWillUnmount=function(){n.unmountControl(this.state.instance,this.props)},n.prototype.render=function(){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(O.Provider,{value:this.state.instance},this.props.children)},n.mountControl=function(t,e){var n=M(e),o=n.instanceRef,r=n.parent,s=n.lazy,i=n._events,a=new t({data:U(e,"data"),options:U(e,"options"),state:U(e,"state"),mapTypes:U(e,"mapTypes"),lazy:s});if(Object.keys(i).forEach(function(t){return S(a,t,i[t])}),r&&r.controls&&"function"==typeof r.controls.add)r.controls.add(a);else{if(!r||!r.add||"function"!=typeof r.add)throw new Error("No parent found to mount "+e.name);r.add(a)}return $(null,o,a),a},n.updateControl=function(t,e,n){var o=M(n),r=o._events,s=o.instanceRef,i=M(e),a=i._events,c=i.instanceRef;if(A(n,"options")){var u=U(e,"options"),p=U(n,"options");u!==p&&t.options.set(p)}if(A(n,"data")){var f=U(e,"data"),l=U(n,"data");f!==l&&t.data.set(l)}if(A(n,"state")){var d=U(e,"state"),m=U(n,"state");d!==m&&t.state.set(m)}if(A(n,"mapTypes")){var h=U(e,"mapTypes"),y=U(n,"mapTypes");h!==y&&(t.removeAllMapTypes(),y.forEach(function(e){return t.addMapType(e)}))}T(t,a,r),$(c,s,t)},n.unmountControl=function(t,e){var n=M(e),o=n.instanceRef,r=n.parent,s=n._events;null!==t&&(Object.keys(s).forEach(function(e){return x(t,e,s[e])}),r.controls&&"function"==typeof r.controls.remove?r.controls.remove(t):r.remove&&"function"==typeof r.remove&&r.remove(t),$(o))},n}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component),q=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(N,Object.assign({},e,{name:"Button"}))},!0,["control.Button"])),z=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(N,Object.assign({},e,{name:"FullscreenControl"}))},!0,["control.FullscreenControl"])),I=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(N,Object.assign({},e,{name:"GeolocationControl"}))},!0,["control.GeolocationControl"])),Z=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(N,Object.assign({},e,{name:"ListBox"}))},!0,["control.ListBox"])),G=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(N,Object.assign({},e,{name:"ListBoxItem"}))},!0,["control.ListBoxItem"])),V=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(N,Object.assign({},e,{name:"RouteButton"}))},!0,["control.RouteButton"])),Y=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(N,Object.assign({},e,{name:"RouteEditor"}))},!0,["control.RouteEditor"])),H=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(N,Object.assign({},e,{name:"RoutePanel"}))},!0,["control.RoutePanel"])),J=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(N,Object.assign({},e,{name:"RulerControl"}))},!0,["control.RulerControl"])),K=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(N,Object.assign({},e,{name:"SearchControl"}))},!0,["control.SearchControl"])),Q=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(N,Object.assign({},e,{name:"TrafficControl"}))},!0,["control.TrafficControl"])),X=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(N,Object.assign({},e,{name:"TypeSelector"}))},!0,["control.TypeSelector"])),tt=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(N,Object.assign({},e,{name:"ZoomControl"}))},!0,["control.ZoomControl"])),et=_(g(function(e){function n(){e.call(this),this.state={instance:null}}return e&&(n.__proto__=e),(n.prototype=Object.create(e&&e.prototype)).constructor=n,n.prototype.componentDidMount=function(){var t=n.mountObject(this.props.ymaps.Clusterer,this.props);this.setState({instance:t})},n.prototype.componentDidUpdate=function(t){null!==this.state.instance&&n.updateObject(this.state.instance,t,this.props)},n.prototype.componentWillUnmount=function(){n.unmountObject(this.state.instance,this.props)},n.prototype.render=function(){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(O.Provider,{value:this.state.instance},this.props.children)},n.mountObject=function(t,e){var n=M(e),o=n.instanceRef,r=n.parent,s=n._events,i=new t(U(e,"options"));if(Object.keys(s).forEach(function(t){return S(i,t,s[t])}),r.geoObjects&&"function"==typeof r.geoObjects.add)r.geoObjects.add(i);else{if(!r.add||"function"!=typeof r.add)throw new Error("No parent found to mount Clusterer");r.add(i)}return $(null,o,i),i},n.updateObject=function(t,e,n){var o=M(n),r=o._events,s=o.instanceRef,i=M(e),a=i._events,c=i.instanceRef;if(A(n,"options")){var u=U(e,"options"),p=U(n,"options");u!==p&&t.options.set(p)}T(t,a,r),$(c,s,t)},n.unmountObject=function(t,e){var n=M(e),o=n.instanceRef,r=n.parent,s=n._events;null!==t&&(Object.keys(s).forEach(function(e){return x(t,e,s[e])}),r.geoObjects&&"function"==typeof r.geoObjects.remove?r.geoObjects.remove(t):r.remove&&"function"==typeof r.remove&&r.remove(t),$(o))},n}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component),!0,["Clusterer"])),nt=_(g(function(t){function e(){t.call(this),this.state={instance:null}}return t&&(e.__proto__=t),(e.prototype=Object.create(t&&t.prototype)).constructor=e,e.prototype.componentDidMount=function(){var t=e.mountObject(this.props.ymaps.ObjectManager,this.props);this.setState({instance:t})},e.prototype.componentDidUpdate=function(t){null!==this.state.instance&&e.updateObject(this.state.instance,t,this.props)},e.prototype.componentWillUnmount=function(){e.unmountObject(this.state.instance,this.props)},e.prototype.render=function(){return null},e.mountObject=function(t,e){var n=M(e),o=n.instanceRef,r=n.parent,s=n._events,i=U(e,"options"),a=U(e,"features"),c=U(e,"filter"),u=U(e,"objects"),p=U(e,"clusters"),f=new t(i);if(f.add(a||[]),f.setFilter(c),f.objects.options.set(u),f.clusters.options.set(p),Object.keys(s).forEach(function(t){return S(f,t,s[t])}),r.geoObjects&&"function"==typeof r.geoObjects.add)r.geoObjects.add(f);else{if(!r.add||"function"!=typeof r.add)throw new Error("No parent found to mount ObjectManager");r.add(f)}return $(null,o,f),f},e.updateObject=function(t,e,n){var o=M(n),r=o._events,s=o.instanceRef,i=M(e),a=i._events,c=i.instanceRef;if(A(n,"options")){var u=U(e,"options"),p=U(n,"options");u!==p&&t.options.set(p)}if(A(n,"objects")){var f=U(e,"objects"),l=U(n,"objects");f!==l&&t.objects.options.set(l)}if(A(n,"clusters")){var d=U(e,"clusters"),m=U(n,"clusters");d!==m&&t.clusters.options.set(m)}if(A(n,"filter")){var h=U(e,"filter"),y=U(n,"filter");h!==y&&t.options.set(y)}if(A(n,"features")){var v=U(e,"features"),b=U(n,"features");v!==b&&(t.remove(v),t.add(b))}T(t,a,r),$(c,s,t)},e.unmountObject=function(t,e){var n=M(e),o=n.instanceRef,r=n.parent,s=n._events;null!==t&&(Object.keys(s).forEach(function(e){return x(t,e,s[e])}),r.geoObjects&&"function"==typeof r.geoObjects.remove?r.geoObjects.remove(t):r.remove&&"function"==typeof r.remove&&r.remove(t),$(o))},e}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component),!0,["ObjectManager"])),ot=function(t){function e(){t.call(this),this.state={instance:null}}return t&&(e.__proto__=t),(e.prototype=Object.create(t&&t.prototype)).constructor=e,e.prototype.componentDidMount=function(){var t=this.props,n=t.name,o=t.ymaps,r=t.dangerZone,s=e.mountObject(r&&"function"==typeof r.modifyConstructor?r.modifyConstructor(o[n]):o[n],this.props);this.setState({instance:s})},e.prototype.componentDidUpdate=function(t){null!==this.state.instance&&e.updateObject(this.state.instance,t,this.props)},e.prototype.componentWillUnmount=function(){e.unmountObject(this.state.instance,this.props)},e.prototype.render=function(){return null},e.mountObject=function(t,e){var n=M(e),o=n.instanceRef,r=n.parent,s=n._events,i=new t(U(e,"geometry"),U(e,"properties"),U(e,"options"));if(Object.keys(s).forEach(function(t){return S(i,t,s[t])}),r&&r.geoObjects&&"function"==typeof r.geoObjects.add)r.geoObjects.add(i);else{if(!r||!r.add||"function"!=typeof r.add)throw new Error("No parent found to mount "+e.name);r.add(i)}return $(null,o,i),i},e.updateObject=function(t,e,n){var o=M(n),r=o._events,s=o.instanceRef,i=M(e),a=i._events,c=i.instanceRef;if(A(n,"geometry")){var u=U(e,"geometry",{}),p=U(n,"geometry",{});Array.isArray(p)&&p!==u?Array.isArray(p[0])&&"number"==typeof p[1]?(t.geometry.setCoordinates(p[0]),t.geometry.setRadius(p[1])):t.geometry.setCoordinates(p):"object"==typeof p&&(p.coordinates!==u.coordinates&&t.geometry.setCoordinates(p.coordinates),p.radius!==u.radius&&t.geometry.setRadius(p.radius))}if(A(n,"properties")){var f=U(e,"properties"),l=U(n,"properties");f!==l&&t.properties.set(l)}if(A(n,"options")){var d=U(e,"options"),m=U(n,"options");d!==m&&t.options.set(m)}T(t,a,r),$(c,s,t)},e.unmountObject=function(t,e){var n=M(e),o=n.instanceRef,r=n.parent,s=n._events;null!==t&&(Object.keys(s).forEach(function(e){return x(t,e,s[e])}),r.geoObjects&&"function"==typeof r.geoObjects.remove?r.geoObjects.remove(t):r.remove&&"function"==typeof r.remove&&r.remove(t),$(o))},e}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component),rt={modifyConstructor:function(t){function e(e,n,o){t.call(this,{geometry:e,properties:n},o)}return e.prototype=t.prototype,e}},st=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ot,Object.assign({},e,{name:"GeoObject",dangerZone:rt}))},!0,["GeoObject"])),it=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ot,Object.assign({},e,{name:"Circle"}))},!0,["Circle"])),at=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ot,Object.assign({},e,{name:"Placemark"}))},!0,["Placemark"])),ct=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ot,Object.assign({},e,{name:"Polygon"}))},!0,["Polygon"])),ut=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ot,Object.assign({},e,{name:"Polyline"}))},!0,["Polyline"])),pt=_(g(function(e){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ot,Object.assign({},e,{name:"Rectangle"}))},!0,["Rectangle"]));
+//# sourceMappingURL=react-yandex-maps.esm.js.map
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -7282,35 +10486,141 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 /***/ }),
 
-/***/ "./pages/news.js":
-/*!***********************!*\
-  !*** ./pages/news.js ***!
-  \***********************/
-/*! exports provided: default */
+/***/ "./node_modules/warning/warning.js":
+/*!*****************************************!*\
+  !*** ./node_modules/warning/warning.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+/**
+ * Similar to invariant but only logs a warning if the condition is not met.
+ * This can be used to log issues in development environments in critical
+ * paths. Removing the logging code for production environments will keep the
+ * same logic and follow the same code paths.
+ */
+
+var __DEV__ = "development" !== 'production';
+
+var warning = function() {};
+
+if (__DEV__) {
+  var printWarning = function printWarning(format, args) {
+    var len = arguments.length;
+    args = new Array(len > 1 ? len - 1 : 0);
+    for (var key = 1; key < len; key++) {
+      args[key - 1] = arguments[key];
+    }
+    var argIndex = 0;
+    var message = 'Warning: ' +
+      format.replace(/%s/g, function() {
+        return args[argIndex++];
+      });
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  }
+
+  warning = function(condition, format, args) {
+    var len = arguments.length;
+    args = new Array(len > 2 ? len - 2 : 0);
+    for (var key = 2; key < len; key++) {
+      args[key - 2] = arguments[key];
+    }
+    if (format === undefined) {
+      throw new Error(
+          '`warning(condition, format, ...args)` requires a warning ' +
+          'message argument'
+      );
+    }
+    if (!condition) {
+      printWarning.apply(null, [format].concat(args));
+    }
+  };
+}
+
+module.exports = warning;
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/global.js":
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ "./pages/about.js":
+/*!************************!*\
+  !*** ./pages/about.js ***!
+  \************************/
+/*! exports provided: About, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "About", function() { return About; });
 /* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
 /* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
 /* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
 /* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _components_head__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/head */ "./components/head.js");
-/* harmony import */ var _components_tables_newsList__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/tables/newsList */ "./components/tables/newsList.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_news_newsMain__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/news/newsMain */ "./components/news/newsMain.js");
-/* harmony import */ var _components_news_newsListPlate__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/news/newsListPlate */ "./components/news/newsListPlate.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var react_image_lightbox__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-image-lightbox */ "./node_modules/react-image-lightbox/dist/index.es.js");
+/* harmony import */ var react_yandex_maps__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-yandex-maps */ "./node_modules/react-yandex-maps/dist/production/react-yandex-maps.esm.js");
 
 
 
 
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, result); }; }
 
@@ -7319,63 +10629,337 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
+ // Yandex Maps
 
 
+var images = ['/images/about-1.jpg', '/images/about-2.jpg', '/images/about-3.jpg'];
+var About = /*#__PURE__*/function (_Component) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(About, _Component);
 
+  var _super = _createSuper(About);
 
+  function About(props) {
+    var _this;
 
-var News = /*#__PURE__*/function (_Component) {
-  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(News, _Component);
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, About);
 
-  var _super = _createSuper(News);
-
-  function News() {
-    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, News);
-
-    return _super.apply(this, arguments);
+    _this = _super.call(this, props);
+    _this.state = {
+      photoIndex: 0,
+      isOpen: false
+    };
+    return _this;
   }
 
-  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(News, [{
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(About, [{
     key: "render",
     value: function render() {
-      return __jsx("div", null, __jsx(_components_head__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        title: "\u041D\u043E\u0432\u043E\u0441\u0442\u0438 \u043C\u0430\u043B\u043E\u0439 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0438 - \u0413\u0430\u0437\u0432\u044B\u0435 \u043C\u0430\u0448\u0438\u043D\u044B",
-        description: "\u041E\u0442\u0440\u0430\u0441\u043B\u0435\u0432\u044B\u0435 \u0434\u043E\u0441\u0442\u0438\u0436\u0435\u043D\u0438\u044F \u0438 \u043D\u043E\u0432\u0438\u043D\u043A\u0438 \u0432 \u043E\u0431\u043B\u0430\u0441\u0442\u0438 \u043C\u0430\u043B\u043E\u0439 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0438. \u041A\u0440\u0435\u0434\u0438\u0442\u043D\u044B\u0435 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B, \u0441\u043E\u0431\u044B\u0442\u0438\u044F, \u0434\u043E\u0441\u0442\u0438\u0436\u0435\u043D\u0438\u044F \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 \u0413\u0430\u0437\u043E\u0432\u044B\u0435 \u043C\u0430\u0448\u0438\u043D\u044B."
-      }), __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], null, __jsx("div", {
-        className: "container-fluid bg-color"
+      var _this2 = this;
+
+      var _this$state = this.state,
+          photoIndex = _this$state.photoIndex,
+          isOpen = _this$state.isOpen;
+      return __jsx("div", {
+        className: "jsx-1954816038"
+      }, __jsx(_components_head__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        title: "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B - \u0413\u0430\u0437\u043E\u0432\u044B\u0435 \u043C\u0430\u0448\u0438\u043D\u044B. \u041E\u0444\u0438\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0439 \u0441\u0430\u0439\u0442",
+        description: "\u041F\u043E\u0434\u0431\u0440\u043E\u0431\u043D\u0430\u044F \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u043E \u0434\u0435\u044F\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 \u041E\u041E\u041E \"\u0413\u0430\u0437\u043E\u0432\u044B\u0435 \u043C\u0430\u0448\u0438\u043D\u044B\""
+      }), __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_8__["default"], null, __jsx("div", {
+        className: "jsx-1954816038" + " " + "container-fluid about"
       }, __jsx("div", {
-        className: "mycontainer"
-      }, __jsx("span", {
-        className: "subheading-red-top pl-3"
-      }, "\u041D\u043E\u0432\u043E\u0441\u0442\u043D\u0430\u044F \u043B\u0435\u043D\u0442\u0430 \u201C\u0413\u0430\u0437\u043E\u0432\u044B\u0435 \u043C\u0430\u0448\u0438\u043D\u044B\u201D."), __jsx("h1", {
-        className: "header-min-colored pl-3"
-      }, "\u041D\u043E\u0432\u043E\u0441\u0442\u0438 \u043C\u0430\u043B\u043E\u0439 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0438"))), __jsx("div", {
-        className: "container-fluid news"
+        className: "jsx-1954816038" + " " + "mycontainer"
       }, __jsx("div", {
-        className: "mycontainer"
+        className: "jsx-1954816038" + " " + "row m-0"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "col-12 col-md-12 col-xl-9 p-0"
       }, __jsx("span", {
-        className: "razdel-name"
-      }, "\u041F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0435 \u043D\u043E\u0432\u043E\u0441\u0442\u0438:"), __jsx(_components_news_newsMain__WEBPACK_IMPORTED_MODULE_10__["default"], null), __jsx("span", {
-        className: "razdel-name"
-      }, "\u0421\u043F\u0438\u0441\u043E\u043A \u043D\u043E\u0432\u043E\u0441\u0442\u0435\u0439:"), __jsx(_components_news_newsListPlate__WEBPACK_IMPORTED_MODULE_11__["default"], null)))));
+        className: "jsx-1954816038" + " " + "subheading-red-top pl-3 mt-5"
+      }, "\u041E \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438"), __jsx("h1", {
+        className: "jsx-1954816038" + " " + "header-razdel pl-3"
+      }, "\u041E\u041E\u041E \"\u0413\u0430\u0437\u043E\u0432\u044B\u0435 \u043C\u0430\u0448\u0438\u043D\u044B\""), __jsx("p", {
+        className: "jsx-1954816038" + " " + "subheading-common-2 mt-4"
+      }, "\u041A\u043E\u043C\u043F\u0430\u043D\u0438\u044F \xAB\u0413\u0430\u0437\u043E\u0432\u044B\u0435 \u043C\u0430\u0448\u0438\u043D\u044B\xBB \u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u043D\u0430 10 \u043E\u043A\u0442\u044F\u0431\u0440\u044F 2006 \u0433. \u0412 \u0442\u0435\u0447\u0435\u043D\u0438\u0435 12 \u043B\u0435\u0442 \u043E\u0441\u043D\u043E\u0432\u043D\u044B\u043C \u043F\u0440\u043E\u0444\u0438\u043B\u0435\u043C \u0434\u0435\u044F\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u043E \u0438 \u043F\u043E\u0441\u0442\u0430\u0432\u043A\u0430 \"\u043F\u043E\u0434 \u043A\u043B\u044E\u0447\" \u0430\u0432\u0442\u043E\u043D\u043E\u043C\u043D\u044B\u0445 \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0446\u0435\u043D\u0442\u0440\u043E\u0432 \u043D\u0430 \u0431\u0430\u0437\u0435 \u0433\u0430\u0437\u043E\u043F\u043E\u0440\u0448\u043D\u0435\u0432\u044B\u0445 \u044D\u043B\u0435\u043A\u0442\u0440\u043E\u0441\u0442\u0430\u043D\u0446\u0438\u0439 \u0441 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u044F\u043C\u0438 \u043A\u043E\u0433\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u0438 \u0438 \u0442\u0440\u0438\u0433\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u0438, \u0441\u0435\u0440\u0432\u0438\u0441\u043D\u043E\u0435 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u0435 \u0433\u0430\u0437\u043E\u043F\u043E\u0440\u0448\u043D\u0435\u0432\u044B\u0445 \u044D\u043B\u0435\u043A\u0442\u0440\u043E\u0441\u0442\u0430\u043D\u0446\u0438\u0439, \u043F\u043E\u0441\u0442\u0430\u0432\u043A\u0430 \u0437\u0430\u043F\u0430\u0441\u043D\u044B\u0445 \u0447\u0430\u0441\u0442\u0435\u0439 \u0438 \u0440\u0430\u0441\u0445\u043E\u0434\u043D\u044B\u0445 \u043C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u043E\u0432 \u0434\u043B\u044F \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u0438 \u0433\u0430\u0437\u043E\u0432\u044B\u0445 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440\u043E\u0432."))), __jsx("div", {
+        className: "jsx-1954816038" + " " + "row m-0 mt-5 mb-5"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "col-12 col-md-4"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "img-container"
+      }, __jsx("img", {
+        src: "/images/about-1.jpg",
+        onClick: function onClick() {
+          return _this2.setState({
+            isOpen: true,
+            photoIndex: 0
+          });
+        },
+        alt: "\u041C\u0430\u043B\u0430\u044F \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0430",
+        title: "\u041C\u0430\u043B\u0430\u044F \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u043A\u0430",
+        className: "jsx-1954816038" + " " + "about-pic"
+      }))), __jsx("div", {
+        className: "jsx-1954816038" + " " + "col-12 col-md-4"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "img-container"
+      }, __jsx("img", {
+        src: "/images/about-2.jpg",
+        onClick: function onClick() {
+          return _this2.setState({
+            isOpen: true,
+            photoIndex: 1
+          });
+        },
+        alt: "\u0413\u0430\u0437\u043E\u0432\u044B\u0439 \u044D\u043D\u0435\u0440\u0433\u043E\u0446\u0435\u043D\u0442\u0440",
+        title: "\u0413\u0430\u0437\u043E\u0432\u044B\u0439 \u044D\u043D\u0435\u0440\u0433\u043E\u0446\u0435\u043D\u0442\u0440",
+        className: "jsx-1954816038" + " " + "about-pic"
+      }))), __jsx("div", {
+        className: "jsx-1954816038" + " " + "col-12 col-md-4"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "img-container"
+      }, __jsx("img", {
+        src: "/images/about-3.jpg",
+        onClick: function onClick() {
+          return _this2.setState({
+            isOpen: true,
+            photoIndex: 2
+          });
+        },
+        alt: "\u0421\u0431\u043E\u0440\u043E\u0447\u043D\u044B\u0439 \u0446\u0435\u0445 \u0413\u0430\u0437\u043E\u0432\u044B\u0435 \u043C\u0430\u0448\u0438\u043D\u044B",
+        title: "\u0421\u0431\u043E\u0440\u043E\u0447\u043D\u044B\u0439 \u0446\u0435\u0445 \u0413\u0430\u0437\u043E\u0432\u044B\u0435 \u043C\u0430\u0448\u0438\u043D\u044B",
+        className: "jsx-1954816038" + " " + "about-pic"
+      })), isOpen && __jsx(react_image_lightbox__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        mainSrc: "".concat(images[photoIndex]),
+        nextSrc: images[(photoIndex + 1) % images.length],
+        prevSrc: images[(photoIndex + images.length - 1) % images.length],
+        onCloseRequest: function onCloseRequest() {
+          return _this2.setState({
+            isOpen: false
+          });
+        },
+        onMovePrevRequest: function onMovePrevRequest() {
+          return _this2.setState({
+            photoIndex: (photoIndex + images.length - 1) % images.length
+          });
+        },
+        onMoveNextRequest: function onMoveNextRequest() {
+          return _this2.setState({
+            photoIndex: (photoIndex + 1) % images.length
+          });
+        }
+      }))), __jsx("div", {
+        className: "jsx-1954816038" + " " + "row m-0"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "col-12 col-xl-9 p-0 pl-3 pr-3"
+      }, __jsx("p", {
+        className: "jsx-1954816038" + " " + "text-min mb-4"
+      }, "\u0421 2006 \u0433. \u0434\u043E \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0433\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0435\u0439 \u0432\u044B\u043F\u0443\u0449\u0435\u043D\u043E", __jsx("b", {
+        className: "jsx-1954816038"
+      }, ' ', "75 \u044D\u043B\u0435\u043A\u0442\u0440\u043E\u0441\u0442\u0430\u043D\u0446\u0438\u0439 \u0441\u0443\u043C\u043C\u0430\u0440\u043D\u043E\u0439 \u043C\u043E\u0449\u043D\u043E\u0441\u0442\u044C\u044E \u0431\u043E\u043B\u0435\u0435 21 \u041C\u0412\u0442."), ' ', "\u0412 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0439 \u043B\u0438\u043D\u0435\u0439\u043A\u0435 \u0433\u0430\u0437\u043E\u0432\u044B\u0435 \u044D\u043B\u0435\u043A\u0442\u0440\u043E\u0441\u0442\u0430\u043D\u0446\u0438\u0438 MAN, Liebherr, Jenbacher, MTU, MWM \u0438 \u042F\u041C\u0417 \u0435\u0434\u0438\u043D\u0438\u0447\u043D\u043E\u0439 \u043C\u043E\u0449\u043D\u043E\u0441\u0442\u044C\u044E \u0434\u043E 10 \u041C\u0412\u0442 \u0438 \u043D\u0430\u043F\u0440\u044F\u0436\u0435\u043D\u0438\u0435\u043C \u0434\u043E 10,5 \u043A\u0412, \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0449\u0438\u0435 \u043D\u0430 \u043F\u0440\u0438\u0440\u043E\u0434\u043D\u043E\u043C, \u0441\u0436\u0438\u0436\u0435\u043D\u043D\u043E\u043C \u0433\u0430\u0437\u0435, \u043F\u0440\u043E\u043F\u0430\u043D-\u0431\u0443\u0442\u0430\u043D\u043E\u0432\u043E\u0439 \u0441\u043C\u0435\u0441\u0438, \u043F\u043E\u043F\u0443\u0442\u043D\u043E\u043C \u043D\u0435\u0444\u0442\u044F\u043D\u043E\u043C \u0433\u0430\u0437\u0435. \u041A\u043E\u043C\u043F\u0430\u043D\u0438\u044F \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043E\u0444\u0438\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u043C \u0441\u0435\u0440\u0432\u0438\u0441\u043D\u044B\u043C \u043F\u0430\u0440\u0442\u043D\u0435\u0440\u043E\u043C MAN, Liebherr, Motortech, Comap."), __jsx("p", {
+        className: "jsx-1954816038" + " " + "text-min mb-4"
+      }, "\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0435 \u043F\u043B\u043E\u0449\u0430\u0434\u0438 \u043A\u043E\u043C\u0430\u043D\u0438\u0438 1 900 \u043A\u0432.\u043C. \u0440\u0430\u0441\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u044B \u0432 \u0433. \u042F\u0440\u043E\u0441\u043B\u0430\u0432\u043B\u0435. \u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u043E \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u0446\u0438\u0440\u043E\u0432\u0430\u043D\u043E \u043A\u043E\u043D\u0446\u0435\u0440\u043D\u043E\u043C MAN \u0438 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0435\u0439 Motortech, \u0447\u0442\u043E \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0430\u0435\u0442 \u0432\u044B\u0441\u043E\u043A\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u0432\u044B\u043F\u0443\u0441\u043A\u0430\u0435\u043C\u043E\u0439 \u043F\u0440\u043E\u0434\u0443\u043A\u0446\u0438\u0438. \u0427\u0438\u0441\u043B\u043E \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u043E\u0432 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 40 \u0447\u0435\u043B\u043E\u0432\u0435\u043A. 80 % \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u0438\u043D\u0436\u0435\u043D\u0435\u0440\u043D\u044B\u0439 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B \u0441 \u0432\u044B\u0441\u0448\u0438\u043C \u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C, \u043F\u0440\u043E\u0448\u0435\u0434\u0448\u0438\u0439 \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 \u0432 \u043A\u043E\u043D\u0446\u0435\u0440\u043D\u0430\u0445 MAN \u0438 Liebherr. \u0422\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0440\u0443\u043A\u043E\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u0438 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 \u0438\u043C\u0435\u044E\u0442 \u0443\u0447\u0435\u043D\u0443\u044E \u0441\u0442\u0435\u043F\u0435\u043D\u044C \u043A\u0430\u043D\u0434\u0438\u0434\u0430\u0442\u043E\u0432 \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043D\u0430\u0443\u043A."), __jsx("p", {
+        className: "jsx-1954816038" + " " + "text-min mb-3"
+      }, __jsx("b", {
+        className: "jsx-1954816038"
+      }, "\u041F\u0440\u0438\u0433\u043B\u0430\u0448\u0430\u0435\u043C \u043F\u043E\u0441\u0435\u0442\u0438\u0442\u044C \u043D\u0430\u0448\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u043E, \u0433\u0434\u0435 \u0412\u044B, \u0432 \u0443\u0434\u043E\u0431\u043D\u043E\u0435 \u0434\u043B\u044F \u0412\u0430\u0441 \u0432\u0440\u0435\u043C\u044F, \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u043E\u0437\u043D\u0430\u043A\u043E\u043C\u0438\u0442\u0441\u044F \u0441 \u043E\u0431\u0440\u0430\u0437\u0446\u0430\u043C\u0438 \u043F\u0440\u043E\u0434\u0443\u043A\u0446\u0438\u0438.")))))), __jsx("div", {
+        className: "jsx-1954816038" + " " + "container-fluid contacts mt-5 mb-5"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "row m-0"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "col-12 col-md-4 order-md-2"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "contacts-content"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "adres-list"
+      }, __jsx("span", {
+        className: "jsx-1954816038" + " " + "contacts-heading"
+      }, "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B:"), __jsx("a", {
+        href: "https://yandex.ru/maps/-/CBFyIKsQPB",
+        className: "jsx-1954816038" + " " + "adres-map-link"
+      }, "150062,\xA0\u0420\u043E\u0441\u0441\u0438\u044F, \u0433.\xA0\u042F\u0440\u043E\u0441\u043B\u0430\u0432\u043B\u044C, \u043F\u0440.\xA0\u0410\u0432\u0438\u0430\u0442\u043E\u0440\u043E\u0432,\xA0155"), __jsx("div", {
+        className: "jsx-1954816038" + " " + "adres-phones"
+      }, __jsx("a", {
+        href: "callto:+74852260368",
+        className: "jsx-1954816038" + " " + "phone-link"
+      }, "+7 (4852) 26-03-68"), __jsx("a", {
+        href: "callto:+74852267960",
+        className: "jsx-1954816038" + " " + "phone-link"
+      }, "+7 (4852) 26-79-60")), __jsx("a", {
+        href: "mailto:market@gmenergo.ru",
+        className: "jsx-1954816038" + " " + "adres-email"
+      }, "market@gmenergo.ru"), __jsx("span", {
+        className: "jsx-1954816038" + " " + "link-1"
+      }, "\u0413\u0440\u0430\u0444\u0438\u043A \u0440\u0430\u0431\u043E\u0442\u044B:"), __jsx("span", {
+        className: "jsx-1954816038" + " " + "link-1 link-11"
+      }, "\u043F\u043D-\u043F\u0442: 9:00-18:00")))), __jsx("div", {
+        className: "jsx-1954816038" + " " + "col-12 col-md-8 map-container order-md-1 p-0"
+      }, __jsx("div", {
+        style: {
+          width: '100%',
+          height: '100%',
+          position: 'relative'
+        },
+        className: "jsx-1954816038" + " " + "myMap"
+      }, __jsx(react_yandex_maps__WEBPACK_IMPORTED_MODULE_10__["YMaps"], null, __jsx(react_yandex_maps__WEBPACK_IMPORTED_MODULE_10__["Map"], {
+        width: "100%",
+        height: "458px",
+        defaultState: {
+          center: [57.659441, 39.949507],
+          zoom: 16
+        }
+      }, __jsx(react_yandex_maps__WEBPACK_IMPORTED_MODULE_10__["Placemark"], {
+        defaultGeometry: [57.66, 39.9505]
+      }))))))), __jsx("div", {
+        className: "jsx-1954816038" + " " + "container-fluid pt-3"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "mycontainer pl-3 pr-3"
+      }, __jsx("h2", {
+        className: "jsx-1954816038" + " " + "header-sections pl-0"
+      }, "\u0421\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u044B"), __jsx("div", {
+        className: "jsx-1954816038" + " " + "certs"
+      }, __jsx("a", {
+        href: "/docs/sert-mbk.pdf",
+        target: "_blank",
+        rel: "noopener",
+        className: "jsx-1954816038" + " " + "d-flex certs-card"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "img-container"
+      }, __jsx("img", {
+        src: "/images/docs/sert-mbk.jpg",
+        alt: "\u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442",
+        title: "\u0421\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442 \u041C\u0412\u041A",
+        className: "jsx-1954816038" + " " + "certs-img certs-img-1"
+      }))), __jsx("a", {
+        href: "/docs/dungs.pdf",
+        target: "_blank",
+        rel: "noopener",
+        className: "jsx-1954816038" + " " + "d-flex certs-card"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "img-container"
+      }, __jsx("img", {
+        src: "/images/docs/dungs.jpg",
+        alt: "\u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442",
+        title: "\u0421\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442 DUNGS",
+        className: "jsx-1954816038" + " " + "certs-img certs-img-1"
+      }))), __jsx("a", {
+        href: "/docs/\u0441\u043A\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u043D0642.pdf",
+        target: "_blank",
+        rel: "noopener",
+        className: "jsx-1954816038" + " " + "d-flex certs-card"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "img-container"
+      }, __jsx("img", {
+        src: "/images/docs/\u0441\u043A\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u043D0642.jpg",
+        alt: "\u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442",
+        title: "\u0421\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442 \u0441 \u0432\u044B\u0441\u0442\u0430\u0432\u043A\u0438 \u0421\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u0433\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u044F",
+        className: "jsx-1954816038" + " " + "certs-img certs-img-1"
+      }))), __jsx("a", {
+        href: "/docs/liebherr.pdf",
+        target: "_blank",
+        rel: "noopener",
+        className: "jsx-1954816038" + " " + "d-flex certs-card"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "img-container"
+      }, __jsx("img", {
+        src: "/images/docs/liebherr.jpg",
+        alt: "\u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442",
+        title: "\u0421\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442 Liebherr",
+        className: "jsx-1954816038" + " " + "certs-img certs-img-1"
+      }))), __jsx("a", {
+        href: "/docs/motortech.pdf",
+        target: "_blank",
+        rel: "noopener",
+        className: "jsx-1954816038" + " " + "d-flex certs-card"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "img-container"
+      }, __jsx("img", {
+        src: "/images/docs/motortech.jpg",
+        alt: "\u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442",
+        title: "\u0421\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442 Motortech",
+        className: "jsx-1954816038" + " " + "certs-img certs-img-1"
+      }))), __jsx("a", {
+        href: "/docs/sert.pdf",
+        target: "_blank",
+        rel: "noopener",
+        className: "jsx-1954816038" + " " + "d-flex certs-card"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "img-container"
+      }, __jsx("img", {
+        src: "/images/docs/sert.jpg",
+        alt: "\u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442",
+        title: "\u0421\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u044F \u0413\u041E\u0421\u0422",
+        className: "jsx-1954816038" + " " + "certs-img certs-img-1"
+      }))), __jsx("a", {
+        href: "/docs/comap.pdf",
+        target: "_blank",
+        rel: "noopener",
+        className: "jsx-1954816038" + " " + "d-flex certs-card"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "img-container"
+      }, __jsx("img", {
+        src: "/images/docs/comap.jpg",
+        alt: "\u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442",
+        title: "\u0421\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442 ComAp",
+        className: "jsx-1954816038" + " " + "certs-img certs-img-1"
+      }))), __jsx("a", {
+        href: "/docs/man.pdf",
+        target: "_blank",
+        rel: "noopener",
+        className: "jsx-1954816038" + " " + "d-flex certs-card"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "img-container"
+      }, __jsx("img", {
+        src: "/images/docs/man.jpg",
+        alt: "\u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442",
+        title: "\u0421\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442 MAN",
+        className: "jsx-1954816038" + " " + "certs-img certs-img-1"
+      }))), __jsx("a", {
+        href: "/docs/\u0441\u043A\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u043D0643.pdf",
+        target: "_blank",
+        rel: "noopener",
+        className: "jsx-1954816038" + " " + "d-flex certs-card"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "img-container"
+      }, __jsx("img", {
+        src: "/images/docs/nagrada2.jpg",
+        alt: "\u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442",
+        title: "\u041F\u0430\u0440\u0442\u043D\u0451\u0440\u0441\u043A\u0438\u0439 \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442 MAN",
+        className: "jsx-1954816038" + " " + "certs-img certs-img-2"
+      })))))), __jsx("div", {
+        className: "jsx-1954816038" + " " + "container-fluid napravleniya"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "mycontainer"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "row m-0"
+      }, __jsx("div", {
+        className: "jsx-1954816038" + " " + "col-12 col-xl-9"
+      }, __jsx("h2", {
+        className: "jsx-1954816038" + " " + "header-sections pl-0 pb-3"
+      }, "\u041D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F"), __jsx("p", {
+        className: "jsx-1954816038" + " " + "text-min pb-3"
+      }, "\u041A\u0440\u043E\u043C\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0430 \u043C\u0438\u043D\u0438-\u0422\u042D\u0421 \u043C\u044B \u043E\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043B\u044F\u0435\u043C \u043F\u043E\u0441\u0442\u0430\u0432\u043A\u0443, \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u043D\u044B\u0445 \u043F\u043E\u0434\u0441\u0442\u0430\u043D\u0446\u0438\u0439, \u041A\u0420\u0423, \u0438 \u043F\u0440\u043E\u0447\u0435\u0433\u043E \u0432\u0441\u043F\u043E\u043C\u043E\u0433\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0433\u043E \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u0438 \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0432\u0430\u0435\u043C \u043F\u043E\u0441\u0442\u0430\u0432\u043A\u0443 \u0437\u0430\u043F\u0430\u0441\u043D\u044B\u0445 \u0447\u0430\u0441\u0442\u0435\u0439. \u041F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u043C \u0432\u0435\u0441\u044C \u0441\u043F\u0435\u043A\u0442\u0440 \u0443\u0441\u043B\u0443\u0433 \u043F\u043E \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u044E \u0412\u0430\u0448\u0435\u0433\u043E \u0430\u0432\u0442\u043E\u043D\u043E\u043C\u043D\u043E\u0433\u043E \u044D\u043D\u0435\u0440\u0433\u043E\u0446\u0435\u043D\u0442\u0440\u0430 \"\u043F\u043E\u0434 \u043A\u043B\u044E\u0447\": \u043F\u0440\u043E\u0435\u043A\u0442\u043D\u044B\u0435, \u0441\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u043D\u043E-\u043C\u043E\u043D\u0430\u0442\u0436\u043D\u044B\u0435 \u0440\u0430\u0431\u043E\u0442\u044B, \u043F\u0443\u0441\u043A\u043E-\u043D\u0430\u043B\u0430\u0434\u043E\u0447\u043D\u044B\u0435 \u0440\u0430\u0431\u043E\u0442\u044B, \u0441\u043E\u043F\u0440\u043E\u0432\u043E\u0436\u0434\u0435\u043D\u0438\u0435 \u043E\u0431\u044A\u0435\u043A\u0442\u0430 \u0441 \u043F\u0435\u0440\u0432\u043E\u0433\u043E \u0434\u043D\u044F \u0434\u043E \u0432\u0432\u043E\u0434\u0430 \u0432 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u044E, \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0438\u0440\u0443\u044E\u0449\u0435\u0433\u043E \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u0430, \u0441\u0435\u0440\u0432\u0438\u0441\u043D\u043E\u0435 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u0435."), __jsx("p", {
+        className: "jsx-1954816038" + " " + "text-min pb-3"
+      }, "\u0412 \u043D\u0430\u0448\u0435\u0439 \u043A\u043E\u043C\u043F\u0435\u0442\u0435\u043D\u0446\u0438\u0438 \"\u0433\u043E\u0442\u043E\u0432\u044B\u0435 \u0440\u0435\u0448\u0435\u043D\u0438\u044F\" \u043F\u043E \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438 \u0430\u0432\u0442\u043E\u043D\u043E\u043C\u043D\u043E\u0433\u043E \u044D\u043D\u0435\u0440\u0433\u043E\u0441\u043D\u0430\u0431\u0436\u0435\u043D\u0438\u044F \u0434\u043B\u044F: \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u044B\u0445 \u043F\u0440\u0435\u0434\u043F\u0440\u0438\u044F\u0442\u0438\u0439, \u043E\u0431\u044A\u0435\u043A\u0442\u043E\u0432 \u043D\u0435\u0444\u0442\u0435\u0433\u0430\u0437\u043E\u0432\u043E\u0439 \u0441\u0444\u0435\u0440\u044B, \u043E\u0431\u044A\u0435\u043A\u0442\u043E\u0432 \u0433\u0430\u0437\u043E\u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B, \u0436\u0438\u0432\u043E\u0442\u043D\u043E\u0432\u043E\u0434\u0447\u0435\u0441\u043A\u0438\u0445 \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043E\u0432, \u0442\u043E\u0440\u0433\u043E\u0432\u043E-\u0440\u0430\u0437\u0432\u043B\u0435\u043A\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0446\u0435\u043D\u0442\u0440\u043E\u0432, \u043B\u0435\u0434\u043E\u0432\u044B\u0445 \u0434\u0432\u043E\u0440\u0446\u043E\u0432 \u0441\u043F\u043E\u0440\u0442\u0430 \u0438 \u043F\u0440\u043E\u0447\u0438\u0445 \u0441\u043F\u043E\u0440\u0442\u0438\u0432\u043D\u044B\u0445 \u043E\u0431\u044A\u0435\u043A\u0442\u043E\u0432, \u0433\u043E\u0441\u0442\u0438\u043D\u0438\u0446, \u0441\u0430\u043D\u0430\u0442\u043E\u0440\u0438\u0435\u0432, \u0431\u043E\u043B\u044C\u043D\u0438\u0446 \u0438 \u043B\u0435\u0447\u0435\u0431\u043D\u044B\u0445 \u0443\u0447\u0440\u0435\u0436\u0434\u0435\u043D\u0438\u0439, \u0431\u0430\u0437 \u043E\u0442\u0434\u044B\u0445\u0430."), __jsx("p", {
+        className: "jsx-1954816038" + " " + "text-min pb-3"
+      }, "\u0421\u043F\u0435\u043A\u0442\u0440 \u043F\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u043C\u043E\u0433\u043E \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043E\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043B\u044F\u0442\u044C \u043F\u043E\u043B\u043D\u0443\u044E \u043C\u043E\u0434\u0435\u0440\u043D\u0438\u0437\u0430\u0446\u0438\u044E \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0433\u043E \u0445\u043E\u0437\u044F\u0439\u0441\u0442\u0432\u0430 \u043F\u0440\u0435\u0434\u043F\u0440\u0438\u044F\u0442\u0438\u0439, \u043E\u0442 \u0437\u0430\u043C\u0435\u043D\u044B \u0443\u0441\u0442\u0430\u0440\u0435\u0432\u0448\u0435\u0433\u043E \u043A\u043E\u0442\u0435\u043B\u044C\u043D\u043E\u0433\u043E \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F, \u0434\u043E \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438 \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u0430\u0432\u0442\u043E\u043D\u043E\u043C\u043D\u044B\u0445 \u0441\u0438\u0441\u0442\u0435\u043C. \u041D\u0430\u0448\u0430 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u044F \u0438\u043C\u0435\u0435\u0442 \u043E\u043F\u044B\u0442 \u043F\u043E\u0441\u0442\u0430\u0432\u043E\u043A \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u043F\u043E \u0432\u0441\u0435\u0439 \u0442\u0435\u0440\u0440\u0438\u0442\u043E\u0440\u0438\u0438 \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438 \u0438 \u0441\u0442\u0440\u0430\u043D\u0430\u043C \u0421\u041D\u0413."), __jsx("br", {
+        className: "jsx-1954816038"
+      })))))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default.a, {
+        id: "1954816038"
+      }, [".about.jsx-1954816038 .logo-container.jsx-1954816038{height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".about.jsx-1954816038 .logo-container.jsx-1954816038 .logo-very-big.jsx-1954816038{display:block;width:50%;height:auto;}", ".about.jsx-1954816038 .img-container.jsx-1954816038{margin-bottom:15px;box-shadow:var(--box-shadow);overflow:hidden;border-radius:var(--border-radius);}", ".about.jsx-1954816038 .img-container.jsx-1954816038 .about-pic.jsx-1954816038{width:100%;}", ".contacts.jsx-1954816038{background-image:#fff;}", ".contacts.jsx-1954816038 .map-container.jsx-1954816038{border-radius:var(--border-radius);}", ".contacts.jsx-1954816038 .map-container.jsx-1954816038 .myMap.jsx-1954816038{width:100%;height:300px;position:relative;overflow:hidden;}", ".contacts.jsx-1954816038 .adres-list.jsx-1954816038{margin-bottom:30px;padding:30px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;color:var(--accent-grey);border:3px solid var(--accent-grey);border-radius:3px;background-color:#fff;box-shadow:var(--box-shadow-up);}", ".contacts.jsx-1954816038 .adres-list.jsx-1954816038 .map-container.jsx-1954816038{width:100%;padding-bottom:15px !important;}", ".contacts.jsx-1954816038 .adres-list.jsx-1954816038 .contacts-heading.jsx-1954816038{font-family:var(--molot-font);text-align:center;font-size:21px;color:var(--accent-grey);display:block;text-transform:uppercase;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;margin-bottom:20px;}", ".contacts.jsx-1954816038 .adres-list.jsx-1954816038 .adres-map-link.jsx-1954816038{width:100%;color:var(--accent-grey);font-size:14px;font-weight:300;line-height:20px;font-family:var(--noto-font);-webkit-letter-spacing:0.5px;-moz-letter-spacing:0.5px;-ms-letter-spacing:0.5px;letter-spacing:0.5px;text-align:center;margin-bottom:15px;}", ".contacts.jsx-1954816038 .adres-list.jsx-1954816038 .adres-phones.jsx-1954816038{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;}", ".contacts.jsx-1954816038 .adres-list.jsx-1954816038 .adres-phones.jsx-1954816038 .phone-link.jsx-1954816038{text-align:left;display:block;font-weight:400;font-size:14px;color:var(--accent-grey);}", ".contacts.jsx-1954816038 .adres-list.jsx-1954816038 .adres-email.jsx-1954816038{margin-top:15px;margin-bottom:15px;text-align:center;color:var(--accent-grey);width:100%;font-style:italic;font-size:16px;font-weight:700;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;}", ".contacts.jsx-1954816038 .adres-list.jsx-1954816038 .link-1.jsx-1954816038{font-size:14px;display:block;font-weight:300;color:var(--accent-grey);}", ".contacts.jsx-1954816038 .adres-list.jsx-1954816038 .link-11.jsx-1954816038{font-size:14px;display:block;font-weight:700;color:var(--accent-grey);}", ".napravleniya.jsx-1954816038{padding:30px 0 50px 0;}", ".napravleniya.jsx-1954816038 .header-sections.jsx-1954816038{text-align:left;}", ".certs.jsx-1954816038{margin-top:10px;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;}", ".certs.jsx-1954816038 .certs-card.jsx-1954816038{padding:15px;width:50%;cursor:pointer;}", ".certs.jsx-1954816038 .certs-card.jsx-1954816038 .img-container.jsx-1954816038{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".certs.jsx-1954816038 .certs-card.jsx-1954816038 .img-container.jsx-1954816038 .certs-img-1.jsx-1954816038{width:100%;-webkit-transition:all 0.2s ease-in;transition:all 0.2s ease-in;box-shadow:0 5px 20px rgba(0,0,0,0.15);box-shadow:var(--box-shadow);}", ".certs.jsx-1954816038 .certs-card.jsx-1954816038 .img-container.jsx-1954816038:hover{box-shadow:0 5px 40px -15px rgba(0,0,0,0.55);}", ".certs.jsx-1954816038 .certs-card.jsx-1954816038 .img-container.jsx-1954816038 .certs-img-2.jsx-1954816038{width:100%;}", "@media (min-width:768px){.about.jsx-1954816038 .logo-container.jsx-1954816038{height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;}.about.jsx-1954816038 .logo-container.jsx-1954816038 .logo-very-big.jsx-1954816038{display:block;margin-bottom:30px;width:70%;height:auto;}.about.jsx-1954816038 .img-container.jsx-1954816038 .about-pic.jsx-1954816038{max-width:100%;box-shadow:2px 2px 3px rgba(0,0,0,0.2);}.contacts.jsx-1954816038 .map-container.jsx-1954816038{-webkit-transform:translateX(-15px);-ms-transform:translateX(-15px);transform:translateX(-15px);padding-bottom:0 !important;}.contacts.jsx-1954816038 .adres-list.jsx-1954816038{margin-bottom:30px;padding:30px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;color:var(--accent-grey);border:3px solid var(--accent-grey);}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .map-container.jsx-1954816038{width:100%;padding-bottom:15px !important;}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .contacts-heading.jsx-1954816038{font-family:var(--molot-font);text-align:center;font-size:21px;color:var(--accent-grey);display:block;text-transform:uppercase;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;margin-bottom:20px;}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .adres-map-link.jsx-1954816038{width:100%;color:var(--accent-grey);font-size:14px;font-weight:300;line-height:20px;font-family:var(--noto-font);-webkit-letter-spacing:0.5px;-moz-letter-spacing:0.5px;-ms-letter-spacing:0.5px;letter-spacing:0.5px;text-align:center;margin-bottom:15px;}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .adres-phones.jsx-1954816038{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .adres-phones.jsx-1954816038 .phone-link.jsx-1954816038{text-align:left;display:block;font-weight:400;font-size:14px;color:var(--accent-grey);}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .adres-email.jsx-1954816038{margin-top:15px;margin-bottom:15px;text-align:center;color:var(--accent-grey);width:100%;font-style:italic;font-size:16px;font-weight:700;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .link-1.jsx-1954816038{font-size:14px;display:block;font-weight:300;color:var(--accent-grey);}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .link-11.jsx-1954816038{font-size:14px;display:block;font-weight:700;color:var(--accent-grey);}.contacts.jsx-1954816038 .link-map.jsx-1954816038 .link-map-header.jsx-1954816038{padding-left:8px;text-align:left;}.contacts.jsx-1954816038 .link-map.jsx-1954816038 .link-map-list.jsx-1954816038{margin-top:10px;padding-left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.contacts.jsx-1954816038 .link-map.jsx-1954816038 .link-map-list.jsx-1954816038 .link-map-item.jsx-1954816038{padding:0px 8px;}.contacts.jsx-1954816038 .link-map.jsx-1954816038 .link-map-list.jsx-1954816038 .link-map-item.jsx-1954816038 .link-map-link.jsx-1954816038{display:block;color:#ffffff;width:100%;text-align:left;font-size:16px;font-weight:400;line-height:28px;}.certs.jsx-1954816038{margin-top:10px;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;}.certs.jsx-1954816038 .certs-card.jsx-1954816038{padding:15px;width:32%;}}", "@media (min-width:992px){.certs.jsx-1954816038{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;}}", "@media (min-width:1200px){.contacts.jsx-1954816038{padding-top:0;}.contacts.jsx-1954816038 .adres-list.jsx-1954816038{height:100%;box-shadow:var(--box-shadow);border-radius:var(--border-radius);border:none;padding-left:45px;}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .contacts-heading.jsx-1954816038{font-family:var(--molot-font);text-align:left;font-size:27px;color:var(--accent-grey);display:block;text-transform:uppercase;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;margin-bottom:20px;}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .adres-map-link.jsx-1954816038{width:100%;color:var(--accent-grey);font-size:22px;font-weight:300;line-height:28px;font-family:var(--noto-font);-webkit-letter-spacing:0.5px;-moz-letter-spacing:0.5px;-ms-letter-spacing:0.5px;letter-spacing:0.5px;text-align:left;margin-bottom:30px;}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .adres-phones.jsx-1954816038{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .adres-phones.jsx-1954816038 .phone-link.jsx-1954816038{text-align:left;display:block;font-weight:700;font-size:19px;color:var(--accent-grey);}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .adres-email.jsx-1954816038{margin-top:15px;margin-bottom:15px;text-align:left;color:var(--accent-red);width:100%;font-style:italic;font-size:16px;font-weight:500;-webkit-letter-spacing:3px;-moz-letter-spacing:3px;-ms-letter-spacing:3px;letter-spacing:3px;}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .link-1.jsx-1954816038{font-size:16px;display:block;font-weight:300;color:var(--accent-grey);line-height:22px;}.contacts.jsx-1954816038 .adres-list.jsx-1954816038 .link-11.jsx-1954816038{font-size:17px;display:block;font-weight:700;color:var(--accent-grey);}.contacts.jsx-1954816038 .map-container.jsx-1954816038{height:458px;width:100%;}}"]));
     }
   }]);
 
-  return News;
-}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (News);
+  return About;
+}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
+/* harmony default export */ __webpack_exports__["default"] = (About);
 
 /***/ }),
 
-/***/ 3:
-/*!*************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fnews&absolutePagePath=G%3A%5COSPanel%5Cdomains%5Cgmnext9%5Cpages%5Cnews.js ***!
-  \*************************************************************************************************************************/
+/***/ 2:
+/*!***************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=G%3A%5COSPanel%5Cdomains%5Cgmnext9%5Cpages%5Cabout.js ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fnews&absolutePagePath=G%3A%5COSPanel%5Cdomains%5Cgmnext9%5Cpages%5Cnews.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnews&absolutePagePath=G%3A%5COSPanel%5Cdomains%5Cgmnext9%5Cpages%5Cnews.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fabout&absolutePagePath=G%3A%5COSPanel%5Cdomains%5Cgmnext9%5Cpages%5Cabout.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=G%3A%5COSPanel%5Cdomains%5Cgmnext9%5Cpages%5Cabout.js!./");
 
 
 /***/ }),
@@ -7391,5 +10975,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=news.js.map
+},[[2,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=about.js.map
