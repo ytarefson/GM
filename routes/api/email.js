@@ -18,7 +18,7 @@ router.post('/', urlencodedParser, function(req, res) {
           sendEmail(
             callback,
             'no-reply@gmenergo.ru', // From
-            ['info@intersell.su', 'market@gmenergo.ru'], // To, 'market@gmenergo.ru'
+            ['info@intersell.su','alexeyvh@gmenergo.ru' , 'market@gmenergo.ru'], // To, 'market@gmenergo.ru'
             'Заявка с сайта',
             'Text Content',
             '<h1 style="font-size: 26px;">Заявка с сайта</h1><p style="font-size: 18px;">С сайта gmenergo.ru поступила заявка. <br>Пользоваталель итересовался продуктом - ' +
