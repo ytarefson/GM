@@ -2,6 +2,7 @@ import React from 'react';
 import Router from 'next/router';
 import TextFieldGroup from '../common/TextFieldGroup';
 import RadioInputGroup from '../common/RadioInputGroup';
+import validateFormInput from '../../validation/ask-form-validation';
 
 class AskForm extends React.Component {
   constructor(props) {
@@ -53,44 +54,53 @@ class AskForm extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    fetch('/api/form-validation', {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        organizationname: this.state.organizationname,
-        organizationadres: this.state.organizationadres,
-        personname: this.state.personname,
-        personstatus: this.state.personstatus,
-        personemail: this.state.personemail,
-        personphone: this.state.personphone,
-        personmobile: this.state.personmobile,
-        locationparams: this.state.locationparams,
-        projectmountadres: this.state.projectmountadres,
-        projectdescription: this.state.projectdescription,
-        operationmode: this.state.operationmode,
-        proposedmodel: this.state.proposedmodel,
-        electricpower: this.state.electricpower,
-        connectiontype: this.state.connectiontype,
-        minimalload: this.state.minimalload,
-        energyloadgraph: this.state.energyloadgraph,
-        installationsettings: this.state.installationsettings,
-        fueltype: this.state.fueltype,
-        utilsystem: this.state.utilsystem,
-        reqheatpower: this.state.reqheatpower,
-        chefmontage: this.state.chefmontage,
-        stafflearning: this.state.stafflearning,
-        otherworks: this.state.otherworks,
-        gasprice: this.state.gasprice,
-        currentenergytarif: this.state.currentenergytarif,
-        currentheattarif: this.state.currentheattarif,
-        commentary: this.state.commentary,
-      }),
-    }).then((res) => Router.push('/confirm-email'));
-
-    window.scrollTo(0, 0);
+    let data = {
+      organizationname: this.state.organizationname,
+      organizationadres: this.state.organizationadres,
+      personname: this.state.personname,
+      personstatus: this.state.personstatus,
+      personemail: this.state.personemail,
+      personphone: this.state.personphone,
+      personmobile: this.state.personmobile,
+      locationparams: this.state.locationparams,
+      projectmountadres: this.state.projectmountadres,
+      projectdescription: this.state.projectdescription,
+      operationmode: this.state.operationmode,
+      proposedmodel: this.state.proposedmodel,
+      electricpower: this.state.electricpower,
+      connectiontype: this.state.connectiontype,
+      minimalload: this.state.minimalload,
+      energyloadgraph: this.state.energyloadgraph,
+      installationsettings: this.state.installationsettings,
+      fueltype: this.state.fueltype,
+      utilsystem: this.state.utilsystem,
+      reqheatpower: this.state.reqheatpower,
+      chefmontage: this.state.chefmontage,
+      stafflearning: this.state.stafflearning,
+      otherworks: this.state.otherworks,
+      gasprice: this.state.gasprice,
+      currentenergytarif: this.state.currentenergytarif,
+      currentheattarif: this.state.currentheattarif,
+      commentary: this.state.commentary,
+    }
+    
+    let result = validateFormInput(data);
+    if (result.isValid) {
+      fetch('/api/form-validation', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      }).then((res) => 
+          Router.push('/confirm-email')
+      );  
+      window.scrollTo(0, 0);
+    } else {
+     
+      this.setState({errors: result.errors})
+    }
   }
   render() {
     return (

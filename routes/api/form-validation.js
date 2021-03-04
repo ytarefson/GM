@@ -17,6 +17,7 @@ router.post('/', urlencodedParser, function (req, res) {
     // Validation
     const { errors, isValid } = validateFormInput(req.body);
     if (!isValid) {
+      console.log('Invalid');
       return res.status(400).json(errors);
     } else {
       // Данные в форме заполнены верно, отправляем письмо
