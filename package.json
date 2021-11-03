@@ -39,7 +39,7 @@
     "sass": "^1.26.3",
     "sendgrid": "^5.2.3",
     "sw-precache-webpack-plugin": "^1.0.0",
-    "validator": "^13.0.0",
+    "validator": "^13.7.0",
     "video-react": "^0.14.1"
   }
 }
